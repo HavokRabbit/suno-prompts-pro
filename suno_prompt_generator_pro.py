@@ -1,22 +1,22 @@
 import streamlit as st
 import random
-import base64
 
 # ====================
 #   IRON VESPERS BRANDING
 # ====================
-def _load_logo_b64():
+def _load_logo_svg():
+    """Return the raw SVG markup (not base64) so animations and styling work inline."""
     try:
-        with open("static/wolf_logo.svg", "rb") as f:
-            return base64.b64encode(f.read()).decode()
+        with open("static/wolf_logo.svg", "r", encoding="utf-8") as f:
+            return f.read()
     except Exception:
         return None
 
-_LOGO_B64 = _load_logo_b64()
+_LOGO_SVG = _load_logo_svg()
 
 st.set_page_config(
     page_title="Iron Vespers — Suno Prompt Generator Pro",
-    page_icon="static/favicon.svg" if _LOGO_B64 else "🐺",
+    page_icon="static/favicon.svg",
     layout="wide"
 )
 
@@ -155,7 +155,8 @@ a:hover { color: var(--iv-red-hot) !important; }
     border-bottom: 1px solid var(--iv-border);
     margin-bottom: 20px;
 }
-.iv-hero img { width: 80px; height: 80px; }
+.iv-hero .iv-wolf { width: 80px; height: 80px; flex-shrink: 0; }
+.iv-hero .iv-wolf svg { width: 100%; height: 100%; display: block; }
 .iv-hero-text h1 {
     margin: 0;
     font-size: 2.2em;
@@ -172,6 +173,42 @@ a:hover { color: var(--iv-red-hot) !important; }
     font-size: 1.1em;
     margin-top: 4px;
     letter-spacing: 0.04em;
+}
+
+/* Wolf logo animations — pulsing red eyes + subtle floating motion */
+.iv-wolf .wolf-eye {
+    animation: eyePulse 2.4s ease-in-out infinite;
+    transform-origin: center;
+}
+.iv-wolf .wolf-eye-right {
+    animation-delay: 0.2s;
+}
+.iv-wolf .wolf-glow {
+    animation: glowFlicker 3s ease-in-out infinite;
+}
+.iv-wolf .wolf-head {
+    animation: headFloat 4s ease-in-out infinite;
+    transform-origin: center;
+}
+@keyframes eyePulse {
+    0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #FF1F44); }
+    50% { opacity: 0.55; filter: drop-shadow(0 0 12px #FF1F44); }
+}
+@keyframes glowFlicker {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+@keyframes headFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+/* Sidebar wolf animations - smaller scale */
+section[data-testid="stSidebar"] .iv-wolf .wolf-head {
+    animation: headFloat 5s ease-in-out infinite;
+}
+section[data-testid="stSidebar"] .iv-wolf .wolf-eye {
+    animation: eyePulse 2.4s ease-in-out infinite;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -463,10 +500,10 @@ def get_random_artist():
 # ====================
 with st.sidebar:
     # Iron Vespers branded sidebar header with wolf logo
-    if _LOGO_B64:
+    if _LOGO_SVG:
         st.markdown(f"""
         <div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
-            <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
+            <div class="iv-wolf">{_LOGO_SVG}</div>
             <div class="iv-hero-text">
                 <h1 style="font-size: 1.4em; margin: 0;">Iron Vespers</h1>
                 <div class="iv-tag" style="font-size: 0.85em;">Suno Prompt Pro</div>
@@ -496,10 +533,10 @@ with st.sidebar:
 tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"])
 
 # Main hero header — Iron Vespers branded
-if _LOGO_B64:
+if _LOGO_SVG:
     st.markdown(f"""
     <div class="iv-hero">
-        <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
+        <div class="iv-wolf">{_LOGO_SVG}</div>
         <div class="iv-hero-text">
             <h1>Iron Vespers</h1>
             <div class="iv-tag">Suno Prompt Generator Pro · 136 artists · 21 genres</div>
