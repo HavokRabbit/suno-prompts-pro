@@ -1,7 +1,180 @@
 import streamlit as st
 import random
+import base64
 
-st.set_page_config(page_title="Suno Prompt Generator Pro", page_icon="🎵", layout="wide")
+# ====================
+#   IRON VESPERS BRANDING
+# ====================
+def _load_logo_b64():
+    try:
+        with open("static/wolf_logo.svg", "rb") as f:
+            return base64.b64encode(f.read()).decode()
+    except Exception:
+        return None
+
+_LOGO_B64 = _load_logo_b64()
+
+st.set_page_config(
+    page_title="Iron Vespers — Suno Prompt Generator Pro",
+    page_icon="static/favicon.svg" if _LOGO_B64 else "🐺",
+    layout="wide"
+)
+
+# ====================
+#   GLOBAL CSS — IRON VESPERS GOTHIC THEME
+# ====================
+st.markdown("""
+<style>
+/* Brand color variables */
+:root {
+    --iv-red: #C8102E;
+    --iv-red-hot: #FF1F44;
+    --iv-red-soft: #FF7A8A;
+    --iv-purple: #9D00FF;
+    --iv-bg: #0E1117;
+    --iv-bg-card: #1a0a14;
+    --iv-bg-elev: #1E1E1E;
+    --iv-text: #FAFAFA;
+    --iv-text-dim: #B0B0B0;
+    --iv-border: rgba(200, 16, 46, 0.25);
+}
+
+/* Page background — subtle gothic gradient */
+.stApp {
+    background: linear-gradient(180deg, #0E1117 0%, #1a0a14 100%) !important;
+}
+
+/* Headers — Iron Vespers blood red */
+h1, h2, h3, h4 {
+    color: var(--iv-text) !important;
+    font-family: 'Georgia', 'Times New Roman', serif !important;
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--iv-red);
+    padding-bottom: 0.4em;
+}
+
+/* Sidebar — iron-forged */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a0a14 100%) !important;
+    border-right: 1px solid var(--iv-border);
+}
+
+section[data-testid="stSidebar"] h1 {
+    font-size: 1.6em !important;
+    text-transform: none;
+    border-bottom: none;
+}
+
+/* Primary buttons — blood red */
+.stButton > button[kind="primary"],
+.stButton > button {
+    background: linear-gradient(135deg, #C8102E 0%, #9D00FF 100%) !important;
+    color: #FAFAFA !important;
+    border: 1px solid var(--iv-red) !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #FF1F44 0%, #C8102E 100%) !important;
+    border-color: var(--iv-red-hot) !important;
+    box-shadow: 0 0 18px rgba(200, 16, 46, 0.5) !important;
+    transform: translateY(-1px);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background: transparent;
+    border-bottom: 1px solid var(--iv-border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: var(--iv-bg-elev) !important;
+    color: var(--iv-text-dim) !important;
+    border: 1px solid var(--iv-border) !important;
+    border-radius: 4px 4px 0 0 !important;
+    padding: 8px 18px !important;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(180deg, #C8102E 0%, #1a0a14 100%) !important;
+    color: #FAFAFA !important;
+    border-color: var(--iv-red) !important;
+}
+
+/* Text inputs and selectboxes — dark with red accent */
+.stTextInput input, .stTextArea textarea, .stSelectbox div[data-baseweb="select"] {
+    background: var(--iv-bg-elev) !important;
+    color: var(--iv-text) !important;
+    border: 1px solid var(--iv-border) !important;
+    caret-color: var(--iv-red) !important;
+}
+
+.stTextInput input:focus, .stTextArea textarea:focus, .stSelectbox div[data-baseweb="select"]:focus {
+    border-color: var(--iv-red-hot) !important;
+    box-shadow: 0 0 0 1px var(--iv-red) !important;
+}
+
+/* Sliders */
+.stSlider [data-baseweb="slider"] [role="slider"] {
+    background: var(--iv-red) !important;
+}
+
+/* Code blocks */
+.stCodeBlock, code, pre {
+    background: #0a0a0a !important;
+    border: 1px solid var(--iv-border) !important;
+    border-left: 3px solid var(--iv-red) !important;
+}
+
+/* Markdown links */
+a { color: var(--iv-red) !important; }
+a:hover { color: var(--iv-red-hot) !important; }
+
+/* Wolf-header hero (rendered as raw HTML) */
+.iv-hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--iv-border);
+    margin-bottom: 20px;
+}
+.iv-hero img { width: 80px; height: 80px; }
+.iv-hero-text h1 {
+    margin: 0;
+    font-size: 2.2em;
+    border: none;
+    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.iv-hero-text .iv-tag {
+    color: var(--iv-text-dim);
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # ====================
 #   ARTIST DATABASE
@@ -289,30 +462,57 @@ def get_random_artist():
 #   SIDEBAR
 # ====================
 with st.sidebar:
-    st.title("🎵 Suno Pro")
-    st.markdown("**Professional AI Music Prompts**")
+    # Iron Vespers branded sidebar header with wolf logo
+    if _LOGO_B64:
+        st.markdown(f"""
+        <div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
+            <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
+            <div class="iv-hero-text">
+                <h1 style="font-size: 1.4em; margin: 0;">Iron Vespers</h1>
+                <div class="iv-tag" style="font-size: 0.85em;">Suno Prompt Pro</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+    else:
+        st.title("🐺 Iron Vespers")
+        st.markdown("**Suno Prompt Pro**")
     st.markdown("---")
     st.markdown(f"**Artists:** {len(SINGER_DB)}")
     st.markdown(f"**Genres:** {len(DEFAULT_TEMPLATES)}")
     st.markdown("---")
-    
+
     if st.button("🎲 Random Artist"):
         st.session_state.random_artist = get_random_artist()
         st.rerun()
-    
+
     st.markdown("---")
     st.markdown("**Quick Links**")
     st.markdown("[Suno AI](https://suno.com)")
-    st.markdown("[Documentation](#)")
+    st.markdown("[Iron Vespers](https://github.com/HavokRabbit/Suno-prompts-pro)")
 
 # ====================
 #   TABS
 # ====================
 tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"])
 
+# Main hero header — Iron Vespers branded
+if _LOGO_B64:
+    st.markdown(f"""
+    <div class="iv-hero">
+        <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
+        <div class="iv-hero-text">
+            <h1>Iron Vespers</h1>
+            <div class="iv-tag">Suno Prompt Generator Pro · 136 artists · 21 genres</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+else:
+    st.title("🐺 Iron Vespers — Suno Prompt Pro")
+
 with tab1:
-    st.title("Generate Prompt")
-    
+    st.markdown("### ⚔️ Generate Prompt")
+    st.caption("Type an artist name, or use the buttons below. The app will fuse the artist's sound with the matching genre template.")
+
     col1, col2 = st.columns([2, 1])
     
     with col1:
