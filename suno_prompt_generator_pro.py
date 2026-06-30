@@ -156,6 +156,30 @@ a:hover { color: var(--iv-red-hot) !important; }
     margin-bottom: 20px;
 }
 .iv-hero img { width: 80px; height: 80px; }
+
+/* Wolf animation — applied to the <img> wrapper, not the SVG internals.
+   This animates the WHOLE rendered image (including the eyes), so the
+   wolf appears to pulse/float even though the SVG file is static. */
+@keyframes wolfGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(200, 16, 46, 0.6)) drop-shadow(0 0 8px rgba(200, 16, 46, 0.3)); }
+  50%      { filter: drop-shadow(0 0 12px rgba(255, 31, 68, 0.95)) drop-shadow(0 0 24px rgba(200, 16, 46, 0.7)); }
+}
+@keyframes wolfFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-3px); }
+}
+.iv-hero img {
+  animation: wolfGlow 2.4s ease-in-out infinite,
+             wolfFloat 4s ease-in-out infinite;
+  will-change: filter, transform;
+}
+
+/* Sidebar wolf — same animation, smaller scale */
+[data-testid="stSidebar"] .iv-hero img {
+  width: 60px; height: 60px;
+  animation: wolfGlow 2.6s ease-in-out infinite,
+             wolfFloat 4.4s ease-in-out infinite;
+}
 .iv-hero-text h1 {
     margin: 0;
     font-size: 2.2em;
