@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" class="iv-wolf-svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="80" height="80" fill="none" class="iv-wolf-svg" style="display:block;">
   <!-- Iron Vespers Wolf Logo - CSS-animated -->
   <defs>
     <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">

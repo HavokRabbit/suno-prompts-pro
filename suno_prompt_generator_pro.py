@@ -162,6 +162,10 @@ a:hover { color: var(--iv-red-hot) !important; }
 }
 .iv-hero .iv-wolf { width: 80px; height: 80px; flex-shrink: 0; }
 .iv-hero .iv-wolf svg { width: 100%; height: 100%; display: block; }
+/* Make any inline SVG inside Streamlit's app render at proper size */
+[data-testid="stAppViewContainer"] svg.iv-wolf-svg { max-width: 80px; max-height: 80px; }
+/* Sidebar wolf - smaller, similar treatment */
+section[data-testid="stSidebar"] .iv-hero .iv-wolf { width: 60px; height: 60px; }
 .iv-hero-text h1 {
     margin: 0;
     font-size: 2.2em;
@@ -522,6 +526,7 @@ with st.sidebar:
     # Iron Vespers branded sidebar header with wolf logo
     if _LOGO_SVG:
         # Use st.html() for the wrapper to avoid markdown parser issues
+        # Layered: SVG wolf on top, wolf emoji as fallback (visible if SVG fails)
         st.html(f"""
 <div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
   <div class="iv-wolf">{_LOGO_SVG}</div>
@@ -532,8 +537,8 @@ with st.sidebar:
 </div>
 """)
     else:
-        st.title("🐺 Iron Vespers")
-        st.markdown("**Suno Prompt Pro**")
+        st.markdown("## 🐺 Iron Vespers")
+        st.markdown("*Suno Prompt Pro*")
     st.markdown("---")
     st.markdown(f"**Artists:** {len(SINGER_DB)}")
     st.markdown(f"**Genres:** {len(DEFAULT_TEMPLATES)}")
