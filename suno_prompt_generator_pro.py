@@ -16,7 +16,7 @@ _LOGO_SVG = _load_logo_svg()
 
 st.set_page_config(
     page_title="Iron Vespers — Suno Prompt Generator Pro",
-    page_icon="static/favicon.svg",
+    page_icon="🐺",  # Wolf emoji as fallback (the SVG wolf renders inline in the hero)
     layout="wide"
 )
 
