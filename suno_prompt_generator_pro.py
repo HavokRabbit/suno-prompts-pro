@@ -1,14 +1,19 @@
 import streamlit as st
 import random
+import re
 
 # ====================
 #   IRON VESPERS BRANDING
 # ====================
 def _load_logo_svg():
-    """Return the raw SVG markup (not base64) so animations and styling work inline."""
+    """Return raw SVG markup with HTML comments stripped (Streamlit's markdown
+    parser can choke on <!-- ... --> in some content blocks)."""
     try:
         with open("static/wolf_logo.svg", "r", encoding="utf-8") as f:
-            return f.read()
+            svg = f.read()
+        # Strip HTML/XML comments to avoid markdown parser issues
+        svg = re.sub(r"<!--.*?-->", "", svg, flags=re.DOTALL)
+        return svg.strip()
     except Exception:
         return None
 
@@ -23,7 +28,7 @@ st.set_page_config(
 # ====================
 #   GLOBAL CSS — IRON VESPERS GOTHIC THEME
 # ====================
-st.markdown("""
+st.html("""
 <style>
 /* Brand color variables */
 :root {
@@ -211,7 +216,7 @@ section[data-testid="stSidebar"] .iv-wolf .wolf-eye {
     animation: eyePulse 2.4s ease-in-out infinite;
 }
 </style>
-""", unsafe_allow_html=True)
+""")
 
 # ====================
 #   ARTIST DATABASE
@@ -498,18 +503,34 @@ def get_random_artist():
 # ====================
 #   SIDEBAR
 # ====================
+def _render_svg(svg_markup):
+    """Render inline SVG safely. Try st.html() first (Streamlit 1.27+), fall back to markdown."""
+    if not svg_markup:
+        return
+    try:
+        # st.html() bypasses markdown parsing entirely - cleanest approach
+        st.html(svg_markup)
+    except AttributeError:
+        # Older Streamlit - use markdown with unsafe_allow_html
+        st.markdown(svg_markup, unsafe_allow_html=True)
+
+
+# ====================
+#   SIDEBAR
+# ====================
 with st.sidebar:
     # Iron Vespers branded sidebar header with wolf logo
     if _LOGO_SVG:
-        st.markdown(f"""
-        <div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
-            <div class="iv-wolf">{_LOGO_SVG}</div>
-            <div class="iv-hero-text">
-                <h1 style="font-size: 1.4em; margin: 0;">Iron Vespers</h1>
-                <div class="iv-tag" style="font-size: 0.85em;">Suno Prompt Pro</div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        # Use st.html() for the wrapper to avoid markdown parser issues
+        st.html(f"""
+<div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
+  <div class="iv-wolf">{_LOGO_SVG}</div>
+  <div class="iv-hero-text">
+    <h1 style="font-size: 1.4em; margin: 0;">Iron Vespers</h1>
+    <div class="iv-tag" style="font-size: 0.85em;">Suno Prompt Pro</div>
+  </div>
+</div>
+""")
     else:
         st.title("🐺 Iron Vespers")
         st.markdown("**Suno Prompt Pro**")
@@ -534,15 +555,15 @@ tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists",
 
 # Main hero header — Iron Vespers branded
 if _LOGO_SVG:
-    st.markdown(f"""
-    <div class="iv-hero">
-        <div class="iv-wolf">{_LOGO_SVG}</div>
-        <div class="iv-hero-text">
-            <h1>Iron Vespers</h1>
-            <div class="iv-tag">Suno Prompt Generator Pro · 136 artists · 21 genres</div>
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
+    st.html(f"""
+<div class="iv-hero">
+  <div class="iv-wolf">{_LOGO_SVG}</div>
+  <div class="iv-hero-text">
+    <h1>Iron Vespers</h1>
+    <div class="iv-tag">Suno Prompt Generator Pro · 136 artists · 21 genres</div>
+  </div>
+</div>
+""")
 else:
     st.title("🐺 Iron Vespers — Suno Prompt Pro")
 
