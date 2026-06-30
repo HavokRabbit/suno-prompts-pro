@@ -1,22 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="80" height="80" fill="none" class="iv-wolf-svg" style="display:block;">
-  <!-- Iron Vespers Wolf Logo - CSS-animated -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <!-- Iron Vespers Wolf Logo -->
+  <!-- Geometric wolf head facing forward, sharp angular features, glowing red eyes -->
   <defs>
-    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FF7A8A"/>
-      <stop offset="50%" stop-color="#FF1F44"/>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF1F44"/>
       <stop offset="100%" stop-color="#9D00FF"/>
-    </radialGradient>
+    </linearGradient>
   </defs>
 
-  <!-- Background circle (gothic ring) -->
-  <circle class="wolf-glow" cx="128" cy="128" r="120" fill="none" stroke="#C8102E" stroke-width="3"/>
+  <!-- Background circle (transparent for app use) -->
+  <circle cx="128" cy="128" r="120" fill="none" stroke="#C8102E" stroke-width="3" opacity="0.4"/>
 
-  <g class="wolf-head">
+  <!-- Wolf head silhouette - sharp geometric style -->
+  <g fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round">
+
     <!-- Left ear (outer triangle) -->
-    <path d="M 60 50 L 95 60 L 88 95 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 60 50 L 95 60 L 88 95 Z"/>
 
     <!-- Right ear (outer triangle) -->
-    <path d="M 196 50 L 161 60 L 168 95 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 196 50 L 161 60 L 168 95 Z"/>
 
     <!-- Inner ear left -->
     <path d="M 78 65 L 90 70 L 85 88 Z" fill="#C8102E" opacity="0.7"/>
@@ -25,34 +27,39 @@
     <path d="M 178 65 L 166 70 L 171 88 Z" fill="#C8102E" opacity="0.7"/>
 
     <!-- Forehead / top of head -->
-    <path d="M 88 95 L 128 80 L 168 95 L 175 130 L 165 150 L 128 175 L 91 150 L 81 130 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 88 95 L 128 80 L 168 95 L 175 130 L 165 150 L 128 175 L 91 150 L 81 130 Z"/>
 
     <!-- Left cheek (angular jaw line) -->
-    <path d="M 81 130 L 91 150 L 95 180 L 115 195 L 128 175 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 81 130 L 91 150 L 95 180 L 115 195 L 128 175 Z"/>
 
     <!-- Right cheek (angular jaw line) -->
-    <path d="M 175 130 L 165 150 L 161 180 L 141 195 L 128 175 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 175 130 L 165 150 L 161 180 L 141 195 L 128 175 Z"/>
 
     <!-- Lower jaw / chin -->
-    <path d="M 115 195 L 128 200 L 141 195 L 138 215 L 128 220 L 118 215 Z" fill="#0E1117" stroke="#C8102E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M 115 195 L 128 200 L 141 195 L 138 215 L 128 220 L 118 215 Z"/>
 
-    <!-- LEFT EYE - glowing red, pulsing -->
-    <polygon class="wolf-eye wolf-eye-left" points="100,118 115,113 118,128 105,132" fill="url(#eyeGlow)"/>
-
-    <!-- RIGHT EYE - glowing red, pulsing with delay -->
-    <polygon class="wolf-eye wolf-eye-right" points="156,118 141,113 138,128 151,132" fill="url(#eyeGlow)"/>
-
-    <!-- Snout / nose -->
-    <path d="M 122 152 L 134 152 L 136 162 L 128 168 L 120 162 Z" fill="#0E1117" stroke="#C8102E" stroke-width="1.5"/>
-
-    <!-- Nose tip - red glow -->
-    <circle cx="128" cy="158" r="2.5" fill="#FF1F44"/>
-
-    <!-- Whisker / fang lines -->
-    <line x1="128" y1="172" x2="128" y2="180" stroke="#C8102E" stroke-width="1.5" opacity="0.7"/>
-    <line x1="124" y1="175" x2="122" y2="183" stroke="#C8102E" stroke-width="1" opacity="0.5"/>
-    <line x1="132" y1="175" x2="134" y2="183" stroke="#C8102E" stroke-width="1" opacity="0.5"/>
   </g>
+
+  <!-- Eyes - glowing red -->
+  <g>
+    <polygon points="100,118 115,113 118,128 105,132" fill="#FF1F44">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="156,118 141,113 138,128 151,132" fill="#FF1F44">
+      <animate attributeName="opacity" values="1;0.6;1" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+
+  <!-- Snout / nose -->
+  <path d="M 122 152 L 134 152 L 136 162 L 128 168 L 120 162 Z" fill="#0E1117" stroke="#C8102E" stroke-width="1.5"/>
+
+  <!-- Nose tip - red glow -->
+  <circle cx="128" cy="158" r="2.5" fill="#FF1F44"/>
+
+  <!-- Whisker / fang lines -->
+  <line x1="128" y1="172" x2="128" y2="180" stroke="#C8102E" stroke-width="1.5" opacity="0.7"/>
+  <line x1="124" y1="175" x2="122" y2="183" stroke="#C8102E" stroke-width="1" opacity="0.5"/>
+  <line x1="132" y1="175" x2="134" y2="183" stroke="#C8102E" stroke-width="1" opacity="0.5"/>
 
   <!-- Subtle iron cross accent below the wolf -->
   <g transform="translate(128, 240)" stroke="#C8102E" stroke-width="1.5" opacity="0.6">
