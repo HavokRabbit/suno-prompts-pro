@@ -536,6 +536,9 @@ with st.sidebar:
 
     if st.button("🎲 Random Artist"):
         st.session_state.random_artist = get_random_artist()
+        st.session_state.pop('selected_artist', None)
+        if "artist_input" in st.session_state:
+            del st.session_state["artist_input"]
         st.rerun()
 
     st.markdown("---")
@@ -605,6 +608,8 @@ with tab1:
         if st.button("🧹 Clear Artist Field"):
             st.session_state.pop('selected_artist', None)
             st.session_state.pop('random_artist', None)
+            if "artist_input" in st.session_state:
+                del st.session_state["artist_input"]
             st.rerun()
     
     with col2:
@@ -612,10 +617,12 @@ with tab1:
         popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean", "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass", "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts", "peso pluma", "karan aujla", "tyla", "sal da vinci"]
         for artist in popular:
             if st.button(artist.title(), key=f"pop_{artist}", use_container_width=True):
-                # Update widget state directly so the text_input re-renders with new value
-                st.session_state.artist_input = artist
+                # Stash the desired artist in a non-widget-bound key, then delete
+                # the widget-bound key so the text_input re-reads its `value=` on rerun.
                 st.session_state.selected_artist = artist
                 st.session_state.pop('random_artist', None)
+                if "artist_input" in st.session_state:
+                    del st.session_state["artist_input"]
                 st.rerun()
 
         st.markdown("---")
@@ -711,6 +718,9 @@ with tab3:
                     st.caption(f"{data['mood']} • {data['genre']}")
                     if st.button(f"Use {name.title()}", key=f"use_artist_{name}"):
                         st.session_state.selected_artist = name
+                        if "artist_input" in st.session_state:
+                            del st.session_state["artist_input"]
+                        st.session_state.jump_to_tab = 0  # Generate tab
                         st.rerun()
                     st.markdown("---")
     
