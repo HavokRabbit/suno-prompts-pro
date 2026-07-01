@@ -1,7 +1,6 @@
 import streamlit as st
 import random
 import base64
-import streamlit.components.v1 as components
 
 # ====================
 #   IRON VESPERS BRANDING
@@ -14,34 +13,6 @@ def _load_logo_b64():
         return None
 
 _LOGO_B64 = _load_logo_b64()
-
-# ====================
-#   TAB JUMP (By Genre buttons)
-# ====================
-# If a "By Genre" button set jump_to_tab, click the matching tab after the
-# tabs component renders. Streamlit has no native API for this, so we inject
-# a tiny JS snippet that finds the tab button by its label and clicks it.
-if "jump_to_tab" in st.session_state:
-    _jump_idx = st.session_state.pop("jump_to_tab")
-    _tab_labels = ["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"]
-    if 0 <= _jump_idx < len(_tab_labels):
-        _label = _tab_labels[_jump_idx]
-        # Escape single quotes in the label for the JS string
-        _label_js = _label.replace("'", "\\'")
-        components.html(
-            f"""
-            <script>
-            (function() {{
-                const target = "{_label_js}";
-                const tabs = window.parent.document.querySelectorAll('button[role="tab"]');
-                for (const t of tabs) {{
-                    if (t.innerText.trim() === target) {{ t.click(); break; }}
-                }}
-            }})();
-            </script>
-            """,
-            height=0,
-        )
 
 # ====================
 #   CALLBACKS (defined before any st.button(on_click=...) that uses them)
@@ -69,7 +40,14 @@ def cb_use_artist(name):
     """Artists tab 'Use {Name}' button → fill Generate tab's field, jump to Generate."""
     st.session_state.artist_input = name
     st.session_state.selected_artist = name
-    st.session_state.jump_to_tab = 0  # 0 = Generate tab
+    st.session_state.active_tab_label = "✨ Generate"
+
+def cb_select_genre(term):
+    """Generate tab 🎸 By Genre button → pre-fill Artists tab search, switch to Artists tab."""
+    # Use a non-widget-bound key (genre_filter) so we don't trip the widget-key write block.
+    # The Artists tab text_input reads from this via its `value=` argument.
+    st.session_state.genre_filter = term
+    st.session_state.active_tab_label = "📚 Artists"
 
 st.set_page_config(
     page_title="Iron Vespers — Suno Prompt Generator Pro",
@@ -587,7 +565,10 @@ else:
 # ====================
 #   TABS
 # ====================
-tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"])
+tab1, tab2, tab3, tab4 = st.tabs(
+    ["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"],
+    default=st.session_state.pop("active_tab_label", "✨ Generate"),
+)
 
 with tab1:
     st.markdown("### ⚔️ Generate Prompt")
@@ -674,11 +655,13 @@ with tab1:
             "Christian Metal": "christian metal",
         }
         for label, term in genres.items():
-            if st.button(label, key=f"gen_{label}", use_container_width=True):
-                # Pre-fill the Artists tab search box, then jump to Artists tab
-                st.session_state.artist_search_input = term
-                st.session_state.jump_to_tab = 2  # tab3 = Artists (0-indexed)
-                st.rerun()
+            st.button(
+                label,
+                key=f"gen_{label}",
+                use_container_width=True,
+                on_click=cb_select_genre,
+                args=(term,),
+            )
 
 # Rest of the tabs (tab2, tab3, tab4) remain the same as in your last working version
 # (random generator, artist database with search, settings)
@@ -709,13 +692,15 @@ with tab2:
 with tab3:
     st.title("Artist Database")
 
-    # If we got here from a "By Genre" button, show a banner with the active filter
-    jump_from = st.session_state.pop('jump_to_tab', None)
-    if jump_from == 2:
-        st.success(f"🎸 Genre filter active: showing matches for the genre you picked. Clear the search box to see all artists.")
+    # Read pending filter from session_state (set by cb_select_genre), then clear it
+    # so the user's typing isn't overwritten on next rerun.
+    pending = st.session_state.pop('genre_filter', '')
+    if pending:
+        st.success(f"🎸 Genre filter active: showing matches for '{pending}'. Clear the search box to see all artists.")
 
     search = st.text_input(
         "🔍 Search artists",
+        value=pending,
         placeholder="e.g., chris tomlin, lauren daigle, elevation, mitski",
         key="artist_search_input"
     )
