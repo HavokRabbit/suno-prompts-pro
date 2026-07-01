@@ -1341,9 +1341,9 @@ elif "main_tabs" not in st.session_state:
 
 # === Google Analytics 4 (visitor counter) ===
 # Reads the measurement ID from Streamlit secrets: GA4_MEASUREMENT_ID
-# Set in Streamlit Cloud dashboard -> App -> Secrets.
-# Format: G-XXXXXXXXXX
-_ga4_id = st.secrets.get("GA4_MEASUREMENT_ID", None) or ""
+# If unset, falls back to the default ID for the HavokRabbit property.
+# Override in Streamlit Cloud: App -> Settings -> Secrets.
+_ga4_id = st.secrets.get("GA4_MEASUREMENT_ID", None) or "G-FPS8T1J4K0"
 if _ga4_id:
     import streamlit.components.v1 as _components
     _components.html(
