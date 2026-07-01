@@ -604,11 +604,24 @@ with tab1:
         
         col_mood, col_theme, col_tempo = st.columns(3)
         with col_mood:
-            custom_mood = st.text_input("Mood", placeholder="e.g., melancholic")
+            custom_mood = st.selectbox(
+                "Mood",
+                ["", "Melancholic", "Energetic", "Dreamy", "Dark", "Uplifting",
+                 "Nostalgic", "Intense", "Romantic", "Defiant", "Sacred",
+                 "Funereal", "Aggressive", "Triumphant", "Bittersweet", "Hopeful"],
+            )
         with col_theme:
-            custom_theme = st.text_input("Theme", placeholder="e.g., heartbreak")
+            custom_theme = st.selectbox(
+                "Theme",
+                ["", "Heartbreak", "Loss", "Love", "Celebration", "Night drive",
+                 "Summer", "Rain", "Space", "Time", "Faith", "Redemption",
+                 "War", "Nature", "Death", "Rebirth", "Longing", "Struggle"],
+            )
         with col_tempo:
-            custom_tempo = st.selectbox("Tempo", ["", "Slow", "Medium", "Fast", "Upbeat", "Ballad"])
+            custom_tempo = st.selectbox(
+                "Tempo",
+                ["", "Slow", "Medium", "Fast", "Upbeat", "Ballad"],
+            )
         
         if st.button("🎵 Generate Prompt", type="primary", use_container_width=True):
             if singer.strip():
