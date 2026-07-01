@@ -1,6 +1,7 @@
 import streamlit as st
 import random
 import base64
+import streamlit.components.v1 as components
 
 # ====================
 #   IRON VESPERS BRANDING
@@ -13,6 +14,34 @@ def _load_logo_b64():
         return None
 
 _LOGO_B64 = _load_logo_b64()
+
+# ====================
+#   TAB JUMP (By Genre buttons)
+# ====================
+# If a "By Genre" button set jump_to_tab, click the matching tab after the
+# tabs component renders. Streamlit has no native API for this, so we inject
+# a tiny JS snippet that finds the tab button by its label and clicks it.
+if "jump_to_tab" in st.session_state:
+    _jump_idx = st.session_state.pop("jump_to_tab")
+    _tab_labels = ["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"]
+    if 0 <= _jump_idx < len(_tab_labels):
+        _label = _tab_labels[_jump_idx]
+        # Escape single quotes in the label for the JS string
+        _label_js = _label.replace("'", "\\'")
+        components.html(
+            f"""
+            <script>
+            (function() {{
+                const target = "{_label_js}";
+                const tabs = window.parent.document.querySelectorAll('button[role="tab"]');
+                for (const t of tabs) {{
+                    if (t.innerText.trim() === target) {{ t.click(); break; }}
+                }}
+            }})();
+            </script>
+            """,
+            height=0,
+        )
 
 st.set_page_config(
     page_title="Iron Vespers — Suno Prompt Generator Pro",
@@ -583,15 +612,46 @@ with tab1:
         popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean", "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass", "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts", "peso pluma", "karan aujla", "tyla", "sal da vinci"]
         for artist in popular:
             if st.button(artist.title(), key=f"pop_{artist}", use_container_width=True):
+                # Update widget state directly so the text_input re-renders with new value
+                st.session_state.artist_input = artist
                 st.session_state.selected_artist = artist
+                st.session_state.pop('random_artist', None)
                 st.rerun()
-        
+
         st.markdown("---")
         st.subheader("🎸 By Genre")
-        genres = ["Pop", "Rock", "Hip-Hop", "R&B", "Electronic", "Metal", "Doom", "Indie", "Bedroom", "Country", "Latin", "Corrido", "Reggaeton", "K-Pop", "Bollywood", "Punjabi", "Indian Indie", "Italian", "Afrobeats", "Hyperpop", "Modern Heavy", "CCM", "Christian Metal"]
-        for g in genres:
-            if st.button(g, key=f"gen_{g}", use_container_width=True):
-                st.info(f"Search for {g} artists in the Artists tab!")
+        # Map display label -> search term used in the Artists tab
+        genres = {
+            "Pop": "pop",
+            "Rock": "rock",
+            "Hip-Hop": "hip",
+            "R&B": "r&b",
+            "Electronic": "electronic",
+            "Metal": "metal",
+            "Doom": "doom",
+            "Indie": "indie",
+            "Bedroom": "bedroom",
+            "Country": "country",
+            "Latin": "latin",
+            "Corrido": "corrido",
+            "Reggaeton": "reggaeton",
+            "K-Pop": "kpop",
+            "Bollywood": "bollywood",
+            "Punjabi": "punjabi",
+            "Indian Indie": "indian",
+            "Italian": "italian",
+            "Afrobeats": "afrobeats",
+            "Hyperpop": "hyperpop",
+            "Modern Heavy": "modern",
+            "CCM": "worship",
+            "Christian Metal": "christian metal",
+        }
+        for label, term in genres.items():
+            if st.button(label, key=f"gen_{label}", use_container_width=True):
+                # Pre-fill the Artists tab search box, then jump to Artists tab
+                st.session_state.artist_search_input = term
+                st.session_state.jump_to_tab = 2  # tab3 = Artists (0-indexed)
+                st.rerun()
 
 # Rest of the tabs (tab2, tab3, tab4) remain the same as in your last working version
 # (random generator, artist database with search, settings)
@@ -621,7 +681,12 @@ with tab2:
 
 with tab3:
     st.title("Artist Database")
-    
+
+    # If we got here from a "By Genre" button, show a banner with the active filter
+    jump_from = st.session_state.pop('jump_to_tab', None)
+    if jump_from == 2:
+        st.success(f"🎸 Genre filter active: showing matches for the genre you picked. Clear the search box to see all artists.")
+
     search = st.text_input(
         "🔍 Search artists",
         placeholder="e.g., chris tomlin, lauren daigle, elevation, mitski",
