@@ -534,12 +534,15 @@ with st.sidebar:
     st.markdown(f"**Genres:** {len(DEFAULT_TEMPLATES)}")
     st.markdown("---")
 
-    if st.button("🎲 Random Artist"):
-        st.session_state.random_artist = get_random_artist()
+    def _random_artist():
+        new = get_random_artist()
+        # Callback runs before rerun — widget-bound writes are allowed here.
+        st.session_state.artist_input = new
+        st.session_state.random_artist = new
         st.session_state.pop('selected_artist', None)
-        if "artist_input" in st.session_state:
-            del st.session_state["artist_input"]
-        st.rerun()
+
+    if st.button("🎲 Random Artist", on_click=_random_artist):
+        pass
 
     st.markdown("---")
     st.markdown("**Quick Links**")
@@ -605,25 +608,32 @@ with tab1:
             else:
                 st.warning("Enter an artist name!")
         
-        if st.button("🧹 Clear Artist Field"):
-            st.session_state.pop('selected_artist', None)
-            st.session_state.pop('random_artist', None)
-            if "artist_input" in st.session_state:
-                del st.session_state["artist_input"]
-            st.rerun()
+        if st.button("🧹 Clear Artist Field", on_click=_clear_artist):
+            pass
+
+    def _clear_artist():
+        st.session_state.pop('selected_artist', None)
+        st.session_state.pop('random_artist', None)
+        st.session_state.artist_input = ""
     
     with col2:
         st.subheader("⭐ Popular")
         popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean", "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass", "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts", "peso pluma", "karan aujla", "tyla", "sal da vinci"]
+
+        def _select_artist(name):
+            # Callback runs BEFORE rerun. Setting the widget-bound key here is allowed.
+            st.session_state.artist_input = name
+            st.session_state.selected_artist = name
+            st.session_state.pop('random_artist', None)
+
         for artist in popular:
-            if st.button(artist.title(), key=f"pop_{artist}", use_container_width=True):
-                # Stash the desired artist in a non-widget-bound key, then delete
-                # the widget-bound key so the text_input re-reads its `value=` on rerun.
-                st.session_state.selected_artist = artist
-                st.session_state.pop('random_artist', None)
-                if "artist_input" in st.session_state:
-                    del st.session_state["artist_input"]
-                st.rerun()
+            st.button(
+                artist.title(),
+                key=f"pop_{artist}",
+                use_container_width=True,
+                on_click=_select_artist,
+                args=(artist,),
+            )
 
         st.markdown("---")
         st.subheader("🎸 By Genre")
@@ -716,13 +726,19 @@ with tab3:
                 for name, data in matches:
                     st.markdown(f"**{name.title()}**")
                     st.caption(f"{data['mood']} • {data['genre']}")
-                    if st.button(f"Use {name.title()}", key=f"use_artist_{name}"):
-                        st.session_state.selected_artist = name
-                        if "artist_input" in st.session_state:
-                            del st.session_state["artist_input"]
-                        st.session_state.jump_to_tab = 0  # Generate tab
-                        st.rerun()
+                    st.button(
+                        f"Use {name.title()}",
+                        key=f"use_artist_{name}",
+                        on_click=_use_artist,
+                        args=(name,),
+                    )
                     st.markdown("---")
+
+    def _use_artist(name):
+        # Callback runs before rerun — widget-bound writes allowed here.
+        st.session_state.artist_input = name
+        st.session_state.selected_artist = name
+        st.session_state.jump_to_tab = 0  # Generate tab
     
     if search_term:
         if not found_any:
