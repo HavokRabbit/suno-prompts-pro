@@ -563,11 +563,22 @@ else:
     st.title("🐺 Iron Vespers — Suno Prompt Pro")
 
 # ====================
-#   TABS
+#   TABS (key= enables programmatic tab switching via st.session_state)
 # ====================
+# If a callback set active_tab_label this run, seed the tabs widget key with it.
+# This forces the tabs to switch on the rerun. The widget reads its value from
+# st.session_state["main_tabs"] on every render.
+_pending = st.session_state.pop("active_tab_label", None)
+if _pending is not None:
+    st.session_state.main_tabs = _pending
+elif "main_tabs" not in st.session_state:
+    st.session_state.main_tabs = "✨ Generate"
+
 tab1, tab2, tab3, tab4 = st.tabs(
     ["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"],
-    default=st.session_state.pop("active_tab_label", "✨ Generate"),
+    key="main_tabs",
+    on_change="rerun",
+    default=st.session_state.main_tabs,
 )
 
 with tab1:
