@@ -514,12 +514,7 @@ with st.sidebar:
     st.markdown("[Suno AI](https://suno.com)")
     st.markdown("[Iron Vespers](https://github.com/HavokRabbit/Suno-prompts-pro)")
 
-# ====================
-#   TABS
-# ====================
-tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"])
-
-# Main hero header — Iron Vespers branded
+# Main hero header — Iron Vespers branded (rendered ABOVE the tabs so tab bodies are clean)
 if _LOGO_B64:
     st.markdown(f"""
     <div class="iv-hero">
@@ -532,6 +527,11 @@ if _LOGO_B64:
     """, unsafe_allow_html=True)
 else:
     st.title("🐺 Iron Vespers — Suno Prompt Pro")
+
+# ====================
+#   TABS
+# ====================
+tab1, tab2, tab3, tab4 = st.tabs(["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"])
 
 with tab1:
     st.markdown("### ⚔️ Generate Prompt")
