@@ -43,6 +43,34 @@ if "jump_to_tab" in st.session_state:
             height=0,
         )
 
+# ====================
+#   CALLBACKS (defined before any st.button(on_click=...) that uses them)
+# ====================
+def cb_random_artist():
+    """Sidebar 🎲 Random Artist → fill Generate tab's artist field."""
+    new = get_random_artist()
+    st.session_state.artist_input = new
+    st.session_state.random_artist = new
+    st.session_state.pop('selected_artist', None)
+
+def cb_clear_artist():
+    """Generate tab 🧹 Clear Artist Field → empty the artist field."""
+    st.session_state.artist_input = ""
+    st.session_state.pop('selected_artist', None)
+    st.session_state.pop('random_artist', None)
+
+def cb_select_artist(name):
+    """Generate tab ⭐ Popular button → fill artist field."""
+    st.session_state.artist_input = name
+    st.session_state.selected_artist = name
+    st.session_state.pop('random_artist', None)
+
+def cb_use_artist(name):
+    """Artists tab 'Use {Name}' button → fill Generate tab's field, jump to Generate."""
+    st.session_state.artist_input = name
+    st.session_state.selected_artist = name
+    st.session_state.jump_to_tab = 0  # 0 = Generate tab
+
 st.set_page_config(
     page_title="Iron Vespers — Suno Prompt Generator Pro",
     page_icon="static/favicon.svg" if _LOGO_B64 else "🐺",
@@ -534,14 +562,7 @@ with st.sidebar:
     st.markdown(f"**Genres:** {len(DEFAULT_TEMPLATES)}")
     st.markdown("---")
 
-    def _random_artist():
-        new = get_random_artist()
-        # Callback runs before rerun — widget-bound writes are allowed here.
-        st.session_state.artist_input = new
-        st.session_state.random_artist = new
-        st.session_state.pop('selected_artist', None)
-
-    if st.button("🎲 Random Artist", on_click=_random_artist):
+    if st.button("🎲 Random Artist", on_click=cb_random_artist):
         pass
 
     st.markdown("---")
@@ -608,30 +629,19 @@ with tab1:
             else:
                 st.warning("Enter an artist name!")
         
-        if st.button("🧹 Clear Artist Field", on_click=_clear_artist):
+        if st.button("🧹 Clear Artist Field", on_click=cb_clear_artist):
             pass
 
-    def _clear_artist():
-        st.session_state.pop('selected_artist', None)
-        st.session_state.pop('random_artist', None)
-        st.session_state.artist_input = ""
-    
     with col2:
         st.subheader("⭐ Popular")
         popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean", "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass", "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts", "peso pluma", "karan aujla", "tyla", "sal da vinci"]
-
-        def _select_artist(name):
-            # Callback runs BEFORE rerun. Setting the widget-bound key here is allowed.
-            st.session_state.artist_input = name
-            st.session_state.selected_artist = name
-            st.session_state.pop('random_artist', None)
 
         for artist in popular:
             st.button(
                 artist.title(),
                 key=f"pop_{artist}",
                 use_container_width=True,
-                on_click=_select_artist,
+                on_click=cb_select_artist,
                 args=(artist,),
             )
 
@@ -729,17 +739,11 @@ with tab3:
                     st.button(
                         f"Use {name.title()}",
                         key=f"use_artist_{name}",
-                        on_click=_use_artist,
+                        on_click=cb_use_artist,
                         args=(name,),
                     )
                     st.markdown("---")
 
-    def _use_artist(name):
-        # Callback runs before rerun — widget-bound writes allowed here.
-        st.session_state.artist_input = name
-        st.session_state.selected_artist = name
-        st.session_state.jump_to_tab = 0  # Generate tab
-    
     if search_term:
         if not found_any:
             st.warning(f"No matches for '{search}' — try partial name or different spelling")
