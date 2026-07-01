@@ -1557,7 +1557,7 @@ with tab4:
     st.subheader("About")
     st.markdown(f"""
     **Suno Prompt Generator Pro** helps you create detailed prompts for Suno AI music generation.
-
+    
     **Features:**
     - {len(SINGER_DB)} curated artists
     - Genre fallback for unknown artists
@@ -1565,10 +1565,6 @@ with tab4:
     - Random generator
     - Persistent selection from Artists tab
     - Export as .txt
-
-    **Analytics:** Visitor count is tracked via Google Analytics 4
-    (Measurement ID: `G-FPS8T1J4K0`). View live + historical stats at
-    [analytics.google.com](https://analytics.google.com/).
     """)
     
     st.subheader("How to Use")
