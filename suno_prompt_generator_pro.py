@@ -480,7 +480,9 @@ def generate_prompt(singer, custom_mood="", custom_theme="", custom_tempo=""):
     if data:
         mood = custom_mood or data["mood"]
         tempo = f"Tempo: {custom_tempo}" if custom_tempo else ""
-        return f"""[{singer.title()} Style]
+        # Note: Suno flags artist names. We reference the artist only as "[Style Profile]"
+        # and describe the sound via genre / style / mood / vocal_style.
+        return f"""[Style Profile]
 
 Genre: {data['genre']}
 Style: {data['style']}
@@ -492,13 +494,13 @@ Production: {data['production']}
 {f'Theme: {custom_theme}' if custom_theme else ''}
 
 ---
-[Short Prompt]: {data['genre'].split(',')[0]} song in the style of {singer.title()}, {mood.split(',')[0].lower()} mood, {data['vocal_style'].split(',')[0].lower()} vocals"""
+[Short Prompt]: {data['genre'].split(',')[0]} song, {data['style'].split(',')[0].lower()}, {mood.split(',')[0].lower()} mood, {data['vocal_style'].split(',')[0].lower()} vocals"""
     else:
         g = detect_genre(singer)
         t = DEFAULT_TEMPLATES.get(g, DEFAULT_TEMPLATES["pop"])
         mood = custom_mood or t["mood"]
         tempo = f"Tempo: {custom_tempo}" if custom_tempo else ""
-        return f"""[{singer.title()} Style - {t['genre']}]
+        return f"""[Style Profile - {t['genre']}]
 
 Genre: {t['genre']}
 Style: {t['style']}
@@ -510,9 +512,9 @@ Production: {t['production']}
 {f'Theme: {custom_theme}' if custom_theme else ''}
 
 ---
-[Short Prompt]: {t['genre']} song in the style of {singer.title()}, {mood.split(',')[0].lower()} mood
+[Short Prompt]: {t['genre']} song, {t['style'].split(',')[0].lower()}, {mood.split(',')[0].lower()} mood, {t['vocal_style'].split(',')[0].lower()} vocals
 
-Note: Singer not in database. Using {t['genre']} defaults. Add them to SINGER_DB for better results."""
+Note: Artist not in database. Using {t['genre']} defaults. Add them to SINGER_DB for better results."""
 
 def get_random_artist():
     return random.choice(list(SINGER_DB.keys()))
