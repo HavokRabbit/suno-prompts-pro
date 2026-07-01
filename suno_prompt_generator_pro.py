@@ -725,7 +725,13 @@ with tab3:
     
     found_any = False
     for genre, artists in sorted(genres_dict.items()):
-        matches = [(n, d) for n, d in artists if not search_term or search_term in n]
+        # Match artist name OR genre field — so "doom" surfaces Candlemass/Saint Vitus/etc.
+        matches = [
+            (n, d) for n, d in artists
+            if not search_term
+            or search_term in n.lower()
+            or search_term in d['genre'].lower()
+        ]
         if matches:
             found_any = True
             with st.expander(f"{genre} ({len(matches)} found)"):
