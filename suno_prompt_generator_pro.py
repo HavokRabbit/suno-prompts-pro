@@ -1320,7 +1320,7 @@ if _LOGO_B64:
         <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
         <div class="iv-hero-text">
             <h1>Iron Vespers</h1>
-            <div class="iv-tag">Suno Prompt Generator Pro · 136 artists · 21 genres</div>
+            <div class="iv-tag">Suno Prompt Generator Pro · {len(SINGER_DB)} artists · {len(DEFAULT_TEMPLATES)} genre templates</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
