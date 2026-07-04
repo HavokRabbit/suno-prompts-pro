@@ -1,0 +1,194 @@
+{
+  "pop": {
+    "genre": "Pop",
+    "mood": "Upbeat, catchy",
+    "style": "Catchy melodies, polished",
+    "vocal_style": "Clear, melodic",
+    "instruments": "Synths, drums",
+    "production": "Polished, modern"
+  },
+  "rock": {
+    "genre": "Rock",
+    "mood": "Passionate, energetic",
+    "style": "Guitar-driven, authentic",
+    "vocal_style": "Raw, powerful",
+    "instruments": "Electric guitar, drums",
+    "production": "Live feel, powerful"
+  },
+  "hip-hop": {
+    "genre": "Hip-Hop",
+    "mood": "Confident, rhythmic",
+    "style": "Beat-driven, lyrical",
+    "vocal_style": "Rhythmic, flow",
+    "instruments": "Beats, bass",
+    "production": "Beat-heavy, modern"
+  },
+  "rnb": {
+    "genre": "R&B",
+    "mood": "Smooth, soulful",
+    "style": "Romantic, smooth",
+    "vocal_style": "Soulful, melismatic",
+    "instruments": "Smooth synths, piano",
+    "production": "Warm, atmospheric"
+  },
+  "electronic": {
+    "genre": "Electronic",
+    "mood": "Energetic, futuristic",
+    "style": "Synth-driven, danceable",
+    "vocal_style": "Processed, minimal",
+    "instruments": "Synthesizers, drum machines",
+    "production": "Clean, electronic"
+  },
+  "metal": {
+    "genre": "Metal",
+    "mood": "Intense, dark",
+    "style": "Heavy, aggressive",
+    "vocal_style": "Aggressive, powerful",
+    "instruments": "Heavy guitar, drums",
+    "production": "Heavy, raw"
+  },
+  "doom": {
+    "genre": "Doom Metal",
+    "mood": "Funereal, crushing, weighty",
+    "style": "Slow, monolithic riffs, never anthemic",
+    "vocal_style": "Low baritone or operatic, raw and heavy",
+    "instruments": "Massive downtuned guitar, slow drums, organ drone",
+    "production": "Cathedral reverb, monolithic low end, chiaroscuro mix"
+  },
+  "indie": {
+    "genre": "Indie",
+    "mood": "Introspective, cool",
+    "style": "Alternative, authentic",
+    "vocal_style": "Conversational, unique",
+    "instruments": "Guitar, unconventional",
+    "production": "Raw, authentic"
+  },
+  "jazz": {
+    "genre": "Jazz",
+    "mood": "Cool, sophisticated",
+    "style": "Improvisational, smooth",
+    "vocal_style": "Smooth, velvety",
+    "instruments": "Piano, sax, trumpet",
+    "production": "Live, spacious"
+  },
+  "country": {
+    "genre": "Country",
+    "mood": "Warm, nostalgic",
+    "style": "Storytelling, acoustic",
+    "vocal_style": "Twang, clear",
+    "instruments": "Acoustic guitar, fiddle",
+    "production": "Warm, organic"
+  },
+  "folk": {
+    "genre": "Folk",
+    "mood": "Earthy, warm",
+    "style": "Acoustic, traditional",
+    "vocal_style": "Warm, storytelling",
+    "instruments": "Acoustic guitar, banjo",
+    "production": "Organic, warm"
+  },
+  "latin": {
+    "genre": "Latin, Reggaeton",
+    "mood": "Hot, confident, rhythmic",
+    "style": "Latin urban rhythms, dembow beats, bilingual hooks",
+    "vocal_style": "Charismatic, melodic reggaeton, occasional rap verses",
+    "instruments": "Dembow riddims, reggaeton synths, Latin percussion, accordion",
+    "production": "Tropical polish, modern Latin urbano"
+  },
+  "corrido": {
+    "genre": "Mexican Regional, Corridos Tumbados",
+    "mood": "Stoic, narrative, swagger",
+    "style": "Modern corrido with trap-influenced production, storytelling verses",
+    "vocal_style": "Clear conversational baritone, occasional autotune, narrative",
+    "instruments": "Tubas, accordion, requinto, trap 808s, cumbia percussion",
+    "production": "Tubazo meets trap, regional Mexican global polish"
+  },
+  "bollywood": {
+    "genre": "Bollywood, Indian Film Music",
+    "mood": "Romantic, dramatic, emotional",
+    "style": "Indian film song structure, lush orchestration, expressive melodies",
+    "vocal_style": "Soaring Hindi/Urdu playback singing, melismatic, emotional",
+    "instruments": "Tabla, sitar, dholak, harmonium, modern pop production, strings",
+    "production": "Cinematic Indian film, layered orchestration, polished modern pop"
+  },
+  "punjabi": {
+    "genre": "Punjabi Pop, Bhangra-Fusion",
+    "mood": "Energetic, celebratory, romantic",
+    "style": "Bhangra rhythms with modern hip-hop and pop production",
+    "vocal_style": "Punjabi-language melodic singing, English hooks, charismatic flows",
+    "instruments": "Dhol, bhangra percussion, tumbi, modern 808s, synth bass",
+    "production": "Global Punjabi pop, festival-ready, polished crossover"
+  },
+  "indian-indie": {
+    "genre": "Indian Indie, Desi Alternative",
+    "mood": "Introspective, romantic, wistful",
+    "style": "English-Hindi indie folk-pop, acoustic intimacy with modern production",
+    "vocal_style": "Soft, breathy, conversational, indie singer-songwriter",
+    "instruments": "Acoustic guitar, soft synths, light tabla, lo-fi textures",
+    "production": "Lo-fi to polished indie, intimate bedroom-pop feel"
+  },
+  "italian": {
+    "genre": "Italian Pop, Sanremo Style",
+    "mood": "Romantic, dramatic, melodic",
+    "style": "Italian melodic pop, often Eurovision-ready, emotional storytelling",
+    "vocal_style": "Expressive Italian tenor/baritone, passionate, clear diction",
+    "instruments": "Strings, piano, modern pop band, occasional orchestral",
+    "production": "Polished European pop, dramatic builds, classic Italian melody"
+  },
+  "kpop": {
+    "genre": "K-Pop",
+    "mood": "High-energy, polished, varied",
+    "style": "Genre-hopping idol pop, tight choreography, maximalist production",
+    "vocal_style": "Group harmonies + lead belting, rapping verses, K-Pop idol vocals",
+    "instruments": "EDM drops, synths, brass, hip-hop drums, layered vocals",
+    "production": "Slick, high-budget, multi-genre hybrid, polished to perfection"
+  },
+  "afrobeats": {
+    "genre": "Afrobeats, Afropop, Amapiano",
+    "mood": "Warm, rhythmic, joyful",
+    "style": "West African rhythms with global pop hooks, danceable log drums",
+    "vocal_style": "Pidgin English / Yoruba / melodic, warm, rhythmic, charismatic",
+    "instruments": "Log drums, talking drum, congas, 808s, afrobeats synths",
+    "production": "Global afrobeats polish, amapiano log-drum bounce, summer-ready"
+  },
+  "bedroom": {
+    "genre": "Bedroom Pop, Indie Slacker",
+    "mood": "Lo-fi, intimate, nostalgic",
+    "style": "Lo-fi home-recorded indie, tape hiss, casual intimacy",
+    "vocal_style": "Soft, breathy, conversational, sometimes shy, often doubled",
+    "instruments": "Electric guitar with chorus, drum machine, lo-fi synths, jangly keys",
+    "production": "4-track cassette feel, warm saturation, raw bedroom intimacy"
+  },
+  "modern-heavy": {
+    "genre": "Modern Heavy, Metalcore",
+    "mood": "Heavy, emotional, dynamic",
+    "style": "Modern metalcore / post-hardcore with cinematic dynamic shifts",
+    "vocal_style": "Harsh screams + soaring cleans, dynamic contrast, emotional range",
+    "instruments": "Down-tuned guitar, electronic elements, cinematic synths, dynamic drums",
+    "production": "Polished modern heavy, room-shaking low end, huge dynamics"
+  },
+  "ccm": {
+    "genre": "CCM, Contemporary Christian Music",
+    "mood": "Uplifting, worshipful, hopeful",
+    "style": "Anthemic worship pop with testimonial lyrics, modern church production",
+    "vocal_style": "Clear, earnest, soaring worship lead; group harmonies on choruses",
+    "instruments": "Piano, acoustic guitar, electric swells, synths, drums, optional strings",
+    "production": "Polished modern worship, wide pads, radio-ready CCM"
+  },
+  "christian": {
+    "genre": "Christian Metal, Unblack/White Metal",
+    "mood": "Fierce, defiant, faith-driven",
+    "style": "Heavy metal / unblack metal with Christian lyrical themes, aggressive riffing",
+    "vocal_style": "Harsh screams or powerful clean belts, fervent delivery",
+    "instruments": "Down-tuned guitar, double-kick drums, bass, atmospheric keys",
+    "production": "Heavy, dense, metallic with dynamic worship builds"
+  },
+  "hyperpop": {
+    "genre": "Hyperpop, Digicore",
+    "mood": "Manic, glittery, maximalist",
+    "style": "Pitch-shifted vocals, blown-out synths, genre-collage, internet-native pop",
+    "vocal_style": "Auto-tuned, pitched up/down, glitchy, chiptune-influenced",
+    "instruments": "Buzzsaw synths, trap 808s, chiptune leads, distorted bass, MIDI guitars",
+    "production": "Maximalist, clipped, saturated, hypercompressed internet pop"
+  }
+}

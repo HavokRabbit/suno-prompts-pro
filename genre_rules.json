@@ -1,0 +1,237 @@
+[
+  {
+    "any": [
+      "metalcore",
+      "modern heavy",
+      "post-hardcore"
+    ],
+    "genre": "modern-heavy"
+  },
+  {
+    "any": [
+      "doom",
+      "sludge",
+      "funeral",
+      "drone",
+      "stoner doom"
+    ],
+    "genre": "doom"
+  },
+  {
+    "any": [
+      "christian metal",
+      "white metal",
+      "unblack metal",
+      "unblack"
+    ],
+    "genre": "christian"
+  },
+  {
+    "any": [
+      "metal",
+      "thrash",
+      "prog"
+    ],
+    "none": [
+      "metalcore"
+    ],
+    "genre": "metal"
+  },
+  {
+    "any": [
+      "rock",
+      "punk",
+      "grunge",
+      "alt"
+    ],
+    "none": [
+      "alté",
+      "alte"
+    ],
+    "genre": "rock"
+  },
+  {
+    "any": [
+      "electro",
+      "techno",
+      "house",
+      "edm"
+    ],
+    "genre": "electronic"
+  },
+  {
+    "any": [
+      "ccm",
+      "worship",
+      "gospel",
+      "praise",
+      "hymn",
+      "hymnal"
+    ],
+    "genre": "ccm"
+  },
+  {
+    "any": [
+      "christian"
+    ],
+    "none": [
+      "metal"
+    ],
+    "genre": "ccm"
+  },
+  {
+    "any": [
+      "rap",
+      "hip",
+      "trap"
+    ],
+    "none": [
+      "kpop",
+      "k-pop",
+      "mexican",
+      "from mexico",
+      "corrido",
+      "tumbado",
+      "tubazo"
+    ],
+    "genre": "hip-hop"
+  },
+  {
+    "any": [
+      "r&b",
+      "rnb",
+      "soul"
+    ],
+    "genre": "rnb"
+  },
+  {
+    "any": [
+      "latin",
+      "reggaeton",
+      "urbano",
+      "cumbia",
+      "salsa",
+      "bachata"
+    ],
+    "genre": "latin"
+  },
+  {
+    "any": [
+      "corrido",
+      "tumbado",
+      "tubazo",
+      "regional mexican",
+      "belico",
+      "bélico"
+    ],
+    "genre": "corrido"
+  },
+  {
+    "any": [
+      "mexican",
+      "from mexico"
+    ],
+    "none": [
+      "reggaeton",
+      "latin"
+    ],
+    "genre": "corrido"
+  },
+  {
+    "any": [
+      "punjabi",
+      "punjab",
+      "bhangra",
+      "bhangra-fusion"
+    ],
+    "genre": "punjabi"
+  },
+  {
+    "any": [
+      "bollywood",
+      "hindi",
+      "indian film",
+      "playback"
+    ],
+    "genre": "bollywood"
+  },
+  {
+    "any": [
+      "indian indie",
+      "desi alt",
+      "anuv",
+      "prateek"
+    ],
+    "genre": "indian-indie"
+  },
+  {
+    "any": [
+      "kpop",
+      "k-pop"
+    ],
+    "genre": "kpop"
+  },
+  {
+    "any": [
+      "afrobeats",
+      "afropop",
+      "amapiano",
+      "afro-fusion",
+      "alté",
+      "alte"
+    ],
+    "genre": "afrobeats"
+  },
+  {
+    "any": [
+      "bedroom",
+      "slacker",
+      "lo-fi indie",
+      "lo fi indie"
+    ],
+    "genre": "bedroom"
+  },
+  {
+    "any": [
+      "italian",
+      "sanremo",
+      "italo"
+    ],
+    "genre": "italian"
+  },
+  {
+    "any": [
+      "hyperpop",
+      "digicore",
+      "100 gecs"
+    ],
+    "genre": "hyperpop"
+  },
+  {
+    "any": [
+      "folk",
+      "bluegrass"
+    ],
+    "genre": "folk"
+  },
+  {
+    "any": [
+      "indie"
+    ],
+    "genre": "indie"
+  },
+  {
+    "any": [
+      "jazz"
+    ],
+    "genre": "jazz"
+  },
+  {
+    "any": [
+      "country",
+      "americana",
+      "outlaw"
+    ],
+    "genre": "country"
+  }
+]

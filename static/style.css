@@ -1,0 +1,172 @@
+/* Brand color variables */
+:root {
+    --iv-red: #C8102E;
+    --iv-red-hot: #FF1F44;
+    --iv-red-soft: #FF7A8A;
+    --iv-purple: #9D00FF;
+    --iv-bg: #0E1117;
+    --iv-bg-card: #1a0a14;
+    --iv-bg-elev: #1E1E1E;
+    --iv-text: #FAFAFA;
+    --iv-text-dim: #B0B0B0;
+    --iv-border: rgba(200, 16, 46, 0.25);
+}
+
+/* Page background — subtle gothic gradient */
+.stApp {
+    background: linear-gradient(180deg, #0E1117 0%, #1a0a14 100%) !important;
+}
+
+/* Headers — Iron Vespers blood red */
+h1, h2, h3, h4 {
+    color: var(--iv-text) !important;
+    font-family: 'Georgia', 'Times New Roman', serif !important;
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900 !important;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--iv-red);
+    padding-bottom: 0.4em;
+}
+
+/* Sidebar — iron-forged */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a0a14 100%) !important;
+    border-right: 1px solid var(--iv-border);
+}
+
+section[data-testid="stSidebar"] h1 {
+    font-size: 1.6em !important;
+    text-transform: none;
+    border-bottom: none;
+}
+
+/* Primary buttons — blood red */
+.stButton > button[kind="primary"],
+.stButton > button {
+    background: linear-gradient(135deg, #C8102E 0%, #9D00FF 100%) !important;
+    color: #FAFAFA !important;
+    border: 1px solid var(--iv-red) !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #FF1F44 0%, #C8102E 100%) !important;
+    border-color: var(--iv-red-hot) !important;
+    box-shadow: 0 0 18px rgba(200, 16, 46, 0.5) !important;
+    transform: translateY(-1px);
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background: transparent;
+    border-bottom: 1px solid var(--iv-border);
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: var(--iv-bg-elev) !important;
+    color: var(--iv-text-dim) !important;
+    border: 1px solid var(--iv-border) !important;
+    border-radius: 4px 4px 0 0 !important;
+    padding: 8px 18px !important;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(180deg, #C8102E 0%, #1a0a14 100%) !important;
+    color: #FAFAFA !important;
+    border-color: var(--iv-red) !important;
+}
+
+/* Text inputs and selectboxes — dark with red accent */
+.stTextInput input, .stTextArea textarea, .stSelectbox div[data-baseweb="select"] {
+    background: var(--iv-bg-elev) !important;
+    color: var(--iv-text) !important;
+    border: 1px solid var(--iv-border) !important;
+    caret-color: var(--iv-red) !important;
+}
+
+.stTextInput input:focus, .stTextArea textarea:focus, .stSelectbox div[data-baseweb="select"]:focus {
+    border-color: var(--iv-red-hot) !important;
+    box-shadow: 0 0 0 1px var(--iv-red) !important;
+}
+
+/* Sliders */
+.stSlider [data-baseweb="slider"] [role="slider"] {
+    background: var(--iv-red) !important;
+}
+
+/* Code blocks */
+.stCodeBlock, code, pre {
+    background: #0a0a0a !important;
+    border: 1px solid var(--iv-border) !important;
+    border-left: 3px solid var(--iv-red) !important;
+}
+
+/* Markdown links */
+a { color: var(--iv-red) !important; }
+a:hover { color: var(--iv-red-hot) !important; }
+
+/* Wolf-header hero (rendered as raw HTML) */
+.iv-hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--iv-border);
+    margin-bottom: 20px;
+}
+.iv-hero img { width: 80px; height: 80px; }
+
+/* Wolf animation — applied to the <img> wrapper, not the SVG internals.
+   This animates the WHOLE rendered image (including the eyes), so the
+   wolf appears to pulse/float even though the SVG file is static. */
+@keyframes wolfGlow {
+  0%, 100% { filter: drop-shadow(0 0 4px rgba(200, 16, 46, 0.6)) drop-shadow(0 0 8px rgba(200, 16, 46, 0.3)); }
+  50%      { filter: drop-shadow(0 0 12px rgba(255, 31, 68, 0.95)) drop-shadow(0 0 24px rgba(200, 16, 46, 0.7)); }
+}
+@keyframes wolfFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-3px); }
+}
+.iv-hero img {
+  animation: wolfGlow 2.4s ease-in-out infinite,
+             wolfFloat 4s ease-in-out infinite;
+  will-change: filter, transform;
+}
+
+/* Sidebar wolf — same animation, smaller scale */
+[data-testid="stSidebar"] .iv-hero img {
+  width: 60px; height: 60px;
+  animation: wolfGlow 2.6s ease-in-out infinite,
+             wolfFloat 4.4s ease-in-out infinite;
+}
+.iv-hero-text h1 {
+    margin: 0;
+    font-size: 2.2em;
+    border: none;
+    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.iv-hero-text .iv-tag {
+    color: var(--iv-text-dim);
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+}

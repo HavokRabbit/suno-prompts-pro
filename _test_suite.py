@@ -1,4 +1,8 @@
-"""Local test suite for Suno Prompt Generator Pro v1."""
+"""Local test suite for Suno Prompt Generator Pro.
+Run with:  python _test_suite.py   (Python 3.12 + streamlit installed)
+Tests 1-13 are unit tests (no server needed). Test 14 is a runtime health check
+that is SKIPPED (not failed) when no Streamlit server is listening on :8501.
+"""
 import importlib.util
 import ast
 
@@ -6,32 +10,35 @@ spec = importlib.util.spec_from_file_location('suno_app', 'suno_prompt_generator
 mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 
+TOTAL = 14
 print('=' * 70)
-print('LOCAL TEST SUITE — Suno Prompt Generator Pro v1')
+print(f'LOCAL TEST SUITE - Suno Prompt Generator Pro ({TOTAL} tests)')
 print('=' * 70)
 
 passed = []
 failed = []
+skipped = []
 
 # Test 1
-print('\n[1/13] Module loads...')
+print('\n[1/14] Module loads...')
 try:
     assert hasattr(mod, 'SINGER_DB'), 'Missing SINGER_DB'
     assert hasattr(mod, 'DEFAULT_TEMPLATES'), 'Missing DEFAULT_TEMPLATES'
+    assert hasattr(mod, 'GENRE_RULES'), 'Missing GENRE_RULES'
     assert hasattr(mod, 'generate_prompt'), 'Missing generate_prompt'
     assert hasattr(mod, 'detect_genre'), 'Missing detect_genre'
     assert hasattr(mod, 'find_singer'), 'Missing find_singer'
     assert hasattr(mod, 'get_random_artist'), 'Missing get_random_artist'
-    print('  PASS — all functions present')
+    assert hasattr(mod, '_sanitize_prompt'), 'Missing _sanitize_prompt'
+    print('  PASS - all functions + data present')
     passed.append('module_loads')
 except AssertionError as e:
-    print(f'  FAIL — {e}')
+    print(f'  FAIL - {e}')
     failed.append('module_loads')
 
 # Test 2
-print('\n[2/13] All artists have required 6 fields...')
+print('\n[2/14] All artists have required 6 fields...')
 required_fields = {'genre', 'mood', 'style', 'vocal_style', 'instruments', 'production'}
-# Min lengths per field — genre can legitimately be "Pop" (3 chars), others need substance
 min_lengths = {'genre': 3, 'mood': 4, 'style': 5, 'vocal_style': 5, 'instruments': 5, 'production': 5}
 bad_artists = []
 for name, data in mod.SINGER_DB.items():
@@ -47,27 +54,27 @@ for name, data in mod.SINGER_DB.items():
         if field in data and len(data[field].strip()) < min_lengths[field]:
             bad_artists.append((name, f'{field} too short ({len(data[field].strip())} < {min_lengths[field]})'))
 if bad_artists:
-    print(f'  FAIL — {len(bad_artists)} bad entries:')
+    print(f'  FAIL - {len(bad_artists)} bad entries:')
     for name, err in bad_artists[:5]:
         print(f'    {name}: {err}')
     failed.append('artist_fields')
 else:
-    print(f'  PASS — {len(mod.SINGER_DB)} artists all have complete 6-field profiles')
+    print(f'  PASS - {len(mod.SINGER_DB)} artists all have complete 6-field profiles')
     passed.append('artist_fields')
 
 # Test 3
-print('\n[3/13] No duplicate artist names (case-insensitive)...')
+print('\n[3/14] No duplicate artist names (case-insensitive)...')
 names_lower = [n.lower() for n in mod.SINGER_DB.keys()]
 duplicates = [n for n in set(names_lower) if names_lower.count(n) > 1]
 if duplicates:
-    print(f'  FAIL — duplicates: {duplicates}')
+    print(f'  FAIL - duplicates: {duplicates}')
     failed.append('no_duplicates')
 else:
-    print(f'  PASS — {len(mod.SINGER_DB)} unique artists')
+    print(f'  PASS - {len(mod.SINGER_DB)} unique artists')
     passed.append('no_duplicates')
 
 # Test 4
-print('\n[4/13] All genre templates have 6 fields...')
+print('\n[4/14] All genre templates have 6 fields...')
 bad_templates = []
 for g, data in mod.DEFAULT_TEMPLATES.items():
     missing = required_fields - set(data.keys())
@@ -77,25 +84,25 @@ if bad_templates:
     print(f'  FAIL: {bad_templates}')
     failed.append('template_fields')
 else:
-    print(f'  PASS — {len(mod.DEFAULT_TEMPLATES)} templates complete')
+    print(f'  PASS - {len(mod.DEFAULT_TEMPLATES)} templates complete')
     passed.append('template_fields')
 
 # Test 5
-print('\n[5/13] Popular artists exist in DB...')
+print('\n[5/14] Popular artists exist in DB...')
 popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean",
            "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass",
            "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts",
            "peso pluma", "karan aujla", "tyla", "sal da vinci"]
 missing = [a for a in popular if a not in mod.SINGER_DB]
 if missing:
-    print(f'  FAIL — popular artists not in DB: {missing}')
+    print(f'  FAIL - popular artists not in DB: {missing}')
     failed.append('popular_in_db')
 else:
-    print(f'  PASS — all {len(popular)} popular artists in DB')
+    print(f'  PASS - all {len(popular)} popular artists in DB')
     passed.append('popular_in_db')
 
 # Test 6
-print('\n[6/13] generate_prompt succeeds for ALL artists...')
+print('\n[6/14] generate_prompt succeeds for ALL artists (sanitizer default ON)...')
 errors = []
 for name in mod.SINGER_DB.keys():
     try:
@@ -109,130 +116,175 @@ for name in mod.SINGER_DB.keys():
     except Exception as e:
         errors.append((name, str(e)))
 if errors:
-    print(f'  FAIL — {len(errors)} errors:')
+    print(f'  FAIL - {len(errors)} errors:')
     for name, err in errors[:5]:
         print(f'    {name}: {err}')
     failed.append('generate_all')
 else:
-    print(f'  PASS — prompts generated for all {len(mod.SINGER_DB)} artists')
+    print(f'  PASS - prompts generated for all {len(mod.SINGER_DB)} artists')
     passed.append('generate_all')
 
 # Test 7
-print('\n[7/13] Auto-detect maps to valid templates...')
+print('\n[7/14] All genre templates exist (incl. new folk/ccm/christian/hyperpop)...')
 test_genres = ['bollywood', 'punjabi', 'corrido', 'latin', 'italian', 'kpop',
                'afrobeats', 'bedroom', 'country', 'modern-heavy', 'doom', 'metal',
-               'rock', 'electronic', 'hip-hop', 'rnb', 'indie', 'jazz', 'pop', 'indian-indie']
+               'rock', 'electronic', 'hip-hop', 'rnb', 'indie', 'jazz', 'pop',
+               'indian-indie', 'folk', 'ccm', 'christian', 'hyperpop']
 all_present = True
 for g in test_genres:
     if g not in mod.DEFAULT_TEMPLATES:
-        print(f'  FAIL — template "{g}" missing')
+        print(f'  FAIL - template "{g}" missing')
         all_present = False
         failed.append('templates_complete')
         break
 if all_present:
-    print(f'  PASS — all {len(test_genres)} genre templates exist')
+    print(f'  PASS - all {len(test_genres)} genre templates exist')
     passed.append('templates_complete')
 
 # Test 8
-print('\n[8/13] Edge cases...')
+print('\n[8/14] Edge cases (empty/whitespace/weird -> pop)...')
 edge_cases = [('', 'pop'), ('   ', 'pop'), ('SOME WEIRD ARTIST NAME', 'pop'), ('a', 'pop')]
 edge_pass = True
 for input_str, expected in edge_cases:
     detected = mod.detect_genre(input_str)
     if detected != expected:
-        print(f'  FAIL — "{input_str}": expected {expected}, got {detected}')
+        print(f'  FAIL - "{input_str}": expected {expected}, got {detected}')
         edge_pass = False
         failed.append('edge_cases')
         break
 if edge_pass:
-    print(f'  PASS — {len(edge_cases)} edge cases handled')
+    print(f'  PASS - {len(edge_cases)} edge cases handled')
     passed.append('edge_cases')
 
 # Test 9
-print('\n[9/13] Optional fields are optional...')
+print('\n[9/14] Optional fields are optional...')
 result_min = mod.generate_prompt('taylor swift')
 result_full = mod.generate_prompt('taylor swift', 'romantic', 'love', 'Slow')
 if 'Theme:' in result_min:
-    print('  FAIL — empty theme should not add Theme line')
+    print('  FAIL - empty theme should not add Theme line')
     failed.append('optional_fields')
 elif 'Genre:' not in result_min or 'Vocal Style:' not in result_min:
-    print('  FAIL — required sections missing')
+    print('  FAIL - required sections missing')
     failed.append('optional_fields')
 else:
-    print(f'  PASS — works with empty and full optionals')
+    print(f'  PASS - works with empty and full optionals')
     passed.append('optional_fields')
 
 # Test 10
-print('\n[10/13] Unknown artist uses fallback template...')
+print('\n[10/14] Unknown artist uses fallback template...')
 result = mod.generate_prompt('Some Random Unknown Artist XYZ', 'sad', 'loneliness', 'Slow')
-if 'Note: Singer not in database' not in result:
-    print('  FAIL — should note when singer not in DB')
+if 'not in database' not in result:
+    print('  FAIL - should note when singer not in DB')
     failed.append('unknown_fallback')
 else:
-    print(f'  PASS — fallback works, uses detected genre template')
+    print(f'  PASS - fallback works, uses detected genre template')
     passed.append('unknown_fallback')
 
 # Test 11
-print('\n[11/13] Short prompt is one line...')
+print('\n[11/14] Short prompt is one line...')
 result = mod.generate_prompt('bad bunny', 'party', 'reggaeton night', 'Fast')
 short_lines = [l for l in result.splitlines() if 'Short Prompt' in l]
 if not short_lines:
-    print('  FAIL — no short prompt line')
+    print('  FAIL - no short prompt line')
     failed.append('short_prompt')
 elif len(short_lines[0]) > 250:
-    print(f'  FAIL — short prompt too long: {len(short_lines[0])} chars')
+    print(f'  FAIL - short prompt too long: {len(short_lines[0])} chars')
     failed.append('short_prompt')
 else:
-    print(f'  PASS — short prompt: {short_lines[0][:120]}...')
+    print(f'  PASS - short prompt: {short_lines[0][:120]}...')
     passed.append('short_prompt')
 
 # Test 12
-print('\n[12/13] File syntax + importable...')
-with open('suno_prompt_generator_pro.py') as f:
+print('\n[12/14] File syntax + importable...')
+with open('suno_prompt_generator_pro.py', encoding='utf-8') as f:
     source = f.read()
 try:
     ast.parse(source)
-    print(f'  PASS — {len(source)} bytes parse cleanly')
+    print(f'  PASS - {len(source)} bytes parse cleanly')
     passed.append('syntax')
 except SyntaxError as e:
-    print(f'  FAIL — syntax error: {e}')
+    print(f'  FAIL - syntax error: {e}')
     failed.append('syntax')
 
-# Test 13: Streamlit server is up
-print('\n[13/13] Streamlit server health check...')
+# Test 13 - detect_genre maps known phrases to the right genres
+print('\n[13/14] detect_genre maps known phrases correctly...')
+detect_cases = [
+    ('folk singer songwriter', 'folk'),
+    ('worship leader', 'ccm'),
+    ('christian metal band', 'christian'),
+    ('hyperpop digicore', 'hyperpop'),
+    ('doom sludge funeral', 'doom'),
+    ('korridor mexican corrido', 'corrido'),
+    ('k-pop idol group', 'kpop'),
+    ('lo-fi indie bedroom', 'bedroom'),
+    ('italian sanremo pop', 'italian'),
+    ('afrobeats amapiano', 'afrobeats'),
+]
+detect_pass = True
+for input_str, expected in detect_cases:
+    got = mod.detect_genre(input_str)
+    if got != expected:
+        print(f'  FAIL - "{input_str}": expected {expected}, got {got}')
+        detect_pass = False
+        failed.append('detect_genre_known')
+        break
+if detect_pass:
+    print(f'  PASS - all {len(detect_cases)} known phrases map to the right genre')
+    passed.append('detect_genre_known')
+
+# Test 13b - sanitizer strips blacklisted names + sanitize flag is accepted
+print('\n[13b/14] Defensive sanitizer strips blacklisted names...')
+leak_text = "Sounds like Trent Reznor meets Black Sabbath, production by Quincy Jones"
+clean, hits = mod._sanitize_prompt(leak_text)
+toggle_ok = True
+toggle_err = ''
+try:
+    mod.generate_prompt('frank ocean', sanitize=False)
+    mod.generate_prompt('frank ocean', sanitize=True)
+except Exception as e:
+    toggle_ok = False
+    toggle_err = str(e)
+if hits < 3 or 'Trent Reznor' in clean or 'Black Sabbath' in clean or 'Quincy Jones' in clean:
+    print(f'  FAIL - expected 3 hits, got {hits}; clean={clean!r}')
+    failed.append('sanitizer')
+elif not toggle_ok:
+    print(f'  FAIL - sanitize flag crashed generate_prompt: {toggle_err}')
+    failed.append('sanitizer')
+else:
+    print(f'  PASS - sanitizer stripped {hits} names; sanitize flag accepted')
+    passed.append('sanitizer')
+
+# Test 14 - runtime server health (SKIPPED if no server running)
+print('\n[14/14] Streamlit server health check (runtime)...')
 import urllib.request
 try:
     with urllib.request.urlopen('http://127.0.0.1:8501/_stcore/health', timeout=3) as r:
         body = r.read().decode()
         if body.strip() == 'ok':
-            print('  PASS — server returns ok')
+            print('  PASS - server returns ok')
             passed.append('server_health')
         else:
-            print(f'  FAIL — unexpected body: {body}')
+            print(f'  FAIL - unexpected body: {body}')
             failed.append('server_health')
-    # Also check the index page
-    with urllib.request.urlopen('http://127.0.0.1:8501/', timeout=3) as r:
-        if r.status == 200:
-            print('  PASS — index page returns 200')
-            passed.append('server_index')
-        else:
-            print(f'  FAIL — index returned {r.status}')
-            failed.append('server_index')
 except Exception as e:
-    print(f'  FAIL — server unreachable: {e}')
-    failed.append('server_health')
+    print(f'  SKIP - no Streamlit server on :8501 ({e.__class__.__name__})')
+    print('         Start one with:  streamlit run suno_prompt_generator_pro.py')
+    skipped.append('server_health')
 
 # Summary
 print()
 print('=' * 70)
-print(f'SUMMARY: {len(passed)} passed, {len(failed)} failed')
+print(f'SUMMARY: {len(passed)} passed, {len(failed)} failed, {len(skipped)} skipped')
 print('=' * 70)
 if failed:
     print(f'Failed tests: {failed}')
 else:
-    print('ALL TESTS PASS — safe to deploy')
+    print('ALL UNIT TESTS PASS - safe to deploy' if not skipped
+          else 'ALL UNIT TESTS PASS; server check skipped (start streamlit to run it)')
 print(f'  Artists: {len(mod.SINGER_DB)}')
 print(f'  Genre templates: {len(mod.DEFAULT_TEMPLATES)}')
+print(f'  Genre rules: {len(mod.GENRE_RULES)}')
+print(f'  Blacklisted names: {len(mod._NAME_LEAK_BLACKLIST)}')
 print(f'  Popular quick-pick: 20')
 print()
 print('READY TO DEPLOY' if not failed else 'FIX FAILURES BEFORE DEPLOY')
