@@ -75,9 +75,21 @@ def render_header():
     """Slim animated brand banner.
 
     The clip is a rendered HyperFrames composition. It is muted, decorative and
-    marked aria-hidden; when the viewer asks for reduced motion the script parks
-    it on its final frame so the banner is still complete, just still.
+    marked aria-hidden; when the viewer asks for reduced motion the page parks it
+    on its final frame so the banner is still complete, just still.
+
+    Preferred path is the static server: the browser streams header.mp4 once and
+    caches it, instead of 285 KB of base64 riding along in every rerun delta.
+    The inline fallback keeps the banner working wherever static serving is off.
     """
+    video = _DATA_DIR / "static" / "header.mp4"
+    page = _DATA_DIR / "static" / "header.html"
+    if video.is_file() and page.is_file() and hasattr(st, "iframe"):
+        try:
+            st.iframe("/app/static/header.html", height=232)
+            return
+        except Exception:
+            pass
     if not _HEADER_B64:
         st.markdown(
             '<div class="iv-plate"><div class="iv-plate-copy">'
@@ -348,7 +360,11 @@ TEMPOS = ["", "Slow", "Medium", "Fast", "Upbeat", "Ballad", "Half-time", "Double
 POPULAR = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean",
            "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass",
            "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts",
-           "peso pluma", "karan aujla", "tyla"]
+           "peso pluma", "karan aujla", "tyla", "sal da vinci"]
+
+RANDOM_MOODS = [m for m in MOODS if m]
+RANDOM_THEMES = [t for t in THEMES if t]
+RANDOM_TEMPOS = ["Slow", "Medium", "Fast", "Upbeat"]
 
 
 @st.cache_data(show_spinner=False)
@@ -434,6 +450,29 @@ def main():
     if "history" not in st.session_state:
         st.session_state.history = []
 
+    # === Google Analytics 4 (visitor counter) ===
+    # Preserved from the original app. Reads GA4_MEASUREMENT_ID from Streamlit
+    # secrets and falls back to the default HavokRabbit property so the counter
+    # keeps working when no secrets file exists.
+    try:
+        _ga4_id = st.secrets.get("GA4_MEASUREMENT_ID", None) or "G-FPS8T1J4K0"
+    except FileNotFoundError:
+        _ga4_id = "G-FPS8T1J4K0"
+    if _ga4_id:
+        components.html(
+            f"""
+<script async src="https://www.googletagmanager.com/gtag/js?id={_ga4_id}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{_ga4_id}');
+</script>
+""",
+            height=0,
+            width=0,
+        )
+
     tab_studio, tab_artists, tab_saved, tab_about = st.tabs(
         ["Studio", "Artists", "Saved", "About"]
     )
@@ -513,8 +552,27 @@ def main():
                               on_click=lambda n=name: st.session_state.update(artist_input=n))
 
             st.caption("Random")
-            st.button("Surprise me", use_container_width=True, key="rand_artist",
-                      on_click=lambda: st.session_state.update(artist_input=get_random_artist()))
+            rnd_col1, rnd_col2 = st.columns(2)
+            with rnd_col1:
+                st.button("Random artist", use_container_width=True, key="rand_artist",
+                          on_click=lambda: st.session_state.update(artist_input=get_random_artist()))
+            with rnd_col2:
+                if st.button("Random prompt", use_container_width=True, key="rand_prompt"):
+                    pick = get_random_artist()
+                    mood_pick = random.choice(RANDOM_MOODS)
+                    theme_pick = random.choice(RANDOM_THEMES)
+                    tempo_pick = random.choice(RANDOM_TEMPOS)
+                    generated = generate_prompt(pick, mood_pick, theme_pick, tempo_pick,
+                                                sanitize=sanitize_on)
+                    st.session_state.last_result = generated
+                    st.session_state.last_label = pick
+                    st.session_state.flash = (f"Random prompt: {pick.title()} — "
+                                              f"{mood_pick}, {theme_pick}, {tempo_pick}")
+                    st.session_state.history.insert(0, {
+                        "artist": pick, "mood": mood_pick, "theme": theme_pick,
+                        "tempo": tempo_pick, "prompt": generated,
+                    })
+                    st.session_state.history = st.session_state.history[:20]
 
         if go:
             target = chosen
@@ -528,6 +586,8 @@ def main():
                     result = generate_prompt(target, mood, theme, tempo, sanitize=sanitize_on)
                     label = target
                 st.session_state.last_result = result
+                st.session_state.last_label = label
+                st.session_state.flash = None
                 st.session_state.history.insert(0, {
                     "artist": label, "mood": mood, "theme": theme,
                     "tempo": tempo, "prompt": result,
@@ -537,9 +597,12 @@ def main():
         if st.session_state.get("last_result"):
             st.markdown("---")
             st.markdown("#### Result")
+            if st.session_state.get("flash"):
+                st.success(st.session_state.flash)
             st.code(st.session_state.last_result, language=None)
             dl_col, save_col = st.columns(2)
-            name_slug = re.sub(r"[^\w]+", "_", (chosen or "prompt")).strip("_")[:60] or "prompt"
+            slug_source = st.session_state.get("last_label") or chosen or "prompt"
+            name_slug = re.sub(r"[^\w]+", "_", slug_source).strip("_")[:60] or "prompt"
             with dl_col:
                 st.download_button("Download .txt", st.session_state.last_result,
                                    file_name=f"{name_slug}_prompt.txt", use_container_width=True)

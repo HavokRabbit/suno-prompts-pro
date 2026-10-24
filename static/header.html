@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Iron Vespers — header</title>
+    <style>
+      html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
+      .wrap { line-height: 0; }
+      video { display: block; width: 100%; height: auto; border-radius: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <video id="ivh" autoplay muted playsinline loop preload="auto"
+             aria-hidden="true" tabindex="-1" src="header.mp4"></video>
+    </div>
+    <script>
+      (function () {
+        var v = document.getElementById("ivh");
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+        function apply() {
+          if (reduce.matches) {
+            v.removeAttribute("loop");
+            v.pause();
+            var park = function () { try { v.currentTime = 3.4; } catch (e) {} };
+            if (v.readyState >= 1) { park(); }
+            else { v.addEventListener("loadedmetadata", park, { once: true }); }
+          }
+        }
+        apply();
+        if (reduce.addEventListener) { reduce.addEventListener("change", apply); }
+      })();
+    </script>
+  </body>
+</html>
