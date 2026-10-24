@@ -78,18 +78,11 @@ def render_header():
     marked aria-hidden; when the viewer asks for reduced motion the page parks it
     on its final frame so the banner is still complete, just still.
 
-    Preferred path is the static server: the browser streams header.mp4 once and
-    caches it, instead of 285 KB of base64 riding along in every rerun delta.
-    The inline fallback keeps the banner working wherever static serving is off.
+    The bytes are embedded inline rather than fetched from /app/static. The
+    hosted platform puts the whole app behind an auth redirect, so an iframe
+    pointed at a static path receives a login page instead of the video and the
+    player sits on a spinner forever. Inline bytes cannot 404.
     """
-    video = _DATA_DIR / "static" / "header.mp4"
-    page = _DATA_DIR / "static" / "header.html"
-    if video.is_file() and page.is_file() and hasattr(st, "iframe"):
-        try:
-            st.iframe("/app/static/header.html", height=300)
-            return
-        except Exception:
-            pass
     if not _HEADER_B64:
         st.markdown(
             '<div class="iv-plate"><div class="iv-plate-copy">'
@@ -131,7 +124,7 @@ def render_header():
   }})();
 </script>
 """,
-        height=232,
+        height=300,
         scrolling=False,
     )
 
