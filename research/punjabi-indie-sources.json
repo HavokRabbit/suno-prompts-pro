@@ -1,0 +1,1127 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://en.wikipedia.org/wiki/Category:Bhangra_(music)_musicians",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 2,
+      "url": "https://en.wikipedia.org/wiki/Category:Bhangra_(music)_musical_groups",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 3,
+      "url": "https://en.wikipedia.org/wiki/Category:Punjabi_folk_singers",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 4,
+      "url": "https://rollingstoneindia.com/the-22-best-indian-independent-singles-of-2022/amp",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 5,
+      "url": "https://rollingstoneindia.com/the-best-indian-indie-songs-of-2023-so-far/amp",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 6,
+      "url": "https://en.wikipedia.org/wiki/List_of_bhangra_artists",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 7,
+      "url": "https://rollingstoneindia.com/best-indian-indie-songs-2023-dot-taba-chake-mali-aditi-ramesh",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 8,
+      "url": "https://rollingstoneindia.com/best-indian-songs-2025",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 9,
+      "url": "https://rollingstoneindia.com/the-best-indian-music-releases-in-2025-so-far",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 10,
+      "url": "https://rollingstoneindia.com/best-indian-indie-albums-2023-so-far-indian-ocean-tsumyoki-dreamhour-ramil-ganjoo",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 11,
+      "url": "https://rollingstoneindia.com/indian-music-awards-winners-2024",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 12,
+      "url": "https://rollingstoneindia.com/10-best-indian-singles-of-2021",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 13,
+      "url": "https://rollingstoneindia.com/10-best-indian-singles-of-2020",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 14,
+      "url": "https://rollingstoneindia.com/10-best-indian-singles-of-2019",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 15,
+      "url": "https://rollingstoneindia.com/10-best-indian-albums-of-2021",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 16,
+      "url": "https://en.wikipedia.org/wiki/13AD_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 17,
+      "url": "https://en.wikipedia.org/wiki/Aabha_Hanjura",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 18,
+      "url": "https://en.wikipedia.org/wiki/Aaliyah_Qureishi",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 19,
+      "url": "https://en.wikipedia.org/wiki/Aditi_Ramesh",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 20,
+      "url": "https://en.wikipedia.org/wiki/Afsana_Khan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 21,
+      "url": "https://en.wikipedia.org/wiki/Agnee_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 22,
+      "url": "https://en.wikipedia.org/wiki/Akhil_(singer)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 23,
+      "url": "https://en.wikipedia.org/wiki/Alaap_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 24,
+      "url": "https://en.wikipedia.org/wiki/Alam_Lohar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 25,
+      "url": "https://en.wikipedia.org/wiki/All_the_Fat_Children",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 26,
+      "url": "https://en.wikipedia.org/wiki/Allah_Ditta_Loonay_Wala",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 27,
+      "url": "https://en.wikipedia.org/wiki/Amar_Singh_Chamkila",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 28,
+      "url": "https://en.wikipedia.org/wiki/Amrinder_Gill",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 29,
+      "url": "https://en.wikipedia.org/wiki/Amrit_Maan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 30,
+      "url": "https://en.wikipedia.org/wiki/Amrita_Virk",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 31,
+      "url": "https://en.wikipedia.org/wiki/Anmol_Gagan_Maan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 32,
+      "url": "https://en.wikipedia.org/wiki/Antaragni_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 33,
+      "url": "https://en.wikipedia.org/wiki/Antariksh",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 34,
+      "url": "https://en.wikipedia.org/wiki/Apna_Sangeet",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 35,
+      "url": "https://en.wikipedia.org/wiki/Arif_Lohar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 36,
+      "url": "https://en.wikipedia.org/wiki/Asa_Singh_Mastana",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 37,
+      "url": "https://en.wikipedia.org/wiki/Aswekeepsearching",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 38,
+      "url": "https://en.wikipedia.org/wiki/Atomic_Forest",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 39,
+      "url": "https://en.wikipedia.org/wiki/Avora_Records",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 40,
+      "url": "https://en.wikipedia.org/wiki/Avtar_Singh_Kang",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 41,
+      "url": "https://en.wikipedia.org/wiki/Babbal_Rai",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 42,
+      "url": "https://en.wikipedia.org/wiki/Babu_Rajab_Ali",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 43,
+      "url": "https://en.wikipedia.org/wiki/Balkar_Sidhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 44,
+      "url": "https://en.wikipedia.org/wiki/Balwinder_Safri",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 45,
+      "url": "https://en.wikipedia.org/wiki/Barbie_Maan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 46,
+      "url": "https://en.wikipedia.org/wiki/Bhinda_Jatt",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 47,
+      "url": "https://en.wikipedia.org/wiki/Bhujhangy_Group",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 48,
+      "url": "https://en.wikipedia.org/wiki/Bolepur_Bluez",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 49,
+      "url": "https://en.wikipedia.org/wiki/Bombay_Talkie_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 50,
+      "url": "https://en.wikipedia.org/wiki/Bups_Saggu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 51,
+      "url": "https://en.wikipedia.org/wiki/Cactus_(Indian_band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 52,
+      "url": "https://en.wikipedia.org/wiki/Cassini%27s_Division",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 53,
+      "url": "https://en.wikipedia.org/wiki/Chandrabindoo_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 54,
+      "url": "https://en.wikipedia.org/wiki/Chandrani_Banerjee",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 55,
+      "url": "https://en.wikipedia.org/wiki/Channi_Singh",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 56,
+      "url": "https://en.wikipedia.org/wiki/Chirag_Pehchan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 57,
+      "url": "https://en.wikipedia.org/wiki/Daira_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 58,
+      "url": "https://en.wikipedia.org/wiki/Delhi_2_Dublin",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 59,
+      "url": "https://en.wikipedia.org/wiki/Dharampreet",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 60,
+      "url": "https://en.wikipedia.org/wiki/Dhunn",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 61,
+      "url": "https://en.wikipedia.org/wiki/Didar_Sandhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 62,
+      "url": "https://en.wikipedia.org/wiki/Dilbagh_Singh_(singer)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 63,
+      "url": "https://en.wikipedia.org/wiki/Dilshad_Akhtar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 64,
+      "url": "https://en.wikipedia.org/wiki/Ditty_(musician)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 65,
+      "url": "https://en.wikipedia.org/wiki/Durga_Rangila",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 66,
+      "url": "https://en.wikipedia.org/wiki/Foji_Gill",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 67,
+      "url": "https://en.wikipedia.org/wiki/Girish_Prabhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 68,
+      "url": "https://en.wikipedia.org/wiki/Girish_and_the_Chronicles",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 69,
+      "url": "https://en.wikipedia.org/wiki/Gur_Sidhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 70,
+      "url": "https://en.wikipedia.org/wiki/Gurcharan_Pohli",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 71,
+      "url": "https://en.wikipedia.org/wiki/Guri_(singer)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 72,
+      "url": "https://en.wikipedia.org/wiki/Gurinder_Gill",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 73,
+      "url": "https://en.wikipedia.org/wiki/Gurmeet_Bawa",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 74,
+      "url": "https://en.wikipedia.org/wiki/Gurnam_Bhullar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 75,
+      "url": "https://en.wikipedia.org/wiki/Gurshabad",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 76,
+      "url": "https://en.wikipedia.org/wiki/Hakam_Sufi",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 77,
+      "url": "https://en.wikipedia.org/wiki/Hans_Raj_Hans",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 78,
+      "url": "https://en.wikipedia.org/wiki/Hanumankind",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 79,
+      "url": "https://en.wikipedia.org/wiki/Harbhajan_Mann",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 80,
+      "url": "https://en.wikipedia.org/wiki/Harcharan_Garewal",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 81,
+      "url": "https://en.wikipedia.org/wiki/Harjit_Harman",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 82,
+      "url": "https://en.wikipedia.org/wiki/High_(musical_group)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 83,
+      "url": "https://en.wikipedia.org/wiki/Imran_Khan_(singer)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 84,
+      "url": "https://en.wikipedia.org/wiki/Inderjit_Nikku",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 85,
+      "url": "https://en.wikipedia.org/wiki/Indian_Ocean_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 86,
+      "url": "https://en.wikipedia.org/wiki/Indus_Creed",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 87,
+      "url": "https://en.wikipedia.org/wiki/Insomnia_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 88,
+      "url": "https://en.wikipedia.org/wiki/Jagmohan_Kaur",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 89,
+      "url": "https://en.wikipedia.org/wiki/Jaspinder_Narula",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 90,
+      "url": "https://en.wikipedia.org/wiki/Jass_Bajwa",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 91,
+      "url": "https://en.wikipedia.org/wiki/Jassa_Dhillon",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 92,
+      "url": "https://en.wikipedia.org/wiki/Jassi_Sidhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 93,
+      "url": "https://en.wikipedia.org/wiki/Jaz_Dhami",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 94,
+      "url": "https://en.wikipedia.org/wiki/Jin_&_Seetal",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 95,
+      "url": "https://en.wikipedia.org/wiki/Jordan_Sandhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 96,
+      "url": "https://en.wikipedia.org/wiki/K._Deep",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 97,
+      "url": "https://en.wikipedia.org/wiki/K._S._Makhan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 98,
+      "url": "https://en.wikipedia.org/wiki/Kabir_Café",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 99,
+      "url": "https://en.wikipedia.org/wiki/Kaka_Bhaniawala",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 100,
+      "url": "https://en.wikipedia.org/wiki/Kamal_Heer",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 101,
+      "url": "https://en.wikipedia.org/wiki/Kamaljit_Neeru",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 102,
+      "url": "https://en.wikipedia.org/wiki/Kanth_Kaler",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 103,
+      "url": "https://en.wikipedia.org/wiki/Karnail_Gill",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 104,
+      "url": "https://en.wikipedia.org/wiki/Karnail_Singh_Paras",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 105,
+      "url": "https://en.wikipedia.org/wiki/Kollage_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 106,
+      "url": "https://en.wikipedia.org/wiki/Kuldeep_Manak",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 107,
+      "url": "https://en.wikipedia.org/wiki/Kuljit_Bhamra",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 108,
+      "url": "https://en.wikipedia.org/wiki/Kulwinder_Dhillon",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 109,
+      "url": "https://en.wikipedia.org/wiki/Labh_Janjua",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 110,
+      "url": "https://en.wikipedia.org/wiki/Lakhwinder_Wadali",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 111,
+      "url": "https://en.wikipedia.org/wiki/Lakkhichhara",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 112,
+      "url": "https://en.wikipedia.org/wiki/Lal_Chand_Yamla_Jatt",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 113,
+      "url": "https://en.wikipedia.org/wiki/MC_Stan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 114,
+      "url": "https://en.wikipedia.org/wiki/Major_Rajasthani",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 115,
+      "url": "https://en.wikipedia.org/wiki/Malkoo",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 116,
+      "url": "https://en.wikipedia.org/wiki/Mangi_Mahal",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 117,
+      "url": "https://en.wikipedia.org/wiki/Maninder_Buttar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 118,
+      "url": "https://en.wikipedia.org/wiki/Manmohan_Waris",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 119,
+      "url": "https://en.wikipedia.org/wiki/Mannat_Noor",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 120,
+      "url": "https://en.wikipedia.org/wiki/Manni_Sandhu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 121,
+      "url": "https://en.wikipedia.org/wiki/Mansoor_Malangi",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 122,
+      "url": "https://en.wikipedia.org/wiki/Masala_Coffee",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 123,
+      "url": "https://en.wikipedia.org/wiki/Master_Saleem",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 124,
+      "url": "https://en.wikipedia.org/wiki/Mickey_Singh",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 125,
+      "url": "https://en.wikipedia.org/wiki/Moheener_Ghoraguli",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 126,
+      "url": "https://en.wikipedia.org/wiki/Mohinder_Kaur_Bhamra",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 127,
+      "url": "https://en.wikipedia.org/wiki/Motherjane",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 128,
+      "url": "https://en.wikipedia.org/wiki/Nachhatar_Chhatta",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 129,
+      "url": "https://en.wikipedia.org/wiki/Narinder_Biba",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 130,
+      "url": "https://en.wikipedia.org/wiki/Naseebo_Lal",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 131,
+      "url": "https://en.wikipedia.org/wiki/Navv_Inder",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 132,
+      "url": "https://en.wikipedia.org/wiki/Nimrat_Khaira",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 133,
+      "url": "https://en.wikipedia.org/wiki/Nisha_Bano",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 134,
+      "url": "https://en.wikipedia.org/wiki/Pammi_Bai",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 135,
+      "url": "https://en.wikipedia.org/wiki/Parmish_Verma",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 136,
+      "url": "https://en.wikipedia.org/wiki/Pathanay_Khan",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 137,
+      "url": "https://en.wikipedia.org/wiki/Peter_Cat_Recording_Co.",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 138,
+      "url": "https://en.wikipedia.org/wiki/Prabh_Deep",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 139,
+      "url": "https://en.wikipedia.org/wiki/Pragaash",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 140,
+      "url": "https://en.wikipedia.org/wiki/Prakash_Kaur",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 141,
+      "url": "https://en.wikipedia.org/wiki/Prem_Dhillon",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 142,
+      "url": "https://en.wikipedia.org/wiki/Prithibi",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 143,
+      "url": "https://en.wikipedia.org/wiki/Project_Malabaricus",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 144,
+      "url": "https://en.wikipedia.org/wiki/Pseudonym_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 145,
+      "url": "https://en.wikipedia.org/wiki/Raf-Saperra",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 146,
+      "url": "https://en.wikipedia.org/wiki/Raghu_Dixit",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 147,
+      "url": "https://en.wikipedia.org/wiki/Raj_Brar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 148,
+      "url": "https://en.wikipedia.org/wiki/Rajvir_Jawanda",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 149,
+      "url": "https://en.wikipedia.org/wiki/Ranjit_Kaur",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 150,
+      "url": "https://en.wikipedia.org/wiki/Ravinder_Grewal",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 151,
+      "url": "https://en.wikipedia.org/wiki/Resham_Singh_Anmol",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 152,
+      "url": "https://en.wikipedia.org/wiki/Romey_Gill",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 153,
+      "url": "https://en.wikipedia.org/wiki/Rusty_Moe",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 154,
+      "url": "https://en.wikipedia.org/wiki/Sabar_Koti",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 155,
+      "url": "https://en.wikipedia.org/wiki/Sahotas",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 156,
+      "url": "https://en.wikipedia.org/wiki/Sardool_Sikander",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 157,
+      "url": "https://en.wikipedia.org/wiki/Satinder_Sartaaj",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 158,
+      "url": "https://en.wikipedia.org/wiki/Satwinder_Bitti",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 159,
+      "url": "https://en.wikipedia.org/wiki/Shaa%27ir_and_Func",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 160,
+      "url": "https://en.wikipedia.org/wiki/Shankar_Sahney",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 161,
+      "url": "https://en.wikipedia.org/wiki/Shava_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 162,
+      "url": "https://en.wikipedia.org/wiki/Shinda_Kahlon",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 163,
+      "url": "https://en.wikipedia.org/wiki/Shooter_Kahlon",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 164,
+      "url": "https://en.wikipedia.org/wiki/Sifar_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 165,
+      "url": "https://en.wikipedia.org/wiki/Singga",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 166,
+      "url": "https://en.wikipedia.org/wiki/Soulmate_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 167,
+      "url": "https://en.wikipedia.org/wiki/Sukha_(musician)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 168,
+      "url": "https://en.wikipedia.org/wiki/Sukhe",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 169,
+      "url": "https://en.wikipedia.org/wiki/Sunny_Malton",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 170,
+      "url": "https://en.wikipedia.org/wiki/Surinder_Kaur",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 171,
+      "url": "https://en.wikipedia.org/wiki/Surinder_Shinda",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 172,
+      "url": "https://en.wikipedia.org/wiki/Surjit_Bindrakhia",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 173,
+      "url": "https://en.wikipedia.org/wiki/Swaran_Lata_(singer)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 174,
+      "url": "https://en.wikipedia.org/wiki/Swarathma",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 175,
+      "url": "https://en.wikipedia.org/wiki/Talwiinder",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 176,
+      "url": "https://en.wikipedia.org/wiki/Tarsame_Singh_Saini",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 177,
+      "url": "https://en.wikipedia.org/wiki/Tarsem_Jassar",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 178,
+      "url": "https://en.wikipedia.org/wiki/Tegi_Pannu",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 179,
+      "url": "https://en.wikipedia.org/wiki/Thaikkudam_Bridge",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 180,
+      "url": "https://en.wikipedia.org/wiki/The_Dhol_Foundation",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 181,
+      "url": "https://en.wikipedia.org/wiki/The_LBG",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 182,
+      "url": "https://en.wikipedia.org/wiki/The_Vinyl_Records",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 183,
+      "url": "https://en.wikipedia.org/wiki/Thermal_and_a_Quarter",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 184,
+      "url": "https://en.wikipedia.org/wiki/Tigerstyle",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 185,
+      "url": "https://en.wikipedia.org/wiki/Tru_Skool",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 186,
+      "url": "https://en.wikipedia.org/wiki/Voodoo_Child_(band)",
+      "title": "",
+      "accessed": "2026-10-24"
+    },
+    {
+      "id": 187,
+      "url": "https://en.wikipedia.org/wiki/Yuvraj_Hans",
+      "title": "",
+      "accessed": "2026-10-24"
+    }
+  ]
+}

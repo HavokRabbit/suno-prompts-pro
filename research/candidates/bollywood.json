@@ -1,0 +1,1360 @@
+{
+  "category": "bollywood",
+  "label": "Bollywood / filmi",
+  "genre_labels": [
+    "filmi",
+    "Bollywood",
+    "Hindi film music",
+    "Indian film music",
+    "Bollywood music"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"filmi\"@en \"Bollywood\"@en \"Hindi film music\"@en \"Indian film music\"@en \"Bollywood music\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q156347",
+      "name": "Lata Mangeshkar",
+      "musicbrainz_id": "aeb71bd8-447d-4415-8ea1-2b7d664f67e1",
+      "description": "Indian singer (1929–2022)",
+      "sitelinks": 87,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q38393",
+      "name": "Asha Bhosle",
+      "musicbrainz_id": "79c5547a-e098-495c-8dac-7e99546aa46b",
+      "description": "Indian playback singer (1933–2026)",
+      "sitelinks": 60,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2050788",
+      "name": "Shreya Ghoshal",
+      "musicbrainz_id": "a8740949-50a8-4e71-8133-17d31b7cf69c",
+      "description": "Indian playback singer",
+      "sitelinks": 59,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q156815",
+      "name": "Mohammed Rafi",
+      "musicbrainz_id": "28365249-f3fd-44db-8131-32cb170970c4",
+      "description": "Indian playback singer (1924–1980)",
+      "sitelinks": 54,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q331155",
+      "name": "Shruti Haasan",
+      "musicbrainz_id": "d9515233-3fe6-44ef-8bea-45fe75962214",
+      "description": "Indian actress",
+      "sitelinks": 54,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3351697",
+      "name": "Dr. Puneeth Rajkumar",
+      "musicbrainz_id": "9bb8a51b-8921-4594-93f0-afb9a647f059",
+      "description": "Kannada actor (1974-2021)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q466826",
+      "name": "Alka Yagnik",
+      "musicbrainz_id": "52cf0679-e1cf-42ca-b9b5-86e018b36d91",
+      "description": "Indian playback singer",
+      "sitelinks": 46,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q471542",
+      "name": "Kishore Kumar",
+      "musicbrainz_id": "793b8f58-80ab-49b3-b5ae-d94034dab10c",
+      "description": "Indian singer and actor (1929–1987)",
+      "sitelinks": 45,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q944546",
+      "name": "Sunny Deol",
+      "musicbrainz_id": "19c27e67-8d63-4ffb-9b11-5b4f10d6ce7c",
+      "description": "Indian actor and politician (born 1957)",
+      "sitelinks": 45,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q590853",
+      "name": "Farhan Akhtar",
+      "musicbrainz_id": "a230f44f-7ca1-4b94-9be7-5042b40a3eab",
+      "description": "Indian director and actor",
+      "sitelinks": 43,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q470898",
+      "name": "Sonu Nigam",
+      "musicbrainz_id": "93622908-0806-4173-94c1-9e42597af011",
+      "description": "Indian singer",
+      "sitelinks": 42,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3595893",
+      "name": "Zubeen Garg",
+      "musicbrainz_id": "462d0e4a-5551-499a-b804-e95b997b4877",
+      "description": "Indian recording artist, singer, actor",
+      "sitelinks": 42,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q469818",
+      "name": "Udit Narayan Jha",
+      "musicbrainz_id": "43a90725-7432-4f08-baa6-4c939d6f69a9",
+      "description": "Nepalese playback singer",
+      "sitelinks": 41,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2722933",
+      "name": "Sunidhi Chauhan",
+      "musicbrainz_id": "934cc2a7-822e-4117-8e82-8e663d7d2daf",
+      "description": "Indian playback singer",
+      "sitelinks": 37,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q464185",
+      "name": "Daler Mehndi",
+      "musicbrainz_id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+      "description": "Indian singer",
+      "sitelinks": 35,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2049688",
+      "name": "S. P. Balasubrahmanyam",
+      "musicbrainz_id": "719826ad-25b4-4bef-a44f-a80af3dbd721",
+      "description": "Indian playback singer (1946–2020)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3595475",
+      "name": "Ila Arun",
+      "musicbrainz_id": "7344191f-2206-4572-b772-48499b1df46d",
+      "description": "Indian actress and singer",
+      "sitelinks": 32,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q467315",
+      "name": "Kavita Krishnamurthy",
+      "musicbrainz_id": "95e3467a-b303-43e0-b44b-20c90e23c387",
+      "description": "Indian singer",
+      "sitelinks": 32,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q466955",
+      "name": "Noor Jehan",
+      "musicbrainz_id": "d423ecdc-242d-4fbb-aa04-eb69337e75e7",
+      "description": "Pakistani singer and actress (1920–2000)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4790608",
+      "name": "Arijit Singh",
+      "musicbrainz_id": "ed3f4831-e3e0-4dc0-9381-f5649e9df221",
+      "description": "Indian playback singer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q1395430",
+      "name": "Himesh Reshammiya",
+      "musicbrainz_id": "643f0b8a-d835-4f45-bb79-84dd5ac96b4a",
+      "description": "Indian musician, singer and actor",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3200364",
+      "name": "Kumar Sanu",
+      "musicbrainz_id": "9c58542d-d049-4f3b-a6e1-ff75d87472eb",
+      "description": "Indian playback singer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q14917099",
+      "name": "Neha Kakkar",
+      "musicbrainz_id": "9ac67cb4-c838-48ad-b28d-1ff2ae58b758",
+      "description": "Indian singer (born 1988)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q691490",
+      "name": "Rahat Fateh Ali Khan",
+      "musicbrainz_id": "014431e3-c5a3-4a57-b86b-fe8f2e3253ff",
+      "description": "Pakistani sufi singer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q42018",
+      "name": "Anuradha Paudwal",
+      "musicbrainz_id": "b59ebbbe-8e97-4681-b055-1923a83cc619",
+      "description": "Indian playback singer",
+      "sitelinks": 29,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6897935",
+      "name": "Monali Thakur",
+      "musicbrainz_id": "adb5aa54-32b9-4587-83df-156d2c9bef1c",
+      "description": "Indian playback singer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2049494",
+      "name": "Shankar Mahadevan",
+      "musicbrainz_id": "bdbafa57-cf3f-4b7e-b956-fb6e0071ecd4",
+      "description": "Indian singer and composer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3634230",
+      "name": "KK",
+      "musicbrainz_id": "172e980e-ba97-4adb-acb0-d59733c599b6",
+      "description": "Indian playback singer (1968–2022)",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6363189",
+      "name": "Kanika Kapoor",
+      "musicbrainz_id": "a56d017a-1bcd-4483-aaf5-9e9f1e2d0e0e",
+      "description": "Indian singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6986984",
+      "name": "Neeti Mohan",
+      "musicbrainz_id": "d7426d9d-dade-4c73-b2ee-a4dfcc373704",
+      "description": "Indian singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2049950",
+      "name": "K. S. Chithra",
+      "musicbrainz_id": "6fbfece4-f13a-4cd0-81df-81734821be30",
+      "description": "Indian playback singer",
+      "sitelinks": 26,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2722967",
+      "name": "Alisha Chinai",
+      "musicbrainz_id": "154093f6-bc4f-4583-a0d8-71a75175ede5",
+      "description": "Indian singer",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3523373",
+      "name": "Andrea Jeremiah",
+      "musicbrainz_id": "75583e28-dcbc-4527-b9ae-06f3952a1f8d",
+      "description": "Indian actress",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5276830",
+      "name": "Diljit Dosanjh",
+      "musicbrainz_id": "f931c961-b647-4861-be8c-f47d84a4de51",
+      "description": "Indian singer, film and television actor",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3288794",
+      "name": "Usha Mangeshkar",
+      "musicbrainz_id": "af24eec6-3f6d-42fa-be40-ea8376b8bb03",
+      "description": "Indian singer (1935-)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3595144",
+      "name": "Usha Uthup",
+      "musicbrainz_id": "8c71a37b-1b64-43e8-a24f-ada8db2f2d61",
+      "description": "Indian playback singer and film actress",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q112275924",
+      "name": "PVR Raja",
+      "musicbrainz_id": "12eb5719-c364-4f6b-8156-6f2532a7eef0",
+      "description": "Indian composer and guitarist",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2344606",
+      "name": "Sukhwinder Singh",
+      "musicbrainz_id": "d5812475-f8e6-4b5c-951f-7e82720ef041",
+      "description": "Indian singer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2679233",
+      "name": "Yo Yo Honey Singh",
+      "musicbrainz_id": "0dc9c4bc-8bcc-42f1-9033-bec41160377f",
+      "description": "Indian musician",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2732205",
+      "name": "Hemanta Mukhopadhyay",
+      "musicbrainz_id": "f8c3fd08-de11-4d2e-940e-e10abde3513c",
+      "description": "Indian singer (1920–1989)",
+      "sitelinks": 22,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2050056",
+      "name": "Sadhana Sargam",
+      "musicbrainz_id": "8eda7bd6-3f4b-4dbe-868d-1344159f139e",
+      "description": "Indian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2738917",
+      "name": "Vikram Bhatt",
+      "musicbrainz_id": "",
+      "description": "Indian film director",
+      "sitelinks": 22,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3694931",
+      "name": "Gurdas Maan",
+      "musicbrainz_id": "2e27b26c-f92b-48aa-b758-ee564d1da868",
+      "description": "Indian actor, singer and writer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5673882",
+      "name": "Harshdeep Kaur",
+      "musicbrainz_id": "cbc2c6a3-11dc-424a-994b-4edd572ef43c",
+      "description": "Indian singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music",
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q1391295",
+      "name": "Kailash Kher",
+      "musicbrainz_id": "6bd32857-c9fa-484f-9ef7-90c655d08c0a",
+      "description": "Indian pop-rock singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3272944",
+      "name": "Neha Bhasin",
+      "musicbrainz_id": "fce52000-0923-4602-85ce-9f5bc5097bdf",
+      "description": "Indian singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7126627",
+      "name": "Palak Muchhal",
+      "musicbrainz_id": "83facc91-8051-4746-82b7-9f67dc35bf48",
+      "description": "Indian singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q330889",
+      "name": "Silambarasan TR",
+      "musicbrainz_id": "f25c8950-4158-4582-8a96-764cf7b18b2c",
+      "description": "Indian actor, director, producer and singer (born 1984)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2051231",
+      "name": "Hariharan",
+      "musicbrainz_id": "dd8f223c-66a0-4a5d-b4ca-5a4e884ddb80",
+      "description": "Indian playback singer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3346448",
+      "name": "Shaan",
+      "musicbrainz_id": "4586db61-284f-42dd-9b19-69111ea08149",
+      "description": "Indian playback singer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q422838",
+      "name": "Surinder Kaur",
+      "musicbrainz_id": "ab4b02c0-9614-41cd-b847-b5e1233f6ca9",
+      "description": "Indian singer (1929-2006)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4765271",
+      "name": "Anirudh Ravichander",
+      "musicbrainz_id": "cf76861a-c1f5-456d-8d17-5994d05eecf8",
+      "description": "Indian music composer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2051296",
+      "name": "S. Janaki",
+      "musicbrainz_id": "ea5c9518-f1e4-4304-a6ed-9ead3a60ac2e",
+      "description": "Indian singer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3595213",
+      "name": "Lucky Ali",
+      "musicbrainz_id": "06de7d6b-72fc-43a6-88b4-dc4c495e5607",
+      "description": "Indian musician",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q30557637",
+      "name": "Guru Randhawa",
+      "musicbrainz_id": "75939c77-b808-4e79-89ec-71d5cb0d453a",
+      "description": "Indian singer and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q949606",
+      "name": "Sonu Kakkar",
+      "musicbrainz_id": "064bc852-059d-4b76-99ef-013383d54990",
+      "description": "Indian playback singer and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q19896109",
+      "name": "Jasmine Sandlas",
+      "musicbrainz_id": "",
+      "description": "American-Indian singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3631714",
+      "name": "Mika Singh",
+      "musicbrainz_id": "b46ce29c-6c93-4619-8f08-0c23a8bacf0d",
+      "description": "Indian singer and musician",
+      "sitelinks": 16,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4761956",
+      "name": "Angaraag Mahanta",
+      "musicbrainz_id": "7f77bfe2-ce93-40ca-a72e-21de63ca5d26",
+      "description": "singer and composer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5564076",
+      "name": "Gippy Grewal",
+      "musicbrainz_id": "11427e08-33b5-4955-a727-61960570a186",
+      "description": "Indian actor",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2917376",
+      "name": "Mohit Chauhan",
+      "musicbrainz_id": "1dd28f27-4ab3-4a3f-8174-4ccd571a9dce",
+      "description": "Indian pop and playback singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q23883763",
+      "name": "Shirley Setia",
+      "musicbrainz_id": "9371e5c7-5995-4471-a5a9-33481f897f9c",
+      "description": "New Zealand singer and actress",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4740593",
+      "name": "Mamta Sharma",
+      "musicbrainz_id": "981a7f8b-170c-4e78-abda-d32bae9e0734",
+      "description": "Indian playback singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7239780",
+      "name": "Preeti Sagar",
+      "musicbrainz_id": "",
+      "description": "Indian playback singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7415625",
+      "name": "Sanchita Bhattacharya",
+      "musicbrainz_id": "de54c7a5-a404-429d-bbcb-f1defa37d2dc",
+      "description": "Indian playback singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4889964",
+      "name": "Benny Dayal",
+      "musicbrainz_id": "6b0b4484-442e-489d-bb8e-5e79dcd8e5f4",
+      "description": "Indian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3523638",
+      "name": "Devi Sri Prasad",
+      "musicbrainz_id": "fef84622-4761-483e-a821-a54651fb03df",
+      "description": "Indian composer and singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3635993",
+      "name": "Miss Pooja",
+      "musicbrainz_id": "e513b3f9-87a0-4b7a-9321-8d7fbc81e187",
+      "description": "Indian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6108595",
+      "name": "Richa Sharma",
+      "musicbrainz_id": "f1241aa8-65df-4998-9cc8-5b4856b12205",
+      "description": "Indian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q9369646",
+      "name": "Vishal Dadlani",
+      "musicbrainz_id": "e3fce957-14b8-40d3-9d4c-efc10a3813ef",
+      "description": "Indian singer, songwriter and music composer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q15340767",
+      "name": "Ankit Tiwari",
+      "musicbrainz_id": "8e94cd02-5047-4885-82fa-7f2b8bb2195f",
+      "description": "Indian singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q2723490",
+      "name": "Kalyanji–Anandji",
+      "musicbrainz_id": "5316ee10-f6aa-412b-b2da-43115f7a5514",
+      "description": "Indian composer duo",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7399059",
+      "name": "Sagarika Mukherjee",
+      "musicbrainz_id": "b1384635-3990-40ae-8588-4cd2623a127a",
+      "description": "Indian singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q22813458",
+      "name": "Shekhar Ravjiani",
+      "musicbrainz_id": "55b69527-3bbc-4ea2-9a8f-d44bdc8a83e6",
+      "description": "Indian singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q43766764",
+      "name": "Kavya Ajit",
+      "musicbrainz_id": "95cd2c23-f306-40d2-8d2b-e9775cf2175a",
+      "description": "Indian singer and violinist",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6892073",
+      "name": "Mohammad Irfan Ali",
+      "musicbrainz_id": "f33c0eb4-fae1-4662-a0f2-a469fd6fe52d",
+      "description": "Indian Playback Singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q22277872",
+      "name": "Nikhita Gandhi",
+      "musicbrainz_id": "12829680-473d-4787-8c53-a9e35b94ed18",
+      "description": "Indian playback singer who has worked in Indian films in four different languages.",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q19895578",
+      "name": "Damodar Raao",
+      "musicbrainz_id": "",
+      "description": "Indian singer, composer and songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q18608779",
+      "name": "Harrdy Sandhu",
+      "musicbrainz_id": "e2f526c6-09ed-4ef3-aa05-452eb12ff192",
+      "description": "Indian singer and actor",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7282983",
+      "name": "Raghu Dixit",
+      "musicbrainz_id": "3a380250-66c9-4548-b27d-fe6edfe0e2ae",
+      "description": "Indian singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q18358401",
+      "name": "Sid Sriram",
+      "musicbrainz_id": "00fc05b6-4a0d-4e0e-be4c-2cd4b94ce1e9",
+      "description": "Indian Playback Singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q16732422",
+      "name": "Meet Bros",
+      "musicbrainz_id": "88be3597-b0d1-4049-afa4-0a2ec24cb7b4",
+      "description": "Indian music director duo",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7636490",
+      "name": "Sulochana Chavan",
+      "musicbrainz_id": "28b91bcb-9e2d-4ac5-b5df-6aa1c121df78",
+      "description": "playback singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7650813",
+      "name": "Suzanne D'Mello",
+      "musicbrainz_id": "93566ad1-2341-47ee-846d-6219f4cd742a",
+      "description": "Indian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q14565611",
+      "name": "Hiphop Tamizha",
+      "musicbrainz_id": "3eca58c1-7927-4f79-ac0c-01844e04899c",
+      "description": "Indian musical duo",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6968154",
+      "name": "Natalie Di Luccio",
+      "musicbrainz_id": "60d7b9a6-d0b4-4c7d-8c83-bccf92a96cf4",
+      "description": "Canadian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5529955",
+      "name": "Geeta Madhuri",
+      "musicbrainz_id": "83b46bf8-68fc-4159-bba3-060cb7754383",
+      "description": "Indian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5892320",
+      "name": "Haricharan",
+      "musicbrainz_id": "ee73467d-4c24-45d3-bc5e-5f4ebc36a9a3",
+      "description": "Indian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q3488923",
+      "name": "Soham Shah",
+      "musicbrainz_id": "",
+      "description": "Indian film director, writer, designer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q16057959",
+      "name": "Abhay Jodhpurkar",
+      "musicbrainz_id": "3e884370-d664-4707-9858-161907afab33",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6168478",
+      "name": "Jazzy B",
+      "musicbrainz_id": "d455fa0b-9e76-40d7-b96e-337bb01de3b3",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6373827",
+      "name": "Kary Arora",
+      "musicbrainz_id": "4e237ab0-6cfb-4075-b0a2-4bc6e9aa252a",
+      "description": "DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q99947333",
+      "name": "Mahesh Mahadev",
+      "musicbrainz_id": "da605618-b8d4-4537-bb38-be9c4499654e",
+      "description": "Indian music composer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q18128447",
+      "name": "Nakash Aziz",
+      "musicbrainz_id": "a6a6fea9-f3df-4347-aa31-971fcd7a7994",
+      "description": "Indian music composer and singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7156000",
+      "name": "Pawni Pandey",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q30143891",
+      "name": "Amit Mishra",
+      "musicbrainz_id": "2d53c699-1e76-4ca7-b1c4-f5940bf2d716",
+      "description": "singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q52106850",
+      "name": "Gurshabad Singh",
+      "musicbrainz_id": "e2b72796-e2b0-46ed-a3bb-2f56ddab5281",
+      "description": "Punjabi actor and playback singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q130719070",
+      "name": "Pranav Chaganty",
+      "musicbrainz_id": "",
+      "description": "Telugu rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q4699183",
+      "name": "Aishwarya Nigam",
+      "musicbrainz_id": "4c932f8b-0ef2-4f25-b717-b7403f02bbf1",
+      "description": "Indian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q5248126",
+      "name": "Debojit Saha",
+      "musicbrainz_id": "c5fb4aeb-0a36-4289-83af-b88c846bf743",
+      "description": "singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q23771900",
+      "name": "Jatinder Shah",
+      "musicbrainz_id": "3a822c75-9336-4132-bef0-b423ae27930f",
+      "description": "Indian music composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7719074",
+      "name": "The Bombay Royale",
+      "musicbrainz_id": "cfcb2d2f-bfe0-428b-ac21-b5c1e1ce5ea3",
+      "description": "Australian musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q19665341",
+      "name": "Divya Kumar",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q42904501",
+      "name": "James Architect",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q52773586",
+      "name": "Janindu Mahesh",
+      "musicbrainz_id": "be67e316-1fda-4c68-8e0e-c454f2d7f275",
+      "description": "Sri Lankan singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q11645845",
+      "name": "Kyōko Nobi",
+      "musicbrainz_id": "",
+      "description": "Japanese psychologist and dancer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q6982234",
+      "name": "Naveen Kumar",
+      "musicbrainz_id": "f0ae9ecd-8b06-4a46-ba84-fb2f108ad223",
+      "description": "Indian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q61605424",
+      "name": "Sandip Chakravarty",
+      "musicbrainz_id": "",
+      "description": "Chakravarty is a tabla player, musician, DJ and tv presenter.",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q7991018",
+      "name": "What Cheer? Brigade",
+      "musicbrainz_id": "39e3c35f-b9e5-431e-a082-35a7ae066963",
+      "description": "brass band with approximately 18 active members from Providence, Rhode Island, USA",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q95268476",
+      "name": "Bisharad Basnet",
+      "musicbrainz_id": "",
+      "description": "actor and director",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q141714896",
+      "name": "Buddy DML",
+      "musicbrainz_id": "67553ded-a6c1-45e6-89f9-b439612c9f75",
+      "description": "Ghanaian Singer, Rapper, Songwriter and Record Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q140645610",
+      "name": "CHETRAM NAYAK",
+      "musicbrainz_id": "622da1b1-a4cc-4158-9385-3d61715e8fa3",
+      "description": "Indian Singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q107521682",
+      "name": "DJ Syrah",
+      "musicbrainz_id": "",
+      "description": "Bollywood DJ & Music Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q55819595",
+      "name": "Ganesh Chandrasekaran",
+      "musicbrainz_id": "33ec9f8a-703d-4a70-b35a-4811f0d1cd06",
+      "description": "Indian musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q114753563",
+      "name": "Leela Pathak",
+      "musicbrainz_id": "",
+      "description": "Indian singer from Maharashtra state",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q107023282",
+      "name": "N2 The Band",
+      "musicbrainz_id": "",
+      "description": "Indo Caribbean Fusion Band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q136498992",
+      "name": "Rafa Yeasmin",
+      "musicbrainz_id": "4fb885c3-aa3c-4cdb-a1e3-c91169a11354",
+      "description": "Indian playback singer-songwriter, music and record producer (born 2009)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q123461090",
+      "name": "Sahithi Chaganti",
+      "musicbrainz_id": "de2565bd-7c87-4e17-81c0-62a053e7f850",
+      "description": "Indian singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q106687081",
+      "name": "Savita Raj Hiremath",
+      "musicbrainz_id": "",
+      "description": "Bollywood film producer from India",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q136482388",
+      "name": "Shifa Ruby",
+      "musicbrainz_id": "6822fe50-0c6c-45b5-894c-c9f5bc4dd943",
+      "description": "Indian playback singer, songwriter, and performer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Bollywood"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q135274288",
+      "name": "Shruthika Samudhrala",
+      "musicbrainz_id": "",
+      "description": "Indian Singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    },
+    {
+      "wikidata_id": "Q135277921",
+      "name": "Yasaswi Kondepudi",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian film music"
+      ],
+      "category": "bollywood"
+    }
+  ]
+}

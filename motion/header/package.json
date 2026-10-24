@@ -1,0 +1,14 @@
+{
+  "name": "header",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.56 preview",
+    "check": "npx --yes hyperframes@0.8.56 check",
+    "render": "npx --yes hyperframes@0.8.56 render",
+    "publish": "npx --yes hyperframes@0.8.56 publish"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2"
+  }
+}

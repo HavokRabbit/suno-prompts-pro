@@ -1,107 +1,133 @@
-"""Iron Vespers — Suno Prompt Generator Pro.
+"""Iron Vespers — Prompt Studio.
 
-Data lives in sibling JSON files (artists.json, templates.json, genre_rules.json)
-so the artist database and genre logic can be edited without touching Python.
-CSS lives in static/style.css.
+Data lives in sibling JSON files so the catalogue can grow without touching
+Python: artists.json (detail profiles plus sourced genre references),
+templates.json, genre_rules.json, catalog_meta.json. CSS lives in
+static/style.css. The header animation is static/header.mp4, rendered from the
+HyperFrames project in motion/header/.
 
-A defensive sanitizer (_sanitize_prompt) strips real artist/band names from
-generated prompts so Suno's SENSITIVE_WORD_ERROR filter doesn't reject them.
-Originally added by the Streamlit sweep 2026-07-03; preserved here.
+Two kinds of entry, kept visibly distinct in the UI:
+  * profile   — the original hand-written six-field sound description
+  * reference — a verified genre association (Wikidata CC0 or a cited source)
+                rendered through an original, editable genre template. It is a
+                starting point, not a claim about that artist's actual voice.
+
+A defensive sanitizer strips real artist/band names from generated prompt text
+so Suno's SENSITIVE_WORD_ERROR filter does not reject the prompt. The search
+fields keep their names for lookup; only generated prompt text is cleaned.
 """
-import streamlit as st
-import streamlit.components.v1 as components
-import random
 import base64
 import json
+import random
+import re
 from pathlib import Path
 
-# ====================
-#   DATA LOADING
-# ====================
+import streamlit as st
+import streamlit.components.v1 as components
+
+import catalog as cat
+from genre_profiles import (
+    FIELDS,
+    GENRES,
+    TEMPLATES,
+    categories_for,
+    identity_key,
+    normalize,
+    reference_profile,
+)
+
 _DATA_DIR = Path(__file__).parent
 
 
 def _load_json(name):
-    """Load a JSON data file shipped alongside this script. Raises FileNotFoundError
-    if missing — handled by the Streamlit error UI in main()."""
     with open(_DATA_DIR / name, encoding="utf-8") as f:
         return json.load(f)
 
 
 try:
-    SINGER_DB = _load_json("artists.json")
+    SINGER_DB = cat.profiles()
+    REFERENCE_DB = cat.references()
+    CATALOG_META = cat.meta()
     DEFAULT_TEMPLATES = _load_json("templates.json")
     GENRE_RULES = _load_json("genre_rules.json")
     _DATA_LOAD_ERROR = None
 except FileNotFoundError as e:
-    SINGER_DB, DEFAULT_TEMPLATES, GENRE_RULES = {}, {}, []
+    SINGER_DB, REFERENCE_DB, CATALOG_META = {}, {}, {}
+    DEFAULT_TEMPLATES, GENRE_RULES = {}, []
     _DATA_LOAD_ERROR = str(e)
 
 
 # ====================
-#   IRON VESPERS BRANDING
+#   BRANDING ASSETS
 # ====================
-def _load_logo_b64():
+def _b64(path):
     try:
-        with open(_DATA_DIR / "static" / "wolf_logo.svg", "rb") as f:
-            return base64.b64encode(f.read()).decode()
+        return base64.b64encode((_DATA_DIR / path).read_bytes()).decode()
     except Exception:
         return None
 
 
-_LOGO_B64 = _load_logo_b64()
+_LOGO_B64 = _b64("static/wolf_logo.svg")
+_HEADER_B64 = _b64("static/header.mp4")
+
+
+def render_header():
+    """Slim animated brand banner.
+
+    The clip is a rendered HyperFrames composition. It is muted, decorative and
+    marked aria-hidden; when the viewer asks for reduced motion the script parks
+    it on its final frame so the banner is still complete, just still.
+    """
+    if not _HEADER_B64:
+        st.markdown(
+            '<div class="iv-plate"><div class="iv-plate-copy">'
+            '<div class="iv-plate-title">Iron Vespers</div>'
+            '<div class="iv-plate-sub">Prompt Studio</div></div></div>',
+            unsafe_allow_html=True,
+        )
+        return
+    components.html(
+        f"""
+<style>
+  html, body {{ margin:0; padding:0; background:transparent; overflow:hidden; }}
+  video {{ display:block; width:100%; height:auto; border-radius:10px; }}
+  .wrap {{ line-height:0; }}
+</style>
+<div class="wrap">
+  <video id="ivh" autoplay muted playsinline loop preload="auto"
+         aria-hidden="true" tabindex="-1"
+         src="data:video/mp4;base64,{_HEADER_B64}"></video>
+</div>
+<script>
+  (function () {{
+    var v = document.getElementById("ivh");
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    function apply() {{
+      if (reduce.matches) {{
+        v.removeAttribute("loop");
+        v.pause();
+        var park = function () {{ try {{ v.currentTime = 3.4; }} catch (e) {{}} }};
+        if (v.readyState >= 1) {{ park(); }} else {{ v.addEventListener("loadedmetadata", park, {{ once: true }}); }}
+      }}
+    }}
+    apply();
+    if (reduce.addEventListener) {{ reduce.addEventListener("change", apply); }}
+  }})();
+</script>
+""",
+        height=232,
+        scrolling=False,
+    )
 
 
 # ====================
-#   CALLBACKS (defined before any st.button(on_click=...) that uses them)
+#   DEFENSIVE SANITIZER
 # ====================
-def cb_random_artist():
-    """Sidebar 🎲 Random Artist → fill Generate tab's artist field."""
-    new = get_random_artist()
-    st.session_state.artist_input = new
-    st.session_state.random_artist = new
-    st.session_state.pop('selected_artist', None)
-
-
-def cb_clear_artist():
-    """Generate tab 🧹 Clear Artist Field → empty the artist field."""
-    st.session_state.artist_input = ""
-    st.session_state.pop('selected_artist', None)
-    st.session_state.pop('random_artist', None)
-
-
-def cb_select_artist(name):
-    """Generate tab ⭐ Popular button → fill artist field."""
-    st.session_state.artist_input = name
-    st.session_state.selected_artist = name
-    st.session_state.pop('random_artist', None)
-
-
-def cb_use_artist(name):
-    """Artists tab 'Use {Name}' button → fill Generate tab's field, jump to Generate."""
-    st.session_state.artist_input = name
-    st.session_state.selected_artist = name
-    st.session_state.active_tab_label = "✨ Generate"
-
-
-def cb_select_genre(term):
-    """Generate tab 🎸 By Genre button → pre-fill Artists tab search, switch to Artists tab."""
-    # Use a non-widget-bound key (genre_filter) so we don't trip the widget-key write block.
-    # The Artists tab text_input reads from this via its `value=` argument.
-    st.session_state.genre_filter = term
-    st.session_state.active_tab_label = "📚 Artists"
-
-
-# ====================
-#   DEFENSIVE SANITIZER (added by Streamlit sweep 2026-07-03)
-#   Strips real artist/band names from generated prompt text so Suno's
-#   SENSITIVE_WORD_ERROR filter doesn't reject the prompt. SINGER_DB keys
-#   (the search tabs) keep their names for lookup; the generated prompt
-#   text must be clean. Single-name terms ("Alice", "Iron") are excluded
-#   to avoid false-positive stripping of common English words.
-# ====================
+# Names that must never survive into generated prompt text. Single short words
+# ("Queen", "Prince", "Tool", "Future") are deliberately absent: stripping them
+# would corrupt ordinary prose. The generated profile text is generic anyway -
+# this list is the backstop for a name that leaks through a custom field.
 _NAME_LEAK_BLACKLIST = [
-    # Vocalists (first + last combos)
     "Messiah Marcolin", "Scott Reagers", "Bobby Liebling", "Aaron Stainthorpe",
     "Juha Raivio", "Liz Buckingham", "Jus Oborn", "Patrick Walker",
     "Mike Scheidt", "Jon Davis", "Dorthia Cottrell", "Ryan Clark",
@@ -112,531 +138,592 @@ _NAME_LEAK_BLACKLIST = [
     "Sean McCulloch", "Trey Azagthooth", "David Vincent", "Steve Tucker",
     "Nergal", "Johan Hegg", "Angela Gossow", "Alissa White-Gluz",
     "Derrick Green", "Max Cavalera", "Robb Flynn", "Mikael Åkerfeldt",
-    # Bands (full name only)
     "Nine Inch Nails", "Trent Reznor", "Soundgarden", "Chris Cornell",
     "Queens of the Stone Age", "Arctic Monkeys", "Alice in Chains",
     "Faith No More", "Stone Temple Pilots", "Pearl Jam", "Led Zeppelin",
     "Black Sabbath", "Iron Maiden", "Judas Priest", "Megadeth", "Slayer",
-    "Tool", "System of a Down", "Deftones", "Rage Against the Machine",
-    "Smashing Pumpkins", "Radiohead", "Muse", "Foo Fighters", "Nirvana",
+    "System of a Down", "Rage Against the Machine", "Smashing Pumpkins",
     "My Chemical Romance", "Bring Me the Horizon", "Twenty One Pilots",
-    "Imagine Dragons", "Coldplay", "Maroon 5", "OneRepublic", "Hozier",
-    "Billie Eilish", "Taylor Swift", "Drake", "The Weeknd", "BTS", "BLACKPINK",
-    "Ariana Grande", "Dua Lipa", "Post Malone", "Doja Cat", "SZA",
-    "Kendrick Lamar", "J. Cole", "Future", "Travis Scott", "Lil Baby",
-    "Cardi B", "Megan Thee Stallion", "Nicki Minaj",
-    "Jerry Cantrell", "Layne Staley", "Kurt Cobain", "Dave Grohl",
-    "Tupac", "Notorious", "Biggie", "Snoop", "Eminem",
-    "Michael Jackson", "Quincy Jones", "Prince", "Rihanna", "Snoop Dogg",
-    "Earl Sweatshirt", "Flume",
+    "Imagine Dragons", "Maroon 5", "OneRepublic",
+    "Billie Eilish", "Taylor Swift", "The Weeknd", "Ariana Grande", "Dua Lipa",
+    "Post Malone", "Doja Cat", "Kendrick Lamar", "Travis Scott", "Megan Thee Stallion",
+    "Nicki Minaj", "Jerry Cantrell", "Layne Staley", "Kurt Cobain", "Dave Grohl",
+    "Michael Jackson", "Quincy Jones", "Snoop Dogg", "Earl Sweatshirt",
 ]
 
 
-def _sanitize_prompt(text):
-    """Strip any blacklisted artist/band name from generated prompt text.
-    Returns (cleaned_text, hit_count) so callers can log when it fires."""
+def _strippable(name):
+    """Only names distinctive enough to remove without wrecking prose."""
+    return len(name) >= 8 or " " in name
+
+
+@st.cache_data(show_spinner=False)
+def _strip_pattern():
+    """One case-insensitive pattern covering the blacklist and the catalogue.
+
+    Catalogue names matter: a profile's own field text can contain the artist's
+    name ("Vocal Style: Karan Aujla, ..."), and Suno rejects any prompt carrying
+    a real artist name. Longest-first ordering means a full name is removed
+    before a shorter name that sits inside it.
+    """
+    terms = {n for n in _NAME_LEAK_BLACKLIST if _strippable(n)}
+    terms |= {n for n in cat.catalog() if _strippable(n)}
+    if not terms:
+        return None
+    ordered = sorted(terms, key=len, reverse=True)
+    return re.compile("|".join(re.escape(t) for t in ordered), re.IGNORECASE)
+
+
+def _sanitize_prompt(text, extra=()):
+    """Remove real artist/band names from generated prompt text.
+
+    Case-insensitive, because profile text is written in Title Case while the
+    short prompt is lowercased. Returns (cleaned_text, hit_count) so callers can
+    tell the user it fired.
+    """
     if not text:
         return text, 0
     hits = 0
-    for name in _NAME_LEAK_BLACKLIST:
-        if name in text:
-            text = text.replace(name, "[REDACTED]")
-            hits += 1
+    for name in sorted({n for n in extra if n and _strippable(n)}, key=len, reverse=True):
+        text, count = re.subn(re.escape(name), "[style descriptor]", text, flags=re.IGNORECASE)
+        hits += count
+    pattern = _strip_pattern()
+    if pattern is not None:
+        text, count = pattern.subn("[style descriptor]", text)
+        hits += count
     return text, hits
 
 
 # ====================
-#   FUNCTIONS
+#   LOOKUP + DETECTION
 # ====================
 def find_singer(name):
-    return SINGER_DB.get(name.lower().strip())
+    """Resolve a typed name to (key, entry). Profiles win over references."""
+    if not name:
+        return None, None
+    key = name.strip().lower()
+    if key in SINGER_DB:
+        return key, SINGER_DB[key]
+    if key in REFERENCE_DB:
+        return key, REFERENCE_DB[key]
+    return cat.find(name)
 
 
 def detect_genre(name):
-    """Data-driven genre detection. Iterates GENRE_RULES in order; first rule whose
-    `any` keywords all-substring-match (and whose `none` keywords don't) wins.
-    Falls back to 'pop'."""
-    n = name.lower().strip()
+    """Data-driven genre detection for a name that is not in the catalogue."""
+    n = (name or "").lower().strip()
     for rule in GENRE_RULES:
         if any(k in n for k in rule.get("any", [])) and not any(k in n for k in rule.get("none", [])):
             return rule["genre"]
     return "pop"
 
 
+def get_random_artist():
+    return random.choice(sorted(SINGER_DB.keys(), key=str.casefold))
+
+
+# ====================
+#   PROFILE RESOLUTION
+# ====================
+def resolve_profile(name):
+    """Return (profile_dict, provenance) for a typed name.
+
+    provenance is one of 'profile', 'reference' or 'fallback'. `profile` is
+    always a complete six-field dict.
+    """
+    key, entry = find_singer(name)
+    if entry is None:
+        template = DEFAULT_TEMPLATES.get(detect_genre(name), DEFAULT_TEMPLATES["pop"])
+        return dict(template), "fallback"
+    if entry.get("kind") == "profile" or all(f in entry for f in FIELDS):
+        return {f: entry[f] for f in FIELDS}, "profile"
+    cats = entry.get("categories") or [detect_genre(entry.get("genre", ""))]
+    return reference_profile(entry, cats[0]), "reference"
+
+
+def blend_profiles(primary, secondary):
+    """Two-artist blend: keep the primary arc, borrow the second's texture."""
+    out = dict(primary)
+    out["genre"] = ", ".join(dict.fromkeys(
+        [primary.get("genre", "").split(",")[0].strip(), secondary.get("genre", "").split(",")[0].strip()]
+    ))
+    out["style"] = f"{primary.get('style','')}; {secondary.get('style','')}"
+    out["instruments"] = ", ".join(dict.fromkeys(
+        [x.strip() for x in f"{primary.get('instruments','')}, {secondary.get('instruments','')}".split(",") if x.strip()]
+    ))
+    out["vocal_style"] = f"{primary.get('vocal_style','')} / {secondary.get('vocal_style','')}"
+    return out
+
+
+# ====================
+#   PROMPT BUILDING
+# ====================
+def _compose(profile, provenance, label, mood, theme, tempo, extra_note=""):
+    mood_value = mood or profile["mood"]
+    head = "[Style Profile]" if provenance != "reference" else "[Genre Reference]"
+    lines = [
+        head,
+        "",
+        f"Genre: {profile['genre']}",
+        f"Style: {profile['style']}",
+        f"Mood: {mood_value}",
+        f"Vocal Style: {profile['vocal_style']}",
+        f"Instrumentation: {profile['instruments']}",
+        f"Production: {profile['production']}",
+    ]
+    if tempo:
+        lines.append(f"Tempo: {tempo}")
+    if theme:
+        lines.append(f"Theme: {theme}")
+    if extra_note:
+        lines += ["", extra_note]
+    short = (
+        f"{profile['genre'].split(',')[0]} song, "
+        f"{profile['style'].split(',')[0].strip().lower()}, "
+        f"{mood_value.split(',')[0].strip().lower()} mood, "
+        f"{profile['vocal_style'].split(',')[0].strip().lower()} vocals"
+    )
+    lines += ["", "---", f"[Short Prompt]: {short}"]
+    return "\n".join(lines)
+
+
 def generate_prompt(singer, custom_mood="", custom_theme="", custom_tempo="", sanitize=True):
-    """Build a Suno prompt for `singer`. If `sanitize` is True (default), run the
-    output through _sanitize_prompt to strip real artist/band names so Suno's
-    SENSITIVE_WORD_ERROR filter doesn't reject it. The UI gates `sanitize` via
-    a sidebar checkbox; tests call with the default."""
-    data = find_singer(singer)
-    if data:
-        mood = custom_mood or data["mood"]
-        tempo = f"Tempo: {custom_tempo}" if custom_tempo else ""
-        # Note: Suno flags artist names. We reference the artist only as "[Style Profile]"
-        # and describe the sound via genre / style / mood / vocal_style.
-        result = f"""[Style Profile]
-
-Genre: {data['genre']}
-Style: {data['style']}
-Mood: {mood}
-Vocal Style: {data['vocal_style']}
-Instrumentation: {data['instruments']}
-Production: {data['production']}
-{tempo}
-{f'Theme: {custom_theme}' if custom_theme else ''}
-
----
-[Short Prompt]: {data['genre'].split(',')[0]} song, {data['style'].split(',')[0].lower()}, {mood.split(',')[0].lower()} mood, {data['vocal_style'].split(',')[0].lower()} vocals"""
-    else:
-        g = detect_genre(singer)
-        t = DEFAULT_TEMPLATES.get(g, DEFAULT_TEMPLATES["pop"])
-        mood = custom_mood or t["mood"]
-        tempo = f"Tempo: {custom_tempo}" if custom_tempo else ""
-        result = f"""[Style Profile - {t['genre']}]
-
-Genre: {t['genre']}
-Style: {t['style']}
-Mood: {mood}
-Vocal Style: {t['vocal_style']}
-Instrumentation: {t['instruments']}
-Production: {t['production']}
-{tempo}
-{f'Theme: {custom_theme}' if custom_theme else ''}
-
----
-[Short Prompt]: {t['genre']} song, {t['style'].split(',')[0].lower()}, {mood.split(',')[0].lower()} mood, {t['vocal_style'].split(',')[0].lower()} vocals
-
-Note: Artist not in database. Using {t['genre']} defaults. Add them to artists.json for better results."""
-
+    """Build a Suno-ready prompt for any catalogue entry or free-typed name."""
+    profile, provenance = resolve_profile(singer)
+    note = ""
+    if provenance == "fallback":
+        genre = detect_genre(singer)
+        note = (f"Note: artist not in database. The fields below come from the "
+                f"{DEFAULT_TEMPLATES.get(genre, DEFAULT_TEMPLATES['pop'])['genre']} template, "
+                f"chosen from the words in the name. Add the artist to artists.json for a closer match.")
+    elif provenance == "reference":
+        entry = find_singer(singer)[1] or {}
+        tags = ", ".join((entry.get("matched_genres") or [])[:3])
+        note = (f"Source: {entry.get('source', 'sourced genre association')}"
+                f"{(' (' + tags + ')') if tags else ''}. "
+                "The genre association is verified; the sound description is an original "
+                "starting template - edit it to match the record you actually hear.")
+    result = _compose(profile, provenance, singer, custom_mood, custom_theme, custom_tempo, note)
     if sanitize:
-        result, _ = _sanitize_prompt(result)
+        result, _ = _sanitize_prompt(result, extra=(singer,))
     return result
 
 
-def get_random_artist():
-    return random.choice(list(SINGER_DB.keys()))
+def generate_blend(first, second, custom_mood="", custom_theme="", custom_tempo="", sanitize=True):
+    a, a_prov = resolve_profile(first)
+    b, b_prov = resolve_profile(second)
+    blended = blend_profiles(a, b)
+    note = (f"Blend of {first.strip()} ({a_prov}) and {second.strip()} ({b_prov}). "
+            "The primary entry sets the arc; the second supplies texture and instrumentation.")
+    result = _compose(blended, "reference", f"{first.strip()} x {second.strip()}",
+                      custom_mood, custom_theme, custom_tempo, note)
+    if sanitize:
+        result, _ = _sanitize_prompt(result, extra=(first, second))
+    return result
 
 
 # ====================
 #   UI HELPERS
 # ====================
 def select_or_custom(label, preset_options, key):
-    """Selectbox with preset options + a 'Custom…' escape hatch that reveals a text
-    input. Returns the chosen value (empty string if nothing chosen)."""
+    """Selectbox with a preset list plus a Custom escape hatch."""
     options = list(preset_options) + ["Custom…"]
     choice = st.selectbox(label, options, key=f"{key}_sel")
     if choice == "Custom…":
-        custom = st.text_input(
-            f"✍️ Custom {label.lower()}",
-            key=f"{key}_txt",
+        return st.text_input(
+            f"Custom {label.lower()}", key=f"{key}_txt",
             placeholder=f"Type a custom {label.lower()}",
-        )
-        return custom.strip()
+        ).strip()
     return choice
 
 
-# ====================
-#   MAIN
-# ====================
+MOODS = ["", "Melancholic", "Energetic", "Dreamy", "Dark", "Uplifting", "Nostalgic",
+         "Intense", "Romantic", "Defiant", "Sacred", "Funereal", "Aggressive",
+         "Triumphant", "Bittersweet", "Hopeful", "Hypnotic", "Cold"]
+THEMES = ["", "Heartbreak", "Loss", "Love", "Celebration", "Night drive", "Summer",
+          "Rain", "Space", "Time", "Faith", "Redemption", "War", "Nature", "Death",
+          "Rebirth", "Longing", "Struggle", "The sea", "Iron", "Wolves", "Home"]
+TEMPOS = ["", "Slow", "Medium", "Fast", "Upbeat", "Ballad", "Half-time", "Double-time"]
+
+POPULAR = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean",
+           "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass",
+           "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts",
+           "peso pluma", "karan aujla", "tyla"]
+
+
+@st.cache_data(show_spinner=False)
+def _catalog_stats():
+    counts = cat.counts_by_genre()
+    return (
+        len(cat.catalog()),
+        len(SINGER_DB),
+        len(REFERENCE_DB),
+        len(counts),
+        counts,
+    )
+
+
+def _save_preset(entry):
+    presets = st.session_state.setdefault("presets", [])
+    presets.insert(0, entry)
+    del presets[25:]
+    st.session_state.presets = presets
+
+
 def main():
     st.set_page_config(
-        page_title="Iron Vespers — Suno Prompt Generator Pro",
+        page_title="Iron Vespers — Prompt Studio",
         page_icon="static/favicon.svg" if _LOGO_B64 else "🐺",
-        layout="wide"
+        layout="wide",
     )
 
     if _DATA_LOAD_ERROR:
         st.error(f"Could not load app data: {_DATA_LOAD_ERROR}")
-        st.info("Make sure artists.json, templates.json, and genre_rules.json are next to this script.")
+        st.info("artists.json, templates.json and genre_rules.json must sit next to this script.")
         st.stop()
 
-    # ====================
-    #   GLOBAL CSS — IRON VESPERS GOTHIC THEME
-    # ====================
     try:
         with open(_DATA_DIR / "static" / "style.css", encoding="utf-8") as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
     except FileNotFoundError:
-        pass  # fall back to default Streamlit styling
+        pass
 
-    _sanitize_on = st.session_state.get("sanitize_prompts", True)
+    total, profile_count, reference_count, genre_count, genre_counts = _catalog_stats()
+    sanitize_on = st.session_state.get("sanitize_prompts", True)
 
-    # ====================
-    #   SIDEBAR
-    # ====================
+    # ---------- sidebar ----------
     with st.sidebar:
         if _LOGO_B64:
-            st.markdown(f"""
-            <div class="iv-hero" style="padding: 12px 0 16px 0; margin-bottom: 12px;">
-                <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
-                <div class="iv-hero-text">
-                    <h1 style="font-size: 1.4em; margin: 0;">Iron Vespers</h1>
-                    <div class="iv-tag" style="font-size: 0.78em; line-height: 1.35;">Suno Prompt Generator Pro · {len(SINGER_DB)} artists · {len(DEFAULT_TEMPLATES)} genre templates</div>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+            st.markdown(
+                f'<div class="iv-side"><img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers wolf"/>'
+                '<div class="iv-side-text"><strong>Iron Vespers</strong>'
+                '<span>Prompt Studio</span></div></div>',
+                unsafe_allow_html=True,
+            )
         else:
             st.title("🐺 Iron Vespers")
-            st.markdown(f"**Suno Prompt Generator Pro · {len(SINGER_DB)} artists · {len(DEFAULT_TEMPLATES)} genre templates**")
-        st.markdown("---")
-        st.markdown(f"**Artists:** {len(SINGER_DB)}")
-        st.markdown(f"**Genres:** {len(DEFAULT_TEMPLATES)}")
-        st.markdown("---")
 
-        if st.button("🎲 Random Artist", on_click=cb_random_artist):
-            pass
-
-        st.markdown("---")
-        st.markdown("**Quick Links**")
-        st.markdown("[Suno AI](https://suno.com)")
-        st.markdown("[Iron Vespers](https://github.com/HavokRabbit/Suno-prompts-pro)")
-
-        # Defensive sanitizer toggle (preserved from Streamlit sweep 2026-07-03)
-        st.markdown("---")
-        st.subheader("Suno Filter Safety")
-        st.session_state.sanitize_prompts = st.checkbox(
-            "Strip artist/band names from generated prompts",
-            value=_sanitize_on,
-            help="Defensive sanitizer that removes known artist/band names from "
-                 "the generated prompt. Keep this ON unless you need to debug a "
-                 "specific prompt — Suno will reject prompts containing real artist names."
+        st.markdown(
+            f'<div class="iv-statgrid">'
+            f'<div><b>{total:,}</b><span>artists</span></div>'
+            f'<div><b>{genre_count}</b><span>genres</span></div>'
+            f'<div><b>{profile_count:,}</b><span>detail profiles</span></div>'
+            f'<div><b>{reference_count:,}</b><span>genre references</span></div>'
+            f"</div>",
+            unsafe_allow_html=True,
         )
 
-    # Re-read after the checkbox so generate calls in this run use the latest value
-    _sanitize_on = st.session_state.get("sanitize_prompts", True)
-
-    # Main hero header (rendered ABOVE the tabs so tab bodies are clean)
-    if _LOGO_B64:
-        st.markdown(f"""
-        <div class="iv-hero">
-            <img src="data:image/svg+xml;base64,{_LOGO_B64}" alt="Iron Vespers Wolf"/>
-            <div class="iv-hero-text">
-                <h1>Iron Vespers</h1>
-                <div class="iv-tag">Suno Prompt Generator Pro · {len(SINGER_DB)} artists · {len(DEFAULT_TEMPLATES)} genre templates</div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-    else:
-        st.title("🐺 Iron Vespers — Suno Prompt Pro")
-
-    # ====================
-    #   TABS (key= enables programmatic tab switching via st.session_state)
-    # ====================
-    _pending = st.session_state.pop("active_tab_label", None)
-    if _pending is not None:
-        st.session_state.main_tabs = _pending
-    elif "main_tabs" not in st.session_state:
-        st.session_state.main_tabs = "✨ Generate"
-
-    # === Google Analytics 4 (visitor counter) ===
-    # Reads the measurement ID from Streamlit secrets: GA4_MEASUREMENT_ID
-    # Falls back to the default HavokRabbit property ID if unset or no secrets file.
-    try:
-        _ga4_id = st.secrets.get("GA4_MEASUREMENT_ID", None) or "G-FPS8T1J4K0"
-    except FileNotFoundError:
-        _ga4_id = "G-FPS8T1J4K0"
-    if _ga4_id:
-        components.html(
-            f"""
-<script async src="https://www.googletagmanager.com/gtag/js?id={_ga4_id}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
-  gtag('js', new Date());
-  gtag('config', '{_ga4_id}');
-</script>
-""",
-            height=0,
-            width=0,
+        st.markdown("---")
+        st.checkbox(
+            "Strip artist names from prompts",
+            value=sanitize_on,
+            key="sanitize_prompts",
+            help="Suno rejects prompts that contain real artist names. Keep this on. "
+                 "The search boxes still show names; only the generated prompt text is cleaned.",
         )
+        st.caption("Prompts are built offline in this app. Nothing is sent anywhere.")
 
-    tab1, tab2, tab3, tab4 = st.tabs(
-        ["✨ Generate", "🎲 Random", "📚 Artists", "⚙️ Settings"],
-        key="main_tabs",
-        on_change="rerun",
-        default=st.session_state.main_tabs,
+    # ---------- header ----------
+    render_header()
+    st.markdown(
+        f'<div class="iv-meta">Prompt Studio · {total:,} artists · {genre_count} genres · '
+        f'{profile_count:,} detailed profiles · {reference_count:,} sourced references</div>',
+        unsafe_allow_html=True,
     )
 
-    # Init prompt history
     if "history" not in st.session_state:
         st.session_state.history = []
 
-    # ====================
-    #   TAB 1 — GENERATE
-    # ====================
-    with tab1:
-        st.markdown("### ⚔️ Generate Prompt")
-        st.caption("Type an artist name, or use the buttons below. The app will fuse the artist's sound with the matching genre template. Use the 📋 icon on the code block to copy, or download as .txt.")
+    tab_studio, tab_artists, tab_saved, tab_about = st.tabs(
+        ["Studio", "Artists", "Saved", "About"]
+    )
 
-        col1, col2 = st.columns([2, 1])
-
-        with col1:
-            default_val = st.session_state.get('selected_artist', '') or st.session_state.get('random_artist', '')
-
-            singer = st.text_input(
-                "Artist Name",
-                value=default_val,
-                placeholder="e.g., taylor swift, queen, kendrick lamar, chris tomlin",
-                key="artist_input"
-            )
-
-            if default_val and singer == default_val:
-                st.caption(f"Pre-selected: {default_val.title()}")
-
-            # Mood / Theme / Tempo — each with a "Custom…" escape hatch for free-text
-            col_mood, col_theme, col_tempo = st.columns(3)
-            with col_mood:
-                custom_mood = select_or_custom(
-                    "Mood",
-                    ["", "Melancholic", "Energetic", "Dreamy", "Dark", "Uplifting",
-                     "Nostalgic", "Intense", "Romantic", "Defiant", "Sacred",
-                     "Funereal", "Aggressive", "Triumphant", "Bittersweet", "Hopeful"],
-                    key="mood",
-                )
-            with col_theme:
-                custom_theme = select_or_custom(
-                    "Theme",
-                    ["", "Heartbreak", "Loss", "Love", "Celebration", "Night drive",
-                     "Summer", "Rain", "Space", "Time", "Faith", "Redemption",
-                     "War", "Nature", "Death", "Rebirth", "Longing", "Struggle"],
-                    key="theme",
-                )
-            with col_tempo:
-                custom_tempo = select_or_custom(
-                    "Tempo",
-                    ["", "Slow", "Medium", "Fast", "Upbeat", "Ballad"],
-                    key="tempo",
-                )
-
-            if st.button("🎵 Generate Prompt", type="primary", use_container_width=True):
-                if singer.strip():
-                    result = generate_prompt(singer, custom_mood, custom_theme, custom_tempo, sanitize=_sanitize_on)
-                    st.session_state.history.insert(0, {
-                        "artist": singer.strip(),
-                        "mood": custom_mood,
-                        "theme": custom_theme,
-                        "tempo": custom_tempo,
-                        "prompt": result,
-                    })
-                    st.session_state.history = st.session_state.history[:20]
-                    st.code(result, language=None)
-                    st.download_button(
-                        "⬇️ Download .txt",
-                        result,
-                        file_name=f"{singer.replace(' ', '_')}_prompt.txt",
-                        use_container_width=True
-                    )
-                else:
-                    st.warning("Enter an artist name!")
-
-            if st.button("🧹 Clear Artist Field", on_click=cb_clear_artist):
-                pass
-
-            # Prompt history
-            if st.session_state.history:
-                with st.expander(f"🕘 Recent Prompts ({len(st.session_state.history)})"):
-                    for i, h in enumerate(st.session_state.history):
-                        meta = " · ".join(x for x in [h["mood"], h["theme"], h["tempo"]] if x)
-                        st.caption(f"{h['artist'].title()}" + (f" — {meta}" if meta else ""))
-                        st.code(h["prompt"], language=None)
-                        st.download_button(
-                            "⬇️ Download .txt",
-                            h["prompt"],
-                            file_name=f"{h['artist'].replace(' ', '_')}_prompt.txt",
-                            key=f"hist_dl_{i}",
-                        )
-                        st.markdown("---")
-
-        with col2:
-            st.subheader("⭐ Popular")
-            popular = ["taylor swift", "billie eilish", "kendrick lamar", "queen", "frank ocean", "daft punk", "sabrina carpenter", "chappell roan", "iron vespers", "candlemass", "demon hunter", "bad bunny", "arijit singh", "burna boy", "maneskin", "bts", "peso pluma", "karan aujla", "tyla", "sal da vinci"]
-
-            for artist in popular:
-                st.button(
-                    artist.title(),
-                    key=f"pop_{artist}",
-                    use_container_width=True,
-                    on_click=cb_select_artist,
-                    args=(artist,),
-                )
-
-            st.markdown("---")
-            st.subheader("🎸 By Genre")
-            genres = {
-                "Pop": "pop",
-                "Rock": "rock",
-                "Hip-Hop": "hip",
-                "R&B": "r&b",
-                "Electronic": "electronic",
-                "Metal": "metal",
-                "Doom": "doom",
-                "Indie": "indie",
-                "Folk": "folk",
-                "Bedroom": "bedroom",
-                "Country": "country",
-                "Latin": "latin",
-                "Corrido": "corrido",
-                "Reggaeton": "reggaeton",
-                "K-Pop": "k-pop",
-                "Bollywood": "bollywood",
-                "Punjabi": "punjabi",
-                "Indian Indie": "indian",
-                "Italian": "italian",
-                "Afrobeats": "afrobeats",
-                "Hyperpop": "hyperpop",
-                "Modern Heavy": "modern",
-                "CCM": "worship",
-                "Christian Metal": "christian metal",
-            }
-            # 3-column grid instead of one long vertical stack
-            gcols = st.columns(3)
-            for i, (label, term) in enumerate(genres.items()):
-                with gcols[i % 3]:
-                    st.button(
-                        label,
-                        key=f"gen_{label}",
-                        use_container_width=True,
-                        on_click=cb_select_genre,
-                        args=(term,),
-                    )
-
-    # ====================
-    #   TAB 2 — RANDOM
-    # ====================
-    with tab2:
-        st.title("🎲 Random Generator")
-        st.markdown("Let fate decide your next track!")
-
-        if st.button("🎰 Generate Random Prompt", type="primary", use_container_width=True):
-            artist = get_random_artist()
-            moods = ["melancholic", "energetic", "dreamy", "dark", "uplifting", "nostalgic", "intense"]
-            themes = ["love", "loss", "celebration", "night drive", "summer", "rain", "space", "time"]
-
-            random_mood = random.choice(moods)
-            random_theme = random.choice(themes)
-            random_tempo = random.choice(["Slow", "Medium", "Fast", "Upbeat"])
-
-            result = generate_prompt(artist, random_mood, random_theme, random_tempo, sanitize=_sanitize_on)
-
-            st.session_state.history.insert(0, {
-                "artist": artist,
-                "mood": random_mood,
-                "theme": random_theme,
-                "tempo": random_tempo,
-                "prompt": result,
-            })
-            st.session_state.history = st.session_state.history[:20]
-
-            st.success(f"Generated: **{artist.title()}** style")
-            st.code(result, language=None)
-            st.download_button(
-                "⬇️ Download .txt",
-                result,
-                file_name=f"random_{artist.replace(' ', '_')}_prompt.txt"
-            )
-
-    # ====================
-    #   TAB 3 — ARTISTS
-    # ====================
-    with tab3:
-        st.title("Artist Database")
-
-        pending = st.session_state.pop('genre_filter', '')
-        if pending:
-            st.success(f"🎸 Genre filter active: showing matches for '{pending}'. Clear the search box to see all artists.")
-
-        search = st.text_input(
-            "🔍 Search artists",
-            value=pending,
-            placeholder="e.g., chris tomlin, lauren daigle, elevation, mitski",
-            key="artist_search_input"
+    # ====================  STUDIO  ====================
+    with tab_studio:
+        st.markdown("### Build a prompt")
+        st.caption(
+            "Pick an artist, shape the sound, copy the prompt into Suno. "
+            "Detailed profiles are hand-written; genre references start from a verified "
+            "genre and an original template you can edit."
         )
 
-        search_term = (search or "").strip().lower()
+        left, right = st.columns([3, 2], gap="large")
 
-        genres_dict = {}
-        for name, data in SINGER_DB.items():
-            g = data['genre'].split(',')[0].strip()
-            genres_dict.setdefault(g, []).append((name, data))
+        with left:
+            typed = st.text_input(
+                "Artist name",
+                placeholder="e.g. candlemass, burna boy, karan aujla",
+                key="artist_input",
+            )
 
-        found_any = False
-        for genre, artists in sorted(genres_dict.items()):
-            matches = [
-                (n, d) for n, d in artists
-                if not search_term
-                or search_term in n.lower()
-                or search_term in d['genre'].lower()
-            ]
-            if matches:
-                found_any = True
-                with st.expander(f"{genre} ({len(matches)} found)"):
-                    for name, data in matches:
-                        st.markdown(f"**{name.title()}**")
-                        st.caption(f"{data['mood']} • {data['genre']}")
-                        st.button(
-                            f"Use {name.title()}",
-                            key=f"use_artist_{name}",
-                            on_click=cb_use_artist,
-                            args=(name,),
-                        )
-                        st.markdown("---")
+            if typed and len(typed.strip()) >= 2:
+                hits = cat.search_names(typed, limit=12)
+                if hits:
+                    st.caption("Matches")
+                    st.selectbox(
+                        "Suggestions", hits, key="artist_suggest", label_visibility="collapsed"
+                    )
+                elif not cat.find(typed)[1]:
+                    st.caption("No catalogue match — a genre template will be used.")
 
-        if search_term:
-            if not found_any:
-                st.warning(f"No matches for '{search}' — try partial name or different spelling")
+            use_suggestion = st.checkbox(
+                "Use the selected suggestion", value=False, key="use_suggestion",
+                help="Turn on to build from the suggestion list instead of the free text.",
+            )
+
+            chosen = st.session_state.get("artist_suggest") if use_suggestion else typed
+            chosen = (chosen or "").strip()
+            if chosen:
+                entry = find_singer(chosen)[1]
+                if entry and entry.get("kind") == "reference":
+                    tags = ", ".join((entry.get("matched_genres") or [])[:3])
+                    st.info(
+                        f"Genre reference · {tags or 'sourced association'}"
+                        + (f" · [source]({entry.get('source_url')})" if entry.get("source_url") else "")
+                    )
+                elif entry:
+                    st.info(f"Detailed profile · {entry.get('genre', '')}")
+
+            with st.expander("Blend two artists", expanded=False):
+                st.caption("The first artist sets the arc; the second supplies texture and instrumentation.")
+                blend_on = st.checkbox("Blend with a second artist", key="blend_on")
+                second = ""
+                if blend_on:
+                    second = st.text_input("Second artist", key="blend_second",
+                                           placeholder="e.g. portishead")
+
+            col_mood, col_theme, col_tempo = st.columns(3)
+            with col_mood:
+                mood = select_or_custom("Mood", MOODS, key="mood")
+            with col_theme:
+                theme = select_or_custom("Theme", THEMES, key="theme")
+            with col_tempo:
+                tempo = select_or_custom("Tempo", TEMPOS, key="tempo")
+
+            go = st.button("Generate prompt", type="primary", use_container_width=True)
+
+        with right:
+            st.markdown("#### Quick picks")
+            st.caption("Popular")
+            pop_cols = st.columns(2)
+            for i, name in enumerate(POPULAR):
+                label = name.title()
+                with pop_cols[i % 2]:
+                    st.button(label, key=f"pop_{name}", use_container_width=True,
+                              on_click=lambda n=name: st.session_state.update(artist_input=n))
+
+            st.caption("Random")
+            st.button("Surprise me", use_container_width=True, key="rand_artist",
+                      on_click=lambda: st.session_state.update(artist_input=get_random_artist()))
+
+        if go:
+            target = chosen
+            if not target:
+                st.warning("Enter an artist name, or use a quick pick.")
+            else:
+                if st.session_state.get("blend_on") and (second or "").strip():
+                    result = generate_blend(target, second.strip(), mood, theme, tempo, sanitize=sanitize_on)
+                    label = f"{target} × {second.strip()}"
+                else:
+                    result = generate_prompt(target, mood, theme, tempo, sanitize=sanitize_on)
+                    label = target
+                st.session_state.last_result = result
+                st.session_state.history.insert(0, {
+                    "artist": label, "mood": mood, "theme": theme,
+                    "tempo": tempo, "prompt": result,
+                })
+                st.session_state.history = st.session_state.history[:20]
+
+        if st.session_state.get("last_result"):
+            st.markdown("---")
+            st.markdown("#### Result")
+            st.code(st.session_state.last_result, language=None)
+            dl_col, save_col = st.columns(2)
+            name_slug = re.sub(r"[^\w]+", "_", (chosen or "prompt")).strip("_")[:60] or "prompt"
+            with dl_col:
+                st.download_button("Download .txt", st.session_state.last_result,
+                                   file_name=f"{name_slug}_prompt.txt", use_container_width=True)
+            with save_col:
+                if st.button("Save to presets", use_container_width=True, key="save_preset"):
+                    _save_preset({
+                        "artist": chosen or "prompt", "mood": mood, "theme": theme,
+                        "tempo": tempo, "prompt": st.session_state.last_result,
+                    })
+                    st.success("Saved for this browser session. Export on the Saved tab to keep it.")
+
+        if st.session_state.history:
+            with st.expander(f"Recent prompts ({len(st.session_state.history)})"):
+                for i, item in enumerate(st.session_state.history):
+                    meta = " · ".join(x for x in [item["mood"], item["theme"], item["tempo"]] if x)
+                    st.caption(item["artist"].title() + (f" — {meta}" if meta else ""))
+                    st.code(item["prompt"], language=None)
+                    st.download_button("Download .txt", item["prompt"],
+                                       file_name=f"prompt_{i}.txt", key=f"hist_dl_{i}")
+                    st.markdown("---")
+
+    # ====================  ARTISTS  ====================
+    with tab_artists:
+        st.markdown("### Artist catalogue")
+        shelved = {}
+        for key in cat.categories():
+            shelved.setdefault(cat.genre_shelf(key), []).append(key)
+
+        f1, f2, f3, f4 = st.columns([2, 2, 2, 1])
+        with f1:
+            query = st.text_input("Search", key="cat_query", placeholder="name, genre or description")
+        with f2:
+            shelf = st.selectbox("Shelf", ["All"] + sorted(s for s in shelved if s != "Other"),
+                                 key="cat_shelf")
+        with f3:
+            options = ["All"] + [cat.genre_label(k) for k in shelved.get(shelf, [])] if shelf != "All" else ["All"]
+            chosen_label = st.selectbox("Genre", options, key="cat_genre")
+            active_genre = "All" if chosen_label == "All" else next(
+                (k for k in cat.categories() if cat.genre_label(k) == chosen_label), "All")
+        with f4:
+            kind = st.selectbox("Kind", ["All", "Detailed profile", "Genre reference"], key="cat_kind")
+
+        kind_key = {"All": None, "Detailed profile": "profile", "Genre reference": "reference"}[kind]
+        rows = cat.entries(category=active_genre, shelf=None if shelf == "All" else shelf,
+                           kind=kind_key, query=query)
+
+        page_size = 25
+        pages = max(1, (len(rows) + page_size - 1) // page_size)
+        if st.session_state.get("cat_page_key") != (query, shelf, active_genre, kind):
+            st.session_state.cat_page = 1
+            st.session_state.cat_page_key = (query, shelf, active_genre, kind)
+        page = st.number_input(f"{len(rows):,} matches — page", min_value=1, max_value=pages,
+                               value=int(st.session_state.get("cat_page", 1)), key="cat_page")
+
+        start = (int(page) - 1) * page_size
+        for name, entry in rows[start:start + page_size]:
+            is_profile = entry.get("kind") == "profile"
+            badge = "Profile" if is_profile else "Reference"
+            genres = entry.get("genre") if is_profile else ", ".join((entry.get("matched_genres") or [])[:3])
+            with st.container():
+                head_col, btn_col = st.columns([5, 1])
+                with head_col:
+                    st.markdown(
+                        f'<div class="iv-row"><div class="iv-row-head">'
+                        f'<span class="iv-name">{name.title()}</span>'
+                        f'<span class="iv-badge {"iv-badge-profile" if is_profile else "iv-badge-ref"}">{badge}</span>'
+                        f'</div><div class="iv-row-sub">{genres or "sourced association"}</div>'
+                        + (f'<div class="iv-row-desc">{entry.get("description","")}</div>'
+                           if entry.get("description") else "")
+                        + (f'<div class="iv-row-src"><a href="{entry.get("source_url")}" '
+                           f'target="_blank" rel="noopener">source</a></div>'
+                           if entry.get("source_url") else "")
+                        + "</div>",
+                        unsafe_allow_html=True,
+                    )
+                with btn_col:
+                    st.button("Use", key=f"use_{name}", use_container_width=True,
+                              on_click=lambda n=name: st.session_state.update(artist_input=n))
+                st.markdown('<div class="iv-rule"></div>', unsafe_allow_html=True)
+
+    # ====================  SAVED  ====================
+    with tab_saved:
+        st.markdown("### Saved presets")
+        st.caption(
+            "Presets live in this browser session. Export them to a file to keep them — "
+            "that file is the durable copy."
+        )
+        presets = st.session_state.get("presets", [])
+        if presets:
+            st.download_button(
+                "Export presets (.json)", json.dumps(presets, indent=2, ensure_ascii=False),
+                file_name="iron_vespers_presets.json", mime="application/json",
+            )
+            for i, item in enumerate(presets):
+                st.markdown(f"**{item['artist'].title()}**")
+                st.code(item["prompt"], language=None)
+                st.download_button("Download .txt", item["prompt"], file_name=f"preset_{i}.txt",
+                                   key=f"preset_dl_{i}")
+            if st.button("Clear session presets"):
+                st.session_state.presets = []
+                st.rerun()
         else:
-            st.info("Type to filter artists (e.g. chris, lauren, worship...)")
+            st.info("Nothing saved yet. Generate a prompt and choose “Save to presets”.")
 
-    # ====================
-    #   TAB 4 — SETTINGS
-    # ====================
-    with tab4:
-        st.title("⚙️ Settings & Info")
+        st.markdown("---")
+        uploaded = st.file_uploader("Import presets (.json)", type=["json"])
+        if uploaded is not None:
+            try:
+                loaded = json.loads(uploaded.read().decode("utf-8"))
+                if isinstance(loaded, list) and all("prompt" in x for x in loaded):
+                    st.session_state.presets = loaded[:25]
+                    st.success(f"Imported {len(loaded[:25])} presets for this session.")
+                else:
+                    st.error("That file is not a preset export.")
+            except json.JSONDecodeError:
+                st.error("That file is not valid JSON.")
 
-        st.subheader("About")
+    # ====================  ABOUT  ====================
+    with tab_about:
+        st.markdown("### How this catalogue works")
         st.markdown(f"""
-        **Suno Prompt Generator Pro** helps you create detailed prompts for Suno AI music generation.
+**Two kinds of entry, deliberately kept apart.**
 
-        **Features:**
-        - {len(SINGER_DB)} curated artists (edit `artists.json`)
-        - {len(DEFAULT_TEMPLATES)} genre templates (edit `templates.json`)
-        - Data-driven genre detection (edit `genre_rules.json`)
-        - Defensive sanitizer strips real artist/band names (toggle in sidebar)
-        - Genre fallback for unknown artists
-        - Custom mood / theme / tempo (type your own via "Custom…")
-        - Random generator
-        - Persistent selection from Artists tab
-        - Prompt history (last 20)
-        - Export as .txt
-        """)
+- **Detailed profile** ({profile_count:,} entries) — the hand-written six-field sound
+  description that this tool has always used. Specific and opinionated.
+- **Genre reference** ({reference_count:,} entries) — a real artist with a *verified*
+  genre association, rendered through an original, editable genre template. The genre fact
+  is sourced; the sound description is a starting point, not a claim about that artist's
+  actual voice. Wikisourced entries link to their record.
 
-        st.subheader("How to Use")
+Nothing here is scraped from reviews or biographies, and no entry invents an
+artist-specific vocal analysis.
+
+**Genres** ({genre_count}) are navigation shelves, not boxes. One artist can sit in
+several — an act documented in both doom and sludge appears under both.
+""")
+        st.markdown("#### Sources and licensing")
         st.markdown("""
-        1. Pick artist from Popular, Artists tab or type name
-        2. Optional: add mood / theme / tempo (pick a preset or choose "Custom…" to type your own)
-        3. Click Generate
-        4. Copy via the 📋 icon on the code block, or download as .txt
-        5. Paste into Suno → create!
+- **Wikidata** — structured artist and genre statements, released **CC0**.
+  Reference entries carry their `wikidata.org` link.
+- **Researched entries** — each carries an explicit `source_url` and the evidence used.
+- **Original catalogue** — the profiles that shipped with this app.
+- **Genre templates** — original writing, editable in `genre_profiles.py`.
+""")
+        if CATALOG_META.get("genre_counts"):
+            st.markdown("#### Counts by genre")
+            pairs = sorted(CATALOG_META["genre_counts"].items(), key=lambda kv: -kv[1])
+            st.markdown(
+                '<div class="iv-counts">'
+                + "".join(
+                    f'<div><span>{cat.genre_label(k)}</span><b>{v:,}</b></div>' for k, v in pairs
+                )
+                + "</div>",
+                unsafe_allow_html=True,
+            )
 
-        Keep the sidebar "Strip artist/band names" toggle ON — Suno rejects prompts containing real artist names.
-        """)
+        st.markdown("#### Limits worth knowing")
+        st.markdown("""
+- A genre association is not a sound. Two death metal records can share nothing.
+  Use the template as a floor, then edit the fields to match what you actually hear.
+- Coverage is uneven because documented data is uneven. Popular scenes are deep;
+  niche ones are thin, and the app reports the real count rather than padding it.
+- Presets and history are session-only. The export file is the durable copy.
+""")
 
-        st.subheader("Add Custom Artists")
-        st.markdown("Edit **`artists.json`** (next to this script). Add an entry like:")
+        st.markdown("#### Add your own")
+        st.markdown("Add a detail profile to **`artists.json`**:")
         st.code("""{
-    "new artist": {
-        "genre": "Your Genre, Sub-genre",
-        "mood": "...",
-        "style": "...",
-        "vocal_style": "...",
-        "instruments": "...",
-        "production": "..."
-    }
+  "new artist": {
+    "kind": "profile",
+    "genre": "Your Genre, Sub-genre",
+    "mood": "...",
+    "style": "...",
+    "vocal_style": "...",
+    "instruments": "...",
+    "production": "..."
+  }
 }""", language="json")
-        st.markdown("Add a matching genre template in **`templates.json`** and, if the genre needs keyword-based detection for unknown artists, add a rule to **`genre_rules.json`**. If you add a well-known artist whose name might leak into field values, also add it to `_NAME_LEAK_BLACKLIST` in the script.")
-
-        st.subheader("Project")
-        st.markdown("[Source repo](https://github.com/HavokRabbit/Suno-prompts-pro)")
+        st.markdown(
+            "For a new genre, add a template in **`templates.json`** and a detection rule in "
+            "**`genre_rules.json`**. Template keys live in `genre_profiles.py`."
+        )
+        st.markdown("---")
+        st.markdown("[Source repository](https://github.com/HavokRabbit/suno-prompts-pro)")
 
 
 if __name__ == "__main__":

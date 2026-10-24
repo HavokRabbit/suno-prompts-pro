@@ -1,0 +1,1623 @@
+{
+  "category": "christian",
+  "label": "Christian metal",
+  "genre_labels": [
+    "Christian metal",
+    "unblack metal",
+    "Christian hardcore",
+    "Christian death metal"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"Christian metal\"@en \"unblack metal\"@en \"Christian hardcore\"@en \"Christian death metal\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q494743",
+      "name": "P.O.D.",
+      "musicbrainz_id": "57e79d57-b795-475e-9fa2-5dd9d5513b8c",
+      "description": "American metal band",
+      "sitelinks": 35,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q353366",
+      "name": "Blackie Lawless",
+      "musicbrainz_id": "edb29eae-4538-45cd-94d8-574fc074d381",
+      "description": "American heavy metal musician",
+      "sitelinks": 29,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q331733",
+      "name": "Brian Welch",
+      "musicbrainz_id": "c6f9dc60-8313-4a95-9edc-0b6913bf4159",
+      "description": "American guitarist (born 1970)",
+      "sitelinks": 29,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q913673",
+      "name": "Underoath",
+      "musicbrainz_id": "674a7e8c-9682-419a-8e05-2358e28b5359",
+      "description": "American rock band",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1052564",
+      "name": "Stryper",
+      "musicbrainz_id": "89621490-e0ef-4915-8b1f-6ad57dba3d7a",
+      "description": "American Christian metal band",
+      "sitelinks": 22,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q157679",
+      "name": "Antestor",
+      "musicbrainz_id": "fc27a448-babb-4b95-911f-e5a285d72b4e",
+      "description": "Norwegian Christian extreme metal band",
+      "sitelinks": 21,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1186459",
+      "name": "Demon Hunter",
+      "musicbrainz_id": "73fe4a37-6860-4bb5-b3ec-0d0c367900ea",
+      "description": "American metal band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q715603",
+      "name": "Cesare Bonizzi",
+      "musicbrainz_id": "ffc31083-d0f6-4089-8771-0936e818dc50",
+      "description": "Italian Capuchin friar and rock singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q918241",
+      "name": "Pillar",
+      "musicbrainz_id": "dbd43b36-7327-4185-a9e8-a49961115958",
+      "description": "American Christian rock band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q915366",
+      "name": "Horde",
+      "musicbrainz_id": "67a01cd0-3ea3-4038-8e7e-4d2e8b990786",
+      "description": "unblack metal project",
+      "sitelinks": 14,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q15809739",
+      "name": "Fit for a King",
+      "musicbrainz_id": "6eaab7b4-f2cb-4c80-9b36-7e7d5c2fa8c5",
+      "description": "American metalcore band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q175514",
+      "name": "King's X",
+      "musicbrainz_id": "c8f5272e-8a94-4807-9099-70181e92fc46",
+      "description": "American rock band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1482609",
+      "name": "Narnia",
+      "musicbrainz_id": "619d514a-9a12-4af4-b4be-2d0a8786e1be",
+      "description": "Swedish heavy metal band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q614471",
+      "name": "Theocracy",
+      "musicbrainz_id": "1f41d23a-a716-4b1c-b817-437409037d2e",
+      "description": "American musical group; power metal band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1588793",
+      "name": "Haste the Day",
+      "musicbrainz_id": "bcbc08d6-4615-4f40-963c-5158ebe2b9e0",
+      "description": "American metalcore band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2410711",
+      "name": "Oz Fox",
+      "musicbrainz_id": "d5b2b682-aade-4f44-9a4f-37288a682341",
+      "description": "American musician",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q176402",
+      "name": "HB",
+      "musicbrainz_id": "c6aab6f5-0548-4360-8f27-3218bb3e88ce",
+      "description": "Finnish band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1228422",
+      "name": "Disciple",
+      "musicbrainz_id": "4ebed31c-4984-432c-8d78-0f08a4b169a2",
+      "description": "American musical group; Christian metal band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q598512",
+      "name": "Divinefire",
+      "musicbrainz_id": "8122a918-4ad5-4dc2-9b7f-0729c654bbc8",
+      "description": "band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2267656",
+      "name": "Robert Sweet",
+      "musicbrainz_id": "f3adfbba-7329-41dd-8468-6236ba3490aa",
+      "description": "American musician (born 1960)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q115697",
+      "name": "Drottnar",
+      "musicbrainz_id": "8c908189-f257-47b8-b560-6f9e40b09c15",
+      "description": "band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q730248",
+      "name": "Living Sacrifice",
+      "musicbrainz_id": "41529641-c7f0-40c2-80f9-eedc971b1a63",
+      "description": "American Christian metal band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q196049",
+      "name": "Paramaecium",
+      "musicbrainz_id": "efac8437-ea67-41c7-9847-5529fe0a8b1a",
+      "description": "Australian band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q962563",
+      "name": "Tim Gaines",
+      "musicbrainz_id": "f8b0eda7-b06c-43fa-acb5-7a41356306ac",
+      "description": "American musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2203024",
+      "name": "Vaakevandring",
+      "musicbrainz_id": "7ef3eeef-5669-4b38-a953-3f6192107db0",
+      "description": "band that plays Christian metal",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1011592",
+      "name": "Whitecross",
+      "musicbrainz_id": "51f24fe4-6cb7-477a-a6ed-6be19abf99bb",
+      "description": "American band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3032102",
+      "name": "Eric Clayton",
+      "musicbrainz_id": "3f3b43e1-1900-4483-9b1b-4e7b662d384c",
+      "description": "American singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q743143",
+      "name": "Saviour Machine",
+      "musicbrainz_id": "d7636359-728c-47a2-84ea-27a5e60168ef",
+      "description": "American Christian metal band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1448126",
+      "name": "Spencer Chamberlain",
+      "musicbrainz_id": "0f0ad748-667e-487e-b3b0-008e040dc1cd",
+      "description": "American singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3241768",
+      "name": "Steve Rowe",
+      "musicbrainz_id": "ad07a0a4-1657-4167-9ac4-7da966ae16d6",
+      "description": "Australian musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2141857",
+      "name": "Tourniquet",
+      "musicbrainz_id": "0770a42f-10e3-4204-8459-0c6fba885852",
+      "description": "American heavy metal band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q913552",
+      "name": "Bride",
+      "musicbrainz_id": "7badd4c2-4462-46b6-bd42-4ffdc7a462c7",
+      "description": "American Christian rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1114245",
+      "name": "Deliverance",
+      "musicbrainz_id": "8d37ba6b-5474-4e49-9a93-7696aa08c0c3",
+      "description": "American metal band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1466608",
+      "name": "Guardian",
+      "musicbrainz_id": "c82296f5-7ca0-49bd-9ddd-a6fb434cead7",
+      "description": "American musical group; Christian hard rock and metal band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2525139",
+      "name": "Jason Truby",
+      "musicbrainz_id": "9ae007ca-5f29-4dd0-bbd1-88cd91a5b594",
+      "description": "American guitarist",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4482664",
+      "name": "Jeff Fenholt",
+      "musicbrainz_id": "82104f7f-26d2-4b5a-aad4-6e68b35715c8",
+      "description": "American musician (1951–2019)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3675986",
+      "name": "Love and Death",
+      "musicbrainz_id": "c29b667e-9895-41d2-b5a5-1817050ce0bc",
+      "description": "American musical group; Christian metal band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1801881",
+      "name": "Ole Børud",
+      "musicbrainz_id": "275a6806-102c-409c-9fe1-5d3a8cbbddb2",
+      "description": "Norwegian singer, songwriter, instrumentalist, record producer, and audio engineer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3044061",
+      "name": "Project 86",
+      "musicbrainz_id": "7fe36010-433a-4bcf-8427-7a972670e56f",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q80794",
+      "name": "Silent Civilian",
+      "musicbrainz_id": "6e5308d9-8981-423f-ba52-0e20211306a1",
+      "description": "American metalcore band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1561104",
+      "name": "Ted Kirkpatrick",
+      "musicbrainz_id": "f97f0386-62e5-4602-89cd-ddb745009bc8",
+      "description": "American musician (1960–2022)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q8030583",
+      "name": "Wolves at the Gate",
+      "musicbrainz_id": "310c1e0e-b267-4055-971d-9d2526d8660c",
+      "description": "American metalcore band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4758531",
+      "name": "Andrew Schwab",
+      "musicbrainz_id": "1555f58b-144e-4cf0-985b-819547d142d2",
+      "description": "American singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q140191",
+      "name": "Bloodgood",
+      "musicbrainz_id": "7e78a78b-3acc-4be2-a2a4-db8932b0f570",
+      "description": "American Christian metal band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q867258",
+      "name": "Jayson Sherlock",
+      "musicbrainz_id": "6fb2bc9b-b046-4c61-bbe1-5d4dd5bc652d",
+      "description": "Australia musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1428818",
+      "name": "No Innocent Victim",
+      "musicbrainz_id": "64a937d6-435d-4d97-be9c-28d6e569eb59",
+      "description": "American Christian hardcore band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2748860",
+      "name": "Oficina G3",
+      "musicbrainz_id": "b397349e-1b0f-4e61-89ac-caeca5dea676",
+      "description": "Brazilian Christian metal band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4712244",
+      "name": "Alberto Zamarbide",
+      "musicbrainz_id": "5183610a-81e8-4efa-9c6a-9869581332c3",
+      "description": "Argentine singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1080836",
+      "name": "Christian Liljegren",
+      "musicbrainz_id": "d70a84fc-b6b9-44c4-854e-e1f470a08c42",
+      "description": "Swedish singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1130872",
+      "name": "Oil",
+      "musicbrainz_id": "42e42f6d-35f8-4bdb-9a91-0c199182b4a8",
+      "description": "band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1163351",
+      "name": "Seventh Angel",
+      "musicbrainz_id": "b49efb71-3cb2-4770-a028-2422a69b3d2b",
+      "description": "British metal band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1525762",
+      "name": "Ultimatum",
+      "musicbrainz_id": "60ce766a-095d-48fa-b6ee-f1d4959e37f2",
+      "description": "American musical group; thrash metal band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q5654076",
+      "name": "A Bullet for Pretty Boy",
+      "musicbrainz_id": "c8618794-f2ec-4654-939f-f583800f4377",
+      "description": "American band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q359308",
+      "name": "Admonish",
+      "musicbrainz_id": "3a220f3b-7814-4479-8539-64177766750d",
+      "description": "Swedish unblack metal band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "unblack metal",
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q134552036",
+      "name": "Daniel Williams",
+      "musicbrainz_id": "3a0a763f-5533-4304-9037-1836b4586236",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q11696628",
+      "name": "Elgibbor",
+      "musicbrainz_id": "0bbca1ff-77ff-48ac-af7a-6509362ccff9",
+      "description": "Black metal project based out of Poland",
+      "sitelinks": 4,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3089266",
+      "name": "Frost Like Ashes",
+      "musicbrainz_id": "3713693b-1373-4e2c-8524-f41a0cb9fd36",
+      "description": "American musical group; Christian metal band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1169306",
+      "name": "Kryst the Conqueror",
+      "musicbrainz_id": "049d9239-c916-4742-bacd-4bb6930d70b6",
+      "description": "American Christian metal band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6809501",
+      "name": "Mehida",
+      "musicbrainz_id": "622addce-4033-40e0-bd85-5c53183e6936",
+      "description": "Finnish band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q586990",
+      "name": "Soul Embraced",
+      "musicbrainz_id": "9575ca2e-5131-4651-a833-b9a0a12bf745",
+      "description": "American musical group; melodic death metal band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q649726",
+      "name": "The Showdown",
+      "musicbrainz_id": "0f1c6164-8ab1-4410-a788-358d63816154",
+      "description": "American metal band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q124808778",
+      "name": "DJ Flubbel",
+      "musicbrainz_id": "",
+      "description": "Dutch discjockey and music producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q60704919",
+      "name": "Death Therapy",
+      "musicbrainz_id": "8ddb6f0f-9828-4fa3-93f7-9c103dd30564",
+      "description": "American musical group; Christian metal band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6769573",
+      "name": "Mark Salomon",
+      "musicbrainz_id": "",
+      "description": "American singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q22121841",
+      "name": "Metanoia",
+      "musicbrainz_id": "07acf032-0c14-4886-94b5-6bd79b8cf838",
+      "description": "Australian band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4356559",
+      "name": "Sacred Warrior",
+      "musicbrainz_id": "4fd073d5-9caf-47dc-aed4-065014158a66",
+      "description": "US musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q762087",
+      "name": "Sanctifica",
+      "musicbrainz_id": "2cd85bf4-f924-4a1d-bbdb-2f108fdd5b8d",
+      "description": "Swedish band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3521930",
+      "name": "Undish",
+      "musicbrainz_id": "8e2d5e4a-435f-41f6-abb4-5e1a627c9e68",
+      "description": "Polish Christian gothic metal band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q8026321",
+      "name": "Winter Solstice",
+      "musicbrainz_id": "613257ee-017c-47d4-b9a6-010a7d24ba9a",
+      "description": "American metalcore band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4758745",
+      "name": "Andrew Tompkins",
+      "musicbrainz_id": "a396cca8-f28e-4cd6-a6b9-99d261f04cf1",
+      "description": "Australian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4034287",
+      "name": "Archontes",
+      "musicbrainz_id": "1048f9ad-2955-45d3-bf72-93e80e28ca84",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q4485152",
+      "name": "Bruce Fitzhugh",
+      "musicbrainz_id": "09ae85ae-42da-4942-9923-587394d77030",
+      "description": "American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q55345181",
+      "name": "Cerimonial Sacred",
+      "musicbrainz_id": "",
+      "description": "Brazilian Christian black metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q24886422",
+      "name": "Grave Declaration",
+      "musicbrainz_id": "",
+      "description": "Symphonic black metal band from Norway",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6483401",
+      "name": "Lance Garvin",
+      "musicbrainz_id": "",
+      "description": "American drummer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6545175",
+      "name": "Life in Your Way",
+      "musicbrainz_id": "5bb916d8-ee9e-4dee-84df-08d6f07a418c",
+      "description": "American band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3863274",
+      "name": "Morten Sigmund Mageroy",
+      "musicbrainz_id": "",
+      "description": "Norwegian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q19799857",
+      "name": "Nomad Son",
+      "musicbrainz_id": "816b8275-e3c3-4a0b-9fcc-7276c3997295",
+      "description": "Maltese metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q10340901",
+      "name": "Once Dead",
+      "musicbrainz_id": "",
+      "description": "American death/thrash metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q7292475",
+      "name": "Randy Torres",
+      "musicbrainz_id": "9d61948a-8175-4171-8b06-3512c42bc496",
+      "description": "American rock musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q19876424",
+      "name": "Saving Grace",
+      "musicbrainz_id": "6b41d8f3-e8c5-4fe7-b5be-d1cb60a2aa80",
+      "description": "New Zealand musical group; Christian metalcore band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q27817858",
+      "name": "Scourged Flesh",
+      "musicbrainz_id": "df2683d4-a0fd-4ef2-887f-d377970e5b27",
+      "description": "West Australian Christian metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q255638",
+      "name": "Since October",
+      "musicbrainz_id": "ef964462-a926-4c7f-b99c-427da6bd0be3",
+      "description": "American Christian rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20685571",
+      "name": "Sleeping Giant",
+      "musicbrainz_id": "69988e03-eb43-4b6d-8beb-c42d18b4a68b",
+      "description": "American Christian metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q10372854",
+      "name": "Society's Finest",
+      "musicbrainz_id": "a81bd884-17a1-4930-bfe6-1e2e7f430690",
+      "description": "American metalcore band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21063697",
+      "name": "Stephen Keech",
+      "musicbrainz_id": "2d487322-4626-4c83-b5c8-9888472a7cc2",
+      "description": "American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q7624602",
+      "name": "Strongarm",
+      "musicbrainz_id": "039aebd3-83d8-4121-b7ed-5996bbf3518a",
+      "description": "Defunct Christian & straight edge band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q2409541",
+      "name": "The Ascendicate",
+      "musicbrainz_id": "8f76d5db-4ed5-464b-b3d6-8d0b5a83df99",
+      "description": "American band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1343467",
+      "name": "The Great Commission",
+      "musicbrainz_id": "a3cad7cf-9c67-49f2-a602-5e9c07df036f",
+      "description": "American Christian hardcore band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q16962795",
+      "name": "The Ongoing Concept",
+      "musicbrainz_id": "aed39aa8-e1ea-430e-894f-9fe205efe6cb",
+      "description": "American Christian metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q18164936",
+      "name": "Your Memorial",
+      "musicbrainz_id": "18d28726-2ed2-4a7a-b7ae-a47721a854cd",
+      "description": "American metalcore band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20311394",
+      "name": "A Common Goal",
+      "musicbrainz_id": "",
+      "description": "American Christian punk band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20311865",
+      "name": "Ark of the Covenant",
+      "musicbrainz_id": "",
+      "description": "American Christian metalcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20312293",
+      "name": "As Hell Retreats",
+      "musicbrainz_id": "c36cef78-219f-4e3c-ab8d-2f9b70007bd8",
+      "description": "American Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6190456",
+      "name": "Björn Stigsson",
+      "musicbrainz_id": "",
+      "description": "Swedish guitarist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20857832",
+      "name": "Bloodlined Calligraphy",
+      "musicbrainz_id": "75bc0a18-f658-4f55-bea1-0379860e1769",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q25056336",
+      "name": "Bloodshed",
+      "musicbrainz_id": "b956b83d-e898-430b-b5cf-6abcdefc8f79",
+      "description": "American Christian hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q25056453",
+      "name": "Convictions",
+      "musicbrainz_id": "66bf8de7-0bb2-4cfe-8059-4ec0da132702",
+      "description": "American Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q5216487",
+      "name": "Daniel Band",
+      "musicbrainz_id": "63948357-98a1-4967-82e0-3552b1fa0d65",
+      "description": "Canadian musical group; Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20687568",
+      "name": "Daniel Weydant",
+      "musicbrainz_id": "",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20684017",
+      "name": "Debtor",
+      "musicbrainz_id": "70486a47-0361-4c0a-a23a-64dc76c7df5b",
+      "description": "American Christian hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q17321127",
+      "name": "Decision D",
+      "musicbrainz_id": "28a3667b-7865-4845-873d-beeea42c13b2",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q19879307",
+      "name": "Die Happy",
+      "musicbrainz_id": "dccdd9e2-40c3-4567-a550-aebd350b03c4",
+      "description": "Christian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q5332708",
+      "name": "Echo Hollow",
+      "musicbrainz_id": "53ee9999-6d0c-4c13-ba93-c66ac0df6e23",
+      "description": "American metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q16728884",
+      "name": "Everything in Slow Motion",
+      "musicbrainz_id": "5ba94c2d-1ead-440c-9f47-6f8d676fbafd",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21316022",
+      "name": "Few Left Standing",
+      "musicbrainz_id": "d7a985e4-baf4-482f-82ab-27cc06ae6ffa",
+      "description": "American band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3116729",
+      "name": "Grimmark",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20684158",
+      "name": "Hands",
+      "musicbrainz_id": "",
+      "description": "American metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3783413",
+      "name": "Harmony",
+      "musicbrainz_id": "d51d5263-84f6-439b-8b95-52a27983e7d2",
+      "description": "Swedish band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q15053443",
+      "name": "I Am Terrified",
+      "musicbrainz_id": "",
+      "description": "American Christian metal/hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21621600",
+      "name": "JJ Polachek",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6163795",
+      "name": "Jason Wisdom",
+      "musicbrainz_id": "",
+      "description": "American singer (born 1983)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q25189172",
+      "name": "Jesse Smith",
+      "musicbrainz_id": "af20142d-4fac-44cf-8a4c-0df12c125f0d",
+      "description": "American Christian Metal drummer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21062498",
+      "name": "Jimmy Ryan",
+      "musicbrainz_id": "40861d13-5f88-46f4-8f3e-3b2b96947abb",
+      "description": "American singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21064377",
+      "name": "Joe Musten",
+      "musicbrainz_id": "d6c559d0-5e18-41f5-b15f-6e2be2ea184d",
+      "description": "American musician (born 1983)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20684285",
+      "name": "Jump Ship Quick",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6533614",
+      "name": "Letter to the Exiles",
+      "musicbrainz_id": "889e3f93-053b-442d-9a7c-18d07d3671c9",
+      "description": "American Christian metalcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20684610",
+      "name": "Living Fire",
+      "musicbrainz_id": "",
+      "description": "Brazilian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q24975961",
+      "name": "Lucerin Blue",
+      "musicbrainz_id": "",
+      "description": "Canadian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q10323059",
+      "name": "Magnitude 9",
+      "musicbrainz_id": "",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q6804075",
+      "name": "Means",
+      "musicbrainz_id": "5d12d0dc-d0e7-4bc4-a6d8-4faa1da8fed3",
+      "description": "Canadian Christian hardcore musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q18155356",
+      "name": "Messiah Prophet",
+      "musicbrainz_id": "1b25cc11-3254-477b-97e7-06b94149a99a",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q3855547",
+      "name": "Metatrone",
+      "musicbrainz_id": "32fece9b-e71c-4420-964a-31c20c1a02d2",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20684885",
+      "name": "Mouth of the South",
+      "musicbrainz_id": "080c803f-c8f5-40c2-92d4-41dafca7944d",
+      "description": "Christian metalcore band from Texas",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q16966972",
+      "name": "Philadelphia",
+      "musicbrainz_id": "d8804460-615e-4679-a118-e5a36978bb89",
+      "description": "Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q25056220",
+      "name": "Promise Land",
+      "musicbrainz_id": "65d64322-dddd-4695-b63a-b2c6e941c221",
+      "description": "Christian symphonic metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q7311730",
+      "name": "Remembrance",
+      "musicbrainz_id": "2edd3f64-12c2-42a4-a1d7-66d6ae515ba5",
+      "description": "Christian metalcore band from Lansing, Michigan",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q22025468",
+      "name": "See the Rise",
+      "musicbrainz_id": "",
+      "description": "American Christian hardcore/rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1762898",
+      "name": "Snubnose",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20685678",
+      "name": "Still Breathing",
+      "musicbrainz_id": "c514b853-f6bd-44e3-b64d-d327c3d3cdb9",
+      "description": "American Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q7625555",
+      "name": "Stryken",
+      "musicbrainz_id": "88f60fca-131f-4ff3-968e-5b2fdc8ddf07",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20687329",
+      "name": "The Burial",
+      "musicbrainz_id": "39325e86-035f-490a-8e93-9a8ab608eaf1",
+      "description": "Technical death metal band originated out South Bend, Indiana",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q20687339",
+      "name": "The Hoax",
+      "musicbrainz_id": "1e7d969e-9e82-4db2-b870-bbedd5231295",
+      "description": "American Christian hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q17051637",
+      "name": "The Overseer",
+      "musicbrainz_id": "48bd193a-8a6d-420a-8faa-ce9fd0aefaeb",
+      "description": "Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q23023594",
+      "name": "These Hearts",
+      "musicbrainz_id": "7f803597-5423-4620-a95a-b4cdae0c081e",
+      "description": "American post-hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q18164435",
+      "name": "Those Who Fear",
+      "musicbrainz_id": "6256779f-841d-4c78-a145-07960ab3bc3a",
+      "description": "American Christian metal band from Pittsburgh, Pennsylvania",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q7857600",
+      "name": "Twelve Gauge Valentine",
+      "musicbrainz_id": "6a5d3381-eea3-4c73-a235-7de297272333",
+      "description": "American post-hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q24075524",
+      "name": "What We Do in Secret",
+      "musicbrainz_id": "",
+      "description": "American metalcore band based out of Memphis, Tennessee",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q8042514",
+      "name": "XT",
+      "musicbrainz_id": "9a703e67-8d5f-4a07-a9f2-4aaa2f4b32ef",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q21189930",
+      "name": "XXI",
+      "musicbrainz_id": "41433fa5-092e-4161-955c-b03b3190b60c",
+      "description": "American Christian metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q8041744",
+      "name": "xDISCIPLEx A.D.",
+      "musicbrainz_id": "2a6fcbdb-545c-4775-b24c-82a16dabeda7",
+      "description": "American Christian hardcore band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q1173714",
+      "name": "David Benson",
+      "musicbrainz_id": "",
+      "description": "doom metal singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q5683649",
+      "name": "Haven",
+      "musicbrainz_id": "",
+      "description": "Christian progressive metal band from New Jersey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q120882461",
+      "name": "Petr Woznica",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "unblack metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q139719929",
+      "name": "Rest Band",
+      "musicbrainz_id": "",
+      "description": "Brazilian Christian heavy metal and gothic metal band from Goiânia",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Christian metal"
+      ],
+      "category": "christian"
+    },
+    {
+      "wikidata_id": "Q25056210",
+      "name": "Torn",
+      "musicbrainz_id": "",
+      "description": "American christian hardcore band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Christian hardcore"
+      ],
+      "category": "christian"
+    }
+  ]
+}

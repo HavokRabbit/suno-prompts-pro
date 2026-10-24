@@ -1,0 +1,2638 @@
+{
+  "category": "dnb",
+  "label": "Drum & bass / jungle",
+  "genre_labels": [
+    "drum and bass",
+    "jungle music",
+    "liquid funk",
+    "neurofunk",
+    "darkstep"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"drum and bass\"@en \"jungle music\"@en \"liquid funk\"@en \"neurofunk\"@en \"darkstep\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q77002",
+      "name": "ATB",
+      "musicbrainz_id": "22a096ef-c70d-4d70-ae19-4fc2412d4986",
+      "description": "German DJ and electronic music producer",
+      "sitelinks": 40,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q20672",
+      "name": "Pendulum",
+      "musicbrainz_id": "beff21d3-88c7-4ee0-8b7a-40b6db22c6d7",
+      "description": "Australian drum and bass/electronic rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "drum and bass",
+        "neurofunk"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q46321",
+      "name": "Tinie Tempah",
+      "musicbrainz_id": "1f272198-9e76-42ad-90ce-543d30a61b8d",
+      "description": "English rapper, singer and record producer (born 1988)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q107570416",
+      "name": "PinkPantheress",
+      "musicbrainz_id": "7441014f-f8f5-494f-81db-ff166fbc078d",
+      "description": "British singer-songwriter",
+      "sitelinks": 36,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q42909787",
+      "name": "Joost Klein",
+      "musicbrainz_id": "08784766-8643-4b8e-bd0b-c61399ff9539",
+      "description": "Dutch musician and videographer (born 1997)",
+      "sitelinks": 35,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q315417",
+      "name": "Lee \"Scratch\" Perry",
+      "musicbrainz_id": "554ed0dc-b0b1-47d5-baf6-cbc84d26296e",
+      "description": "Jamaican music producer, singer-songwriter, sound engineer (1936–2021)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1847436",
+      "name": "C418",
+      "musicbrainz_id": "1db73bf2-2e08-4f7c-88de-cf4020800294",
+      "description": "German composer and record producer (born 1989)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q48959",
+      "name": "Labrinth",
+      "musicbrainz_id": "dc99e6fd-c710-4f79-b74b-127b4d0b7849",
+      "description": "British singer, rapper and record producer",
+      "sitelinks": 30,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q50971",
+      "name": "Rudimental",
+      "musicbrainz_id": "b09ced80-aa65-43c1-9aa7-58b1e982eada",
+      "description": "British drum and bass band",
+      "sitelinks": 28,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q637865",
+      "name": "Bomfunk MC's",
+      "musicbrainz_id": "5dfbf314-2052-4c3b-9a7a-5270fb3b2a55",
+      "description": "Finnish band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q941738",
+      "name": "DJ Fresh",
+      "musicbrainz_id": "f299b04f-0f26-4ee0-ad2e-f640e4628ff4",
+      "description": "English DJ and record producer",
+      "sitelinks": 24,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16236194",
+      "name": "Becky Hill",
+      "musicbrainz_id": "27bc6f5b-4585-49ab-8d7d-c62b59f5f010",
+      "description": "British singer (born 1994)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q446572",
+      "name": "Mike Paradinas",
+      "musicbrainz_id": "aae5b930-c59c-4509-81a1-4e65e8f424e4",
+      "description": "British electronic musician",
+      "sitelinks": 20,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q47227",
+      "name": "Noisia",
+      "musicbrainz_id": "ec22a32b-acab-432e-a88c-ffe6ae68fa16",
+      "description": "Dutch electronic music band from Groningen",
+      "sitelinks": 20,
+      "matched_genres": [
+        "drum and bass",
+        "neurofunk"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1067983",
+      "name": "Chase & Status",
+      "musicbrainz_id": "82e454e2-38ee-4e69-89a6-cc65167753d1",
+      "description": "British electronic music band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q44399",
+      "name": "Netsky",
+      "musicbrainz_id": "587fd8ec-2e9d-4ce6-8bc5-97d0a9334883",
+      "description": "Belgian DJ and drum n' bass record producer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1848854",
+      "name": "Sub Focus",
+      "musicbrainz_id": "8cf49f40-b8fe-4a63-b4ea-f922d6145bb4",
+      "description": "English DJ and music producer (born 1982)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q936479",
+      "name": "Wiley",
+      "musicbrainz_id": "d0f61299-9caa-4e6b-8b10-2839de120b27",
+      "description": "English rapper and record producer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q387288",
+      "name": "Andy C",
+      "musicbrainz_id": "ec853694-30a1-4c7e-84e6-4ca87ee3c314",
+      "description": "English musician",
+      "sitelinks": 17,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q538289",
+      "name": "High Contrast",
+      "musicbrainz_id": "889b69e3-7b18-4889-b953-9f2931597204",
+      "description": "Welsh DJ, record producer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q964002",
+      "name": "Roni Size",
+      "musicbrainz_id": "70bea6dd-2727-47a4-96f1-b0e589465b90",
+      "description": "British DJ and music producer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q285472",
+      "name": "Kosheen",
+      "musicbrainz_id": "4f4bda3c-d636-4135-b65a-6cc26bc75788",
+      "description": "Englsih musical group",
+      "sitelinks": 16,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q921236",
+      "name": "LTJ Bukem",
+      "musicbrainz_id": "28c1b7b7-355a-48b1-b2c4-75b8eb8080ef",
+      "description": "British DJ",
+      "sitelinks": 16,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q51143",
+      "name": "Adam F",
+      "musicbrainz_id": "b42a9ece-2a18-4660-9c26-94dc01127962",
+      "description": "English music producer and DJ",
+      "sitelinks": 15,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q17278989",
+      "name": "Fox Stevenson",
+      "musicbrainz_id": "0328349c-0d97-406b-9182-2be9025f7504",
+      "description": "English DJ, singer-songwriter and electronic dance music producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q300430",
+      "name": "A Guy Called Gerald",
+      "musicbrainz_id": "b343730d-a34e-44d5-9191-a83f00231716",
+      "description": "British musician",
+      "sitelinks": 14,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q158442",
+      "name": "Black Sun Empire",
+      "musicbrainz_id": "76a2eaff-b6ad-483a-a427-d3a2aa3c4f8f",
+      "description": "Dutch band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "neurofunk",
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1998551",
+      "name": "Datsik",
+      "musicbrainz_id": "aefe89d2-84b0-4c13-bfbb-04ed9614ca7c",
+      "description": "Canadian DJ, musician, and dubstep producer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16333772",
+      "name": "Sigma",
+      "musicbrainz_id": "89ec6f82-1ad7-42d5-983e-ebf90f6868c8",
+      "description": "English drum and bass group",
+      "sitelinks": 13,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2067701",
+      "name": "The Qemists",
+      "musicbrainz_id": "eae38719-96b6-4aa5-8303-5bb08f953c86",
+      "description": "British electronic music group from Brighton",
+      "sitelinks": 13,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1193049",
+      "name": "Towa Tei",
+      "musicbrainz_id": "cad26bbf-198c-49fe-b5e0-f2cbe7740582",
+      "description": "Korean musician",
+      "sitelinks": 13,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q618515",
+      "name": "Aphrodite",
+      "musicbrainz_id": "84800c46-2211-43e0-8a87-bdcbecf91932",
+      "description": "UK jungle and drum and bass DJ/producer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1391944",
+      "name": "John B",
+      "musicbrainz_id": "353856b7-8d79-4136-9ac6-7e47954e5be9",
+      "description": "British musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1982683",
+      "name": "Bad Company",
+      "musicbrainz_id": "eba5d39f-8cb7-4d54-871d-297e5d7f1aad",
+      "description": "stage name of British drum and bass producers Maldini, dBridge, DJ Fresh, and Vegas",
+      "sitelinks": 10,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1154114",
+      "name": "DJ Hype",
+      "musicbrainz_id": "315a3523-c8ef-4445-83d7-2d9acd38d1ff",
+      "description": "English record producer and DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q820995",
+      "name": "Zardonic",
+      "musicbrainz_id": "ceb7e4b3-87f3-4ed6-9556-59b2a495c68b",
+      "description": "Italian-Venezuelan composer and music producer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3492524",
+      "name": "B-Complex",
+      "musicbrainz_id": "99a97ef1-1953-41b8-b10a-32106afb2fd4",
+      "description": "Slovakian musician and DJ",
+      "sitelinks": 9,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q506026",
+      "name": "Danny Byrd",
+      "musicbrainz_id": "1b002a6c-0f6c-4335-aab6-36a74058250f",
+      "description": "British DJ, record producer, musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q976196",
+      "name": "E-Z Rollers",
+      "musicbrainz_id": "3dc658d0-0d75-48d0-8f3f-851ec757f17b",
+      "description": "British drum and bass group",
+      "sitelinks": 9,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q672297",
+      "name": "Jojo Mayer",
+      "musicbrainz_id": "0d59f6f7-9844-47f0-b229-109d2f678db6",
+      "description": "Swiss virtuoso drummer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1858715",
+      "name": "London Elektricity",
+      "musicbrainz_id": "0356daee-ec48-4495-bc3e-460b8a5eacad",
+      "description": "English electronic musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q701735",
+      "name": "Camo & Krooked",
+      "musicbrainz_id": "83928527-eeb1-4625-98df-0cfbcc5c07ec",
+      "description": "Austrian drum & bass duo",
+      "sitelinks": 8,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2446878",
+      "name": "Logistics",
+      "musicbrainz_id": "49dca5fc-30b2-46be-93bd-033c53425e07",
+      "description": "English drum & bass music producer and DJ",
+      "sitelinks": 8,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1349876",
+      "name": "Photek",
+      "musicbrainz_id": "2095b935-2007-4ae0-a48a-ef4d6fc3aac0",
+      "description": "English composer, producer, and DJ",
+      "sitelinks": 8,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q15139979",
+      "name": "Wilkinson",
+      "musicbrainz_id": "c9fa114f-8426-4286-a289-9f16c8e092b5",
+      "description": "British drum and bass music producer and DJ",
+      "sitelinks": 8,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4830818",
+      "name": "Ayah Marar",
+      "musicbrainz_id": "3813a063-9d78-435e-afde-e996053dcc65",
+      "description": "Jordanian musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1124054",
+      "name": "Concord Dawn",
+      "musicbrainz_id": "ac0aa7e2-cb46-4e01-a8e5-d265548411c2",
+      "description": "band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q20670873",
+      "name": "Neuromonk Feofan",
+      "musicbrainz_id": "7cf5723f-256b-4efa-a990-f6d78041b870",
+      "description": "musical project from Russia",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1983879",
+      "name": "Nu:Tone",
+      "musicbrainz_id": "380e2880-567d-4991-a9b5-93a07e428652",
+      "description": "British musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1686156",
+      "name": "Sian Evans",
+      "musicbrainz_id": "a729d18d-ca6a-436e-a327-f702de7d4cd0",
+      "description": "Welsh singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q563273",
+      "name": "Teebee",
+      "musicbrainz_id": "583f9f52-b894-4de7-b37c-249c2c451d1a",
+      "description": "Norwegian musician, composer and disc jockey",
+      "sitelinks": 7,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q23923",
+      "name": "12th Planet",
+      "musicbrainz_id": "d113f6b4-f01f-4632-9cd3-743cc299574e",
+      "description": "American music producer and DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2447305",
+      "name": "Benjamin Mount",
+      "musicbrainz_id": "d839b4d1-f4c8-472f-8a21-7cb452916036",
+      "description": "British rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q45479208",
+      "name": "Cartoon",
+      "musicbrainz_id": "9e38b54a-a548-43bc-8098-d1b2550d00f9",
+      "description": "Estonian musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q321256",
+      "name": "DJ Marky",
+      "musicbrainz_id": "20f4225f-f50e-4382-8b6e-b18448bc037d",
+      "description": "Brazilian DJ and music producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q324346",
+      "name": "DJ Zinc",
+      "musicbrainz_id": "174d9bdb-4e9c-4c42-8e6a-a29db39bdda5",
+      "description": "British DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3027518",
+      "name": "Dieselboy",
+      "musicbrainz_id": "c639bff5-b086-4437-b05f-2d5965eb4d83",
+      "description": "American DJ and producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3029750",
+      "name": "Dirtyphonics",
+      "musicbrainz_id": "8b9a69ea-b60e-46c8-a1a5-93c56e7e4f35",
+      "description": "French electronic music band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q18400720",
+      "name": "LSP",
+      "musicbrainz_id": "83d0d125-9fa7-4590-9f39-ec7e0e320b15",
+      "description": "Belarusian singer-songwriter and rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3242181",
+      "name": "Makoto",
+      "musicbrainz_id": "0d97c888-411b-4c34-a629-dbac3c8f4f52",
+      "description": "Japanese musical artist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q74848",
+      "name": "Mathis Mootz",
+      "musicbrainz_id": "db0c4a12-b6c5-4fda-8027-523d922b7f71",
+      "description": "German DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4036909",
+      "name": "Yevgeny Rudin",
+      "musicbrainz_id": "aaa27958-af24-4b33-ab1a-a96b1a81168e",
+      "description": "Russian composer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1844152",
+      "name": "Calibre",
+      "musicbrainz_id": "afa502e0-fb84-4cf4-b3c0-21ed0c695939",
+      "description": "British music producer and DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2799860",
+      "name": "Ceephax Acid Crew",
+      "musicbrainz_id": "f226bcd7-114e-418f-8fa5-e24a47a89cf5",
+      "description": "British musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1964456",
+      "name": "Counterstrike",
+      "musicbrainz_id": "e9cf225a-3259-489c-b73c-da57d69139d3",
+      "description": "South African music band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q18967146",
+      "name": "Current Value",
+      "musicbrainz_id": "caf4109a-05e5-4067-b619-b705d137f68d",
+      "description": "German musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "darkstep"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q113243",
+      "name": "D.Kay",
+      "musicbrainz_id": "4b9ad404-0956-4d82-8338-621078b72094",
+      "description": "Austrian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1154211",
+      "name": "DJ Patife",
+      "musicbrainz_id": "8f052bad-354f-478e-bd8d-3f6ecf720ca8",
+      "description": "Brazilian DJ and music producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q61114823",
+      "name": "Dakooka",
+      "musicbrainz_id": "77995ff7-76ce-44e1-8d4d-f5e67d3b737c",
+      "description": "Singer-songwriter from Ukraine",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q330020",
+      "name": "Dillinja",
+      "musicbrainz_id": "89eef384-c3be-4317-ae25-a6a837b90f48",
+      "description": "British DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1538633",
+      "name": "Gosti iz budushchego",
+      "musicbrainz_id": "3f02c541-c272-47e0-a7b4-a37656d2a897",
+      "description": "Russian musical group; dance-pop duo",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4545833",
+      "name": "Jordana",
+      "musicbrainz_id": "f488a1da-d403-499a-bbc4-6c7c42ba4b99",
+      "description": "American music producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3815887",
+      "name": "Klute",
+      "musicbrainz_id": "770ccf83-47ce-4fa1-83ec-d8fc24269784",
+      "description": "British musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2444651",
+      "name": "Limewax",
+      "musicbrainz_id": "9ed78dcc-5ee4-4d4f-b5c5-6fc268b7e5d7",
+      "description": "Ukrainian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q60694463",
+      "name": "Marcus Intalex",
+      "musicbrainz_id": "df8f198a-018a-49aa-b86d-fa762f1b2463",
+      "description": "British DJ and music producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3949036",
+      "name": "Santa Hates You",
+      "musicbrainz_id": "6b3311b6-13f5-4cca-b4cf-38a5b7dacd94",
+      "description": "German-Italian band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4049229",
+      "name": "Seba",
+      "musicbrainz_id": "ceae32ea-ef49-4775-9aba-cf729239791f",
+      "description": "Swedish musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1454199",
+      "name": "Shapeshifter",
+      "musicbrainz_id": "40d1d78f-6b66-4b14-b8c8-f13786a8cf4f",
+      "description": "New Zealand musical group",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q115816501",
+      "name": "piri & tommy",
+      "musicbrainz_id": "04892aae-2250-4053-9044-cc2abbbe2c8a",
+      "description": "English dance music duo",
+      "sitelinks": 5,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1628891",
+      "name": "Alex Reece",
+      "musicbrainz_id": "1c8e46d4-9343-48ce-aed8-0862e03878fd",
+      "description": "British musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4820273",
+      "name": "Audun Erlien",
+      "musicbrainz_id": "54acd419-53f0-42c5-9b7a-4f5e4c3d6155",
+      "description": "Norwegian bassist",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16864855",
+      "name": "Delta Heavy",
+      "musicbrainz_id": "be166079-6f21-4d0d-af2a-9f55c4b34455",
+      "description": "British DJ and production duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16207033",
+      "name": "Doc Scott",
+      "musicbrainz_id": "fb5c84f8-0500-4b33-bc82-4f5633b13c20",
+      "description": "British DJ",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q662979",
+      "name": "Evol Intent",
+      "musicbrainz_id": "fadddb61-613d-4078-be8b-9f1d2800aea1",
+      "description": "American band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5427786",
+      "name": "Fabio",
+      "musicbrainz_id": "4ded8b42-a2b4-4a82-9c06-8938899ddc8a",
+      "description": "British DJ",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q13431488",
+      "name": "Fred V & Grafix",
+      "musicbrainz_id": "d01d66ae-be95-42c3-86c4-fff502690a33",
+      "description": "British drum and bass band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q963046",
+      "name": "Fu-Schnickens",
+      "musicbrainz_id": "22d8f80a-6e2d-41cf-be36-104f5192ffcf",
+      "description": "American hip hop group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4039075",
+      "name": "Future Prophecies",
+      "musicbrainz_id": "c231a7c0-b0bc-4eab-ba45-9c1ff02927a0",
+      "description": "",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3504197",
+      "name": "Ill.Skillz",
+      "musicbrainz_id": "fdb236bf-8cf2-4d32-80ee-e263a46fa6c7",
+      "description": "Austrian drum and bass group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q106091172",
+      "name": "Koven",
+      "musicbrainz_id": "ad110705-cbe6-4c47-9b99-8526e6db0f41",
+      "description": "English electronic dance music duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q9018656",
+      "name": "La Kinky Beat",
+      "musicbrainz_id": "c555f9ee-78cd-4c9b-bf60-0447b3620093",
+      "description": "Spanish musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q937623",
+      "name": "Paul Kodish",
+      "musicbrainz_id": "e1e86dcd-15a3-4df2-9ecf-172d1ef2c58f",
+      "description": "British musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q62554723",
+      "name": "Peshay",
+      "musicbrainz_id": "f7be8db8-cf51-4266-b4a6-81f0a1d40575",
+      "description": "British music producer and DJ",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7314192",
+      "name": "Reprazent",
+      "musicbrainz_id": "45e00f0f-f52b-4db8-a480-cf87b71c4800",
+      "description": "British drum and bass group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3494227",
+      "name": "Spring Heel Jack",
+      "musicbrainz_id": "ba0257f5-ceb9-4962-8759-4160f3e3e469",
+      "description": "English electronic music duo, consisting of John Coxon and Ashley Wales",
+      "sitelinks": 4,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4652137",
+      "name": "AK1200",
+      "musicbrainz_id": "0067d7ca-578a-4524-9b5a-b9e947c43735",
+      "description": "DJ and record producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q124027031",
+      "name": "Andromedik",
+      "musicbrainz_id": "773c3b3b-4368-4659-963a-4c8194ec9b1c",
+      "description": "Belgian DJ and music producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q112617691",
+      "name": "Ascendant Vierge",
+      "musicbrainz_id": "526ae1b5-6a34-4603-9f75-493c904c9478",
+      "description": "French electronica duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q18609698",
+      "name": "Billain",
+      "musicbrainz_id": "0fdddab4-4aa2-4e59-9789-210af9aae3f4",
+      "description": "Bosnian music producer, sound designer and DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5135606",
+      "name": "Cloud2Ground",
+      "musicbrainz_id": "f04c5130-3ebb-4069-8333-22f7e712c5ac",
+      "description": "American music duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5204582",
+      "name": "DC Breaks",
+      "musicbrainz_id": "6b477dd3-5133-40cb-a830-ba461bc88ff9",
+      "description": "British Drum & Bass production duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5205337",
+      "name": "DJ Hazard",
+      "musicbrainz_id": "0b657f20-00c7-4567-a968-fbbd18447366",
+      "description": "British DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5309306",
+      "name": "Drumsound & Bassline Smith",
+      "musicbrainz_id": "849511d6-5e08-425b-bc05-f2232ed220b3",
+      "description": "British drum and bass production duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q19663122",
+      "name": "Fanu",
+      "musicbrainz_id": "cdd61981-4dda-4990-aaa4-37c96fe30aa8",
+      "description": "Finnish electronic musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q50737405",
+      "name": "Gleb",
+      "musicbrainz_id": "70ecbeb8-53f0-488b-9d35-8be1650f02b7",
+      "description": "Slovak rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3977612",
+      "name": "Horsepower Productions",
+      "musicbrainz_id": "128e0f34-8eb9-4ead-b569-c3dbd89566bc",
+      "description": "UK musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6334752",
+      "name": "KOAN Sound",
+      "musicbrainz_id": "0cc1935d-712d-40b0-b1a9-27e23777a302",
+      "description": "British music production duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1738483",
+      "name": "Kemistry & Storm",
+      "musicbrainz_id": "9a4ad11c-863a-4089-8f41-9103320b30eb",
+      "description": "English drum and bass DJ and recording duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4042308",
+      "name": "Konflict",
+      "musicbrainz_id": "78e5e81c-0563-4a89-a94e-0f03b7d5f71d",
+      "description": "Scottish musical duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6452629",
+      "name": "Kytami",
+      "musicbrainz_id": "59a8157a-3163-4d70-bf27-b845fbd91de4",
+      "description": "Canadian singer, violinist and rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q15052759",
+      "name": "Loadstar",
+      "musicbrainz_id": "d7d3e885-15a1-4d53-943c-0ffca6628cbe",
+      "description": "music production duo from Bristol, United Kingdom",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q15149301",
+      "name": "Matrix & Futurebound",
+      "musicbrainz_id": "eb378ddc-37ec-4ea5-a8d3-fd20f29dd58e",
+      "description": "English drum and bass duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q13427115",
+      "name": "Metrik",
+      "musicbrainz_id": "2744b622-aaaf-467a-8641-d0deffbe43ac",
+      "description": "British electronic music producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q136488362",
+      "name": "The Skinner Brothers",
+      "musicbrainz_id": "ae1b32a2-107d-4093-a00b-ac6acf838632",
+      "description": "English indie rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3528630",
+      "name": "Tim Exile",
+      "musicbrainz_id": "110500b0-78a7-41cb-8535-9f37ab35a902",
+      "description": "British musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q108909134",
+      "name": "Ace Aura",
+      "musicbrainz_id": "d10e4f41-f9b6-49de-9ec3-58b35b0dd29b",
+      "description": "American DJ and music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q1735769",
+      "name": "Alcalica",
+      "musicbrainz_id": "30d531d5-ef8a-4880-a065-6807e1d2877d",
+      "description": "band that plays drum and bass",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4206552",
+      "name": "Aleksey Kabanov",
+      "musicbrainz_id": "d27ffbd6-ef9a-4478-a2bf-a3dc824b624e",
+      "description": "Russian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q27983599",
+      "name": "Apex",
+      "musicbrainz_id": "82025b48-b329-427e-807d-ae417a8e61e3",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q798136",
+      "name": "Bachelors Of Science",
+      "musicbrainz_id": "18234037-c0e5-4be3-82c9-c68923397ba0",
+      "description": "liquid funk band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4959395",
+      "name": "Breakbeat Era",
+      "musicbrainz_id": "cb4fa3f4-b383-4b0d-967d-b8e8c5d82998",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4974526",
+      "name": "Brookes Brothers",
+      "musicbrainz_id": "1ebfdf94-157b-47c0-a71e-9291c6a557cd",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5024776",
+      "name": "Calyx",
+      "musicbrainz_id": "aa47ca2e-a20c-4e5e-a564-bdedb48e9940",
+      "description": "project by Larry Cons",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4035937",
+      "name": "Cause 4 Concern",
+      "musicbrainz_id": "f961cc71-0ac3-44e4-9821-0ab0b69988bb",
+      "description": "UK musical ensemble",
+      "sitelinks": 2,
+      "matched_genres": [
+        "neurofunk"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5153131",
+      "name": "Commix",
+      "musicbrainz_id": "eb132583-2351-42f0-b371-08245cfb8711",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3506149",
+      "name": "Cyantific",
+      "musicbrainz_id": "25578af1-83dc-4fbe-a3a9-587ab5424342",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5205341",
+      "name": "DJ Hidden",
+      "musicbrainz_id": "931f5499-4eb8-430b-8e8b-89a7efcdae1c",
+      "description": "Dutch DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4037129",
+      "name": "Decoder",
+      "musicbrainz_id": "226166eb-ae5c-499a-b772-cfc2c1fcdaa6",
+      "description": "drum and bass duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4037498",
+      "name": "Dom & Roland",
+      "musicbrainz_id": "d13ecc9f-0b16-4262-ad50-4725e8ff228a",
+      "description": "British DJ and record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q20988180",
+      "name": "Etherwood",
+      "musicbrainz_id": "82812eab-f342-4bec-8a3d-756de2e00ca6",
+      "description": "British DJ and Drum and Bass producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3059301",
+      "name": "Ethnician",
+      "musicbrainz_id": "6a396e56-91c3-438d-9366-70f472d19bfc",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16730218",
+      "name": "Joshua Fagin",
+      "musicbrainz_id": "00d52dc3-9883-4434-9ac8-27028cd2b544",
+      "description": "American music producer, director and software engineer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4217575",
+      "name": "Katya Chekhova",
+      "musicbrainz_id": "38005596-c31e-4da4-9c72-2a6e8f12c181",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6439439",
+      "name": "Krust",
+      "musicbrainz_id": "c0abd4f1-82e5-4a2f-a47d-6c31d4e75d89",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99672917",
+      "name": "MC Conrad",
+      "musicbrainz_id": "278bda0a-9019-4321-b296-d5af329cb6e8",
+      "description": "British singer (1972-2024)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4050782",
+      "name": "Mark Caro",
+      "musicbrainz_id": "f78c1f0a-ccee-409a-a6cc-7e662303cb57",
+      "description": "British record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q15427629",
+      "name": "Maztek",
+      "musicbrainz_id": "9b0c673a-45cc-4b6f-9e37-0b912e91e1de",
+      "description": "Italian music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7067693",
+      "name": "Nu:Logic",
+      "musicbrainz_id": "b151a313-e18e-42b3-a64f-0962e9a03a20",
+      "description": "British drum & bass duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7375560",
+      "name": "Rregula",
+      "musicbrainz_id": "1c4f62e7-be43-452f-845c-f6d9628529ec",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q28718187",
+      "name": "Rune Arnesen",
+      "musicbrainz_id": "0429527b-8c06-4bec-8321-e8c856e41307",
+      "description": "Norwegian drummer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q43218306",
+      "name": "Senyor Oca",
+      "musicbrainz_id": "6fb4bfcc-ba80-41a6-9af2-036b211d867e",
+      "description": "Musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7496978",
+      "name": "Shimon",
+      "musicbrainz_id": "71f986d9-6c85-4db5-846e-a0fcb3300d6e",
+      "description": "English DJ and record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q12776483",
+      "name": "Soundphreakers",
+      "musicbrainz_id": "9b763d92-04b4-4234-8bb6-40aaac38fd64",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7603781",
+      "name": "State of Mind",
+      "musicbrainz_id": "37755676-10c2-4ba7-a08e-96678f712d7f",
+      "description": "drum and bass duo from New Zealand",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7669803",
+      "name": "TC",
+      "musicbrainz_id": "32a509d0-6c4c-43c9-b169-03b601367dbd",
+      "description": "British record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7671531",
+      "name": "TRV$DJAM",
+      "musicbrainz_id": "fd107083-6fdc-4db0-9b2e-b8a898d3bbb8",
+      "description": "US musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q22909361",
+      "name": "The Prototypes",
+      "musicbrainz_id": "b047f834-e2cd-4f31-a324-fefbfc080c15",
+      "description": "British drum & bass duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7998252",
+      "name": "Wickaman",
+      "musicbrainz_id": "7d0b9703-bcb9-46b6-9f5b-3a3c67adf97b",
+      "description": "British DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q116483242",
+      "name": "piri",
+      "musicbrainz_id": "0e77a40b-5cf7-4080-bb47-c72e35defc23",
+      "description": "English singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16239302",
+      "name": "ASC",
+      "musicbrainz_id": "f64c9779-13d0-4f8f-b6ba-c9de929c4a23",
+      "description": "producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4727516",
+      "name": "Alix Perez",
+      "musicbrainz_id": "53d47497-63eb-4769-9013-5e34740a7e2d",
+      "description": "Belgian Drum & Bass DJ and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q56162218",
+      "name": "Ambiguu",
+      "musicbrainz_id": "56f65fa2-b9da-4dee-a529-81e840f2e7cd",
+      "description": "Romanian electronic/bass music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5155616",
+      "name": "Comparative Anatomy",
+      "musicbrainz_id": "86a5ab74-e618-423f-b37a-e12fde6ee785",
+      "description": "drum and bass band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5203219",
+      "name": "D*Minds",
+      "musicbrainz_id": "41a0b7bb-db4f-416d-a3a1-b29881389189",
+      "description": "British drum and bass producers",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4037103",
+      "name": "Deadушки",
+      "musicbrainz_id": "7278b6a9-8929-48ee-ba0c-234255c06ffa",
+      "description": "Russian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q124770330",
+      "name": "Dj Kefir",
+      "musicbrainz_id": "5aec8c50-eb60-4659-9be4-b425fdf69192",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5319083",
+      "name": "Dynamite MC",
+      "musicbrainz_id": "ba20c17b-63bf-4471-b7d7-f42514b9b3f6",
+      "description": "English rapper and MC",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3051070",
+      "name": "Elisa do Brasil",
+      "musicbrainz_id": "af8abc8b-822a-4c6d-b89b-3871147fcd5c",
+      "description": "Brazilian disc jockey",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q56547554",
+      "name": "Exploit",
+      "musicbrainz_id": "87720eba-c26b-4994-979a-8a8a559017c6",
+      "description": "Romanian music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5422578",
+      "name": "Eye-D",
+      "musicbrainz_id": "9376d873-6986-4c5a-bdc1-9af691ffeeaf",
+      "description": "Dutch DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q60532124",
+      "name": "Feint",
+      "musicbrainz_id": "e6e29ff5-b0e4-4985-a63f-e99d12b21728",
+      "description": "English DJ and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5463500",
+      "name": "Flying Rhythms",
+      "musicbrainz_id": "f704148e-ca74-41d7-9eba-405b515b7a18",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q108645075",
+      "name": "Fred V",
+      "musicbrainz_id": "d5259aab-5a5d-42a8-a0b8-fb1bcd6b7ac9",
+      "description": "British DJ and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5205325",
+      "name": "Friction",
+      "musicbrainz_id": "6bab48a1-c3e0-4160-b574-f99fc7dfad9f",
+      "description": "British DJ and drum and bass record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5510770",
+      "name": "Future Signal",
+      "musicbrainz_id": "eed1f64f-e155-4f78-9489-efbe28d5aa60",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q123907714",
+      "name": "Gladde Paling",
+      "musicbrainz_id": "9f7750f1-ecf7-438c-a93e-1e3befa4a0ba",
+      "description": "music producer from the Netherlands",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q5580380",
+      "name": "Goldtrix",
+      "musicbrainz_id": "33c983db-def5-44ce-8915-eb03772cf3a2",
+      "description": "British musical duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q108645084",
+      "name": "Grafix",
+      "musicbrainz_id": "c02a5966-b5c4-483a-8326-483edcf3680e",
+      "description": "British DJ and drum n bass music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q110087167",
+      "name": "Humania",
+      "musicbrainz_id": "a81526da-90aa-40e9-8b2e-314ac9b89b43",
+      "description": "Indonesian musical duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q47035099",
+      "name": "Kaotic Chemistry",
+      "musicbrainz_id": "7135e9a1-d7ea-43d9-9348-40db3d3856bf",
+      "description": "drum and bass group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q12032914",
+      "name": "Lemon D",
+      "musicbrainz_id": "69f9a51f-9c1d-4a7a-9848-e08d8ab17225",
+      "description": "jungle and drum and bass DJ and producer from Brixton in south London",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6523460",
+      "name": "Lenzman",
+      "musicbrainz_id": "a2e84faa-7c5e-44d4-98cb-0fdbac45ba1b",
+      "description": "Dutch musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16731846",
+      "name": "Maiday",
+      "musicbrainz_id": "00efd123-d7aa-483d-aefa-2e994f15928a",
+      "description": "English singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q11781304",
+      "name": "Miloopa",
+      "musicbrainz_id": "5f34b921-7fb3-4ecf-b6e2-618606efc373",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q29034163",
+      "name": "Muzz",
+      "musicbrainz_id": "6cfdec30-4730-4513-bfb4-5db3ff566900",
+      "description": "British DJ and musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q20033494",
+      "name": "N.O.H.A.",
+      "musicbrainz_id": "298a8237-0975-438d-9f9b-008aaa2bcc63",
+      "description": "Czech-American drum and bass and world music band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6964159",
+      "name": "Nanotek",
+      "musicbrainz_id": "733e3bf4-b40d-464e-96aa-ea84428c85e3",
+      "description": "New Zealand musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "darkstep"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6969698",
+      "name": "Nathaniel James Clarkson",
+      "musicbrainz_id": "784b092c-e525-472c-9708-e2945683c9b2",
+      "description": "English music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4046429",
+      "name": "Paradox",
+      "musicbrainz_id": "9ac7f763-47de-4119-99dd-bda32e51acb9",
+      "description": "British electronic music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q6149832",
+      "name": "Per Lindvall",
+      "musicbrainz_id": "aff0b725-ed4b-4cdd-b42b-3bc353d359b8",
+      "description": "Swedish drummer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7208996",
+      "name": "Polar",
+      "musicbrainz_id": "60388d41-0bea-452c-baeb-a37d97ced6bf",
+      "description": "Norwegian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7288609",
+      "name": "Ram Trilogy",
+      "musicbrainz_id": "f14c12ad-efb0-4044-ac80-de6da10fceaa",
+      "description": "UK musical ensemble",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16734927",
+      "name": "Rameses B",
+      "musicbrainz_id": "bbd9a0a9-3605-4c3f-b9d0-48eb928a5275",
+      "description": "British music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q10357329",
+      "name": "Ramilson Maia",
+      "musicbrainz_id": "96c56d74-cca9-4227-ac26-ff41b7cc7e09",
+      "description": "Brazilian dj, record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q124545302",
+      "name": "Rob Peters",
+      "musicbrainz_id": "fd17bf2c-b9d9-4e77-9ea6-a925b565e11c",
+      "description": "Dutch musician and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7361385",
+      "name": "Rollz",
+      "musicbrainz_id": "3fe5fe3a-321d-4c5d-ad47-892d1bd22aa3",
+      "description": "British musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q134707714",
+      "name": "Ruby Mountain",
+      "musicbrainz_id": "715e7b41-7c6c-43c4-8948-ccee611957bc",
+      "description": "American electronic soul musician, singer, and producer.",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q17429319",
+      "name": "Seven League Beats",
+      "musicbrainz_id": "86b8a836-84c2-43b8-a229-e01c792c78c2",
+      "description": "Dutch band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q16222047",
+      "name": "ShockOne",
+      "musicbrainz_id": "df76ffff-c150-4aa1-ab1d-e2714d865038",
+      "description": "Australian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7534980",
+      "name": "Skibadee",
+      "musicbrainz_id": "ffbeaf6c-f32c-4142-9b36-0a182a26f599",
+      "description": "British musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7555537",
+      "name": "Sol Invicto",
+      "musicbrainz_id": "c6e6a75a-efc4-4c86-8f81-191a455fc092",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q102430477",
+      "name": "Stakka & Skynet",
+      "musicbrainz_id": "dc86279d-b071-4a64-a08c-2a8e4f9e27ca",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7607963",
+      "name": "Step 13",
+      "musicbrainz_id": "d7dfcf80-2911-427d-a863-b91606ee6d93",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q25056484",
+      "name": "The Blood of Heroes",
+      "musicbrainz_id": "d3003fc8-9dd5-415c-b87e-e3ead409c16e",
+      "description": "music project based in Brooklyn.",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q7771774",
+      "name": "The Upbeats",
+      "musicbrainz_id": "63630fb9-5d2b-43a5-8e98-b85bb773b258",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q17022889",
+      "name": "Visionary Underground",
+      "musicbrainz_id": "caf5162f-a2e0-43c1-9e1b-ab9d44c117b3",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q134289447",
+      "name": "Vitesse X",
+      "musicbrainz_id": "117ae4d7-1381-46e2-be5a-210ccc44c0bf",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q8042871",
+      "name": "Xample",
+      "musicbrainz_id": "ccd17bf1-ef6f-4ff8-8c66-d830f1c5d9fd",
+      "description": "drum and bass producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q130527946",
+      "name": "1991",
+      "musicbrainz_id": "fac9df55-e922-4de3-8aa6-9f842bb03250",
+      "description": "British DJ and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141781886",
+      "name": "9ojeez9",
+      "musicbrainz_id": "7e8d2534-247b-4f43-b075-d8beca319e24",
+      "description": "Turkish producer and art collective",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q124047394",
+      "name": "ADYXSHA",
+      "musicbrainz_id": "e3524831-af32-4c7b-b9a3-48c32217b79d",
+      "description": "Malaysian vocaloid producer and illustrator",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q140354246",
+      "name": "BSK",
+      "musicbrainz_id": "7508f910-8b8f-46d4-b3f5-e127fa503878",
+      "description": "British electronic and hip-hop musician, founder of Oscillation Records",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q2882345",
+      "name": "Banditos",
+      "musicbrainz_id": "69c1b50b-3f35-4b30-bd9c-0efaf8c03c43",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q137505995",
+      "name": "Caster",
+      "musicbrainz_id": "1f8ef6a0-6d01-4ea2-92d4-693bc565fb61",
+      "description": "Polish electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q93606654",
+      "name": "Console Killer",
+      "musicbrainz_id": "eaa6cebc-c420-4d7c-a547-c0f2c4c4732f",
+      "description": "Colombian electronic musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99690856",
+      "name": "DJ Suv",
+      "musicbrainz_id": "474580f4-cac5-4e98-b6e9-87e42b6fbd10",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q140605606",
+      "name": "DJ TIM",
+      "musicbrainz_id": "285ae317-e237-4aeb-a700-d620f74e0c42",
+      "description": "Azerbaijani disc jockey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q101563044",
+      "name": "Erotic Cafè",
+      "musicbrainz_id": "f8d57a72-4cf6-4887-86cb-59aa27bba93a",
+      "description": "Italian music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141244850",
+      "name": "Formant",
+      "musicbrainz_id": "62b96472-f272-478d-880a-273ecb555846",
+      "description": "solo electronic music project of Tyler Johnston-Kent",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q121433834",
+      "name": "Hsevras Edrok",
+      "musicbrainz_id": "c23f194f-f220-4f34-b697-b35d24ccdcdf",
+      "description": "Indian artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q63242079",
+      "name": "InsideInfo",
+      "musicbrainz_id": "a5c56be4-f724-40b4-a484-221e7baebf25",
+      "description": "UK musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q3153191",
+      "name": "Interlope",
+      "musicbrainz_id": "e8df30b0-8883-4be1-a9be-06bc1a1ed923",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q140771456",
+      "name": "Intrinsic",
+      "musicbrainz_id": "09204f73-0d6a-4a9d-b6c1-1d4ee9bed7ed",
+      "description": "drum and bass producer from Cologne, Germany",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99732385",
+      "name": "Ish",
+      "musicbrainz_id": "2ebf9dea-6a97-48d7-b25b-df8566202e19",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q101365068",
+      "name": "Joey Fever",
+      "musicbrainz_id": "9b7ed896-f352-4930-b6bb-433929f9c093",
+      "description": "Swedish reggae/dancehall artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q29913634",
+      "name": "Jordan Agro",
+      "musicbrainz_id": "184e7762-bb38-473e-b96e-4ede965116b7",
+      "description": "Russian electronic dance music DJ, producer, and podcaster.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141632364",
+      "name": "Kegzi",
+      "musicbrainz_id": "dbc952a0-d3b0-4c0e-a973-e31a86bb14b5",
+      "description": "British drum and bass producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q95726646",
+      "name": "L 33",
+      "musicbrainz_id": "5180f8e7-254f-4963-bfb1-956c12baf35b",
+      "description": "disc jockey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q117070658",
+      "name": "MC Fats",
+      "musicbrainz_id": "d38a3921-4bf2-4668-9e57-1262e384f0d0",
+      "description": "British jungle/drum'n'bass MC",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q139825987",
+      "name": "MNEEMO",
+      "musicbrainz_id": "837e410e-4141-4fad-aa58-c38afb652026",
+      "description": "British DJ, music producer and composer (born 1994)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141085939",
+      "name": "MOONKAMI",
+      "musicbrainz_id": "e40e0631-2fbf-497f-a960-34c182cfdf8b",
+      "description": "American rapper, singer, songwriter, and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q115206208",
+      "name": "Mark Digital",
+      "musicbrainz_id": "126bf37e-52d0-4a26-9a84-0afcaf5a27a1",
+      "description": "American Trance producer, performer, songwriter from Washington DC.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q101526443",
+      "name": "Martay",
+      "musicbrainz_id": "22b2bf2d-892d-4fa1-b96f-86ca9469c1e9",
+      "description": "British musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q4044369",
+      "name": "Mistabishi",
+      "musicbrainz_id": "446c2141-bafa-4e87-ac55-63877ad91eb8",
+      "description": "composer, singer/songwriter, electronic music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141610770",
+      "name": "Mizeyesis",
+      "musicbrainz_id": "9d9ea7b0-9cc2-4b90-b2e5-0643982ab7f4",
+      "description": "American DJ and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q136674236",
+      "name": "N.E.Z",
+      "musicbrainz_id": "77988b54-a0af-453c-9bdb-8ebf4d99c61c",
+      "description": "Azerbaijani DJ and producer, two-time Red Bull 3Style Champion,",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q140563635",
+      "name": "OGONEK",
+      "musicbrainz_id": "971762d6-c851-499c-a656-7fa4fa055f47",
+      "description": "Bulgarian drum and bass, electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99671142",
+      "name": "Onallee",
+      "musicbrainz_id": "243936c3-fcad-4474-92d7-ce3002c498d2",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q137715103",
+      "name": "PINGVI",
+      "musicbrainz_id": "d93d2c7f-d4a2-4595-aa0b-f62949914d58",
+      "description": "Athens-based electronic music DJ and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99688810",
+      "name": "Pål Nyhus",
+      "musicbrainz_id": "32a3d994-0d8f-470a-a6e7-a5e7da1b7ebc",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99675570",
+      "name": "Rob Merrill",
+      "musicbrainz_id": "922c0cb4-3ec2-4642-8eea-cec874ca8eb7",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q29170197",
+      "name": "Sam Berson",
+      "musicbrainz_id": "15e4ddb4-9280-4002-8a69-a49d5c480a16",
+      "description": "British music producer and audio engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q99671394",
+      "name": "Si John",
+      "musicbrainz_id": "31f3c855-057b-44d9-8460-a42ef734f3d0",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q134966732",
+      "name": "Undefined",
+      "musicbrainz_id": "e394812a-619c-4017-a02a-90bb27b23887",
+      "description": "drum and bass artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q108647039",
+      "name": "Unglued",
+      "musicbrainz_id": "3cf7234e-a7fc-47f4-afd7-f8fd4a9542c9",
+      "description": "English DJ and Drum and Bass producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q44487047",
+      "name": "Voicians",
+      "musicbrainz_id": "cbe5d5aa-2bbc-4bee-81cd-4ab70719d876",
+      "description": "German electronic musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q138849509",
+      "name": "WORSHIP",
+      "musicbrainz_id": "c9d357fe-a149-4556-9174-305f81f2a289",
+      "description": "drum and bass performance collective",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    },
+    {
+      "wikidata_id": "Q141668689",
+      "name": "Woofax",
+      "musicbrainz_id": "ca2fe381-4271-474d-9b38-d80793c77bbe",
+      "description": "electronic music producer and audio engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "drum and bass"
+      ],
+      "category": "dnb"
+    }
+  ]
+}

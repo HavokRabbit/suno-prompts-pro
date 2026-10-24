@@ -1,0 +1,61 @@
+{
+ "generated": "2026-10-24",
+ "file": "research/extra-punjabi-indie.json",
+ "records_total": 262,
+ "counts_by_category": {
+  "punjabi": 123,
+  "indian-indie": 139
+ },
+ "counts_by_source": {
+  "punjabi": {
+   "en.wikipedia.org": 122,
+   "rollingstoneindia.com": 1
+  },
+  "indian-indie": {
+   "en.wikipedia.org": 50,
+   "rollingstoneindia.com": 89
+  }
+ },
+ "genre_tag_counts": {
+  "punjabi": {
+   "Punjabi folk": 54,
+   "bhangra": 42,
+   "Punjabi music": 31,
+   "Punjabi pop": 23,
+   "Punjabi hip-hop": 15,
+   "Sufi": 6,
+   "ghazal": 4,
+   "R&B": 2
+  },
+  "indian-indie": {
+   "Indian rock": 52,
+   "Indian indie": 32,
+   "singer-songwriter": 27,
+   "Indian pop": 24,
+   "desi hip-hop": 15,
+   "metal": 6,
+   "alternative rock": 5,
+   "electronic": 5,
+   "punk": 4,
+   "indie rock": 3,
+   "R&B": 3,
+   "indie pop": 2,
+   "indie folk": 2,
+   "folk metal": 2,
+   "post-rock": 1
+  }
+ },
+ "baseline_artists": 776,
+ "already_collected_wikidata_candidates": {
+  "punjabi": 78,
+  "indian-indie": 69
+ },
+ "new_names_not_in_baseline_or_candidates": 262,
+ "notes": [
+  "Every record is a name that appears in neither the 776-artist baseline nor the two Wikidata candidate files (normalised name match).",
+  "Punjabi records come from Wikipedia biographies whose lead or infobox explicitly states bhangra / Punjabi folk / Punjabi pop / Punjabi-language music, or from the Bhangra (music) musicians and musical-groups categories.",
+  "Indian-indie records come from Wikipedia articles with explicit Indian rock/indie/alternative genre fields, or from Rolling Stone India independent-music lists (2019-2025) where each entry names the artist and describes the release.",
+  "Mainstream playback singers and film composers were excluded from indian-indie (e.g. the Wikidata candidate file's Asha Bhosle, Alka Yagnik, Udit Narayan, Himesh Reshammiya, Indio Solari entries were treated as query noise and not reused).",
+  "matched_genres are keyword tags taken from the cited source text, not inferred from the artist name."
+ ]
+}

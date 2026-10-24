@@ -1,0 +1,786 @@
+{
+  "category": "indian-indie",
+  "label": "Indian indie",
+  "genre_labels": [
+    "indie pop",
+    "indie rock",
+    "indie folk",
+    "alternative rock",
+    "Indian pop",
+    "Indian rock",
+    "Indian indie"
+  ],
+  "country_filter": "Q668",
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"indie pop\"@en \"indie rock\"@en \"indie folk\"@en \"alternative rock\"@en \"Indian pop\"@en \"Indian rock\"@en \"Indian indie\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      {{?artist wdt:P27 wd:Q668} UNION {?artist wdt:P495 wd:Q668}}\n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q38393",
+      "name": "Asha Bhosle",
+      "musicbrainz_id": "79c5547a-e098-495c-8dac-7e99546aa46b",
+      "description": "Indian playback singer (1933–2026)",
+      "sitelinks": 60,
+      "matched_genres": [
+        "Indian rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q331155",
+      "name": "Shruti Haasan",
+      "musicbrainz_id": "d9515233-3fe6-44ef-8bea-45fe75962214",
+      "description": "Indian actress",
+      "sitelinks": 54,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q3351697",
+      "name": "Dr. Puneeth Rajkumar",
+      "musicbrainz_id": "9bb8a51b-8921-4594-93f0-afb9a647f059",
+      "description": "Kannada actor (1974-2021)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q466826",
+      "name": "Alka Yagnik",
+      "musicbrainz_id": "52cf0679-e1cf-42ca-b9b5-86e018b36d91",
+      "description": "Indian playback singer",
+      "sitelinks": 46,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q3595893",
+      "name": "Zubeen Garg",
+      "musicbrainz_id": "462d0e4a-5551-499a-b804-e95b997b4877",
+      "description": "Indian recording artist, singer, actor",
+      "sitelinks": 42,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q469818",
+      "name": "Udit Narayan Jha",
+      "musicbrainz_id": "43a90725-7432-4f08-baa6-4c939d6f69a9",
+      "description": "Nepalese playback singer",
+      "sitelinks": 41,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2722933",
+      "name": "Sunidhi Chauhan",
+      "musicbrainz_id": "934cc2a7-822e-4117-8e82-8e663d7d2daf",
+      "description": "Indian playback singer",
+      "sitelinks": 37,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q464185",
+      "name": "Daler Mehndi",
+      "musicbrainz_id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+      "description": "Indian singer",
+      "sitelinks": 35,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q467315",
+      "name": "Kavita Krishnamurthy",
+      "musicbrainz_id": "95e3467a-b303-43e0-b44b-20c90e23c387",
+      "description": "Indian singer",
+      "sitelinks": 32,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q4790608",
+      "name": "Arijit Singh",
+      "musicbrainz_id": "ed3f4831-e3e0-4dc0-9381-f5649e9df221",
+      "description": "Indian playback singer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q1395430",
+      "name": "Himesh Reshammiya",
+      "musicbrainz_id": "643f0b8a-d835-4f45-bb79-84dd5ac96b4a",
+      "description": "Indian musician, singer and actor",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian rock",
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q14917099",
+      "name": "Neha Kakkar",
+      "musicbrainz_id": "9ac67cb4-c838-48ad-b28d-1ff2ae58b758",
+      "description": "Indian singer (born 1988)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q6897935",
+      "name": "Monali Thakur",
+      "musicbrainz_id": "adb5aa54-32b9-4587-83df-156d2c9bef1c",
+      "description": "Indian playback singer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2049494",
+      "name": "Shankar Mahadevan",
+      "musicbrainz_id": "bdbafa57-cf3f-4b7e-b956-fb6e0071ecd4",
+      "description": "Indian singer and composer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q6363189",
+      "name": "Kanika Kapoor",
+      "musicbrainz_id": "a56d017a-1bcd-4483-aaf5-9e9f1e2d0e0e",
+      "description": "Indian singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q6986984",
+      "name": "Neeti Mohan",
+      "musicbrainz_id": "d7426d9d-dade-4c73-b2ee-a4dfcc373704",
+      "description": "Indian singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2049950",
+      "name": "K. S. Chithra",
+      "musicbrainz_id": "6fbfece4-f13a-4cd0-81df-81734821be30",
+      "description": "Indian playback singer",
+      "sitelinks": 26,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2722967",
+      "name": "Alisha Chinai",
+      "musicbrainz_id": "154093f6-bc4f-4583-a0d8-71a75175ede5",
+      "description": "Indian singer",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q3523373",
+      "name": "Andrea Jeremiah",
+      "musicbrainz_id": "75583e28-dcbc-4527-b9ae-06f3952a1f8d",
+      "description": "Indian actress",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q112275924",
+      "name": "PVR Raja",
+      "musicbrainz_id": "12eb5719-c364-4f6b-8156-6f2532a7eef0",
+      "description": "Indian composer and guitarist",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2344606",
+      "name": "Sukhwinder Singh",
+      "musicbrainz_id": "d5812475-f8e6-4b5c-951f-7e82720ef041",
+      "description": "Indian singer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2679233",
+      "name": "Yo Yo Honey Singh",
+      "musicbrainz_id": "0dc9c4bc-8bcc-42f1-9033-bec41160377f",
+      "description": "Indian musician",
+      "sitelinks": 23,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q3272944",
+      "name": "Neha Bhasin",
+      "musicbrainz_id": "fce52000-0923-4602-85ce-9f5bc5097bdf",
+      "description": "Indian singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q330889",
+      "name": "Silambarasan TR",
+      "musicbrainz_id": "f25c8950-4158-4582-8a96-764cf7b18b2c",
+      "description": "Indian actor, director, producer and singer (born 1984)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q42665934",
+      "name": "Abhaya Hiranmayi",
+      "musicbrainz_id": "e6fa6379-9acf-4485-b7a7-a58260db550a",
+      "description": "Indian playback singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q3595213",
+      "name": "Lucky Ali",
+      "musicbrainz_id": "06de7d6b-72fc-43a6-88b4-dc4c495e5607",
+      "description": "Indian musician",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2049922",
+      "name": "Chinmayi Sripada",
+      "musicbrainz_id": "37cee081-04e2-48cd-80c7-e46096303b4f",
+      "description": "Indian singer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q30557637",
+      "name": "Guru Randhawa",
+      "musicbrainz_id": "75939c77-b808-4e79-89ec-71d5cb0d453a",
+      "description": "Indian singer and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "indie pop",
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q949606",
+      "name": "Sonu Kakkar",
+      "musicbrainz_id": "064bc852-059d-4b76-99ef-013383d54990",
+      "description": "Indian playback singer and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q781236",
+      "name": "White Town",
+      "musicbrainz_id": "b9068fde-91c8-48bf-8655-8d74c24ef4c5",
+      "description": "British-Indian singer and musician",
+      "sitelinks": 17,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q4761956",
+      "name": "Angaraag Mahanta",
+      "musicbrainz_id": "7f77bfe2-ce93-40ca-a72e-21de63ca5d26",
+      "description": "singer and composer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2917376",
+      "name": "Mohit Chauhan",
+      "musicbrainz_id": "1dd28f27-4ab3-4a3f-8174-4ccd571a9dce",
+      "description": "Indian pop and playback singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Indian rock",
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7239780",
+      "name": "Preeti Sagar",
+      "musicbrainz_id": "",
+      "description": "Indian playback singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q4889964",
+      "name": "Benny Dayal",
+      "musicbrainz_id": "6b0b4484-442e-489d-bb8e-5e79dcd8e5f4",
+      "description": "Indian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q9369646",
+      "name": "Vishal Dadlani",
+      "musicbrainz_id": "e3fce957-14b8-40d3-9d4c-efc10a3813ef",
+      "description": "Indian singer, songwriter and music composer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Indian pop",
+        "Indian rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q15340767",
+      "name": "Ankit Tiwari",
+      "musicbrainz_id": "8e94cd02-5047-4885-82fa-7f2b8bb2195f",
+      "description": "Indian singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q22813458",
+      "name": "Shekhar Ravjiani",
+      "musicbrainz_id": "55b69527-3bbc-4ea2-9a8f-d44bdc8a83e6",
+      "description": "Indian singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q6024930",
+      "name": "Indio Solari",
+      "musicbrainz_id": "8459131f-3338-49fe-908c-bd71de206e39",
+      "description": "Argentine musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q6892073",
+      "name": "Mohammad Irfan Ali",
+      "musicbrainz_id": "f33c0eb4-fae1-4662-a0f2-a469fd6fe52d",
+      "description": "Indian Playback Singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q22277872",
+      "name": "Nikhita Gandhi",
+      "musicbrainz_id": "12829680-473d-4787-8c53-a9e35b94ed18",
+      "description": "Indian playback singer who has worked in Indian films in four different languages.",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q2689581",
+      "name": "Rabbi Shergill",
+      "musicbrainz_id": "e881c88c-c318-4ff4-b4e3-c04447a7563c",
+      "description": "Indian musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q18358401",
+      "name": "Sid Sriram",
+      "musicbrainz_id": "00fc05b6-4a0d-4e0e-be4c-2cd4b94ce1e9",
+      "description": "Indian Playback Singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7650813",
+      "name": "Suzanne D'Mello",
+      "musicbrainz_id": "93566ad1-2341-47ee-846d-6219f4cd742a",
+      "description": "Indian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q172367",
+      "name": "Euphoria",
+      "musicbrainz_id": "2e542ea1-7f31-4da5-9aaf-d6f61f94ef5e",
+      "description": "Indian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Indian rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q5892320",
+      "name": "Haricharan",
+      "musicbrainz_id": "ee73467d-4c24-45d3-bc5e-5f4ebc36a9a3",
+      "description": "Indian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q17403318",
+      "name": "Boby Techi",
+      "musicbrainz_id": "",
+      "description": "Indian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q18128447",
+      "name": "Nakash Aziz",
+      "musicbrainz_id": "a6a6fea9-f3df-4347-aa31-971fcd7a7994",
+      "description": "Indian music composer and singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7156000",
+      "name": "Pawni Pandey",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q279001",
+      "name": "Avial",
+      "musicbrainz_id": "f0d26c00-447f-4ac8-911a-8ae88612bcd3",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7319335",
+      "name": "Rex Vijayan",
+      "musicbrainz_id": "666404af-23b2-4dd1-ad23-f133cb6786f7",
+      "description": "Indian musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q4686013",
+      "name": "Advaita",
+      "musicbrainz_id": "ae272735-bb3f-4c2f-8c35-baa7719ec3b2",
+      "description": "Indian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q5306422",
+      "name": "Dream Out Loud",
+      "musicbrainz_id": "",
+      "description": "contemporary indie rock band from India",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q113911231",
+      "name": "Jaimin Rajani",
+      "musicbrainz_id": "466eb507-dfb3-4f37-882f-04ae488de5cb",
+      "description": "singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie rock",
+        "Indian rock",
+        "indie folk",
+        "Indian pop",
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7137093",
+      "name": "Parikrama",
+      "musicbrainz_id": "2446a659-acaf-4af7-8399-44b78ac78d9e",
+      "description": "Indian rock and roll band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Indian rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7492360",
+      "name": "Sheema Mukherjee",
+      "musicbrainz_id": "671202df-df49-4cbe-a008-96d2705fa502",
+      "description": "British composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q5455991",
+      "name": "Five Little Indians",
+      "musicbrainz_id": "",
+      "description": "Indian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q123484992",
+      "name": "Lavita Lobo",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q7781166",
+      "name": "Them Clones",
+      "musicbrainz_id": "268c7476-4287-4a72-901f-209daab3f4f4",
+      "description": "Indian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q15145868",
+      "name": "Zero",
+      "musicbrainz_id": "",
+      "description": "Indian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "alternative rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q139007197",
+      "name": "Anish J",
+      "musicbrainz_id": "",
+      "description": "Indian poet, lyricist and musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q4918618",
+      "name": "Biswabijoy Sen",
+      "musicbrainz_id": "",
+      "description": "musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q141085392",
+      "name": "Married Moonda",
+      "musicbrainz_id": "f8d400ab-5e48-4315-899d-5a332475e4cd",
+      "description": "Indian independent music project (Hindi, Marathi, Punjabi songs)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q140202313",
+      "name": "RJ Khan",
+      "musicbrainz_id": "6bc511f7-5fee-469f-9daf-d3d17e5b051e",
+      "description": "Indian singer and rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q136498992",
+      "name": "Rafa Yeasmin",
+      "musicbrainz_id": "4fb885c3-aa3c-4cdb-a1e3-c91169a11354",
+      "description": "Indian playback singer-songwriter, music and record producer (born 2009)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q138626875",
+      "name": "Reid Virtu",
+      "musicbrainz_id": "",
+      "description": "Musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie rock"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q136482388",
+      "name": "Shifa Ruby",
+      "musicbrainz_id": "6822fe50-0c6c-45b5-894c-c9f5bc4dd943",
+      "description": "Indian playback singer, songwriter, and performer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q138820934",
+      "name": "Shivam Madaan",
+      "musicbrainz_id": "https://musicbrainz.org/artist/a4add4aa-5d55-467b-a597-26bd3cdf8738",
+      "description": "Indian singer-songwriter and music producer (born 2002)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q140358151",
+      "name": "Vamsi Kalakuntla",
+      "musicbrainz_id": "",
+      "description": "Telugu indie pop artist and singer-songwriter based in Dallas, Texas",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "indian-indie"
+    },
+    {
+      "wikidata_id": "Q138951973",
+      "name": "Yuzit Nath",
+      "musicbrainz_id": "f0009ae4-3dd2-4197-af3a-f4a9530dbcb1",
+      "description": "Indian songwriter and lyricist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Indian pop"
+      ],
+      "category": "indian-indie"
+    }
+  ]
+}

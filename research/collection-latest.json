@@ -1,0 +1,26 @@
+[
+  {
+    "genre": "corrido",
+    "count": 153
+  },
+  {
+    "genre": "bollywood",
+    "count": 122
+  },
+  {
+    "genre": "punjabi",
+    "count": 78
+  },
+  {
+    "genre": "indian-indie",
+    "count": 69
+  },
+  {
+    "genre": "christian",
+    "count": 146
+  },
+  {
+    "genre": "hyperpop",
+    "count": 70
+  }
+]

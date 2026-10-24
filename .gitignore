@@ -22,3 +22,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Build artifacts and local caches
+research/wikidata/
+research/__pycache__/
+__pycache__/
+motion/header/node_modules/
+motion/header/snapshots/

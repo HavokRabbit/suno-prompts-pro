@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200, height=280" />
+    <title>Iron Vespers Prompt Studio header</title>
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1200px; height: 280px; overflow: hidden; background: #111214; }
+      #root { position: relative; width: 100%; height: 100%; background: #111214; overflow: hidden; }
+      .halo {
+        position: absolute; left: -40px; top: 50%; width: 360px; height: 360px; margin-top: -180px;
+        border-radius: 50%;
+        background: radial-gradient(closest-side, rgba(216,84,99,0.30), rgba(216,84,99,0.06) 60%, rgba(17,18,20,0) 100%);
+        pointer-events: none;
+      }
+      .stage {
+        position: relative; display: flex; flex-direction: row; align-items: center;
+        gap: 30px; width: 100%; height: 100%; padding: 26px 40px;
+      }
+      .mark { width: 190px; height: 190px; flex: 0 0 auto; }
+      .mark svg { display: block; width: 100%; height: 100%; overflow: visible; }
+      .mark .trace {
+        fill: none; stroke: #d85463; stroke-width: 2.6;
+        stroke-linejoin: round; stroke-linecap: round;
+      }
+      .mark .eye { fill: #ff415e; stroke: none; }
+      .mark .ring { fill: none; stroke: #c8102e; stroke-width: 1.6; opacity: 0.45; }
+      .copy { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+      .wordmark {
+        font-family: Georgia, serif; font-weight: 700; font-size: 62px; line-height: 1.02;
+        letter-spacing: 0.055em; text-transform: uppercase; color: #f2eee7; white-space: nowrap;
+      }
+      .wordmark .glyph { display: inline-block; }
+      .tagline {
+        font-family: ui-sans-serif, system-ui, sans-serif; font-size: 19px;
+        letter-spacing: 0.34em; text-transform: uppercase; color: #b9b4ae; white-space: nowrap;
+      }
+      .rule { display: block; width: 620px; height: 1px; background: #383a3f; transform-origin: 0% 50%; }
+      .rule-hot {
+        display: block; position: absolute; left: 40px; bottom: 24px;
+        width: 220px; height: 1px; background: #d85463; transform-origin: 0% 50%; opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="iv-header"
+      data-start="0"
+      data-duration="3.5"
+      data-fps="30"
+      data-width="1200"
+      data-height="280"
+    >
+      <div class="halo" id="halo"></div>
+      <div class="stage">
+        <div class="mark" id="mark" role="img" aria-label="Iron Vespers wolf mark">
+          <svg viewBox="0 0 256 256" aria-hidden="true">
+            <circle class="ring" id="ring" cx="128" cy="128" r="118"></circle>
+            <path class="trace" id="ear-left" d="M 60 50 L 95 60 L 88 95 Z"></path>
+            <path class="trace" id="ear-right" d="M 196 50 L 161 60 L 168 95 Z"></path>
+            <path class="trace" id="head" d="M 88 95 L 128 80 L 168 95 L 175 130 L 165 150 L 128 175 L 91 150 L 81 130 Z"></path>
+            <path class="trace" id="jaw-left" d="M 81 130 L 91 150 L 95 180 L 115 195 L 128 175 Z"></path>
+            <path class="trace" id="jaw-right" d="M 175 130 L 165 150 L 161 180 L 141 195 L 128 175 Z"></path>
+            <path class="trace" id="snout" d="M 122 152 L 134 152 L 136 162 L 128 168 L 120 162 Z"></path>
+            <polygon class="eye" id="eye-left" points="100,118 115,113 118,128 105,132"></polygon>
+            <polygon class="eye" id="eye-right" points="156,118 141,113 138,128 151,132"></polygon>
+          </svg>
+        </div>
+        <div class="copy">
+          <div class="wordmark" id="wordmark">
+            <span class="glyph">I</span><span class="glyph">R</span><span class="glyph">O</span><span class="glyph">N</span><span class="glyph"> </span><span class="glyph">V</span><span class="glyph">E</span><span class="glyph">S</span><span class="glyph">P</span><span class="glyph">E</span><span class="glyph">R</span><span class="glyph">S</span>
+          </div>
+          <div class="tagline" id="tagline">Prompt Studio</div>
+          <span class="rule" id="rule"></span>
+        </div>
+      </div>
+      <span class="rule-hot" id="rule-hot"></span>
+    </div>
+    <script src="assets/gsap.min.js"></script>
+    <script>
+      (function () {
+        "use strict";
+
+        var root = document.getElementById("root");
+        var duration = parseFloat(root.dataset.duration || "3.5");
+
+        var traces = [
+          document.getElementById("ring"),
+          document.getElementById("ear-left"),
+          document.getElementById("ear-right"),
+          document.getElementById("head"),
+          document.getElementById("jaw-left"),
+          document.getElementById("jaw-right"),
+          document.getElementById("snout")
+        ];
+        var eyes = [document.getElementById("eye-left"), document.getElementById("eye-right")];
+        var glyphs = document.querySelectorAll("#wordmark .glyph");
+        var tagline = document.getElementById("tagline");
+        var rule = document.getElementById("rule");
+        var ruleHot = document.getElementById("rule-hot");
+        var halo = document.getElementById("halo");
+        var mark = document.getElementById("mark");
+
+        traces.forEach(function (path) {
+          var length = path.getTotalLength();
+          path.style.strokeDasharray = length + " " + length;
+          path.style.strokeDashoffset = String(length);
+        });
+
+        var tl = gsap.timeline({ paused: true });
+
+        tl.to("#ring", { strokeDashoffset: 0, duration: 0.55, ease: "sine.inOut" }, 0);
+        tl.to(["#ear-left", "#ear-right"], { strokeDashoffset: 0, duration: 0.42, ease: "power2.out" }, 0.16);
+        tl.to("#head", { strokeDashoffset: 0, duration: 0.75, ease: "sine.inOut" }, 0.34);
+        tl.to(["#jaw-left", "#jaw-right"], { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 0.58);
+        tl.to("#snout", { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, 0.9);
+
+        tl.fromTo(eyes, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.36, ease: "power2.out", stagger: 0.08, transformOrigin: "50% 50%" }, 1.05);
+
+        tl.fromTo(glyphs, { yPercent: 46, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.52, ease: "power3.out", stagger: 0.028 }, 0.85);
+        tl.fromTo(tagline, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.42, ease: "power2.out" }, 1.34);
+        tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.58, ease: "power2.inOut" }, 1.42);
+        tl.fromTo(ruleHot, { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.inOut" }, 1.62);
+
+        var breathStart = 1.2;
+        var breathSpan = duration - breathStart;
+        var cycles = Math.max(1, Math.ceil(breathSpan / 1.15)) - 1;
+        tl.to(halo, { opacity: 0.62, scale: 1.06, duration: 1.15, ease: "sine.inOut", repeat: cycles, yoyo: true }, breathStart);
+        tl.to(mark, { y: -4, duration: (duration - 1.9) / 2, ease: "sine.inOut", repeat: 1, yoyo: true }, 1.9);
+
+        tl.seek(0);
+        window.__timelines = window.__timelines || {};
+        window.__timelines["iv-header"] = tl;
+      })();
+    </script>
+  </body>
+</html>

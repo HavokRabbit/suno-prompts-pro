@@ -1,0 +1,6690 @@
+{
+  "category": "techno",
+  "label": "Techno",
+  "genre_labels": [
+    "techno",
+    "Detroit techno",
+    "minimal techno",
+    "hard techno",
+    "acid techno"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"techno\"@en \"Detroit techno\"@en \"minimal techno\"@en \"hard techno\"@en \"acid techno\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q383541",
+      "name": "Basshunter",
+      "musicbrainz_id": "255e2420-5b02-452b-9771-0512ebe78090",
+      "description": "Swedish singer, record producer, and DJ",
+      "sitelinks": 221,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q32927",
+      "name": "Valery Leontiev",
+      "musicbrainz_id": "0d1e04f4-ddb6-4b66-8b0b-7f3b66f34d6e",
+      "description": "Russian singer",
+      "sitelinks": 129,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7256860",
+      "name": "The Prodigy",
+      "musicbrainz_id": "4a4ee089-93b1-4470-af9a-6ff575d32704",
+      "description": "English electronic dance music group",
+      "sitelinks": 76,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q14045",
+      "name": "Moby",
+      "musicbrainz_id": "8970d868-0723-483b-a75b-51088913d3d4",
+      "description": "American musician, DJ and record producer",
+      "sitelinks": 68,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q44892",
+      "name": "Kraftwerk",
+      "musicbrainz_id": "5700dcd4-c139-4f31-aa3e-6382b9af9032",
+      "description": "German music band",
+      "sitelinks": 64,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q215076",
+      "name": "Vanessa-Mae",
+      "musicbrainz_id": "c75d637d-bcca-4123-9ffa-fab3c01be71a",
+      "description": "British violinist",
+      "sitelinks": 56,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q223161",
+      "name": "Aphex Twin",
+      "musicbrainz_id": "87225a21-c925-41cd-852f-be4b052d0824",
+      "description": "British electronic musician (born 1971)",
+      "sitelinks": 54,
+      "matched_genres": [
+        "techno",
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q345494",
+      "name": "Ryuichi Sakamoto",
+      "musicbrainz_id": "a7f7df4a-77d8-4f12-8acd-5c60c93f4de8",
+      "description": "Japanese composer, musician, social activist, and former student activist (1952–2023)",
+      "sitelinks": 52,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q494784",
+      "name": "Bring Me the Horizon",
+      "musicbrainz_id": "074e3847-f67f-49f9-81f1-8c8cea147e8e",
+      "description": "British rock band",
+      "sitelinks": 51,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q272619",
+      "name": "Fatboy Slim",
+      "musicbrainz_id": "34c63966-445c-4613-afe1-4f0e1e53ae9a",
+      "description": "British musician (born 1963)",
+      "sitelinks": 46,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q325359",
+      "name": "Laibach",
+      "musicbrainz_id": "c779e090-909f-4403-a90e-c1d08cdbb719",
+      "description": "Slovenian music group",
+      "sitelinks": 45,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1776790",
+      "name": "Keith Flint",
+      "musicbrainz_id": "3efc71ea-3594-4510-b2d5-34c14c8687d4",
+      "description": "British singer and musician (1969-2019)",
+      "sitelinks": 43,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q156255",
+      "name": "Scooter",
+      "musicbrainz_id": "83e59f23-3b0b-4304-834d-5bcafd5df6d2",
+      "description": "German techno band",
+      "sitelinks": 41,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q317169",
+      "name": "Edward Maya",
+      "musicbrainz_id": "257891db-1f69-4660-894d-075e355431a8",
+      "description": "Romanian singer, DJ, composer and record producer",
+      "sitelinks": 39,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q435744",
+      "name": "Florian Schneider",
+      "musicbrainz_id": "46957dac-b5ff-40a9-a427-ab53bc414f6e",
+      "description": "German musician (1947–2020)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q588067",
+      "name": "Natalie Horler",
+      "musicbrainz_id": "93abdd15-b860-403b-9b2c-86f3f1ea4ea7",
+      "description": "German singer",
+      "sitelinks": 35,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q222900",
+      "name": "2 Unlimited",
+      "musicbrainz_id": "515b236c-cce1-4dc2-aedd-50de7b1736e2",
+      "description": "Belgian eurodance band",
+      "sitelinks": 34,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124157590",
+      "name": "Baby Lasagna",
+      "musicbrainz_id": "ac1739a6-4378-42fb-89f6-1f89e32e4369",
+      "description": "Croatian singer",
+      "sitelinks": 34,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q61716128",
+      "name": "Hatari",
+      "musicbrainz_id": "2f0ce8e9-bde6-4c4c-baa4-ab4fcdf57df2",
+      "description": "Icelandic band and performance art group",
+      "sitelinks": 34,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q542071",
+      "name": "Faithless",
+      "musicbrainz_id": "23d9d74d-c95e-46a6-be26-a6075c49747a",
+      "description": "British musical group; electronic band",
+      "sitelinks": 33,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1991579",
+      "name": "Bzikebi",
+      "musicbrainz_id": "a912c6b1-6906-4674-97ec-c3731da85974",
+      "description": "Georgian band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q541180",
+      "name": "Linda Lampenius",
+      "musicbrainz_id": "96fa2e40-8c39-462a-87a7-34e5059670b9",
+      "description": "Finnish musician and actress (born 1970)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q849429",
+      "name": "Underworld",
+      "musicbrainz_id": "93e3c4cf-2ca5-4e0a-8529-191d769aa563",
+      "description": "British electronic music duo",
+      "sitelinks": 32,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q319719",
+      "name": "Carl Cox",
+      "musicbrainz_id": "8f614665-3418-4ca8-aa6a-737b4636b995",
+      "description": "British house and techno DJ producer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q741316",
+      "name": "The KLF",
+      "musicbrainz_id": "8092b8b7-235e-4844-9f72-95a9d5a73dbf",
+      "description": "British musical group; acid house band",
+      "sitelinks": 30,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q431244",
+      "name": "Peter Hook",
+      "musicbrainz_id": "73e7c483-9f3e-4a72-a359-582452fbaeac",
+      "description": "British bassist",
+      "sitelinks": 29,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q329459",
+      "name": "Rednex",
+      "musicbrainz_id": "64585ad9-a908-422f-b675-8ab7386d5164",
+      "description": "Swedish musical group",
+      "sitelinks": 29,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q159233",
+      "name": "SASH!",
+      "musicbrainz_id": "29e26734-788a-44aa-8d86-a452bc4232a6",
+      "description": "German band, DJ/production team",
+      "sitelinks": 29,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q458337",
+      "name": "Yolandi Visser",
+      "musicbrainz_id": "d9ac16b0-f873-4454-9e4c-e93e404b696b",
+      "description": "South African rapper and singer",
+      "sitelinks": 29,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q318514",
+      "name": "Sid Wilson",
+      "musicbrainz_id": "bae61de5-0c63-4f89-9f84-d8ff3f7e308a",
+      "description": "American disc jockey",
+      "sitelinks": 28,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q58049",
+      "name": "H.P. Baxxter",
+      "musicbrainz_id": "1e5e8b9d-c476-4305-bc07-845abca9572c",
+      "description": "German singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q388259",
+      "name": "Liam Howlett",
+      "musicbrainz_id": "c1a18927-020f-4241-a08c-53d2630473b8",
+      "description": "British musician",
+      "sitelinks": 27,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q619067",
+      "name": "Apollo 440",
+      "musicbrainz_id": "1ff10dff-7ac7-4e53-bc02-d5c3cbd8448b",
+      "description": "English band",
+      "sitelinks": 26,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q375820",
+      "name": "Fedde le Grand",
+      "musicbrainz_id": "ffa93e03-f6c5-4d78-b0d5-07d0d6de46aa",
+      "description": "Dutch DJ and record producer",
+      "sitelinks": 26,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q280732",
+      "name": "AAA",
+      "musicbrainz_id": "5d6047a8-f601-4157-a1ee-b8b87b162489",
+      "description": "Japanese pop group",
+      "sitelinks": 25,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4245310",
+      "name": "Andriy Kuzmenko",
+      "musicbrainz_id": "c9ef24a8-542d-4b68-a399-50d8ed7bb868",
+      "description": "Ukrainian singer and actor (1968-2015)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q637865",
+      "name": "Bomfunk MC's",
+      "musicbrainz_id": "5dfbf314-2052-4c3b-9a7a-5270fb3b2a55",
+      "description": "Finnish band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q60760",
+      "name": "Ellen Allien",
+      "musicbrainz_id": "2ff63f00-0954-4b14-9007-e19b822fc8b2",
+      "description": "German electronic musician and music producer",
+      "sitelinks": 25,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q263582",
+      "name": "Vika Jigulina",
+      "musicbrainz_id": "2cb3ebf3-09fb-45fe-8267-9a45d15796df",
+      "description": "Moldovan-Romanian singer, record producer and DJ",
+      "sitelinks": 25,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q235770",
+      "name": "Miss Kittin",
+      "musicbrainz_id": "af6bd973-3e30-4339-94b5-85b139362e6d",
+      "description": "French electronic musician (born 1973)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q515942",
+      "name": "Orbital",
+      "musicbrainz_id": "f3e2a7d9-c6bb-4848-95e5-04c0a1e2f511",
+      "description": "English electronic music band",
+      "sitelinks": 24,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1067714",
+      "name": "Showtek",
+      "musicbrainz_id": "5663c716-c38f-4454-99ce-5afb3c5af567",
+      "description": "Dutch electronic dance band",
+      "sitelinks": 24,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q61011",
+      "name": "Sven Väth",
+      "musicbrainz_id": "14008378-5900-4370-831e-3d17f9749caf",
+      "description": "German DJ and record producer",
+      "sitelinks": 24,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q366714",
+      "name": "Juan Atkins",
+      "musicbrainz_id": "a110acfe-212d-44b2-b729-18f0f94ce47e",
+      "description": "American musician and techno music developer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q378876",
+      "name": "Richie Hawtin",
+      "musicbrainz_id": "99c0c596-68e9-4226-8089-518addce180c",
+      "description": "English-Canadian electronic musician and record producer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q924993",
+      "name": "The Orb",
+      "musicbrainz_id": "42c14c80-bd17-47e4-9bb2-a35897638c4d",
+      "description": "English electronic music group",
+      "sitelinks": 23,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1776781",
+      "name": "Maxim Reality",
+      "musicbrainz_id": "03ea7e10-0b02-4437-8846-82ab2335e057",
+      "description": "British singer, rapper and musician",
+      "sitelinks": 22,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q261566",
+      "name": "Nicolas Jaar",
+      "musicbrainz_id": "06e99a1b-4020-4380-ab27-1a3e0c5e557c",
+      "description": "American composer, musician and record producer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q48613",
+      "name": "Paul Kalkbrenner",
+      "musicbrainz_id": "43b39d78-d541-413a-8c74-45144d067deb",
+      "description": "German DJ and record producer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q457846",
+      "name": "Rick J. Jordan",
+      "musicbrainz_id": "9694a71a-27be-42fa-8727-81d890fa4716",
+      "description": "German musician",
+      "sitelinks": 22,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1173639",
+      "name": "Dave Ball",
+      "musicbrainz_id": "8e1b3b24-8a87-4a00-ab02-aad300d5895d",
+      "description": "English record producer and electronic musician (1959–2025)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q506851",
+      "name": "Jeff Mills",
+      "musicbrainz_id": "470a4ced-1323-4c91-8fd5-0bb3fb4c932a",
+      "description": "American DJ, record producer, and composer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q14829032",
+      "name": "Nina Kraviz",
+      "musicbrainz_id": "5dd3cf5b-474d-465a-a539-456d7e125ebc",
+      "description": "Russian dj, singer and producer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q256910",
+      "name": "Minori Chihara",
+      "musicbrainz_id": "e9c4de4d-b5cd-4609-879c-6c51baf2be5b",
+      "description": "Japanese voice actress and singer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q455732",
+      "name": "Vitalic",
+      "musicbrainz_id": "1f064e2d-aa55-4631-8f62-e2c14bbe1f4e",
+      "description": "French record producer (born 1976)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q27666713",
+      "name": "Boris Brejcha",
+      "musicbrainz_id": "ae0d1794-c9d3-4436-94fc-ceff6130da2c",
+      "description": "German DJ and music producer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q62061",
+      "name": "DJ Hell",
+      "musicbrainz_id": "dceeb024-9254-42c0-9f27-e74d766872e3",
+      "description": "German Techno/House DJ and music producer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q708546",
+      "name": "ItaloBrothers",
+      "musicbrainz_id": "256fc691-ae7b-4565-923d-26f69eb95ce2",
+      "description": "German dance band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q919069",
+      "name": "Laurent Garnier",
+      "musicbrainz_id": "ec477866-bfaa-48e0-affd-1c151ef61b7b",
+      "description": "French DJ and record producer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2916576",
+      "name": "Linn Berggren",
+      "musicbrainz_id": "dc24206d-5172-4911-a070-32b4432a742d",
+      "description": "Swedish singer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q604835",
+      "name": "Milk Inc.",
+      "musicbrainz_id": "67bb73ee-e70c-4bfd-9bf1-e7a09768f9a9",
+      "description": "Belgian musical group; dance band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q580943",
+      "name": "Nitzer Ebb",
+      "musicbrainz_id": "d260c14e-2ef1-4d3d-8739-70d517efac8a",
+      "description": "British EBM band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q930143",
+      "name": "Susumu Hirasawa",
+      "musicbrainz_id": "31e7b30b-f960-408f-908b-c8e277308eab",
+      "description": "Japanese singer-songwriter, lyricist, composer, music producer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q168031",
+      "name": "The Future Sound of London",
+      "musicbrainz_id": "a1d77dd4-8728-4a47-bdfa-9663d791139c",
+      "description": "British electronic group",
+      "sitelinks": 19,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q503037",
+      "name": "EMF",
+      "musicbrainz_id": "26f94a6a-d60a-4bcc-a130-ce0e77122bd7",
+      "description": "British musical group",
+      "sitelinks": 18,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q381562",
+      "name": "Gesaffelstein",
+      "musicbrainz_id": "cc3e537d-ff34-423f-8cd6-635a80f4dba7",
+      "description": "French DJ, record producer and composer (born 1985)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2139991",
+      "name": "Republica",
+      "musicbrainz_id": "78b8347b-a1e2-4e36-a917-92d632a62c18",
+      "description": "British music group",
+      "sitelinks": 18,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1410018",
+      "name": "Juno Reactor",
+      "musicbrainz_id": "16231a34-9ccd-410e-8690-f74e98fe16a4",
+      "description": "British band",
+      "sitelinks": 17,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q439552",
+      "name": "Pakito",
+      "musicbrainz_id": "c004177d-8ed3-40b6-b46a-2dbd32077a26",
+      "description": "French DJ and electronic record producer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q128613",
+      "name": "Ruki Vverh!",
+      "musicbrainz_id": "01726f9b-6e54-48e5-af05-871678ce7d1c",
+      "description": "Russian musical project",
+      "sitelinks": 17,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q62410",
+      "name": "WestBam",
+      "musicbrainz_id": "12d5646a-b9e3-4510-ad37-5682c02a66ef",
+      "description": "German techno DJ",
+      "sitelinks": 17,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q781236",
+      "name": "White Town",
+      "musicbrainz_id": "b9068fde-91c8-48bf-8655-8d74c24ef4c5",
+      "description": "British-Indian singer and musician",
+      "sitelinks": 17,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q706820",
+      "name": "Boys Noize",
+      "musicbrainz_id": "d2f4a968-1f6e-4a4a-9376-ee2b2a50c87a",
+      "description": "German DJ and record producer (born 1982)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q962197",
+      "name": "Carl Craig",
+      "musicbrainz_id": "6732e9f3-5f24-4ba4-aef1-a2a49442b96b",
+      "description": "American music producer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22668666",
+      "name": "Charlotte de Witte",
+      "musicbrainz_id": "5bfe2024-5fbc-4792-8d7a-b8559672e968",
+      "description": "Belgian DJ and record producer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q923104",
+      "name": "Derrick May",
+      "musicbrainz_id": "371c8525-8111-4497-83ba-1ead9d7ed148",
+      "description": "American DJ and techno record producer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q923090",
+      "name": "Kevin Saunderson",
+      "musicbrainz_id": "bf259ecd-fe89-4738-82fc-ecdd67de1fcc",
+      "description": "American DJ",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q235192",
+      "name": "Kotoko",
+      "musicbrainz_id": "b71abaa0-dd97-4e85-943d-3ffa2d3278a5",
+      "description": "Japanese musician",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q554835",
+      "name": "Leeroy Thornhill",
+      "musicbrainz_id": "4699f1e2-32f7-4457-ad02-603415b74bb2",
+      "description": "British musician",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q279368",
+      "name": "Mauro Picotto",
+      "musicbrainz_id": "0eb89e0b-adee-4175-b1f0-55a3531937be",
+      "description": "Italian DJ and remixer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q587713",
+      "name": "The Shamen",
+      "musicbrainz_id": "f22e793d-9a7e-4ec9-9d86-7a8528688abd",
+      "description": "Scottish electronic dance music band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q613471",
+      "name": "Watkin Tudor Jones",
+      "musicbrainz_id": "2b63ea57-8619-4fba-9dff-9a20a1af6cb8",
+      "description": "South African rapper and singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q261641",
+      "name": "Adam Beyer",
+      "musicbrainz_id": "0d6daf47-0be9-44ee-a9e8-fb5a7b718538",
+      "description": "Swedish disc jockey and music producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q306509",
+      "name": "Capsule",
+      "musicbrainz_id": "d5ce36be-fa9b-4caa-b148-a8526dd8ed04",
+      "description": "Japanese electronica band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q694177",
+      "name": "E Nomine",
+      "musicbrainz_id": "9db1e69b-935f-4c1d-a48c-8bcca179a25c",
+      "description": "German musical project",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q981785",
+      "name": "Jonas Berggren",
+      "musicbrainz_id": "0693a22f-665c-49ee-81f9-ccca2569346c",
+      "description": "Swedish songwriter and guitarist",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q961949",
+      "name": "Ken Ishii",
+      "musicbrainz_id": "6d4c4759-8a16-4b9f-83e2-4c225307fc85",
+      "description": "Japanese DJ",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1798055",
+      "name": "LFO",
+      "musicbrainz_id": "e6d0179f-b899-4563-b6c6-88715aaae0b8",
+      "description": "British electronic band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2141779",
+      "name": "Rollo Armstrong",
+      "musicbrainz_id": "9d95fb4f-dfa6-42d1-8451-da64f02803c1",
+      "description": "British record producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q301867",
+      "name": "Adamski",
+      "musicbrainz_id": "598f9933-04dc-4557-a2f9-e78473d0db35",
+      "description": "English record producer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q724495",
+      "name": "Gui Boratto",
+      "musicbrainz_id": "f3e2ad21-900e-46a0-8597-2a3e457a7c27",
+      "description": "Brazilian DJ",
+      "sitelinks": 14,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q202441",
+      "name": "Jamie Lidell",
+      "musicbrainz_id": "0daf1c34-212a-442f-905d-c44f2adcc020",
+      "description": "British singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q829725",
+      "name": "Modeselektor",
+      "musicbrainz_id": "8a7a4e72-a099-425f-8238-80706fc1c746",
+      "description": "band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1959629",
+      "name": "N-Trance",
+      "musicbrainz_id": "17adce06-a815-4c5b-9be7-e6b184f92ee4",
+      "description": "British electronic music group",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2115954",
+      "name": "Psychic TV",
+      "musicbrainz_id": "14c5a3a3-f5ed-4978-99af-486010e3a007",
+      "description": "British-American musical group; multimedia collective",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q132415",
+      "name": "Ricardo Villalobos",
+      "musicbrainz_id": "bbd79854-df54-4c1b-b7d6-cf7eea2d0afb",
+      "description": "German-Chilean musician and DJ",
+      "sitelinks": 14,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q612068",
+      "name": "St Germain",
+      "musicbrainz_id": "4e2f373e-b0dd-4563-a130-3f189982db6c",
+      "description": "French musician, DJ, record producer and composer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1228311",
+      "name": "The Beloved",
+      "musicbrainz_id": "2b87e134-b4a3-48d8-afac-9501d4c6e931",
+      "description": "English electronic dance music group",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1629902",
+      "name": "The Fireman",
+      "musicbrainz_id": "23466b9d-f57a-4e73-906f-c11dca8b3723",
+      "description": "British musical duo",
+      "sitelinks": 14,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1336512",
+      "name": "Genki Sudo",
+      "musicbrainz_id": "bca57e96-8979-49e4-865e-1a1381fe0870",
+      "description": "Japanese politician, mixed martial artist, singer, and actor",
+      "sitelinks": 13,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6499818",
+      "name": "Laurel Halo",
+      "musicbrainz_id": "cb5704af-3ef1-485f-bb7f-e43cf40170a7",
+      "description": "American musician, record producer & DJ",
+      "sitelinks": 13,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1196321",
+      "name": "Yasutaka Nakata",
+      "musicbrainz_id": "53bfc28e-2c48-4776-8949-1953c78dd187",
+      "description": "Japanese music producer and DJ",
+      "sitelinks": 13,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q219191",
+      "name": "Zombie Nation",
+      "musicbrainz_id": "e26fa4b0-ea73-4a33-a745-44077a0d5a59",
+      "description": "former band German musician",
+      "sitelinks": 13,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q67604",
+      "name": "DJ Quicksilver",
+      "musicbrainz_id": "e7d7256f-5278-47c2-9a14-c1faa478717f",
+      "description": "Turkish disc jockey and record producer (born 1964)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q63900",
+      "name": "DJ Tocadisco",
+      "musicbrainz_id": "43d30d64-e433-4314-86e4-16288d3378a6",
+      "description": "German DJ and record producer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1544666",
+      "name": "Green Velvet",
+      "musicbrainz_id": "18d18849-fd22-4720-9ae4-5bc3ce39f93d",
+      "description": "American electronic musician",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q14355702",
+      "name": "Moritz von Oswald",
+      "musicbrainz_id": "48c4ea31-fe9d-4bbf-8a1c-a2996abcfb9f",
+      "description": "German musician",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1889385",
+      "name": "Pan Sonic",
+      "musicbrainz_id": "52d9bff7-1776-46ae-8e1b-7a76afc73358",
+      "description": "Finnish electronic duo",
+      "sitelinks": 12,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7192462",
+      "name": "Pierre Taki",
+      "musicbrainz_id": "b0ac6c8c-edc7-43db-a942-480aba29eee0",
+      "description": "Japanese musician and actor (1967-)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1145307",
+      "name": "Two-Mix",
+      "musicbrainz_id": "3f2b91ab-7710-42c2-8955-8beb4c33b559",
+      "description": "Japanese musical group; pop duo",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4223927",
+      "name": "Yuri Klinskikh",
+      "musicbrainz_id": "b3aff1f1-dec0-4e5b-9e95-694957b0e989",
+      "description": "Russian singer, songwriter, musician, arranger (1964–2000)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q567340",
+      "name": "Alec Empire",
+      "musicbrainz_id": "d71ba53b-23b0-4870-a429-cce6f345763b",
+      "description": "German musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q631226",
+      "name": "Fluke",
+      "musicbrainz_id": "3c3d3ad8-3935-4c00-affb-768563916f36",
+      "description": "English electronic music group",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q819299",
+      "name": "Hardfloor",
+      "musicbrainz_id": "49c5cce4-aaa6-4600-a9a2-2b045fb6a87b",
+      "description": "German band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1663959",
+      "name": "Inner City",
+      "musicbrainz_id": "65a8e571-8a08-433f-a5bf-ead38c269ea6",
+      "description": "American band that plays techno",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q648256",
+      "name": "Jam & Spoon",
+      "musicbrainz_id": "a15988bf-2d7d-4576-9405-2352873bc5a4",
+      "description": "German trance duo",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1691794",
+      "name": "Joey Beltram",
+      "musicbrainz_id": "5330d6d0-711b-415b-93e4-071e46d0d5f2",
+      "description": "American musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2641179",
+      "name": "Misstress Barbara",
+      "musicbrainz_id": "6663fed6-2e15-4d9b-8bdb-515319833655",
+      "description": "Canadian DJ",
+      "sitelinks": 11,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q27902902",
+      "name": "Amelie Lens",
+      "musicbrainz_id": "67db280d-c3e4-49d9-978e-4050f4e209ef",
+      "description": "Belgian DJ and record producer (born 1990)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q795214",
+      "name": "B.G., the Prince of Rap",
+      "musicbrainz_id": "bbb8da7a-3e9e-4e23-972b-d7893beba806",
+      "description": "American rapper and singer (1965–2023)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1077426",
+      "name": "Chris Korda",
+      "musicbrainz_id": "b95bbe21-e25d-4957-88ab-6162426cee5f",
+      "description": "American musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2165261",
+      "name": "DJ Umek",
+      "musicbrainz_id": "a03affe5-47af-48c4-9b8e-67654fa318ec",
+      "description": "Slovenian dance music producer and DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q705224",
+      "name": "Dave Clarke",
+      "musicbrainz_id": "0d7fffb1-c282-4995-96a9-f6f2ea3c86e0",
+      "description": "British DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q998310",
+      "name": "I've Sound",
+      "musicbrainz_id": "9eea0562-cb2c-4a61-8587-a6abcb2e6396",
+      "description": "Japanese techno/trance music production group based in Sapporo, Hokkaidō, Japan",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4391915",
+      "name": "Jorge González",
+      "musicbrainz_id": "5bf1e59e-2f15-4f11-9019-1f43c189eaa8",
+      "description": "Chilean musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1399103",
+      "name": "Josh Wink",
+      "musicbrainz_id": "f36aab5c-fc9e-4027-bd8c-8c2bc032c537",
+      "description": "American musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno",
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q676777",
+      "name": "Leonid Rudenko",
+      "musicbrainz_id": "51d523e4-8ea5-4d78-aa64-b99d4cc0a780",
+      "description": "Russian music producer and DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1352724",
+      "name": "Luke Vibert",
+      "musicbrainz_id": "f7dc93f1-607b-4baa-be7d-126b9c76b2a4",
+      "description": "British musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2401249",
+      "name": "Maloy Lozanes",
+      "musicbrainz_id": "9ccad3fe-3e91-48c8-be3a-a3cf46ce0a61",
+      "description": "German singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1388121",
+      "name": "Mike Banks",
+      "musicbrainz_id": "831b7e7a-8c9c-4457-8b8d-ee05fa510612",
+      "description": "American techno musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q369822",
+      "name": "Moodymann",
+      "musicbrainz_id": "a703b91d-aadc-4021-8b61-05cfc134614f",
+      "description": "American DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3480156",
+      "name": "Adrian Lux",
+      "musicbrainz_id": "259bdba7-e6bf-49e3-822e-85ea3d68384c",
+      "description": "DJ and music producer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q748179",
+      "name": "Boom Boom Satellites",
+      "musicbrainz_id": "f9114439-1662-4415-b761-05a4170c9579",
+      "description": "Japanese electronic music band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q713763",
+      "name": "C. J. Bolland",
+      "musicbrainz_id": "8ab9a62f-b8e6-4719-8e0a-0f9ea94b1955",
+      "description": "Belgian musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1366325",
+      "name": "Meat Beat Manifesto",
+      "musicbrainz_id": "dcb2955e-ff59-4ff2-a608-cbb90ee3ac38",
+      "description": "band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q582813",
+      "name": "Robert Hood",
+      "musicbrainz_id": "e8a61400-baf7-4fb3-a3e3-c9e7b665547f",
+      "description": "American minimal techno musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3816143",
+      "name": "Rune RK",
+      "musicbrainz_id": "cf81f758-7429-4a48-abe7-f67506849bc9",
+      "description": "Danish record producer and DJ from Copenhagen",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2718300",
+      "name": "System 7",
+      "musicbrainz_id": "74102466-c9fa-4dbe-a9cd-3afbf0aa0929",
+      "description": "techno musical duo",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q24950843",
+      "name": "Tale Of Us",
+      "musicbrainz_id": "88c36329-925d-42df-981e-d5df479da2aa",
+      "description": "Italian musical duo",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4051236",
+      "name": "The Pinker Tones",
+      "musicbrainz_id": "0b2e9bf1-a93d-4c6a-90c4-396d61706fd3",
+      "description": "Spanish musical group; indie pop duo",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22958933",
+      "name": "Vox Day",
+      "musicbrainz_id": "939ba425-a93c-4a01-99d4-5d2563a75659",
+      "description": "American writer, publisher, and activist",
+      "sitelinks": 9,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q438344",
+      "name": "Altern-8",
+      "musicbrainz_id": "3b6243aa-3814-49a0-8505-4bd6d6183d46",
+      "description": "band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q321400",
+      "name": "Blake Baxter",
+      "musicbrainz_id": "09039d5e-335c-4c08-9474-a83d1b838f23",
+      "description": "American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q705037",
+      "name": "DJ Rush",
+      "musicbrainz_id": "e1649010-6ebe-4ce7-98d8-cc6e5fa686fa",
+      "description": "American DJ and music producer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3016505",
+      "name": "Darren Emerson",
+      "musicbrainz_id": "90cd1311-85df-45fc-9783-c7a23cfba45a",
+      "description": "British musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1258824",
+      "name": "Drexciya",
+      "musicbrainz_id": "66f398bf-ae55-4f13-b993-fa871c57157f",
+      "description": "American musical group; techno duo",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q783669",
+      "name": "Greater Than One",
+      "musicbrainz_id": "75d72176-cf31-4d63-98d0-80703e8049d6",
+      "description": "band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q711462",
+      "name": "John Acquaviva",
+      "musicbrainz_id": "928e71ac-c6f6-4ffe-b9cc-ccfd1d19b124",
+      "description": "Canadian DJ",
+      "sitelinks": 8,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1877065",
+      "name": "Luke Slater",
+      "musicbrainz_id": "c2e96142-3c3b-4eb8-979b-390bfb90e9d6",
+      "description": "British musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1679603",
+      "name": "Matthew Dear",
+      "musicbrainz_id": "28e74c6b-2621-46a4-bc38-7646efa1db0e",
+      "description": "American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q71376",
+      "name": "Monika Kruse",
+      "musicbrainz_id": "52718ad6-dbf9-422e-889e-e251589ffa26",
+      "description": "German techno DJ and music producer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q321932",
+      "name": "Takkyu Ishino",
+      "musicbrainz_id": "d22cd501-9f68-4a1a-a15d-5626e58df43e",
+      "description": "Japanese musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1500673",
+      "name": "Theo Parrish",
+      "musicbrainz_id": "15388d42-9197-4ca1-9ffe-240f763b84cb",
+      "description": "American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1636854",
+      "name": "VCMG",
+      "musicbrainz_id": "cfc1df00-4ac3-4b15-befd-65b8805ee80d",
+      "description": "band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q18638056",
+      "name": "Worakls",
+      "musicbrainz_id": "272deaa4-4699-46ee-abe8-c63f495142d7",
+      "description": "French electronic musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q362201",
+      "name": "Alex Gopher",
+      "musicbrainz_id": "ee1a6d4a-b1ff-46a8-acf2-af575424bda5",
+      "description": "French disc jockey",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q574739",
+      "name": "Basic Channel",
+      "musicbrainz_id": "d145a57e-7afb-4793-8cc4-2fad292374ef",
+      "description": "German music duo",
+      "sitelinks": 7,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2905011",
+      "name": "Bizarre Inc",
+      "musicbrainz_id": "f72312f7-41ea-4a31-902d-1982eb3eca51",
+      "description": "British techno group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4458336",
+      "name": "Bogdan Titomir",
+      "musicbrainz_id": "6ab93247-2dc4-4a75-9014-4f95d2f862da",
+      "description": "Russian musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4213384",
+      "name": "Car-Man",
+      "musicbrainz_id": "570aca41-1b32-44d9-8e9d-0640729d5f62",
+      "description": "Russian band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2964664",
+      "name": "Chris Brann",
+      "musicbrainz_id": "dbc578ee-daad-47e4-adaa-bfae425396e7",
+      "description": "American electronic music producer and remixer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q71626",
+      "name": "DJ Dean",
+      "musicbrainz_id": "b768f66f-3260-41ec-941d-e7c82b1cb87b",
+      "description": "German DJ",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1256129",
+      "name": "Dreadzone",
+      "musicbrainz_id": "a10ca116-02af-4989-9a91-fb25585216f7",
+      "description": "British electronic group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q741060",
+      "name": "Dubfire",
+      "musicbrainz_id": "83b9718f-8407-48c2-8076-bf337221e880",
+      "description": "Iranian-American disc jockey and musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2362276",
+      "name": "Eat Static",
+      "musicbrainz_id": "9cd39202-6c67-400a-b96e-df351c9f9484",
+      "description": "Electronic music project from Frome, Somerset, England",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q443276",
+      "name": "Hanin Elias",
+      "musicbrainz_id": "e8b9f2dd-b197-47a6-81d5-7f5850e18b37",
+      "description": "German industrial/techno artist",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1424035",
+      "name": "Haujobb",
+      "musicbrainz_id": "14ca858e-39ac-403b-bbe0-78e16623879e",
+      "description": "German electronic musical project",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q718772",
+      "name": "James Holden",
+      "musicbrainz_id": "7a269795-f85a-4717-8576-3f51265776cc",
+      "description": "English disc jockey of electronic music",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1704007",
+      "name": "Joris Voorn",
+      "musicbrainz_id": "df3f8407-f82b-4cf6-9145-6e09f9e79b85",
+      "description": "Dutch record producer and DJ",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1729275",
+      "name": "Karen Rose",
+      "musicbrainz_id": "49c712c9-9ebf-4505-b8e8-2e32144c7010",
+      "description": "American writer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q322704",
+      "name": "Kenny Larkin",
+      "musicbrainz_id": "ed8e364a-6087-4425-bd58-6b146893c4b4",
+      "description": "American musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1475145",
+      "name": "L.A. Style",
+      "musicbrainz_id": "c3f71ed3-3780-4fc3-8d3d-247652cceed1",
+      "description": "Dutch electronic dance music band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1704751",
+      "name": "Luciano",
+      "musicbrainz_id": "6f8d9d66-24a0-4faf-97c7-81cd22cb1c7e",
+      "description": "Swiss-Chilean DJ and record producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1498245",
+      "name": "Marco Carola",
+      "musicbrainz_id": "daa683bc-1a8d-48da-be35-864526c444a6",
+      "description": "Italian disc jockey and record producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2752431",
+      "name": "Monolake",
+      "musicbrainz_id": "cedf92fe-eba1-45e2-ba16-b1b6af5169b8",
+      "description": "German electronic music group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q69903",
+      "name": "Oliver Lieb",
+      "musicbrainz_id": "404eb416-6766-459e-a5bd-9d88aa1f8912",
+      "description": "German musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q319814",
+      "name": "Robert Babicz",
+      "musicbrainz_id": "c0c0e16b-91f5-4e6a-bc34-3e80c23c0faf",
+      "description": "Polish music producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2264804",
+      "name": "Seefeel",
+      "musicbrainz_id": "8ffcd7d7-6293-4fbf-b0f6-46aef9ce9f69",
+      "description": "British electronic/post-rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q75361",
+      "name": "Stephan Bodzin",
+      "musicbrainz_id": "6f027cd7-c2e8-4569-8922-aa2c9a503e65",
+      "description": "Techno producer, neo-trance pioneer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2667938",
+      "name": "The Black Dog",
+      "musicbrainz_id": "a78d2a35-c083-4179-a5d8-49f84e5ec863",
+      "description": "British electronic music group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1078032",
+      "name": "The Whip",
+      "musicbrainz_id": "9de23f23-f207-411c-9889-af24fe7edf52",
+      "description": "electronic dance-rock band from Oldham, Greater Manchester, England",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q131318965",
+      "name": "femtanyl",
+      "musicbrainz_id": "eb3c021d-e056-42d6-8fad-064205a90527",
+      "description": "Canadian digital hardcore musical duo",
+      "sitelinks": 7,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q395464",
+      "name": "Agoria",
+      "musicbrainz_id": "90ba97be-5daf-4365-8704-9a74b780591b",
+      "description": "French record producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4112770",
+      "name": "Aleksei Vishnya",
+      "musicbrainz_id": "1ae43160-ec8f-4ef3-8eb8-fab39bb039bf",
+      "description": "Russian musician and record producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q373841",
+      "name": "Alphazone",
+      "musicbrainz_id": "93719b3d-f99a-4298-8997-065a4fd50c97",
+      "description": "band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q574001",
+      "name": "Anthony Shakir",
+      "musicbrainz_id": "834203f5-f122-4143-9b8c-b8d6df855dd4",
+      "description": "American musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4833224",
+      "name": "Aérea Negrot",
+      "musicbrainz_id": "14d19ef5-fc20-4767-9509-3533b84ff086",
+      "description": "Venezuelan singer and producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q795254",
+      "name": "B12",
+      "musicbrainz_id": "f35d718b-9177-4f9b-bf36-cbbaa3241a86",
+      "description": "British musical group; electronic music duo",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q320473",
+      "name": "Daniel Bell",
+      "musicbrainz_id": "0fdfc9ce-4892-45d0-b7c1-80217781ecd0",
+      "description": "American minimal techno DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3392326",
+      "name": "Dorian",
+      "musicbrainz_id": "77826b4f-a3fc-4d7a-97dc-df4b43c23902",
+      "description": "Spanish band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q96728",
+      "name": "Dr. Motte",
+      "musicbrainz_id": "9d7ee0e9-c709-48fd-897f-c83d5a8edcdc",
+      "description": "German techno DJ and artist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q327703",
+      "name": "Eddie Fowlkes",
+      "musicbrainz_id": "a3db0ecd-e3f0-4320-88c3-d1d0466cc9bf",
+      "description": "American techno DJ (born 1962)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1641179",
+      "name": "Hypetraxx",
+      "musicbrainz_id": "9ccfa6d2-3f38-419a-a5c3-220d500ae30e",
+      "description": "German band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q713406",
+      "name": "James Zabiela",
+      "musicbrainz_id": "e94c0b11-6ae8-4332-826c-938127d45051",
+      "description": "British musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q27679999",
+      "name": "Jebroer",
+      "musicbrainz_id": "0fc3ed5c-eeb7-45b4-b222-132dae4834ef",
+      "description": "Dutch rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3179041",
+      "name": "Jimmy Edgar",
+      "musicbrainz_id": "fa263cb3-205f-4a7f-91e1-94e3df52abe8",
+      "description": "American musician (born 1983)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16189316",
+      "name": "Karl Hyde",
+      "musicbrainz_id": "05de4cde-ba6e-4be8-a8fb-0aa4f6c56df8",
+      "description": "English musician and artist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6794665",
+      "name": "Max Cooper",
+      "musicbrainz_id": "2d68f237-4e00-424a-a03e-d16993d1da15",
+      "description": "British musician and producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q28225660",
+      "name": "Meute",
+      "musicbrainz_id": "51692530-fb26-4626-9ca1-703aac6f2bc4",
+      "description": "German techno marching band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7099122",
+      "name": "Opus III",
+      "musicbrainz_id": "89240fa8-7e01-490f-8b4c-59f3f488eec6",
+      "description": "English music group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16845826",
+      "name": "Revenge",
+      "musicbrainz_id": "fa291018-ac66-454f-a42b-8fbcfb24d0b3",
+      "description": "band led by New Order bassist Peter Hook",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q304682",
+      "name": "Royal Gigolos",
+      "musicbrainz_id": "26846e1b-6bc2-4eec-932f-23e525b1591f",
+      "description": "band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3453536",
+      "name": "Russkiy Razmer",
+      "musicbrainz_id": "00db22c2-6dda-419e-8400-49a7327ed538",
+      "description": "Pop music group from Russia",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7390721",
+      "name": "SL2",
+      "musicbrainz_id": "f3af66d2-4944-4426-8374-e9fb3711b0bf",
+      "description": "UK musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q705015",
+      "name": "Speedy J",
+      "musicbrainz_id": "ff05b0c0-c343-435b-9255-b802299650d3",
+      "description": "Dutch musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4456889",
+      "name": "Technology",
+      "musicbrainz_id": "aa2a708d-55db-472b-8c0c-293d13793ede",
+      "description": "Soviet-Russian musical group; synthpop band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3290370",
+      "name": "The Other Two",
+      "musicbrainz_id": "8a1fe33d-6029-462e-bcb7-08e0ebaba6dd",
+      "description": "English dance act",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q743213",
+      "name": "Valentino Kanzyani",
+      "musicbrainz_id": "d7a7ccda-bd6a-4a6c-9bbe-26e372e699cb",
+      "description": "Slovenian musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4036909",
+      "name": "Yevgeny Rudin",
+      "musicbrainz_id": "aaa27958-af24-4b33-ab1a-a96b1a81168e",
+      "description": "Russian composer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q290687",
+      "name": "ADULT.",
+      "musicbrainz_id": "ee4833d6-d338-4977-8842-85530515d0fa",
+      "description": "Detroit band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2863212",
+      "name": "Arnaud Rebotini",
+      "musicbrainz_id": "9838c84b-5e67-4c1d-97e6-a36d2ca73634",
+      "description": "French singer, composer, and actor (born 1970)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4820160",
+      "name": "Audrey Napoleon",
+      "musicbrainz_id": "b0239445-c724-4df5-86a0-b5134384c687",
+      "description": "American model, singer-songwriter, record producer, remixer, and DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2037019",
+      "name": "Banco de Gaia",
+      "musicbrainz_id": "d9fd4ad6-f845-4e0f-8da5-983e78f0d097",
+      "description": "British electronic music project",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q847446",
+      "name": "C.G mix",
+      "musicbrainz_id": "ac9b1fb9-27e6-4768-8f61-1ee1ec2a7438",
+      "description": "singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2799860",
+      "name": "Ceephax Acid Crew",
+      "musicbrainz_id": "f226bcd7-114e-418f-8fa5-e24a47a89cf5",
+      "description": "British musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1154222",
+      "name": "DJ Pierre",
+      "musicbrainz_id": "e95c33cb-17ac-4de9-9075-4a73cbb162c0",
+      "description": "American DJ and record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1173092",
+      "name": "Dave Angel",
+      "musicbrainz_id": "98572ea2-67a6-4ea5-8a3b-fcd1740c0115",
+      "description": "English techno musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1243519",
+      "name": "Dopplereffekt",
+      "musicbrainz_id": "9a1994c7-40b8-49a2-a53a-03e8313bf17c",
+      "description": "electronic music band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2692687",
+      "name": "Erick E",
+      "musicbrainz_id": "99b86721-0dc3-4af0-99b5-328960ac001d",
+      "description": "Dutch DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4141264",
+      "name": "Frankie Bones",
+      "musicbrainz_id": "0032a067-7eae-4060-af4b-6bd47e04a32a",
+      "description": "American DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4130890",
+      "name": "Gaby Kerpel",
+      "musicbrainz_id": "92a5dbf2-7d13-4f69-824d-bce876034534",
+      "description": "Argentine musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2743696",
+      "name": "Gerald Donald",
+      "musicbrainz_id": "0d78ae17-2caf-4c8e-b513-b68eb813825b",
+      "description": "American musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1557483",
+      "name": "Guy Gerber",
+      "musicbrainz_id": "69c075c0-3c49-4143-8aa8-fdfbacac3b08",
+      "description": "disc jockey, music producer, and musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q88886885",
+      "name": "Intelligency",
+      "musicbrainz_id": "de6401ac-a0ee-4635-9015-43038982a304",
+      "description": "Belarusian musical group",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q326391",
+      "name": "James Pennington",
+      "musicbrainz_id": "35afa53f-6c6c-4c57-850a-a1afc92977d9",
+      "description": "American musical artist, DJ and producer (born 1965)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1824158",
+      "name": "John Talabot",
+      "musicbrainz_id": "9a2da736-57bd-4b0a-9d61-28712bbb7968",
+      "description": "Spanish DJ, record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4545833",
+      "name": "Jordana",
+      "musicbrainz_id": "f488a1da-d403-499a-bbc4-6c7c42ba4b99",
+      "description": "American music producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16844889",
+      "name": "Joseph Capriati",
+      "musicbrainz_id": "b523b6b8-f2ea-4d6c-ba23-f25e02715727",
+      "description": "Italian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1037780",
+      "name": "Kaori Utatsuki",
+      "musicbrainz_id": "e1727a95-5080-45ad-951c-e37adf396a1e",
+      "description": "Japanese singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q984341",
+      "name": "Kirk Degiorgio",
+      "musicbrainz_id": "3292f991-3b65-44e5-9ca4-3ca289b6c86f",
+      "description": "British DJ",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1779353",
+      "name": "Kollektiv Turmstrasse",
+      "musicbrainz_id": "68205877-7c7b-45c7-adb6-2edb9b380e2f",
+      "description": "Producer & Dj Nico Plagemann",
+      "sitelinks": 5,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q20164759",
+      "name": "Le Shuuk",
+      "musicbrainz_id": "270c7ead-2fcf-4e0f-885c-77d5f4c86078",
+      "description": "German DJ and producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1817211",
+      "name": "Len Faki",
+      "musicbrainz_id": "220f98db-2c1a-4c0c-a2d6-eebcc139d53c",
+      "description": "Turkish-German DJ and record producer (born 2000)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q880080",
+      "name": "Lexy & K-Paul",
+      "musicbrainz_id": "d79b7948-2e69-4770-b8d7-e6bfa3332648",
+      "description": "band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1628382",
+      "name": "Lionrock",
+      "musicbrainz_id": "7f79268b-652e-4ce3-88f9-e33a9c6da062",
+      "description": "band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1727929",
+      "name": "Marc Houle",
+      "musicbrainz_id": "f4ec402a-fb08-4c49-953a-911b5985077d",
+      "description": "live musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5569354",
+      "name": "Mark Bell",
+      "musicbrainz_id": "cec2e291-74a7-410f-bd17-afc53639079c",
+      "description": "British DJ, record producer (1971–2014)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q315581",
+      "name": "Members of Mayday",
+      "musicbrainz_id": "620efc10-77da-428f-9d78-2ebc75760f46",
+      "description": "German techno band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16732919",
+      "name": "Nicole Moudaber",
+      "musicbrainz_id": "daf952d5-b5fa-4d58-91a3-3ca23956ee58",
+      "description": "Lebanese businesswoman and musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2020310",
+      "name": "Oliver Huntemann",
+      "musicbrainz_id": "2ac9c835-e573-47a0-b495-876fd0cc7ecc",
+      "description": "German musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4223202",
+      "name": "Pascal Kleiman",
+      "musicbrainz_id": "98202413-ec9d-45a0-9e28-eca962ed8090",
+      "description": "French disc jockey",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q27987033",
+      "name": "Prevale",
+      "musicbrainz_id": "52c088a7-30f2-4f2b-ad34-f643e26eee07",
+      "description": "Italian DJ and producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q385861",
+      "name": "Proyecto Uno",
+      "musicbrainz_id": "3c22f531-e3fd-4422-8700-c8daea85b996",
+      "description": "Dominican-American group",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1088152",
+      "name": "Robin Albers",
+      "musicbrainz_id": "af84fdf4-22ac-4ce5-8ed0-6fad3b949172",
+      "description": "Dutch house music producer and DJ (born 1956)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2086178",
+      "name": "Saori@destiny",
+      "musicbrainz_id": "d00ba6b6-5572-4788-9e66-dfb69ac4b26b",
+      "description": "Japanese singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4257946",
+      "name": "Sergey Lemokh",
+      "musicbrainz_id": "4630ca9e-c6c1-4041-b597-d6a207263dba",
+      "description": "Russian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q734619",
+      "name": "Steve Stoll",
+      "musicbrainz_id": "1365bd1d-0777-4167-a6dd-cf80fd526cfa",
+      "description": "American musician and label owner",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q98534",
+      "name": "Tanith",
+      "musicbrainz_id": "1b56033e-e371-47c9-835f-22abbfff3041",
+      "description": "DJ and producer of electronic dance music",
+      "sitelinks": 5,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q820968",
+      "name": "Thomas Brinkmann",
+      "musicbrainz_id": "5f58c47f-cf3e-4417-9a35-529692032898",
+      "description": "German musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q394397",
+      "name": "Agnelli & Nelson",
+      "musicbrainz_id": "3ab0923d-5db7-43ab-a4bb-1d3d84592b97",
+      "description": "band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q325911",
+      "name": "Air Liquide",
+      "musicbrainz_id": "aff5afda-d00d-4e02-89ba-7dd8692449a3",
+      "description": "German electronic band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1854083",
+      "name": "Andy Hunter",
+      "musicbrainz_id": "950e5ae2-2d7d-46de-9ed8-5e9d5617bbab",
+      "description": "British DJ and electronic music composer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q797832",
+      "name": "Baby D",
+      "musicbrainz_id": "c13c02a1-6af4-4248-8e10-ae8c0213e19e",
+      "description": "band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22277017",
+      "name": "Belleville Three",
+      "musicbrainz_id": "a4009751-2aad-4ccc-9585-f5183801ea24",
+      "description": "three musicians from Detroit",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Detroit techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q816535",
+      "name": "Ben Klock",
+      "musicbrainz_id": "c5af0c3f-e401-43ed-a096-b504606a05cb",
+      "description": "German disc jockey and record producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q898324",
+      "name": "Brandt Brauer Frick",
+      "musicbrainz_id": "bc3f52d8-0748-4003-842b-2a6672c73020",
+      "description": "band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q179096",
+      "name": "Carl Crack",
+      "musicbrainz_id": "6b2e7187-9114-4050-a7af-eba918aebde8",
+      "description": "German techno artist",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3011286",
+      "name": "DJ Dan",
+      "musicbrainz_id": "d6efd620-ed04-4997-aab7-61180729e8b1",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2376685",
+      "name": "Dog Blood",
+      "musicbrainz_id": "c5e1a355-2be6-451b-bd21-99c9b2b2c3a5",
+      "description": "musical side project formed in 2012 by music producers Skrillex and Boys Noize",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q784381",
+      "name": "Etnica",
+      "musicbrainz_id": "9abb82ae-4bbb-4460-bf56-0aff131ae963",
+      "description": "Italian musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q206762",
+      "name": "Fred Giannelli",
+      "musicbrainz_id": "a8fa58d8-f60b-4b83-be7c-aea1af11596b",
+      "description": "American electronic musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q85869995",
+      "name": "Föllakzoid",
+      "musicbrainz_id": "3940a6c3-a334-4fc8-a5d5-1706f59118fe",
+      "description": "Chilean rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q597799",
+      "name": "James Stinson",
+      "musicbrainz_id": "8f156f22-6591-440f-a2a9-9b90a351177c",
+      "description": "American techno musician (1969–2002)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q95210",
+      "name": "Johannes Heil",
+      "musicbrainz_id": "94f2af9d-9707-43de-abd3-dbdf34114529",
+      "description": "German record producer (born 1978)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2746371",
+      "name": "Keith Tucker",
+      "musicbrainz_id": "a3ada663-e185-4837-b00a-f0dc5c807ca3",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q15284080",
+      "name": "Kelli Hand",
+      "musicbrainz_id": "0773e58b-1a46-4fe9-bcc1-c6f384daf4bc",
+      "description": "American techno musician and DJ",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4261481",
+      "name": "Lika MC",
+      "musicbrainz_id": "f940df69-e84d-480e-be58-179881ce9071",
+      "description": "Soviet and Russian rapper, singer, disc jockey, music producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1894572",
+      "name": "Marek Hemmann",
+      "musicbrainz_id": "a8704ddb-1ffe-4049-ae53-2d91fec2c143",
+      "description": "German record producer and musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1140468",
+      "name": "Megabeat",
+      "musicbrainz_id": "eaba77c7-0e6f-405d-b54a-40aa311368c5",
+      "description": "Spanish musical band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q9031501",
+      "name": "Mendetz",
+      "musicbrainz_id": "52646c3c-14d4-4b98-ab66-7f374eef5b30",
+      "description": "Spanish musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1308176",
+      "name": "Mike Dred",
+      "musicbrainz_id": "51963eea-c7ba-44f9-b66d-570006b26982",
+      "description": "British musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1951440",
+      "name": "Mr. Sam",
+      "musicbrainz_id": "fedbdaa2-bf8f-40ab-bd32-7cbbd31bdc1c",
+      "description": "French DJ and record producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6951376",
+      "name": "N-Joi",
+      "musicbrainz_id": "aed893c3-cac5-4f23-b175-979348bd6fee",
+      "description": "British band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q69902513",
+      "name": "Natalia Zamilska",
+      "musicbrainz_id": "f9de3127-6166-42b0-bb68-4b69f9ac1189",
+      "description": "Polish musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2003523",
+      "name": "Olof Dreijer",
+      "musicbrainz_id": "306eeba6-91e2-4a42-88ea-0e52a4b29ee4",
+      "description": "Swedish musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4177074",
+      "name": "Pavel Yesenin",
+      "musicbrainz_id": "c6ef1c0a-d0ea-4432-bfbe-fa970a4253da",
+      "description": "Russian composer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7274342",
+      "name": "R.ef",
+      "musicbrainz_id": "46b7d8a2-b5e6-493a-85a2-b98283ff7f4d",
+      "description": "South Korean boy band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q20878239",
+      "name": "Rick Smith",
+      "musicbrainz_id": "ad5ed770-c776-42fe-affb-3c462e000f6d",
+      "description": "Welsh musician, founding member of Underworld",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1250080",
+      "name": "Simina Grigoriu",
+      "musicbrainz_id": "ff2347dc-ea83-439f-a2c0-c46bb4c98b5f",
+      "description": "Canadian German techno DJ and electronic music producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q370328",
+      "name": "Slam",
+      "musicbrainz_id": "e6fea316-3ef4-49b8-97bf-483b69c0d354",
+      "description": "band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3495427",
+      "name": "Stacey Pullen",
+      "musicbrainz_id": "74de5c4e-e839-43f3-b1bf-1718a855c75d",
+      "description": "American techno musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2026929",
+      "name": "Stereolizza",
+      "musicbrainz_id": "3ccefddc-9ef9-460b-9f81-86a73a0029d1",
+      "description": "US musical ensemble",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7641173",
+      "name": "Sunscreem",
+      "musicbrainz_id": "de212b3a-2f54-4def-a13d-5a877bfaeaf7",
+      "description": "Techno/house music band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2368531",
+      "name": "Surgeon",
+      "musicbrainz_id": "82b6f868-75c8-4014-b86c-d67472b8b384",
+      "description": "English electronic musician and DJ",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11248476",
+      "name": "Technoboys Pulcraft Green-Fund",
+      "musicbrainz_id": "7d7a28db-c69e-478e-8856-e659ab7d8b89",
+      "description": "",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1997236",
+      "name": "Virus",
+      "musicbrainz_id": "3fb4c8e9-d761-4cf2-bc1c-90faa8ffd6de",
+      "description": "Russian band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2597327",
+      "name": "X-Rx",
+      "musicbrainz_id": "2707845a-776e-476d-92af-350622b817a6",
+      "description": "",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2601021",
+      "name": "Yoshinori Sunahara",
+      "musicbrainz_id": "142cab6a-55a8-462a-8c3d-569d48e88709",
+      "description": "Japanese composer, producer, and engineer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4633297",
+      "name": "2 Bad Mice",
+      "musicbrainz_id": "ac3a4610-ddc0-4b65-96dd-d7f9faf85eb5",
+      "description": "UK musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4761358",
+      "name": "Andy Stott",
+      "musicbrainz_id": "ecf5ab37-019f-4cc1-9fdc-218de6a41b65",
+      "description": "musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11907071",
+      "name": "At Versaris",
+      "musicbrainz_id": "7a71e5a4-6603-45f1-982e-f1f80a8a114c",
+      "description": "Catalan music group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q21530039",
+      "name": "Balago",
+      "musicbrainz_id": "f9c0fd03-fe78-4a73-a477-080228266101",
+      "description": "Spanish musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q677304",
+      "name": "Ben Sims",
+      "musicbrainz_id": "bfdd55cf-82e6-4fad-95f6-135136da25d6",
+      "description": "British disc jockey",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q885824",
+      "name": "Blue October",
+      "musicbrainz_id": "96fafb0a-2f1d-4b15-b2a0-9e0e660e7ecf",
+      "description": "British band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q603620",
+      "name": "Claude Young",
+      "musicbrainz_id": "7f4ec759-9620-4ea8-942e-365d4925792c",
+      "description": "American musician and disc jockey",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1178943",
+      "name": "Dax Riders",
+      "musicbrainz_id": "ad590f7a-1ef8-4c40-ac7d-cbdfebb4e304",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3438097",
+      "name": "Deepchord",
+      "musicbrainz_id": "281a03a8-0bfa-4579-ab50-7760bdd308ae",
+      "description": "American electronic musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1256151",
+      "name": "Dream Frequency",
+      "musicbrainz_id": "69605359-e92e-4de1-a72c-624444e88ca5",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1415592",
+      "name": "Filterheadz",
+      "musicbrainz_id": "874fb180-fa08-43b5-b90e-f687e2e6980c",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q81783511",
+      "name": "Hakushi Hasegawa",
+      "musicbrainz_id": "bfbc725b-9f70-428c-8b55-8df3db545a40",
+      "description": "Japanese singer-songwriter (1998-)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124332339",
+      "name": "Hannah Laing",
+      "musicbrainz_id": "f96e106f-3c36-4fda-9d14-82ea0753489d",
+      "description": "Scottish disc jockey and record producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124450041",
+      "name": "I Hate Models",
+      "musicbrainz_id": "f9a4de7f-d3c6-4de8-8892-7aca52610edd",
+      "description": "French techno DJ producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "hard techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1660993",
+      "name": "Incubite",
+      "musicbrainz_id": "efb7bcd9-5f90-48ff-9f3a-4c7f1f16fa6f",
+      "description": "",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4111377",
+      "name": "Ivan Wilzig",
+      "musicbrainz_id": "d7cb7099-a084-44fa-94e8-edcc90e1fd77",
+      "description": "American musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3167255",
+      "name": "Jean-Luc Roudaut",
+      "musicbrainz_id": "725cfa4d-9d1b-476d-a5bf-680da157c510",
+      "description": "French singer-songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3177428",
+      "name": "Jerome Sydenham",
+      "musicbrainz_id": "6ba7b079-28b2-4421-af3c-27340802c85b",
+      "description": "Nigerian born electronic music producer, DJ and owner of Ibadan Records",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16958747",
+      "name": "Kate Simko",
+      "musicbrainz_id": "c68dc09d-adea-4050-909b-34beb6605433",
+      "description": "American electronic music producer from Chicago",
+      "sitelinks": 3,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6390261",
+      "name": "Kenneth James Gibson",
+      "musicbrainz_id": "7a1d28be-3e8c-4abd-a53d-deffb81750d9",
+      "description": "American musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q111655138",
+      "name": "Klangkuenstler",
+      "musicbrainz_id": "dc60d275-d4d1-4bf2-b32c-4aa2332d7459",
+      "description": "German record producer and DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3219976",
+      "name": "Layo & Bushwacka!",
+      "musicbrainz_id": "b7ba42de-12d3-4767-b7c3-aff86e60830d",
+      "description": "British musical group; DJ duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6558178",
+      "name": "Lisa Lashes",
+      "musicbrainz_id": "5ce6be56-72eb-461d-b3f8-720c879677fe",
+      "description": "British DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q55765564",
+      "name": "Maddix",
+      "musicbrainz_id": "0ae6eb0e-f5b4-48b0-98ab-2158ccd6f5c8",
+      "description": "Dutch DJ and producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3313368",
+      "name": "Mike Huckaby",
+      "musicbrainz_id": "cce15a87-fa96-459d-9e10-e4fd03acc703",
+      "description": "Detroit techno-house DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138030988",
+      "name": "Mind Enterprises",
+      "musicbrainz_id": "d864fd61-929b-4d8c-a241-3c2eed1b53bb",
+      "description": "Italian music duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3327146",
+      "name": "Mr. C",
+      "musicbrainz_id": "3e3b88ab-966c-40bb-b20a-bce438cfd40e",
+      "description": "British musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7076197",
+      "name": "Oceanic",
+      "musicbrainz_id": "5a192bc0-cc73-4bc4-94a3-482300a740fb",
+      "description": "English band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3348859",
+      "name": "Octave One",
+      "musicbrainz_id": "db856b35-33f2-4cf9-87cc-9e4e33772d40",
+      "description": "US musical ensemble",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7106144",
+      "name": "Oscar Mulero",
+      "musicbrainz_id": "fefc8328-4ec3-4616-9303-862e8d4de4c4",
+      "description": "Spanish DJ and producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2089278",
+      "name": "Phynn",
+      "musicbrainz_id": "c3521cc5-97e1-4ee4-9559-63234574daa5",
+      "description": "Dutch DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11240528",
+      "name": "Ram Rider",
+      "musicbrainz_id": "5ee6bbc2-93e0-47f8-ac41-7d65ad3f9e41",
+      "description": "musical artist",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7313045",
+      "name": "Renegade Soundwave",
+      "musicbrainz_id": "5e074654-aad2-4944-bce6-3aa1d16bb2d2",
+      "description": "English band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2215346",
+      "name": "Salt Tank",
+      "musicbrainz_id": "af2e4bbe-e6b4-4e34-9930-d402c84f9b13",
+      "description": "English music group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q18745472",
+      "name": "Salut c'est cool",
+      "musicbrainz_id": "70c0cd8b-a942-4b8f-b421-b2b5218e23b6",
+      "description": "music band from France",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16729639",
+      "name": "Scott Hardy",
+      "musicbrainz_id": "b37aa54c-e4ca-46e6-91e9-1132762b4a28",
+      "description": "Techno DJ and musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3481898",
+      "name": "Sherard Ingram",
+      "musicbrainz_id": "edae82ad-5faa-43b4-8c5a-e2507b208d0d",
+      "description": "American musician and DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5851484",
+      "name": "Shut Up and Dance",
+      "musicbrainz_id": "66428e85-390f-4d35-8339-f40bd6f2a8fb",
+      "description": "British techno band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q17096221",
+      "name": "Silent Servant",
+      "musicbrainz_id": "a1b5f22a-b6c6-4f3c-875e-6c80fc5654dc",
+      "description": "techno DJ and producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q123514278",
+      "name": "Sonny Wern",
+      "musicbrainz_id": "9b6911b5-4f2a-40f9-8689-c21f8aecab87",
+      "description": "Dutch dj and music producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1672382",
+      "name": "Spooky",
+      "musicbrainz_id": "d4a057f8-a6c4-4362-a008-3c2917298c2a",
+      "description": "British electronic music production and DJ duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1761780",
+      "name": "Stereo Nova",
+      "musicbrainz_id": "a28e143f-dde4-43aa-a57b-b645cadb4480",
+      "description": "Greek band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q91900",
+      "name": "Steve Bug",
+      "musicbrainz_id": "af583eb9-9871-4217-98c3-9c8e34feab1b",
+      "description": "German disc jockey",
+      "sitelinks": 3,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1718696",
+      "name": "The Advent",
+      "musicbrainz_id": "b3a35974-4703-4423-92bf-a1b5ac6cac3b",
+      "description": "British composer and disc jockey",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7943628",
+      "name": "Vulva",
+      "musicbrainz_id": "f8cf9ab7-3c05-4c47-8f8a-c21e539a5a17",
+      "description": "English experimental techno duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q222830",
+      "name": "2 Bit Pie",
+      "musicbrainz_id": "ea3559bf-9664-4f75-b418-bde665e73ef7",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11299869",
+      "name": "Acid Kirk",
+      "musicbrainz_id": "c58d47f9-f087-445c-b7a6-e887c664de7b",
+      "description": "Belgian disc jockey",
+      "sitelinks": 2,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q20195296",
+      "name": "Ahmet Sendil",
+      "musicbrainz_id": "71816761-27ce-4f4e-bae8-445c8447f3d4",
+      "description": "Turkish music producer, remixer and DJ (born 1973)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1142860",
+      "name": "Air Cuba",
+      "musicbrainz_id": "0c1f23db-a8c1-44a3-a1b9-ce64f950f751",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q491822",
+      "name": "Andhim",
+      "musicbrainz_id": "957146db-0f9f-471b-a9d6-8dc899de3f10",
+      "description": "musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4799566",
+      "name": "Arthur Loves Plastic",
+      "musicbrainz_id": "0591024b-d10f-414d-a6b8-3c3a20d57e8d",
+      "description": "American Bahamian-born recording artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3632255",
+      "name": "BS 2000",
+      "musicbrainz_id": "d46666c4-f96b-4652-8d90-d1f7b2bf1d02",
+      "description": "American musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q121602859",
+      "name": "Bennett",
+      "musicbrainz_id": "282259f5-4979-4301-94ef-bcaecaeb553e",
+      "description": "German techno producer and DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22906792",
+      "name": "Black Tiger Sex Machine",
+      "musicbrainz_id": "8a672f30-4ed6-4fb4-9b8a-4f28e1d1be1c",
+      "description": "Canadian industrial music band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q19667739",
+      "name": "Blond:ish",
+      "musicbrainz_id": "598ded27-65cd-481b-b1d1-173f03e459de",
+      "description": "Canadian DJ and music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4937181",
+      "name": "Boeoes Kaelstigen",
+      "musicbrainz_id": "21ed5282-73b5-4fe5-be64-de4b01c3a60b",
+      "description": "musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q18286590",
+      "name": "C.O.P. Project",
+      "musicbrainz_id": "5c82113b-d2a5-415a-b012-96ee4e05e532",
+      "description": "German techno group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1104013",
+      "name": "Co-fusion",
+      "musicbrainz_id": "90563b61-bf68-4708-9d97-bd4cb3aa6149",
+      "description": "Japanese band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3695212",
+      "name": "Cosmosis",
+      "musicbrainz_id": "5a0c06a0-fcdb-4ac1-a078-bcc251ee9f60",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3011271",
+      "name": "DJ Bone",
+      "musicbrainz_id": "ec289c85-bfa9-46e4-a57f-baddbc5d9979",
+      "description": "American techno dj",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1871086",
+      "name": "DJ Furax",
+      "musicbrainz_id": "72d8a570-eb99-43b9-afa8-0e79c39a6522",
+      "description": "Belgian DJ and record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3012955",
+      "name": "Damon Wild",
+      "musicbrainz_id": "89ba3bfb-bc98-410b-8784-507bce852dc4",
+      "description": "American disc jockey, record producer and musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16209344",
+      "name": "Darin Epsilon",
+      "musicbrainz_id": "e401fae8-4858-4d88-9927-86c55afe40d5",
+      "description": "American DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99577392",
+      "name": "Darren Price",
+      "musicbrainz_id": "81d34f55-a76f-4443-8e2a-e2c7b26b83dd",
+      "description": "British DJ & producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q28868905",
+      "name": "Dave Tarrida",
+      "musicbrainz_id": "ad9ebdf0-db6d-4246-97d1-71ad81acc5a1",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1180034",
+      "name": "De Infernali",
+      "musicbrainz_id": "b06ce22e-db7f-48d5-847a-d0031c2e2ecb",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q130677389",
+      "name": "Dennis Cruz",
+      "musicbrainz_id": "f3d44367-7d70-4d76-8099-2f47d99e4348",
+      "description": "dj and music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1193025",
+      "name": "Der Dritte Raum",
+      "musicbrainz_id": "432a7d01-b55a-49de-b909-4b93d48a556f",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q43386881",
+      "name": "Die Vögel",
+      "musicbrainz_id": "ccfdc958-aafd-4cba-bfed-d5a9e86e4d6c",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5287390",
+      "name": "Doctor Spin",
+      "musicbrainz_id": "99d5d064-d436-486e-bd41-ad1702707dfd",
+      "description": "British music project",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1326680",
+      "name": "Elektro Guzzi",
+      "musicbrainz_id": "9fba1ae7-aeb3-4930-98f0-7e4b82512714",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3063905",
+      "name": "Fabrice Lig",
+      "musicbrainz_id": "3c56ac72-2f3d-4142-aab2-49364af9d917",
+      "description": "Belgian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q940881",
+      "name": "Falsalarma",
+      "musicbrainz_id": "40cab918-cea6-4932-9a55-86fe57f24427",
+      "description": "rap group from Sabadell, Spain",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1502326",
+      "name": "Genlog",
+      "musicbrainz_id": "16616047-9e49-49d7-a73f-3a6ac9e548a5",
+      "description": "German techno band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5590943",
+      "name": "Grace",
+      "musicbrainz_id": "ecbacc9c-2d18-4bdb-966d-a147931df3d2",
+      "description": "dance music band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q110341",
+      "name": "Heiko Laux",
+      "musicbrainz_id": "75a282a9-c483-4d8e-86c6-1cb029068ca8",
+      "description": "German music executive",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5727931",
+      "name": "Henry Saiz",
+      "musicbrainz_id": "27d813b1-4053-4d3f-9b9c-1f81a0499437",
+      "description": "Spanish DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6047515",
+      "name": "Intermix",
+      "musicbrainz_id": "4c42fdbc-122f-4110-b466-c77d86156a5e",
+      "description": "1990s band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1676933",
+      "name": "Jacek Sienkiewicz",
+      "musicbrainz_id": "9e572c24-f73c-4bfc-8090-154478c61cd6",
+      "description": "Polish disc jockey",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q55597318",
+      "name": "Jacques",
+      "musicbrainz_id": "c571ac69-4a56-431b-965b-ea52dad641b5",
+      "description": "French singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6124608",
+      "name": "Jake Childs",
+      "musicbrainz_id": "9e61c7c9-6500-4c64-a69a-8aaf238a174b",
+      "description": "American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q131619792",
+      "name": "Jeroen Krom",
+      "musicbrainz_id": "1d9687ca-535b-47ab-99a2-2fb93d41b082",
+      "description": "Dutch disc jockey and music producer (1971–2024)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3183259",
+      "name": "Jonas Bering",
+      "musicbrainz_id": "76a8ba97-2c4f-4d28-b797-3b077d3bc354",
+      "description": "French musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140361276",
+      "name": "Julian Perez",
+      "musicbrainz_id": "53929651-0e75-49a2-9b41-b8319c523618",
+      "description": "Spanish DJ and electronic music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q123415502",
+      "name": "Kalika",
+      "musicbrainz_id": "8d9858ea-2d14-4d3d-9859-f819175534d7",
+      "description": "French singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q21074917",
+      "name": "Karenn",
+      "musicbrainz_id": "b0911e1f-fa1f-44a7-b5bd-48747f084265",
+      "description": "musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1743846",
+      "name": "Kitbuilders",
+      "musicbrainz_id": "c9cbc4be-c555-4ad9-bb48-750272e69492",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16962746",
+      "name": "Liquid",
+      "musicbrainz_id": "92a9f2e4-2efc-46f6-9d17-3bfcce77502f",
+      "description": "British Act",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6821944",
+      "name": "Messiah",
+      "musicbrainz_id": "c87fed0a-f963-4669-9980-7c0b9cd396da",
+      "description": "British techno/acid house duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22128573",
+      "name": "Metafive",
+      "musicbrainz_id": "f6c979f4-bbad-43d3-95f6-9255a189f688",
+      "description": "Japanese band (2014-)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1949373",
+      "name": "Moskwa TV",
+      "musicbrainz_id": "0f0779be-7ee8-4bbc-bac2-32b7f007b17c",
+      "description": "German band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1951452",
+      "name": "Mr. X & Mr. Y",
+      "musicbrainz_id": "5464176d-13c8-4b32-842d-12b34bc38032",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q17386487",
+      "name": "Okmalumkoolkat",
+      "musicbrainz_id": "bc44cd50-ffb9-4921-8ac3-ab284d4998ae",
+      "description": "South African rapper, disc jockey and singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7092594",
+      "name": "One Dove",
+      "musicbrainz_id": "a930242b-1984-4249-b79c-3c1b22555f9b",
+      "description": "Scottish musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1512076",
+      "name": "Patric Catani",
+      "musicbrainz_id": "981314dd-df93-44d4-9b12-8ece10263e29",
+      "description": "German musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2105055",
+      "name": "Porter Ricks",
+      "musicbrainz_id": "f2c0d29a-9bef-469f-af6e-a9b5deb21308",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4255931",
+      "name": "Professor Lebedinsky",
+      "musicbrainz_id": "e2b32206-2293-4b25-b8ea-e095f2e58b39",
+      "description": "Russian artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7265265",
+      "name": "Q-Feel",
+      "musicbrainz_id": "b843c5dc-abad-49e3-bb39-db50c1c78cca",
+      "description": "80's British Synth Pop band best known for the single Dancing in Heaven (Orbital Be-Bop)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q28402704",
+      "name": "Q-Tex",
+      "musicbrainz_id": "4e1e3c5c-ce93-4dfd-b55a-ea00291583e0",
+      "description": "Scottish techno music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7265432",
+      "name": "QFX",
+      "musicbrainz_id": "ed38d031-2948-45e1-9a31-c633b04daf0a",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q27902604",
+      "name": "Ramirez",
+      "musicbrainz_id": "c305ea0a-a100-417f-94b1-62b6fbc0110d",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7309318",
+      "name": "Regis",
+      "musicbrainz_id": "ed71992b-a7d3-46e6-90ce-3517cddda310",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105670",
+      "name": "Richard Bartz",
+      "musicbrainz_id": "ec31d334-8137-4ec4-ac54-8a67b2cde688",
+      "description": "German musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7328087",
+      "name": "Richard Norris",
+      "musicbrainz_id": "f032ac46-5587-4f1a-a9ff-137ce27f6b88",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2160039",
+      "name": "Robotiko Rejekto",
+      "musicbrainz_id": "b580a5c0-b913-4404-997b-4bb4313df8c8",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q81645232",
+      "name": "Ronnie Ferrari",
+      "musicbrainz_id": "bd716e26-ee02-48b1-8a09-a8ff6a427070",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2205366",
+      "name": "SCSI-9",
+      "musicbrainz_id": "ec4e96b9-a5fc-4eea-9c69-2cc2a395f46e",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2207898",
+      "name": "SSV",
+      "musicbrainz_id": "06b33364-9015-4933-9a2f-cf8f150f5385",
+      "description": "German techno music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16223421",
+      "name": "Samo Sound Boy",
+      "musicbrainz_id": "5b071696-f990-414b-b1d7-eb013335791c",
+      "description": "American record producer / DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q15679998",
+      "name": "Sandwell District",
+      "musicbrainz_id": "e0940825-2829-4fcc-85c6-3a6eaf4bc306",
+      "description": "British musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3474949",
+      "name": "Scan X",
+      "musicbrainz_id": "b6fed5cc-7d4a-4f14-8b86-862b112ab6a0",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7438228",
+      "name": "Scotty Granger",
+      "musicbrainz_id": "a50dcafe-d3db-4f5b-84e5-9db3466a7d09",
+      "description": "American singer, songwriter, musician, music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7460337",
+      "name": "Shades of Rhythm",
+      "musicbrainz_id": "5dc4516e-a983-46d1-ae85-ec08ec96f599",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2279484",
+      "name": "Shit Robot",
+      "musicbrainz_id": "c3754232-e672-4055-afec-2f3f9633f864",
+      "description": "Irish musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140129508",
+      "name": "Soft Blade",
+      "musicbrainz_id": "9e71603a-47f8-4848-a56e-17f5a7aee8b4",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q113506231",
+      "name": "Southstar",
+      "musicbrainz_id": "409f3135-25e2-40c9-87a2-4d769dd134c5",
+      "description": "German disc jockey and music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16223782",
+      "name": "Spoek Mathambo",
+      "musicbrainz_id": "2fd8b4f2-af00-4235-9a8e-1fa3205fb643",
+      "description": "South African rapper (born 1985)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3498740",
+      "name": "StereoHeroes",
+      "musicbrainz_id": "7c2033a2-831b-4537-b31a-2ea0ad9d22c8",
+      "description": "French electronic music duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7613617",
+      "name": "Steve Pickton",
+      "musicbrainz_id": "252db358-adfd-4fdf-8f00-d22e9f547097",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q97379927",
+      "name": "Super Flu",
+      "musicbrainz_id": "456375db-a43f-49e0-82c6-fc7075cb1a20",
+      "description": "musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q15808423",
+      "name": "Sweet Exorcist",
+      "musicbrainz_id": "d86cffc6-f892-455b-9a40-2f11df3d7fd8",
+      "description": "British music duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7746479",
+      "name": "The Laziest Men on Mars",
+      "musicbrainz_id": "f08b0d5d-7e8e-4a4a-8817-5b2b557f2a4b",
+      "description": "American techno band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3521854",
+      "name": "The Micronauts",
+      "musicbrainz_id": "c7f9097b-fb21-46e1-8cd6-18118c13d8fd",
+      "description": "French dance music act",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7769305",
+      "name": "The Time Frequency",
+      "musicbrainz_id": "4d6fa869-1dd0-430a-8dfb-a0f2f0ac63b3",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7777707",
+      "name": "Thee Majesty",
+      "musicbrainz_id": "f1e68720-b7a5-4d25-8699-11079d83e7c0",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q115781165",
+      "name": "Thekomakoma",
+      "musicbrainz_id": "1460a615-a650-4728-8ef7-ce1bd977d5b8",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7808370",
+      "name": "Tinman",
+      "musicbrainz_id": "565739fa-a0fa-4267-bda0-e45d888e461b",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2443336",
+      "name": "Topmodelz",
+      "musicbrainz_id": "547309f1-60b4-40d7-9be9-af02a8cffc8b",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1550566",
+      "name": "Torpedo Boyz",
+      "musicbrainz_id": "baa7e5f2-9045-4041-b6df-6b76cfb7f2d8",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1368425",
+      "name": "Tube-Tech",
+      "musicbrainz_id": "5267c196-6e39-499c-ae5a-635f75889cac",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1681322",
+      "name": "Ultrahigh",
+      "musicbrainz_id": "1b8b5ee3-5c5d-409c-a574-bb196781ed36",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7880698",
+      "name": "Ultraviolence",
+      "musicbrainz_id": "344c5e8c-d4f1-4bec-8ff5-08ef100a9e5d",
+      "description": "British band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3551278",
+      "name": "Universal Indicator",
+      "musicbrainz_id": "6080024b-71b5-4858-b283-ce553aa1344f",
+      "description": "British techno group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q17485744",
+      "name": "Valium Era",
+      "musicbrainz_id": "1081c26d-8d62-4fc6-a145-847c89e55862",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2552502",
+      "name": "Water Lilly",
+      "musicbrainz_id": "92e989e1-7cfd-4de0-a214-25aa260e3886",
+      "description": "Swiss disc jockey",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q15531188",
+      "name": "Will Saul",
+      "musicbrainz_id": "be7eebdd-a63b-462b-9f38-96bd6502d14b",
+      "description": "British music producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4634006",
+      "name": "2wo Third3",
+      "musicbrainz_id": "3da9422f-6457-4bca-8547-3ec7bfed8c97",
+      "description": "four-piece 1990s electropop group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q115445908",
+      "name": "3x3cute",
+      "musicbrainz_id": "d8fb9fbd-f811-4882-b560-66b08002caab",
+      "description": "German music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141105871",
+      "name": "After the Bliss",
+      "musicbrainz_id": "958048ae-8f10-4b0e-adc2-1d1dfda38ca3",
+      "description": "Turkish music artist and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q789221",
+      "name": "Autotune",
+      "musicbrainz_id": "e46925fd-d66e-4c23-8e0d-770a9dc10154",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4835795",
+      "name": "BKS",
+      "musicbrainz_id": "983b58a8-42d5-487c-a6fd-23bb31765cf1",
+      "description": "Canadian techno group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4868186",
+      "name": "Bassomatic",
+      "musicbrainz_id": "769b978f-8b3e-42cc-8a3b-9c1121c5dc0f",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4913088",
+      "name": "Billy Nasty",
+      "musicbrainz_id": "e8ca2fd2-e549-4f4e-9f7e-6e2cb650a70f",
+      "description": "British DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105758318",
+      "name": "Black Lotus",
+      "musicbrainz_id": "ca7851a4-e251-4440-a99a-fcdbac0f8259",
+      "description": "German DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4921906",
+      "name": "Black Star Liner",
+      "musicbrainz_id": "dd0ecd9d-ef3c-4eff-bd6a-79cf8b2627cb",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q882975",
+      "name": "Blaulicht 112",
+      "musicbrainz_id": "2f0b7e81-2353-492e-bc15-c553434e974c",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4928657",
+      "name": "Blu Mar Ten",
+      "musicbrainz_id": "8cecffe6-783a-4aeb-8720-68e46cc5c55d",
+      "description": "music production outfit based in London",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q12303866",
+      "name": "Blänk",
+      "musicbrainz_id": "eb9f114f-a363-4f16-9b8d-ff50bab7cd96",
+      "description": "Swedish musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q919742",
+      "name": "British Murder Boys",
+      "musicbrainz_id": "0e3a584b-a395-449d-b5db-87a79be561ad",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11532504",
+      "name": "Bun Itakura",
+      "musicbrainz_id": "d1574277-9cc0-4afa-a6a1-4f06e488bc02",
+      "description": "Japanese composer, music producer, guitarist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5021344",
+      "name": "Caligula",
+      "musicbrainz_id": "7c7ffc60-fb11-4a4d-b678-9bd8056bbc17",
+      "description": "Australian techno-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140290428",
+      "name": "Casepeat",
+      "musicbrainz_id": "59741331-64f3-48e8-a680-2096a2baf072",
+      "description": "South Korean trance DJ and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5064051",
+      "name": "Cereal Killaz",
+      "musicbrainz_id": "96c80d1c-38ea-4619-bbe4-da4e74c4d8ac",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2884234",
+      "name": "Chacho Brodas",
+      "musicbrainz_id": "24088b1a-4a4f-4c1d-a16c-dbaa0825bf66",
+      "description": "Spanish hip hop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q100269171",
+      "name": "Complex Numbers",
+      "musicbrainz_id": "d2062464-9c2e-4d1f-8005-dac138da03e6",
+      "description": "Russian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5167431",
+      "name": "Cooler Kids",
+      "musicbrainz_id": "31d7ff35-343c-4791-b02f-22abf11a9fb2",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105716646",
+      "name": "D. Tiffany",
+      "musicbrainz_id": "35ff298f-126f-4dbf-8ceb-6a3781e0de5e",
+      "description": "Canadian electronic music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2892453",
+      "name": "DVJ Bazuka",
+      "musicbrainz_id": "d4a245e8-0df0-47d2-b15c-38e9ccff5282",
+      "description": "Russian DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5243652",
+      "name": "Daz Saund",
+      "musicbrainz_id": "4dff1ad0-59e9-49d5-a41e-e7331d89e38f",
+      "description": "British DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q130212026",
+      "name": "De Sluwe Vos",
+      "musicbrainz_id": "c864f05a-e880-4a8b-b7e6-0b07066687e0",
+      "description": "Dutch disc jockey and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5252597",
+      "name": "Deitiphobia",
+      "musicbrainz_id": "cbd8741f-e7f2-4fe2-82ad-95f0cbc90c89",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4157621",
+      "name": "Demo",
+      "musicbrainz_id": "f959a1a4-168e-4225-aa9b-d0edc5ed7bf3",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1197807",
+      "name": "Der Verfall",
+      "musicbrainz_id": "9e801382-a021-4c38-a694-76ea16152e8e",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5275840",
+      "name": "Digital Dog",
+      "musicbrainz_id": "d657338c-7e8c-420a-9851-459978ba8af9",
+      "description": "English remix/production duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5294423",
+      "name": "Donald Glaude",
+      "musicbrainz_id": "ea779ec5-61ab-4a81-b938-5d2e0760a72b",
+      "description": "American musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q112724175",
+      "name": "Doss",
+      "musicbrainz_id": "33c60988-ede6-4337-83e8-95825704d194",
+      "description": "American electronic musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q137371446",
+      "name": "Edge of Motion",
+      "musicbrainz_id": "f954821a-a38e-42d6-b8bc-bc727afa5765",
+      "description": "Dutch musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5357274",
+      "name": "Electribe 101",
+      "musicbrainz_id": "7f6a2b09-0666-410c-a5fb-b8cb111fdc8e",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5359720",
+      "name": "Elevator Suite",
+      "musicbrainz_id": "7d39c03c-085e-4f0d-89c2-889a2c8a71b4",
+      "description": "British electronic pop group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5374260",
+      "name": "Empirion",
+      "musicbrainz_id": "7a4d069b-bbc9-4a1d-a0aa-1180694cf1a3",
+      "description": "British industrial dance band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5442707",
+      "name": "Fem2fem",
+      "musicbrainz_id": "1698d15d-c7c3-46e6-a8a4-081a6e8986e1",
+      "description": "American techno group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q19654855",
+      "name": "Forgemasters",
+      "musicbrainz_id": "123bf948-9737-4a97-ae1e-32d457c08bfa",
+      "description": "British electronic music act",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16745292",
+      "name": "Future Beat Alliance",
+      "musicbrainz_id": "cd5dbcba-c18a-4c8c-aa71-7aeebe37bd32",
+      "description": "English electronica musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11200758",
+      "name": "GABALL",
+      "musicbrainz_id": "b2a95e39-7964-4881-a105-e7ee491c4db8",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q61750992",
+      "name": "Gas of Latvia",
+      "musicbrainz_id": "44e87135-fb9a-46b8-bd2a-d41f1e6db17a",
+      "description": "Latvian experimental/electronic music band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5544284",
+      "name": "George Sarah",
+      "musicbrainz_id": "1ff91c19-d574-4b85-8551-cd61321d3fe3",
+      "description": "American musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q17989350",
+      "name": "HGS",
+      "musicbrainz_id": "40fb00b1-24bd-4de6-bd6d-f78a7306382f",
+      "description": "Japanese idol",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1641155",
+      "name": "Hypertrophy",
+      "musicbrainz_id": "7441fb4b-c8e4-477d-ac68-6ab54d2c69ce",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6094217",
+      "name": "Itch-E and Scratch-E",
+      "musicbrainz_id": "f8b7ed71-422c-4ef8-9183-761c8ad2dbde",
+      "description": "Australian electronic music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q26924458",
+      "name": "Jay Lumen",
+      "musicbrainz_id": "74d3526c-5739-450b-9d70-1318b2d75c07",
+      "description": "Hungarian techno producer and DJ (born 1981)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3166055",
+      "name": "Jean-Guillaume Cabanne",
+      "musicbrainz_id": "449641d8-f1a2-4dcb-9829-388d91d932f1",
+      "description": "French disc jockey",
+      "sitelinks": 1,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3181951",
+      "name": "John Lord Fonda",
+      "musicbrainz_id": "c934023c-cba2-4f83-a2bd-e5866c913937",
+      "description": "French disc jockey (1941–2012)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2889936",
+      "name": "Jon Fugler",
+      "musicbrainz_id": "615b3bad-7203-4e8d-82a9-e69ca18e5e50",
+      "description": "English musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q121677094",
+      "name": "Joris Millak",
+      "musicbrainz_id": "52c61a52-a7b6-4b25-86f4-ae9cf08d0bd2",
+      "description": "Dutch DJ and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno",
+        "hard techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q18541184",
+      "name": "K-pital",
+      "musicbrainz_id": "3597e94d-aa91-47b2-9ad5-9e006be44b74",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3195022",
+      "name": "Ken Collier",
+      "musicbrainz_id": "0f6f77a7-81d0-417c-8bd9-bc021001a13b",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1107587",
+      "name": "Kerozin",
+      "musicbrainz_id": "3eb7b948-1536-45f5-a2fd-0da287865c0e",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q11229148",
+      "name": "LITTLE CREATURES",
+      "musicbrainz_id": "3d6a5f3f-cbdf-48bf-b5a4-33530640c5cb",
+      "description": "Japanese band (1987-)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q19843402",
+      "name": "Lagomorpha",
+      "musicbrainz_id": "202e093a-49a1-4246-ba40-3637ad9a64b6",
+      "description": "German musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124375947",
+      "name": "Leo Laker",
+      "musicbrainz_id": "0fa1c789-9d8f-4bf8-8093-19e458e93b83",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138774980",
+      "name": "Lewis G. Burton",
+      "musicbrainz_id": "d8ffae92-ced2-4dff-b121-68bf5de34bd1",
+      "description": "British DJ, performance artist, and activist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6752530",
+      "name": "Manuel De La Mare",
+      "musicbrainz_id": "d2e4132a-cdf3-404e-a00a-0f08eb11e1c3",
+      "description": "Italian DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6770135",
+      "name": "Mark Van Hoen",
+      "musicbrainz_id": "ebaf6c97-3b87-44f0-a6bc-a51cc10ed71d",
+      "description": "British musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q97012802",
+      "name": "Mausio",
+      "musicbrainz_id": "a9c10986-0d77-44e1-96a4-0f04ffe53825",
+      "description": "German music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124882261",
+      "name": "Meg Ward",
+      "musicbrainz_id": "c40f2a2d-4715-48e0-80cd-4d19c629d667",
+      "description": "British disc jockey and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6929401",
+      "name": "Mr Fogg",
+      "musicbrainz_id": "5f5da6ae-9e32-44fe-88e2-d9d98bf80bc8",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q6993417",
+      "name": "Neon Highwire",
+      "musicbrainz_id": "9f413b58-e00e-49a3-aa72-a05985a57f9c",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q110967414",
+      "name": "Neon Pony",
+      "musicbrainz_id": "c01763f6-654a-46a8-acda-8dc4502431e2",
+      "description": "American DJ, drummer and singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7021294",
+      "name": "Nexus 21",
+      "musicbrainz_id": "4c202752-5bd7-487b-9ec2-7b1db8bfe2b8",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16680718",
+      "name": "Nika",
+      "musicbrainz_id": "b6794d73-5d14-4735-92db-00a0d9840ec7",
+      "description": "Soviet and Russian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q18288643",
+      "name": "Ninja",
+      "musicbrainz_id": "ce4a093c-b9a6-49a9-8dcd-6060390e15d1",
+      "description": "German metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q12590330",
+      "name": "Nodance",
+      "musicbrainz_id": "041d0725-8787-473b-95cf-26eb7c11f14b",
+      "description": "South Korean musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4253280",
+      "name": "Olga Laki",
+      "musicbrainz_id": "0f04d656-49f3-4b19-a60e-5c395c61a2ea",
+      "description": "Russian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4335784",
+      "name": "Organic Lady",
+      "musicbrainz_id": "0305823f-5bab-411d-bfb0-6f62a1848aa7",
+      "description": "Russian pop singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q60213242",
+      "name": "Paula P’Cay",
+      "musicbrainz_id": "3763a9be-f8a8-4e31-bbc7-2ba74ee8fdb8",
+      "description": "German singer, songwriter, free journalist and peace activist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q115802656",
+      "name": "Pixel Grip",
+      "musicbrainz_id": "20d29062-6448-4e6f-9922-d5246264a5f2",
+      "description": "American electronic music band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7201145",
+      "name": "Planet Perfecto",
+      "musicbrainz_id": "20cb014a-8d4e-4f6d-9c3c-847a21c42051",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q135100011",
+      "name": "Priori",
+      "musicbrainz_id": "cc9f278d-d083-4370-b830-f2ee1f118489",
+      "description": "Montréal electronic music producer and DJ, co-founder of NAFF",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7256569",
+      "name": "Psykosonik",
+      "musicbrainz_id": "12f5e840-e2fc-4c90-8741-4c0a767f2a6d",
+      "description": "American techno band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7349133",
+      "name": "Robert Racic",
+      "musicbrainz_id": "6999f105-63ed-4c91-8f34-d278e6ef590a",
+      "description": "Australian DJ (1964–1996)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105903789",
+      "name": "Roza Terenzi",
+      "musicbrainz_id": "29c2b372-b02c-4bb9-b0a7-5741f0b48b3b",
+      "description": "Australian DJ and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q135000338",
+      "name": "Samuel Deep",
+      "musicbrainz_id": "0e69714f-a57b-4431-bbb9-f0245cffd610",
+      "description": "Dutch disc jockey and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7415754",
+      "name": "Sand",
+      "musicbrainz_id": "848cbb31-0bd9-461f-b771-9361f3863100",
+      "description": "English band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3475896",
+      "name": "Scion",
+      "musicbrainz_id": "82f5d6ca-b67b-4fe7-b13c-60cbd8b16cb5",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q108775869",
+      "name": "Sergey Semenov",
+      "musicbrainz_id": "60bc1e7d-d974-4205-bc9f-9dd3dba93534",
+      "description": "Russian record producer, songwriter and media manager (born 1981)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7492436",
+      "name": "Sheep on Drugs",
+      "musicbrainz_id": "c77c5485-ec29-44ba-8b89-376c1af87137",
+      "description": "British music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7519754",
+      "name": "Simon Shackleton",
+      "musicbrainz_id": "9c80f842-1872-4422-89eb-6558783d9708",
+      "description": "British musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7540879",
+      "name": "Slipmatt",
+      "musicbrainz_id": "1d82f644-3cb7-4e71-bb00-3896ceadb2f6",
+      "description": "British musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7542185",
+      "name": "Slub",
+      "musicbrainz_id": "5c24083d-0eb9-4abd-bafe-06bd10c02ef8",
+      "description": "computer music group formed in 2000",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q73251973",
+      "name": "Somdip Dey",
+      "musicbrainz_id": "5dcb0f0f-26aa-4145-80a0-117544b52aa0",
+      "description": "Indian Computer Scientist; Indian recording artist; DJ and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7569534",
+      "name": "Southend",
+      "musicbrainz_id": "3effc562-6db5-42ae-a33f-6999b8810573",
+      "description": "Australian house-techno band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3965808",
+      "name": "Space Raiders",
+      "musicbrainz_id": "74c8e443-fe47-48dc-8681-4458b69ce0c6",
+      "description": "Britannic musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7578578",
+      "name": "Splinter Test",
+      "musicbrainz_id": "38ad27e1-57a6-46b4-9675-bd258d200ec2",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1619046",
+      "name": "Standarte",
+      "musicbrainz_id": "e080c9af-6dca-41c0-b600-894c9af7b6e7",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2332545",
+      "name": "Star Wash",
+      "musicbrainz_id": "08b8a1e0-b8bb-46be-8f1e-df7057d88204",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7716094",
+      "name": "The Beat Club",
+      "musicbrainz_id": "4ccf53d7-89aa-4547-a32f-99b71954f224",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7752527",
+      "name": "The Movement",
+      "musicbrainz_id": "411968f9-9959-464f-8ae4-e7b7eeb6efc0",
+      "description": "American techno group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q21087582",
+      "name": "The Suicide of Western Culture",
+      "musicbrainz_id": "b0c1d5d9-d5fa-47a4-9ae2-62c0873ec0cd",
+      "description": "Spanish musical group; electronica duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7804521",
+      "name": "Tim Wright",
+      "musicbrainz_id": "1f7ee938-db62-4834-8256-9da36f6d8e91",
+      "description": "British composer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q134644364",
+      "name": "Tom Enzy",
+      "musicbrainz_id": "f383868e-9baf-4555-95f6-da8126b7f008",
+      "description": "Portuguese discjockey and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q134367438",
+      "name": "Toman",
+      "musicbrainz_id": "5871a0e8-b938-4d70-838a-ad0291d443cf",
+      "description": "Dutch DJ and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q29833011",
+      "name": "Tommy Four Seven",
+      "musicbrainz_id": "596dc89f-c1f8-42ba-b317-fa81dd120fa2",
+      "description": "British techno producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "minimal techno",
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16957697",
+      "name": "Top Buzz",
+      "musicbrainz_id": "70b8460a-de89-420d-882d-c3d4b4d4a6b5",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7827984",
+      "name": "Total Contrast",
+      "musicbrainz_id": "5bf09fa3-6a71-45a4-bb83-15a39f16b96b",
+      "description": "Music duo from England",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q2452740",
+      "name": "Trick & Kubic",
+      "musicbrainz_id": "9b18738e-a8bf-4fb5-85d6-b3752937c4ce",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q132529476",
+      "name": "Ultra Sunn",
+      "musicbrainz_id": "62aa007a-3cd2-4305-a978-b452c87c1fbd",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q7899931",
+      "name": "Urban Hype",
+      "musicbrainz_id": "2db14283-2801-4357-a0ba-7676602a0243",
+      "description": "English breakbeat hardcore duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3553307",
+      "name": "Vainqueur",
+      "musicbrainz_id": "f12647e5-d3aa-4dd4-b83b-c45eea712b60",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22965300",
+      "name": "Vicent Fibla",
+      "musicbrainz_id": "d76fc215-d282-4a4c-9274-87866c210ae6",
+      "description": "Spanish musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q124337632",
+      "name": "Vieze Asbak",
+      "musicbrainz_id": "99a996a9-57d3-49bb-a763-816ea4002127",
+      "description": "music producer from the Netherlands",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hard techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q17040920",
+      "name": "Vision Four 5",
+      "musicbrainz_id": "d33728f9-e597-4d6b-8215-96d1c6f68bf3",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q22893687",
+      "name": "Wooky",
+      "musicbrainz_id": "65d43987-261f-461a-a7e6-0260f977b660",
+      "description": "Spanish musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q136565",
+      "name": "ZZT",
+      "musicbrainz_id": "e5a6cd5d-c652-4695-9d24-f9697f4c8cc4",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q92758361",
+      "name": "i_o",
+      "musicbrainz_id": "aae97a0d-d0c8-4457-bd81-440288d4f85e",
+      "description": "American electronic dance music, DJ, and record producer (1990-2020)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno",
+        "acid techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q21568850",
+      "name": "Ángel Molina",
+      "musicbrainz_id": "8a561b85-217b-4a56-996a-2b5aa262b502",
+      "description": "Spanish DJ and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q56686341",
+      "name": "999999999",
+      "musicbrainz_id": "fee18f64-e35c-4ca6-be78-605d73d0cefa",
+      "description": "musical duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141781886",
+      "name": "9ojeez9",
+      "musicbrainz_id": "7e8d2534-247b-4f43-b075-d8beca319e24",
+      "description": "Turkish producer and art collective",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140850750",
+      "name": "Acute Inflections",
+      "musicbrainz_id": "03082702-22c3-4dad-87d0-da59a9c0e750",
+      "description": "American jazz and R&B duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q106108100",
+      "name": "Aleksandr Galyanov",
+      "musicbrainz_id": "c4a28378-dbf5-4548-8a94-c6df07461dea",
+      "description": "Russian musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141679032",
+      "name": "Alexander Shcherbakov",
+      "musicbrainz_id": "5034af26-c007-448b-b47c-1117588ff3f8",
+      "description": "videographer and techno producer, known as TFD777",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105924817",
+      "name": "Ambien Baby",
+      "musicbrainz_id": "ac9fdee3-e7a6-4f62-afd2-b9fb36d10bec",
+      "description": "Canadian DJ duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q85939107",
+      "name": "AnD",
+      "musicbrainz_id": "dd7886b6-76c3-4ea0-bc31-b8b8e6ff24a5",
+      "description": "UK techno duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q136734594",
+      "name": "Andrew Moore",
+      "musicbrainz_id": "8e545d78-00ee-43b9-b5e5-d4f9e969c6eb",
+      "description": "Scottish DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q118780350",
+      "name": "Arbol",
+      "musicbrainz_id": "66188f23-a995-43ec-82f8-27610e6bfce9",
+      "description": "Spanish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q4819074",
+      "name": "Aubrey",
+      "musicbrainz_id": "86488dc4-fb80-43fe-8264-895957e4f8e8",
+      "description": "British DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140307300",
+      "name": "Bogdan Bovsunivskyi",
+      "musicbrainz_id": "566df87a-c1ee-4d86-b5ae-d0a2947cd28c",
+      "description": "Polish DJ, photographer and content creator",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q61278944",
+      "name": "Bongbeck",
+      "musicbrainz_id": "77414001-8f70-4f95-a97a-fc36145ca13b",
+      "description": "German electronic music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q127813905",
+      "name": "Bracco",
+      "musicbrainz_id": "b8f43cfa-493a-4f23-88ae-86e1301cf0a5",
+      "description": "French indie rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q60460727",
+      "name": "Camembert au lait crew",
+      "musicbrainz_id": "3d24b6c4-76ed-4460-96bf-c954a6a938b2",
+      "description": "music band from France",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q56516619",
+      "name": "Cannibal Cooking Club",
+      "musicbrainz_id": "17380d81-bbf9-453f-8ccd-d617c7e03151",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hard techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5058495",
+      "name": "Celtic Cross",
+      "musicbrainz_id": "8d3b7513-b709-403a-be45-69f6ce6c8443",
+      "description": "band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140449779",
+      "name": "Christian Duka",
+      "musicbrainz_id": "954f4646-e095-4e85-923f-0293ee94f3ea",
+      "description": "musician and sound artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5188761",
+      "name": "Crossover",
+      "musicbrainz_id": "3c9f4969-1b7b-4cab-9e3d-40472bfa05aa",
+      "description": "American electroclash duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99731874",
+      "name": "DJ Hi-Tek",
+      "musicbrainz_id": "b915aabe-3914-4fb0-b179-48ae5fa3a847",
+      "description": "South African DJ and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138220521",
+      "name": "DJ Zippy",
+      "musicbrainz_id": "a6a53c2e-8fa0-4612-8e43-8de7af43dc2a",
+      "description": "Serbian DJ and selector focused on house and techno",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q130298527",
+      "name": "Dan Diamond",
+      "musicbrainz_id": "8fb1e82a-9a1e-46d4-bd5b-82d87057ee5d",
+      "description": "American deejay and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99609457",
+      "name": "Dandy Jack",
+      "musicbrainz_id": "edc98794-a604-49e2-930f-e27ebeadf97d",
+      "description": "techno DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140990262",
+      "name": "Elegie",
+      "musicbrainz_id": "80d73462-aea2-4eca-b950-b34a632dbc88",
+      "description": "French techno producer and DJ based in San Francisco",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q136779934",
+      "name": "Emanate",
+      "musicbrainz_id": "d0c86a84-663c-4324-8f16-f827751a529b",
+      "description": "American electronic music duo from California",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q5378837",
+      "name": "Eniac",
+      "musicbrainz_id": "b719ec18-1fc5-4f58-aab2-b7f50d50d8d2",
+      "description": "German record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q125399377",
+      "name": "Etapp Kyle",
+      "musicbrainz_id": "3f6bae75-e03f-40c1-823e-0dd7d76edaed",
+      "description": "musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138844419",
+      "name": "Ezkiel",
+      "musicbrainz_id": "0c62d79a-cdae-48d0-934b-9bdff17df4e5",
+      "description": "Argentine techno music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q136433402",
+      "name": "Fantasm",
+      "musicbrainz_id": "2a9a57ff-0283-4114-aaf3-68b2a465b8d1",
+      "description": "Industrial techno DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hard techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q60461410",
+      "name": "Gajeb",
+      "musicbrainz_id": "aa9dc116-aa2d-4ef1-a60c-6334ca86c927",
+      "description": "French music band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138771766",
+      "name": "Georgai",
+      "musicbrainz_id": "3a31ac72-26aa-428e-8bf9-d0bbd25269a5",
+      "description": "Russian electronic music producer, composer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105942391",
+      "name": "House Of Black Lanterns",
+      "musicbrainz_id": "a174dcc5-3079-435a-a708-73fdd2643a61",
+      "description": "British DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140475306",
+      "name": "Incrife",
+      "musicbrainz_id": "5a6c46a4-ab6b-4bca-96e3-58f24d11b55d",
+      "description": "Urban artist, music producer and music video director",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16222259",
+      "name": "Jakub Rene Kosik",
+      "musicbrainz_id": "8957bc4d-1197-456a-b3f9-450c6d112b26",
+      "description": "Polish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q116861339",
+      "name": "KAS:ST",
+      "musicbrainz_id": "a3435bf6-a676-4e19-ae12-cd4ea49e2885",
+      "description": "French Techno DJ and producer duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99702031",
+      "name": "Lafayette",
+      "musicbrainz_id": "fff8051b-7a6f-4879-9367-0a2a5c835adc",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q105932795",
+      "name": "Lou Karsh",
+      "musicbrainz_id": "2147b8f6-b69b-44b5-9aef-8631900083f5",
+      "description": "Australian DJ, producer, and graphic designer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140816669",
+      "name": "MagneticMark",
+      "musicbrainz_id": "055588a2-61cb-4765-913a-e2ebec204165",
+      "description": "Polish DJ, music producer and trumpeter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q34576410",
+      "name": "Marst",
+      "musicbrainz_id": "cf2d1366-8371-4ae9-a290-69dc4516d765",
+      "description": "French DJ and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138416843",
+      "name": "Maxtros",
+      "musicbrainz_id": "02395f91-2f72-4b43-8507-d66f716f234e",
+      "description": "Guatemalan music producer and techno DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q139666083",
+      "name": "Michael Patrick Ceol",
+      "musicbrainz_id": "374b9166-8903-4637-afdc-8dd5bd20c4fd",
+      "description": "American electronic music producer and composer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140672858",
+      "name": "Miss Javi",
+      "musicbrainz_id": "304cdf77-c52f-4a33-aa40-0554406d8828",
+      "description": "Chilean-American DJ and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141342249",
+      "name": "Mogubo",
+      "musicbrainz_id": "247a9a9b-6cb1-4bc1-b7ee-78cd2fc8da58",
+      "description": "Spanish musician, DJ and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140047587",
+      "name": "Neon Void",
+      "musicbrainz_id": "e8dbd087-b4f8-43cf-a64b-8967b62212e3",
+      "description": "American electronic music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q137715103",
+      "name": "PINGVI",
+      "musicbrainz_id": "d93d2c7f-d4a2-4595-aa0b-f62949914d58",
+      "description": "Athens-based electronic music DJ and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q118780385",
+      "name": "Pauk",
+      "musicbrainz_id": "979a24ed-6c12-413c-964d-32e3926955a4",
+      "description": "Spanish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99675853",
+      "name": "Paul Schulte",
+      "musicbrainz_id": "9fc5520c-13ad-4a46-ad5f-6c347628dd92",
+      "description": "musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q1569067",
+      "name": "Popmuschi",
+      "musicbrainz_id": "bf367a19-e5c3-4812-ab85-ebccd0f1a9f7",
+      "description": "band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q60550415",
+      "name": "SHXCXCHCXSH",
+      "musicbrainz_id": "29b03124-87df-4ee1-8d81-d46381522ec4",
+      "description": "Swedish techno duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q55217622",
+      "name": "Safeway",
+      "musicbrainz_id": "deb32bcc-0f8a-4008-a605-93581273a1ce",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q95952102",
+      "name": "Scalameriya",
+      "musicbrainz_id": "c2a3861e-8773-43c8-956c-2dcf1bcc6e1d",
+      "description": "techno producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q91114524",
+      "name": "Sean Quinn",
+      "musicbrainz_id": "c86c9dcc-e90c-40b7-bc48-b6a140b45d90",
+      "description": "Australian DJ/Producer/Musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q82528523",
+      "name": "Sebastian Mora",
+      "musicbrainz_id": "0cf7f937-5390-47f7-8bb7-92b71fefc1f3",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q109645393",
+      "name": "Senkino",
+      "musicbrainz_id": "df602ea4-c143-425d-a235-d7641f7634fd",
+      "description": "Russian electronic music group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141753824",
+      "name": "Siavash",
+      "musicbrainz_id": "112790ff-b5ec-4f7e-9a9d-98fde4a2c33d",
+      "description": "Canadian DJ and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q16194581",
+      "name": "Simon Heartfield",
+      "musicbrainz_id": "6e3ae723-68ba-498c-add4-a4ec931dc1d9",
+      "description": "British musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140395284",
+      "name": "Skaivi",
+      "musicbrainz_id": "e261a359-befe-4cd1-9799-b7531e191ffc",
+      "description": "Polish-American musician from Chicago",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q115063159",
+      "name": "Solitaire",
+      "musicbrainz_id": "9d8e2564-35fa-42d7-9f21-bab418c20a27",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q139377289",
+      "name": "St. Theodore",
+      "musicbrainz_id": "bfedd57e-4017-4d30-9048-66c1a942281c",
+      "description": "Russian electronic musician, producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q21569153",
+      "name": "Strange2",
+      "musicbrainz_id": "9247013e-0e82-42f4-b4fb-df5c33aabf02",
+      "description": "Spanish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q111302666",
+      "name": "Sísý Ey",
+      "musicbrainz_id": "a980a0eb-ed18-4b00-a88d-250ae796f384",
+      "description": "Icelandic house band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140473445",
+      "name": "TeknoSteps",
+      "musicbrainz_id": "b2e99c4c-6299-478c-a5a6-8afc6ce854f8",
+      "description": "dark psytrance and techno project and 24/7 online radio",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q3519801",
+      "name": "The Aquanauts",
+      "musicbrainz_id": "f2cff2b0-fc81-4553-b276-d20dd5cad89b",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Detroit techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q134437516",
+      "name": "The Brooklyn Funk Essentials",
+      "musicbrainz_id": "2f1a16d2-5f1f-43db-aaed-5677b41d0aed",
+      "description": "musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q58875544",
+      "name": "Trip Hazard",
+      "musicbrainz_id": "40ff6fb8-7189-4e3a-9633-0646a7fb0b14",
+      "description": "UK band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q140948882",
+      "name": "Vic Miranda",
+      "musicbrainz_id": "82d10ca2-32e2-48c8-808b-12b8d0c460d8",
+      "description": "Techno Music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno",
+        "minimal techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q127814830",
+      "name": "VoX LoW",
+      "musicbrainz_id": "2f4262f0-91d7-4f2a-95eb-04efa7e5537b",
+      "description": "French musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q133889365",
+      "name": "WUKONG",
+      "musicbrainz_id": "7563b038-b51c-4185-8c7b-f13f9d8438aa",
+      "description": "Singaporean DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q20687573",
+      "name": "Whiiite",
+      "musicbrainz_id": "eec4bf4a-30e9-4edf-ad45-95bce8b0e34b",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q141223117",
+      "name": "Wild Valve",
+      "musicbrainz_id": "dabeff3f-ebe3-4216-9685-2a26861d6502",
+      "description": "Electronic music project",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q99609437",
+      "name": "Zip",
+      "musicbrainz_id": "8ffa09a0-c9d3-497d-993b-8df40acad7c7",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q118780372",
+      "name": "bRUNA",
+      "musicbrainz_id": "1ad033ac-fed7-4dcd-a624-4136c979513b",
+      "description": "Spanish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    },
+    {
+      "wikidata_id": "Q138635113",
+      "name": "keyosc",
+      "musicbrainz_id": "310f88d6-cc81-4615-b342-3d6d09ca499e",
+      "description": "British electronic music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "techno"
+      ],
+      "category": "techno"
+    }
+  ]
+}
