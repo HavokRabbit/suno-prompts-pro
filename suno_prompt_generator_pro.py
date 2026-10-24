@@ -174,27 +174,33 @@ def _strip_pattern():
     name ("Vocal Style: Karan Aujla, ..."), and Suno rejects any prompt carrying
     a real artist name. Longest-first ordering means a full name is removed
     before a shorter name that sits inside it.
+
+    Each term is wrapped in word-boundary lookarounds so an artist name only
+    matches as a whole word. Without them a band called "Conflict" rewrites the
+    ordinary word "conflicted" into "[style descriptor]ed" and silently damages
+    the prompt.
     """
     terms = {n for n in _NAME_LEAK_BLACKLIST if _strippable(n)}
     terms |= {n for n in cat.catalog() if _strippable(n)}
     if not terms:
         return None
     ordered = sorted(terms, key=len, reverse=True)
-    return re.compile("|".join(re.escape(t) for t in ordered), re.IGNORECASE)
+    return re.compile("|".join(r"(?<!\w)" + re.escape(t) + r"(?!\w)" for t in ordered), re.IGNORECASE)
 
 
 def _sanitize_prompt(text, extra=()):
     """Remove real artist/band names from generated prompt text.
 
     Case-insensitive, because profile text is written in Title Case while the
-    short prompt is lowercased. Returns (cleaned_text, hit_count) so callers can
-    tell the user it fired.
+    short prompt is lowercased. Whole words only, so a name never chews a hole
+    in an unrelated word. Returns (cleaned_text, hit_count).
     """
     if not text:
         return text, 0
     hits = 0
     for name in sorted({n for n in extra if n and _strippable(n)}, key=len, reverse=True):
-        text, count = re.subn(re.escape(name), "[style descriptor]", text, flags=re.IGNORECASE)
+        pattern = r"(?<!\w)" + re.escape(name) + r"(?!\w)"
+        text, count = re.subn(pattern, "[style descriptor]", text, flags=re.IGNORECASE)
         hits += count
     pattern = _strip_pattern()
     if pattern is not None:
