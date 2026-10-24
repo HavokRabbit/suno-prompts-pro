@@ -1,0 +1,20 @@
+{
+  "source": "https://github.com/HavokRabbit/suno-prompts-pro",
+  "commit": "bbebda1752c335189044faefb37dab67e7a1cc30",
+  "files": {
+    ".gitignore": "50a164f1435c8fc8287dd0fecd0d8d95418564eb5fa63758fae89f2760173f29",
+    ".streamlit/config.toml": "130b9a051d370d8765fac0cdd69776b1434523d02433fe00922b2883a3507c4d",
+    ".streamlit/secrets.toml.example": "a614cba99df997f17bd1e5ac65ce748f17694143ab1ecc05668753519ef3272b",
+    "LICENSE": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+    "README.md": "aea427927c2827f6769f165c512f7b6b86880ff8a0089c57787a13238677b0ea",
+    "_test_suite.py": "7e6ecdc672e92cb7fe959880516bbc725ac62c6b3a37dcf81240c5744f44b5c8",
+    "artists.json": "edfa27c6565571bb3d717a3da393d65e1cfe5edc6ed1f1a28d2dfe35100d4ab9",
+    "genre_rules.json": "802ae74f4f48ce47d57aee2574f70e5670141e1ca92cbbe6749754d2e0559b3f",
+    "requirements.txt": "b3d66e4c0bbdce5a58e5a14824907f289c24172ddd29bc11922ba977e3a8972a",
+    "static/favicon.svg": "4175ae8bc3c343950d418d52fa1e781d8d1a950a41a4a08b81b2c37a906bbc0b",
+    "static/style.css": "6f55696d1b76d49e7d606e63d86c5d4496661501a80089e780d091421240612b",
+    "static/wolf_logo.svg": "b0af01f713ebec14088560ba1f24dee7141ece3bcce196305655131d3c77b540",
+    "suno_prompt_generator_pro.py": "f184c704b689d6e2679478d8e44341abf6ba062ccc42a1170cf0d3a9f83adfa2",
+    "templates.json": "a489de0f0924df74fd6898eba866d132ad7d7092078321f689135f1bbaa49030"
+  }
+}

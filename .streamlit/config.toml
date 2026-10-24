@@ -1,14 +1,19 @@
 [server]
 headless = true
 port = 8501
+# Serves static/ at /app/static/ so the header clip streams once and caches,
+# instead of 285 KB of base64 riding in every rerun payload.
+enableStaticServing = true
 
 [browser]
 gatherUsageStats = false
 
+# Aligned to the charcoal/iron palette in static/style.css so framework-drawn
+# widgets (select dropdowns, sliders, focus rings) match the custom surfaces.
 [theme]
 base = "dark"
-primaryColor = "#C8102E"
-backgroundColor = "#0E1117"
-secondaryBackgroundColor = "#1E1E1E"
-textColor = "#FAFAFA"
+primaryColor = "#D85463"
+backgroundColor = "#111214"
+secondaryBackgroundColor = "#1B1D20"
+textColor = "#F2EEE7"
 font = "sans serif"

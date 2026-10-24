@@ -1,0 +1,2123 @@
+{
+  "category": "afrobeats",
+  "label": "Afrobeats / Afropop",
+  "genre_labels": [
+    "Afrobeats",
+    "Afropop",
+    "African popular music",
+    "amapiano",
+    "Afro-fusion",
+    "afropop"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"Afrobeats\"@en \"Afropop\"@en \"African popular music\"@en \"amapiano\"@en \"Afro-fusion\"@en \"afropop\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q146256",
+      "name": "Miriam Makeba",
+      "musicbrainz_id": "bc5c2918-4aba-4ef6-a245-100563a4487f",
+      "description": "South African singer and civil rights activist (1932–2008)",
+      "sitelinks": 98,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q313318",
+      "name": "Salif Keita",
+      "musicbrainz_id": "b29a24ff-2c55-437e-867b-1456c9f3f73e",
+      "description": "Malian singer-songwriter, referred to as the \"Golden Voice of Africa\".",
+      "sitelinks": 50,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q186840",
+      "name": "Brenda Fassie",
+      "musicbrainz_id": "91838da6-e1cc-46ff-b235-2a2b83814608",
+      "description": "South African pop singer (1964-2004)",
+      "sitelinks": 41,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q106462586",
+      "name": "Ayra Starr",
+      "musicbrainz_id": "c4ac4b97-2eac-46f6-85ae-f916c93847e4",
+      "description": "Beninese-Nigerian singer",
+      "sitelinks": 35,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q65071082",
+      "name": "Rema",
+      "musicbrainz_id": "d2981120-8ac4-48c4-a979-18f2d48a96f9",
+      "description": "Nigerian singer-songwriter and rapper (2000–)",
+      "sitelinks": 33,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q18016138",
+      "name": "Yemi Alade",
+      "musicbrainz_id": "14ed2fab-d941-4b56-a06f-fa1cc93c23d6",
+      "description": "Nigerian singer and songwriter",
+      "sitelinks": 33,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16234484",
+      "name": "Davido",
+      "musicbrainz_id": "a9ae7d4b-10f0-4da8-8b8c-21722a074a54",
+      "description": "Nigerian singer",
+      "sitelinks": 29,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q452258",
+      "name": "Amadou & Mariam",
+      "musicbrainz_id": "1fb60b6c-0f4d-42b4-8a5e-de705ec76660",
+      "description": "husband-and-wife musical duo from Mali",
+      "sitelinks": 28,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q379117",
+      "name": "Mohombi",
+      "musicbrainz_id": "257f84f9-a920-40cd-a810-3e48c57d275d",
+      "description": "Congolese-Swedish musician, singer, composer and dancer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q23899788",
+      "name": "Simi",
+      "musicbrainz_id": "54fefc16-9c4f-4c79-8995-4d1d9e1f0998",
+      "description": "Nigerian singer and songwriter",
+      "sitelinks": 21,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q15987642",
+      "name": "AKA",
+      "musicbrainz_id": "52486a37-7ebf-4eb4-b067-ba17417fe9d3",
+      "description": "South African rapper (1988–2023)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q98312451",
+      "name": "CKay",
+      "musicbrainz_id": "eb1febcf-9902-4962-9dc4-8fe4d7fc25b4",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q7424230",
+      "name": "Sarkodie",
+      "musicbrainz_id": "6f937dd2-1aa8-49ce-9052-8127714db3d2",
+      "description": "Ghanaian rapper, songwriter, and entrepreneur",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16231624",
+      "name": "Wiyaala",
+      "musicbrainz_id": "16ae2b79-5381-49ea-b5f2-ce827da8e869",
+      "description": "Ghanaian musician",
+      "sitelinks": 19,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q39054685",
+      "name": "Ada Ehi",
+      "musicbrainz_id": "54065509-8c69-41e3-968c-01345e49075f",
+      "description": "Nigerian Gospel Singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21280581",
+      "name": "Adekunle Gold",
+      "musicbrainz_id": "7ff6bc8e-f614-40ec-8d77-84679cc5e2fc",
+      "description": "Nigerian singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q944365",
+      "name": "D'banj",
+      "musicbrainz_id": "6e1d2796-ab2b-4ed4-8cfa-1b7214a9adf9",
+      "description": "Nigerian singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q269916",
+      "name": "Miri Ben-Ari",
+      "musicbrainz_id": "3e7d3eac-7789-493f-940d-8a4b8c14e72b",
+      "description": "American musician",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16209979",
+      "name": "Omawumi",
+      "musicbrainz_id": "3959e8d9-e731-42b6-8796-c6ceada419fe",
+      "description": "Nigerian musician and actress",
+      "sitelinks": 18,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q1890473",
+      "name": "Osibisa",
+      "musicbrainz_id": "b1355867-16a1-4863-ae3b-6a8be122eaaa",
+      "description": "British afro-pop band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q107740983",
+      "name": "Black Sherif",
+      "musicbrainz_id": "d9fcecbd-49f7-4467-b70b-3e3267fca7ce",
+      "description": "Ghanaian singer and rapper",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q24255698",
+      "name": "Niniola",
+      "musicbrainz_id": "c638bf27-a1ac-4c1a-80a3-3d7de8ed606a",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q15429574",
+      "name": "Diamond Platnumz",
+      "musicbrainz_id": "a4dd4cc7-576d-4126-9780-75a48741234e",
+      "description": "Tanzanian artist, dancer, philanthropist and businessman",
+      "sitelinks": 16,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16752042",
+      "name": "Seyi",
+      "musicbrainz_id": "23a67359-d57c-4704-b722-c3032dd7f5de",
+      "description": "Nigerian singer and actress",
+      "sitelinks": 16,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q33141631",
+      "name": "Sho Madjozi",
+      "musicbrainz_id": "f06368b7-c8b0-4578-8c64-7a3ed517f745",
+      "description": "South African rapper, singer, songwriter, actress and poet",
+      "sitelinks": 16,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q85771346",
+      "name": "Joeboy",
+      "musicbrainz_id": "719feeff-47ab-482b-8101-859cac49776b",
+      "description": "Nigerian musician, singer, songwriter and recording artist and Afro pop star",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q4646468",
+      "name": "9ice",
+      "musicbrainz_id": "eaaae1cd-1307-4e79-8b3f-ba27bf3b9aee",
+      "description": "Nigerian musician",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q5085917",
+      "name": "Charlotte Dipanda",
+      "musicbrainz_id": "83fdb043-d1b7-4a01-96d6-52a70d6a5395",
+      "description": "Cameroonian singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q97057650",
+      "name": "Morad",
+      "musicbrainz_id": "ebca1d88-3991-48e4-bd79-2f219f9c2342",
+      "description": "Spanish-Moroccan singer and rapper (born 1999)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16221097",
+      "name": "Olamide",
+      "musicbrainz_id": "ba800215-62c3-4fbf-93e9-8008186af81d",
+      "description": "Nigerian rapper, singer, songwriter, and record executive",
+      "sitelinks": 14,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q58806824",
+      "name": "Wendy Shay",
+      "musicbrainz_id": "d79c2397-7e0c-47f4-bfe6-e49ccfdf8445",
+      "description": "Ghanaian musician",
+      "sitelinks": 14,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q52219241",
+      "name": "Cina Soul",
+      "musicbrainz_id": "97cfb888-e022-4fc0-87c2-a07351f50c78",
+      "description": "Ghanaian musician",
+      "sitelinks": 13,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q24256417",
+      "name": "Emma Nyra",
+      "musicbrainz_id": "47846ccf-a581-4734-824a-122d1afd8397",
+      "description": "Nigerian singer, actress and model",
+      "sitelinks": 13,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q6386129",
+      "name": "Kelly Khumalo",
+      "musicbrainz_id": "3ab1477d-4103-4356-8a37-473a2cedfa7e",
+      "description": "South African singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20684384",
+      "name": "Kizz Daniel",
+      "musicbrainz_id": "c203e6dc-3f1e-4783-afc3-d0274b0e23ee",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 13,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20684403",
+      "name": "Korede Bello",
+      "musicbrainz_id": "9ca62f93-9706-4ecf-a887-ddf37c4a5419",
+      "description": "Nigerian singer and songwriter",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q106558182",
+      "name": "Omah Lay",
+      "musicbrainz_id": "b63bd4fd-2050-4c92-a237-576f6f6c97cb",
+      "description": "Nigerian singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16999837",
+      "name": "Stonebwoy",
+      "musicbrainz_id": "e5b5f58b-21d9-4fd4-8ed0-01e8eaf4b4ac",
+      "description": "Ghanaian singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q7804587",
+      "name": "Timaya",
+      "musicbrainz_id": "f483e8a0-baca-427a-b1c3-b06752ab88cf",
+      "description": "Nigerian singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20684328",
+      "name": "Kcee",
+      "musicbrainz_id": "58019c23-d7f3-4932-b87f-5351df1ccc79",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 12,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16728568",
+      "name": "Khadijah Blell",
+      "musicbrainz_id": "83f9a2a2-9348-4200-bf2f-ec13ebd0d7ea",
+      "description": "Nigerian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21274965",
+      "name": "Lil Khalid4grace",
+      "musicbrainz_id": "664d7846-d659-49b7-9d47-5e0dac2c5e7c",
+      "description": "Nigerian rapper and singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "African popular music",
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q19958003",
+      "name": "MzVee",
+      "musicbrainz_id": "27b59da3-22b4-455f-ba30-cb9fe20dc68e",
+      "description": "Ghanaian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16885617",
+      "name": "Shatta Wale",
+      "musicbrainz_id": "387def2a-4309-4007-a51c-dfb1bc2c2962",
+      "description": "Ghanaian reggae-dancehall artist",
+      "sitelinks": 12,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q110442584",
+      "name": "Buju",
+      "musicbrainz_id": "0707594a-f793-4255-9708-4d73484581e9",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q5292834",
+      "name": "Don Jazzy",
+      "musicbrainz_id": "4b0d4dc2-4be7-4295-a816-6e876c1ee6cb",
+      "description": "Nigerian record producer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21127453",
+      "name": "Harrysong",
+      "musicbrainz_id": "56ca6fdf-2ed0-405b-b797-5adb82699e8c",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q58303488",
+      "name": "Kwesi Arthur",
+      "musicbrainz_id": "0a1c9fb8-7c3a-458d-ab0e-749f8e079de5",
+      "description": "Ghanaian rapper and musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q6796228",
+      "name": "May7ven",
+      "musicbrainz_id": "51720b5e-ec6e-4fdc-9b77-d5a3ccd354ed",
+      "description": "singer, songwriter, dancer, producer, actress, model and entrepreneur",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q119700248",
+      "name": "MohBad",
+      "musicbrainz_id": "7be6f550-439d-47ec-ae03-7ee2b116b9d5",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20489135",
+      "name": "Runtown",
+      "musicbrainz_id": "8659a81e-3f22-4035-bdc6-8cf89ada7d50",
+      "description": "Nigerian singer-songwriter and producer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q22807439",
+      "name": "Tekno",
+      "musicbrainz_id": "69589622-f38a-442f-bd97-57d733b2b201",
+      "description": "Nigerian singer-songwriter and producer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q147186",
+      "name": "Zap Mama",
+      "musicbrainz_id": "50c0ec9a-a2a3-4888-a8b0-a0cf565e5ac7",
+      "description": "Belgian musical band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21285312",
+      "name": "Ali Kiba",
+      "musicbrainz_id": "b68e051f-2a02-40c5-a99f-da78cc65a5d5",
+      "description": "Tanzanian singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16203843",
+      "name": "Iyanya",
+      "musicbrainz_id": "6af31188-b6fb-4054-ae61-3be9260a837f",
+      "description": "Nigerian singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q52802465",
+      "name": "KiDi",
+      "musicbrainz_id": "d0095ea3-5635-49f3-a508-db2e392584e3",
+      "description": "Ghanaian musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q19955851",
+      "name": "Reekado Banks",
+      "musicbrainz_id": "7fbc76d0-8753-4b84-b02c-135856d7e152",
+      "description": "Nigerian musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q8073547",
+      "name": "Zolani Mahola",
+      "musicbrainz_id": "9dea97f4-e7c6-434d-b715-2882691faf6c",
+      "description": "South African pop singer and actor",
+      "sitelinks": 10,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q30567425",
+      "name": "CDQ",
+      "musicbrainz_id": "8b89b5cf-8680-4940-8d3a-bdc4305e120e",
+      "description": "Nigerian indigenous rapper and singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q41187710",
+      "name": "Eno Barony",
+      "musicbrainz_id": "0c620755-1b02-4bf8-afe3-0402a823153a",
+      "description": "Ghanaian female rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q64745647",
+      "name": "Ladipoe",
+      "musicbrainz_id": "96338645-d3db-4a59-a238-16f4ea43f4f3",
+      "description": "Nigerian rapper and singer (born 1985)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21004692",
+      "name": "Mr 2Kay",
+      "musicbrainz_id": "6a2f166f-7ed3-450c-bca4-4f62723aa6d7",
+      "description": "Nigerian singer and songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q7967172",
+      "name": "Wande Coal",
+      "musicbrainz_id": "fd32fe8c-2592-44de-84c8-daf40a4e017a",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q67222718",
+      "name": "Blaqbonez",
+      "musicbrainz_id": "f5cc1ab7-a1fc-4ef2-beae-5c5507699b17",
+      "description": "Nigerian rapper and singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q29617769",
+      "name": "Dice Ailes",
+      "musicbrainz_id": "44d8a9c5-f641-4c00-a925-a0a8d5ba058f",
+      "description": "Nigerian singer and rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20631266",
+      "name": "Innoss'B",
+      "musicbrainz_id": "34641729-258a-485a-8819-7bf87ca5e572",
+      "description": "Congolese singer and dancer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q740711",
+      "name": "Kaysha",
+      "musicbrainz_id": "2eecd1cd-31ae-42f3-9e30-300ffbd7f2ef",
+      "description": "Congolese singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q52801612",
+      "name": "Kuami Eugene",
+      "musicbrainz_id": "524f4652-b984-4a71-8328-9f98494060cc",
+      "description": "Ghanaian musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q115790718",
+      "name": "Libianca",
+      "musicbrainz_id": "6f73cf76-8550-459d-935a-d9b932b4266b",
+      "description": "ivoirienne-American singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q24307358",
+      "name": "Lola Rae",
+      "musicbrainz_id": "63883e49-102d-4fec-863e-9af98ba9b69c",
+      "description": "Nigerian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q115688374",
+      "name": "Odumodublvck",
+      "musicbrainz_id": "330054ae-c442-489e-8901-10cff96b819b",
+      "description": "Nigerian rapper, singer and songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q106308191",
+      "name": "Peter Okoye",
+      "musicbrainz_id": "bd918fa6-0655-45cb-aca4-4c04db161cbc",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21503256",
+      "name": "Pheelz",
+      "musicbrainz_id": "41e6febf-2ce1-4f8c-b4e6-7b6c9d5fcd32",
+      "description": "Nigerian record producer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q2541308",
+      "name": "Waldemar Bastos",
+      "musicbrainz_id": "0bb5e108-b41d-46cd-969e-69d34d1acdfe",
+      "description": "Angolan musician (1954–2020)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21281870",
+      "name": "Ycee",
+      "musicbrainz_id": "59e42031-8153-471a-a375-9b3183cc89a0",
+      "description": "Nigerian rapper, singer, and songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q117074600",
+      "name": "Costa Titch",
+      "musicbrainz_id": "025d1f65-856f-4cc0-a0df-92f136bf4c16",
+      "description": "South African rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21005498",
+      "name": "D'Prince",
+      "musicbrainz_id": "e1f0fd13-5328-4b34-b54f-f27091b9ad82",
+      "description": "Nigerian musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q123101342",
+      "name": "Greatman Takit",
+      "musicbrainz_id": "0940e3e1-a316-4f60-ab65-a756b256243a",
+      "description": "Nigerian gospel singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q60736888",
+      "name": "Headie One",
+      "musicbrainz_id": "2e2c71a6-1ac8-4442-ba00-c4dea71abd64",
+      "description": "British rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q26036678",
+      "name": "Humblesmith",
+      "musicbrainz_id": "4daf243f-d6f2-4881-b7c5-e74101a5cce1",
+      "description": "Nigerian actor, musician and entertainer who came into limelight after his song, 'Osinachi' became a hit",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q3200902",
+      "name": "Kyla-Rose Smith",
+      "musicbrainz_id": "caba3dc6-31cd-4d61-b0d7-1c8e39910f1e",
+      "description": "Violinist and dancer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q99673245",
+      "name": "Laycon",
+      "musicbrainz_id": "303d5fe6-ebb8-4691-9772-2e901fcc978b",
+      "description": "Nigerian rapper, media personality, singer and songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q27656673",
+      "name": "May D",
+      "musicbrainz_id": "716325ce-2df7-4af1-ada2-d6a96be340a0",
+      "description": "Nigerian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q64759114",
+      "name": "Nonso Amadi",
+      "musicbrainz_id": "4b0d01df-25d5-4533-9fc1-07534bd75431",
+      "description": "Nigerian singer, songwriter and music producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q110409384",
+      "name": "Ronisia",
+      "musicbrainz_id": "7713d35f-a6dd-434e-aeae-73d87a9ec68a",
+      "description": "Cape Verdean singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q97178211",
+      "name": "Tayc",
+      "musicbrainz_id": "0c980a2b-ca09-4d04-ad80-e7c2ce9621fb",
+      "description": "French singer of Cameroonian origin",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q97959357",
+      "name": "Zayn Africa",
+      "musicbrainz_id": "81952b92-1c43-4a7f-be54-be0217702de2",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q27063024",
+      "name": "Élida Almeida",
+      "musicbrainz_id": "15941edc-bc0a-43a1-b5ff-b0c03a7f65da",
+      "description": "Cape Verdean singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q112162702",
+      "name": "Asuquomo",
+      "musicbrainz_id": "feb456c7-79e6-47b2-8090-fa79e0186769",
+      "description": "a Nigerian-Canadian visual artist and musician based in Ottawa",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q5304552",
+      "name": "Dr Sid",
+      "musicbrainz_id": "e759d6f4-b3cd-4202-9a66-37fe9b344dcb",
+      "description": "Nigerian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q28343685",
+      "name": "Fancy Gadam",
+      "musicbrainz_id": "77e80d96-665e-4d71-ad8f-72c9d99176ad",
+      "description": "Ghanaian afropop, dancehall and reggae artiste",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q26703032",
+      "name": "Jaywon",
+      "musicbrainz_id": "a21960ef-eb76-427f-9adf-3405fa6ac054",
+      "description": "musical artist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q792778",
+      "name": "King Mensah",
+      "musicbrainz_id": "d4fb7a7a-1112-4f4b-872d-be2876387e01",
+      "description": "Togolese musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q18217816",
+      "name": "Okyeame Kwame",
+      "musicbrainz_id": "df3b2387-7b79-4eb0-8a00-6ef1b9a27b86",
+      "description": "Ghanaian singer and rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q109728065",
+      "name": "Oxlade",
+      "musicbrainz_id": "4f96e4cc-d306-4ac3-89bf-c6d5fb8cc363",
+      "description": "Nigerian Afro-fusion musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q91915280",
+      "name": "Paul Okoye",
+      "musicbrainz_id": "fbc72450-e5b9-4369-bb1d-c3fc27c019d4",
+      "description": "musician and songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q7427621",
+      "name": "Sauti Sol",
+      "musicbrainz_id": "a8457fc0-32f9-4b1a-b908-7e9c0bcc80b9",
+      "description": "Kenyan afro-pop band formed in Nairobi",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21872807",
+      "name": "Waconzy",
+      "musicbrainz_id": "d9268043-ebad-44d2-867e-e73b47727754",
+      "description": "singer, songwriter, record producer and philanthropist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q65963402",
+      "name": "Bantu Continua Uhuru Consciousness",
+      "musicbrainz_id": "315eaf91-42c4-4bfd-876e-930ce59b4575",
+      "description": "South African afro-psychedelic future pop band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q21063945",
+      "name": "DJ Spinall",
+      "musicbrainz_id": "cbbd8643-19cf-4a01-b258-d21f2d1b2461",
+      "description": "Nigerian disc jockey, record producer, songwriter, label executive, and media personality",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q132315657",
+      "name": "Delcat Idengo",
+      "musicbrainz_id": "33fcf6c1-9c6c-4dbb-8f1f-04912f7b1dab",
+      "description": "Congolese rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q2351780",
+      "name": "Hijas del Sol",
+      "musicbrainz_id": "647461cc-95b4-4c19-85d5-8155c4e6cbdf",
+      "description": "musical artist",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q113662051",
+      "name": "Magixx",
+      "musicbrainz_id": "b1fd5585-56f4-4b4a-83e4-c86df80ca5c7",
+      "description": "Nigeran musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q23796151",
+      "name": "Maleek Berry",
+      "musicbrainz_id": "33b74f18-acaf-443f-a09b-64e4daae103e",
+      "description": "British-born Nigerian record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q130396077",
+      "name": "Morravey",
+      "musicbrainz_id": "90c66549-a0a4-4227-ace1-587f7615774c",
+      "description": "Nigerian singer-songwriter (born 2004)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music",
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q24432534",
+      "name": "Nathi",
+      "musicbrainz_id": "67ce7efa-7d13-4dc2-882b-ff03a4774cc7",
+      "description": "South African singer-songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q24703028",
+      "name": "Wanlov the Kubolor",
+      "musicbrainz_id": "352c14cf-4da2-4548-b1cd-23af6eda5a01",
+      "description": "Ghanaian-Romanian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20397066",
+      "name": "Al Balabil",
+      "musicbrainz_id": "d12460da-64d4-4b2f-a57d-14d60c51cdb6",
+      "description": "Sudanese musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q112454642",
+      "name": "Barry Jhay",
+      "musicbrainz_id": "317b24a4-48f3-4728-bdea-e4154f384822",
+      "description": "Nigerian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q16845424",
+      "name": "Dammy Krane",
+      "musicbrainz_id": "c1f8158a-afe7-4af3-ae85-a1c279569ef1",
+      "description": "Nigerian singer, composer and performer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q5370845",
+      "name": "Emmerson Bockarie",
+      "musicbrainz_id": "64c4a1f6-400a-4d99-a8af-ee4a0ec23946",
+      "description": "pop singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q38902387",
+      "name": "Harmonize",
+      "musicbrainz_id": "bbe412f3-9dde-49be-abf4-b233f957a992",
+      "description": "Tanzanian artist and music entrepreneur",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q23927041",
+      "name": "Kiddominant (KDDO)",
+      "musicbrainz_id": "44d2c069-7641-49ed-bb35-4e7c41f40c2a",
+      "description": "Nigerian music producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q113859687",
+      "name": "Lasmid",
+      "musicbrainz_id": "94e7a2fa-17c3-4aaa-a0d2-cfac1d774c36",
+      "description": "Ghanaian musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q107315471",
+      "name": "Liya",
+      "musicbrainz_id": "a6b8c838-fef4-4700-9b31-8481da58cace",
+      "description": "Nigerian afrobeat singer and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q1165195",
+      "name": "Marie Daulne",
+      "musicbrainz_id": "6b11caad-1fa6-45c8-b447-4c51a3a98e1b",
+      "description": "Belgian singer, born in Isiro, Haut-Uele District, Democratic Republic of the Congo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q106808963",
+      "name": "Mbosso",
+      "musicbrainz_id": "13cef67b-2b52-434c-a48a-91d65645f2fb",
+      "description": "Tanzanian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q135785413",
+      "name": "Modola",
+      "musicbrainz_id": "dd98e7ed-1d45-441b-9d0f-9f0f8ec849fe",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q28039442",
+      "name": "Moneoa Moshesh",
+      "musicbrainz_id": "a3038b66-7d71-439e-b4be-522c5e8a3779",
+      "description": "South African actress and singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q124294704",
+      "name": "RG Qluck Wise",
+      "musicbrainz_id": "a67495a5-0a7d-45ab-8c03-609bacf8397a",
+      "description": "Ghanaian musical artist and graphic designer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q41555515",
+      "name": "Rayvanny",
+      "musicbrainz_id": "1e8ae15c-2bdb-4542-a9a2-cc91de0b80b0",
+      "description": "Tanzanian musician and songwriter from WCB Wasafi Record label",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q109043936",
+      "name": "Sarah Kalume",
+      "musicbrainz_id": "61afbc78-73f3-42f8-bc5d-75d70d55d18d",
+      "description": "Congolese singer, lyricist, dancer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q47308060",
+      "name": "Sjava",
+      "musicbrainz_id": "768a27db-eebb-4159-b6ce-e636f499e858",
+      "description": "South African singer, rapper and actor",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q20655917",
+      "name": "Teddy Osei",
+      "musicbrainz_id": "0ec3d6a3-6a07-4fe3-b7de-395dc9e68e4a",
+      "description": "Ghanaian saxophonist and musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q41410530",
+      "name": "The Ben",
+      "musicbrainz_id": "fb22ee48-f34a-4cef-ace8-b75af5c3484a",
+      "description": "Rwandan singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q2895244",
+      "name": "Bembeya Jazz National",
+      "musicbrainz_id": "8ab24fac-bfa3-4866-8761-29320e11dff9",
+      "description": "Guinean music group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q108576582",
+      "name": "Darkoo",
+      "musicbrainz_id": "9557170d-a5e0-4457-81bb-95b5c6e073b0",
+      "description": "British rapper, singer and songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q97487703",
+      "name": "Marioo",
+      "musicbrainz_id": "209cfbf5-6fcb-4bee-a3b6-a65e33e12ab2",
+      "description": "Tanzanian musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q55082794",
+      "name": "SHiiKANE",
+      "musicbrainz_id": "6d886909-9f78-4986-90a0-0878e9f6c923",
+      "description": "British-Nigerian female music group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q111530450",
+      "name": "Winnie Nwagi",
+      "musicbrainz_id": "1c77174f-11eb-425a-8962-1f79c0793bd1",
+      "description": "Ugandan Musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q122971838",
+      "name": "Bash Luks",
+      "musicbrainz_id": "b563ec7f-f9f8-4673-88db-36c1233b540e",
+      "description": "Ugandan singer and actor",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q117309174",
+      "name": "Bryan Mg",
+      "musicbrainz_id": "4b0e676d-fd1f-4aeb-8239-afe07574fe79",
+      "description": "Belgian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q108824597",
+      "name": "Cruel Santino",
+      "musicbrainz_id": "4248f952-8091-4a8b-a68e-93a5a7e6fb96",
+      "description": "Nigerian singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q110542862",
+      "name": "Dany Beats",
+      "musicbrainz_id": "2fe14d3b-442a-42c1-a7e3-2d2ef1f2e7d8",
+      "description": "Rwandan record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q32904795",
+      "name": "Dany Synthé",
+      "musicbrainz_id": "60a21ce6-01ef-49dd-8566-6351599609f4",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q50345259",
+      "name": "DopeNation",
+      "musicbrainz_id": "0399c76e-5fde-44f6-8d76-a643623b9cee",
+      "description": "Ghanaian musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q77976370",
+      "name": "Gili Yalo",
+      "musicbrainz_id": "4720ffca-9bb9-4003-bf71-fbaa9f2afca0",
+      "description": "Israeli singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q137133175",
+      "name": "Mehran Matin",
+      "musicbrainz_id": "a2db6278-b7f7-4df6-97f6-72efee67feaf",
+      "description": "Iranian artist and music producer (born 1996)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q98016557",
+      "name": "P2J",
+      "musicbrainz_id": "9b928538-a2c4-4c48-be86-366b4c7cc8a5",
+      "description": "Nigerian music and vocal producer and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q115492435",
+      "name": "PsychoYP",
+      "musicbrainz_id": "5186ac3d-1466-4905-8853-9dca6c90ad82",
+      "description": "Nigerian alternative hip hop rapper, singer, and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q7377905",
+      "name": "Ruff and Smooth",
+      "musicbrainz_id": "82a0af72-0fb9-4405-ba10-14890c272da0",
+      "description": "Ghanaian music duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q109740012",
+      "name": "Santrinos Raphaël",
+      "musicbrainz_id": "f9774b09-5313-412e-9442-b4473d01f084",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q44737083",
+      "name": "Slim Marion",
+      "musicbrainz_id": "d2370516-351d-46f9-9dd0-4383011370f6",
+      "description": "Cameroonian singer and rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q30121895",
+      "name": "Spellz",
+      "musicbrainz_id": "2145dc47-abc6-4a76-b5ad-41ec331214f5",
+      "description": "Nigerian record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q85809854",
+      "name": "Tjan",
+      "musicbrainz_id": "60fd7f6f-c8a7-496b-91ea-3fe80dc14c49",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q23801122",
+      "name": "WizzyPro",
+      "musicbrainz_id": "91808028-d715-4b5e-adfb-87c9e3141663",
+      "description": "Nigerian record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q111953346",
+      "name": "BOJ",
+      "musicbrainz_id": "6b646941-cc7c-4b16-9da4-b8a851af2994",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q71967275",
+      "name": "Benny Morgan",
+      "musicbrainz_id": "e5f028e0-99d6-4495-a14f-65bbd53e16b9",
+      "description": "Ghanaian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q119154144",
+      "name": "Bisk",
+      "musicbrainz_id": "c6d44bb3-73d3-4d84-8eea-4a4ff91e0bd1",
+      "description": "Nigerian Musical Artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q59457194",
+      "name": "Cixqo",
+      "musicbrainz_id": "d18e1996-8f61-4f89-8cbc-6948624bab15",
+      "description": "Nigerian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q122585113",
+      "name": "Confy",
+      "musicbrainz_id": "ba8895d1-c70c-419d-a23f-d4239bcc0cfc",
+      "description": "Rwandan singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q19787617",
+      "name": "Frizzo",
+      "musicbrainz_id": "39354765-6fc5-4f0e-a945-7bb59912b115",
+      "description": "Ghanaian-German DJ, producer and artist from Düsseldorf",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q114742280",
+      "name": "Johnel Nnamani",
+      "musicbrainz_id": "8d1ad13b-a388-477d-b6a8-6b7d77904685",
+      "description": "Business executive",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q129296085",
+      "name": "KIZABA",
+      "musicbrainz_id": "a24a1756-a716-41f5-a071-8a88b99d63da",
+      "description": "Congolese singer-songwriter and multi-instrumentalist based in Montréal, Québec, Canada",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q17712898",
+      "name": "Kesse",
+      "musicbrainz_id": "2f616058-53a6-4a48-95a7-f2164d3df303",
+      "description": "Ghanian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q135429685",
+      "name": "Maleh",
+      "musicbrainz_id": "1904b885-6169-4140-989e-a817bbf261ef",
+      "description": "Lesotho–South African musician (1984–)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q97496564",
+      "name": "Marga Mbande",
+      "musicbrainz_id": "82765037-d6ad-4b6e-b4de-cb7f09404ece",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q135922077",
+      "name": "Michael Hamilton",
+      "musicbrainz_id": "b20bdca7-a8a3-41bf-a7a7-805d34323b9b",
+      "description": "British musician and content creator",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q66764428",
+      "name": "Naiboi",
+      "musicbrainz_id": "fe4f2931-d94b-4fa9-804a-ad27252ae699",
+      "description": "Kenyan singer, rapper and entrepreneur",
+      "sitelinks": 1,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q135909319",
+      "name": "Odeal",
+      "musicbrainz_id": "47e10b14-4b74-4650-bc2b-34424c1c6bcb",
+      "description": "german-Nigerian singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q130427976",
+      "name": "Priceless",
+      "musicbrainz_id": "db8335ca-5f5d-43ed-8838-827e48da5dd5",
+      "description": "Dutch rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q111364883",
+      "name": "The Eastern Bandits",
+      "musicbrainz_id": "dcd26afb-465f-4fff-872c-ff8319517855",
+      "description": "Tanzanian Musical duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q122368128",
+      "name": "Benin International Musical",
+      "musicbrainz_id": "b7a5e32d-0b39-4124-9134-da3f8db53b2d",
+      "description": "West African music group based in Benin",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q108056923",
+      "name": "Boni Faas",
+      "musicbrainz_id": "35328b68-c93d-4c93-84fb-851b9fccebc2",
+      "description": "Haitian Singer Songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q140159484",
+      "name": "Boyonset",
+      "musicbrainz_id": "https://musicbrainz.org/artist/03a90d93-5c89-4648-a830-5e5db690af9d",
+      "description": "Nigerian Recording Artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141714896",
+      "name": "Buddy DML",
+      "musicbrainz_id": "67553ded-a6c1-45e6-89f9-b439612c9f75",
+      "description": "Ghanaian Singer, Rapper, Songwriter and Record Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141244174",
+      "name": "Cellus",
+      "musicbrainz_id": "a76fc178-88e3-4408-8b3b-b5f1751397dc",
+      "description": "American Afrobeats singer and songwriter from St. Augustine, Florida",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q113866068",
+      "name": "Cheesy Vibes",
+      "musicbrainz_id": "ea38d754-266c-4f4d-a8e9-7031dcd45b32",
+      "description": "Nigerian singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q98925658",
+      "name": "D Policy",
+      "musicbrainz_id": "741c2900-db34-4c70-82ff-0d97b54a18d3",
+      "description": "Nigerian singer-songwriter from Edo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q124713741",
+      "name": "DEEJAY T-JR.",
+      "musicbrainz_id": "792331fe-6e0b-48cc-911f-a986c03e4883",
+      "description": "3X Canadian DMC Champion, Engineer, and Producer.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141691489",
+      "name": "Diani",
+      "musicbrainz_id": "632ea069-8423-47f9-bfc4-c06455485bce",
+      "description": "British rapper, singer and songwriter from Bradford",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q138663584",
+      "name": "Femskid",
+      "musicbrainz_id": "39c49501-6f54-4ec7-b8c4-9d08faa78c39",
+      "description": "Nigerian Afrobeats and hip-hop musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141136713",
+      "name": "Gia Réi (Georgia Oviesu)",
+      "musicbrainz_id": "Gia Réi",
+      "description": "Nigerian-German musician and entrepreneur",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q138152985",
+      "name": "Harrison Dyver",
+      "musicbrainz_id": "93d0e28a-afa8-4afd-9176-507941773499",
+      "description": "Ugandan singer, songwriter and model",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q140370094",
+      "name": "Jadel",
+      "musicbrainz_id": "656a6a9e-006e-4ae8-ae6d-9165b09879c5",
+      "description": "Trinidad and Tobago recording artist, singer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q139384448",
+      "name": "Jeune VILI",
+      "musicbrainz_id": "7d182921-6db8-4040-a37c-999614f10850",
+      "description": "Gabonese singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q136488134",
+      "name": "Jiji Fada",
+      "musicbrainz_id": "7be500a7-9fdf-4a29-b00d-99b9b211d733",
+      "description": "Gabonese singer and songwritter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q124174456",
+      "name": "Kehinde Oladotun Oyebanjo (Kayswitch)",
+      "musicbrainz_id": "f5eb56b3-514a-4ab1-8ed6-edfa2dc36007",
+      "description": "musical artist and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q140690930",
+      "name": "Kenwiza",
+      "musicbrainz_id": "511d9b7e-a954-4eef-ba7e-4d4b9c462a15",
+      "description": "Nigerian Record Producer and Musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q139427843",
+      "name": "MXO",
+      "musicbrainz_id": "bd0f3ea2-c4e6-490f-a106-8f472defd759",
+      "description": "South African musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141501597",
+      "name": "Pesa Day",
+      "musicbrainz_id": "a714c57e-a28a-491c-b2e4-c62ee204ac7a",
+      "description": "Tanzanian singer songwriter and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q138413708",
+      "name": "RemmiQue",
+      "musicbrainz_id": "64c83288-d0ec-43b6-8446-f0f4d818eb6c",
+      "description": "Nigerian singer and rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141712770",
+      "name": "Renstar Boy",
+      "musicbrainz_id": "4260a5ae-5c9f-4696-90d4-1b451eefa25a",
+      "description": "nigerian recording artist and music entrepreneur",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q136416359",
+      "name": "Rozevn",
+      "musicbrainz_id": "9a4faebc-dc9b-491f-a0e6-a70798fa0cd4",
+      "description": "Nigerian Afrobeat singer-songwriter and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q109446437",
+      "name": "Sarki Vibez",
+      "musicbrainz_id": "534206ae-2a9f-4d30-9e55-e7caf3291e6a",
+      "description": "Nigerian singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q141541537",
+      "name": "Shollyy Melodyy",
+      "musicbrainz_id": "053e6593-32c2-4565-939e-e9bcbee8d4a1",
+      "description": "Nigerian rising artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q140609065",
+      "name": "Solbee",
+      "musicbrainz_id": "b8f39124-ae29-43e6-bc48-a09cc184885b",
+      "description": "Portuguese singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q140248519",
+      "name": "Swanky Olo",
+      "musicbrainz_id": "1b7da7fc-aa62-481e-9047-1f11751094e1",
+      "description": "Nigerian Afrobeats and Afrowave artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q44953232",
+      "name": "Tryt",
+      "musicbrainz_id": "ae3b1984-8dc5-4d1e-9087-2c2575192983",
+      "description": "Zimbabwean rapper and singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    },
+    {
+      "wikidata_id": "Q112663060",
+      "name": "Yung Bylez",
+      "musicbrainz_id": "b48d0360-5992-46c8-af0f-05bff846d9f4",
+      "description": "Ghanaian singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Afrobeats",
+        "African popular music"
+      ],
+      "category": "afrobeats"
+    }
+  ]
+}

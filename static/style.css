@@ -1,172 +1,252 @@
-/* Brand color variables */
+/* Iron Vespers — Prompt Studio
+   Charcoal canvas, iron panels, warm bone text, one restrained crimson accent.
+   The wolf mark keeps its own red; nothing else competes with it. */
+
 :root {
-    --iv-red: #C8102E;
-    --iv-red-hot: #FF1F44;
-    --iv-red-soft: #FF7A8A;
-    --iv-purple: #9D00FF;
-    --iv-bg: #0E1117;
-    --iv-bg-card: #1a0a14;
-    --iv-bg-elev: #1E1E1E;
-    --iv-text: #FAFAFA;
-    --iv-text-dim: #B0B0B0;
-    --iv-border: rgba(200, 16, 46, 0.25);
+  --iv-canvas: #111214;
+  --iv-panel: #1b1d20;
+  --iv-panel-2: #202327;
+  --iv-line: #383a3f;
+  --iv-text: #f2eee7;
+  --iv-text-dim: #b9b4ae;
+  --iv-accent: #d85463;
+  --iv-accent-soft: rgba(216, 84, 99, 0.14);
+  --iv-red: #c8102e;
+  --iv-radius: 10px;
+  --iv-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
-/* Page background — subtle gothic gradient */
+/* Canvas: flat charcoal with one very soft warm bloom, no rainbow gradients */
 .stApp {
-    background: linear-gradient(180deg, #0E1117 0%, #1a0a14 100%) !important;
+  background:
+    radial-gradient(900px 420px at 12% -6%, rgba(216, 84, 99, 0.07), transparent 70%),
+    var(--iv-canvas) !important;
+  color: var(--iv-text);
 }
 
-/* Headers — Iron Vespers blood red */
-h1, h2, h3, h4 {
-    color: var(--iv-text) !important;
-    font-family: 'Georgia', 'Times New Roman', serif !important;
-    letter-spacing: 0.02em;
+html, body, [class*="css"] {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-h1 {
-    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 900 !important;
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--iv-red);
-    padding-bottom: 0.4em;
+/* Headings: serif display, tight, no gradient text */
+h1, h2, h3, h4, h5 {
+  font-family: Georgia, "Times New Roman", serif !important;
+  color: var(--iv-text) !important;
+  letter-spacing: 0.01em;
 }
+h3 { font-size: 1.35rem !important; }
+h4 { font-size: 1.05rem !important; }
 
-/* Sidebar — iron-forged */
+p, li, label, .stMarkdown { color: var(--iv-text); }
+
+/* Sidebar: a distinct iron edge, not a second gradient */
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0a0a0a 0%, #1a0a14 100%) !important;
-    border-right: 1px solid var(--iv-border);
+  background: var(--iv-panel) !important;
+  border-right: 1px solid var(--iv-line);
+}
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2 { border: none; }
+
+/* Brand block in the sidebar */
+.iv-side {
+  display: flex; align-items: center; gap: 12px;
+  padding: 6px 0 14px 0; border-bottom: 1px solid var(--iv-line); margin-bottom: 14px;
+}
+.iv-side img { width: 46px; height: 46px; flex: 0 0 auto; }
+.iv-side-text { display: flex; flex-direction: column; line-height: 1.25; }
+.iv-side-text strong {
+  font-family: Georgia, serif; font-size: 1.06rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--iv-text);
+}
+.iv-side-text span {
+  font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--iv-text-dim);
 }
 
-section[data-testid="stSidebar"] h1 {
-    font-size: 1.6em !important;
-    text-transform: none;
-    border-bottom: none;
+/* Sidebar stat grid */
+.iv-statgrid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+}
+.iv-statgrid > div {
+  background: var(--iv-panel-2); border: 1px solid var(--iv-line);
+  border-radius: 8px; padding: 8px 10px;
+}
+.iv-statgrid b {
+  display: block; font-size: 1.02rem; color: var(--iv-text);
+  font-variant-numeric: tabular-nums;
+}
+.iv-statgrid span {
+  font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--iv-text-dim);
 }
 
-/* Primary buttons — blood red */
-.stButton > button[kind="primary"],
+/* Header plate + meta line */
+.iv-plate {
+  display: flex; align-items: center; gap: 18px;
+  background: var(--iv-panel); border: 1px solid var(--iv-line);
+  border-radius: var(--iv-radius); padding: 18px 22px;
+}
+.iv-plate-title {
+  font-family: Georgia, serif; font-size: 1.6rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--iv-text);
+}
+.iv-plate-sub {
+  font-size: 0.74rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--iv-text-dim);
+}
+.iv-meta {
+  font-family: var(--iv-mono); font-size: 0.73rem; letter-spacing: 0.04em;
+  color: var(--iv-text-dim); margin: 6px 0 14px 2px;
+}
+
+/* Buttons: quiet iron by default, crimson only for the primary action */
 .stButton > button {
-    background: linear-gradient(135deg, #C8102E 0%, #9D00FF 100%) !important;
-    color: #FAFAFA !important;
-    border: 1px solid var(--iv-red) !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    transition: all 0.2s ease;
+  background: var(--iv-panel-2) !important;
+  color: var(--iv-text) !important;
+  border: 1px solid var(--iv-line) !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
-
 .stButton > button:hover {
-    background: linear-gradient(135deg, #FF1F44 0%, #C8102E 100%) !important;
-    border-color: var(--iv-red-hot) !important;
-    box-shadow: 0 0 18px rgba(200, 16, 46, 0.5) !important;
-    transform: translateY(-1px);
+  background: #26292e !important;
+  border-color: #4d5057 !important;
+  transform: translateY(-1px);
+}
+.stButton > button:active { transform: translateY(0); }
+.stButton > button:focus-visible {
+  outline: 2px solid var(--iv-accent) !important;
+  outline-offset: 2px;
+}
+.stButton > button[kind="primary"] {
+  background: var(--iv-accent) !important;
+  color: #16181b !important;
+  border-color: var(--iv-accent) !important;
+  font-weight: 650 !important;
+}
+.stButton > button[kind="primary"]:hover {
+  background: #e26674 !important;
+  border-color: #e26674 !important;
 }
 
 /* Tabs */
 .stTabs [data-baseweb="tab-list"] {
-    gap: 8px;
-    background: transparent;
-    border-bottom: 1px solid var(--iv-border);
+  gap: 6px; border-bottom: 1px solid var(--iv-line);
 }
-
 .stTabs [data-baseweb="tab"] {
-    background: var(--iv-bg-elev) !important;
-    color: var(--iv-text-dim) !important;
-    border: 1px solid var(--iv-border) !important;
-    border-radius: 4px 4px 0 0 !important;
-    padding: 8px 18px !important;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+  background: transparent !important;
+  color: var(--iv-text-dim) !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px 8px 0 0 !important;
+  padding: 8px 16px !important;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
-
 .stTabs [aria-selected="true"] {
-    background: linear-gradient(180deg, #C8102E 0%, #1a0a14 100%) !important;
-    color: #FAFAFA !important;
-    border-color: var(--iv-red) !important;
+  background: var(--iv-panel) !important;
+  color: var(--iv-text) !important;
+  border-color: var(--iv-line) !important;
+  border-bottom-color: var(--iv-panel) !important;
 }
 
-/* Text inputs and selectboxes — dark with red accent */
-.stTextInput input, .stTextArea textarea, .stSelectbox div[data-baseweb="select"] {
-    background: var(--iv-bg-elev) !important;
-    color: var(--iv-text) !important;
-    border: 1px solid var(--iv-border) !important;
-    caret-color: var(--iv-red) !important;
+/* Inputs */
+.stTextInput input, .stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] > div,
+.stNumberInput input {
+  background: var(--iv-panel-2) !important;
+  color: var(--iv-text) !important;
+  border: 1px solid var(--iv-line) !important;
+  border-radius: 8px !important;
+  caret-color: var(--iv-accent) !important;
+  font-size: 1rem !important;   /* >=16px stops iOS zooming on focus */
+}
+.stTextInput input:focus, .stTextArea textarea:focus,
+.stSelectbox div[data-baseweb="select"] > div:focus-within {
+  border-color: var(--iv-accent) !important;
+  box-shadow: 0 0 0 1px var(--iv-accent-soft) !important;
+}
+.stTextInput input::placeholder { color: #7d7a76 !important; }
+
+/* Prompt output */
+.stCodeBlock, .stCodeBlock pre, code, pre {
+  background: #0d0f11 !important;
+  border: 1px solid var(--iv-line) !important;
+  border-left: 3px solid var(--iv-accent) !important;
+  border-radius: 8px !important;
+  color: #e7e3dc !important;
+}
+.stCodeBlock code { font-family: var(--iv-mono) !important; font-size: 0.86rem !important; }
+
+/* Links */
+a { color: var(--iv-accent) !important; text-decoration: none; }
+a:hover { color: #e26674 !important; text-decoration: underline; }
+
+/* Alerts — keep Streamlit's colour semantics, retune the chrome */
+div[data-testid="stAlert"] {
+  border-radius: 8px !important;
+  border: 1px solid var(--iv-line) !important;
 }
 
-.stTextInput input:focus, .stTextArea textarea:focus, .stSelectbox div[data-baseweb="select"]:focus {
-    border-color: var(--iv-red-hot) !important;
-    box-shadow: 0 0 0 1px var(--iv-red) !important;
+/* Catalogue rows */
+.iv-row { padding: 9px 0 7px 0; }
+.iv-row-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.iv-name {
+  font-family: Georgia, serif; font-size: 1.02rem; color: var(--iv-text);
+  letter-spacing: 0.01em;
+}
+.iv-badge {
+  font-family: var(--iv-mono); font-size: 0.63rem; letter-spacing: 0.12em;
+  text-transform: uppercase; padding: 2px 7px; border-radius: 4px;
+  border: 1px solid var(--iv-line);
+}
+.iv-badge-profile { color: var(--iv-accent); border-color: rgba(216, 84, 99, 0.45); }
+.iv-badge-ref { color: var(--iv-text-dim); }
+.iv-row-sub {
+  font-size: 0.76rem; letter-spacing: 0.02em; color: var(--iv-text-dim);
+  margin-top: 3px;
+}
+.iv-row-desc {
+  font-size: 0.78rem; color: #9c9892; margin-top: 4px; max-width: 74ch;
+}
+.iv-row-src { font-size: 0.7rem; margin-top: 4px; }
+.iv-rule { height: 1px; background: var(--iv-line); opacity: 0.55; }
+
+/* Genre counts table */
+.iv-counts {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 6px; margin: 8px 0 4px 0;
+}
+.iv-counts > div {
+  display: flex; justify-content: space-between; gap: 10px;
+  background: var(--iv-panel); border: 1px solid var(--iv-line);
+  border-radius: 7px; padding: 6px 10px; font-size: 0.8rem;
+}
+.iv-counts span { color: var(--iv-text-dim); }
+.iv-counts b { color: var(--iv-text); font-variant-numeric: tabular-nums; }
+
+/* Expanders */
+details, div[data-testid="stExpander"] {
+  border: 1px solid var(--iv-line) !important;
+  border-radius: 8px !important;
+  background: var(--iv-panel) !important;
 }
 
-/* Sliders */
-.stSlider [data-baseweb="slider"] [role="slider"] {
-    background: var(--iv-red) !important;
+/* Narrow screens: tighten padding, keep controls full width */
+@media (max-width: 640px) {
+  .iv-plate { padding: 12px 14px; gap: 12px; }
+  .iv-plate-title { font-size: 1.2rem; }
+  .iv-statgrid { grid-template-columns: 1fr 1fr; }
+  .iv-counts { grid-template-columns: 1fr; }
+  .stTabs [data-baseweb="tab"] { padding: 7px 10px !important; font-size: 0.86rem; }
 }
 
-/* Code blocks */
-.stCodeBlock, code, pre {
-    background: #0a0a0a !important;
-    border: 1px solid var(--iv-border) !important;
-    border-left: 3px solid var(--iv-red) !important;
-}
-
-/* Markdown links */
-a { color: var(--iv-red) !important; }
-a:hover { color: var(--iv-red-hot) !important; }
-
-/* Wolf-header hero (rendered as raw HTML) */
-.iv-hero {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--iv-border);
-    margin-bottom: 20px;
-}
-.iv-hero img { width: 80px; height: 80px; }
-
-/* Wolf animation — applied to the <img> wrapper, not the SVG internals.
-   This animates the WHOLE rendered image (including the eyes), so the
-   wolf appears to pulse/float even though the SVG file is static. */
-@keyframes wolfGlow {
-  0%, 100% { filter: drop-shadow(0 0 4px rgba(200, 16, 46, 0.6)) drop-shadow(0 0 8px rgba(200, 16, 46, 0.3)); }
-  50%      { filter: drop-shadow(0 0 12px rgba(255, 31, 68, 0.95)) drop-shadow(0 0 24px rgba(200, 16, 46, 0.7)); }
-}
-@keyframes wolfFloat {
-  0%, 100% { transform: translateY(0px); }
-  50%      { transform: translateY(-3px); }
-}
-.iv-hero img {
-  animation: wolfGlow 2.4s ease-in-out infinite,
-             wolfFloat 4s ease-in-out infinite;
-  will-change: filter, transform;
-}
-
-/* Sidebar wolf — same animation, smaller scale */
-[data-testid="stSidebar"] .iv-hero img {
-  width: 60px; height: 60px;
-  animation: wolfGlow 2.6s ease-in-out infinite,
-             wolfFloat 4.4s ease-in-out infinite;
-}
-.iv-hero-text h1 {
-    margin: 0;
-    font-size: 2.2em;
-    border: none;
-    background: linear-gradient(135deg, #FAFAFA 0%, #C8102E 50%, #9D00FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-transform: uppercase;
-}
-.iv-hero-text .iv-tag {
-    color: var(--iv-text-dim);
-    font-style: italic;
-    font-size: 1.1em;
-    margin-top: 4px;
-    letter-spacing: 0.04em;
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

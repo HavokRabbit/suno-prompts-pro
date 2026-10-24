@@ -1,0 +1,3662 @@
+{
+  "category": "bedroom",
+  "label": "Bedroom pop / lo-fi indie",
+  "genre_labels": [
+    "bedroom pop",
+    "lo-fi music",
+    "lo-fi",
+    "dream pop",
+    "slacker rock"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"bedroom pop\"@en \"lo-fi music\"@en \"lo-fi\"@en \"dream pop\"@en \"slacker rock\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q37150",
+      "name": "Lana Del Rey",
+      "musicbrainz_id": "b7539c32-53e7-4908-bda3-81449c367da6",
+      "description": "American singer-songwriter (born 1985)",
+      "sitelinks": 159,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q31164",
+      "name": "Ellie Goulding",
+      "musicbrainz_id": "33ca19f4-18c8-4411-98df-ac23890ce9f5",
+      "description": "English singer and songwriter (born 1986)",
+      "sitelinks": 77,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q13476175",
+      "name": "Lorde",
+      "musicbrainz_id": "8e494408-8620-4c6a-82c2-c2ca4a1e4f12",
+      "description": "New Zealand singer, songwriter and producer (born 1996)",
+      "sitelinks": 75,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q541599",
+      "name": "Dolores O'Riordan",
+      "musicbrainz_id": "13c10976-99f1-4cb4-8fbe-56067e91d865",
+      "description": "Irish musician (1971–2018)",
+      "sitelinks": 74,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q483810",
+      "name": "The Cranberries",
+      "musicbrainz_id": "c98d40fd-f6cf-4b26-883e-eaa515ee2851",
+      "description": "Irish musical group; rock band",
+      "sitelinks": 72,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q28561969",
+      "name": "XXXTentacion",
+      "musicbrainz_id": "61af87f4-16ee-4431-8504-cc06187079fb",
+      "description": "American rapper (1998–2018)",
+      "sitelinks": 68,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q485820",
+      "name": "Blur",
+      "musicbrainz_id": "ba853904-ae25-4ebb-89d6-c44cfbd71bd2",
+      "description": "English alternative rock band",
+      "sitelinks": 62,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q298209",
+      "name": "Willow Smith",
+      "musicbrainz_id": "6bbfc71b-5f18-4e61-82fb-bee0c2a6b5f9",
+      "description": "American singer-songwriter and actress (born 2000)",
+      "sitelinks": 56,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q11901",
+      "name": "Beck",
+      "musicbrainz_id": "309c62ba-7a22-4277-9f67-4a162526d18a",
+      "description": "American musician (born 1970)",
+      "sitelinks": 54,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1362028",
+      "name": "Troye Sivan",
+      "musicbrainz_id": "e5712ceb-c37a-4c49-a11c-ccf4e21852d4",
+      "description": "Australian singer-songwriter and actor",
+      "sitelinks": 54,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q106301562",
+      "name": "Gracie Abrams",
+      "musicbrainz_id": "f7441bc7-d7de-4813-a2fc-31a4033d396d",
+      "description": "American singer-songwriter (born 1999)",
+      "sitelinks": 51,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q309555",
+      "name": "Michael Cera",
+      "musicbrainz_id": "8c89b52a-89f1-48cf-9246-fac3591c932c",
+      "description": "Canadian actor",
+      "sitelinks": 51,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q29388200",
+      "name": "Lil Peep",
+      "musicbrainz_id": "92da4329-77a4-425c-8e92-4280110cace9",
+      "description": "American rapper (1996–2017)",
+      "sitelinks": 48,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q210428",
+      "name": "Elliott Smith",
+      "musicbrainz_id": "03ad1736-b7c9-412a-b442-82536d63a5c4",
+      "description": "American musician (1969–2003)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117970",
+      "name": "Grimes",
+      "musicbrainz_id": "7e5a2a59-6d9f-4a17-b7c2-e1eedb7bd222",
+      "description": "Canadian musician, singer, record producer and music video director (born 1988)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q9619",
+      "name": "Tame Impala",
+      "musicbrainz_id": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+      "description": "Australian musical group; psychedelic rock musical project",
+      "sitelinks": 43,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q588820",
+      "name": "Cocteau Twins",
+      "musicbrainz_id": "000fc734-b7e1-4a01-92d1-f544261b43f5",
+      "description": "Scottish rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q270724",
+      "name": "Lykke Li",
+      "musicbrainz_id": "cc7d4686-ea02-45fd-956e-94c1a322558c",
+      "description": "Swedish singer",
+      "sitelinks": 39,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q849875",
+      "name": "Neutral Milk Hotel",
+      "musicbrainz_id": "a506f761-2c22-4b2f-8a94-bd748c2c8f75",
+      "description": "American indie rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q952337",
+      "name": "Hooverphonic",
+      "musicbrainz_id": "62dc94cc-f611-4345-87cb-b914796a4a45",
+      "description": "Belgian band",
+      "sitelinks": 38,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q233944",
+      "name": "Kerli",
+      "musicbrainz_id": "acf295f0-a10c-4c6a-ad0b-b01f82009153",
+      "description": "Estonian singer and songwriter (born 1987)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q841042",
+      "name": "My Bloody Valentine",
+      "musicbrainz_id": "8ca01f46-53ac-4af2-8516-55a909c0905e",
+      "description": "Irish alternative rock band",
+      "sitelinks": 38,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q23826617",
+      "name": "Joji",
+      "musicbrainz_id": "8264722b-df00-467a-858e-5c97cda169c9",
+      "description": "Japanese-Australian entertainer (born 1992)",
+      "sitelinks": 37,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q615471",
+      "name": "M83",
+      "musicbrainz_id": "6d7b7cd4-254b-4c25-83f6-dd20f98ceacd",
+      "description": "French electronic music band (formed 2001)",
+      "sitelinks": 36,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q107570416",
+      "name": "PinkPantheress",
+      "musicbrainz_id": "7441014f-f8f5-494f-81db-ff166fbc078d",
+      "description": "British singer-songwriter",
+      "sitelinks": 36,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q14517",
+      "name": "Mac DeMarco",
+      "musicbrainz_id": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+      "description": "Canadian musician",
+      "sitelinks": 35,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q431355",
+      "name": "Modest Mouse",
+      "musicbrainz_id": "a96ac800-bfcb-412a-8a63-0a98df600700",
+      "description": "American rock band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q62140662",
+      "name": "girl in red",
+      "musicbrainz_id": "4ae429fe-735c-4968-8253-a591421b1bd0",
+      "description": "Norwegian musician (born 1999)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "dream pop",
+        "bedroom pop",
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q52433533",
+      "name": "Clairo",
+      "musicbrainz_id": "d786f59b-1836-4ddb-8393-ab753edbe984",
+      "description": "American singer-songwriter (born 1998)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "lo-fi music",
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q230484",
+      "name": "Imogen Heap",
+      "musicbrainz_id": "328d146c-79f1-4eb6-9e40-8ee5710c14e5",
+      "description": "British musician (born 1977)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q433060",
+      "name": "Daniel Johnston",
+      "musicbrainz_id": "8a7ca8b0-d23c-4eff-8fe9-6220ba5c9c76",
+      "description": "American musician (1961–2019)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q66817366",
+      "name": "Beabadoobee",
+      "musicbrainz_id": "88d17133-abbc-42db-9526-4e2c1db60336",
+      "description": "British singer",
+      "sitelinks": 29,
+      "matched_genres": [
+        "slacker rock",
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q368354",
+      "name": "Richard Ashcroft",
+      "musicbrainz_id": "2d1d8985-47bc-4244-8cc3-577584e411f6",
+      "description": "English singer-songwriter",
+      "sitelinks": 29,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q810695",
+      "name": "Bat for Lashes",
+      "musicbrainz_id": "10000730-525f-4ed5-aaa8-92888f060f5f",
+      "description": "English singer-songwriter and multi-instrumentalist",
+      "sitelinks": 27,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q812842",
+      "name": "Beach House",
+      "musicbrainz_id": "d5cc67b8-1cc4-453b-96e8-44487acdebea",
+      "description": "American dream pop duo",
+      "sitelinks": 27,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1132765",
+      "name": "Mazzy Star",
+      "musicbrainz_id": "c48d4327-8122-4286-af66-05e1ee6ac4d8",
+      "description": "American alternative rock band",
+      "sitelinks": 27,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2117518",
+      "name": "Ween",
+      "musicbrainz_id": "c0eee88b-47f2-4cd2-ac48-a045e902a432",
+      "description": "American alternative rock band",
+      "sitelinks": 27,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q258761",
+      "name": "Liz Phair",
+      "musicbrainz_id": "149326c2-b8a3-48e3-b3d2-9b5b9593127f",
+      "description": "American musician (born 1967)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q455147",
+      "name": "Susanne Sundfør",
+      "musicbrainz_id": "f3f9e76a-0685-4a9a-97d1-6fa2b50f9fba",
+      "description": "Norwegian singer",
+      "sitelinks": 25,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q885016",
+      "name": "Blonde Redhead",
+      "musicbrainz_id": "6821bf3f-5d5b-4b0f-8fa4-79d2ab2d9219",
+      "description": "American indie rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q22080761",
+      "name": "Car Seat Headrest",
+      "musicbrainz_id": "0fabbc1d-8d94-4a61-bd1d-1099ad1e4559",
+      "description": "American indie rock band",
+      "sitelinks": 21,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2369235",
+      "name": "Pyotr Mamonov",
+      "musicbrainz_id": "9079304f-3219-479d-9b3a-398b71038166",
+      "description": "Russian actor and singer (1951-2021)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q46994463",
+      "name": "Rex Orange County",
+      "musicbrainz_id": "883cbf1f-dcaa-4d17-b9ed-394e1fdabc87",
+      "description": "British singer-songwriter (born 1998)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5951242",
+      "name": "Lil B",
+      "musicbrainz_id": "1550f952-c91b-40d7-9b4d-d26a259ee932",
+      "description": "American rapper from California",
+      "sitelinks": 20,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q659238",
+      "name": "Ariel Pink",
+      "musicbrainz_id": "4ac6c2fd-daad-4c31-b266-017c79d2e9a9",
+      "description": "American musician, singer, and songwriter (born 1978)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q921679",
+      "name": "Jason Molina",
+      "musicbrainz_id": "5aea6812-544c-4a64-bd3d-62c0dd3243a1",
+      "description": "American singer-songwriter",
+      "sitelinks": 19,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q639424",
+      "name": "The Whitest Boy Alive",
+      "musicbrainz_id": "f83781c8-64f9-4657-85bd-51f74d195cfd",
+      "description": "band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q862005",
+      "name": "Bill Callahan",
+      "musicbrainz_id": "c309d914-93af-4b3f-8058-d79c75ea89da",
+      "description": "American singer-songwriter and guitarist (1966-)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1472033",
+      "name": "Guided by Voices",
+      "musicbrainz_id": "6c85f4c3-026c-4c16-9a7c-f546f42ed0fb",
+      "description": "American indie rock band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q21931273",
+      "name": "Johnny Orlando",
+      "musicbrainz_id": "e8608780-e53e-4a09-9443-1e9ead1df35e",
+      "description": "Canadian singer-songwriter (born 2003)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q32361743",
+      "name": "Monetochka",
+      "musicbrainz_id": "30fcffbe-1083-4e3e-b85a-9b184b97d09f",
+      "description": "Russian singer-songwriter",
+      "sitelinks": 18,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q289569",
+      "name": "Elizabeth Fraser",
+      "musicbrainz_id": "0bf0cabe-def2-4113-8dc5-6e721b9c3a92",
+      "description": "Scottish singer (born 1963)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q30201990",
+      "name": "Pedro Fernando",
+      "musicbrainz_id": "5237eccf-4f58-4ee2-b9ef-b5a02a5eb454",
+      "description": "Angolan rapper",
+      "sitelinks": 17,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7617018",
+      "name": "Still Corners",
+      "musicbrainz_id": "ea5493df-b8d9-4c89-bd5b-6c4aeba7a0ac",
+      "description": "American/British dream pop duo",
+      "sitelinks": 17,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1754136",
+      "name": "This Mortal Coil",
+      "musicbrainz_id": "60ef8ddb-7676-4056-a357-9a8c228d03a6",
+      "description": "band",
+      "sitelinks": 17,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q96308743",
+      "name": "Boy Pablo",
+      "musicbrainz_id": "512171a4-d41a-4df6-838d-de0a47aea068",
+      "description": "Norwegian band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q28104185",
+      "name": "Japanese Breakfast",
+      "musicbrainz_id": "8c529495-91f5-4e2f-b71b-adcb66878d04",
+      "description": "American solo musical project",
+      "sitelinks": 16,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q89069821",
+      "name": "Powfu",
+      "musicbrainz_id": "bfb7bc12-4b79-412f-8303-ad6d7c772aca",
+      "description": "Canadian rapper and singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3928560",
+      "name": "Rachel Goswell",
+      "musicbrainz_id": "80e91439-21f6-4a0a-84f8-23be4cd48549",
+      "description": "British singer-songwriter",
+      "sitelinks": 16,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1036131",
+      "name": "Dan Snaith",
+      "musicbrainz_id": "859216c4-5d01-479b-b6c3-e20cc591a86a",
+      "description": "Canadian mathematician and composer who has performed as Manitoba, Daphni and Caribou",
+      "sitelinks": 15,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5455118",
+      "name": "Fishmans",
+      "musicbrainz_id": "d0f25f16-7782-42e8-8047-c16a1cb2b450",
+      "description": "Japanese rock band (1987-)",
+      "sitelinks": 15,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q21004712",
+      "name": "Kevin Abstract",
+      "musicbrainz_id": "3cd2e1c5-e7ff-4bc8-b281-1e3059d128d6",
+      "description": "American rapper and singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q66809901",
+      "name": "Mxmtoon",
+      "musicbrainz_id": "ccbced49-2689-46f8-9101-1c265d6f7b8f",
+      "description": "American singer-songwriter and YouTuber",
+      "sitelinks": 15,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q85807852",
+      "name": "The Marías",
+      "musicbrainz_id": "7a3970c9-ecd8-4eee-a267-4d8c77d97ff3",
+      "description": "American band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q816079",
+      "name": "Belly",
+      "musicbrainz_id": "c118bc97-11a7-41dc-a55e-48c3bcf22ac2",
+      "description": "American band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1003115",
+      "name": "Built to Spill",
+      "musicbrainz_id": "3ac482b8-1494-4071-a0e9-f192f9d2c2b0",
+      "description": "American indie rock band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "lo-fi music",
+        "slacker rock"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q86383347",
+      "name": "Chloe Moriondo",
+      "musicbrainz_id": "6c2cd859-b792-4258-8ede-402c5dcf8b90",
+      "description": "American singer-songwriter and YouTuber",
+      "sitelinks": 14,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4241219",
+      "name": "Chrystabell",
+      "musicbrainz_id": "6d44a488-28e8-47dd-bed7-bbe09bd5a80b",
+      "description": "American singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1138865",
+      "name": "Cranes",
+      "musicbrainz_id": "f6dfc44d-5da4-4ed1-949b-32715630dff4",
+      "description": "band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q50415953",
+      "name": "JPEGMafia",
+      "musicbrainz_id": "680f0fa0-e465-44b0-be81-2fedb99e54a2",
+      "description": "American rapper and record producer (born 1989)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q25344715",
+      "name": "LANY",
+      "musicbrainz_id": "f1cc066a-6dd1-4b18-ae68-3708472ab4b1",
+      "description": "American musical group; indie pop band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q583398",
+      "name": "Bel Canto",
+      "musicbrainz_id": "7537c506-c49b-47a8-a313-4ece139a9ddd",
+      "description": "Norwegian musical group",
+      "sitelinks": 13,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q45964015",
+      "name": "Pale Waves",
+      "musicbrainz_id": "323454b0-ec2b-4433-8477-2e81ddaac9ef",
+      "description": "British band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2120656",
+      "name": "Tune-Yards",
+      "musicbrainz_id": "fac3ff34-6ba4-425a-8f01-b181ef4a908a",
+      "description": "American music project",
+      "sitelinks": 13,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q758381",
+      "name": "Au Revoir Simone",
+      "musicbrainz_id": "e7ad821c-7168-4f98-8998-84e8a12de9e2",
+      "description": "band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2905411",
+      "name": "Black Lips",
+      "musicbrainz_id": "e940d7a3-01d0-468c-86ea-5dc4d89dcf80",
+      "description": "American rock band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1467927",
+      "name": "Sebadoh",
+      "musicbrainz_id": "d98c8149-0c01-4151-93e1-48fdc3d5027f",
+      "description": "Indie rock band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "slacker rock"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4037708",
+      "name": "Duster",
+      "musicbrainz_id": "879d43c6-13a8-42f6-b8df-a9b7d50aa9e2",
+      "description": "space rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q527019",
+      "name": "Maximilian Hecker",
+      "musicbrainz_id": "256f09e5-43f4-4b3d-836c-2cc9283d22c0",
+      "description": "German musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4046815",
+      "name": "Phantogram",
+      "musicbrainz_id": "dfe78af2-779e-4137-826a-3073a16e3278",
+      "description": "American electronic rock duo",
+      "sitelinks": 11,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q14594632",
+      "name": "Say Lou Lou",
+      "musicbrainz_id": "aa658e4f-3c9c-40c1-b412-c462accacf65",
+      "description": "twin sister musical duo from Australia and Sweden",
+      "sitelinks": 11,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q28739912",
+      "name": "The Japanese House",
+      "musicbrainz_id": "5db88fae-df24-490e-971a-1b3fe8d373ea",
+      "description": "Indie pop project from Buckinghamshire fronted by multi-instrumentalist Amber Bain",
+      "sitelinks": 11,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7926834",
+      "name": "Victoria Legrand",
+      "musicbrainz_id": "a06e38d2-2510-4729-b731-56e83fb9dfcc",
+      "description": "singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q110852201",
+      "name": "underscores",
+      "musicbrainz_id": "ab1a3f85-e0ea-470a-af5c-175447ae774c",
+      "description": "American musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q653863",
+      "name": "Flëur",
+      "musicbrainz_id": "cbd47e2d-b0c1-4004-9a37-95187982463f",
+      "description": "rock band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q542977",
+      "name": "Two Gallants",
+      "musicbrainz_id": "7095f4e4-1f60-4098-a4ad-8fc451a8ee76",
+      "description": "American musicial group",
+      "sitelinks": 10,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4019781",
+      "name": "Wild Nothing",
+      "musicbrainz_id": "a181595e-5b84-4439-a5f4-f548ddfb64df",
+      "description": "American musical group",
+      "sitelinks": 10,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q99975999",
+      "name": "polnalyubvi",
+      "musicbrainz_id": "bdc05c8d-0b70-4b7d-8c99-f9d78e4626d4",
+      "description": "Russian musician (born 2000)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4036698",
+      "name": "Crosses",
+      "musicbrainz_id": "7a10215e-b32f-4b77-b9cc-d90531a3968f",
+      "description": "American band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4294173",
+      "name": "Maria Minerva",
+      "musicbrainz_id": "1f0691a9-d8c1-45ac-8525-9ecfb70a7bce",
+      "description": "Estonian musician (born 1988)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q38988187",
+      "name": "Okay Kaya",
+      "musicbrainz_id": "d59ffaee-fcb3-4607-b680-4013b80fd9be",
+      "description": "Norwegian-American musician and actress",
+      "sitelinks": 9,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7782904",
+      "name": "Theresa Wayman",
+      "musicbrainz_id": "a1816e0d-1a90-4136-94b4-27f4b48308a8",
+      "description": "American musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3561554",
+      "name": "Vivian Girls",
+      "musicbrainz_id": "d0676301-7ffc-4ff6-8b38-f8aeb8553115",
+      "description": "American band from Brooklyn",
+      "sitelinks": 9,
+      "matched_genres": [
+        "lo-fi music",
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q24851869",
+      "name": "Alexandra Savior",
+      "musicbrainz_id": "0a8cf03f-a01a-4774-8c01-bd031389c99e",
+      "description": "Singer/Songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q688845",
+      "name": "Armor for Sleep",
+      "musicbrainz_id": "a5be6906-b6ad-43af-ae65-ec4f9aa6c40b",
+      "description": "American rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q794353",
+      "name": "Azure Ray",
+      "musicbrainz_id": "eeee6fb2-d69a-42e2-af8a-9899957abf70",
+      "description": "American dream pop duo",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q373354",
+      "name": "Dean Wareham",
+      "musicbrainz_id": "a21a3ff2-064c-452d-8aea-3d4039ab70d6",
+      "description": "New Zealand-American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2064339",
+      "name": "Elsiane",
+      "musicbrainz_id": "5f602a69-a025-405e-9336-29f9e8d713d3",
+      "description": "band that plays electronic music",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q29325369",
+      "name": "Hazel English",
+      "musicbrainz_id": "ef67a875-9e45-4057-b91d-56c4e744d901",
+      "description": "Australian musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2583997",
+      "name": "Mellowdrone",
+      "musicbrainz_id": "c76b467a-500e-4de5-8416-e2ad81e4857f",
+      "description": "American rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7532377",
+      "name": "Sivan Levy",
+      "musicbrainz_id": "d0aa7f1a-40a0-4405-abc8-dbb8478974c3",
+      "description": "Israeli singer-songwriter, film director and actress",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q39058100",
+      "name": "Surf Curse",
+      "musicbrainz_id": "89ea85c2-c90a-46ea-93db-9bed95d5c8f8",
+      "description": "American musical group",
+      "sitelinks": 8,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18205296",
+      "name": "The Away Days",
+      "musicbrainz_id": "27c998ef-1181-4336-8989-607a2903b4d4",
+      "description": "Turkish dream pop band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q125546993",
+      "name": "Wisp",
+      "musicbrainz_id": "344ea5a5-487d-4424-ae96-889989fe5afd",
+      "description": "American shoegaze musician (born 2004)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q951225",
+      "name": "Zvuki Mu",
+      "musicbrainz_id": "8ca6af1c-9599-45dc-896e-691b168e7233",
+      "description": "Russian rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q138337412",
+      "name": "Bella Kay",
+      "musicbrainz_id": "acd1a23c-eba0-4d76-8b92-109d404d5531",
+      "description": "American singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4173662",
+      "name": "Egor i Opizdenevshie",
+      "musicbrainz_id": "88cedeb5-f67b-4207-ba96-42ed15338d4b",
+      "description": "psychedelic side project by Yegor Letov",
+      "sitelinks": 7,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117792391",
+      "name": "Nuit Incolore",
+      "musicbrainz_id": "a3d283c0-92ad-4fa0-ae79-eada9d807c04",
+      "description": "Swiss singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3816374",
+      "name": "Tennis",
+      "musicbrainz_id": "a8982cb0-7886-4e60-9f6a-3b71baa370e6",
+      "description": "American indie pop band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "dream pop",
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3092145",
+      "name": "The Unicorns",
+      "musicbrainz_id": "603c5f9f-492a-4f21-9d6f-1642a5dbea2d",
+      "description": "rock band from Montreal, Canada",
+      "sitelinks": 7,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q122227507",
+      "name": "Asian Glow",
+      "musicbrainz_id": "416a8fc2-076b-4d9f-b972-a067e6b80e04",
+      "description": "South Korean rock musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "slacker rock"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18718990",
+      "name": "Colleen Green",
+      "musicbrainz_id": "1bddbc20-a142-497b-8768-8ced01d46fb4",
+      "description": "American musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5280973",
+      "name": "Dirty Beaches",
+      "musicbrainz_id": "ff9fe073-0ccc-481e-bcd5-bc26ce15897c",
+      "description": "musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q19878055",
+      "name": "Ego Plum",
+      "musicbrainz_id": "d47c04ad-4d54-4b19-925e-51c4f16b7e55",
+      "description": "American composer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q79269651",
+      "name": "Kedr Livanskiy",
+      "musicbrainz_id": "0eba6174-335a-41a6-b51a-661998e682a7",
+      "description": "Russian electronic musician, singer-songwriter, record producer and DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6764146",
+      "name": "Marine Girls",
+      "musicbrainz_id": "4d9c3ade-ba9a-47ad-80bd-9f9e84b4abe1",
+      "description": "English post-punk group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7422105",
+      "name": "Sarah Blackwood",
+      "musicbrainz_id": "588e1531-6d5c-461f-91db-a3865929080a",
+      "description": "English musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3514534",
+      "name": "Tall Dwarfs",
+      "musicbrainz_id": "a5239c4f-0eb4-42d7-bf39-0fe186a7a81a",
+      "description": "New Zealand band from Dunedin",
+      "sitelinks": 6,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q29287816",
+      "name": "Vision Eternel",
+      "musicbrainz_id": "b7cf43cb-a740-4bbc-a2e1-0f8b4473157b",
+      "description": "Canadian-American melogaze band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1017714",
+      "name": "Faunts",
+      "musicbrainz_id": "9aae9381-7d0f-449a-be59-2c004d668052",
+      "description": "electronic rock band from Edmonton, Alberta, Canada",
+      "sitelinks": 5,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q115483976",
+      "name": "Hemlocke Springs",
+      "musicbrainz_id": "45859d30-a45b-4cc6-b9ba-85607dcc2819",
+      "description": "American singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7519623",
+      "name": "Simon Raymonde",
+      "musicbrainz_id": "54cf21b1-9a02-4a75-a029-3a66db21c545",
+      "description": "British musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7729760",
+      "name": "The Depreciation Guild",
+      "musicbrainz_id": "4abec6e9-1b68-4b47-b157-2cb92b4c3f64",
+      "description": "American dream pop and shoegazing band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q11897643",
+      "name": "Times New Viking",
+      "musicbrainz_id": "b1c76fbc-2ce7-4437-bc7b-2f03b9a73157",
+      "description": "American band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18719132",
+      "name": "Turnover",
+      "musicbrainz_id": "3a4c8052-7c20-473f-8b41-c3a081cbeb13",
+      "description": "American rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q123125515",
+      "name": "Wave to Earth",
+      "musicbrainz_id": "89e95aa3-bd49-4af3-9c87-0d88b2093bb0",
+      "description": "South Korean musical group; indie rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4727002",
+      "name": "Alison's Halo",
+      "musicbrainz_id": "623977a4-2525-4668-8966-f255dd19700e",
+      "description": "Musical group in Tempe, Arizona",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4930295",
+      "name": "Bluedawn",
+      "musicbrainz_id": "73b5403b-1100-4e4d-8d9f-78896737d6b0",
+      "description": "South Korean musical duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q65172216",
+      "name": "Bùi Lan Hương",
+      "musicbrainz_id": "cfd6a81d-aade-4759-a3cd-9b43c8af5274",
+      "description": "Vietnamese singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q1102074",
+      "name": "Devics",
+      "musicbrainz_id": "2cce570a-2a0b-46fa-ad23-7daccae26f87",
+      "description": "band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q30223620",
+      "name": "Emily Kokal",
+      "musicbrainz_id": "bd533fba-77a6-481c-8056-c71b9cf16b2f",
+      "description": "American singer and musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5367991",
+      "name": "Flipper's Guitar",
+      "musicbrainz_id": "9f06d736-81b9-4cc5-b101-caed4e1ef9b8",
+      "description": "Japanese band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q97168102",
+      "name": "Jawny",
+      "musicbrainz_id": "db3de4ac-af35-49b1-92c1-10a932c7ef59",
+      "description": "American singer, songwriter and record producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "slacker rock",
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q110261472",
+      "name": "Kevin Kaarl",
+      "musicbrainz_id": "8c1ca06b-b983-4614-8e57-9d0839b16017",
+      "description": "Mexican singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6862175",
+      "name": "Mimi Page",
+      "musicbrainz_id": "a87a6d42-4cd1-48ed-b3a1-9d5d4d03e306",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q48955194",
+      "name": "My",
+      "musicbrainz_id": "96452d3f-054d-47bd-a817-f3f5ecd091ac",
+      "description": "Russian musical band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4122608",
+      "name": "Olena Voinarovska",
+      "musicbrainz_id": "940f4137-14ca-46e4-bd4f-882f51e4fe9c",
+      "description": "Ukrainian composer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q512304",
+      "name": "Pilar Homem de Melo",
+      "musicbrainz_id": "145f26a4-95da-4acd-acfb-3190de6b0f56",
+      "description": "Portuguese musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q106842611",
+      "name": "Requin Chagrin",
+      "musicbrainz_id": "4c0d19d4-5c46-4e2e-8d17-1c9483df259d",
+      "description": "French musical band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q27926926",
+      "name": "Rotem Or",
+      "musicbrainz_id": "5b9e6e72-411d-4704-8819-ac55d4dfa0e8",
+      "description": "Israeli singer-songwriter and producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18163603",
+      "name": "SALES",
+      "musicbrainz_id": "597d6d84-0316-4e7b-8649-20c576dac29f",
+      "description": "American guitar-based pop band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q105758519",
+      "name": "Shiloh Dynasty",
+      "musicbrainz_id": "858a6f6e-e531-4d99-a4b8-e15e01ee6f76",
+      "description": "American indie singer-songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117468606",
+      "name": "Softcult",
+      "musicbrainz_id": "321eaf5a-be21-4faf-a7a0-0a4e59e5ee29",
+      "description": "Canadian grunge duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139037843",
+      "name": "Tiffany Day",
+      "musicbrainz_id": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
+      "description": "American singer and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7998825",
+      "name": "Widowspeak",
+      "musicbrainz_id": "ef9d28db-a1b7-4957-aa79-ed289a77ce10",
+      "description": "American indie dream rock band from Brooklyn, New York City",
+      "sitelinks": 4,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4086645",
+      "name": "Willis Earl Beal",
+      "musicbrainz_id": "ceb097e2-1602-4f53-b01d-043e408fd42c",
+      "description": "American singer-songwriter, producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q29097301",
+      "name": "Adult Mom",
+      "musicbrainz_id": "05ff5cc0-7f2d-45d5-9c6d-6913c7ed6049",
+      "description": "American pop band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bedroom pop",
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q26703693",
+      "name": "Alex Scally",
+      "musicbrainz_id": "2bc0d70f-d569-4158-ace7-001566b16d9f",
+      "description": "musical artist",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16486974",
+      "name": "Bokka",
+      "musicbrainz_id": "4d58b0cc-5260-4cc9-a6ce-46a0a9641d29",
+      "description": "Polish musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q102497386",
+      "name": "Claud Mintz",
+      "musicbrainz_id": "34f3e890-c917-4ee1-b859-b22c48e2a42c",
+      "description": "American musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q109313219",
+      "name": "Cupido",
+      "musicbrainz_id": "6bb079e7-a4bc-4d07-9dee-96e1e8989a75",
+      "description": "Spanish music group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q110929580",
+      "name": "Dora Jar",
+      "musicbrainz_id": "48b47eec-4c29-4fe2-b2e0-853a3204cd38",
+      "description": "American bedroom pop musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q22312886",
+      "name": "Gengahr",
+      "musicbrainz_id": "bbfee68d-1544-47cb-be5a-98e879bbe3ad",
+      "description": "English indie rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6189141",
+      "name": "Jets Overhead",
+      "musicbrainz_id": "f86ef5af-7cd7-4c68-ba3d-6622021e5921",
+      "description": "Canadian band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q104862108",
+      "name": "Jordana",
+      "musicbrainz_id": "267a9b25-c50b-4f6b-a84d-62a68aab437d",
+      "description": "American pop musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "lo-fi music",
+        "bedroom pop",
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q65209730",
+      "name": "Júlia",
+      "musicbrainz_id": "ec124cae-8cba-4556-b95b-0b3f2e72a345",
+      "description": "dream pop duo from Alcoy (Valencian Community, Spain).",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q40477453",
+      "name": "Kamferdrops",
+      "musicbrainz_id": "dfbf4842-a239-4a56-bc6d-6e5ad339c14b",
+      "description": "Norwegian female singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6523003",
+      "name": "Lenny Valentino",
+      "musicbrainz_id": "69945378-2fd8-41c1-8dfb-ab0dd3370d90",
+      "description": "Polish dream pop band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6691331",
+      "name": "Love Spirals Downwards",
+      "musicbrainz_id": "34b69232-264f-419d-ad62-47d362e2c308",
+      "description": "American musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6815769",
+      "name": "Memoryhouse",
+      "musicbrainz_id": "86e511e5-74b7-49bc-b282-5947358541cb",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q101244910",
+      "name": "Mia Wray",
+      "musicbrainz_id": "cfb7ba21-c1ee-4d0e-a1c9-4800616d95d6",
+      "description": "Australian pop musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4383558",
+      "name": "Olga Pulatova",
+      "musicbrainz_id": "45011843-04c9-4e16-9187-61d859a1881b",
+      "description": "Ukrainian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q15918061",
+      "name": "Postiljonen",
+      "musicbrainz_id": "32467888-3954-4f17-b2c5-9c4fc9677596",
+      "description": "Swedish/Norwegian musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q47506210",
+      "name": "Shitkid",
+      "musicbrainz_id": "067dfe5e-2b6b-443d-b92f-0c9af3ebc8d1",
+      "description": "Swedish musical duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7680924",
+      "name": "Tamaryn",
+      "musicbrainz_id": "ec0b5da9-c023-45b7-b5ac-f53657a42938",
+      "description": "American singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q13944790",
+      "name": "The Honey Trees",
+      "musicbrainz_id": "d75200f2-1993-446c-86c7-8e27121232f9",
+      "description": "American dream pop band from Sacramento and San Luis Obispo, and consisted of Becky Filip and Jacob Wick",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7754662",
+      "name": "The Ocean Blue",
+      "musicbrainz_id": "ec091c5c-cb67-47e7-a2c9-e61ec1afc17a",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q115758193",
+      "name": "Uvula",
+      "musicbrainz_id": "87d4b67a-ec0e-463e-8044-767c5e0dc3b4",
+      "description": "Russian indie-rock group from St. Petersburg",
+      "sitelinks": 3,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q104013088",
+      "name": "Ayane Yamazaki",
+      "musicbrainz_id": "d7cb6a18-f54e-419a-8c7e-6756e12968ff",
+      "description": "Japanese singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q120727626",
+      "name": "Bdrmm",
+      "musicbrainz_id": "0892e729-9af9-4746-8534-73cd0586347a",
+      "description": "British shoegaze band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q17017189",
+      "name": "Beatie Wolfe",
+      "musicbrainz_id": "9e73ab80-fbb4-410a-a03d-1ad953111575",
+      "description": "British-American singer, songwriter, musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4057388",
+      "name": "Beesadaptic",
+      "musicbrainz_id": "91a27ecc-d1e6-440c-acae-a4795b4974db",
+      "description": "Russian musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q76490187",
+      "name": "Cuushe",
+      "musicbrainz_id": "2da87e51-6aac-4525-bffd-961ff30f3a8b",
+      "description": "Japanese singer-songwriter and record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3701328",
+      "name": "Damon & Naomi",
+      "musicbrainz_id": "05d60163-95a2-44e9-9c4e-83b0677d3200",
+      "description": "American dream pop/indie folk duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q111188750",
+      "name": "Davaidasha",
+      "musicbrainz_id": "cc57b45a-1724-4687-b449-d849bced4910",
+      "description": "Mongolian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q111795834",
+      "name": "Die Kerzen",
+      "musicbrainz_id": "2dcc2bbc-296c-480a-85ee-99861cc51345",
+      "description": "German pop band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16540878",
+      "name": "Domowe Melodie",
+      "musicbrainz_id": "7b9f028f-a31c-484f-9a6d-85d94db992d3",
+      "description": "Polish musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18160338",
+      "name": "Fear of Men",
+      "musicbrainz_id": "7aeca08c-8b87-4d85-8cc9-6189a946d2e4",
+      "description": "British band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5469652",
+      "name": "Forget Cassettes",
+      "musicbrainz_id": "2efad8f0-689c-48b9-90f7-7caddb1b468b",
+      "description": "American alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q13034776",
+      "name": "Gentle Touch",
+      "musicbrainz_id": "a56af598-5f9c-4dd7-9ca2-111ede0b99f2",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q33093619",
+      "name": "Gore Slut",
+      "musicbrainz_id": "d097b6c2-1fdd-4e1c-9445-1ac21e0070dd",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5642883",
+      "name": "Hallelujah the Hills",
+      "musicbrainz_id": "6f54645c-f30a-46a9-b8e4-c5d32b2981f3",
+      "description": "American indie rock band from Boston, Massachusetts",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q105325453",
+      "name": "Ingeborg Walther",
+      "musicbrainz_id": "cb13bd00-65e5-422f-b590-c5c74c908cd9",
+      "description": "Norwegian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6150518",
+      "name": "Jana Hunter",
+      "musicbrainz_id": "6a8c6183-b9b3-41f4-b101-2294adac0b3a",
+      "description": "American songwriter and musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6396262",
+      "name": "Kevin Fennell",
+      "musicbrainz_id": "a07a1961-6281-44e4-a21b-9b361e1a7c15",
+      "description": "American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q123396823",
+      "name": "Kxllswxtch",
+      "musicbrainz_id": "7d577034-18d3-4066-85c7-157d3bcce6b5",
+      "description": "American rapper and singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q53844985",
+      "name": "Latexfauna",
+      "musicbrainz_id": "c46768f3-d5d1-4018-a472-c31670d60b16",
+      "description": "Ukrainian music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6676025",
+      "name": "Loosegoats",
+      "musicbrainz_id": "b3718f8a-a920-44b6-af5a-fb24017076f2",
+      "description": "Swedish lo-fi rock group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5949936",
+      "name": "Lucifer Luscious Violenoue",
+      "musicbrainz_id": "638f554f-03cf-485c-a6d9-0445cce72543",
+      "description": "Japanese singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q112183384",
+      "name": "Madeline Johnston",
+      "musicbrainz_id": "3635026e-74bd-4874-8a9a-801c65be60ab",
+      "description": "American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q83680673",
+      "name": "Mao Sasagawa",
+      "musicbrainz_id": "b8d90626-a18a-4b7d-8c62-62e85f914b94",
+      "description": "Japanese singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6408372",
+      "name": "Max Fractal",
+      "musicbrainz_id": "1c32cd39-ff5c-4960-8a6c-354895f50f86",
+      "description": "Canadian-American musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q108743166",
+      "name": "Mohammed Shanooj",
+      "musicbrainz_id": "c327fe25-ca6e-4850-a4ee-e5674168f855",
+      "description": "Indian singer, songwriter and voice-over",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q112747909",
+      "name": "November Ultra",
+      "musicbrainz_id": "eeeedcdd-43ed-4fbc-9751-8107a33ae7f9",
+      "description": "French singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q97051009",
+      "name": "P'tit Belliveau",
+      "musicbrainz_id": "210fee1d-8b8e-4383-8e05-7772e7cf329d",
+      "description": "Canadian folk and country musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q12065973",
+      "name": "Plastic Flowers",
+      "musicbrainz_id": "57405ccc-69d6-4602-ba36-90847ca370bf",
+      "description": "Greek songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q121761752",
+      "name": "Pretty Bitter",
+      "musicbrainz_id": "4bf387de-c305-4945-9883-fb46e8218bac",
+      "description": "American synth pop music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q112933846",
+      "name": "Robert Eugene Crimo III",
+      "musicbrainz_id": "a15627e8-b5d3-4688-a2f4-b1dea3445d9a",
+      "description": "American rapper and accused in the 2022 Highland Park parade shooting",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2160687",
+      "name": "Rockford Kabine",
+      "musicbrainz_id": "91484e15-db35-4004-bfd4-d86f6d256a2e",
+      "description": "German music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q102355988",
+      "name": "Saigon Blue Rain",
+      "musicbrainz_id": "f739f1dc-08ef-4ff9-a949-ee312a25488d",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q113252257",
+      "name": "Sarah Kinsley",
+      "musicbrainz_id": "d8daf561-d733-4296-924a-4679e238d233",
+      "description": "American singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q127278513",
+      "name": "Ships In The Night",
+      "musicbrainz_id": "de76482b-4875-476e-b6e8-4f47cb34a5fc",
+      "description": "American electronic music project",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140129508",
+      "name": "Soft Blade",
+      "musicbrainz_id": "9e71603a-47f8-4848-a56e-17f5a7aee8b4",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3492690",
+      "name": "Spare Snare",
+      "musicbrainz_id": "49d620b8-1588-402b-983b-d299efdf97ef",
+      "description": "Scottish lo-fi band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7579174",
+      "name": "Spoonfed Hybrid",
+      "musicbrainz_id": "0493aba5-6de6-41de-96e6-3b1114f61bbf",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q106759203",
+      "name": "Sweeping Promises",
+      "musicbrainz_id": "8d1ae3d4-550a-41eb-9d6a-91239218eb93",
+      "description": "American post-punk band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q113957967",
+      "name": "The Haunted Youth",
+      "musicbrainz_id": "12db27e3-c430-4ff9-ac22-c1ef8f2ad799",
+      "description": "Belgian musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117790182",
+      "name": "The Scary Jokes",
+      "musicbrainz_id": "5da02837-9259-4849-9981-23caa7b59518",
+      "description": "musical project created by Liz Lehman",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7774466",
+      "name": "The White Birch",
+      "musicbrainz_id": "0ff53a91-caee-4efb-9ef5-b363b94e7318",
+      "description": "Norwegian musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7801491",
+      "name": "Tiger Trap",
+      "musicbrainz_id": "7903b54d-b1ce-4061-91ef-4e8b25fbdc33",
+      "description": "American band from Sacramento, California",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q28229177",
+      "name": "Told Slant",
+      "musicbrainz_id": "5808b4fe-2a8b-45ba-9535-4cd6b1c900d8",
+      "description": "American indie folk band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q128876665",
+      "name": "Wallners",
+      "musicbrainz_id": "85266777-8254-4494-8b9d-d384728dc96b",
+      "description": "musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q19311934",
+      "name": "Wyoming",
+      "musicbrainz_id": "7f369c70-a6a1-4ee3-b4ed-644a82584cab",
+      "description": "music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4684613",
+      "name": "Adoration",
+      "musicbrainz_id": "cba46509-2879-4238-a079-c78040f5e5ba",
+      "description": "Anglo-Irish gothic rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4836182",
+      "name": "BOBBY",
+      "musicbrainz_id": "5f0ff2c7-b56b-4663-b113-4626bcf48ed8",
+      "description": "American music group formed in 2010",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4877088",
+      "name": "Beatnik Filmstars",
+      "musicbrainz_id": "faa32f1b-6269-41dd-80ad-1bcaff0c52c1",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q65559763",
+      "name": "Beech Creeps",
+      "musicbrainz_id": "8af1d72c-9a73-42cf-9c98-8c979f003035",
+      "description": "US rock group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q4943364",
+      "name": "Boolfight",
+      "musicbrainz_id": "40f6d9dd-07e9-4297-a01b-ca54902b7c01",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q11193545",
+      "name": "COLOR FILTER",
+      "musicbrainz_id": "678f1209-5cc2-426e-a69b-96e526dfb607",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5373934",
+      "name": "Chad Randall Matheny",
+      "musicbrainz_id": "e79dde40-8b35-4105-89f8-a5b0afbfd43c",
+      "description": "American singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q105716646",
+      "name": "D. Tiffany",
+      "musicbrainz_id": "35ff298f-126f-4dbf-8ceb-6a3781e0de5e",
+      "description": "Canadian electronic music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q27826895",
+      "name": "Drowse",
+      "musicbrainz_id": "dfd30131-6725-4051-bded-c3c418bb57e2",
+      "description": "musical project of American musician and producer Kyle Bate",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q115750132",
+      "name": "Dvrst",
+      "musicbrainz_id": "b04b7c24-59d2-47f8-8ca8-bcf6f6d106ed",
+      "description": "Russian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q65934734",
+      "name": "ESP Ohio",
+      "musicbrainz_id": "3db4dc72-bfd9-49f8-8176-8824467904d3",
+      "description": "US rock group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q33093618",
+      "name": "Few Bits",
+      "musicbrainz_id": "38ebdc70-5acc-4776-a6ac-376d0951304d",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16239921",
+      "name": "High Hazels",
+      "musicbrainz_id": "4f08fd33-2be5-4cbe-8119-d7f1fc911cca",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q133272745",
+      "name": "Honey I'm Home",
+      "musicbrainz_id": "bb2ee9a0-b806-48d5-bb32-07b44a4afb69",
+      "description": "Dutch band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5973329",
+      "name": "IQU",
+      "musicbrainz_id": "2861280a-095a-499d-9fe0-b71699bb03bb",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q2370909",
+      "name": "Jean-Luc Le Ténia",
+      "musicbrainz_id": "697c4540-ea4b-42f3-bb92-cb8672550dbd",
+      "description": "French singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q122180822",
+      "name": "Knifeplay",
+      "musicbrainz_id": "2eaa7d46-4bb7-4808-aade-5e33c72896e9",
+      "description": "American shoegaze band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140237502",
+      "name": "Late Again",
+      "musicbrainz_id": "6dd920b8-73d9-4867-8607-05bcd2a09664",
+      "description": "Brazilian dream pop musician based in New York City",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q125052835",
+      "name": "Laura day romance",
+      "musicbrainz_id": "ca0c37a9-ea94-4888-9c54-84856f8308d7",
+      "description": "Japanese band (2017-)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q18022361",
+      "name": "Lou Ciccotelli",
+      "musicbrainz_id": "f3d2ea14-94e9-4588-b038-4ddd11bacfd8",
+      "description": "musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6692503",
+      "name": "Lovespirals",
+      "musicbrainz_id": "23fc006b-ae66-45ec-bfc0-4cc82482b1d3",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q55525823",
+      "name": "Luby Sparks",
+      "musicbrainz_id": "9a3202a2-f27d-45d0-899e-dc633a2c46ff",
+      "description": "Japanese band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q124635895",
+      "name": "Madoux",
+      "musicbrainz_id": "ff08a623-16b0-4da9-a96e-13faaef3970b",
+      "description": "Dutch singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6730886",
+      "name": "Magic Wands",
+      "musicbrainz_id": "ef307507-d445-4c46-8b92-a52c5a602fdc",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16952407",
+      "name": "Mira",
+      "musicbrainz_id": "9ef3adf2-e61e-49ba-81e5-480b0fe8ec59",
+      "description": "American darkwave band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6880962",
+      "name": "Mitch Mitchell",
+      "musicbrainz_id": "05a4e138-387c-43e8-9247-7f39197253c8",
+      "description": "American musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q141245320",
+      "name": "NackSgro",
+      "musicbrainz_id": "0d34833f-cd94-423b-b0b7-6ac308ab9a5d",
+      "description": "Thai singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q3336128",
+      "name": "Narrow Terence",
+      "musicbrainz_id": "7099c259-e983-4b42-a15e-e11085dfbffb",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q115789705",
+      "name": "Obrasqi",
+      "musicbrainz_id": "061cb080-53b8-4cb6-a1ec-7ea28a5501c0",
+      "description": "Polish musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7100163",
+      "name": "Orcas",
+      "musicbrainz_id": "f92bed9f-104c-4a9e-9ede-87c8c480b0c0",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q135112576",
+      "name": "Pticu EM",
+      "musicbrainz_id": "ddb3b454-e4e5-4ca9-bcf1-cdd3c73aa6ca",
+      "description": "Russian rap band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q100326055",
+      "name": "Purple Pilgrims",
+      "musicbrainz_id": "d192782d-aeb6-4192-9d51-c49826821462",
+      "description": "New Zealand musical duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q119265574",
+      "name": "Pyos i Gruppa",
+      "musicbrainz_id": "2eed62ff-926e-48c3-bdda-cff91c560529",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "slacker rock"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q137771342",
+      "name": "Rareș Bîrsan",
+      "musicbrainz_id": "40cf18a5-b53f-4c07-b344-3f92bf92fe50",
+      "description": "Romanian music producer, singer-songwriter, musician and artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q124499384",
+      "name": "Renie Cares",
+      "musicbrainz_id": "0a70ebbe-8565-4927-9440-16ab65a708f2",
+      "description": "Ukrainian indie-rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q132272890",
+      "name": "Saint Avangeline",
+      "musicbrainz_id": "63b9b3e3-4fe3-45dd-ac38-9fcc2ba47677",
+      "description": "American alternative singer-songwriter (born 2002)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q114963738",
+      "name": "Segell Microcscopi",
+      "musicbrainz_id": "09f62095-662f-49a9-9211-f1340a7b2f7c",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7451301",
+      "name": "Sentinel",
+      "musicbrainz_id": "666a28b1-c8b6-4f32-94f0-d3153567cf37",
+      "description": "American indie dream rock duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16232436",
+      "name": "Sobrenadar",
+      "musicbrainz_id": "8dd2c71e-cee1-45b0-9221-4ddba62e9a41",
+      "description": "musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q99904559",
+      "name": "Some Sprouts",
+      "musicbrainz_id": "8bc044b8-8c0d-4b73-a18f-1ea1f76c38c1",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7732885",
+      "name": "The Extra Lens",
+      "musicbrainz_id": "642db658-a68b-40e3-8804-7973075238da",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q16836398",
+      "name": "The Fauns",
+      "musicbrainz_id": "299d1f76-bebb-483a-868a-8bb8fc067961",
+      "description": "UK band from Bristol formed in 2007",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7740257",
+      "name": "The Hope Slide",
+      "musicbrainz_id": "a6b01a05-7c29-45a0-ab55-ccac2462fe46",
+      "description": "Canadian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q76846924",
+      "name": "The Know",
+      "musicbrainz_id": "45f8289c-9cba-4679-8a01-2c97ff5d9ea7",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7748406",
+      "name": "The Loose Salute",
+      "musicbrainz_id": "7f080a5c-7222-4e4e-a466-2e3bbd0bb4d8",
+      "description": "British band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7761525",
+      "name": "The Ropes",
+      "musicbrainz_id": "c9630f57-44c5-4be8-bb48-b1d630a93b99",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q21087582",
+      "name": "The Suicide of Western Culture",
+      "musicbrainz_id": "b0c1d5d9-d5fa-47a4-9ae2-62c0873ec0cd",
+      "description": "Spanish musical group; electronica duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q79054077",
+      "name": "Them Are Us Too",
+      "musicbrainz_id": "9d049851-0631-45b6-82dc-97cb9f161eff",
+      "description": "American dreampop and darkwave band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q7785694",
+      "name": "This Empty Flow",
+      "musicbrainz_id": "d01fcc5f-7d22-4f79-abcc-474c917fa0ba",
+      "description": "Finnish rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q109913015",
+      "name": "Tosya Chaikina",
+      "musicbrainz_id": "835395b0-f24a-4da5-8167-40ed167ea2c0",
+      "description": "Russian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q118140227",
+      "name": "Ultrasaturated",
+      "musicbrainz_id": "1d5076f6-d736-460f-b7d5-0adbd20d34ac",
+      "description": "European dream pop group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q135185249",
+      "name": "Urika's Bedroom",
+      "musicbrainz_id": "ae6a82ce-a274-4814-ac70-ea9722932e02",
+      "description": "American bedroom pop musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q38277741",
+      "name": "Utae",
+      "musicbrainz_id": "2773b349-2908-4cac-8357-729d3e9eddc6",
+      "description": "Japanese dream pop musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6158546",
+      "name": "V for Volume",
+      "musicbrainz_id": "37472dca-b896-4b63-b2b1-1b7208df69f9",
+      "description": "Colombian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q134289447",
+      "name": "Vitesse X",
+      "musicbrainz_id": "117ae4d7-1381-46e2-be5a-210ccc44c0bf",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q19979284",
+      "name": "Wonderful",
+      "musicbrainz_id": "6acc5a94-7094-4048-9893-17be5198928a",
+      "description": "American dream pop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q67204649",
+      "name": "Alan S. Kim",
+      "musicbrainz_id": "411e06e3-c21b-4eb7-a69a-f21cf5a3354f",
+      "description": "musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139619932",
+      "name": "Allie Cuva",
+      "musicbrainz_id": "1d11f16d-a375-4684-9144-4b28ef4c49ae",
+      "description": "American musician and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q23933788",
+      "name": "Auramics",
+      "musicbrainz_id": "9de1032c-92c7-4889-a410-5aff290c7348",
+      "description": "Auramics are a psychedelic, dreampop, radiophonic, hauntology music group from New York.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q128714028",
+      "name": "Ayleen Valentine",
+      "musicbrainz_id": "ceea5a1d-499a-42dd-9678-eb1e7fdd13d7",
+      "description": "American singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140157561",
+      "name": "Black Opium",
+      "musicbrainz_id": "aa7ef7b8-a92e-49da-9e2a-b892b7d3b9a2",
+      "description": "local rock band from Kazakhstan",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q123159591",
+      "name": "Bleach Lab",
+      "musicbrainz_id": "6029de13-221f-40f0-bb4a-1d6259e9f5d5",
+      "description": "British dream pop act",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q136833003",
+      "name": "Casein",
+      "musicbrainz_id": "54878dfa-d492-4aaf-b5cc-001005d6b9d1",
+      "description": "American lo-fi hip hop producer and recording artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q138989101",
+      "name": "Chris Carmen",
+      "musicbrainz_id": "3da500c8-d324-4696-8713-0bc29ffcf9ae",
+      "description": "American indie folk singer-songwriter and producer from Philadelphia",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q108738017",
+      "name": "Chris Laurent",
+      "musicbrainz_id": "f27a61d6-66f2-4022-aa4d-160ae08cb3c6",
+      "description": "Musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q136774041",
+      "name": "CoolhandTrew",
+      "musicbrainz_id": "9de9f9b3-df40-4893-9cdc-41bc8d750ce3",
+      "description": "American alternative hip-hop, R&B, and neo-soul artist from Virginia",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139552445",
+      "name": "Cor de Lux",
+      "musicbrainz_id": "cc928b6b-c7b5-446f-a70a-6135da8aacfe",
+      "description": "American rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q110665275",
+      "name": "Cyberbully Mom Club",
+      "musicbrainz_id": "6d25994a-c078-4017-a72e-e25c26b75051",
+      "description": "American musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop",
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q106937501",
+      "name": "Drug Rug",
+      "musicbrainz_id": "81fb208e-5aa5-43a9-93c6-a8e5d9d47a1b",
+      "description": "American indie pop band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q114330139",
+      "name": "Electric Forest",
+      "musicbrainz_id": "70991e5c-a78a-44e5-b3fc-7d024d910cdd",
+      "description": "Dutch Indie band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q137738908",
+      "name": "Eventstellar",
+      "musicbrainz_id": "e291968f-9953-43d0-b6f9-cbeb996c9119",
+      "description": "Rock band from Ireland founded in 2017",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139922249",
+      "name": "Eyemèr",
+      "musicbrainz_id": "9d212d66-becb-4f63-b51c-7d2d203d0993",
+      "description": "Belgian singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q112219992",
+      "name": "Flesh World",
+      "musicbrainz_id": "70e1af98-dcfc-4769-8086-ace65c7fb175",
+      "description": "United States musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q103243237",
+      "name": "For Tuesday",
+      "musicbrainz_id": "c023859d-1f65-4285-afff-ceb1583c876c",
+      "description": "American lofi rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q125524681",
+      "name": "Graeme Naysmith",
+      "musicbrainz_id": "fbfbed2c-b629-43bc-a5c2-778285a48b59",
+      "description": "British guitarist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q5887985",
+      "name": "Guerreros de Cartón",
+      "musicbrainz_id": "350318e7-3926-4170-8acd-f62f7218c91b",
+      "description": "Ecuadorean indie band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q136466804",
+      "name": "Here",
+      "musicbrainz_id": "b54d294f-4d54-4a42-820c-c56e31581d08",
+      "description": "Czech indie rock music group founded 1990",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q134083888",
+      "name": "Honey Motel",
+      "musicbrainz_id": "2bb33c50-70d3-4857-be82-70d0fb588918",
+      "description": "Liverpool Band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "slacker rock"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117885265",
+      "name": "It's Dynamite",
+      "musicbrainz_id": "cf0a33ce-b16a-47c3-840c-0479a6315416",
+      "description": "Producer/Engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q108203259",
+      "name": "Jim Pollard",
+      "musicbrainz_id": "18f3c6b0-735e-4619-8597-84e1f1f156b3",
+      "description": "American singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q131743987",
+      "name": "Julia Kugel",
+      "musicbrainz_id": "01966bd1-3744-4616-bcad-74fe1dd8a7ad",
+      "description": "American musician, record producer, performer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q137796873",
+      "name": "Kadesmode",
+      "musicbrainz_id": "17d5a3b5-93fe-4486-ac73-83117bd17a7f",
+      "description": "American R&B Singer-Songwriter and Brand Designer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139385758",
+      "name": "Late July",
+      "musicbrainz_id": "a56b2a67-6dd2-4b43-bc81-0858aacec28e",
+      "description": "American lo-fi and ambient music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q136019098",
+      "name": "LazyBeats Lounge",
+      "musicbrainz_id": "f1129e29-4f73-4591-92bd-63cd30aa3afa",
+      "description": "Polish chillout and downtempo studio music project",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q141546827",
+      "name": "Libby Ember",
+      "musicbrainz_id": "e11f4f79-a7b7-4abe-9bec-1646a8225e00",
+      "description": "Montreal-based singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q132201478",
+      "name": "Lil Mboiz",
+      "musicbrainz_id": "a8115a94-3d73-4a8d-b9c1-7c2e0174d048",
+      "description": "American rapper and singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139487731",
+      "name": "Lizzy Price",
+      "musicbrainz_id": "568e1aca-0a0a-46e8-8212-4d7ac8465ece",
+      "description": "American bedroom pop and indie musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop",
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q120450908",
+      "name": "MOLLY",
+      "musicbrainz_id": "6989ef38-d6c3-4e0f-8887-4b76b13a3f7f",
+      "description": "Austrian dream-pop band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q133503091",
+      "name": "Marineros",
+      "musicbrainz_id": "39a81754-5b8c-4826-a96f-41b9aaa8f854",
+      "description": "Chilean music band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139601044",
+      "name": "Matt",
+      "musicbrainz_id": "994a8c06-7e68-4ca8-91d5-0bfd182557ac",
+      "description": "British singer (born 1995)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q6813503",
+      "name": "Melodyguild",
+      "musicbrainz_id": "171f5dd5-826d-44de-afd8-fa117cf0ef4b",
+      "description": "US musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q112183427",
+      "name": "Midwife",
+      "musicbrainz_id": "8e7a7cba-f615-4207-b3bf-1280cc861580",
+      "description": "American musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q123004535",
+      "name": "Monsoon Cortex",
+      "musicbrainz_id": "95d505bb-2626-4ddb-a744-0265879bfb3c",
+      "description": "German musician (born 1993)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q52387717",
+      "name": "Nicolás Pablo Rivera Muñoz",
+      "musicbrainz_id": "9728401b-2df8-4597-885d-4dfb097dfcc2",
+      "description": "Chilean-norwegian musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q106916509",
+      "name": "PACKS",
+      "musicbrainz_id": "5b515f87-65c0-409b-b9ba-eddda9f761bf",
+      "description": "Canadian rock band from Toronto, ON",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q105741577",
+      "name": "Purrple Cat",
+      "musicbrainz_id": "553d1b5f-7cb6-4df7-8a69-e78b4bc4f7a5",
+      "description": "American music producer, visual artist and animator",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q134690740",
+      "name": "Raccoon Lagoon",
+      "musicbrainz_id": "09787904-eab1-44f1-9795-01fe75caf447",
+      "description": "Solo musical project by Petya Bouianov",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop",
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q137785799",
+      "name": "Rimbalo",
+      "musicbrainz_id": "459bee41-9fdd-42af-a375-c88b0a209c08",
+      "description": "experimental surf rock music project from Indonesia, currently based in Brooklyn",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140253120",
+      "name": "Roberto Randazzo",
+      "musicbrainz_id": "bccac883-c191-4aa0-a538-6c806a3edd77",
+      "description": "Italian musician, producer and mix engineer (born 1998)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q138789694",
+      "name": "STARLA",
+      "musicbrainz_id": "7f03f554-30bd-48d9-b6d9-4c0dd902e362",
+      "description": "American songwriter and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q131743818",
+      "name": "Scott Montoya",
+      "musicbrainz_id": "364c366e-6f14-4270-823f-9cae252756d4",
+      "description": "American musician, record producer, sound engineer, performer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music",
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q127975935",
+      "name": "Sodikken",
+      "musicbrainz_id": "d1d571de-febd-4d1c-80d8-1f16967b5a91",
+      "description": "American artist and musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q132128240",
+      "name": "Soft Palms",
+      "musicbrainz_id": "b986822e-53c3-4fe7-b5b2-c6b69cc7a57e",
+      "description": "American musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q110124148",
+      "name": "Starscixn",
+      "musicbrainz_id": "4d0d8d6a-6a71-4c72-87e7-bff11296a665",
+      "description": "Malaysia rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q111596731",
+      "name": "The Calls",
+      "musicbrainz_id": "4ffb4d31-9050-4cfe-be72-75bffced7980",
+      "description": "Leeds Indie rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q85806900",
+      "name": "The Curfew",
+      "musicbrainz_id": "7c15f5c9-b94b-4183-8cd7-c13d7b105357",
+      "description": "Indie pop band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139916875",
+      "name": "Tiziana Felle",
+      "musicbrainz_id": "50fc663a-3633-49f4-bb03-529d551a41cb",
+      "description": "Italian singer-songwriter and vocalist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139665781",
+      "name": "Turntable Kachina",
+      "musicbrainz_id": "76a747c1-175e-4729-9e82-f6604ea805c9",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q47195805",
+      "name": "Underwater Boys",
+      "musicbrainz_id": "b2aeb633-2521-4596-bce2-3027d4823e88",
+      "description": "Band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140960300",
+      "name": "Vicki Glass",
+      "musicbrainz_id": "7025d88f-1a7d-429a-9c31-1e5a84fea3c0",
+      "description": "Singer, lyricist, and voice actress",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140087789",
+      "name": "Vyva Melinkolya",
+      "musicbrainz_id": "c77f550e-dc57-42f6-a191-b9f3610f99c9",
+      "description": "American slowcore musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q140077152",
+      "name": "Yamila",
+      "musicbrainz_id": "fa22251a-b2af-41dc-9a93-180e7050de10",
+      "description": "Kyrgyzstani synth-pop singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139568581",
+      "name": "feelings club",
+      "musicbrainz_id": "2f41e64f-0af4-4500-bd33-aa4d21ac2845",
+      "description": "American indie pop band (2018–2023)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bedroom pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q139580188",
+      "name": "new burglars",
+      "musicbrainz_id": "cfe43457-1f73-4de7-8a68-7ddff45b8d4b",
+      "description": "Dreampop band formed in 2022",
+      "sitelinks": 0,
+      "matched_genres": [
+        "dream pop"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q138005125",
+      "name": "oskai",
+      "musicbrainz_id": "musicbrainz.org/artist/5283948a-bdb4-4026-ab2e-118ae890e175",
+      "description": "Electronic musician and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q95999850",
+      "name": "potsu",
+      "musicbrainz_id": "a0a7501e-e0b2-4d7d-a813-ee2668bcb2eb",
+      "description": "American musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    },
+    {
+      "wikidata_id": "Q117229570",
+      "name": "xxsangui",
+      "musicbrainz_id": "868bec41-6866-4b72-a279-a7bbdce7c50f",
+      "description": "American musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "lo-fi music"
+      ],
+      "category": "bedroom"
+    }
+  ]
+}

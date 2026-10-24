@@ -1,1 +1,4 @@
-streamlit>=1.37.0
+# Pinned above 1.37 for st.tabs/st.cache_data and below 1.70 so a future release
+# cannot remove st.components.v1.html (still used for the GA4 snippet) without the
+# app failing loudly here first.
+streamlit>=1.37,<1.70

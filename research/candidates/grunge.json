@@ -1,0 +1,4084 @@
+{
+  "category": "grunge",
+  "label": "Grunge / post-grunge",
+  "genre_labels": [
+    "grunge",
+    "post-grunge"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"grunge\"@en \"post-grunge\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q30449",
+      "name": "Avril Lavigne",
+      "musicbrainz_id": "0103c1cc-4a09-4a5d-a344-56ad99a77193",
+      "description": "Canadian singer-songwriter (born 1984)",
+      "sitelinks": 138,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q8446",
+      "name": "Kurt Cobain",
+      "musicbrainz_id": "3c9b356d-d1db-4f4e-a7a3-2d00c1d70255",
+      "description": "American rock musician, singer and songwriter (1967–1994)",
+      "sitelinks": 129,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q11649",
+      "name": "Nirvana",
+      "musicbrainz_id": "5b11f4ce-a62d-471e-81fc-a69a8278c7da",
+      "description": "American rock band",
+      "sitelinks": 114,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19198",
+      "name": "Chester Bennington",
+      "musicbrainz_id": "415e30a0-116b-4a4f-8cbf-8d0f6406bbab",
+      "description": "American singer, songwriter and musician (1976–2017)",
+      "sitelinks": 98,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q484523",
+      "name": "Jared Leto",
+      "musicbrainz_id": "5ec4fe5f-c89a-47d1-a9b7-58344b401527",
+      "description": "American actor, singer, musician and songwriter (born 1971)",
+      "sitelinks": 89,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q222071",
+      "name": "Courtney Love",
+      "musicbrainz_id": "31d2041c-985d-48f7-b6e2-2a70cdf14853",
+      "description": "American rock musician (born 1964)",
+      "sitelinks": 85,
+      "matched_genres": [
+        "post-grunge",
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q130742",
+      "name": "Alanis Morissette",
+      "musicbrainz_id": "4bdcee62-4902-4773-8cd1-e252e2e31225",
+      "description": "Canadian-American singer (born 1974)",
+      "sitelinks": 82,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q633",
+      "name": "Neil Young",
+      "musicbrainz_id": "75167b8b-44e4-407b-9d35-effe87b223cf",
+      "description": "Canadian singer, songwriter and filmmaker (born 1945)",
+      "sitelinks": 80,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q12006",
+      "name": "Dave Grohl",
+      "musicbrainz_id": "2486bb60-2ccd-4792-bdd4-4c760d610616",
+      "description": "American rock musician",
+      "sitelinks": 76,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q142701",
+      "name": "Pearl Jam",
+      "musicbrainz_id": "83b9cbe7-9857-49e2-ab8e-b57b01038103",
+      "description": "American rock band",
+      "sitelinks": 76,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q541599",
+      "name": "Dolores O'Riordan",
+      "musicbrainz_id": "13c10976-99f1-4cb4-8fbe-56067e91d865",
+      "description": "Irish musician (1971–2018)",
+      "sitelinks": 74,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q483810",
+      "name": "The Cranberries",
+      "musicbrainz_id": "c98d40fd-f6cf-4b26-883e-eaa515ee2851",
+      "description": "Irish musical group; rock band",
+      "sitelinks": 72,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q386216",
+      "name": "Tokio Hotel",
+      "musicbrainz_id": "462a85b4-83ac-4164-86b3-e5ac6a7ec040",
+      "description": "German band",
+      "sitelinks": 68,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q484255",
+      "name": "Alice in Chains",
+      "musicbrainz_id": "4bd95eea-b9f6-4d70-a36c-cfea77431553",
+      "description": "American rock band",
+      "sitelinks": 66,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q483718",
+      "name": "Foo Fighters",
+      "musicbrainz_id": "67f66c07-6e61-4026-ade5-7e782fad3a5d",
+      "description": "American rock band",
+      "sitelinks": 66,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q483802",
+      "name": "Nickelback",
+      "musicbrainz_id": "bc710bcf-8815-42cf-bad2-3f1d12246aeb",
+      "description": "Canadian rock band",
+      "sitelinks": 66,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q174817",
+      "name": "Soundgarden",
+      "musicbrainz_id": "153c9281-268f-4cf3-8938-f5a4593e5df4",
+      "description": "American rock band",
+      "sitelinks": 65,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q270935",
+      "name": "Chris Cornell",
+      "musicbrainz_id": "cbf9738d-8f81-4a92-bc64-ede09341652d",
+      "description": "American musician (1964–2017)",
+      "sitelinks": 61,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q428798",
+      "name": "Krist Novoselic",
+      "musicbrainz_id": "ac05e29f-0561-4445-bb26-5562d2389531",
+      "description": "American rock musician",
+      "sitelinks": 58,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q43259",
+      "name": "No Doubt",
+      "musicbrainz_id": "fbd2a255-1d57-4d31-ac11-65b671c19958",
+      "description": "American rock band",
+      "sitelinks": 53,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q486825",
+      "name": "Three Days Grace",
+      "musicbrainz_id": "fabb37f8-eb2a-4cc1-a72a-b56935bbb72d",
+      "description": "Canadian rock band",
+      "sitelinks": 52,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q312395",
+      "name": "Taylor Hawkins",
+      "musicbrainz_id": "f0d35e7c-bbda-4063-a07b-0aa044fa5c8a",
+      "description": "American drummer (1972–2022)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q309838",
+      "name": "Layne Staley",
+      "musicbrainz_id": "ddf488d8-f809-47a0-adb3-95bbc7aa20f0",
+      "description": "American rock musician (1967–2002)",
+      "sitelinks": 46,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q175097",
+      "name": "3 Doors Down",
+      "musicbrainz_id": "2386cd66-e923-4e8e-bf14-2eebe2e9b973",
+      "description": "American rock band",
+      "sitelinks": 43,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q308816",
+      "name": "Creed",
+      "musicbrainz_id": "4b1a830b-0a1f-42e5-b8d5-1d6743912e99",
+      "description": "American rock band",
+      "sitelinks": 43,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q207306",
+      "name": "Godsmack",
+      "musicbrainz_id": "ac2d1c91-3667-46aa-9fe7-170ca7fce9e2",
+      "description": "American rock band",
+      "sitelinks": 43,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q374747",
+      "name": "Skillet",
+      "musicbrainz_id": "16a43d5e-c52d-4eaa-9c3b-00b2c1d8e816",
+      "description": "American Christian rock band",
+      "sitelinks": 42,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q271984",
+      "name": "Breaking Benjamin",
+      "musicbrainz_id": "854a1807-025b-42a8-ba8c-2a39717f1d25",
+      "description": "American rock band",
+      "sitelinks": 41,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q335036",
+      "name": "Alter Bridge",
+      "musicbrainz_id": "60a23fda-a440-4ab9-a344-7dfdd2ed341a",
+      "description": "American rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q624790",
+      "name": "Hole",
+      "musicbrainz_id": "1dcc8968-f2cd-441c-beda-6270f70f2863",
+      "description": "American alternative rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q329270",
+      "name": "Stone Temple Pilots",
+      "musicbrainz_id": "8c32bb01-58a3-453b-8050-8c0620edb0e5",
+      "description": "American rock band",
+      "sitelinks": 39,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q461448",
+      "name": "Seether",
+      "musicbrainz_id": "fbcd7b29-455f-49e6-9c4f-8249d20a055e",
+      "description": "South African rock band",
+      "sitelinks": 38,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q837300",
+      "name": "The Pretty Reckless",
+      "musicbrainz_id": "54f8c12e-571c-4c5a-9f79-5336b39e84b0",
+      "description": "American hard rock band",
+      "sitelinks": 38,
+      "matched_genres": [
+        "post-grunge",
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q130242447",
+      "name": "Emily Armstrong",
+      "musicbrainz_id": "1cc9d454-9ee8-4d29-bc8e-c4190cf352f6",
+      "description": "American rock musician",
+      "sitelinks": 37,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q311382",
+      "name": "Billy Corgan",
+      "musicbrainz_id": "3cbfd3e3-6d9b-4327-84ba-42cf646c98f9",
+      "description": "American musician",
+      "sitelinks": 36,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q728707",
+      "name": "Noir Désir",
+      "musicbrainz_id": "e6358374-5eea-4205-be22-382ed6df493c",
+      "description": "French rock band",
+      "sitelinks": 36,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q332525",
+      "name": "Shannon Leto",
+      "musicbrainz_id": "ff7ddfbc-e2da-4e2e-95d1-e6242bb44a84",
+      "description": "American drummer",
+      "sitelinks": 36,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q294723",
+      "name": "Chad Kroeger",
+      "musicbrainz_id": "a59edb65-fae2-4344-b77a-5232516d4d7a",
+      "description": "Canadian rock musician",
+      "sitelinks": 35,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q266496",
+      "name": "Staind",
+      "musicbrainz_id": "777a21a8-0d0f-4cf3-86b4-65bc0eba5649",
+      "description": "American rock band",
+      "sitelinks": 35,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q725469",
+      "name": "Stone Sour",
+      "musicbrainz_id": "4ca783b7-5bf7-4348-b494-46680660050f",
+      "description": "American heavy metal band",
+      "sitelinks": 35,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q313559",
+      "name": "Jerry Cantrell",
+      "musicbrainz_id": "960eb93f-e73c-4df8-864d-08a06c2dcc11",
+      "description": "American guitarist and singer",
+      "sitelinks": 34,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q319277",
+      "name": "Mark Lanegan",
+      "musicbrainz_id": "a9126556-f555-4920-9617-6e013f8228a7",
+      "description": "American singer (1964–2022)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q385618",
+      "name": "Melvins",
+      "musicbrainz_id": "9ccfbc94-a4f4-42f7-b6f5-d903ab77cccb",
+      "description": "American musical group; rock band",
+      "sitelinks": 34,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q627617",
+      "name": "Dead by Sunrise",
+      "musicbrainz_id": "10a0bbc1-4236-4de2-b827-f9fc25f3655c",
+      "description": "American rock band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q215125",
+      "name": "Flyleaf",
+      "musicbrainz_id": "9011971a-df29-4b57-8889-2e5e9a645cbe",
+      "description": "American rock band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1072736",
+      "name": "One Ok Rock",
+      "musicbrainz_id": "6ef00829-fa94-4fee-a5a6-b28e1208e96a",
+      "description": "Japanese rock band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q157327",
+      "name": "Silverchair",
+      "musicbrainz_id": "b0799818-22cb-4564-8e68-3c410d0722ee",
+      "description": "Australian rock band",
+      "sitelinks": 32,
+      "matched_genres": [
+        "post-grunge",
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q178549",
+      "name": "Counting Crows",
+      "musicbrainz_id": "a0327dc2-dc76-44d5-aec6-47cd2dff1469",
+      "description": "American musical group; alternative rock band",
+      "sitelinks": 31,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q289003",
+      "name": "Myles Kennedy",
+      "musicbrainz_id": "2e0fffcf-0ed2-4661-9c38-f67be9cca9b0",
+      "description": "American singer and guitarist",
+      "sitelinks": 31,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q313813",
+      "name": "Jim Root",
+      "musicbrainz_id": "fe1f7d08-abbd-4fe2-91fe-fe3a803b3ac7",
+      "description": "American guitarist",
+      "sitelinks": 30,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q725517",
+      "name": "Poets of the Fall",
+      "musicbrainz_id": "482a5456-7d8a-4366-a2e9-6f38853df632",
+      "description": "Finnish rock band",
+      "sitelinks": 30,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q234591",
+      "name": "Ringo Sheena",
+      "musicbrainz_id": "9e414497-23b7-4ab7-9ec6-8ea9864c9e87",
+      "description": "Japanese singer-songwriter (1978-)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q363236",
+      "name": "Scott Weiland",
+      "musicbrainz_id": "3b709eac-a251-4cc8-8259-4b379c4b9331",
+      "description": "American singer (1967–2015)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1063812",
+      "name": "Shinedown",
+      "musicbrainz_id": "adc0f033-95c2-4e0b-87bc-c23ed3f26ce6",
+      "description": "American rock band",
+      "sitelinks": 30,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q247949",
+      "name": "Bush",
+      "musicbrainz_id": "93ccd76c-3790-4435-a8bf-02bc26294b93",
+      "description": "British rock band",
+      "sitelinks": 29,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q898820",
+      "name": "Mudhoney",
+      "musicbrainz_id": "e675295a-1efe-4247-aa3b-53b78d0cdffc",
+      "description": "alternative rock band formed in Seattle, Washington, United States",
+      "sitelinks": 29,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q873413",
+      "name": "Daughtry",
+      "musicbrainz_id": "21e3292e-dac8-4609-b57d-402f926aa41f",
+      "description": "American rock band",
+      "sitelinks": 28,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q356938",
+      "name": "Chad Channing",
+      "musicbrainz_id": "e2f28104-72bb-4c8f-b0f9-78d4eaf492fd",
+      "description": "American musician",
+      "sitelinks": 26,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q11904",
+      "name": "Eels",
+      "musicbrainz_id": "14387b0f-765c-4852-852f-135335790466",
+      "description": "American indie rock band",
+      "sitelinks": 26,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q432743",
+      "name": "Gavin Rossdale",
+      "musicbrainz_id": "d530dad4-81e5-4874-808a-d708039289fb",
+      "description": "British musician",
+      "sitelinks": 26,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q845759",
+      "name": "Temple of the Dog",
+      "musicbrainz_id": "e9571c17-817f-4d34-ae3f-0c7a96f822c1",
+      "description": "American rock band",
+      "sitelinks": 26,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1070944",
+      "name": "Chevelle",
+      "musicbrainz_id": "35ed70a6-c171-4816-bd9b-529faa6bff73",
+      "description": "American rock band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1127431",
+      "name": "Green River",
+      "musicbrainz_id": "78f56916-fe11-4110-8f10-d553ddf8de7b",
+      "description": "American rock band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q376283",
+      "name": "Mad Season",
+      "musicbrainz_id": "bfd085b8-0bbf-46b3-8ab9-193bca5c85e7",
+      "description": "American rock supergroup",
+      "sitelinks": 25,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q434768",
+      "name": "Sean Kinney",
+      "musicbrainz_id": "4c7df96e-d3d4-4618-b232-89c82050331a",
+      "description": "American drummer",
+      "sitelinks": 25,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q176430",
+      "name": "The Presidents of the United States of America",
+      "musicbrainz_id": "7509421d-1074-442f-be8f-b526167afcb3",
+      "description": "American rock band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1332195",
+      "name": "Ugly Kid Joe",
+      "musicbrainz_id": "91f32a6b-fc11-45b6-a243-4dd90eaee781",
+      "description": "American rock band",
+      "sitelinks": 25,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q381777",
+      "name": "Andrew Wood",
+      "musicbrainz_id": "400e187f-31b0-473d-a4c3-685d38229274",
+      "description": "American musician and singer (1966–1990)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q536892",
+      "name": "Jen Ledger",
+      "musicbrainz_id": "1823d604-49c7-49c4-9438-281fd4ef6e3e",
+      "description": "British drummer and singer",
+      "sitelinks": 24,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q907540",
+      "name": "Puddle of Mudd",
+      "musicbrainz_id": "ff460a70-fdf4-4aa2-b021-8a04da76d88e",
+      "description": "American rock band",
+      "sitelinks": 24,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1411035",
+      "name": "Screaming Trees",
+      "musicbrainz_id": "bc5e6e42-73ba-44fa-a41e-3379402f0429",
+      "description": "American band",
+      "sitelinks": 24,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q684599",
+      "name": "Bi-2",
+      "musicbrainz_id": "5ca35ace-4006-4d4a-af04-5cd91dafab14",
+      "description": "Belarusian, Russian-speaking alternative rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q896746",
+      "name": "Brad Arnold",
+      "musicbrainz_id": "4f8f5670-0572-4e2f-86f5-d4ed6a3fb1f8",
+      "description": "American singer (1978–2026)",
+      "sitelinks": 23,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1049555",
+      "name": "Feeder",
+      "musicbrainz_id": "88a4cd4e-5dee-4153-8462-0d5e43c75f47",
+      "description": "British rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q907370",
+      "name": "Hinder",
+      "musicbrainz_id": "39b22a9e-59dd-412b-ac3c-0725c807c72b",
+      "description": "American rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1342689",
+      "name": "John Cooper",
+      "musicbrainz_id": "e94aee5e-7bb1-4fd9-9380-176d397a8f16",
+      "description": "American bassist and singer (born 1975)",
+      "sitelinks": 23,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1053623",
+      "name": "Mother Love Bone",
+      "musicbrainz_id": "a5585acd-9b65-49a7-a63b-3cc4ee18846e",
+      "description": "American rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q77007",
+      "name": "Sandra Nasić",
+      "musicbrainz_id": "0fb62639-4143-443b-8779-6867a1d08230",
+      "description": "German singer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1164628",
+      "name": "Sick Puppies",
+      "musicbrainz_id": "86f78011-5087-48d2-8922-c381d2eb0c40",
+      "description": "Australian rock band",
+      "sitelinks": 23,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q792941",
+      "name": "Benjamin Burnley",
+      "musicbrainz_id": "6b4d1e59-de1d-4292-af30-cb199d4fcb94",
+      "description": "American rock musician",
+      "sitelinks": 22,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1071154",
+      "name": "Finger Eleven",
+      "musicbrainz_id": "0b76f632-25fa-4681-9862-86499c28afd3",
+      "description": "Canadian rock band",
+      "sitelinks": 22,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2014395",
+      "name": "Shaun Morgan",
+      "musicbrainz_id": "6cf028d2-0366-4cb8-9198-c86569f5b0d4",
+      "description": "South African rock musician",
+      "sitelinks": 22,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1155385",
+      "name": "Third Eye Blind",
+      "musicbrainz_id": "92a42e82-b36f-4308-82c1-68bad2e03c89",
+      "description": "American rock band",
+      "sitelinks": 22,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q442237",
+      "name": "William DuVall",
+      "musicbrainz_id": "4d5447d7-5b2e-45bc-98e2-3abaebb90741",
+      "description": "American rock musician",
+      "sitelinks": 22,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q983410",
+      "name": "Daniel Johns",
+      "musicbrainz_id": "8de61149-c821-4de6-b364-9f626a86297c",
+      "description": "Australian musician",
+      "sitelinks": 21,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q931863",
+      "name": "Fecal Matter",
+      "musicbrainz_id": "552f7965-a23a-4e2f-9ef2-ac2989dea9f0",
+      "description": "American punk rock band",
+      "sitelinks": 21,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q165714",
+      "name": "Live",
+      "musicbrainz_id": "cba77ba2-862d-4cee-a8f6-d3f9daf7211c",
+      "description": "American rock band",
+      "sitelinks": 21,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q539432",
+      "name": "Mike Starr",
+      "musicbrainz_id": "ea18134b-c9d7-454f-8407-8abe0eb5f423",
+      "description": "American bassist (1966–2011)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q358842",
+      "name": "Ron \"Bumblefoot\" Thal",
+      "musicbrainz_id": "cf6fd745-1035-4bad-b0ef-33ed822b00b7",
+      "description": "American guitarist",
+      "sitelinks": 21,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q48339",
+      "name": "Splean",
+      "musicbrainz_id": "0783b768-6719-450b-a7e1-7e891da17af3",
+      "description": "Russian musical group; rock band",
+      "sitelinks": 21,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q257764",
+      "name": "Lacey Sturm",
+      "musicbrainz_id": "9d2bd333-ac4d-4271-a41e-a8d805674c4a",
+      "description": "American singer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q528140",
+      "name": "Mike Inez",
+      "musicbrainz_id": "8080e7ca-5f51-4668-bbe7-e75c96aabf42",
+      "description": "American bassist",
+      "sitelinks": 20,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1052727",
+      "name": "Mucc",
+      "musicbrainz_id": "0da0f48c-3689-4c38-bf4a-c5b50d516689",
+      "description": "Japanese visual kei rock band",
+      "sitelinks": 20,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1990978",
+      "name": "Aaron Burckhard",
+      "musicbrainz_id": "86d3f2c7-2a19-4249-ad7c-6feec74118d7",
+      "description": "American drummer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1047508",
+      "name": "Our Lady Peace",
+      "musicbrainz_id": "78661da3-894c-4947-a34b-fb7edf585d9b",
+      "description": "Canadian rock band",
+      "sitelinks": 19,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q55128479",
+      "name": "Clara Luciani",
+      "musicbrainz_id": "a6386935-e6ee-4aaa-aaa8-70f56b79bc29",
+      "description": "French singer-songwriter and guitarist (born 1992)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q427917",
+      "name": "Jack Endino",
+      "musicbrainz_id": "d06cca33-9167-4049-b5ce-6a6aeff60a8d",
+      "description": "American producer and musician",
+      "sitelinks": 18,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1042468",
+      "name": "Kutless",
+      "musicbrainz_id": "e8585cbe-912f-47b9-a253-fca09d013769",
+      "description": "American rock band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q594559",
+      "name": "Skin Yard",
+      "musicbrainz_id": "0119843b-4d56-47b6-ac0d-11528259bf0a",
+      "description": "American rock band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q912127",
+      "name": "Tad",
+      "musicbrainz_id": "867d3fb7-9cd1-47a4-a8f0-de29cdca2004",
+      "description": "American grunge band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q469929",
+      "name": "Linda",
+      "musicbrainz_id": "7023be99-fbce-4c3c-a19c-d55a462a9439",
+      "description": "Russian singer, songwriter, poet, composer, painter, and music video director",
+      "sitelinks": 17,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1156782",
+      "name": "Mike Kroeger",
+      "musicbrainz_id": "9b487ea7-78b3-4e32-af99-372c40499b8d",
+      "description": "Canadian bassist (born 1972)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q926931",
+      "name": "Ryan Peake",
+      "musicbrainz_id": "aaf05d54-7c36-4d12-88b3-958a29c394a7",
+      "description": "Canadian guitarist",
+      "sitelinks": 17,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1361543",
+      "name": "Sunny Day Real Estate",
+      "musicbrainz_id": "86b24e8f-a4d9-4c84-83ee-fde0d14ad9fa",
+      "description": "American musical group; emo band",
+      "sitelinks": 17,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1503015",
+      "name": "Thrice",
+      "musicbrainz_id": "244afcb7-fa9a-49b1-9aa6-0149512d1c52",
+      "description": "American rock band from Irvine, California, formed in 1998",
+      "sitelinks": 17,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q912685",
+      "name": "Brian Marshall",
+      "musicbrainz_id": "e70fb5b3-8f4f-43ce-80ca-0c74e21638cf",
+      "description": "American bassist",
+      "sitelinks": 16,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q439243",
+      "name": "Cassie Steele",
+      "musicbrainz_id": "7fae99d4-6878-4b8f-90ed-8da6976414df",
+      "description": "Canadian actress and singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q10321888",
+      "name": "Lzzy Hale",
+      "musicbrainz_id": "e430c9c5-b096-450d-b322-a85be6d5f0bd",
+      "description": "American singer and guitarist",
+      "sitelinks": 16,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19922002",
+      "name": "Saint Asonia",
+      "musicbrainz_id": "272b283c-7b32-484a-b087-d4fb9ecb8f96",
+      "description": "Canadian-American rock band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1470472",
+      "name": "The Subways",
+      "musicbrainz_id": "20e264d7-b4d5-4e49-8931-a9c67ff07f04",
+      "description": "English musical group; rock band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1033047",
+      "name": "Candlebox",
+      "musicbrainz_id": "8e9516ba-f417-47dd-a8a5-8998b94553f8",
+      "description": "American rock band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q641255",
+      "name": "Crossfade",
+      "musicbrainz_id": "79d60c41-8fe0-448c-9bec-3f43c10f860a",
+      "description": "American rock band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q539502",
+      "name": "Tonight Alive",
+      "musicbrainz_id": "712dbd18-d8fd-4bd0-a5b5-edb9577c493f",
+      "description": "Australian musical group; pop punk band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1191293",
+      "name": "Trust Company",
+      "musicbrainz_id": "6ae8c8fe-143b-4386-882e-eb23a331f318",
+      "description": "band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1107761",
+      "name": "Cold",
+      "musicbrainz_id": "d9a2f1e6-6429-41ce-9d32-9a66188fb39c",
+      "description": "American rock band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1182558",
+      "name": "Default",
+      "musicbrainz_id": "c571d0d0-c47f-4e51-8a13-a3ec81a6e296",
+      "description": "Canadian rock band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q656561",
+      "name": "Malfunkshun",
+      "musicbrainz_id": "71f4a8ff-97ba-47c6-a729-7f87de77c796",
+      "description": "American rock band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2477913",
+      "name": "Scott Phillips",
+      "musicbrainz_id": "700b269b-ee3c-4844-b560-0c379af819cb",
+      "description": "American drummer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q930038",
+      "name": "Tom Dumont",
+      "musicbrainz_id": "64facc0b-6e13-46e6-ac3d-c6c1653598cd",
+      "description": "American musician",
+      "sitelinks": 14,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1197707",
+      "name": "Unwritten Law",
+      "musicbrainz_id": "846cdb90-81a6-4c05-a7dc-9dd075f0db9e",
+      "description": "American rock band formed in 1990 in Poway, California",
+      "sitelinks": 14,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2549322",
+      "name": "Brent Smith",
+      "musicbrainz_id": "5f3a6bb1-8376-4e13-b4d3-8c31b1955903",
+      "description": "American singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q612885",
+      "name": "Bruce Pavitt",
+      "musicbrainz_id": "f5230572-06e4-453c-a1dd-7a4b560da3bb",
+      "description": "Founder of Sub Pop",
+      "sitelinks": 13,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1002101",
+      "name": "Buffalo Tom",
+      "musicbrainz_id": "1159e0d0-a782-471a-9dae-93ac046eac72",
+      "description": "American band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1173317",
+      "name": "Dave Pirner",
+      "musicbrainz_id": "8849e71c-181b-444b-8cfb-09445e6231d4",
+      "description": "American songwriter, singer, and producer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2412660",
+      "name": "Fuel",
+      "musicbrainz_id": "2a5a3b60-d468-4b62-a28f-9c410ad3f71d",
+      "description": "American rock band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q10306650",
+      "name": "Jennifer Finch",
+      "musicbrainz_id": "add94f0b-8aba-4534-bda4-b1c6796b2d63",
+      "description": "American musician, designer and photographer (1966–2026)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q722876",
+      "name": "Roy Mayorga",
+      "musicbrainz_id": "848174ee-2f5a-452d-9ce2-1feb062bf790",
+      "description": "American drummer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1148130",
+      "name": "The Asteroids Galaxy Tour",
+      "musicbrainz_id": "4661d98a-95bd-4cf1-a693-4f9f25691ada",
+      "description": "Danish band",
+      "sitelinks": 13,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q270055",
+      "name": "7 Year Bitch",
+      "musicbrainz_id": "91d06612-5c1e-4278-b40b-b6ce22dc9bb4",
+      "description": "American punk rock band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1102645",
+      "name": "Cloud Nothings",
+      "musicbrainz_id": "29c91854-8c45-469b-b36d-a11fb650638b",
+      "description": "American indie rock band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1264884",
+      "name": "Duman",
+      "musicbrainz_id": "f8a9a911-47de-49fe-ba96-7e5b5f08b7d0",
+      "description": "Turkish rock band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3307228",
+      "name": "Days of the New",
+      "musicbrainz_id": "10c8a5ad-4329-475a-a550-ff3c9cf19599",
+      "description": "American rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1546154",
+      "name": "Grey Daze",
+      "musicbrainz_id": "cba83330-32d6-4804-8058-fcf2794afb79",
+      "description": "American rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1342470",
+      "name": "Korey Cooper",
+      "musicbrainz_id": "75e87cba-1aad-4d45-a18f-50951d444340",
+      "description": "American musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1142016",
+      "name": "Lit",
+      "musicbrainz_id": "5ccb9a53-092d-4806-b337-470a582893d7",
+      "description": "American rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q749621",
+      "name": "Love Battery",
+      "musicbrainz_id": "20fa3e73-7ac4-4550-b9f5-6ac8c523bda5",
+      "description": "American rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q527282",
+      "name": "Ryan McCombs",
+      "musicbrainz_id": "b2af50d8-b1f8-4506-981a-1bd7f6467dcd",
+      "description": "American singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2298997",
+      "name": "The Exies",
+      "musicbrainz_id": "97e3f316-ec68-47f2-b870-bb4bd0a61f08",
+      "description": "American rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3178861",
+      "name": "Wes Scantlin",
+      "musicbrainz_id": "54d3e90b-837f-40e8-92eb-2a2949c72bcc",
+      "description": "American rock musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5242589",
+      "name": "Dawnstar",
+      "musicbrainz_id": "fbebac66-79e6-441d-ad1a-7663c8da9295",
+      "description": "Rock band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2661026",
+      "name": "Egypt Central",
+      "musicbrainz_id": "e76b3a0a-e658-4478-b31e-5a5a24eb65d7",
+      "description": "American rock band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q30944626",
+      "name": "No Party for Cao Dong",
+      "musicbrainz_id": "1636f82a-b541-4867-9eb7-e4b224552eef",
+      "description": "Taiwanese rock band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2046246",
+      "name": "Pagoda",
+      "musicbrainz_id": "8169f830-05a3-460a-9594-2c4aaf29251e",
+      "description": "American rock band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q615129",
+      "name": "Cocco",
+      "musicbrainz_id": "7f28f385-a591-4f66-80ea-a81a0f2abb54",
+      "description": "Japanese singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q109467083",
+      "name": "Jazmin Bean",
+      "musicbrainz_id": "2bb53341-da20-465a-9eee-06e389ed9fc1",
+      "description": "English singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1810439",
+      "name": "Local H",
+      "musicbrainz_id": "baaf92f5-f2b2-4f51-9723-abed41a257f8",
+      "description": "American band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "post-grunge",
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3301779",
+      "name": "Raine Maida",
+      "musicbrainz_id": "3e18e18e-f6be-4067-a276-334b00809e0d",
+      "description": "Canadian musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4354218",
+      "name": "Scott Litt",
+      "musicbrainz_id": "a836308a-1832-4b69-9398-2d29edb55c98",
+      "description": "American record producer (1954-)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1660672",
+      "name": "Stiltskin",
+      "musicbrainz_id": "46ae9ef1-bdb4-4da4-815e-69b944ee28bf",
+      "description": "Scottish rock band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2095698",
+      "name": "The Almost",
+      "musicbrainz_id": "92e1f515-fc89-4577-9f77-addacdaf7559",
+      "description": "American rock band",
+      "sitelinks": 9,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5255202",
+      "name": "Demetra Plakas",
+      "musicbrainz_id": "d5a459af-1551-4881-a86d-6a87fdad130f",
+      "description": "American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q23091500",
+      "name": "Drug Church",
+      "musicbrainz_id": "32d2897c-4c91-46db-8161-f51d3f4f0d93",
+      "description": "US musical group",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4043205",
+      "name": "Louna",
+      "musicbrainz_id": "516716bb-1569-4112-8aff-98599459e99b",
+      "description": "Russian alternative/punk rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1127361",
+      "name": "Mind Funk",
+      "musicbrainz_id": "653f2e2e-ed6b-4844-9d27-2009559d9822",
+      "description": "band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7228997",
+      "name": "Pop Evil",
+      "musicbrainz_id": "8e3ce660-79ed-4072-bd3d-e8db7a409946",
+      "description": "American rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q42307959",
+      "name": "Pornofilmy",
+      "musicbrainz_id": "fa52ad7e-429a-43dc-97a1-c342b490dea6",
+      "description": "Russian punk rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1798410",
+      "name": "Steve Fisk",
+      "musicbrainz_id": "c851ef86-5278-4537-8b51-7ccedb4ae903",
+      "description": "American record producer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q668870",
+      "name": "The U-Men",
+      "musicbrainz_id": "0947de9a-ba43-4c59-a7f7-87290daf1f91",
+      "description": "American band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q520646",
+      "name": "Truly",
+      "musicbrainz_id": "a92894c1-710a-469e-af5b-b40da54fcbc9",
+      "description": "American rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2154972",
+      "name": "Violent Soho",
+      "musicbrainz_id": "2e0d8e0b-7031-41fd-86f9-b4a47eac0993",
+      "description": "Australian rock band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4535437",
+      "name": "Yuta",
+      "musicbrainz_id": "9ae381d4-8bbc-4552-a165-ab9afc332dbb",
+      "description": "Russian singer, composer and songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3920968",
+      "name": "Alexander Pushnoy",
+      "musicbrainz_id": "7304408a-b37e-4a62-853d-9f72e7de3416",
+      "description": "Russian musician, presenter, showman",
+      "sitelinks": 7,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q18890163",
+      "name": "Art of Anarchy",
+      "musicbrainz_id": "7294f7d2-743d-483c-84fd-d0c0ffd9a234",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3629975",
+      "name": "Austin John Winkler",
+      "musicbrainz_id": "c5e45253-ab89-48b9-bc3a-63447049135b",
+      "description": "American singer and songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q290837",
+      "name": "Dale Stewart",
+      "musicbrainz_id": "d64a8727-d962-4092-9d40-32ec9c39fbb4",
+      "description": "South African singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1277571",
+      "name": "Earshot",
+      "musicbrainz_id": "2a63d0e8-dbce-4ae9-898a-3e6da6c5d2fc",
+      "description": "American alternative metal band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q975779",
+      "name": "Framing Hanley",
+      "musicbrainz_id": "7f616512-e114-433f-86c1-4c8fe9f7fe2c",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2319863",
+      "name": "Gruntruck",
+      "musicbrainz_id": "d094cf6a-ad9e-4640-a44e-91de1f365185",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3126530",
+      "name": "Hammerbox",
+      "musicbrainz_id": "a6b1d4ba-6c12-488a-a05c-366a9e17de7d",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1963103",
+      "name": "Kirpichi",
+      "musicbrainz_id": "5c2db8af-2f34-4668-bd4b-607695d59723",
+      "description": "Russian musical group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3493751",
+      "name": "Sponge",
+      "musicbrainz_id": "9a8ac837-a0e0-4a56-a1cf-b677759a44e2",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q841368",
+      "name": "Tantric",
+      "musicbrainz_id": "3829f10b-821e-4c9b-88d8-7bc486637741",
+      "description": "American rock band",
+      "sitelinks": 7,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3602656",
+      "name": "A Pale Horse Named Death",
+      "musicbrainz_id": "aa09cf40-fb7f-4dbd-b3c0-6448288fb07c",
+      "description": "American metal band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2074339",
+      "name": "Cavo",
+      "musicbrainz_id": "574f0e62-6e1c-4408-9adf-437f295922cf",
+      "description": "American rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2964649",
+      "name": "Chris Bailey",
+      "musicbrainz_id": "7e1e2973-70f9-4f44-a17f-ab6235f03a02",
+      "description": "Australian musician (1957-2022)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q10308621",
+      "name": "Josh Rand",
+      "musicbrainz_id": "01609d5a-f40a-4c3d-8c6f-a6d503d7b8cb",
+      "description": "American musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1473012",
+      "name": "Lazlo Bane",
+      "musicbrainz_id": "63f38f77-9aae-4e1b-8947-aca325b7759f",
+      "description": "American musical group; alternative rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q108570463",
+      "name": "Mammoth WVH",
+      "musicbrainz_id": "49a6efb9-9b52-44ce-8167-7cb1c21a8c45",
+      "description": "American rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1086704",
+      "name": "Mike Dillard",
+      "musicbrainz_id": "a3750a7b-cf02-4e48-b16c-0b61ca820bfa",
+      "description": "American drummer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3319287",
+      "name": "Moist",
+      "musicbrainz_id": "543adb98-6397-4409-89b8-9eb161ea5abf",
+      "description": "Canadian rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q766229",
+      "name": "Paul McCoy",
+      "musicbrainz_id": "f0ff291a-4005-4353-a854-b2a83e4e6f34",
+      "description": "American musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1442351",
+      "name": "Seaweed",
+      "musicbrainz_id": "82aa1374-7c47-43e8-857d-11d723fe4c1a",
+      "description": "American band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3029733",
+      "name": "The Scientists",
+      "musicbrainz_id": "b2cd8f3d-7049-4ebf-a5d6-52c08f6a59c0",
+      "description": "post-punk band from Perth, Western Australia",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q105107027",
+      "name": "Tina Bell",
+      "musicbrainz_id": "e0337774-c8f7-4cbb-9179-0dbf5a1fdf55",
+      "description": "American singer and songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3316167",
+      "name": "Toby MacFarlaine",
+      "musicbrainz_id": "a000cf16-1371-4e7e-b348-f2630326c585",
+      "description": "English musician",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7913250",
+      "name": "Van Conner",
+      "musicbrainz_id": "11822f2b-d2e1-41dc-9879-a814d6a9dfea",
+      "description": "American musician (1967–2023)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q230396",
+      "name": "Zurdok",
+      "musicbrainz_id": "174bd7cc-2678-4ada-8077-7ac321c6124f",
+      "description": "Mexican rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q31283512",
+      "name": "Bala",
+      "musicbrainz_id": "dbc9f9a7-07ef-4618-ae1e-e58f56259b7b",
+      "description": "Galician stoner rock/grunge band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5046201",
+      "name": "Carrie Akre",
+      "musicbrainz_id": "d4b880f0-b815-4050-90c7-309ee3a7ee3b",
+      "description": "American singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5148002",
+      "name": "Colombina Parra",
+      "musicbrainz_id": "15166486-323c-4224-a09e-d7281bfc113e",
+      "description": "Chilean singer songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5173021",
+      "name": "Corroded",
+      "musicbrainz_id": "64236143-98de-40bc-873c-6f843c9ffb10",
+      "description": "Swedish heavy metal band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q122929036",
+      "name": "Delilah Bon",
+      "musicbrainz_id": "c38f076f-ad03-4b7e-bf5c-ac82d0dda536",
+      "description": "female musical artist",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q135900159",
+      "name": "Faetooth",
+      "musicbrainz_id": "4f554f8f-990b-4060-b407-0226fd5497d6",
+      "description": "American doom metal band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5525459",
+      "name": "Gary Lee Conner",
+      "musicbrainz_id": "a89062ce-a507-49b7-a5d0-6dc67f99e4a5",
+      "description": "American musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2776753",
+      "name": "My Sister's Machine",
+      "musicbrainz_id": "50c515b0-d70b-4f16-a67f-fec4bea065b9",
+      "description": "American rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q12169304",
+      "name": "Oleksandr Chemerov",
+      "musicbrainz_id": "2154c5b7-8f8c-49e3-9152-86127299fc31",
+      "description": "Ukrainian rock musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3373180",
+      "name": "Paw",
+      "musicbrainz_id": "46eeac03-7aee-4433-a26b-ea0adf451d65",
+      "description": "American rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7434401",
+      "name": "Scooter Ward",
+      "musicbrainz_id": "4e72c0dd-ca29-4ac7-ab14-258380b8fd97",
+      "description": "American singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16950013",
+      "name": "Skating Polly",
+      "musicbrainz_id": "bc0a3a57-94bf-4e17-aa42-677ccd5a8250",
+      "description": "Rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q906466",
+      "name": "Socialburn",
+      "musicbrainz_id": "584bd06c-660b-438f-90c1-9dd38e0b2f3b",
+      "description": "band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19881990",
+      "name": "Superheaven",
+      "musicbrainz_id": "16f7e748-59b4-4705-959c-9276be0ebf6a",
+      "description": "American alternative rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q906381",
+      "name": "The Buzzhorn",
+      "musicbrainz_id": "9b6a7c5c-cba4-49db-88b7-347cb73084f6",
+      "description": "American rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7734548",
+      "name": "The Fluid",
+      "musicbrainz_id": "5e99632e-7395-429d-9f95-e9c47325b8f0",
+      "description": "American rock band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q8055977",
+      "name": "Yoshiaki Manabe",
+      "musicbrainz_id": "5d0fbbe7-dfab-45af-aa3b-5ce384ddbba5",
+      "description": "Japanese musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1310999",
+      "name": "Alien Boys",
+      "musicbrainz_id": "e71dacb1-229d-4a88-ab95-df3a4d6db199",
+      "description": "German rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16145929",
+      "name": "Baby in Vain",
+      "musicbrainz_id": "3472688f-a563-4c9d-9b0e-5de19398c39a",
+      "description": "Danish band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q15229054",
+      "name": "Balance and Composure",
+      "musicbrainz_id": "0d20c42d-133c-429d-8f76-3c2458aee3e8",
+      "description": "American emo band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3640489",
+      "name": "Bitch Alert",
+      "musicbrainz_id": "bb1ac5cd-623a-4678-89a4-20b24e6eec39",
+      "description": "Finnish punk rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q818197",
+      "name": "Bjesovi",
+      "musicbrainz_id": "5261dcac-0aaa-42e9-89f8-1789c016fe6d",
+      "description": "Serbian musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q51132163",
+      "name": "Black Foxxes",
+      "musicbrainz_id": "a004f886-1ef0-4ecb-b332-3f5824430ae9",
+      "description": "British musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4927166",
+      "name": "Block Out",
+      "musicbrainz_id": "3c34302d-29bf-48a3-aeac-333876e89ed0",
+      "description": "Serbian rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1052952",
+      "name": "Cell",
+      "musicbrainz_id": "0e3eeae4-c975-4558-8060-ade851f27c58",
+      "description": "American rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q18397971",
+      "name": "Connor Questa",
+      "musicbrainz_id": "8bef9925-4e8c-4242-9228-9c4851746999",
+      "description": "rock band from Argentina",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5791246",
+      "name": "Cristian Aldana",
+      "musicbrainz_id": "98266932-b4d9-4229-a22e-7128782f53ed",
+      "description": "Argentinian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5217530",
+      "name": "Daniel House",
+      "musicbrainz_id": "8b574753-9e90-4dec-af06-40791a707362",
+      "description": "American record label owner",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q59259312",
+      "name": "Jitters",
+      "musicbrainz_id": "40b90b21-f41f-4e3b-93ac-c327108afc79",
+      "description": "rock band from Minsk, Belarus",
+      "sitelinks": 4,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q83378674",
+      "name": "Laura Niquay",
+      "musicbrainz_id": "e4af3c4a-be0e-43ee-8955-7054c9a11632",
+      "description": "Atikamekw singer-songwriter from Canada",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4275415",
+      "name": "Maria Makarova",
+      "musicbrainz_id": "9fa32340-a00e-4899-aba7-dc390ca2c815",
+      "description": "Russian singer-songwriter, poet, composer, guitarist, keyboardist, flautist, and disc jockey",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2890240",
+      "name": "Mark Pickerel",
+      "musicbrainz_id": "90fd60fc-b149-4d97-a4fc-54b8b767ad42",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4286066",
+      "name": "Masha and the Bears",
+      "musicbrainz_id": "53243719-1d12-4bb9-8b56-5354d331a581",
+      "description": "Russian musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7349401",
+      "name": "Robert Roth",
+      "musicbrainz_id": "1f2fc776-8b6a-4a47-ac19-ac3750dc8fe9",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q117468606",
+      "name": "Softcult",
+      "musicbrainz_id": "321eaf5a-be21-4faf-a7a0-0a4e59e5ee29",
+      "description": "Canadian grunge duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q17091953",
+      "name": "Speedy Ortiz",
+      "musicbrainz_id": "4fbf1a3d-a649-4f8e-9ddf-347f6ba2d307",
+      "description": "American musical group; indie rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q111371335",
+      "name": "The Mysterines",
+      "musicbrainz_id": "9e573595-b9bb-4839-9877-c658234b3776",
+      "description": "British alternative rock band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q548450",
+      "name": "Tripping Daisy",
+      "musicbrainz_id": "3707b50e-e76e-4485-859a-064d7186ff97",
+      "description": "American musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4635019",
+      "name": "32 Leaves",
+      "musicbrainz_id": "f2fa6692-9d3a-43bc-8c4c-7d87b2c45de2",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q20990828",
+      "name": "Akher Zapheer",
+      "musicbrainz_id": "b998e46c-53de-4bf5-9ec4-e09be9ad4de5",
+      "description": "Jordanian rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4770206",
+      "name": "Another Animal",
+      "musicbrainz_id": "18e523f2-a38c-4aed-acbf-91ecc2ed0252",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q113117645",
+      "name": "Beachdog",
+      "musicbrainz_id": "58892527-c415-4af5-917c-0cf1581dbcf9",
+      "description": "",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4927576",
+      "name": "Blood Circus",
+      "musicbrainz_id": "88787c5a-4ec6-4558-94dc-429c44f40779",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q92654328",
+      "name": "Classless Act",
+      "musicbrainz_id": "f2da81ec-1c76-483a-9cf3-8b2d1ac704ac",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5250621",
+      "name": "Deepfield",
+      "musicbrainz_id": "b6061943-f8a3-442b-9900-6dc733994272",
+      "description": "US musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5654142",
+      "name": "Haranga",
+      "musicbrainz_id": "627665e3-8c36-44d2-af15-a8213082766f",
+      "description": "Mongolian musical group; hard rock/progressive rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4040463",
+      "name": "Hazel",
+      "musicbrainz_id": "7c36a5ee-5143-4bb1-8c09-36c0ea817391",
+      "description": "American alternative rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q55606126",
+      "name": "Idan Amsalem",
+      "musicbrainz_id": "899118b7-c0a3-4b5d-a909-6528b29893ff",
+      "description": "Israeli musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6412049",
+      "name": "King Snake Roost",
+      "musicbrainz_id": "bae62e00-76a0-4e92-a8de-ce7e80528220",
+      "description": "Australian noise rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6901277",
+      "name": "Mono Men",
+      "musicbrainz_id": "82544085-8474-4fb9-be23-6b513b31c09b",
+      "description": "American musical group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7033453",
+      "name": "Night Shift",
+      "musicbrainz_id": "cd7d2354-52bd-4054-8092-812788ae2fd7",
+      "description": "the Serbian rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q646068",
+      "name": "O.N.A.",
+      "musicbrainz_id": "7d3b7dc7-9a2f-4d8a-a795-529dbe9edc82",
+      "description": "Polish rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q109538607",
+      "name": "Pinkshift",
+      "musicbrainz_id": "49d47930-aaba-4caf-8a80-31be20d0e8f6",
+      "description": "American pop punk band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2103511",
+      "name": "Pond",
+      "musicbrainz_id": "1ef504e7-2f2d-41a5-9536-64f161f54174",
+      "description": "rock band from the USA",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4048046",
+      "name": "Relikt",
+      "musicbrainz_id": "91b3790d-3812-44d5-b57c-ceb525d7c9fb",
+      "description": "",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19772434",
+      "name": "Rychagy Mashin",
+      "musicbrainz_id": "17b05d8d-4a89-47db-b5b0-34a3f883e169",
+      "description": "Rychagy Mashin (\"RbICHIGY_MASHbIN\", \"Рычаги машин\") punk hip hop group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2686918",
+      "name": "Shaman's Harvest",
+      "musicbrainz_id": "8ac5a921-50d5-48b5-a784-eddd422070df",
+      "description": "American rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7758039",
+      "name": "The Predators",
+      "musicbrainz_id": "97e8ad87-3962-4527-bdac-d477d17e4423",
+      "description": "Japanese rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7768264",
+      "name": "The Teeth",
+      "musicbrainz_id": "bad89eac-1a50-4e27-afcf-e85b78bc00e7",
+      "description": "Filipino grunge band, active from 1992",
+      "sitelinks": 3,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q85861650",
+      "name": "Vladimir Kotlyarov",
+      "musicbrainz_id": "71a33a2e-f946-4252-96cd-50371fd45955",
+      "description": "Russian musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q198472",
+      "name": "Zico Chain",
+      "musicbrainz_id": "9f59b066-05ef-405d-8a77-63d435a750b5",
+      "description": "band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4057388",
+      "name": "Beesadaptic",
+      "musicbrainz_id": "91a27ecc-d1e6-440c-acae-a4795b4974db",
+      "description": "Russian musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge",
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q221191",
+      "name": "Budapest",
+      "musicbrainz_id": "f8fdb32c-8c92-4625-a7ae-28a0cc57dd42",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q18369507",
+      "name": "Bundle of Hiss",
+      "musicbrainz_id": "aaa673a8-af81-4140-8cb8-800406c1eace",
+      "description": "U.S. grunge band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q124316327",
+      "name": "Cloud Cafe",
+      "musicbrainz_id": "ad195c0d-0ea3-48c0-a874-442602f4d35f",
+      "description": "Dutch band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q15046311",
+      "name": "Dickless",
+      "musicbrainz_id": "4ece8309-01ed-4ef4-9485-3ea0e165d403",
+      "description": "American grunge band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q117029029",
+      "name": "Dity inzheneriv",
+      "musicbrainz_id": "f34f431d-321b-4f3c-871f-854c034e5f2c",
+      "description": "Ukrainian rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q25351894",
+      "name": "Emphatic",
+      "musicbrainz_id": "df6b9281-32a0-408b-9e4b-7d7e707e4894",
+      "description": "American hard rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q85991183",
+      "name": "Gede Robi Supriyanto",
+      "musicbrainz_id": "ba704fea-0af1-4237-92b3-9dfe9bab735a",
+      "description": "Vocalist & Guitarist of Navicular, Activist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5593702",
+      "name": "Grammatrain",
+      "musicbrainz_id": "b1a2e6c8-52e9-4db5-8370-0e48273c8c93",
+      "description": "alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5639856",
+      "name": "Haji's Kitchen",
+      "musicbrainz_id": "4b8fd8ff-faad-449b-880e-740b5b415845",
+      "description": "American metal band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4200017",
+      "name": "Ilya Chyort",
+      "musicbrainz_id": "c4667fae-b2b0-421c-b498-bea7d45cd051",
+      "description": "Russian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6267520",
+      "name": "Johnny Q. Public",
+      "musicbrainz_id": "95c2ec67-5c38-461b-8c80-c55329314f2a",
+      "description": "American band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1702896",
+      "name": "Jonas",
+      "musicbrainz_id": "e40d9056-5777-44e2-ad88-f8ce700c7d6d",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1754492",
+      "name": "Law",
+      "musicbrainz_id": "3d0ac188-0d9a-4897-85f3-220fa583178e",
+      "description": "German musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q61987546",
+      "name": "Mikey William Cheung",
+      "musicbrainz_id": "56adf30b-46ea-4737-ada7-e0986fa52b47",
+      "description": "Canadian artist and video game designer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6945618",
+      "name": "My Head",
+      "musicbrainz_id": "6cff49ef-8612-4605-9942-42cb68082a87",
+      "description": "American grunge/alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1180318",
+      "name": "Mystery Gang",
+      "musicbrainz_id": "fbe2ec40-ffff-42f9-ab0a-46fff201a790",
+      "description": "Hungarian rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7068362",
+      "name": "Nudeswirl",
+      "musicbrainz_id": "bb847b56-1c28-4b2c-99b1-9a6e53cdcb78",
+      "description": "American band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q55100311",
+      "name": "Oktoplut",
+      "musicbrainz_id": "27370ed7-5145-4154-adcb-46582183a52b",
+      "description": "Stoner-punk music duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7092758",
+      "name": "One Inch Punch",
+      "musicbrainz_id": "417719c4-24db-46c0-ac49-8a8989cb716f",
+      "description": "American musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7097831",
+      "name": "Operator",
+      "musicbrainz_id": "3d9ed428-4e5c-43b0-a7f6-33095715b217",
+      "description": "American post-grunge band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q106075449",
+      "name": "Pom Pom Squad",
+      "musicbrainz_id": "4c33904b-1c93-4f63-bb23-69d3544eaf77",
+      "description": "American grunge band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7230124",
+      "name": "Pork",
+      "musicbrainz_id": "b5234b72-c85c-4b24-b7c0-8aa678565e8f",
+      "description": "grunge band from Argentina",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4289296",
+      "name": "Rains",
+      "musicbrainz_id": "26594575-f53a-40b6-87a5-1b9ed1c8fcfd",
+      "description": "American rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5866024",
+      "name": "Robin Goodridge",
+      "musicbrainz_id": "6c39a1a7-24ab-4b82-aa21-cd3f7d67cb7a",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7443214",
+      "name": "Second Coming",
+      "musicbrainz_id": "9849ab49-6c0a-4331-94b0-fba99c1589f1",
+      "description": "American rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2687295",
+      "name": "Soulbender",
+      "musicbrainz_id": "0164153c-34a6-4f06-a5bc-4f3079a38282",
+      "description": "American band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4049837",
+      "name": "Sozvezdie",
+      "musicbrainz_id": "554112c0-806f-4f2d-b71d-cd5d75c13467",
+      "description": "Russian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7602394",
+      "name": "Starseed",
+      "musicbrainz_id": "668d080e-2ad2-4b33-838f-c9caa4fb13ab",
+      "description": "South-African/British rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7611208",
+      "name": "Stereo Fuse",
+      "musicbrainz_id": "95c12c74-0366-4b97-87fd-d3d9794aaba6",
+      "description": "US musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4051124",
+      "name": "The Hermitt",
+      "musicbrainz_id": "245761cd-cbb5-4375-9367-5f550ddf6812",
+      "description": "American musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7739747",
+      "name": "The Hiss",
+      "musicbrainz_id": "ceb00ac8-2f62-4b74-81db-b3529aacf865",
+      "description": "five piece rock band from Atlanta, Georgia",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q12343052",
+      "name": "The Malpractice",
+      "musicbrainz_id": "86c5143f-6e8d-4a42-8c96-06db9b556cf9",
+      "description": "Danish music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7796845",
+      "name": "Those Mockingbirds",
+      "musicbrainz_id": "d2a565aa-b1d2-4d06-b25a-cf5425eccbe8",
+      "description": "American alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16958227",
+      "name": "Trophy Wife",
+      "musicbrainz_id": "ea82fffc-def0-4866-a33f-27cac1cd10df",
+      "description": "American punk band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2494697",
+      "name": "Union Youth",
+      "musicbrainz_id": "4dc1c710-2479-4889-962a-52cb5c2dd569",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16150177",
+      "name": "Valerie Agnew",
+      "musicbrainz_id": "756ec8dd-307e-4a89-a0db-026a9b9e7f02",
+      "description": "musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7919610",
+      "name": "Vendetta Red",
+      "musicbrainz_id": "072e6967-a712-469f-8d2a-a8ef2296dab9",
+      "description": "American alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7968380",
+      "name": "War Babies",
+      "musicbrainz_id": "f7e99ebe-bea6-46b4-82a4-5b775a168594",
+      "description": "US musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q8003365",
+      "name": "Willard",
+      "musicbrainz_id": "dd92e5a5-7d4f-41dc-9f9d-698f18265bf8",
+      "description": "American rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q114830252",
+      "name": "Witch Fever",
+      "musicbrainz_id": "400b04e1-42d3-4e13-8e3b-efce1db9c508",
+      "description": "UK musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q8073988",
+      "name": "Zonic Shockum",
+      "musicbrainz_id": "82c43fa1-0e4e-442e-b153-ae37b106d650",
+      "description": "American rock-music band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q15046310",
+      "name": "100 Watt Smile",
+      "musicbrainz_id": "fb9b2ed2-7253-4baf-b423-52eaf53219cc",
+      "description": "American band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19866800",
+      "name": "Best Kissers in the World",
+      "musicbrainz_id": "910fbe37-23da-4414-8299-91cc104d12e9",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q15428880",
+      "name": "Blac Head Lion",
+      "musicbrainz_id": "8b9edf40-f5be-4ec6-adb8-e790b93cbecf",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5021344",
+      "name": "Caligula",
+      "musicbrainz_id": "7c7ffc60-fb11-4a4d-b678-9bd8056bbc17",
+      "description": "Australian techno-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q26991298",
+      "name": "Daddy Issues",
+      "musicbrainz_id": "610a7504-fad2-474c-a9a8-7fd12d1b9392",
+      "description": "American three-piece grunge pop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5215679",
+      "name": "Dandelion",
+      "musicbrainz_id": "ae6654ba-9b1a-438c-9688-05aa6cba1f10",
+      "description": "American band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q97940536",
+      "name": "Dungaree",
+      "musicbrainz_id": "ac7af267-0032-4966-9b92-8ac11125f6ca",
+      "description": "Hungarian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5317006",
+      "name": "Dust for Life",
+      "musicbrainz_id": "b2fc9c1a-e216-4756-91f7-c574c180dbab",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5353911",
+      "name": "Eldebrock",
+      "musicbrainz_id": "84baacf7-b568-467a-a755-688ae98f2abe",
+      "description": "Elderbrock-Canadian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q33093669",
+      "name": "Every Stranger Looks Like You",
+      "musicbrainz_id": "081d367c-a09b-4edd-b9e4-8f531847a1e6",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5450298",
+      "name": "Fingertight",
+      "musicbrainz_id": "568f08cf-787a-4f62-8e26-877ff68a1529",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5462259",
+      "name": "Flowerhead",
+      "musicbrainz_id": "0e99e6c5-eae6-4f12-b15d-f883ede69a94",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5508024",
+      "name": "Full Devil Jacket",
+      "musicbrainz_id": "ccaeb8a9-8105-4a15-b1d2-d882888f4331",
+      "description": "American metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5873946",
+      "name": "Gaia",
+      "musicbrainz_id": "58ee1293-a457-4a2d-abb7-94e0207809ba",
+      "description": "Peruvian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16637327",
+      "name": "God Zmei",
+      "musicbrainz_id": "4ffd2d21-ba3a-4e7f-94d3-7e7662aeb784",
+      "description": "Russian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q16840343",
+      "name": "Grong Grong",
+      "musicbrainz_id": "36dab3c6-e3a5-451f-ba44-a582e502ca98",
+      "description": "Australian punk rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5889078",
+      "name": "Guillotina",
+      "musicbrainz_id": "5450d1c0-28b8-4fdc-9f89-048394152aa2",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5621910",
+      "name": "Guttersnipes",
+      "musicbrainz_id": "8df51de5-6ef0-4947-94a0-dfee34980548",
+      "description": "Australian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5755663",
+      "name": "High Holy Days",
+      "musicbrainz_id": "cd66722d-3bd9-4f79-bcd9-a08de6f988d3",
+      "description": "Canadian post-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q130610943",
+      "name": "Hiqpy",
+      "musicbrainz_id": "6e5f1b2f-91f6-4994-94f9-44387269cf6f",
+      "description": "Dutch band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1688478",
+      "name": "Jet Black Stare",
+      "musicbrainz_id": "8fa20e20-ed27-4600-8f6a-05ff856fb58c",
+      "description": "Canadian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3813106",
+      "name": "Karma",
+      "musicbrainz_id": "6c06fdc6-6734-43ec-9b66-5f3388c2071e",
+      "description": "Italian grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q3194573",
+      "name": "Keaton",
+      "musicbrainz_id": "d0a0c0af-7b75-49e6-a728-39185b6e41a9",
+      "description": "Belgian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6406861",
+      "name": "Kilgore",
+      "musicbrainz_id": "fdce027b-dad8-4a88-92fc-001d8588dae3",
+      "description": "American metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6698140",
+      "name": "Lucy's Fur Coat",
+      "musicbrainz_id": "3c6f479a-f1cc-410b-9f1e-7d07a6c7d65d",
+      "description": "Californian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q4273693",
+      "name": "Mad Dog",
+      "musicbrainz_id": "2ec1fa08-b832-43ca-bf3f-e210f16d00e4",
+      "description": "Russian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge",
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6728078",
+      "name": "Madison Rising",
+      "musicbrainz_id": "6fd8910f-4978-4b35-bb8b-5ce717c65afa",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q1972306",
+      "name": "Navel",
+      "musicbrainz_id": "fce72dc5-9507-4913-9b6f-e8d4d39fa320",
+      "description": "Swiss musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7070052",
+      "name": "Nural",
+      "musicbrainz_id": "b6c64fa3-0f58-4ab9-a54b-93a08543ae03",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q97162204",
+      "name": "Omana",
+      "musicbrainz_id": "2d9ca09c-fb42-4d50-93ec-a2a7d0adb166",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q126916830",
+      "name": "One Dimensional Creatures",
+      "musicbrainz_id": "af20241a-8652-44d0-b214-74ac75676ecc",
+      "description": "British band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2049313",
+      "name": "Pandora’s Bliss",
+      "musicbrainz_id": "9b058908-2c49-45e2-a52e-f361c2759caa",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7235623",
+      "name": "Pound",
+      "musicbrainz_id": "e9d6ae7a-c717-41a7-b6ea-66171a2142d3",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7238973",
+      "name": "Pray for the Soul of Betty",
+      "musicbrainz_id": "0e354571-0730-45d5-bb57-5ca996eb9d80",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7242112",
+      "name": "Preteen Zenith",
+      "musicbrainz_id": "d9b75d01-4465-44e7-b34b-edf8d8625665",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q11830758",
+      "name": "Ptaky",
+      "musicbrainz_id": "7aa20949-ce7c-4336-98d7-882e98242c82",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7277996",
+      "name": "RUST",
+      "musicbrainz_id": "745a59a5-50b6-4634-bcfc-899424603949",
+      "description": "Finnish band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q17086926",
+      "name": "Revis",
+      "musicbrainz_id": "729c1b75-ad36-447e-bd97-eb96c5237506",
+      "description": "American post-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q19876372",
+      "name": "Rival State",
+      "musicbrainz_id": "ba38be58-4b40-4228-9f13-503c580fc250",
+      "description": "alternative rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7367651",
+      "name": "Rose Blossom Punch",
+      "musicbrainz_id": "258da25e-8eff-4785-895c-3f68638b43e0",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7621441",
+      "name": "Strange Occurrence",
+      "musicbrainz_id": "14d290e3-ee5f-451c-81ba-04b6174136c1",
+      "description": "American post-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q112044135",
+      "name": "Super Bejo",
+      "musicbrainz_id": "98c40eed-db1c-45a8-8a26-79fc2d60ffe9",
+      "description": "Indonesian vocal group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7655572",
+      "name": "Sweet Water",
+      "musicbrainz_id": "7283a37d-000f-4912-aa97-c0a2633421b7",
+      "description": "American rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q15052700",
+      "name": "The Halo Method",
+      "musicbrainz_id": "3a077056-6239-40bf-a3a8-5b9478c230a8",
+      "description": "US musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7807747",
+      "name": "Tin Foil Phoenix",
+      "musicbrainz_id": "6b9301b0-aefa-47a7-82be-bbb4f4aa43fc",
+      "description": "band that released its first EP under the name Sonic Bloom",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q2492909",
+      "name": "Underpaid",
+      "musicbrainz_id": "926ce900-5e7e-4d70-92a5-79e31e82482a",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q125022299",
+      "name": "Vertilizar",
+      "musicbrainz_id": "3d721232-0d44-4c7e-bc31-f6686143af90",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q11351274",
+      "name": "Windmilk",
+      "musicbrainz_id": "ee5e49e9-fd1f-4a9b-b193-16714e1fd249",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q8028374",
+      "name": "Witness",
+      "musicbrainz_id": "fb114669-1faa-4bf0-9bd5-99ca52331314",
+      "description": "French grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q97268560",
+      "name": "bobolenin",
+      "musicbrainz_id": "8a8c0d8b-6ecf-40ca-ac98-da3801b02a13",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5299629",
+      "name": "doubleDrive",
+      "musicbrainz_id": "f0fc4098-1fc7-443e-ab08-adb10a0e8281",
+      "description": "American post-grunge band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q121889966",
+      "name": "Alexandrine Rodrigue",
+      "musicbrainz_id": "6688bad1-5393-45ce-b098-de934097bcb6",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q105107001",
+      "name": "Bam Bam",
+      "musicbrainz_id": "42f6cb9b-ffa3-43ae-8cc5-75ff2a5d10a4",
+      "description": "American proto-grunge band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q138646356",
+      "name": "Black Ends",
+      "musicbrainz_id": "ee88a13a-f9fd-45f0-a7dd-3551566c4976",
+      "description": "American \"gunk pop\" band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q140157561",
+      "name": "Black Opium",
+      "musicbrainz_id": "aa7ef7b8-a92e-49da-9e2a-b892b7d3b9a2",
+      "description": "local rock band from Kazakhstan",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5142242",
+      "name": "Cold Driven",
+      "musicbrainz_id": "d2e9df7c-a6dd-402b-8404-c1076db22e47",
+      "description": "Canadian musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q140181288",
+      "name": "Cravings",
+      "musicbrainz_id": "3c9acb1b-2ac5-4331-8a60-682275789f38",
+      "description": "Austrian alternative rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q47500365",
+      "name": "Faceplant",
+      "musicbrainz_id": "de777508-262a-4534-bf73-3ed756be9e3f",
+      "description": "American rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q5464151",
+      "name": "Foil",
+      "musicbrainz_id": "aa0b7f28-d687-41f8-83bf-85c2ba10353e",
+      "description": "grunge band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q99690340",
+      "name": "Frederic Jacques",
+      "musicbrainz_id": "760d275b-0c1d-4f41-9161-476a398e3300",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q136099217",
+      "name": "Indricity",
+      "musicbrainz_id": "9583cefe-4ca7-4c33-84a8-f86f00845b53",
+      "description": "Australian rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q99689756",
+      "name": "Laurence \"Laurie\" Vincent",
+      "musicbrainz_id": "3dd89557-eff4-479d-929c-4ba2664ab978",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q6684038",
+      "name": "Lost Gravity",
+      "musicbrainz_id": "26a38a45-ef75-4e67-a610-d2234d6aebef",
+      "description": "UK musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q141552272",
+      "name": "Motor",
+      "musicbrainz_id": "b62693c3-00cf-4425-a786-b457dfd5e2c7",
+      "description": "American rock band from Fort Lauderdale, Florida",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q114027145",
+      "name": "No More Lullabies",
+      "musicbrainz_id": "60e76234-1853-41c7-8043-428a961b5fea",
+      "description": "American Rock Band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q134737655",
+      "name": "No Resolve",
+      "musicbrainz_id": "f9b09c4c-78cf-443b-9554-69bb6e25cc36",
+      "description": "American rock band from Detroit, Michigan",
+      "sitelinks": 0,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q141593413",
+      "name": "Normal",
+      "musicbrainz_id": "c19e0143-8eb7-48c1-b11c-9313d9a90d78",
+      "description": "American alternative band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q123184039",
+      "name": "Octale",
+      "musicbrainz_id": "1442787d-87a3-433a-8d44-766808511d5a",
+      "description": "Belgian rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q7128594",
+      "name": "Palomar",
+      "musicbrainz_id": "e11420db-1ea8-441a-b578-0c4d4b82d19a",
+      "description": "grunge/alt-rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q93399918",
+      "name": "Piss Factory",
+      "musicbrainz_id": "82bb2b15-9280-4b55-a10f-3e44c0968270",
+      "description": "US grunge rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q141681111",
+      "name": "Prize Horse",
+      "musicbrainz_id": "2a9766bc-457b-45d6-a093-7f7d147f3ada",
+      "description": "American alternative band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q138827917",
+      "name": "Roughshod",
+      "musicbrainz_id": "86c61553-3f67-4710-ba4a-f43674d43ae2",
+      "description": "American rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q134305365",
+      "name": "Silver Acid",
+      "musicbrainz_id": "b42579af-2ddd-4b79-b0a5-92d9dec01029",
+      "description": "American alternative metal band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "post-grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q99590926",
+      "name": "Stefan Ude",
+      "musicbrainz_id": "b6cd42cd-627b-41f2-ac53-ba7831e9f62d",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q99675923",
+      "name": "Steven Janssens",
+      "musicbrainz_id": "659306cf-40d0-4b5c-b132-f6c14c94a07b",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q141495009",
+      "name": "The How",
+      "musicbrainz_id": "228a6aef-a79a-447a-bab3-162fcd0974b6",
+      "description": "Norwegian alternative rock band from Trondheim",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q136779710",
+      "name": "Trashbunk",
+      "musicbrainz_id": "6dc4abee-274b-46f1-aa22-33761e17f423",
+      "description": "Nu metal and grunge crossover band from Davao City, Philippines",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q141161835",
+      "name": "ras-cal",
+      "musicbrainz_id": "0a05eae9-6df1-41a2-8c71-3283019c64ed",
+      "description": "indie grunge music artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    },
+    {
+      "wikidata_id": "Q131922014",
+      "name": "theavezz",
+      "musicbrainz_id": "332b17ea-6f18-4579-a941-e691d1372666",
+      "description": "Polish musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "grunge"
+      ],
+      "category": "grunge"
+    }
+  ]
+}

@@ -1,0 +1,5332 @@
+{
+  "category": "italian",
+  "label": "Italian pop / rock",
+  "genre_labels": [
+    "pop music",
+    "rock music",
+    "pop rock",
+    "indie pop",
+    "Italian pop",
+    "musica leggera",
+    "canzone",
+    "Italo disco"
+  ],
+  "country_filter": "Q38",
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"pop music\"@en \"rock music\"@en \"pop rock\"@en \"indie pop\"@en \"Italian pop\"@en \"musica leggera\"@en \"canzone\"@en \"Italo disco\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      {{?artist wdt:P27 wd:Q38} UNION {?artist wdt:P495 wd:Q38}}\n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q199943",
+      "name": "Adriano Celentano",
+      "musicbrainz_id": "d2b50525-1111-4906-aab6-4553f035f679",
+      "description": "Italian musician and actor (born 1938)",
+      "sitelinks": 86,
+      "matched_genres": [
+        "pop music",
+        "pop rock",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q487473",
+      "name": "Toto Cutugno",
+      "musicbrainz_id": "5ae40d3f-e429-4baf-9fe9-bcdaa9c81f39",
+      "description": "Italian recording artist; musician, songwriter, record producer (1943–2023)",
+      "sitelinks": 79,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q56884561",
+      "name": "Måneskin",
+      "musicbrainz_id": "3862342a-43c4-4cdb-8250-bfdbfb5e1419",
+      "description": "Italian rock band",
+      "sitelinks": 76,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q170697",
+      "name": "Laura Pausini",
+      "musicbrainz_id": "472b9953-1f10-4aed-b1ec-d0c23ffb2cf1",
+      "description": "Italian singer",
+      "sitelinks": 73,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q153708",
+      "name": "Eros Ramazzotti",
+      "musicbrainz_id": "3ab7295a-54ac-40e8-b1b2-3d110a143550",
+      "description": "Italian musician (born 1963)",
+      "sitelinks": 71,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q201392",
+      "name": "Domenico Modugno",
+      "musicbrainz_id": "b8e60837-e646-4f18-8f92-27d1173511b0",
+      "description": "Italian singer, actor and politician (1928–1994)",
+      "sitelinks": 60,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q737866",
+      "name": "Marco Mengoni",
+      "musicbrainz_id": "0e9b1b8f-a5ab-43e0-bf63-1ff7a4c3e1db",
+      "description": "Italian singer",
+      "sitelinks": 55,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q229295",
+      "name": "Gigliola Cinquetti",
+      "musicbrainz_id": "5fd6d882-1461-46f2-b82c-8d33c4084f10",
+      "description": "Italian singer (1947-)",
+      "sitelinks": 53,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1054564",
+      "name": "Mango",
+      "musicbrainz_id": "9298257c-e9b4-4baa-bf4b-a04475d0422c",
+      "description": "Italian singer-songwriter (1954–2014)",
+      "sitelinks": 49,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3739265",
+      "name": "Fanny Cadeo",
+      "musicbrainz_id": "b997577a-a70a-4b65-82ad-e30b44bd5543",
+      "description": "Italian actress and singer",
+      "sitelinks": 48,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q60036307",
+      "name": "Mahmood",
+      "musicbrainz_id": "ecd032cc-19c8-4a05-902c-e539d3bc75fd",
+      "description": "Italian singer",
+      "sitelinks": 48,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q541385",
+      "name": "Ricchi e Poveri",
+      "musicbrainz_id": "706fe5d6-96df-4c64-ad42-894db061e3da",
+      "description": "Italian band",
+      "sitelinks": 48,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q22695683",
+      "name": "Francesco Gabbani",
+      "musicbrainz_id": "14f15f56-b064-4c06-be86-97d9525247a1",
+      "description": "Italian singer and songwriter (1982-)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q231156",
+      "name": "Mina",
+      "musicbrainz_id": "a56f5af0-3e87-4877-b68f-390f62903381",
+      "description": "Italian singer (born 1940)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q492029",
+      "name": "Tiziano Ferro",
+      "musicbrainz_id": "d12b05b0-a0af-4c2c-8c8c-ab8bcf49439e",
+      "description": "Italian singer",
+      "sitelinks": 47,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q125948",
+      "name": "Zucchero",
+      "musicbrainz_id": "00ed154e-8679-42f0-8f42-e59bd7e185af",
+      "description": "Italian singer-songwriter and musician (1955-)",
+      "sitelinks": 46,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q263621",
+      "name": "Albano Carrisi",
+      "musicbrainz_id": "9ace3c39-0a36-4193-948d-f96b79d24295",
+      "description": "Italian singer and actor",
+      "sitelinks": 45,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q167546",
+      "name": "Lucio Dalla",
+      "musicbrainz_id": "60889737-6f73-415e-ba20-5040498512b4",
+      "description": "Italian singer-songwriter (1943-2012)",
+      "sitelinks": 45,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q20090091",
+      "name": "Alessia Cara",
+      "musicbrainz_id": "97e69730-3791-423b-9770-287261588854",
+      "description": "Italian-Canadian singer, songwriter and actress",
+      "sitelinks": 44,
+      "matched_genres": [
+        "pop music",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q319537",
+      "name": "Gianni Morandi",
+      "musicbrainz_id": "11bb0196-0dc3-41fa-be26-671ca78799f2",
+      "description": "Italian singer (born 1944)",
+      "sitelinks": 44,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q234771",
+      "name": "Iva Zanicchi",
+      "musicbrainz_id": "0b962cba-230c-4a11-ac14-d89f2d46a1c7",
+      "description": "Italian singer and politician",
+      "sitelinks": 44,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q236135",
+      "name": "Romina Power",
+      "musicbrainz_id": "5562addf-0d76-4a9c-8a94-8b57a6aaec5e",
+      "description": "American singer and actress (1951-)",
+      "sitelinks": 44,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q451312",
+      "name": "Umberto Saba",
+      "musicbrainz_id": "39b2a9f1-cd0d-4926-82dc-cac2142ae3d0",
+      "description": "Italian poet and novelist (1883-1957)",
+      "sitelinks": 44,
+      "matched_genres": [
+        "canzone"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q232468",
+      "name": "Gianna Nannini",
+      "musicbrainz_id": "116ed804-4d04-43fd-809f-24e18b17233c",
+      "description": "Italian singer and songwriter (born 1954)",
+      "sitelinks": 43,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q275939",
+      "name": "Xuxa",
+      "musicbrainz_id": "cf07508b-4762-4650-990a-23376e023f55",
+      "description": "Brazilian television presenter, actress, singer and former model",
+      "sitelinks": 43,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q57415344",
+      "name": "Damiano David",
+      "musicbrainz_id": "852c198a-75ee-4e2b-9aba-4453c52260b2",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 42,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q239002",
+      "name": "Ornella Vanoni",
+      "musicbrainz_id": "003f3a74-7595-4da7-b46b-19a8f8e9a1b5",
+      "description": "Italian singer-songwriter (1934–2025)",
+      "sitelinks": 42,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q25147",
+      "name": "Franco Battiato",
+      "musicbrainz_id": "0cd117b2-2e21-406d-80cf-5ce0a6065e37",
+      "description": "Italian singer-songwriter and musician (1945–2021)",
+      "sitelinks": 41,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q6456303",
+      "name": "LP",
+      "musicbrainz_id": "6301cda3-f614-4501-a1c4-b19b27c2efac",
+      "description": "American-Italian musician",
+      "sitelinks": 41,
+      "matched_genres": [
+        "pop rock",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q232479",
+      "name": "Sabrina Salerno",
+      "musicbrainz_id": "3a4fc9e1-81af-4f1e-8ccf-e8e9ab77b3c1",
+      "description": "Italian singer, actress and model (born 1968)",
+      "sitelinks": 41,
+      "matched_genres": [
+        "pop music",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q442697",
+      "name": "Emma",
+      "musicbrainz_id": "ec6eaf55-d743-46ce-89b6-014943a2773c",
+      "description": "Italian singer-songwriter and actress",
+      "sitelinks": 40,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q365060",
+      "name": "Umberto Tozzi",
+      "musicbrainz_id": "76dffaaa-57c7-4b86-8ea1-bcf351dc950c",
+      "description": "Italian singer-songwriter (born 1952)",
+      "sitelinks": 39,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q311842",
+      "name": "Benny Benassi",
+      "musicbrainz_id": "674bf89f-8e70-4472-929d-6b4ed6f98c88",
+      "description": "Italian DJ, record producer and remixer",
+      "sitelinks": 37,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q242535",
+      "name": "Caterina Valente",
+      "musicbrainz_id": "f8914fed-92f4-4aad-b087-aa29ed509452",
+      "description": "Italian-French multilingual singer, guitarist, dancer, and actress (1931–2024)",
+      "sitelinks": 37,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q237446",
+      "name": "Mia Martini",
+      "musicbrainz_id": "08602315-ec54-4918-b446-efd6e9c6c9b6",
+      "description": "Italian singer (1947–1995)",
+      "sitelinks": 37,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q62437",
+      "name": "Frank Farian",
+      "musicbrainz_id": "f01a848f-158a-4dc7-90c5-3e67ab67c8a4",
+      "description": "German music producer (1941–2024)",
+      "sitelinks": 36,
+      "matched_genres": [
+        "rock music",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q240907",
+      "name": "Senhit",
+      "musicbrainz_id": "14d31c7e-2a3f-48c0-bff1-c853195054c9",
+      "description": "Italian singer (born 1979)",
+      "sitelinks": 36,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q105076439",
+      "name": "Blanco",
+      "musicbrainz_id": "c114447d-3acc-41a0-92a4-c12ec12ccfaa",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 35,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q439571",
+      "name": "Francesca Michielin",
+      "musicbrainz_id": "bd1b1a21-1ad6-4ca1-9349-ba10cf35ade4",
+      "description": "Italian singer-songwriter and multi-instrumentalist",
+      "sitelinks": 35,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q356762",
+      "name": "Miguel Bosé",
+      "musicbrainz_id": "98ad7a28-1949-4786-b1f6-4fa05b9b440c",
+      "description": "Spanish-Italian musician, singer and actor",
+      "sitelinks": 35,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q437406",
+      "name": "Catherine Spaak",
+      "musicbrainz_id": "fceee0cd-e50d-4f40-81b3-1d2e2a78fc43",
+      "description": "French-Belgian actress and singer (1945–2022)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q116450762",
+      "name": "Alessandra Mele",
+      "musicbrainz_id": "d8feff9e-9a56-4b09-9f94-c08f5ce13b34",
+      "description": "Norwegian-Italian singer",
+      "sitelinks": 33,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q241835",
+      "name": "Milva",
+      "musicbrainz_id": "3164b4f3-bcec-4f1e-978f-7d8de16f1361",
+      "description": "Italian singer and actress (1939–2021)",
+      "sitelinks": 33,
+      "matched_genres": [
+        "pop music",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q45036",
+      "name": "Nek",
+      "musicbrainz_id": "af02dd1f-b0cc-4210-bcb1-f34f0c578b5e",
+      "description": "Italian singer-songwriter and musician (1972-)",
+      "sitelinks": 33,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q263442",
+      "name": "Rita Pavone",
+      "musicbrainz_id": "1fe5f1ab-38c8-4b5e-866b-45499bd900e6",
+      "description": "Italian actress and singer (1945-)",
+      "sitelinks": 33,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1388171",
+      "name": "Andrius Pojavis",
+      "musicbrainz_id": "35b604cc-716c-4f91-8a90-5ba8fde213bc",
+      "description": "Lithuanian singer-songwriter",
+      "sitelinks": 32,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q447407",
+      "name": "Bobby Solo",
+      "musicbrainz_id": "bf17c27b-64af-4474-930e-7f6602bcb0f5",
+      "description": "Italian singer (1945)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q166164",
+      "name": "Elisa",
+      "musicbrainz_id": "8d173bdf-c83e-42d7-8355-c8d6f0d10c0e",
+      "description": "Italian singer-songwriter (born 1977)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21208625",
+      "name": "Achille Lauro",
+      "musicbrainz_id": "790875e6-bf01-4a83-b81d-97d93588ccc7",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 31,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q238061",
+      "name": "Anna Oxa",
+      "musicbrainz_id": "dc59bc84-b42f-46e7-bd5e-45bd675055d8",
+      "description": "Italian singer",
+      "sitelinks": 31,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q19365890",
+      "name": "Ermal Meta",
+      "musicbrainz_id": "b5c5cb00-b875-467a-a7ca-36c8b652d7cb",
+      "description": "Albanian-Italian singer-songwriter",
+      "sitelinks": 31,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q467069",
+      "name": "Massimo Ranieri",
+      "musicbrainz_id": "bd4ce230-735d-4706-bf10-bc4155b49379",
+      "description": "Italian actor and singer (born 1951)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q736851",
+      "name": "Pino Daniele",
+      "musicbrainz_id": "5b1633c8-cb78-4d85-a7d1-a6d145d8d472",
+      "description": "Italian singer-songwriter and guitarist (1955-2015)",
+      "sitelinks": 31,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q48261",
+      "name": "Anna Tatangelo",
+      "musicbrainz_id": "c11a914c-f2c0-4006-9deb-8af3b8bba659",
+      "description": "Italian singer and television presenter (1987-)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q236237",
+      "name": "Gala",
+      "musicbrainz_id": "cd34e8ed-2f44-4031-849e-e56034b02cf9",
+      "description": "Italian singer",
+      "sitelinks": 30,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q361329",
+      "name": "Gazebo",
+      "musicbrainz_id": "7701e663-1681-46b5-a44a-ce5e84f32569",
+      "description": "Italian singer",
+      "sitelinks": 30,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17171",
+      "name": "Vasco Rossi",
+      "musicbrainz_id": "3bf74908-e8b3-4158-8fae-4fd795bb4474",
+      "description": "Italian singer-songwriter (born 1952)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "pop music",
+        "pop rock",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q929235",
+      "name": "Fabrizio Moro",
+      "musicbrainz_id": "683a8357-f52c-4c5c-be76-ad041872202b",
+      "description": "Italian singer songwriter (1975-)",
+      "sitelinks": 29,
+      "matched_genres": [
+        "pop music",
+        "pop rock",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q161122",
+      "name": "In-Grid",
+      "musicbrainz_id": "d911ca90-7786-4ea5-ad4f-8b7e0ae2ca6b",
+      "description": "Italian singer",
+      "sitelinks": 29,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q505455",
+      "name": "Jovanotti",
+      "musicbrainz_id": "373b3663-ecc3-40c4-9241-838ae8ca34d0",
+      "description": "Italian singer-songwriter (1966-)",
+      "sitelinks": 29,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q563699",
+      "name": "Luciano Ligabue",
+      "musicbrainz_id": "d5b0dc28-2f22-4f7d-adfb-ebbc30fa6d48",
+      "description": "Italian singer, songwriter, film director and writer (born 1960)",
+      "sitelinks": 29,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q179516",
+      "name": "Paolo Conte",
+      "musicbrainz_id": "777bfd31-0c54-49b9-b057-c1fa742cdcf1",
+      "description": "Italian recording artist; musician",
+      "sitelinks": 29,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17389092",
+      "name": "Diodato",
+      "musicbrainz_id": "1f39dd7e-0c5b-40d0-a02c-b52d37612831",
+      "description": "Italian singer-songwriter (1981-)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q288076",
+      "name": "Franca Raimondi",
+      "musicbrainz_id": "9ee6f042-2dd1-4a09-91d0-b56b4fd2a0c5",
+      "description": "Italian singer (1932-1988)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q72226149",
+      "name": "Lucio Corsi",
+      "musicbrainz_id": "c84ada8b-18d7-4081-85ea-31cf66b42724",
+      "description": "Italian singer-songwriter (1993-)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "pop music",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q288040",
+      "name": "Tonina Torrielli",
+      "musicbrainz_id": "71a0089d-aec0-4780-9ef8-d59ce414b41e",
+      "description": "Italian singer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q470554",
+      "name": "Gino Paoli",
+      "musicbrainz_id": "9671bd12-21df-4e35-90aa-ab7bd60efc7f",
+      "description": "Italian recording artist; singer-songwriter (1934–2026)",
+      "sitelinks": 27,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q469154",
+      "name": "Lucio Battisti",
+      "musicbrainz_id": "c0c0de23-d9c1-4776-97e0-0c2529402622",
+      "description": "Italian singer-songwriter (1943-1998)",
+      "sitelinks": 27,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q271346",
+      "name": "Betty Curtis",
+      "musicbrainz_id": "a0d8d88d-718d-43d5-9d90-d850b157e31c",
+      "description": "Italian singer (1936–2006)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q434907",
+      "name": "Loredana Bertè",
+      "musicbrainz_id": "160d593b-9539-4cdf-b80d-52bfbfef0304",
+      "description": "Italian singer (1950-)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q15111851",
+      "name": "Michele Perniola",
+      "musicbrainz_id": "04e65953-c95c-419e-98f5-a417d3c411e0",
+      "description": "Italian singer (1998-)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q466422",
+      "name": "Patty Pravo",
+      "musicbrainz_id": "0ac1c730-8510-4ee8-9fcb-5ad272da73ab",
+      "description": "Italian singer (born 1948)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q471344",
+      "name": "Riccardo Cocciante",
+      "musicbrainz_id": "593bb5a8-a093-431b-b78e-4d6213460980",
+      "description": "Italian singer",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q104902237",
+      "name": "Veronica Fusaro",
+      "musicbrainz_id": "9beab8a3-6192-4c63-a7e6-f4bbcad84a9c",
+      "description": "Swiss singer-songwriter (born 1997)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2850715",
+      "name": "Annalisa",
+      "musicbrainz_id": "d60d4edc-1b8f-48be-8eeb-2ada05e45c54",
+      "description": "Italian singer-songwriter (born 1985)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q353025",
+      "name": "Baltimora",
+      "musicbrainz_id": "15b4aace-6126-402a-96f8-131a943ce20e",
+      "description": "Italian musical group",
+      "sitelinks": 25,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1046038",
+      "name": "Enzo Jannacci",
+      "musicbrainz_id": "e89e9acc-e39b-43ef-88f9-24dca8059867",
+      "description": "Italian singer songwriter, composer, actor, stand-up comedian (1935-2013)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q970271",
+      "name": "Nunzio Gallo",
+      "musicbrainz_id": "ed7d3403-a8c7-4d37-ad18-bf4483b679b4",
+      "description": "Italian singer (1928-2008)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1236257",
+      "name": "Riccardo Fogli",
+      "musicbrainz_id": "0d2ec488-243f-4c61-8367-0d1390c0c823",
+      "description": "Italian singer-songwriter and bassist (born 1947)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q241111",
+      "name": "Alexia",
+      "musicbrainz_id": "78af8512-afb2-4aa2-b6a2-8cccf1fb2685",
+      "description": "Italian recording artist; singer (born 1967)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q25153",
+      "name": "Angelo Branduardi",
+      "musicbrainz_id": "fd090183-3fa6-4138-ae8d-3737571bb082",
+      "description": "Italian folk singer and composer (1950-)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q266617",
+      "name": "Caterina Caselli",
+      "musicbrainz_id": "3e038574-7691-4941-9e81-d06aff92a49f",
+      "description": "Italian singer and record producer (1946-)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q560126",
+      "name": "Claudio Baglioni",
+      "musicbrainz_id": "963ea9d9-743a-409d-a997-0559f8761e67",
+      "description": "Italian singer",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q287932",
+      "name": "Giusy Ferreri",
+      "musicbrainz_id": "291919e3-0eb4-4636-95a9-9ff0f958f512",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q255593",
+      "name": "Nilla Pizzi",
+      "musicbrainz_id": "e69cf971-de4e-4f44-9deb-799ef9348aa3",
+      "description": "Italian singer (1919–2011)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q561484",
+      "name": "Antonello Venditti",
+      "musicbrainz_id": "dd4a5777-42a3-44a2-b5e6-bff6731cdf3a",
+      "description": "Italian recording artist and singer-songwriter (1949-)",
+      "sitelinks": 23,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2704206",
+      "name": "Fiorella Mannoia",
+      "musicbrainz_id": "19bad456-68df-4be4-a8f3-c016b11799e1",
+      "description": "Italian singer-songwriter and actress",
+      "sitelinks": 23,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1444256",
+      "name": "Lodovica Comello",
+      "musicbrainz_id": "6aa9bb9e-1526-4672-abbb-8eb70d8ac3e8",
+      "description": "Italian actress and singer (born 1990)",
+      "sitelinks": 23,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q469078",
+      "name": "Rino Gaetano",
+      "musicbrainz_id": "5a78419b-a191-4423-adc9-95caebba6c1f",
+      "description": "Italian recording artist; singer-songwriter",
+      "sitelinks": 23,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q286547",
+      "name": "Alice",
+      "musicbrainz_id": "e32f2cd6-8695-4914-9c24-72e02ebd09ee",
+      "description": "Italian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q559502",
+      "name": "Calogero",
+      "musicbrainz_id": "7e26f094-2ab2-4810-be12-f8fd8953d99d",
+      "description": "French-Italian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17143550",
+      "name": "Cristina Scuccia",
+      "musicbrainz_id": "e80fe1dd-7100-48f6-80aa-ec13423d735d",
+      "description": "Italian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q355411",
+      "name": "Luca Turilli",
+      "musicbrainz_id": "e1fa99a5-b761-45ab-b0bd-71cd6f2718d4",
+      "description": "Italian musician, composer and producer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q507659",
+      "name": "Mario Trevi",
+      "musicbrainz_id": "d13502b9-9f9d-401b-a81f-df46f0a45faf",
+      "description": "Italian singer and actor",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q613429",
+      "name": "Nicola Di Bari",
+      "musicbrainz_id": "674e1c13-1cf8-4080-b18d-59e76fc8ef26",
+      "description": "Italian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q733379",
+      "name": "Raf",
+      "musicbrainz_id": "12f0c921-2318-4abd-9802-5fe1bdf41679",
+      "description": "Italian singer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q445698",
+      "name": "Arisa",
+      "musicbrainz_id": "a3399a7a-6b82-4a58-9117-7ebaa7e7ad89",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 21,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q592751",
+      "name": "Enrico Ruggeri",
+      "musicbrainz_id": "98fa485f-827e-4790-af95-48743a3d1606",
+      "description": "Italian singer-songwriter (1957-)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q446767",
+      "name": "Marcella Bella",
+      "musicbrainz_id": "50574fed-3a38-4982-854f-a15edd3ab867",
+      "description": "Italian singer (1952-)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q337601",
+      "name": "Pier Gonella",
+      "musicbrainz_id": "11100a72-1941-4854-b71c-b3d2cae2c6c7",
+      "description": "Italian guitarist (born 1977)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4120122",
+      "name": "Ruggero Pasquarelli",
+      "musicbrainz_id": "138b4f65-a072-461b-a2b5-53436fc177f4",
+      "description": "Italian singer, TV presenter and actor",
+      "sitelinks": 21,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q467997",
+      "name": "Alessandra Amoroso",
+      "musicbrainz_id": "cf20d23c-ba1d-4311-9be0-e65320b5a6b5",
+      "description": "Italian singer (1986-)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q375015",
+      "name": "Biagio Antonacci",
+      "musicbrainz_id": "b7c5cc40-c061-44ed-8b2b-d0ff774603c8",
+      "description": "Italian singer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q282784",
+      "name": "Corona",
+      "musicbrainz_id": "098acbe6-c428-4ae2-9cd0-3ba80162befb",
+      "description": "Italian Eurodance band",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1337526",
+      "name": "Emilio Pericoli",
+      "musicbrainz_id": "7a3126a9-7942-4329-988c-59e85f512454",
+      "description": "Italian singer (1928-2013)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q260947",
+      "name": "Giorgia",
+      "musicbrainz_id": "4573d556-ce21-4d49-943d-4f1dde6198f6",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1231930",
+      "name": "Matia Bazar",
+      "musicbrainz_id": "0daeccf9-9a55-4726-a845-80b439d8e4c9",
+      "description": "Italian pop group",
+      "sitelinks": 20,
+      "matched_genres": [
+        "Italo disco",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q15303721",
+      "name": "Michele Bravi",
+      "musicbrainz_id": "710e7188-b3a3-44df-b052-4e3c103a4587",
+      "description": "Italian pop singer and actor",
+      "sitelinks": 20,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q558379",
+      "name": "Al Bano & Romina Power",
+      "musicbrainz_id": "fd80cb81-89bb-4c1f-a981-afa559d364d4",
+      "description": "Italian music duo",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1186767",
+      "name": "Den Harrow",
+      "musicbrainz_id": "107e04ef-f7c0-4f0c-984e-9ff244ab5566",
+      "description": "Italian recording artist; musician",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q26978747",
+      "name": "Elodie",
+      "musicbrainz_id": "9376f5f6-3d09-472c-b8f3-8137e949afde",
+      "description": "Italian singer-songwriter, actress and model",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q554971",
+      "name": "Johnny Dorelli",
+      "musicbrainz_id": "0ced6834-244c-44d9-bd76-c150ae9006c5",
+      "description": "Italian actor, singer and television host",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q274547",
+      "name": "Loretta Goggi",
+      "musicbrainz_id": "3f5300ec-bc37-465d-be68-8291e057e755",
+      "description": "Italian actress and singer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3843927",
+      "name": "Malika Ayane",
+      "musicbrainz_id": "9e4c4480-9c61-4023-9fb8-d3c764652f37",
+      "description": "Italian singer-songwriter and actress",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q32529",
+      "name": "Mietta",
+      "musicbrainz_id": "f8a8e4a9-4046-481e-a638-43acb0855135",
+      "description": "Italian actress and singer (1969-)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q220050",
+      "name": "Righeira",
+      "musicbrainz_id": "3e2f3190-45a4-480a-8ab5-61308c002fb2",
+      "description": "Italian musical group; disco duo",
+      "sitelinks": 19,
+      "matched_genres": [
+        "Italo disco",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17916858",
+      "name": "Vincenzo Cantiello",
+      "musicbrainz_id": "9134a6bb-e306-4ed5-8c22-9845110fa776",
+      "description": "Italian singer",
+      "sitelinks": 19,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1370043",
+      "name": "Alan Sorrenti",
+      "musicbrainz_id": "a5249ff4-11d4-4c19-afd4-94bb41c1756b",
+      "description": "Italian recording artist; musician",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1339038",
+      "name": "Miko Mission",
+      "musicbrainz_id": "16200b3b-1533-4547-9145-61afadcabb04",
+      "description": "Italian singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q272648",
+      "name": "Nada",
+      "musicbrainz_id": "5915ded1-db1a-42d5-9c69-b5f2db8f7ca1",
+      "description": "Italian singer and writer (1953-)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1242174",
+      "name": "Pooh",
+      "musicbrainz_id": "3d6563ff-0dc7-4306-a05f-d68ad7a02964",
+      "description": "Italian band named in honor of Winnie Pooh",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1968623",
+      "name": "Pupo",
+      "musicbrainz_id": "22ee24a0-cba3-4cd4-806a-d7823fb4f86e",
+      "description": "Italian recording artist; singer",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q978509",
+      "name": "Renato Zero",
+      "musicbrainz_id": "5d2e11a9-08cf-4f43-993a-be5dc908e5d6",
+      "description": "Italian singer-songwriter and showman (1950-)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2248723",
+      "name": "Roberto Vecchioni",
+      "musicbrainz_id": "8670a056-a1a1-4434-806d-c4bce6c473d4",
+      "description": "Italian singer-songwriter (born 1943)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q734326",
+      "name": "Ryan Paris",
+      "musicbrainz_id": "ade10104-f5a1-4483-bfb4-806b8f775a4f",
+      "description": "Italian singer (born 1953)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3955856",
+      "name": "Serena Rossi",
+      "musicbrainz_id": "afb905fe-d0e6-4b88-8e02-f722a6f8cfed",
+      "description": "Italian actress, singer and television presenter",
+      "sitelinks": 18,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1052374",
+      "name": "Dori Ghezzi",
+      "musicbrainz_id": "63366712-c7fc-487d-88ed-e2c815d84e3e",
+      "description": "Italian singer (born 1946)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q774617",
+      "name": "Edoardo Bennato",
+      "musicbrainz_id": "e80cb9fc-37b9-469b-9c73-ff26e79941f7",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop rock",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q323127",
+      "name": "Fausto Leali",
+      "musicbrainz_id": "a7edf3fb-dec8-4e6a-819b-47fa4a06248e",
+      "description": "Italian singer (1944-)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q564878",
+      "name": "Gianni Bella",
+      "musicbrainz_id": "843a468c-5d7b-4e0d-a8c6-4b48cca7dd7b",
+      "description": "Italian composer and singer-songwriter (1947-)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q265508",
+      "name": "Ivana Spagna",
+      "musicbrainz_id": "b0d037e8-00c8-4e37-aeec-58422ed345aa",
+      "description": "Italian singer (born 1954)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2755019",
+      "name": "Jimmy Fontana",
+      "musicbrainz_id": "650793b4-94f8-47fb-b6c9-752c94486b75",
+      "description": "Italian actor and musician (1934–2013)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q576894",
+      "name": "La Bionda",
+      "musicbrainz_id": "5441a478-3c5a-4ef2-8e6b-cd37264518aa",
+      "description": "Italian musical group; sibling duo",
+      "sitelinks": 17,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q980363",
+      "name": "Marco Carta",
+      "musicbrainz_id": "148e90df-14f7-40fe-a1d9-7ac7668acb4f",
+      "description": "Italian singer (born 1985)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1044154",
+      "name": "Nino D'Angelo",
+      "musicbrainz_id": "aae14e49-9bc7-4dcd-91d2-5f198e3b1242",
+      "description": "Italian singer and actor",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4666708",
+      "name": "Renzo Rubino",
+      "musicbrainz_id": "493d2257-32b1-4967-9872-75b16d3e4916",
+      "description": "Italian pop singer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q650414",
+      "name": "Rondò Veneziano",
+      "musicbrainz_id": "940a5867-a2e5-4af5-ae05-91cf63bd0b52",
+      "description": "Italian musical group; chamber orchestra",
+      "sitelinks": 17,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q712414",
+      "name": "Articolo 31",
+      "musicbrainz_id": "763ee036-b5ed-46fd-9dc5-22a5a7565bcc",
+      "description": "Italian band",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1056805",
+      "name": "Cesare Cremonini",
+      "musicbrainz_id": "4b0e51ee-a024-4540-a6f4-abf4b5488647",
+      "description": "Italian singer-songwriter (born 1980)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q447306",
+      "name": "Dolcenera",
+      "musicbrainz_id": "7dfcf401-d6d6-4940-a7a7-7431cc8d67b2",
+      "description": "Italian pop singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2990358",
+      "name": "Frédéric François",
+      "musicbrainz_id": "ceb214fe-a6a5-49c3-a665-0a7f329b0c13",
+      "description": "Belgian singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1749089",
+      "name": "J-Ax",
+      "musicbrainz_id": "737f5f06-bbd3-40a1-93f0-81bc9e31c3df",
+      "description": "Italian rapper, singer-songwriter and record producer (born 1972)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1679765",
+      "name": "Jalisse",
+      "musicbrainz_id": "e85f9f00-170b-485a-96c7-e88dcb51471f",
+      "description": "Italian band that plays pop music",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q179262",
+      "name": "Ken Laszlo",
+      "musicbrainz_id": "787134ff-1e24-49f4-9186-bb430fe4b564",
+      "description": "Italian musician and singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q707439",
+      "name": "Luca Barbarossa",
+      "musicbrainz_id": "c7cfe737-a67a-46a9-85f1-03770d9cfc6d",
+      "description": "Italian recording artist, singer-songwriter and radio presenter",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1844447",
+      "name": "Samuele Bersani",
+      "musicbrainz_id": "25c81bf8-9bea-4750-bb5e-c504defa8729",
+      "description": "Italian singer-songwriter (born 1970)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1053643",
+      "name": "Tony Renis",
+      "musicbrainz_id": "fb82112f-0573-409e-abc1-963c0a48e3fa",
+      "description": "Italian singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q461316",
+      "name": "Antonella Ruggiero",
+      "musicbrainz_id": "52637200-afcd-42df-a6e8-b384306f4155",
+      "description": "Italian singer (1952-)",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q5474649",
+      "name": "Baby K",
+      "musicbrainz_id": "8ea67ba3-0045-4af4-b467-119b56554b84",
+      "description": "Singaporean-born Italian singer-songwriter and rapper",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q744019",
+      "name": "Max Pezzali",
+      "musicbrainz_id": "b76f7323-183e-4b90-83b1-5111d04d6665",
+      "description": "Italian singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1394902",
+      "name": "Mino Reitano",
+      "musicbrainz_id": "c753db8b-90b5-4cd0-ace8-7db40c52a396",
+      "description": "Italian singer, songwriter, actor (1944-2009)",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2716238",
+      "name": "P. Lion",
+      "musicbrainz_id": "d2d07d32-cbfb-43e3-b49b-5203baa13366",
+      "description": "Italian singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1361747",
+      "name": "Pino D'Angiò",
+      "musicbrainz_id": "a105dcb4-5f37-4960-b352-dd0b0964de50",
+      "description": "Italian musician (1952–2024)",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1326872",
+      "name": "Savage",
+      "musicbrainz_id": "61bf60f1-b74b-436d-989c-69283a1f932c",
+      "description": "Italian musician and producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2260725",
+      "name": "Scotch",
+      "musicbrainz_id": "53196e7b-880f-42a0-9722-59df9e2fcb9d",
+      "description": "Italian band",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1360782",
+      "name": "Tony Esposito",
+      "musicbrainz_id": "b776609b-a568-4234-bbc4-756f2a812186",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 15,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q453574",
+      "name": "Valerie Dore",
+      "musicbrainz_id": "50bb4028-fb86-4caf-b97e-08530437620f",
+      "description": "Italian singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q621294",
+      "name": "Alessandro Cortini",
+      "musicbrainz_id": "7b88250d-891d-4186-9b16-b94c930be1b2",
+      "description": "Italian musician",
+      "sitelinks": 14,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1252132",
+      "name": "Chiara Galiazzo",
+      "musicbrainz_id": "6f7a92c3-7311-426c-aced-b0c764455bce",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1261375",
+      "name": "Drupi",
+      "musicbrainz_id": "fbbe1525-b779-4fde-a5f4-c55ec6a14d26",
+      "description": "Italian singer (born 1947)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q445692",
+      "name": "Fiordaliso",
+      "musicbrainz_id": "e58a1334-e6ee-4fc9-bca6-4a82671da3c1",
+      "description": "Italian singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1054391",
+      "name": "Franco Califano",
+      "musicbrainz_id": "3763e390-e1e6-4bff-984a-86418a9ed324",
+      "description": "Italian singer-songwriter (1938-2013)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q304229",
+      "name": "Gianluca Grignani",
+      "musicbrainz_id": "1eb83ccc-c448-4a54-b453-33d939093173",
+      "description": "Italian singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q437927",
+      "name": "Irene Grandi",
+      "musicbrainz_id": "422318a0-9769-441e-9edb-bf29845adb9a",
+      "description": "Italian singer, songwriter, record producer, musician, actress and television host",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1243733",
+      "name": "Litfiba",
+      "musicbrainz_id": "e68a900e-4fae-493a-84a8-f76ab62d23e4",
+      "description": "Italian rock band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q18686185",
+      "name": "Lorenzo Fragola",
+      "musicbrainz_id": "e6858456-b812-410a-939b-ed116bf20567",
+      "description": "Italian singer-songwriter (born 1995)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1376248",
+      "name": "Mario Biondi",
+      "musicbrainz_id": "406c77d1-4c07-405b-bb86-4217fa4fc0a4",
+      "description": "Italian jazz singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1974203",
+      "name": "Neffa",
+      "musicbrainz_id": "21fe27b8-e059-47cc-9064-8bfff4bacba5",
+      "description": "Italian singer-songwriter (born 1967)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1091441",
+      "name": "Negramaro",
+      "musicbrainz_id": "2aaa720c-0b5b-42a3-bd65-3bf73d0dba37",
+      "description": "Italian band",
+      "sitelinks": 14,
+      "matched_genres": [
+        "rock music",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2704776",
+      "name": "Peppino Gagliardi",
+      "musicbrainz_id": "c6ac51a4-e2ed-4d23-bd61-99b2130fd729",
+      "description": "Italian singer",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1968084",
+      "name": "Playahitty",
+      "musicbrainz_id": "50fcdf40-df62-402a-8aeb-f67ba4d1fb05",
+      "description": "band that plays pop music",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1528604",
+      "name": "Povia",
+      "musicbrainz_id": "214adf73-541b-4b8f-bb61-0383dbce2153",
+      "description": "Italian singer-songwriter (born 1972)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2831441",
+      "name": "Alberto Carpani",
+      "musicbrainz_id": "62c977ed-e00d-49a9-8b4b-951cbc7e1971",
+      "description": "Italian singer (1956-2020)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music",
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q743425",
+      "name": "Daniele Silvestri",
+      "musicbrainz_id": "9459a09b-2ff6-4389-b656-bb54cfe31962",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q546643",
+      "name": "Don Backy",
+      "musicbrainz_id": "b5f0972b-1d22-436b-8715-d982efe4f254",
+      "description": "Italian recording artist, singer, songwriter and writer (born 1939)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1229104",
+      "name": "Francesco Renga",
+      "musicbrainz_id": "5af7630a-a7d9-4fe5-9a56-64336f2481ac",
+      "description": "Italian singer (born 1968)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3814016",
+      "name": "Katyna Ranieri",
+      "musicbrainz_id": "55906ddb-455f-4d0c-b2f6-c15aa0c002d1",
+      "description": "Italian actress, singer (1927–2018)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1785406",
+      "name": "Koto",
+      "musicbrainz_id": "b991e4ea-5c8e-4e92-98a9-d55ce5a9a59c",
+      "description": "Italian synthpop group",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1986723",
+      "name": "Nathalie",
+      "musicbrainz_id": "acb3ab5d-3912-4daa-8055-56c8a3b9789d",
+      "description": "Italian singer (born 1979)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1247752",
+      "name": "Paola e Chiara",
+      "musicbrainz_id": "34a3daac-6bd7-4b77-88f3-648ada48957f",
+      "description": "Italian pop music duo",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q323846",
+      "name": "Piero Esteriore",
+      "musicbrainz_id": "5d0b5c85-e7e0-40b0-8ffe-bff983f2d280",
+      "description": "Swiss singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2126460",
+      "name": "Radiorama",
+      "musicbrainz_id": "fb66df82-fb61-49a1-a2f2-eb68fe9ccdcf",
+      "description": "Italian disco group",
+      "sitelinks": 13,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2748386",
+      "name": "Ron",
+      "musicbrainz_id": "46f7df13-990a-4e0e-9683-0cbf89ba7a4a",
+      "description": "Italian recording artist; singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q110162378",
+      "name": "Tananai",
+      "musicbrainz_id": "62ecd859-e63b-46f0-95d8-69e860151adb",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q556477",
+      "name": "Wess",
+      "musicbrainz_id": "74833ef6-e4aa-4d40-9274-28f73531030b",
+      "description": "American-born Italian singer",
+      "sitelinks": 13,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q274191",
+      "name": "883",
+      "musicbrainz_id": "618170ad-4957-4b7b-a3b0-489917be18d3",
+      "description": "Italian pop rock group",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop rock",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q460631",
+      "name": "Amedeo Minghi",
+      "musicbrainz_id": "cfffc4e2-6890-4f53-8b30-99b52f8565d0",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1001487",
+      "name": "Finley",
+      "musicbrainz_id": "74924591-31e9-486b-bfc1-f788f8d0f045",
+      "description": "Italian rock band formed in Milan in 2002",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q678359",
+      "name": "Gianni Mascolo",
+      "musicbrainz_id": "7ad59c83-6ea8-45b2-90f7-821cae0710a7",
+      "description": "Italian singer (1940–2016)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q585972",
+      "name": "Gigi D'Alessio",
+      "musicbrainz_id": "bb1598ca-6b6c-4507-96c5-98a0eacf151a",
+      "description": "Italian singer-songwriter (1967-)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q28037234",
+      "name": "Irama",
+      "musicbrainz_id": "32e405e4-c07e-4920-b0d7-696611156ae4",
+      "description": "Italian singer-songwriter (born 1995)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q537114",
+      "name": "Irene Fargo",
+      "musicbrainz_id": "5d98d72b-12ff-44b6-b584-1af9bc0459c6",
+      "description": "Italian singer (1962–2022)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q271505",
+      "name": "L'Aura",
+      "musicbrainz_id": "efb3bb55-5097-4d78-9564-2792d99ea845",
+      "description": "Italian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q536792",
+      "name": "Luciano Tajoli",
+      "musicbrainz_id": "6a2f3762-8c22-45b6-8b93-c6a8b3838726",
+      "description": "Italian actor and singer (1920-1996)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q443064",
+      "name": "Moony",
+      "musicbrainz_id": "d1548f19-4d62-4ab0-b5ec-14554e1b6fb1",
+      "description": "Italian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q191912",
+      "name": "Zero Assoluto",
+      "musicbrainz_id": "5be91575-725b-46b6-9c82-5dffc6f426f0",
+      "description": "Italian band",
+      "sitelinks": 12,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1650952",
+      "name": "Aldo Romano",
+      "musicbrainz_id": "c54c854c-22b3-4554-bb97-bf2fed8f124b",
+      "description": "French-Italian jazz drummer (1941-)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q11723267",
+      "name": "Chiara Iezzi",
+      "musicbrainz_id": "7b9ad05e-d10a-4047-9004-b2bd06aadcac",
+      "description": "Italian actress, singer and musician (born 1973)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q123920992",
+      "name": "Clara",
+      "musicbrainz_id": "8e5ba0cb-7a6f-4b95-ae36-20d468749a98",
+      "description": "Italian singer-songwriter, actress and model",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q89375508",
+      "name": "Gaia",
+      "musicbrainz_id": "210efc30-fed4-4413-bb06-25b016ce39d6",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3763594",
+      "name": "Gianni Nazzaro",
+      "musicbrainz_id": "10100ceb-baf1-468d-a442-ddeee0b33385",
+      "description": "Italian singer (1948–2021)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q19262213",
+      "name": "Giovanni Caccamo",
+      "musicbrainz_id": "d41c9441-03b8-4f9c-ab6b-f6d9088ef219",
+      "description": "Italian singer-songwriter and television presenter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q56352092",
+      "name": "Giulia Guerrini",
+      "musicbrainz_id": "ad4b68ef-df40-4071-8c16-42017dcb6bba",
+      "description": "Italian actress and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2755051",
+      "name": "Ivan Graziani",
+      "musicbrainz_id": "6640d654-4b8f-48ed-883c-e064a0a48861",
+      "description": "Italian recording artist; singer (1945–1997)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q984697",
+      "name": "Modà",
+      "musicbrainz_id": "0bd366c2-21db-4fd0-8a1f-7cfe935c660d",
+      "description": "Italian indie rock band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3369086",
+      "name": "Patricia Carli",
+      "musicbrainz_id": "77fc557e-194b-47ae-822c-fc4e2217efde",
+      "description": "Italian-French singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q55774626",
+      "name": "Pinguini Tattici Nucleari",
+      "musicbrainz_id": "a54d8a81-afd1-4b7c-a33b-eae15fdcee05",
+      "description": "Italian band",
+      "sitelinks": 11,
+      "matched_genres": [
+        "indie pop",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q302635",
+      "name": "Sonohra",
+      "musicbrainz_id": "330d12d1-1a26-42f7-a3d1-5f37e42aafc4",
+      "description": "Italian musical group",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q461673",
+      "name": "Valerio Scanu",
+      "musicbrainz_id": "24634291-d159-4b75-937e-00b1c2161018",
+      "description": "Italian pop rock singer (born 1990)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1723694",
+      "name": "Alberto Rabagliati",
+      "musicbrainz_id": "7e635905-eb8b-44ca-8175-6b847513705c",
+      "description": "Italian actor, singer and radio personality (1906–1974)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q365281",
+      "name": "Aleandro Baldi",
+      "musicbrainz_id": "5ea2d766-f251-46c6-baa9-bcae703d7e7e",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2247506",
+      "name": "Carla Boni",
+      "musicbrainz_id": "526cc653-11c3-4d28-9e5b-a02f647a49e0",
+      "description": "Italian singer (1925–2009)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3726064",
+      "name": "Enrico Simonetti",
+      "musicbrainz_id": "24681a7c-9ad2-4a61-8639-a52ba6a19527",
+      "description": "Italian composer (1924–1978)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q440691",
+      "name": "Frank Michael",
+      "musicbrainz_id": "80943d84-2dbb-48cc-bb98-07f07643bf64",
+      "description": "Belgian singer of Italian origin",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q467900",
+      "name": "Gerardina Trovato",
+      "musicbrainz_id": "e6e56c37-7add-4a43-a426-bc3e2cbd455e",
+      "description": "Italian singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3763495",
+      "name": "Gianni Dei",
+      "musicbrainz_id": "cebc27ce-fa5b-409f-b69e-4b8a7ccf8197",
+      "description": "Italian actor (1940–2020)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3768548",
+      "name": "Gipo Farassino",
+      "musicbrainz_id": "0aeae1bd-a229-4ee6-a8a6-99d0b7139f8f",
+      "description": "Italian singer-songwriter, actor and politician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1233241",
+      "name": "Giusto Pio",
+      "musicbrainz_id": "52001c63-5ed3-43eb-98e5-f2d20cffba0e",
+      "description": "Italian recording artist; musician (1926-2017)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3775982",
+      "name": "Grazia Di Michele",
+      "musicbrainz_id": "dab0de5c-9ed4-4a96-be9d-f6ccf924f220",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q19310473",
+      "name": "Levante",
+      "musicbrainz_id": "9ede3bf0-10ac-43f8-87b6-a67f2e95c0f5",
+      "description": "Italian singer-songwriter, writer and actress",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q457535",
+      "name": "Loredana Errore",
+      "musicbrainz_id": "e9a94ceb-01a1-47f0-8102-e4ed6226d029",
+      "description": "Italian singer (1984-)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17277429",
+      "name": "Margherita Vicario",
+      "musicbrainz_id": "b4732ee2-bb6e-4e6b-9e63-17842d4be0f8",
+      "description": "Italian actress and singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3853042",
+      "name": "Max Gazzè",
+      "musicbrainz_id": "1b2b31ab-2618-4582-80c7-75402da42a03",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q380343",
+      "name": "Michele Zarrillo",
+      "musicbrainz_id": "8070beac-c363-473f-8930-394f55f12f29",
+      "description": "Italian singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2454658",
+      "name": "Mikelangelo Loconte",
+      "musicbrainz_id": "e264bd59-6c03-47c4-a2e3-67e8d5c222f4",
+      "description": "Italian singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q94134",
+      "name": "Patrizio Buanne",
+      "musicbrainz_id": "be8491e9-a443-4e57-a4e7-d2fc78ee6b7c",
+      "description": "Italian singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q15778609",
+      "name": "Rocco Hunt",
+      "musicbrainz_id": "3bc7e920-642f-459d-b484-b2c085790a5a",
+      "description": "Italian singer-songwriter and rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q20645822",
+      "name": "The Kolors",
+      "musicbrainz_id": "d1ed4ed2-bf33-4348-90cd-83f18732d176",
+      "description": "Italian band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q898898",
+      "name": "Tiromancino",
+      "musicbrainz_id": "1a1b956f-afa5-4067-b074-48bd181c647a",
+      "description": "Italian band",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3998677",
+      "name": "Tricarico",
+      "musicbrainz_id": "86928e88-6f79-4c31-9833-3d1350539c92",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q58744151",
+      "name": "Carl Brave",
+      "musicbrainz_id": "bbf29ea6-af29-4429-9b4c-415f13df6cfe",
+      "description": "Italian singer-songwriter, rapper and record producer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q438498",
+      "name": "Claudio Lolli",
+      "musicbrainz_id": "780b6298-04cd-433c-9ad2-f26d4079487b",
+      "description": "Italian recording artist; singer and writer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q83561443",
+      "name": "Joan Thiele",
+      "musicbrainz_id": "285b17fb-d3a7-46a9-adac-3a0001a5811d",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1660204",
+      "name": "Kano",
+      "musicbrainz_id": "1163c626-b960-4ccf-a63f-3820e53cf987",
+      "description": "Italian musical group",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3827049",
+      "name": "Lara Saint Paul",
+      "musicbrainz_id": "5787c598-3a65-4029-88f7-a8b06ca5f485",
+      "description": "Italian Eritrean singer, entertainer, impresario and record producer (1945–2018)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3838248",
+      "name": "Luca Prodan",
+      "musicbrainz_id": "ccc3f578-8e67-4c90-af53-df8ffc645efd",
+      "description": "Italian musician (1953–1987)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q367201",
+      "name": "Mike Francis",
+      "musicbrainz_id": "45ecb34e-32a5-4e17-863c-fc10df5b7517",
+      "description": "Italian singer and composer (1961-2009)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "pop music",
+        "Italo disco",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q107066810",
+      "name": "Sangiovanni",
+      "musicbrainz_id": "d97c9e0d-96d2-4cdc-874b-4d6e6c13e55d",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1385435",
+      "name": "Silver Pozzoli",
+      "musicbrainz_id": "9b048046-4d0d-46de-9e73-02e7e208f952",
+      "description": "Italian musician",
+      "sitelinks": 9,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3660325",
+      "name": "Carmen Villani",
+      "musicbrainz_id": "1adc53b9-ee98-4636-b4be-30e9e0d2300a",
+      "description": "Pop singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q59313339",
+      "name": "Gazzelle",
+      "musicbrainz_id": "c3af9b3f-aecf-4570-a7a8-b952e75f2f7c",
+      "description": "Italian singer-songwriter (born 1989)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q737455",
+      "name": "Gianni Togni",
+      "musicbrainz_id": "a9ddc20c-9f45-4f43-85b8-be9697d8b336",
+      "description": "Italian singer-songwriter (1956-)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q958623",
+      "name": "I Santo California",
+      "musicbrainz_id": "bafad8fe-b578-4dbb-98e1-76a4dc6774c6",
+      "description": "Italian band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1141599",
+      "name": "Jacopo Sarno",
+      "musicbrainz_id": "450d2e04-324b-4e66-b72a-5cf12f2119b6",
+      "description": "Italian singer and actor",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q727131",
+      "name": "Lena Biolcati",
+      "musicbrainz_id": "48f055ef-5f4a-4cac-a58f-9619b3de36b1",
+      "description": "Italian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3841122",
+      "name": "Lùnapop",
+      "musicbrainz_id": "189d80e7-bf87-43c4-96ff-7b4a5ad676df",
+      "description": "Italian pop band (1999–2001)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1886591",
+      "name": "Mal Ryder",
+      "musicbrainz_id": "3b44704e-9519-4e9f-a4fc-b8b9e5891e47",
+      "description": "British-Italian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q462285",
+      "name": "Mauro Malavasi",
+      "musicbrainz_id": "eb37a469-ad68-44f2-a3e3-520cfd3653a8",
+      "description": "Italian musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1986078",
+      "name": "Nicola Arigliano",
+      "musicbrainz_id": "4e6b67b0-5e75-446a-a68b-955dd7a3ba65",
+      "description": "Italian recording artist; singer and jazz musician (1923–2010)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q283237",
+      "name": "Patrizia Laquidara",
+      "musicbrainz_id": "c451aa54-0533-412a-8772-fac4cc2f4cd2",
+      "description": "Italian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q466796",
+      "name": "Pierdavide Carone",
+      "musicbrainz_id": "b6182ed2-3e41-40b6-a3d3-9bcc9784759d",
+      "description": "Italian singer-songwriter (1988-)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3934434",
+      "name": "Riccardo Del Turco",
+      "musicbrainz_id": "bb30ff2e-0be9-4e11-a3f4-24a124203599",
+      "description": "Italian recording artist; singer-songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3948233",
+      "name": "Sandro Giacobbe",
+      "musicbrainz_id": "ce6b969a-86e1-4532-a42a-bff9a0a147de",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q728630",
+      "name": "Scialpi",
+      "musicbrainz_id": "609a5a4e-9a18-4e5d-b0b4-f2459e0ef9f7",
+      "description": "Italian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2286750",
+      "name": "Silvia Mezzanotte",
+      "musicbrainz_id": "3e68cba3-fd9d-481d-a104-6f82550d35b9",
+      "description": "Italian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3978262",
+      "name": "Susanna Parigi",
+      "musicbrainz_id": "c1da134d-6aa6-480c-8a24-6fe2b42d2865",
+      "description": "Italian musician (1961–2023)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3991985",
+      "name": "Tiziana Rivale",
+      "musicbrainz_id": "5e365426-39db-42f1-a2fe-49245cb44949",
+      "description": "Italian singer and composer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q433491",
+      "name": "Valentina Giovagnini",
+      "musicbrainz_id": "1ea0894e-c5e0-46ac-8c82-35c6d2d61e00",
+      "description": "Italian singer (1980-2009)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q96621463",
+      "name": "Alfa",
+      "musicbrainz_id": "0339d1e8-0228-4432-a77d-3ad19642801a",
+      "description": "Italian rapper and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q5046029",
+      "name": "Carrara",
+      "musicbrainz_id": "8f881f50-8783-4088-8882-b8e4698e4624",
+      "description": "Italian singer and musician (born 1958)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q5248182",
+      "name": "Deborah Blando",
+      "musicbrainz_id": "d499f364-16f0-4b6f-9443-1846f8aa2a48",
+      "description": "Brazilian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q18752431",
+      "name": "Deborah Iurato",
+      "musicbrainz_id": "b4e6cee4-bb42-4529-86c4-c4f264f80f3c",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3026143",
+      "name": "Diana Est",
+      "musicbrainz_id": "5784a146-403a-4d08-b3a3-4c7f15e1e106",
+      "description": "Italian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3758520",
+      "name": "Gary Low",
+      "musicbrainz_id": "5827a0a1-7e72-427a-8f75-0eb920986f3a",
+      "description": "Italian musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3764264",
+      "name": "Gilda",
+      "musicbrainz_id": "f024bcec-b165-462b-9980-e72f67f11a76",
+      "description": "Italian singer (born 1950)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3804671",
+      "name": "Ivan Cattaneo",
+      "musicbrainz_id": "b9ff0426-3ccf-4eb2-b754-b6bbeb4d01a2",
+      "description": "Italian singer, songwriter, musician, painter and multimedia artist",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3807901",
+      "name": "Jenny B",
+      "musicbrainz_id": "a560d0e0-6e6a-4f84-89de-6a8767b2f8f4",
+      "description": "Italian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3811045",
+      "name": "Jula de Palma",
+      "musicbrainz_id": "9766470b-1909-44f0-8e33-fb14e4b95c22",
+      "description": "Italian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q28745407",
+      "name": "Lele",
+      "musicbrainz_id": "b357846e-da7f-4bb4-94ed-111fffa0b9a9",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q607397",
+      "name": "Luca Dirisio",
+      "musicbrainz_id": "1f766e87-69c9-4e36-b023-ba382fc0cc3d",
+      "description": "Italian singer (1978-)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2149231",
+      "name": "Marina Rei",
+      "musicbrainz_id": "fbb4c095-95c7-4253-8321-d4d4deb956b4",
+      "description": "Italian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3851060",
+      "name": "Massimiliano Pani",
+      "musicbrainz_id": "860eb056-dbbf-4705-9d2f-2ae856606561",
+      "description": "Italian singer-songwriter, record producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1907660",
+      "name": "Massimo Bubola",
+      "musicbrainz_id": "e37d79d9-39a9-4a0f-9b86-9f8190cc50c6",
+      "description": "Italian recording artist; singer, songwriter and record producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q110162485",
+      "name": "Matteo Romano",
+      "musicbrainz_id": "fe160aa8-2f2c-40e6-be54-68589be5799f",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3858890",
+      "name": "Mirna Doris",
+      "musicbrainz_id": "9def03e3-1771-4c6d-8c8b-96b2fa4e79f5",
+      "description": "Italian singer (1940-2020)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1616478",
+      "name": "Paolo Vallesi",
+      "musicbrainz_id": "674fac7a-b66f-4641-9b17-cc28ef6e4f26",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3938699",
+      "name": "Roberto Ciotti",
+      "musicbrainz_id": "ca6c3c55-b705-4bc7-942f-573bedc3d5a0",
+      "description": "musician (1953–2013)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q541187",
+      "name": "Silvia Salemi",
+      "musicbrainz_id": "2dd0ea61-0550-44c6-80be-42c46525d3f5",
+      "description": "Italian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1682114",
+      "name": "Tullio De Piscopo",
+      "musicbrainz_id": "f5a2a32e-3fbb-46c9-b34d-dca87250aa47",
+      "description": "Italian drummer, percussionist and singer.",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4014525",
+      "name": "Virginio Simonelli",
+      "musicbrainz_id": "f9c9ad11-89ff-4349-b03d-42b92f778a0e",
+      "description": "Italian singer (born 1985)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4716276",
+      "name": "Alessandra Mirka Gatti",
+      "musicbrainz_id": "2527e46a-44ac-4660-a7bd-ebff93b2f0c5",
+      "description": "Italian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q127697555",
+      "name": "Angelo Iannelli",
+      "musicbrainz_id": "0cdbbb76-91a1-4111-86ff-9b443217e3d8",
+      "description": "Italian writer, actor and singer-songwriter (born 1986)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop rock",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q6903971",
+      "name": "Antonio Maggio",
+      "musicbrainz_id": "5bd58080-9ad3-4907-a44b-2d091bd54d8d",
+      "description": "Italian pop singer (born 1986)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21607826",
+      "name": "Benji & Fede",
+      "musicbrainz_id": "7ec5d3e7-3874-427c-aa0a-a88720e0f846",
+      "description": "Italian musical duo",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3659289",
+      "name": "Carlo Donida",
+      "musicbrainz_id": "fdadde63-146f-4849-b3f6-a8985512b1aa",
+      "description": "Italian composer, pianist (1920–1998)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q63435294",
+      "name": "Coma_Cose",
+      "musicbrainz_id": "2c743be3-1b50-4990-b8c9-f5012f35d41f",
+      "description": "Italian electro duo",
+      "sitelinks": 6,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q109936158",
+      "name": "Ditonellapiaga",
+      "musicbrainz_id": "7816ea3f-526b-478c-9cfc-70b2ec07ed63",
+      "description": "Italian singer-songwriter (born 1997)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3748332",
+      "name": "Formula 3",
+      "musicbrainz_id": "4507a0ed-4b72-47d5-87eb-3dad6816c17e",
+      "description": "Italian musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1441156",
+      "name": "Francesco Napoli",
+      "musicbrainz_id": "279e01bb-dc46-42c6-bfba-dc54f4f782af",
+      "description": "Italian pianist",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q110616376",
+      "name": "Gianmaria",
+      "musicbrainz_id": "d986918d-7b78-4e1c-971c-11910e00a109",
+      "description": "Italian singer-songwriter (2002-)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3763571",
+      "name": "Gianni Meccia",
+      "musicbrainz_id": "32a2c459-ac08-4b5b-a550-badc1d6bf9cb",
+      "description": "Italian actor and musician; songwriter, music producer (1931–2024)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q108304",
+      "name": "Giovanni Zarrella",
+      "musicbrainz_id": "785aa2ad-0ab3-40cc-ae2a-2c1d0d8910da",
+      "description": "Italian-German singer and television presenter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3786469",
+      "name": "Homo Sapiens",
+      "musicbrainz_id": "3590cdad-cb89-4825-b8a2-773c9ed6100d",
+      "description": "Italian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3790430",
+      "name": "I Ribelli",
+      "musicbrainz_id": "5b4e8b79-3631-4d2c-89be-a0961e5bb797",
+      "description": "Italian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1538723",
+      "name": "Il Genio",
+      "musicbrainz_id": "94b75d5d-7c80-4e52-b38d-a28bea6d6609",
+      "description": "Italian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q98961476",
+      "name": "Il Tre",
+      "musicbrainz_id": "0542e218-dcae-4f09-b4a7-0eb58c47d843",
+      "description": "Italian rapper and singer-songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3837043",
+      "name": "Lorenzo Piani",
+      "musicbrainz_id": "6c25ec44-ce5d-4562-bf42-02bff44f298c",
+      "description": "Italian singer and songwriter (1955-2016)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1304905",
+      "name": "Marco Ferradini",
+      "musicbrainz_id": "5db6ecac-8d30-47f2-a70a-58a90605f1f8",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q540555",
+      "name": "Mariella Nava",
+      "musicbrainz_id": "8836271c-5237-4083-8a3c-9f6ca0cdc6c8",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1905567",
+      "name": "Martinelli",
+      "musicbrainz_id": "ad3f93a3-0e4c-4f69-92ca-b22c08ac8003",
+      "description": "band that plays Italo disco",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3852502",
+      "name": "Maurizio Arcieri",
+      "musicbrainz_id": "b0c5f707-b3d2-4d27-8695-bd360f7e5afa",
+      "description": "Italian singer (1945-2015)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3858586",
+      "name": "Mino Vergnaghi",
+      "musicbrainz_id": "380c8197-e6f5-4778-a749-842872c82a58",
+      "description": "Italian singer and composer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1956416",
+      "name": "My Mine",
+      "musicbrainz_id": "f58773eb-9536-43df-bc87-44a986b8f6d0",
+      "description": "Italian musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q6056180",
+      "name": "Pablo Manavello",
+      "musicbrainz_id": "c194619c-cb6f-4e21-82ea-5dadb98610f8",
+      "description": "Venezuelan musician (1950-2016)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16586771",
+      "name": "Paola Iezzi",
+      "musicbrainz_id": "16c8f24b-5e91-40d5-ba72-e92a743130b1",
+      "description": "Italian singer-songwriter, disc jockey and record producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1968611",
+      "name": "Piccola Orchestra Avion Travel",
+      "musicbrainz_id": "f4c686c2-4602-41cf-86f4-a889d55d1274",
+      "description": "Italian musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4047425",
+      "name": "Profusion",
+      "musicbrainz_id": "47c45604-2038-441b-8cdf-c4d0d3e02c44",
+      "description": "Italian musical group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q96870017",
+      "name": "Shanguy",
+      "musicbrainz_id": "3f4b212b-79c7-47a3-af61-04b6625fb59f",
+      "description": "French-Italian music collective project",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q2326007",
+      "name": "Stadio",
+      "musicbrainz_id": "b0f31d7e-684e-4c2f-86ca-a9f5a6784d3f",
+      "description": "Italian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q490214",
+      "name": "Tazenda",
+      "musicbrainz_id": "f30ad5cd-5993-4a84-a689-5961352043d5",
+      "description": "Italian musical group; Sardinian ethnic pop-rock band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "rock music",
+        "pop rock",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q24934620",
+      "name": "Thegiornalisti",
+      "musicbrainz_id": "2b6f39b0-c190-4c09-849a-d82f128aab29",
+      "description": "Italian band",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16237067",
+      "name": "Violetta Zironi",
+      "musicbrainz_id": "99b18667-8484-45c7-8319-065aa340c019",
+      "description": "Italian singer-songwriter and actress (born 1995)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q116152154",
+      "name": "Will",
+      "musicbrainz_id": "167b0daf-c87f-41d3-86fd-37f4d9fe2453",
+      "description": "Italian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3002888",
+      "name": "Cristina Marocco",
+      "musicbrainz_id": "6d4607a1-5032-4628-b69d-1911da459e29",
+      "description": "Italian actress and singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1163771",
+      "name": "Daniele Negroni",
+      "musicbrainz_id": "ef09fdd0-b40e-464e-8209-62d807cabb09",
+      "description": "German-Italian singer and television personality",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q5359005",
+      "name": "Elena Ferretti",
+      "musicbrainz_id": "24ad095c-72c2-4135-bc4c-c235039ebb62",
+      "description": "Italian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1427486",
+      "name": "Flavio Boltro",
+      "musicbrainz_id": "fb7dacde-3469-43cd-8c75-fa1804687743",
+      "description": "Italian musician",
+      "sitelinks": 5,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17154423",
+      "name": "Follya",
+      "musicbrainz_id": "19d9bed0-6482-4ae8-a4c4-27893eac3a3a",
+      "description": "Italian band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q60693296",
+      "name": "Franco126",
+      "musicbrainz_id": "5076ae9f-98a7-4928-946f-6807c8c1a06c",
+      "description": "Italian singer-songwriter and rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1493399",
+      "name": "Ganes",
+      "musicbrainz_id": "3d0f7b3d-e847-476b-81bf-d4000f01f424",
+      "description": "band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3099800",
+      "name": "Gazosa",
+      "musicbrainz_id": "4f86581d-ad7f-43fc-aa94-f7e2a2db7a42",
+      "description": "Italian musical group",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3649207",
+      "name": "Gianluigi Cavallo",
+      "musicbrainz_id": "a9caba60-c907-462f-b762-c1fbce3cd330",
+      "description": "Italian composer, singer and guitarist",
+      "sitelinks": 5,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21756471",
+      "name": "Giosada",
+      "musicbrainz_id": "54151af7-9a86-43a1-9c71-ef6ce88eece9",
+      "description": "Italian singer-songwriter (born 1989)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3836525",
+      "name": "Lollipop",
+      "musicbrainz_id": "accd9f28-c48c-4d22-aa98-6f0aa375b56d",
+      "description": "Italian girl band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1872982",
+      "name": "Luca Napolitano",
+      "musicbrainz_id": "782dab23-cba9-42d0-95c5-92f822a6437b",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3845172",
+      "name": "Mao",
+      "musicbrainz_id": "0bdf8293-967d-4a3e-a5e0-bd830201f0c1",
+      "description": "Italian singer-songwriter, composer, multi-instrumentalist, radio and television host and actor",
+      "sitelinks": 5,
+      "matched_genres": [
+        "indie pop",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3290120",
+      "name": "Marco Marinangeli",
+      "musicbrainz_id": "a51defd7-7ecd-4e44-bdfa-7b5a86710fa7",
+      "description": "Italian composer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q12071728",
+      "name": "Mr. Zivago",
+      "musicbrainz_id": "64e8d637-5384-4098-bfd5-add64e045338",
+      "description": "Italian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3376194",
+      "name": "Perturbazione",
+      "musicbrainz_id": "d8b3c451-3466-41d9-98ca-7c9422d0c95e",
+      "description": "Italian music group",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3940850",
+      "name": "Romina Johnson",
+      "musicbrainz_id": "7febc558-01c5-4ded-a1bf-dcaa62435aee",
+      "description": "British singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3946655",
+      "name": "Samuel",
+      "musicbrainz_id": "9a28e6c2-abe3-405c-a015-b3409b36654e",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q116152120",
+      "name": "Shari",
+      "musicbrainz_id": "6a526b1c-a722-4ffa-b874-b073df86866e",
+      "description": "Italian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3598251",
+      "name": "24 Grana",
+      "musicbrainz_id": "6a762755-1de6-45c6-ada8-721cc7b13c6e",
+      "description": "Italian band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4716166",
+      "name": "Aleph",
+      "musicbrainz_id": "7ab2733a-588e-454c-8326-cd5f984a6186",
+      "description": "Italian disco band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q108099421",
+      "name": "Angela Brambati",
+      "musicbrainz_id": "fe7625f3-83b0-4c47-abd0-a8edff84a005",
+      "description": "Italian singer (born 1947)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q136652167",
+      "name": "Angie",
+      "musicbrainz_id": "7c640197-fec0-4f85-89e4-a7de3dfcf3cd",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4838123",
+      "name": "Baby's Gang",
+      "musicbrainz_id": "52e5cc26-6a88-46b5-8d27-b7431bffee7e",
+      "description": "Italian musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q971332",
+      "name": "Bluvertigo",
+      "musicbrainz_id": "9a5e684f-8c8e-474f-bd03-0ac39d35df6a",
+      "description": "Italian musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3648226",
+      "name": "C.F.F. e il Nomade Venerabile",
+      "musicbrainz_id": "bc395080-5f4f-4a8b-bd7a-702436773a4d",
+      "description": "Italian band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3449868",
+      "name": "Delta V",
+      "musicbrainz_id": "cb187ed5-6518-4965-92f0-98cee3209528",
+      "description": "Italian pop band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3723468",
+      "name": "Ellade Bandini",
+      "musicbrainz_id": "62cba6fb-36d7-4a24-acc3-2050914508c4",
+      "description": "Italian drummer and jazz musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3739590",
+      "name": "Farida",
+      "musicbrainz_id": "cccd8ea8-2212-4010-ae0b-55b94a164dab",
+      "description": "Italian singer (1946–2024)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3760420",
+      "name": "George Aaron",
+      "musicbrainz_id": "71a7bab3-40b9-4c3c-aa9a-57beb5949710",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16844249",
+      "name": "Holly Dolly",
+      "musicbrainz_id": "82236152-973f-423a-bd78-9090c51c5db2",
+      "description": "animated, singing female donkey from Italy",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q19545401",
+      "name": "Iskra Menarini",
+      "musicbrainz_id": "92cdc7a0-5961-4b81-8120-0d966789eaa2",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3290164",
+      "name": "Marco Sabiu",
+      "musicbrainz_id": "213dc30c-a0b2-4e4f-8efe-54526670140f",
+      "description": "Italian composer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3849272",
+      "name": "Mariolino Barberis",
+      "musicbrainz_id": "f75d11d6-7c57-4e6e-88a6-5aa4be75d5b9",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3308199",
+      "name": "Michael Fortunati",
+      "musicbrainz_id": "7c847428-9a77-4977-b8d6-1a021b9ab967",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3337415",
+      "name": "Naïf Hérin",
+      "musicbrainz_id": "38b9e7ec-4620-4198-b0db-9a9e717ab5ac",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3879040",
+      "name": "Novecento",
+      "musicbrainz_id": "a68173e2-e226-4439-ab12-0ebad05a052b",
+      "description": "Italian band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "Italo disco",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q7351672",
+      "name": "Roberto Diana",
+      "musicbrainz_id": "cdd1ab1e-eef4-4ef2-b51f-6d3f2bc30c4a",
+      "description": "Italian musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3436987",
+      "name": "Roberto Tiranti",
+      "musicbrainz_id": "547428be-d04e-45ad-a045-3647da3a53eb",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q27817147",
+      "name": "Rockin' 1000",
+      "musicbrainz_id": "a46f125f-0210-4fd2-838c-b16691641087",
+      "description": "Italian musical supergroup",
+      "sitelinks": 4,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3960781",
+      "name": "Silvia Olari",
+      "musicbrainz_id": "05bdcef2-83fc-480c-8714-814ea4995a81",
+      "description": "Italian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q33697864",
+      "name": "Takagi & Ketra",
+      "musicbrainz_id": "5af42d79-f5a3-4836-8015-ca1ac6c5d4d8",
+      "description": "Italian musical duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3609908",
+      "name": "Alessandro Casillo",
+      "musicbrainz_id": "55b9382b-75d5-4119-91f6-8e49cc6056ed",
+      "description": "Italian singer (born 1996)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q493876",
+      "name": "Andrea Figallo",
+      "musicbrainz_id": "a1e7f419-3243-47bc-9583-7d4b7698f8b9",
+      "description": "Italian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3621255",
+      "name": "Aram Quartet",
+      "musicbrainz_id": "e290c87a-df78-4820-bde2-ff66ab984af2",
+      "description": "Italian musical group winner of the first Italian edition of the X Factor",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q65705696",
+      "name": "Campos",
+      "musicbrainz_id": "15f3f0d4-bdb4-4ec6-9def-791f80d5cdbd",
+      "description": "Italian band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q109658151",
+      "name": "Colapesce Dimartino",
+      "musicbrainz_id": "a88c7b8a-9f7d-476d-b808-e752fd8f732f",
+      "description": "Italian musical duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3019093",
+      "name": "Davide Esposito",
+      "musicbrainz_id": "b4c6539b-7d26-439f-a585-b1ddda059ed5",
+      "description": "Italian singer, songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3941712",
+      "name": "Giorgio Canali & Rossofuoco",
+      "musicbrainz_id": "538e7778-b206-493a-af3a-dce46a453bbb",
+      "description": "Italian rock band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21004371",
+      "name": "Giuliano Di Paolo",
+      "musicbrainz_id": "a21687eb-bbd2-4d9f-bd05-52752090577f",
+      "description": "Italian singer-songwriter, producer and music video director",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q39058450",
+      "name": "Gizmodrome",
+      "musicbrainz_id": "2ab80f85-4b7f-4be8-a74f-a954c8f53cbb",
+      "description": "Italian band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q7002007",
+      "name": "Il Cile",
+      "musicbrainz_id": "b6aea885-aaaf-4f0b-8acd-310b7138cef7",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3792741",
+      "name": "Il Giardino dei Semplici",
+      "musicbrainz_id": "19e60de2-9e16-49ef-a5a6-78bd925613c5",
+      "description": "Italian band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3828293",
+      "name": "Le Amiche",
+      "musicbrainz_id": "02d76764-cabb-40f2-adaa-1580e06adf13",
+      "description": "",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3829232",
+      "name": "Leandro Barsotti",
+      "musicbrainz_id": "40a1f62c-7831-4699-b477-7427159a721e",
+      "description": "Italian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1811904",
+      "name": "Lee Marrow",
+      "musicbrainz_id": "c300dad7-9890-41f8-b3fb-cacc406dc0a0",
+      "description": "Italian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q18223879",
+      "name": "Management del dolore post-operatorio",
+      "musicbrainz_id": "5c36b118-dbd1-4a8e-a4d8-6f589b03d044",
+      "description": "Italian indie band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q138030988",
+      "name": "Mind Enterprises",
+      "musicbrainz_id": "d864fd61-929b-4d8c-a241-3c2eed1b53bb",
+      "description": "Italian music duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3859215",
+      "name": "Missincat",
+      "musicbrainz_id": "a388c05f-722b-43e1-9a66-4bc2c3d0228e",
+      "description": "Italian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop rock",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q7196085",
+      "name": "Pink Project",
+      "musicbrainz_id": "4a89c257-8a8a-43e6-b664-36110be1ed2a",
+      "description": "Italian italo disco band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q20992227",
+      "name": "Romina Falconi",
+      "musicbrainz_id": "797ad7ae-f346-4bba-b75b-bf8495148b7c",
+      "description": "Italian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q99703392",
+      "name": "Roshelle",
+      "musicbrainz_id": "f3ea1dc7-022b-44b5-b5d2-d470a14496a0",
+      "description": "Italian singer and rapper (born 1995)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3037008",
+      "name": "Wess & Dori Ghezzi",
+      "musicbrainz_id": "af8b3400-95f3-4c75-b031-44421ec2f4e9",
+      "description": "Italian pop duo",
+      "sitelinks": 3,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3598924",
+      "name": "360 Gradi",
+      "musicbrainz_id": "f7e3fb3b-6060-41d8-9b8a-1815297190a2",
+      "description": "Italien pop duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q15714288",
+      "name": "Andrea Bonomo",
+      "musicbrainz_id": "68cf05ef-e8a9-4191-aeb7-72201daa6b82",
+      "description": "Italian singer and composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music",
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q589955",
+      "name": "Anonima Sound",
+      "musicbrainz_id": "da043764-e0e7-4509-90cb-8820b5c98536",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q138791799",
+      "name": "Anthony Lazaro",
+      "musicbrainz_id": "6ca3b4f8-4004-41b7-956e-e31d7c8a6ff0",
+      "description": "Italian singer-songwriter and producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q724416",
+      "name": "Asgard",
+      "musicbrainz_id": "fff8008d-831e-41c5-81d6-92dd64a3236b",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3629486",
+      "name": "Audio 2",
+      "musicbrainz_id": "22d0f1e5-613e-4cb5-a856-0fc640a9d890",
+      "description": "Italian musical group; pop duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3666958",
+      "name": "Cheap Wine",
+      "musicbrainz_id": "8ed72443-bbad-4f97-95bf-9c57de31a94b",
+      "description": "Italian rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q5109486",
+      "name": "Christian De Walden",
+      "musicbrainz_id": "af77c0a0-1173-4f09-8f5d-a69f5b28819c",
+      "description": "Italian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q28799089",
+      "name": "Costantino Carrara",
+      "musicbrainz_id": "b9b2f914-a69c-4acf-945e-1bd80392020d",
+      "description": "Italian Pianist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3700650",
+      "name": "Da Blitz",
+      "musicbrainz_id": "4e5119fc-7450-48a0-a45a-6e1038799fa5",
+      "description": "Italian Eurodance band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3702524",
+      "name": "Dari",
+      "musicbrainz_id": "cdc226bc-44b1-40de-b4d8-52fe4cab1640",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q63974057",
+      "name": "Dhuo",
+      "musicbrainz_id": "ee52f8e7-2325-46e4-b96e-65631a434ee5",
+      "description": "Italian pop duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3035154",
+      "name": "Dominique Fidanza",
+      "musicbrainz_id": "17d2927a-8198-4edf-be46-880549a6da83",
+      "description": "Italian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3870109",
+      "name": "Fernando Bonini",
+      "musicbrainz_id": "e9e114bd-25f1-42f7-9e99-250b9b0ebc07",
+      "description": "Italian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q123359464",
+      "name": "Gionathan",
+      "musicbrainz_id": "8d18fed4-0647-474a-84e9-a8843f6e73d3",
+      "description": "Italian songwriter, producer and videomaker,",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16559490",
+      "name": "Giordano Gambogi",
+      "musicbrainz_id": "108d4398-30e1-480b-b337-9193a95f675a",
+      "description": "Italian singer, musician and composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q105435790",
+      "name": "I Botanici",
+      "musicbrainz_id": "9faafb63-5a12-4f3d-8abc-136135b864e2",
+      "description": "Italian alternative rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q48807069",
+      "name": "Le Deva",
+      "musicbrainz_id": "13199d2c-4b89-421f-af71-cb6f9bb5da7d",
+      "description": "Italian pop band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q106654870",
+      "name": "Legno",
+      "musicbrainz_id": "a229d70d-20f1-4d42-87e1-c1acc861352a",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q545379",
+      "name": "Maria Rita Epik",
+      "musicbrainz_id": "0cbc3ec6-85fd-4074-90de-86a1e138a70b",
+      "description": "musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3293361",
+      "name": "Mario Barravecchia",
+      "musicbrainz_id": "cbff07af-1b41-4d30-90ea-c43c6ae7753e",
+      "description": "Belgian Italian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3849386",
+      "name": "Marivana Viscuso",
+      "musicbrainz_id": "3a86808f-efea-45ba-969d-d648121d7ec1",
+      "description": "Italian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q131269505",
+      "name": "Mew",
+      "musicbrainz_id": "90e5b2c0-be6c-4bea-849c-db23c1bf37ef",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1956230",
+      "name": "Muzzi Loffredo",
+      "musicbrainz_id": "f6e8e005-98a2-445a-99ca-18d556eb155f",
+      "description": "Italian actress, film director and screenwriter (1941-2017)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3334161",
+      "name": "N.A.M.B.",
+      "musicbrainz_id": "94707690-4222-42da-8fae-edf3406f420b",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3893134",
+      "name": "Pandemonium",
+      "musicbrainz_id": "e1955a80-e58c-4eda-be41-2f81650c06ab",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q7351792",
+      "name": "Roberto Manzin",
+      "musicbrainz_id": "c9918809-d780-4833-b916-65af843f68df",
+      "description": "Italian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3949492",
+      "name": "Santo Niente",
+      "musicbrainz_id": "97a7c6ea-3c71-4872-b1bd-4b11df2338f1",
+      "description": "Italian rock band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q747788",
+      "name": "Shampoo",
+      "musicbrainz_id": "f048c378-0ae5-4470-86a7-d79a085a981a",
+      "description": "band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q7564174",
+      "name": "Soul Basement",
+      "musicbrainz_id": "0694522a-ebd6-4d6b-8d04-22616a5448a1",
+      "description": "musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q28018089",
+      "name": "Soul System",
+      "musicbrainz_id": "f3a47c64-e32a-473d-af34-b393d0c2f302",
+      "description": "Italian band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3967346",
+      "name": "Squadra Italia",
+      "musicbrainz_id": "6b39d3fc-1b03-45e9-b2fa-efdf542dea54",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3604863",
+      "name": "Acustimantico",
+      "musicbrainz_id": "cc8df639-5244-4438-b2a1-dee6e3ddb64d",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1706557",
+      "name": "Albino Montisci",
+      "musicbrainz_id": "ead2534d-8b68-4215-a276-ad4407804a39",
+      "description": "Italian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16728795",
+      "name": "Alex Elena",
+      "musicbrainz_id": "082b1ed4-7a86-437a-b3bb-05b1e4a51ad1",
+      "description": "Italian musician, record producer and photographer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q99614926",
+      "name": "Alfredo Golino",
+      "musicbrainz_id": "c20f81ac-aaa3-4b5d-bcc4-24fb64adf12c",
+      "description": "Italian drummer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3623160",
+      "name": "Armonium",
+      "musicbrainz_id": "23d9b06b-f1ae-460a-88ff-d3ecd189247e",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3624208",
+      "name": "Artemoltobuffa",
+      "musicbrainz_id": "2382c7bd-7be4-4fc6-b7d3-11bb3633e5d0",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3632677",
+      "name": "Bad Bones",
+      "musicbrainz_id": "452533c2-340b-4431-848b-6244aa61adc4",
+      "description": "Italian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3634518",
+      "name": "Baraonna",
+      "musicbrainz_id": "753e9dc6-cfc7-4004-949e-f9bfe641ee9e",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q38354255",
+      "name": "Baryonyx",
+      "musicbrainz_id": "d27d8636-c630-42df-9b3b-2d15e0118c9d",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q43121625",
+      "name": "Carl Brave x Franco 126",
+      "musicbrainz_id": "e4a8e6b2-eb85-492f-b480-a80f2a5cec4b",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q137042506",
+      "name": "Caro Wow",
+      "musicbrainz_id": "be1940a1-d710-4cb8-9364-dd1d73c225e3",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q1129410",
+      "name": "Convergence",
+      "musicbrainz_id": "2fa52303-f232-45c3-bc78-c15aabd0dcaf",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3707660",
+      "name": "Dilaila",
+      "musicbrainz_id": "84ee1b0e-5ce3-4b20-a9fb-61ce6f8358d1",
+      "description": "Italian indie pop group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3721957",
+      "name": "Elettrojoyce",
+      "musicbrainz_id": "370511e8-63cb-4f74-a99c-885b4399f9a1",
+      "description": "Italian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q9258182",
+      "name": "Faust",
+      "musicbrainz_id": "4da023b2-3c36-41e6-84e4-bb1af0e5a8d3",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q61721747",
+      "name": "Francesco Renna",
+      "musicbrainz_id": "cbebf3c2-5449-48bc-93a0-b70b5b582cbc",
+      "description": "Italian songwriter and musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q81275280",
+      "name": "Franco Ciani",
+      "musicbrainz_id": "fc575262-16ad-4d12-b8de-cc072bdeaa5d",
+      "description": "Italian musician (1957-2020)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3761794",
+      "name": "GHOST",
+      "musicbrainz_id": "0c91bec9-2aef-479d-90f8-b021eed3ab13",
+      "description": "Italian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3758624",
+      "name": "Gasparazzo",
+      "musicbrainz_id": "574f9bec-9132-4691-a67b-ad0dc50868df",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q61776798",
+      "name": "Giampaolo Pasquile",
+      "musicbrainz_id": "64a333d7-4425-43a1-abcf-8e1619d09136",
+      "description": "Italian record producer and mix engineer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3764228",
+      "name": "Gilberto Faggioli",
+      "musicbrainz_id": "60dfa64a-2047-4e29-a2f2-c86d1b262582",
+      "description": "Italian bassist and session musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q17631816",
+      "name": "Giuliodorme",
+      "musicbrainz_id": "589a80a5-7ba3-46c7-8d9e-aa0c0bc951bc",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3772922",
+      "name": "Golden Age",
+      "musicbrainz_id": "049a5292-2066-47ac-aede-a9c9974d501d",
+      "description": "Italian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3794812",
+      "name": "Il mito New Trolls",
+      "musicbrainz_id": "a7fe54c4-0040-4d63-b1da-a1f44a81c93a",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3808680",
+      "name": "Joe Perrino & The Mellowtones",
+      "musicbrainz_id": "5bd7fc26-1c72-4b9b-817e-73ea67d38288",
+      "description": "Italian rock band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3822758",
+      "name": "La leggenda New Trolls",
+      "musicbrainz_id": "e4136cb7-9a0e-452a-8a8e-59a2b9ec135a",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3828402",
+      "name": "Le Piccole Ore",
+      "musicbrainz_id": "6de82bca-e8d7-4b0e-8be0-ac77cff94fde",
+      "description": "Italian music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q29051923",
+      "name": "Le Streghe",
+      "musicbrainz_id": "34f596af-513a-4964-b0da-6b3a7b551c28",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21284891",
+      "name": "Matilde Davoli",
+      "musicbrainz_id": "e9296629-79b5-4314-a0c8-5e053d89c6b3",
+      "description": "Italian songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3852486",
+      "name": "Maurizio & Fabrizio",
+      "musicbrainz_id": "a55520c5-51cd-4d59-af13-8a7cbc1247f4",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3852846",
+      "name": "Mauro Lusini",
+      "musicbrainz_id": "f8928cc2-e092-4224-a6e4-3fdd13d704c6",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q24037857",
+      "name": "Moseek",
+      "musicbrainz_id": "7725efac-8039-4f28-a391-947fdb6cc98b",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q123439764",
+      "name": "Murcielago",
+      "musicbrainz_id": "f8b382fc-8b93-46e4-9233-7c2f95e28257",
+      "description": "Italian record producer and artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q109999063",
+      "name": "Musica da Ripostiglio",
+      "musicbrainz_id": "b20624cc-a493-4acb-9d56-750f23943b81",
+      "description": "Italian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3878189",
+      "name": "Non voglio che Clara",
+      "musicbrainz_id": "82010171-0d12-47ef-830d-0b2fc1da53e9",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q54556986",
+      "name": "Number One Ensemble",
+      "musicbrainz_id": "4a4d8b96-2e5a-4483-86cc-b3ca7f56be3a",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q16583891",
+      "name": "Oloferne",
+      "musicbrainz_id": "83716015-1560-4690-ac88-b834fd4e8ca2",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3886795",
+      "name": "Ossi Duri",
+      "musicbrainz_id": "d42be3b2-d3d3-48da-9c90-216be9d84580",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3888993",
+      "name": "Paideja",
+      "musicbrainz_id": "d1bc8ad9-a743-4ae2-bc84-d3aad5ed7d49",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q3910959",
+      "name": "Presi per caso",
+      "musicbrainz_id": "5cda1fea-9127-4c47-91f9-48dd336a873c",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q28669675",
+      "name": "Radar",
+      "musicbrainz_id": "798c2ca8-76aa-4088-9f3c-0b2578c17ee9",
+      "description": "Italian pop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q110646400",
+      "name": "Rovere",
+      "musicbrainz_id": "0564cdf3-6f50-458d-9f7e-a32038c40d64",
+      "description": "Italian indie pop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "indie pop",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q60839648",
+      "name": "Street Clerks",
+      "musicbrainz_id": "d27d0e33-0075-44a2-b91e-bac0d6beb9ef",
+      "description": "Italian band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q68586157",
+      "name": "Tish",
+      "musicbrainz_id": "f7c127ec-387a-4cc3-9c07-e1d5f1739d20",
+      "description": "Italian-Serbian singer (2000)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q116446264",
+      "name": "Tothem",
+      "musicbrainz_id": "cef0b956-ff07-4f39-98da-d76a090ca051",
+      "description": "Italian rock band (1998-)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q4010116",
+      "name": "Vernice",
+      "musicbrainz_id": "cebc900f-5a50-4fb3-bad8-c1277ce86e95",
+      "description": "Italian music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q21195954",
+      "name": "Vexillum",
+      "musicbrainz_id": "e4c56f99-e222-4055-996c-e9b49767975d",
+      "description": "Italian heavy metal band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q141180502",
+      "name": "'Lectric Workers",
+      "musicbrainz_id": "480aa9a7-b14b-4e11-9a79-bb020ea8d5d0",
+      "description": "Italian musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q140051858",
+      "name": "ALMA Acoustic",
+      "musicbrainz_id": "5426c1bb-1149-4607-b47c-e296f0f37b8b",
+      "description": "Swiss italian acoustic music group / songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "rock music",
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q83571570",
+      "name": "Abiku",
+      "musicbrainz_id": "87e10792-670e-4f47-968c-6b9b33c2ec54",
+      "description": "Italian pop rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q139686292",
+      "name": "Adelajdo Haxhiaj",
+      "musicbrainz_id": "f9db527d-3938-4bdc-b0e8-035feae12bf6",
+      "description": "Albanian artist, songwriter, producer and mixing engineer (ademusic)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q23305622",
+      "name": "Ciuffi Rossi",
+      "musicbrainz_id": "910a4eec-4413-4dd4-b142-82efde9c2847",
+      "description": "Italian vocal group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q99608701",
+      "name": "Di Francia Antonio",
+      "musicbrainz_id": "aef29f60-9e93-4024-8261-8a7671663561",
+      "description": "cello player",
+      "sitelinks": 0,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q55004436",
+      "name": "Emotu",
+      "musicbrainz_id": "3e7f0e95-5ef9-4638-80ed-7427baf05459",
+      "description": "Italian band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q113801764",
+      "name": "Gin & Tonic",
+      "musicbrainz_id": "197c26fe-6ac0-4c80-82e9-8eb8a396b43a",
+      "description": "Italian duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q50233401",
+      "name": "Gunash",
+      "musicbrainz_id": "85a9cf46-ce52-498b-a339-1ef24b9216a3",
+      "description": "Italian rock band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "rock music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q141736059",
+      "name": "Hey Cabrera!",
+      "musicbrainz_id": "1b3cb4d2-7719-40ae-b529-b56271094ac9",
+      "description": "Italian DJ and indie dance and italo disco producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Italo disco"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q94327066",
+      "name": "I Missili",
+      "musicbrainz_id": "50f5ff19-b017-4cc5-93c5-bed2fa588ef8",
+      "description": "Italian music group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q138635616",
+      "name": "Marian Richero",
+      "musicbrainz_id": "062b6c80-014d-414f-9528-3e10e82e51a9",
+      "description": "Bulgarian singer (born 1987)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q140133475",
+      "name": "Mauro Gaspa",
+      "musicbrainz_id": "c92ec3cb-135a-44ef-a9f5-4e3f59359030",
+      "description": "Italian musician, keyboardist, composer and co‑founder of Two Pulses",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q138427154",
+      "name": "Mocked Monkey",
+      "musicbrainz_id": "610889a5-c985-4f95-a6ad-1bfd3dff2517",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q57495560",
+      "name": "NVRMD",
+      "musicbrainz_id": "f66c6dc9-260f-4245-afcf-3f255536dabd",
+      "description": "Italian music producer and disc jockey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q141018942",
+      "name": "Rafael Zeferino",
+      "musicbrainz_id": "00702cd5-283f-4b57-8313-15700c80fcec",
+      "description": "Brazilian Musical Artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q141064764",
+      "name": "Rareș",
+      "musicbrainz_id": "94b59726-f6d9-4b98-b293-9115a96306d9",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music",
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q140253120",
+      "name": "Roberto Randazzo",
+      "musicbrainz_id": "bccac883-c191-4aa0-a538-6c806a3edd77",
+      "description": "Italian musician, producer and mix engineer (born 1998)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "indie pop"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q137719920",
+      "name": "Stella Cardone",
+      "musicbrainz_id": "56ed31fd-778e-4669-8447-78316091bbae",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q79318422",
+      "name": "The Phone Call Damage",
+      "musicbrainz_id": "7c963b0a-e6ba-4d3c-b890-1b8117e0dd6e",
+      "description": "Rock band from Italy",
+      "sitelinks": 0,
+      "matched_genres": [
+        "rock music",
+        "pop rock"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q141765045",
+      "name": "Tommaso Giusti",
+      "musicbrainz_id": "5c33e26b-25de-49b7-b66a-2b52fb294650",
+      "description": "Italian singer-songwriter and poet (born 1980)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q140177828",
+      "name": "Two Pulses",
+      "musicbrainz_id": "5897159d-3ff2-4e4d-b2b2-fe12a9979c69",
+      "description": "Italian electronic music duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music"
+      ],
+      "category": "italian"
+    },
+    {
+      "wikidata_id": "Q26155014",
+      "name": "Vanni Tagliavento",
+      "musicbrainz_id": "889cafe2-e6c4-4e95-be86-c98aa6dfb89b",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "pop music",
+        "indie pop"
+      ],
+      "category": "italian"
+    }
+  ]
+}

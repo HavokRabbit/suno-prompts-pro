@@ -1,0 +1,875 @@
+{
+  "category": "punjabi",
+  "label": "Punjabi / bhangra",
+  "genre_labels": [
+    "Punjabi music",
+    "Music of Punjab",
+    "bhangra",
+    "Bhangra",
+    "Punjabi pop"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"Punjabi music\"@en \"Music of Punjab\"@en \"bhangra\"@en \"Bhangra\"@en \"Punjabi pop\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q294907",
+      "name": "Jay Sean",
+      "musicbrainz_id": "e03cf5b6-d2ec-4465-adee-226b518bcfcd",
+      "description": "British singer, rapper and songwriter",
+      "sitelinks": 36,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q464185",
+      "name": "Daler Mehndi",
+      "musicbrainz_id": "90b5e47b-e432-47ab-99c1-97f85c88dc9a",
+      "description": "Indian singer",
+      "sitelinks": 35,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6363189",
+      "name": "Kanika Kapoor",
+      "musicbrainz_id": "a56d017a-1bcd-4483-aaf5-9e9f1e2d0e0e",
+      "description": "Indian singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5276830",
+      "name": "Diljit Dosanjh",
+      "musicbrainz_id": "f931c961-b647-4861-be8c-f47d84a4de51",
+      "description": "Indian singer, film and television actor",
+      "sitelinks": 25,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q2344606",
+      "name": "Sukhwinder Singh",
+      "musicbrainz_id": "d5812475-f8e6-4b5c-951f-7e82720ef041",
+      "description": "Indian singer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q2679233",
+      "name": "Yo Yo Honey Singh",
+      "musicbrainz_id": "0dc9c4bc-8bcc-42f1-9033-bec41160377f",
+      "description": "Indian musician",
+      "sitelinks": 23,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3694931",
+      "name": "Gurdas Maan",
+      "musicbrainz_id": "2e27b26c-f92b-48aa-b758-ee564d1da868",
+      "description": "Indian actor, singer and writer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5673882",
+      "name": "Harshdeep Kaur",
+      "musicbrainz_id": "cbc2c6a3-11dc-424a-994b-4edd572ef43c",
+      "description": "Indian singer",
+      "sitelinks": 21,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q30557637",
+      "name": "Guru Randhawa",
+      "musicbrainz_id": "75939c77-b808-4e79-89ec-71d5cb0d453a",
+      "description": "Indian singer and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6164378",
+      "name": "Jaswinder Brar",
+      "musicbrainz_id": "f0104d17-b837-4c71-8ff2-01b4a2876c82",
+      "description": "Indian singer",
+      "sitelinks": 17,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q19896109",
+      "name": "Jasmine Sandlas",
+      "musicbrainz_id": "",
+      "description": "American-Indian singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3631714",
+      "name": "Mika Singh",
+      "musicbrainz_id": "b46ce29c-6c93-4619-8f08-0c23a8bacf0d",
+      "description": "Indian singer and musician",
+      "sitelinks": 16,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5564076",
+      "name": "Gippy Grewal",
+      "musicbrainz_id": "11427e08-33b5-4955-a727-61960570a186",
+      "description": "Indian actor",
+      "sitelinks": 14,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3635993",
+      "name": "Miss Pooja",
+      "musicbrainz_id": "e513b3f9-87a0-4b7a-9321-8d7fbc81e187",
+      "description": "Indian singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q331166",
+      "name": "Abrar-ul-Haq",
+      "musicbrainz_id": "988ff762-d277-4e73-86c1-2b98d59606c6",
+      "description": "Pakistani musician",
+      "sitelinks": 10,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3694780",
+      "name": "Rani Taj",
+      "musicbrainz_id": "",
+      "description": "Pakistani drummer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q2881398",
+      "name": "Bally Sagoo",
+      "musicbrainz_id": "4e01e834-c872-4c76-87ab-c2304efa5e7e",
+      "description": "British-Indian record producer and DJ",
+      "sitelinks": 7,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q2386543",
+      "name": "Rishi Rich",
+      "musicbrainz_id": "9b52b90b-9858-4463-b20d-7e00480c4714",
+      "description": "British record producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7426223",
+      "name": "Satinder Satti",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3368586",
+      "name": "Aman Hayer",
+      "musicbrainz_id": "8de09b30-378e-4d4d-894f-837a640d12ca",
+      "description": "UK-based Bhangra Punjabi music director and singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q4740037",
+      "name": "Amar Noorie",
+      "musicbrainz_id": "",
+      "description": "Indian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5304569",
+      "name": "Dr Zeus",
+      "musicbrainz_id": "1d7bb9b1-91df-4814-9dca-cb9882cbac8c",
+      "description": "Punjabi singer and music producer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3695398",
+      "name": "Malkit Singh",
+      "musicbrainz_id": "9a81b764-c59a-42c6-a273-9015bae6c366",
+      "description": "Indian singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6168478",
+      "name": "Jazzy B",
+      "musicbrainz_id": "d455fa0b-9e76-40d7-b96e-337bb01de3b3",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q21284596",
+      "name": "Ranjit Bawa",
+      "musicbrainz_id": "75e1f397-282e-4a5b-ac8a-05a28453fbc1",
+      "description": "Indian singer and actor",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7490479",
+      "name": "Sharry Mann",
+      "musicbrainz_id": "483f2f38-70ec-405c-a457-906b629d0b09",
+      "description": "singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16207134",
+      "name": "Sukhbir",
+      "musicbrainz_id": "bfa03245-63d9-46f0-b720-dca7b98eee63",
+      "description": "Indian singer (born 1969)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7922433",
+      "name": "Veronica Mehta",
+      "musicbrainz_id": "c2d58608-685a-46b8-bdf8-0ac02ba57944",
+      "description": "Indian singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3124667",
+      "name": "H-Dhami",
+      "musicbrainz_id": "62962204-6567-432d-94df-154fe64f07c2",
+      "description": "British-Indian singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7239757",
+      "name": "Preet Harpal",
+      "musicbrainz_id": "778bc245-9d43-4822-aa89-6988a5cec296",
+      "description": "singer, songwriter, actor",
+      "sitelinks": 4,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q28527620",
+      "name": "Roshan Prince",
+      "musicbrainz_id": "a74243cb-aa57-40dc-b18a-4b6143b1e3f4",
+      "description": "Indian singer and actor",
+      "sitelinks": 4,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5205422",
+      "name": "DJ Rekha",
+      "musicbrainz_id": "6114618f-b27f-43ec-b1c2-96bd27dd16e2",
+      "description": "British DJ",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5431515",
+      "name": "Fakhar-e-Alam",
+      "musicbrainz_id": "def75821-a0d7-4604-a800-aa41e9834ea5",
+      "description": "Pakistani singer, actor and rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q22277753",
+      "name": "Fateh",
+      "musicbrainz_id": "ea800848-191c-4c7d-b27f-60cf91bddd40",
+      "description": "Canadian rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6716007",
+      "name": "MIDIval Punditz",
+      "musicbrainz_id": "ef1bf752-c7bb-45ca-8f9e-e7e8e18fe26e",
+      "description": "",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q14242195",
+      "name": "Nachhatar Gill",
+      "musicbrainz_id": "f638c93c-c2c7-4bf5-be8d-e22a39f92718",
+      "description": "Indian singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6433204",
+      "name": "RDB",
+      "musicbrainz_id": "a45efc83-7752-4d35-a49e-08e4d60a8dd1",
+      "description": "rdb",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3541065",
+      "name": "Sukshinder Shinda",
+      "musicbrainz_id": "80948716-c548-4c8d-a5b2-a52d26b16c2c",
+      "description": "British musician",
+      "sitelinks": 3,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q4907443",
+      "name": "Bikram Singh",
+      "musicbrainz_id": "9ce80d59-78ba-494e-8817-f06acd2e7915",
+      "description": "musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5524220",
+      "name": "Garry Sandhu",
+      "musicbrainz_id": "",
+      "description": "Indian musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5580223",
+      "name": "Goldkartz",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q107177027",
+      "name": "Gurdeep Pandher",
+      "musicbrainz_id": "",
+      "description": "yukon-based author, teacher and performer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q1638173",
+      "name": "Hunterz",
+      "musicbrainz_id": "8e8b357f-1703-439f-97c3-9f0733734e00",
+      "description": "British musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q23771900",
+      "name": "Jatinder Shah",
+      "musicbrainz_id": "3a822c75-9336-4132-bef0-b423ae27930f",
+      "description": "Indian music composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6304866",
+      "name": "Juggy D",
+      "musicbrainz_id": "eeda1803-497c-4148-a5b1-bd6d433f14cc",
+      "description": "Indian English singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6933505",
+      "name": "Mukhtar Sahota",
+      "musicbrainz_id": "2dd24473-27ca-4859-86c6-5fc93a7eee23",
+      "description": "British composer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q3362160",
+      "name": "Panjabi By Nature",
+      "musicbrainz_id": "bcc9423c-f03c-42b7-8f9c-0560d3b5b232",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q23301487",
+      "name": "Silinder Pardesi",
+      "musicbrainz_id": "",
+      "description": "musical artist",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16214030",
+      "name": "Surjit Khan",
+      "musicbrainz_id": "d933a33e-1a98-4d0d-b27c-a3c6f5c59cdd",
+      "description": "Punjabi singer of Indian decent",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6743926",
+      "name": "Wajid Ali Baghdadi",
+      "musicbrainz_id": "",
+      "description": "Pakistani Folk Singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16150049",
+      "name": "Angrej Ali",
+      "musicbrainz_id": "da8edd9e-e6b7-4268-a1b8-befaf3daca73",
+      "description": "singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q4834375",
+      "name": "B21",
+      "musicbrainz_id": "cf5d6c64-59bf-4ead-a992-0cff7476d3aa",
+      "description": "English band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q4834968",
+      "name": "BBC Soundcrew",
+      "musicbrainz_id": "",
+      "description": "Canadian musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16731895",
+      "name": "Baljit Malwa",
+      "musicbrainz_id": "",
+      "description": "singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5204547",
+      "name": "DCS",
+      "musicbrainz_id": "fda26996-e9cf-4bcf-8003-2e9107d5b61c",
+      "description": "British Asian live Bhangra band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q106070420",
+      "name": "DJ Anjali and the Incredible Kid",
+      "musicbrainz_id": "",
+      "description": "American DJ duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5205350",
+      "name": "DJ JoN-E",
+      "musicbrainz_id": "",
+      "description": "Canadian DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5698073",
+      "name": "Heera Group UK",
+      "musicbrainz_id": "7892a4f6-3e94-4a67-a1b4-ab77043567bd",
+      "description": "British Asian bhangra band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6123534",
+      "name": "Jaidev Kumar",
+      "musicbrainz_id": "",
+      "description": "Indian musician and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6288566",
+      "name": "Josh",
+      "musicbrainz_id": "2032fc80-0592-4634-a0ac-3b6c31047cc1",
+      "description": "band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16216603",
+      "name": "Lehmber Hussainpuri",
+      "musicbrainz_id": "14bdaae1-2484-404f-a010-b09befd85773",
+      "description": "Indian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q6930108",
+      "name": "Ms Scandalous",
+      "musicbrainz_id": "24215f12-6f97-4d9f-980b-de580ee74427",
+      "description": "English singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7239754",
+      "name": "Preet Brar",
+      "musicbrainz_id": "4a616387-92c1-4c30-a84d-fb2d3c3bdde0",
+      "description": "Indian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q136341917",
+      "name": "Premi",
+      "musicbrainz_id": "f3406963-d1fe-4c57-8370-3c057544cb4c",
+      "description": "bhangra band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q19895810",
+      "name": "RDB Rhythm Dhol Bass",
+      "musicbrainz_id": "",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7560714",
+      "name": "Sona Family",
+      "musicbrainz_id": "7ff45148-6f5d-419f-932c-6d5b0e9d7c13",
+      "description": "UK musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7653142",
+      "name": "Swami",
+      "musicbrainz_id": "48f2decd-51aa-42ce-acff-f9171b9de1b4",
+      "description": "pop-Bhangra band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16729975",
+      "name": "Tej Hundal",
+      "musicbrainz_id": "",
+      "description": "singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q106069498",
+      "name": "DJ Anjali",
+      "musicbrainz_id": "",
+      "description": "Disc Jockey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5205499",
+      "name": "DJ Vix",
+      "musicbrainz_id": "ad6dca0e-2ce0-46d1-a572-b97ab04596c1",
+      "description": "British musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5266386",
+      "name": "Dev Dhillon",
+      "musicbrainz_id": "",
+      "description": "singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q5269693",
+      "name": "Dhol Academy",
+      "musicbrainz_id": "",
+      "description": "musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q15053457",
+      "name": "Mentor Kolektiv",
+      "musicbrainz_id": "abce52af-1e47-40c6-adae-69c81276e021",
+      "description": "UK musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q21932282",
+      "name": "Nindy Kaur",
+      "musicbrainz_id": "",
+      "description": "musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q16246996",
+      "name": "Nishawn Bhullar",
+      "musicbrainz_id": "d832dd94-1642-4b63-8697-a15d4c5dc856",
+      "description": "singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q139881514",
+      "name": "Sokhey",
+      "musicbrainz_id": "",
+      "description": "Indian Punjabi singer, songwriter and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "Punjabi pop"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q7635837",
+      "name": "Sukhwinder Panchhi",
+      "musicbrainz_id": "",
+      "description": "Indian musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    },
+    {
+      "wikidata_id": "Q106070307",
+      "name": "The Incredible Kid",
+      "musicbrainz_id": "",
+      "description": "Disc Jockey",
+      "sitelinks": 0,
+      "matched_genres": [
+        "bhangra"
+      ],
+      "category": "punjabi"
+    }
+  ]
+}

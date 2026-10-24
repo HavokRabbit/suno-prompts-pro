@@ -1,0 +1,792 @@
+{
+  "category": "hyperpop",
+  "label": "Hyperpop / digicore",
+  "genre_labels": [
+    "hyperpop",
+    "digicore",
+    "bubblegum bass"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"hyperpop\"@en \"digicore\"@en \"bubblegum bass\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q5084390",
+      "name": "Charli XCX",
+      "musicbrainz_id": "260b6184-8828-48eb-945c-bc4cb6fc34ca",
+      "description": "British singer (born 1992)",
+      "sitelinks": 69,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q288956",
+      "name": "Nadya Tolokonnikova",
+      "musicbrainz_id": "60a8e47d-2944-48e1-ab72-208b233a06d3",
+      "description": "Russian political activist and musician",
+      "sitelinks": 39,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q107570416",
+      "name": "PinkPantheress",
+      "musicbrainz_id": "7441014f-f8f5-494f-81db-ff166fbc078d",
+      "description": "British singer-songwriter",
+      "sitelinks": 36,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q18161827",
+      "name": "Sophie",
+      "musicbrainz_id": "774b02d7-5056-4b0f-9d69-a82b6ae27cde",
+      "description": "British singer, songwriter, record producer and DJ (1986–2021)",
+      "sitelinks": 36,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q5297785",
+      "name": "Dorian Electra",
+      "musicbrainz_id": "f29f9a7f-ba50-4f22-837a-cfc8d72c4a80",
+      "description": "American singer-songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "bubblegum bass",
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q115920342",
+      "name": "Jane Remover",
+      "musicbrainz_id": "f4b6e451-5dce-4842-a555-f793892299b3",
+      "description": "American rapper and producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "digicore",
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q67556784",
+      "name": "100 gecs",
+      "musicbrainz_id": "d6d45dda-2377-4faa-947b-e071efa085c0",
+      "description": "American hyperpop musical duo",
+      "sitelinks": 14,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q86383347",
+      "name": "Chloe Moriondo",
+      "musicbrainz_id": "6c2cd859-b792-4258-8ede-402c5dcf8b90",
+      "description": "American singer-songwriter and YouTuber",
+      "sitelinks": 14,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q122763643",
+      "name": "Girlset",
+      "musicbrainz_id": "77ebb78b-17cf-4054-a62e-6e0d52b6fb5e",
+      "description": "American girl group",
+      "sitelinks": 14,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q110852201",
+      "name": "underscores",
+      "musicbrainz_id": "ab1a3f85-e0ea-470a-af5c-175447ae774c",
+      "description": "American musician",
+      "sitelinks": 11,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q100978614",
+      "name": "Glaive",
+      "musicbrainz_id": "fd36f43e-5bd1-488e-b844-0e059250ef78",
+      "description": "American musician (born 2005)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "hyperpop",
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q109467083",
+      "name": "Jazmin Bean",
+      "musicbrainz_id": "2bb53341-da20-465a-9eee-06e389ed9fc1",
+      "description": "English singer-songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111628978",
+      "name": "Ericdoa",
+      "musicbrainz_id": "e6e63b7f-3819-4c48-a3f5-90e439bdea13",
+      "description": "American musician",
+      "sitelinks": 8,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q127427285",
+      "name": "F5ve",
+      "musicbrainz_id": "9bdce94a-7c47-4b9a-8e10-f65f5fc63d32",
+      "description": "Japanese girl group",
+      "sitelinks": 8,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q123092357",
+      "name": "Ayesha Erotica",
+      "musicbrainz_id": "de5d7601-f6fa-4efa-ae3f-7005a2b89a1b",
+      "description": "American singer and musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q93167315",
+      "name": "Bree Runway",
+      "musicbrainz_id": "5e16b922-46b1-435d-a8e0-b33bf9895ab9",
+      "description": "British singer and rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q131318965",
+      "name": "femtanyl",
+      "musicbrainz_id": "eb3c021d-e056-42d6-8fad-064205a90527",
+      "description": "Canadian digital hardcore musical duo",
+      "sitelinks": 7,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111472061",
+      "name": "Midwxst",
+      "musicbrainz_id": "",
+      "description": "American singer and rapper from Indiana",
+      "sitelinks": 6,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111792269",
+      "name": "Nunu",
+      "musicbrainz_id": "54e2b14c-3390-4ede-999d-ee84014b512b",
+      "description": "Israeli singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q131577832",
+      "name": "Theodora",
+      "musicbrainz_id": "3d519348-d1eb-4e8d-aab4-85ebe819bc46",
+      "description": "French-Congolese singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138955322",
+      "name": "Slayr",
+      "musicbrainz_id": "cfa0e221-4717-4281-bff3-46c88d45bf93",
+      "description": "American rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q85322559",
+      "name": "Laura Les",
+      "musicbrainz_id": "347b90a3-2a2c-4186-9a5a-c3a3578b4b33",
+      "description": "American musician",
+      "sitelinks": 4,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q123241445",
+      "name": "Odetari",
+      "musicbrainz_id": "2d8be86e-dccf-481a-a01c-faf9e48edd6d",
+      "description": "American rapper, singer, record producer, and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q59161718",
+      "name": "Quadeca",
+      "musicbrainz_id": "3a4024dc-cc62-4d9b-8bed-c22426136a52",
+      "description": "American YouTuber and rapper (born 2000)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "hyperpop",
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q139037843",
+      "name": "Tiffany Day",
+      "musicbrainz_id": "c9e3089c-a7bc-4df5-80f9-9161eaa74a02",
+      "description": "American singer and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q131830338",
+      "name": "Bobbi Arlo",
+      "musicbrainz_id": "",
+      "description": "Irish singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q113613523",
+      "name": "Chrissy Chlapecka",
+      "musicbrainz_id": "059c0fb4-cf3e-4f0a-839a-17ba6e1e2775",
+      "description": "American singer and social media personality",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q118113295",
+      "name": "Drook",
+      "musicbrainz_id": "ad043b94-b80d-4e1e-9294-c4a07394c904",
+      "description": "American pop music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q117018188",
+      "name": "Frost Children",
+      "musicbrainz_id": "3f1ed758-50e4-401f-8dc6-e0066e546e7c",
+      "description": "American hyperpop duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop",
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q109681442",
+      "name": "Rojuu",
+      "musicbrainz_id": "f3818712-f405-4b42-bd6f-02de7b9d9f4a",
+      "description": "Spanish singer and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q106518612",
+      "name": "Ružno Pače",
+      "musicbrainz_id": "e015f89c-6e16-46c4-a9a3-5148c3794ed7",
+      "description": "slovene musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q132851310",
+      "name": "Théa",
+      "musicbrainz_id": "07877c85-cfcb-489d-9c40-d7b89c8d81d5",
+      "description": "French singer and EDM producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q122927291",
+      "name": "winnterzuko",
+      "musicbrainz_id": "",
+      "description": "French hyperpop rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111226251",
+      "name": "8485",
+      "musicbrainz_id": "68eae9ac-43a1-465f-97dd-ce5ea3cb9dc9",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q131806982",
+      "name": "Bell",
+      "musicbrainz_id": "81fff584-0a59-4d96-9a3f-8409cc2ae064",
+      "description": "Swedish singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138955332",
+      "name": "Blackwinterwells",
+      "musicbrainz_id": "",
+      "description": "Canadian musician and producer (born 1996)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q136926186",
+      "name": "CVLTE",
+      "musicbrainz_id": "b7e9ce34-a464-428d-950b-9c1b0382f0f4",
+      "description": "a Japanese rock band formed in Sapporo in 2017",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q107410550",
+      "name": "Cake Pop",
+      "musicbrainz_id": "bd4e3dd2-ee69-40a5-bae2-c8e49b39e6d0",
+      "description": "American electronic music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q141176417",
+      "name": "Can of Bliss",
+      "musicbrainz_id": "fd17f16e-e8d8-4023-8ddd-1850042d4505",
+      "description": "American hyperpop musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q118179875",
+      "name": "Ekkstacy",
+      "musicbrainz_id": "e897ca8f-03ff-4405-9cf2-c71ab2950ddb",
+      "description": "Canadian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q136458677",
+      "name": "Lucy Bedroque",
+      "musicbrainz_id": "bb7959ac-84cc-45c4-8138-d80ee5f2bd9a",
+      "description": "American musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111974073",
+      "name": "Malenkiy Yarche",
+      "musicbrainz_id": "bc4ed2a4-16cd-4f92-a568-8085365c3388",
+      "description": "musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138839604",
+      "name": "Noelle Stockwood",
+      "musicbrainz_id": "",
+      "description": "Canadian musician and founder of Femtanyl",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q117599978",
+      "name": "food house",
+      "musicbrainz_id": "74d8a532-7fec-4951-8aeb-099eeec6cba6",
+      "description": "American hyperpop band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q123740893",
+      "name": "kets4eki",
+      "musicbrainz_id": "f67897d4-7c84-4118-90b2-2cb2fafbc168",
+      "description": "Polish singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q128265302",
+      "name": "ABSRDST",
+      "musicbrainz_id": "70cf8d5e-2d03-40cb-86eb-96adf714afc6",
+      "description": "American electronic musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q117383861",
+      "name": "Camellia Rose Trinity",
+      "musicbrainz_id": "",
+      "description": "American talent manager",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q123575091",
+      "name": "Candeur Cyclone",
+      "musicbrainz_id": "2cce1ad7-23c6-4d34-96ee-5a2e12b97b37",
+      "description": "Belgian musical duo",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q141621741",
+      "name": "Els Cundits",
+      "musicbrainz_id": "",
+      "description": "Spanish hyperpop collective based in Barcelona",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q131373352",
+      "name": "Ennaria",
+      "musicbrainz_id": "c800738f-d09f-482f-81ab-32c81b10b517",
+      "description": "Australian artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q124810499",
+      "name": "Estr0w0g3n",
+      "musicbrainz_id": "30f9879d-b1bc-451a-803e-c9e1b5a52bc1",
+      "description": "hyperpop and phonk music artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q139601456",
+      "name": "Grumpy",
+      "musicbrainz_id": "95bfda7b-a79b-4752-aa3d-93b89c29859f",
+      "description": "American indie pop band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138297475",
+      "name": "III Shards",
+      "musicbrainz_id": "6e1cadd4-6c23-42ae-bf55-f9d8da338574",
+      "description": "American musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "digicore",
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q137126871",
+      "name": "Iris Pelton",
+      "musicbrainz_id": "",
+      "description": "American singer and content creator",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138774831",
+      "name": "Ishaani Ponniah",
+      "musicbrainz_id": "",
+      "description": "British musician, model, and social media specialist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q135485026",
+      "name": "Jhon Rebatta Lam",
+      "musicbrainz_id": "26a70731-4a79-4ff1-a7de-cb0981fdf77f",
+      "description": "Peruvian footballer, streamer and musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "digicore"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q116995614",
+      "name": "Mylie Taylor",
+      "musicbrainz_id": "",
+      "description": "Canadian singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q135998061",
+      "name": "Nya",
+      "musicbrainz_id": "d4983c1c-e81d-4548-85d8-056d5e23855a",
+      "description": "German hyperpop musician and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q141549459",
+      "name": "Ojee Ka$h",
+      "musicbrainz_id": "1fb5655e-ce7e-4f7f-9a02-cd856a4546aa",
+      "description": "musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q141064764",
+      "name": "Rareș",
+      "musicbrainz_id": "94b59726-f6d9-4b98-b293-9115a96306d9",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q132604152",
+      "name": "Rok.wav",
+      "musicbrainz_id": "5fa68fa3-e293-41eb-a5ee-a480fc84e042",
+      "description": "French hyperpop music",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q141753521",
+      "name": "TALØN",
+      "musicbrainz_id": "5ab84f49-5e39-45a7-b397-db2fde12f663",
+      "description": "alternative singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q139819958",
+      "name": "Thotcrime",
+      "musicbrainz_id": "9b9cc1b5-68ed-413b-9b2c-1f825ce84222",
+      "description": "American and UK cybergrind band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q50930703",
+      "name": "Yelena Pouliquen",
+      "musicbrainz_id": "7541f8c3-ed16-4bcf-a0c6-b726f9f8478a",
+      "description": "French songwriter and singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q111678322",
+      "name": "aldn",
+      "musicbrainz_id": "fa01a34e-05f3-424c-8fd0-390840f51d74",
+      "description": "American singer and record producer from Virginia",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q138426894",
+      "name": "googly eyes",
+      "musicbrainz_id": "216e4623-7fdb-4000-89cd-552cc29ca768",
+      "description": "American singer-songwriter, composer and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q110894505",
+      "name": "kmoe",
+      "musicbrainz_id": "",
+      "description": "Canadian musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q122418494",
+      "name": "lucywav",
+      "musicbrainz_id": "",
+      "description": "American Singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q112257717",
+      "name": "merccifuul",
+      "musicbrainz_id": "",
+      "description": "merccifuul (real name Ruslan Medzhitov) is a hip-pop artist from Kostroma, Russia. He has been making music since 2018, but started his activity under the nickname merccifuul on December 27, 2021.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    },
+    {
+      "wikidata_id": "Q135989466",
+      "name": "saoirse dream",
+      "musicbrainz_id": "af0c4afb-8717-4dad-b453-6b015c0d8bdc",
+      "description": "American electronic musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "digicore",
+        "hyperpop"
+      ],
+      "category": "hyperpop"
+    }
+  ]
+}

@@ -1,0 +1,6464 @@
+{
+  "category": "hip-hop",
+  "label": "Hip-hop",
+  "genre_labels": [
+    "hip-hop music",
+    "hip hop music",
+    "trap music",
+    "alternative hip hop",
+    "East Coast hip hop",
+    "West Coast hip hop"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"hip-hop music\"@en \"hip hop music\"@en \"trap music\"@en \"alternative hip hop\"@en \"East Coast hip hop\"@en \"West Coast hip hop\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; wdt:P434 ?mbid; rdfs:label ?name.\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q25056945",
+      "name": "Blackpink",
+      "musicbrainz_id": "48646387-1664-4c9a-9139-9bfd091b823c",
+      "description": "South Korean girl group",
+      "sitelinks": 113,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114834007",
+      "name": "IShowSpeed",
+      "musicbrainz_id": "d7defc5c-2869-40f0-9d56-2a0292aaeba5",
+      "description": "American influencer, musician and online streamer (born 2005)",
+      "sitelinks": 100,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q33240",
+      "name": "Drake",
+      "musicbrainz_id": "9fff2f8a-21e6-47de-a2b8-7f449929d43f",
+      "description": "Canadian-American rapper, singer-songwriter, and actor (born 1986)",
+      "sitelinks": 89,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28561969",
+      "name": "XXXTentacion",
+      "musicbrainz_id": "61af87f4-16ee-4431-8504-cc06187079fb",
+      "description": "American rapper (1998–2018)",
+      "sitelinks": 68,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2748803",
+      "name": "Iggy Azalea",
+      "musicbrainz_id": "3a052c99-8c18-484a-8beb-9873b4fb3106",
+      "description": "Australian rapper (born 1990)",
+      "sitelinks": 66,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q221364",
+      "name": "Jaden Smith",
+      "musicbrainz_id": "26f50623-f0bd-4c9f-a8f5-6145767713c8",
+      "description": "American rapper and actor (born 1998)",
+      "sitelinks": 58,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q13605596",
+      "name": "Travis Scott",
+      "musicbrainz_id": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+      "description": "American rapper, singer and record producer",
+      "sitelinks": 58,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59268408",
+      "name": "Megan Thee Stallion",
+      "musicbrainz_id": "ee27b2d8-648c-4a9d-a68c-e55066959975",
+      "description": "American rapper, singer and songwriter",
+      "sitelinks": 56,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62591281",
+      "name": "Lil Nas X",
+      "musicbrainz_id": "0b30341b-b59d-4979-8130-b66c0e475321",
+      "description": "American rapper, singer and songwriter (born 1999)",
+      "sitelinks": 55,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q44479972",
+      "name": "6ix9ine",
+      "musicbrainz_id": "2282c539-05a2-477c-82b7-fe40798d37f3",
+      "description": "American rapper from New York (born 1996)",
+      "sitelinks": 52,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q214227",
+      "name": "T.I.",
+      "musicbrainz_id": "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
+      "description": "American rapper, actor and record producer (born 1980)",
+      "sitelinks": 51,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17517186",
+      "name": "Maluma",
+      "musicbrainz_id": "e8979f75-9110-4df8-ac70-898898d080d1",
+      "description": "Colombian singer",
+      "sitelinks": 49,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q29388200",
+      "name": "Lil Peep",
+      "musicbrainz_id": "92da4329-77a4-425c-8e92-4280110cace9",
+      "description": "American rapper (1996–2017)",
+      "sitelinks": 48,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q38002101",
+      "name": "Lil Pump",
+      "musicbrainz_id": "65a01fd2-35fb-4817-90d5-ab5506b21161",
+      "description": "American rapper (born 2000)",
+      "sitelinks": 47,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q234066",
+      "name": "Hyuna",
+      "musicbrainz_id": "72e54f6a-baab-46e4-9b74-8b481724ac99",
+      "description": "South Korean singer-songwriter, rapper and model",
+      "sitelinks": 45,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27671080",
+      "name": "Playboi Carti",
+      "musicbrainz_id": "2baf3276-ed6a-4349-8d2e-f4601e7b2167",
+      "description": "American rapper",
+      "sitelinks": 45,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q297831",
+      "name": "Rick Ross",
+      "musicbrainz_id": "13bcb2bb-db37-4397-baf5-e0f085be2d64",
+      "description": "American rapper and record executive",
+      "sitelinks": 45,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16911049",
+      "name": "Era Istrefi",
+      "musicbrainz_id": "eded8205-f8ac-4825-af55-8693ddbd7784",
+      "description": "Kosovo-Albanian singer",
+      "sitelinks": 43,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15637814",
+      "name": "Young Thug",
+      "musicbrainz_id": "800760de-bdf8-43a2-8fe0-44a2401a5515",
+      "description": "American rapper and singer-songwriter (born 1991)",
+      "sitelinks": 42,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q129668",
+      "name": "2 Chainz",
+      "musicbrainz_id": "dff0d392-4cd5-4052-9fbb-f485df3891e5",
+      "description": "American rapper (born 1977)",
+      "sitelinks": 41,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106078330",
+      "name": "Central Cee",
+      "musicbrainz_id": "b0337af1-8d93-4671-b6c9-ba306bf942bf",
+      "description": "British rapper (born 1998)",
+      "sitelinks": 39,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62107457",
+      "name": "DaBaby",
+      "musicbrainz_id": "87ae83df-6173-40cc-a0f2-bad543faa6aa",
+      "description": "American rapper (born 1991)",
+      "sitelinks": 39,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q533781",
+      "name": "Diplo",
+      "musicbrainz_id": "a56bd8f9-8ef8-4d63-89a4-794ed1360dd2",
+      "description": "American DJ and record producer (born 1978)",
+      "sitelinks": 39,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15777045",
+      "name": "Migos",
+      "musicbrainz_id": "0221734a-35a8-40f7-b5c5-2f61a200bc7c",
+      "description": "American hip hop group",
+      "sitelinks": 39,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q342447",
+      "name": "Jeezy",
+      "musicbrainz_id": "dcad99e7-3c3e-4c78-bf8a-68203e17da48",
+      "description": "American rapper (born 1977)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28498299",
+      "name": "Tommy Cash",
+      "musicbrainz_id": "18a9ae86-24b8-4ef1-959b-7bb5e5a5fee7",
+      "description": "Estonian rapper, singer, producer and visual artist (born 1991)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q108761978",
+      "name": "Yeat",
+      "musicbrainz_id": "9e6a6a2f-f696-4cc0-87f1-e4f712e46802",
+      "description": "American rapper, singer-songwriter, and record producer (born 2000)",
+      "sitelinks": 38,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2604214",
+      "name": "Major Lazer",
+      "musicbrainz_id": "75be165a-ad83-4d12-bd28-f589a15c479f",
+      "description": "Jamaican-American electronic music band",
+      "sitelinks": 36,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105076439",
+      "name": "Blanco",
+      "musicbrainz_id": "c114447d-3acc-41a0-92a4-c12ec12ccfaa",
+      "description": "Italian singer-songwriter",
+      "sitelinks": 35,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q94579368",
+      "name": "King Von",
+      "musicbrainz_id": "a542a08c-9434-4028-8da5-3120c4fdd3fb",
+      "description": "American rapper (1994–2020)",
+      "sitelinks": 35,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23772141",
+      "name": "Lil Yachty",
+      "musicbrainz_id": "a668565b-41b8-44a8-9d5c-8e609dbf69fc",
+      "description": "American rapper, singer-songwriter and record producer (born 1997)",
+      "sitelinks": 35,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q313080",
+      "name": "Soulja Boy",
+      "musicbrainz_id": "29eead4d-3793-4625-8727-c03edbb38b8b",
+      "description": "American rapper and record producer (born 1990)",
+      "sitelinks": 35,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q81698554",
+      "name": "Pop Smoke",
+      "musicbrainz_id": "253c9ae7-850b-46be-8fbb-65e9fa621058",
+      "description": "American rapper (1999–2020)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q48719890",
+      "name": "Takeoff",
+      "musicbrainz_id": "70f5bb6e-9b87-4500-9c9f-2e1d373d07da",
+      "description": "American rapper (1994–2022)",
+      "sitelinks": 34,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62953486",
+      "name": "Polo G",
+      "musicbrainz_id": "7e1e5648-1d6a-4248-975a-98603e781848",
+      "description": "American rapper",
+      "sitelinks": 33,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q176846",
+      "name": "Timati",
+      "musicbrainz_id": "2dedd382-2b14-4b88-a767-dd2220b4b509",
+      "description": "Russian rapper",
+      "sitelinks": 32,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q7859785",
+      "name": "Ty Dolla Sign",
+      "musicbrainz_id": "7bd66c18-cb33-49aa-9279-140acedbdb49",
+      "description": "American singer and rapper (born 1982)",
+      "sitelinks": 32,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28784685",
+      "name": "Bhad Bhabie",
+      "musicbrainz_id": "a9d2cd95-8441-4cd3-a2f5-d0e9304fc40e",
+      "description": "American rapper (born 2003)",
+      "sitelinks": 30,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q716421",
+      "name": "Noah Munck",
+      "musicbrainz_id": "88d4ef73-6bdc-4de9-926a-050fda132976",
+      "description": "American actor",
+      "sitelinks": 29,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59209423",
+      "name": "Roddy Ricch",
+      "musicbrainz_id": "5721c227-4caf-48b1-bbfc-1a4ed3276963",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 29,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1027165",
+      "name": "Three 6 Mafia",
+      "musicbrainz_id": "a8754ac4-a85e-4f48-a81f-eecd482570ef",
+      "description": "American hip-hop group",
+      "sitelinks": 29,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17517049",
+      "name": "Denzel Curry",
+      "musicbrainz_id": "5f95440d-7737-4a36-9bcf-c05337f7129b",
+      "description": "American rapper from Florida (born 1995)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23091498",
+      "name": "Desiigner",
+      "musicbrainz_id": "05b75ee5-98cd-430e-b1ec-ec0f61fdabda",
+      "description": "American rapper and singer (born 1997)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22246459",
+      "name": "Jonas Blue",
+      "musicbrainz_id": "17678771-5799-4017-851a-319f25b6948d",
+      "description": "British DJ and music producer",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2899818",
+      "name": "Lil Durk",
+      "musicbrainz_id": "c9cd225b-4883-428e-82c2-73e0b6282fb6",
+      "description": "American rapper",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q40890697",
+      "name": "Trippie Redd",
+      "musicbrainz_id": "8032cf05-d916-4b2a-9c53-6e75d4a24bd8",
+      "description": "American rapper and singer (born 1999)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59598640",
+      "name": "Wos",
+      "musicbrainz_id": "63572bc8-bc59-419c-997d-4846ff9f5cc5",
+      "description": "Argentine rapper, musician, freestyler, and actor.",
+      "sitelinks": 28,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q361661",
+      "name": "Birdman",
+      "musicbrainz_id": "dcf5807c-ef1f-4291-b452-6824080ecac4",
+      "description": "American rapper and record executive (born 1969)",
+      "sitelinks": 27,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q642477",
+      "name": "Booba",
+      "musicbrainz_id": "785c0e9c-89f6-4bf4-8296-443a46632d62",
+      "description": "French rapper",
+      "sitelinks": 27,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56246495",
+      "name": "Paulo Londra",
+      "musicbrainz_id": "3c490f79-d333-47d6-8a4a-8d676da4d1d2",
+      "description": "Argentinian rapper and singer",
+      "sitelinks": 27,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30103025",
+      "name": "Swae Lee",
+      "musicbrainz_id": "a17ce9c3-8f6f-4dcc-a1b7-2a04ab9e31f0",
+      "description": "American rapper and singer (born 1993)",
+      "sitelinks": 27,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6849262",
+      "name": "Mike WiLL Made-It",
+      "musicbrainz_id": "b69cc109-0b7c-430c-8a95-e4995f49c409",
+      "description": "American music producer, rapper and singer (born 1989)",
+      "sitelinks": 26,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18123226",
+      "name": "Rae Sremmurd",
+      "musicbrainz_id": "c78c3026-426b-4580-ab23-08490bb8b515",
+      "description": "American hip hop duo",
+      "sitelinks": 26,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42224353",
+      "name": "Ski Mask the Slump God",
+      "musicbrainz_id": "faf916e0-ffc5-4345-a10b-b79ed8c9b8f6",
+      "description": "American rapper",
+      "sitelinks": 26,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19361511",
+      "name": "Fetty Wap",
+      "musicbrainz_id": "e3492ea0-5997-4241-a7bf-2fd7fb1bfad1",
+      "description": "American rapper and singer (born 1991)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114050700",
+      "name": "Ken Carson",
+      "musicbrainz_id": "860d7dc2-618d-437e-a3bb-7b91c2d40095",
+      "description": "American rapper (born 2000)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65029930",
+      "name": "Latto",
+      "musicbrainz_id": "355cc194-b8db-4af2-8678-c7ad54213f4b",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65054660",
+      "name": "Lil Tecca",
+      "musicbrainz_id": "e6fdf3f9-8077-4126-b0cf-94da9a8b627e",
+      "description": "American rapper and singer-songwriter",
+      "sitelinks": 25,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42666318",
+      "name": "Lil Xan",
+      "musicbrainz_id": "986e466c-7efb-49cc-8034-d05a4af5ab75",
+      "description": "American rapper from California (born. 1996)",
+      "sitelinks": 25,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55433897",
+      "name": "Bladee",
+      "musicbrainz_id": "937389d5-d59e-4233-86d8-dacba3d5270c",
+      "description": "Swedish rapper (born 1994)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55819454",
+      "name": "Lil Mosey",
+      "musicbrainz_id": "330e00e4-7991-4b47-b2be-3881aa5afed6",
+      "description": "American rapper and singer-songwriter",
+      "sitelinks": 24,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q571125",
+      "name": "Waka Flocka Flame",
+      "musicbrainz_id": "59eda569-b380-4958-b98c-051d1667b3e1",
+      "description": "American rapper and songwriter (born 1986)",
+      "sitelinks": 24,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60463134",
+      "name": "Blueface",
+      "musicbrainz_id": "664bd251-a22c-4ab9-a4f7-25da4b14f9fc",
+      "description": "American rapper (born 1997)",
+      "sitelinks": 23,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q973066",
+      "name": "Elena Temnikova",
+      "musicbrainz_id": "88059cfc-f1d9-4e0a-902e-d84baae1a17f",
+      "description": "Russian singer",
+      "sitelinks": 23,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65061223",
+      "name": "K/DA",
+      "musicbrainz_id": "35f3e736-e27b-4a26-892c-c00179d163d5",
+      "description": "Virtual K-pop girl group",
+      "sitelinks": 23,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27267034",
+      "name": "Rich Brian",
+      "musicbrainz_id": "49d67664-6962-4f69-adc4-f52208c78dd2",
+      "description": "Indonesian rapper",
+      "sitelinks": 23,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27886640",
+      "name": "6lack",
+      "musicbrainz_id": "07832b42-8826-4ab1-acd3-c49a2f595ffe",
+      "description": "American singer-songwriter and rapper (born 1992)",
+      "sitelinks": 22,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22912140",
+      "name": "Jala Brat",
+      "musicbrainz_id": "b83cc375-fd60-49ad-a26f-0c02bec189a5",
+      "description": "Bosnian rapper, songwriter and producer",
+      "sitelinks": 22,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q119842023",
+      "name": "Sexyy Red",
+      "musicbrainz_id": "0953d634-b964-4f2a-b862-8de475aeaf47",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 22,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42211709",
+      "name": "Smokepurpp",
+      "musicbrainz_id": "5a42040d-2ae5-4e2a-a362-22e7b19d993c",
+      "description": "American rapper (born 1997)",
+      "sitelinks": 22,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q113510276",
+      "name": "Destroy Lonely",
+      "musicbrainz_id": "987d3d86-0d7a-4292-ae96-a8d59e456436",
+      "description": "American rapper",
+      "sitelinks": 21,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q20354248",
+      "name": "Silentó",
+      "musicbrainz_id": "636736ef-df33-48ed-bdbc-e8f8d1f964b3",
+      "description": "American rapper and singer (born 1998)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27927826",
+      "name": "A Boogie wit da Hoodie",
+      "musicbrainz_id": "c1708d03-8a66-46eb-848e-fe0d233ffb39",
+      "description": "American rapper (born 1995)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q52152585",
+      "name": "Big Flow Music",
+      "musicbrainz_id": "7ac3cb8b-ad2c-47d8-8c2a-f5f3421953d5",
+      "description": "Mexican hip hop group",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15921342",
+      "name": "Deorro",
+      "musicbrainz_id": "724ffc08-6987-40b0-b107-03bb95a82b80",
+      "description": "Mexican-American DJ and record producer",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q47544109",
+      "name": "Lil Skies",
+      "musicbrainz_id": "8328b279-1863-487b-976a-58a62b85220a",
+      "description": "American rapper",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q69821388",
+      "name": "María Becerra",
+      "musicbrainz_id": "a69b643d-2cd9-4914-8a1a-3f3797a7323c",
+      "description": "Argentine singer-songwriter (born 2000)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18637908",
+      "name": "Rich the Kid",
+      "musicbrainz_id": "6d063567-dbf9-4b2a-bd11-1a4450cd93ca",
+      "description": "American rapper",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q54887666",
+      "name": "Scarlxrd",
+      "musicbrainz_id": "f03c0c1d-eca8-4386-bdf7-566b6f950c3a",
+      "description": "British rapper",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56276347",
+      "name": "YNW Melly",
+      "musicbrainz_id": "59d6cea7-3771-4ce6-8c02-395ac5ba927a",
+      "description": "American rapper",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q586919",
+      "name": "Yo Gotti",
+      "musicbrainz_id": "b02ec63e-e78d-43e5-a594-462e95036e8d",
+      "description": "American rapper",
+      "sitelinks": 20,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30196568",
+      "name": "$uicideboy$",
+      "musicbrainz_id": "ef326b3d-61f0-4379-aca0-21237d696d63",
+      "description": "American musical group; hip-hop duo",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q21857084",
+      "name": "Bones",
+      "musicbrainz_id": "e3f7631b-e50b-4923-9049-2fa84dfcaf71",
+      "description": "American rapper",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28831246",
+      "name": "Nav",
+      "musicbrainz_id": "418fe547-4bec-48fe-8df0-ed25e27f4570",
+      "description": "Canadian rapper, singer, and record producer (born 1989)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56513324",
+      "name": "Sheck Wes",
+      "musicbrainz_id": "07ab04d4-bdbc-4c93-bfb2-457693a4ff94",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1153351",
+      "name": "UGK",
+      "musicbrainz_id": "9603810b-5d6d-41a6-aca8-330ef966d55c",
+      "description": "American hip hop duo",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23541285",
+      "name": "Young Dolph",
+      "musicbrainz_id": "3f334aae-57d4-4787-a048-beec335d47e0",
+      "description": "American rapper (1985–2021)",
+      "sitelinks": 19,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15648254",
+      "name": "A$AP Ferg",
+      "musicbrainz_id": "8ab5d936-49d1-415e-92c8-151e0e7dd912",
+      "description": "American rapper (born 1988)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q21005074",
+      "name": "Bia",
+      "musicbrainz_id": "2c3ddff8-0de5-412a-8f0c-8925f84d5a9a",
+      "description": "American rapper",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q166454",
+      "name": "Boosie Badazz",
+      "musicbrainz_id": "8ba17cf6-bec2-4ae4-9820-b1cda47adc08",
+      "description": "American rapper from Louisiana",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114132368",
+      "name": "GloRilla",
+      "musicbrainz_id": "2a7ef045-ca10-4cb5-8fe9-1f5d38e84bc2",
+      "description": "American rapper",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q75211884",
+      "name": "Nicki Nicole",
+      "musicbrainz_id": "c1a07a33-72c3-4f2d-801a-37c57923daf5",
+      "description": "Argentine rapper and singer-songwriter (born 2000)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q593741",
+      "name": "Project Pat",
+      "musicbrainz_id": "8b8985eb-f71f-4229-9f11-171a7aac98c1",
+      "description": "American rapper",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15613707",
+      "name": "Yellow Claw",
+      "musicbrainz_id": "759abafc-c4eb-4018-8554-f29a9d842779",
+      "description": "Dutch electronic music band",
+      "sitelinks": 18,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q795220",
+      "name": "B.G.",
+      "musicbrainz_id": "435837d0-9896-48f1-a80f-66579628ca06",
+      "description": "American rapper",
+      "sitelinks": 17,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107052166",
+      "name": "Lil Loaded",
+      "musicbrainz_id": "e3b6de0d-4d0e-4b54-9009-31211214733a",
+      "description": "American rapper (2000–2021)",
+      "sitelinks": 17,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q45898064",
+      "name": "Lil Tracy",
+      "musicbrainz_id": "ff94e0f3-8f1a-418a-a0f4-4c4a100603dc",
+      "description": "American rapper, singer, and songwriter",
+      "sitelinks": 17,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30201990",
+      "name": "Pedro Fernando",
+      "musicbrainz_id": "5237eccf-4f58-4ee2-b9ef-b5a02a5eb454",
+      "description": "Angolan rapper",
+      "sitelinks": 17,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q937045",
+      "name": "Belly",
+      "musicbrainz_id": "7e302507-6b78-4f3b-9c4c-e3b85580fad0",
+      "description": "Palestinian-Canadian rapper (born 1984)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42296351",
+      "name": "Face",
+      "musicbrainz_id": "c5ad0328-15eb-44a9-82b3-e5b9386d8da4",
+      "description": "Russian rapper",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q13107451",
+      "name": "Fredo Santana",
+      "musicbrainz_id": "af4b59c0-ab9b-45a0-a6d4-02043ff0a4c6",
+      "description": "American rapper (1990-2018)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28113685",
+      "name": "Ghali",
+      "musicbrainz_id": "cb0e7751-ef0c-48b4-9cf6-2d3d41f976b1",
+      "description": "Italian rapper",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125255581",
+      "name": "Nettspend",
+      "musicbrainz_id": "4585749c-5489-4699-9daf-1ffa9717179f",
+      "description": "American rapper (born 2007)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105105274",
+      "name": "Pooh Shiesty",
+      "musicbrainz_id": "82cc5b8b-22e8-48e3-9f97-6ab39ac316d6",
+      "description": "American rapper (born 1999)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55092461",
+      "name": "Rico Nasty",
+      "musicbrainz_id": "f7d8f1ce-6a72-422a-b746-22137b3a05d0",
+      "description": "American rapper",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q48964824",
+      "name": "Soolking",
+      "musicbrainz_id": "530a9937-4229-4d7e-8457-4853d7d5dd7a",
+      "description": "Algerian-French singer, rapper and dancer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19677021",
+      "name": "Yuki Chiba",
+      "musicbrainz_id": "0c0cb24e-0c76-40ad-b5d9-c454602d972b",
+      "description": "Japanese rapper and singer",
+      "sitelinks": 16,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17501920",
+      "name": "Bobby Shmurda",
+      "musicbrainz_id": "4ec3b7d8-efbb-4672-8067-5e72bd8dba3e",
+      "description": "American rapper",
+      "sitelinks": 15,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q21730641",
+      "name": "Scriptonite",
+      "musicbrainz_id": "d1b3ba39-aa46-4ef9-bf25-23992d3f76fa",
+      "description": "Kazakh rapper, singer-songwriter and record producer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106583774",
+      "name": "SoFaygo",
+      "musicbrainz_id": "654d48fb-4fe4-472d-81e6-039e54f2f27b",
+      "description": "American rapper and singer from Georgia",
+      "sitelinks": 15,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q9383157",
+      "name": "Taco Hemingway",
+      "musicbrainz_id": "24b679c1-fc3d-4300-82e2-fea54e79dc89",
+      "description": "Polish rapper",
+      "sitelinks": 15,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27830860",
+      "name": "Aminé",
+      "musicbrainz_id": "12398bf3-1b99-47b7-930c-f3956773f35a",
+      "description": "American rapper, singer, and songwriter",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18921671",
+      "name": "Dreezy",
+      "musicbrainz_id": "22991d79-deaa-4ff8-9d47-c40395bafc85",
+      "description": "American rapper and singer (born 1994)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50388016",
+      "name": "Ezhel",
+      "musicbrainz_id": "a8b0dac5-9f4b-4b28-99fc-7e04980cc7d9",
+      "description": "Turkish rapper (born 1991)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89477488",
+      "name": "Geolier",
+      "musicbrainz_id": "07455cec-07ae-4e0c-aec5-d74d9ed33cd4",
+      "description": "Italian rapper",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16337938",
+      "name": "Ludmilla",
+      "musicbrainz_id": "cf71e106-1003-4390-8477-cf268229df66",
+      "description": "Brazilian singer-songwriter",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q38459032",
+      "name": "Moneybagg Yo",
+      "musicbrainz_id": "8971fa37-c402-474a-b897-e2bbc145b59d",
+      "description": "American rapper from Tennessee",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50365115",
+      "name": "Pi'erre Bourne",
+      "musicbrainz_id": "be0d7749-0974-48ba-93bb-6e974ec193a2",
+      "description": "American record producer and rapper (born 1993)",
+      "sitelinks": 14,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1074590",
+      "name": "Chip",
+      "musicbrainz_id": "8ec6bf47-d22f-4a2f-b930-0f7feb10ea3f",
+      "description": "British rapper",
+      "sitelinks": 13,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17811716",
+      "name": "G Herbo",
+      "musicbrainz_id": "1b1f50d1-4746-468b-a6a2-7db7200d3dfc",
+      "description": "American rapper (born 1995)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2306265",
+      "name": "SpaceGhostPurrp",
+      "musicbrainz_id": "6c0143f4-f950-4608-8572-6ebefc2a37c9",
+      "description": "American rapper and record producer from Florida",
+      "sitelinks": 13,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59312925",
+      "name": "Big Baby Tape",
+      "musicbrainz_id": "8b20aa79-51fe-4fe0-bb53-977ec207bf63",
+      "description": "Russian rapper and record producer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18580236",
+      "name": "Dej Loaf",
+      "musicbrainz_id": "7df31657-85eb-45cd-a651-f1cf94bc44b6",
+      "description": "American rapper and singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15635447",
+      "name": "Kaaris",
+      "musicbrainz_id": "81920682-bb79-4b62-afa8-fe8dece0227c",
+      "description": "French rapper",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q975612",
+      "name": "Lord Infamous",
+      "musicbrainz_id": "98f078b7-6c22-49a6-8bdc-bc7e9ac116f8",
+      "description": "American rapper (1975-2013)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89937407",
+      "name": "Lous and the Yakuza",
+      "musicbrainz_id": "8a33dcf0-64b8-428c-8b64-828f8d85e2bb",
+      "description": "Congolese-Belgian singer, songwriter, rapper and model",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105627815",
+      "name": "Rubi Rose",
+      "musicbrainz_id": "2a6b7cf5-667b-44bd-b70d-bd01959c5fb7",
+      "description": "American rapper (born 1997)",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q52274581",
+      "name": "Saint Jhn",
+      "musicbrainz_id": "0f16ba6c-1874-42b9-b7a6-e060c2be454e",
+      "description": "Guyanese-American rapper and singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q29788794",
+      "name": "Yseult",
+      "musicbrainz_id": "50a948ac-3bf7-4097-ab73-773bc3cb8fed",
+      "description": "French singer-songwriter and model",
+      "sitelinks": 12,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105538243",
+      "name": "Audrey Nuna",
+      "musicbrainz_id": "7b54e5e4-82f7-4dfe-9cd8-fc8d9f6815e3",
+      "description": "South Korean-American singer and rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114297165",
+      "name": "BabyTron",
+      "musicbrainz_id": "dc1e73d5-4ff6-4c40-bbd6-493f4dd0d047",
+      "description": "American rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65013174",
+      "name": "Cazzu",
+      "musicbrainz_id": "1d47b224-2cd9-4852-8e55-b9ec635e0c43",
+      "description": "Argentine rapper and singer (born 1993)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q741522",
+      "name": "DJ Toomp",
+      "musicbrainz_id": "19f52369-71d1-4e25-a459-8e3de576532b",
+      "description": "American DJ and record producer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q26255308",
+      "name": "Damso",
+      "musicbrainz_id": "71ff695e-896a-4043-aea4-93eadde08d09",
+      "description": "Congolese-born Belgian rapper and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q3298815",
+      "name": "Drumma Boy",
+      "musicbrainz_id": "35a431eb-347f-4963-8ec6-534e124e3e65",
+      "description": "American record producer, rapper, singer and songwriter",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q3077143",
+      "name": "Foreign Beggars",
+      "musicbrainz_id": "34dd3adc-f118-4106-bfac-71820a804f4c",
+      "description": "UK musical group",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17319586",
+      "name": "Gzuz",
+      "musicbrainz_id": "8e7a213a-8fd6-400e-a491-1406016ae698",
+      "description": "German rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2110116",
+      "name": "Lil Reese",
+      "musicbrainz_id": "9172ba7f-5912-474a-99d3-33d01ed082d3",
+      "description": "American rapper (born 1993)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6729344",
+      "name": "Maestro Harrell",
+      "musicbrainz_id": "3bcb77a5-7d85-439b-8683-c9c4a758e15e",
+      "description": "American actor, musician and rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42336667",
+      "name": "Nothing,Nowhere",
+      "musicbrainz_id": "90e8bc57-78b0-4992-8784-898d5122d3b3",
+      "description": "American rapper and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19344289",
+      "name": "OG Maco",
+      "musicbrainz_id": "c2fc8cb1-a723-4709-9b33-c582dabddab0",
+      "description": "American rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107455254",
+      "name": "Rondodasosa",
+      "musicbrainz_id": "ce39de28-c09a-46bd-ad92-8bdaddcb6f0f",
+      "description": "Italian rapper and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q542930",
+      "name": "Roscoe Dash",
+      "musicbrainz_id": "2d79c678-e9e6-4456-a941-8ca436747a43",
+      "description": "American rapper and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27683931",
+      "name": "Sfera Ebbasta",
+      "musicbrainz_id": "2380d705-1af6-4fab-b408-d9c095806a46",
+      "description": "Italian rapper (born 1992)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q76999141",
+      "name": "Shiva",
+      "musicbrainz_id": "1ae69cc3-2a49-4d2d-9603-31fb65c355a8",
+      "description": "Italian rapper (born 1999)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105105325",
+      "name": "SpotemGottem",
+      "musicbrainz_id": "2f85126f-315b-4eb7-99e4-8454c908c479",
+      "description": "American rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q177736",
+      "name": "Young Dro",
+      "musicbrainz_id": "b76f6f2b-87f1-466f-8a96-9443cf5ae07f",
+      "description": "American rapper",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50825786",
+      "name": "Yung Gravy",
+      "musicbrainz_id": "20b034b2-35a1-40be-908f-22d1b5681572",
+      "description": "American rapper (born 1996)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q49481016",
+      "name": "BlocBoy JB",
+      "musicbrainz_id": "a62e2b14-812a-41a1-884d-5a138705ad2d",
+      "description": "American rapper from Tennessee",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2662960",
+      "name": "Bonez MC",
+      "musicbrainz_id": "f56f33bb-7443-49a6-9345-4b78a0c89760",
+      "description": "German rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27914910",
+      "name": "Getter",
+      "musicbrainz_id": "00447c0c-bc7e-4578-a206-31e95ac97571",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56274788",
+      "name": "Grandson",
+      "musicbrainz_id": "cc699fe3-db51-4837-928f-8f712c61a01a",
+      "description": "Canadian-American singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50875077",
+      "name": "Night Lovell",
+      "musicbrainz_id": "c25963ac-b289-4d99-a8dc-06c0ce757f0c",
+      "description": "Canadian rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q24689203",
+      "name": "Niska",
+      "musicbrainz_id": "e369e789-6f07-4ce8-a70f-e136bc57bf3b",
+      "description": "French rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q24350516",
+      "name": "Pharaoh",
+      "musicbrainz_id": "ce910111-f540-4b88-b1b6-52b68cc1a718",
+      "description": "Russian rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19409897",
+      "name": "Quebonafide",
+      "musicbrainz_id": "5d23a9d2-2d17-4b6d-9dd1-d0a0e41615ca",
+      "description": "Polish rapper and singer-songwriter",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28732615",
+      "name": "Tee Grizzley",
+      "musicbrainz_id": "babeb28b-5142-4af9-a3c5-9987315f1fc3",
+      "description": "American rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q45121636",
+      "name": "YBN Nahmir",
+      "musicbrainz_id": "e3928973-a746-401b-ad79-0b27a9f4ed7d",
+      "description": "American rapper",
+      "sitelinks": 10,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q95694810",
+      "name": "42 Dugg",
+      "musicbrainz_id": "4214aa04-64b0-442a-982b-0560e6d3a5bd",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q99469239",
+      "name": "AP Dhillon",
+      "musicbrainz_id": "ed29f721-0d40-4a90-9f25-a91c2ccccd5e",
+      "description": "Indo-Canadian singer (born 1993)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q64736729",
+      "name": "Blanco Brown",
+      "musicbrainz_id": "46b04bfe-70da-428e-9b7d-1f444f3446a4",
+      "description": "American rapper and singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89832",
+      "name": "Farid Bang",
+      "musicbrainz_id": "06eceb73-b79e-4f93-9709-d72782a4a916",
+      "description": "German rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30933614",
+      "name": "Gloria Groove",
+      "musicbrainz_id": "30af9387-037c-4f4f-9a81-17c6d9f5a26e",
+      "description": "Brazilian singer, rapper, songwriter, actor, drag queen and former voice actor",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22001369",
+      "name": "Gordo",
+      "musicbrainz_id": "1692d331-89cb-4ede-9f3b-ac7544d782df",
+      "description": "American-Nicaraguan DJ and record producer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56246163",
+      "name": "Killy",
+      "musicbrainz_id": "12f5346c-8c5d-4dfe-bdb0-eb577b332317",
+      "description": "Canadian rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60926853",
+      "name": "Koffee",
+      "musicbrainz_id": "7d04679e-a855-4214-9543-febaf02de725",
+      "description": "Jamaican singer-songwriter, rapper, DJ and guitarist",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6430730",
+      "name": "Koopsta Knicca",
+      "musicbrainz_id": "19a0da10-d1a2-473a-9214-123da1da05e1",
+      "description": "American rapper (1975-2015)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62019509",
+      "name": "Lazza",
+      "musicbrainz_id": "c8dd3b3d-dcf8-44d1-8c5d-1456c78f6b1c",
+      "description": "Italian rapper and record producer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110098618",
+      "name": "Nardo Wick",
+      "musicbrainz_id": "0eea08e2-1363-4b36-bbe8-9691ae3892b6",
+      "description": "American rapper (born 2001)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18623749",
+      "name": "O.T. Genasis",
+      "musicbrainz_id": "f3c48d53-8dfe-435f-84e6-1756754c4687",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q973691",
+      "name": "OJ da Juiceman",
+      "musicbrainz_id": "de335e79-402f-4378-8b18-ec9e68d8f001",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q7333228",
+      "name": "Riff Raff",
+      "musicbrainz_id": "f0bf3f58-bfc9-404b-ac54-49e04544a757",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q25476458",
+      "name": "Robb Banks",
+      "musicbrainz_id": "decaf88d-365d-4441-bfef-f3fc8a7eac21",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q3437993",
+      "name": "Rocko",
+      "musicbrainz_id": "0dc215ac-3186-474a-aab5-443f7168fcc8",
+      "description": "American rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111394891",
+      "name": "Teezo Touchdown",
+      "musicbrainz_id": "f1660eaa-929f-48d4-9926-9aaa61afa52f",
+      "description": "American rapper and singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27144290",
+      "name": "Ufo361",
+      "musicbrainz_id": "80e8e55c-6e9b-470f-844b-48e618fb6e56",
+      "description": "German rapper",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2031948",
+      "name": "Young Chop",
+      "musicbrainz_id": "723c316b-ceac-40c0-9632-b34d3a55ac7b",
+      "description": "American record producer and rapper from Illinois (1993-)",
+      "sitelinks": 9,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106727810",
+      "name": "Breskvica",
+      "musicbrainz_id": "6b91feec-9aa0-4625-9bd5-f1eb2713d7b0",
+      "description": "Serbian singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q32002441",
+      "name": "Dark Polo Gang",
+      "musicbrainz_id": "e0cc921a-03f1-4ea8-bf3c-7611ebe5b963",
+      "description": "Italian trap band",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q127427285",
+      "name": "F5ve",
+      "musicbrainz_id": "9bdce94a-7c47-4b9a-8e10-f65f5fc63d32",
+      "description": "Japanese girl group",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19410234",
+      "name": "Gradur",
+      "musicbrainz_id": "ee3f3f84-e95f-4381-83b7-8165c022d760",
+      "description": "DR Congolese and French rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q44746097",
+      "name": "Hamza",
+      "musicbrainz_id": "6a2244c9-3122-454e-b83d-b23e2968884e",
+      "description": "Belgian rapper, singer and record producer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115633164",
+      "name": "Kaliii",
+      "musicbrainz_id": "67d33c91-279a-4185-a068-b7c6bfc4bc1a",
+      "description": "American rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111967180",
+      "name": "Lil Gnar",
+      "musicbrainz_id": "ac6a425c-35c3-4fd3-bcb6-39075bf2845a",
+      "description": "American rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60831025",
+      "name": "Markul",
+      "musicbrainz_id": "5555424f-4579-4575-b420-39e7004757ba",
+      "description": "Latvian-born Russian rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q64489436",
+      "name": "Matt Ox",
+      "musicbrainz_id": "5ccb759f-2cdf-40b3-93f9-883ce3cd9ea8",
+      "description": "American rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q100268282",
+      "name": "Rosa Chemical",
+      "musicbrainz_id": "76808776-b501-4153-8a97-e8341568e015",
+      "description": "Italian rapper (1998-)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56560358",
+      "name": "Sin Boy",
+      "musicbrainz_id": "f6d3b3ca-d276-4acc-9f42-343ac1e77729",
+      "description": "Greek rapper of Albanian origin",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55719835",
+      "name": "Stig Brenner",
+      "musicbrainz_id": "a2012ec6-4aec-499a-a931-06b412b8402f",
+      "description": "Norwegian rapper and singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q37321400",
+      "name": "Tay-K",
+      "musicbrainz_id": "3bafaf0d-e3bc-40b1-8100-5e38ba8cbba7",
+      "description": "American former rapper and convicted murderer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65029294",
+      "name": "Vory",
+      "musicbrainz_id": "4b2d00a2-34b3-4a5c-8f22-4eda5c6e8039",
+      "description": "American rapper and singer-songwriter (born 1997)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q88589942",
+      "name": "Wande",
+      "musicbrainz_id": "523b938d-726d-421d-9a5c-0fc85bfbaf85",
+      "description": "Nigerian American Christian hip hop artist",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q8058407",
+      "name": "Young Scooter",
+      "musicbrainz_id": "876eaf5b-e416-44a2-824e-52ec90580fdc",
+      "description": "American rapper (1986–2025)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22905726",
+      "name": "Yung Beef",
+      "musicbrainz_id": "505e16b2-ef1b-42cc-b323-1a9664bcf69a",
+      "description": "Spanish rapper",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q2471861",
+      "name": "Önder Doğan",
+      "musicbrainz_id": "472bfc64-537c-4df2-b5b7-fb14d7d7cd96",
+      "description": "Dutch rapper of Turkish descent",
+      "sitelinks": 8,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q25560176",
+      "name": "Bello Figo",
+      "musicbrainz_id": "4f249a17-19f1-4931-8a49-16b5e270bd69",
+      "description": "Ghanese rapper and Internet personality",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106648167",
+      "name": "Big Scarr",
+      "musicbrainz_id": "da33eaa9-aeb7-4b8c-80ee-de157d6ae9b2",
+      "description": "American rapper (2000–2022)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27734073",
+      "name": "C-Kan",
+      "musicbrainz_id": "f9b24c46-e8e7-416d-b7d1-f6ff2b056522",
+      "description": "Mexican singer and rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q103868817",
+      "name": "CJ",
+      "musicbrainz_id": "e77b96af-ae4b-4039-ba23-0d4ee4cd347e",
+      "description": "American rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q52985500",
+      "name": "Capo Plaza",
+      "musicbrainz_id": "8f7dfba6-e258-4db2-a5c2-c998a02438af",
+      "description": "Italian rapper (1998)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62036507",
+      "name": "Comethazine",
+      "musicbrainz_id": "7229223d-9600-4e80-807e-34646cf9ba37",
+      "description": "American rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q25138504",
+      "name": "DRAM",
+      "musicbrainz_id": "6247d69d-426f-440f-97e0-74a9a0b00358",
+      "description": "American rapper and singer (born 1988)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q98098356",
+      "name": "FBG Duck",
+      "musicbrainz_id": "a3b86d8d-c502-4e13-8d32-23866295c474",
+      "description": "American rapper (1993—2020)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56312402",
+      "name": "Freeze Corleone",
+      "musicbrainz_id": "c715bbba-fe0f-4cb1-be89-40aa8d2117f9",
+      "description": "French rapper and producer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60736888",
+      "name": "Headie One",
+      "musicbrainz_id": "2e2c71a6-1ac8-4442-ba00-c4dea71abd64",
+      "description": "British rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6109334",
+      "name": "J Álvarez",
+      "musicbrainz_id": "75b8a771-52a3-49a0-b2b6-993ed1250dfa",
+      "description": "puertorriqueñan singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106747932",
+      "name": "JT",
+      "musicbrainz_id": "4b0e0fcf-87ac-4e40-bb3e-50edc88eae20",
+      "description": "American rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q25189887",
+      "name": "Kalash",
+      "musicbrainz_id": "14bd08f4-9b4b-4535-b7b3-9da685455d6d",
+      "description": "French rapper and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q70235526",
+      "name": "Key Glock",
+      "musicbrainz_id": "c5460e21-d5e7-4e26-ab4c-ba9c627809f8",
+      "description": "American rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60969745",
+      "name": "Kizaru",
+      "musicbrainz_id": "2f835289-33b8-4cb0-8d35-77d2697e5802",
+      "description": "Russian rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63854269",
+      "name": "Lit Killah",
+      "musicbrainz_id": "f0ddc47e-aa96-4af9-ad46-6031a45f77bc",
+      "description": "Argentine rapper and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q122167843",
+      "name": "Lvbel C5",
+      "musicbrainz_id": "d997de5b-dc55-4e20-9966-517363aa4abb",
+      "description": "Turkish rapper (born 2001)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85875010",
+      "name": "MC Cabelinho",
+      "musicbrainz_id": "9b12649a-8051-4051-8c56-131f7f4562a2",
+      "description": "musical artist",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q41789930",
+      "name": "Ninho",
+      "musicbrainz_id": "41fe37a6-f4bb-4340-9c14-e2c8e5d854f1",
+      "description": "French rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1760008",
+      "name": "P$C",
+      "musicbrainz_id": "012203a7-b845-4619-958f-5554e3631468",
+      "description": "band that plays Southern hip hop",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q58756200",
+      "name": "Quando Rondo",
+      "musicbrainz_id": "09742c4c-4e39-435a-8418-7623b0d44e46",
+      "description": "American rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61079939",
+      "name": "Rina",
+      "musicbrainz_id": "3fbbd1e3-d72a-4077-8088-dca990a45290",
+      "description": "Kosovo-Albanian rapper and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q47462747",
+      "name": "Shay",
+      "musicbrainz_id": "20b36b99-c141-4ff6-8dfd-c6d2d26bb424",
+      "description": "Belgian rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q4424911",
+      "name": "Smoky Mo",
+      "musicbrainz_id": "104fccea-2ead-47dc-a068-937396e5297c",
+      "description": "Russian rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q73673846",
+      "name": "Stunna 4 Vegas",
+      "musicbrainz_id": "0c5b959e-eaf6-4382-9e63-ecd2c67f85ab",
+      "description": "American rapper from North Carolina",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q43689915",
+      "name": "T-Fest",
+      "musicbrainz_id": "ad97a9c7-a9d0-41b2-94e4-0f2528380fd6",
+      "description": "Ukrainian rapper",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23887796",
+      "name": "TM88",
+      "musicbrainz_id": "1c55e699-6b41-4b82-8b13-19edf9bd7e78",
+      "description": "American record producer from Georgia",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50529029",
+      "name": "Tedua",
+      "musicbrainz_id": "aec5ce2b-bc3f-408c-a0a9-8556a9a60f25",
+      "description": "Italian singer, songwriter, rapper and actor",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85990468",
+      "name": "Voyage",
+      "musicbrainz_id": "3ffe1ce5-0150-4b9f-b17a-cf36732f7e71",
+      "description": "Serbian singer, rapper and actor",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q66937797",
+      "name": "Y2K",
+      "musicbrainz_id": "9f8b1931-59a1-4427-bc0d-d78d17b833ab",
+      "description": "American trap music producer (born 1994)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23923",
+      "name": "12th Planet",
+      "musicbrainz_id": "d113f6b4-f01f-4632-9cd3-743cc299574e",
+      "description": "American music producer and DJ",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123399837",
+      "name": "1nonly",
+      "musicbrainz_id": "e0b50375-d3b1-4fbd-960b-67ce8950f737",
+      "description": "American rapper and singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85014708",
+      "name": "22Gz",
+      "musicbrainz_id": "b0704195-0cd1-46a0-98a1-59f45114c387",
+      "description": "American drill rapper from New York",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q62390128",
+      "name": "9lokkNine",
+      "musicbrainz_id": "e44aa1c2-c4ea-4dae-a9c5-36fd9fd22d09",
+      "description": "American rapper (born 2000)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q434631",
+      "name": "Big Kuntry King",
+      "musicbrainz_id": "d81b2806-53be-41ab-9c03-e7f394926fb3",
+      "description": "rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q96741379",
+      "name": "Buddah Bless",
+      "musicbrainz_id": "829d89b2-6fc2-431b-82ce-ba2a5eaeccfa",
+      "description": "American record producer, songwriter, and rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q119142947",
+      "name": "DD Osama",
+      "musicbrainz_id": "6c175352-d370-4aca-b2b3-23d933d126f7",
+      "description": "American rapper (born 2006)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131299386",
+      "name": "Dave Blunts",
+      "musicbrainz_id": "db5215b3-9656-40aa-be5b-dd3aed290527",
+      "description": "American rapper and singer (born 2001)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q48814096",
+      "name": "DrefGold",
+      "musicbrainz_id": "83e2cbee-a6d4-4209-955b-f602b8ee9645",
+      "description": "Italian rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q126488129",
+      "name": "Enchanting",
+      "musicbrainz_id": "42091e59-f483-4844-a887-aa3eee72cd61",
+      "description": "American rapper (1997–2024)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107427536",
+      "name": "Gazo",
+      "musicbrainz_id": "dae7d996-38fe-4578-bf75-1e2510f522bb",
+      "description": "French rapper of Guinean origin",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65052503",
+      "name": "Goodboys",
+      "musicbrainz_id": "59ffa494-f0de-4744-80ee-d26d4eb92e57",
+      "description": "English house music group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q57240437",
+      "name": "Heuss l'Enfoiré",
+      "musicbrainz_id": "8422168a-9c9d-4352-b02a-39b6e736920b",
+      "description": "French rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60373974",
+      "name": "Koba LaD",
+      "musicbrainz_id": "52315221-8b06-4fb1-bfd3-16057aa4f9e1",
+      "description": "French rapper (born 2000)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106036729",
+      "name": "L-Gante",
+      "musicbrainz_id": "c90500ae-ea71-44e8-92ed-86191803d538",
+      "description": "Argentine singer and rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18400720",
+      "name": "LSP",
+      "musicbrainz_id": "5fb9b88a-11e0-48f2-8166-0cc91826985a",
+      "description": "Belarusian singer-songwriter and rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114297086",
+      "name": "Lancey Foux",
+      "musicbrainz_id": "6a45326d-df49-474e-8169-e3524914331b",
+      "description": "British rapper and singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q126163617",
+      "name": "Lazer Dim 700",
+      "musicbrainz_id": "95b0d5b3-2815-4ffc-9bfe-2ace8300b463",
+      "description": "American rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16236029",
+      "name": "Lil Bibby",
+      "musicbrainz_id": "3a0f3db6-4178-4bdb-990d-d1db5284c5bf",
+      "description": "American rapper (born 1994)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1873837",
+      "name": "Mr. Polska",
+      "musicbrainz_id": "805e884f-801b-4ab0-afc8-9e75f9e23281",
+      "description": "Dutch rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q12759703",
+      "name": "Rasta",
+      "musicbrainz_id": "9f177946-f1f4-4d89-abca-e98933a63575",
+      "description": "Serbian rapper and singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106686959",
+      "name": "SDM",
+      "musicbrainz_id": "ee5acbd5-d291-4fe1-a06a-88060b131b77",
+      "description": "French rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q83808746",
+      "name": "Sueco the Child",
+      "musicbrainz_id": "82cbe859-5255-4bbd-bda3-7610a3f857dc",
+      "description": "American rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q113961820",
+      "name": "Tana",
+      "musicbrainz_id": "fc815f2a-7aea-4a3b-a255-c81661526446",
+      "description": "American rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65560929",
+      "name": "Thasup",
+      "musicbrainz_id": "5753963a-def9-42fd-90fb-3492d3726d07",
+      "description": "Italian rapper and record producer (born 2001)",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115940522",
+      "name": "Tony Effe",
+      "musicbrainz_id": "d524cb57-ccdd-4f07-8eaf-9f184f3a3ff3",
+      "description": "Italian rapper",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106977922",
+      "name": "Xamã",
+      "musicbrainz_id": "dcf784c5-b238-4aa1-8722-dcf1ba20197f",
+      "description": "Brazilian rapper and actor",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97959266",
+      "name": "Yung Miami",
+      "musicbrainz_id": "7e987fc0-7606-4637-8eb1-8c9c3e57a65c",
+      "description": "American rapper and singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50359023",
+      "name": "Ängie",
+      "musicbrainz_id": "2785996d-a14a-464f-9887-16268cc4dfed",
+      "description": "Swedish singer",
+      "sitelinks": 6,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q4030352",
+      "name": "25/17",
+      "musicbrainz_id": "3e7108b0-91a7-4599-8313-38594939c8b5",
+      "description": "Russian music band",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115099541",
+      "name": "2Rare",
+      "musicbrainz_id": "a46875f6-dd94-464a-b3da-761e5fddbe92",
+      "description": "American rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q15042111",
+      "name": "Adi Ulmansky",
+      "musicbrainz_id": "40628e91-67f6-4347-9026-2705de574dea",
+      "description": "Producer, singer-songwriter, rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q67351118",
+      "name": "Aron Can",
+      "musicbrainz_id": "1e9d8653-a2d4-4178-9a02-0eca6e7c62b5",
+      "description": "Icelandic rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114913075",
+      "name": "Autumn",
+      "musicbrainz_id": "ccf781c7-0c95-46f9-9272-3c2b017b0b0a",
+      "description": "American rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q23808177",
+      "name": "B-Nasty",
+      "musicbrainz_id": "07f3c855-c903-44f2-b1b4-c798aa5c3b6f",
+      "description": "Australian rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115098502",
+      "name": "Babyface Ray",
+      "musicbrainz_id": "d82481ab-4f2e-4fd7-af2f-9dbaa38704da",
+      "description": "American rapper (born 1991)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125145666",
+      "name": "BossMan Dlow",
+      "musicbrainz_id": "44fac0de-d5ae-4bea-a68c-948fedc3d9c5",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q117312923",
+      "name": "Chiello",
+      "musicbrainz_id": "feb4993f-5eb1-4f71-85b7-1ef6535df46d",
+      "description": "Italian singer-songwriter and rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106731062",
+      "name": "Cooli Carlito",
+      "musicbrainz_id": "df11c330-ad73-44e3-97b4-030808024b8a",
+      "description": "English rapper and producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19630254",
+      "name": "D.A. Got That Dope",
+      "musicbrainz_id": "3b233cca-b1d4-43e5-93dd-daf5fe323e42",
+      "description": "American record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22270660",
+      "name": "Dawin",
+      "musicbrainz_id": "6d670145-5d7b-4154-b66d-34bbe644476d",
+      "description": "American singer, songwriter and record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q117475435",
+      "name": "DeathbyRomy",
+      "musicbrainz_id": "79afaf00-a4d9-4457-a4ff-a126bc31bdaf",
+      "description": "American singer-songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124076674",
+      "name": "Desingerica",
+      "musicbrainz_id": "3eda10b1-3cc0-4c62-845c-4c892ceb0003",
+      "description": "Serbian rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q71708523",
+      "name": "Gambi",
+      "musicbrainz_id": "036a58a1-62f5-4d00-89fd-84767bdfa6ce",
+      "description": "French rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18686373",
+      "name": "Glizzy Gang",
+      "musicbrainz_id": "21354007-a91f-4460-934d-12d389de3a2a",
+      "description": "American rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140222762",
+      "name": "Hurricane Wisdom",
+      "musicbrainz_id": "bf133b83-6cbd-4cf0-bda1-f2ad3bf24e23",
+      "description": "American rapper (born 2004)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28967759",
+      "name": "IDK",
+      "musicbrainz_id": "02fa2b63-016b-4cb3-bf01-2f8f43973876",
+      "description": "British-American rapper, singer, songwriter, and record producer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65159869",
+      "name": "Kizo",
+      "musicbrainz_id": "e54b1e17-d6ab-4b9f-884c-227e5aa56112",
+      "description": "Polish singer-songwriter and rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q81856517",
+      "name": "La Goony Chonga",
+      "musicbrainz_id": "ccc7033a-15ad-4adb-b547-3a93dee4abc0",
+      "description": "Cuban-American rapper and singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q104671539",
+      "name": "Leto",
+      "musicbrainz_id": "635e50a0-3c8f-4675-a0e6-9e3555cc4e0a",
+      "description": "French rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6558217",
+      "name": "Lisa M",
+      "musicbrainz_id": "cfc94ef6-7886-42e0-96a5-6b55b48fa968",
+      "description": "Puerto Rican rap and reggaeton arist",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q64781788",
+      "name": "Lon3r Johny",
+      "musicbrainz_id": "5623f6fe-91ff-490c-b267-6391f5b7657a",
+      "description": "Portuguese rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123740965",
+      "name": "Luci4",
+      "musicbrainz_id": "917220a7-bd52-432c-b167-8da78c27b299",
+      "description": "musician (2002—2026)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111747448",
+      "name": "Luv Resval",
+      "musicbrainz_id": "324bc359-f062-46d9-a31a-9530b0483fe7",
+      "description": "French rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85875452",
+      "name": "Matuê",
+      "musicbrainz_id": "be42aaaa-9703-41dc-b2eb-de03e30f83b9",
+      "description": "Brazilian rapper, singer and composer (born 1993)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q127695613",
+      "name": "Metrika",
+      "musicbrainz_id": "abd47f38-6741-439d-9743-2adecb355b69",
+      "description": "Spanish rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56311265",
+      "name": "Obladaet",
+      "musicbrainz_id": "b2e4a44e-e105-4325-a085-75d608753f0e",
+      "description": "Russian rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q86022852",
+      "name": "Pashanim",
+      "musicbrainz_id": "962a2590-91ed-4946-9724-f7dff6c61e03",
+      "description": "Turkish-German rapper (born 2000)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q112225861",
+      "name": "Rhove",
+      "musicbrainz_id": "91c7e45f-aedc-4f82-8acc-c3514786f7dd",
+      "description": "Italian rapper (2001-)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q19662092",
+      "name": "Riky Rick",
+      "musicbrainz_id": "fe485453-3c5e-4f54-b998-8332332fe312",
+      "description": "South African rapper (1987–2022)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q135012964",
+      "name": "Sayf",
+      "musicbrainz_id": "298d97db-671f-4f89-8dd9-c4637af10666",
+      "description": "Italian rapper and singer-songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110096025",
+      "name": "Sexmane",
+      "musicbrainz_id": "ad463805-a1fc-4b64-aa16-71d8fea02c22",
+      "description": "Finnish singer and rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q130060808",
+      "name": "Simba La Rue",
+      "musicbrainz_id": "136f4bfe-5ed3-46ff-92e2-5a4f09e57f54",
+      "description": "Tunisian-born Italian rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16885894",
+      "name": "Stitches",
+      "musicbrainz_id": "d1c5daf9-e79f-4463-850e-41b63a6a8971",
+      "description": "American rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q122637522",
+      "name": "That Mexican OT",
+      "musicbrainz_id": "115dc8c9-cb04-4dd6-859e-39739eb57215",
+      "description": "American rapper (born 1999)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85857953",
+      "name": "Thrill Pill",
+      "musicbrainz_id": "974c6e56-e86d-447a-900c-5b65214ad3ff",
+      "description": "Russian rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107290052",
+      "name": "Uzi",
+      "musicbrainz_id": "3802fc6b-8666-4805-8b3b-93b91f05d1b6",
+      "description": "Turkish rapper and songwriter (born 1998)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60835978",
+      "name": "Young Igi",
+      "musicbrainz_id": "67a8f0e1-8642-4ea1-a238-ad6392d553fe",
+      "description": "Polish rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124569052",
+      "name": "Yungeen Ace",
+      "musicbrainz_id": "5ec4f617-ac77-4cdf-b5b0-d7adc891225f",
+      "description": "American rapper (born 1998)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65029566",
+      "name": "Zola",
+      "musicbrainz_id": "3648e742-f0d1-4b8c-9e38-316a82f85fc0",
+      "description": "French rapper",
+      "sitelinks": 5,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131140254",
+      "name": "1900Rugrat",
+      "musicbrainz_id": "e9ef6e2b-3117-4c09-938e-21b79527306b",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63343992",
+      "name": "31 FAM",
+      "musicbrainz_id": "d91c2b69-ea86-4ce1-9b68-304b10c91b9c",
+      "description": "Catalan musical group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q118106888",
+      "name": "BLP Kosher",
+      "musicbrainz_id": "11be1aca-4f6e-4880-9960-8064587f3531",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q90401581",
+      "name": "Bankrol Hayden",
+      "musicbrainz_id": "4f288293-8f6a-42fe-9205-fdb20d06fcc4",
+      "description": "American rapper and singer from California",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110014365",
+      "name": "Bejo",
+      "musicbrainz_id": "634d4044-77e3-4d92-813a-ae63734f4378",
+      "description": "rapper from Canary Islands",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q118280725",
+      "name": "BigWalkDog",
+      "musicbrainz_id": "afbd8cb9-5d93-4260-bb7c-c746231b556a",
+      "description": "American rapper (born 1997)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q122166973",
+      "name": "Bnyx",
+      "musicbrainz_id": "89ff440d-8d5d-45e7-b5ba-a672ad11f1e7",
+      "description": "American record producer (born 1995)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125989634",
+      "name": "Cash Cobain",
+      "musicbrainz_id": "4f57372b-2054-4722-a534-a99ab2598120",
+      "description": "American rapper and record producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q50806455",
+      "name": "Cledos",
+      "musicbrainz_id": "57ffa965-991a-40c1-9333-7159a913aebc",
+      "description": "Finnish rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q112892661",
+      "name": "Cochise",
+      "musicbrainz_id": "d78119f0-9268-4547-8b8f-bab6cea6378c",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114857113",
+      "name": "DC The Don",
+      "musicbrainz_id": "eec466a4-aec6-42ea-ab35-20416e502b9d",
+      "description": "American rapper and singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q21260615",
+      "name": "Da L.E.S",
+      "musicbrainz_id": "419bc801-028f-4e12-9444-891eec318cb2",
+      "description": "South African-American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97200388",
+      "name": "Devito",
+      "musicbrainz_id": "113e9b72-d292-4176-a2ab-8e9b9d5771eb",
+      "description": "Serbian rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27049342",
+      "name": "Digital Nas",
+      "musicbrainz_id": "8f88de6a-8812-45bc-820f-e78cbc1d5a87",
+      "description": "American record producer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56347761",
+      "name": "Djonga",
+      "musicbrainz_id": "7228b556-4896-4255-9323-a78bcb42f528",
+      "description": "Brazilian rapper and singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q66911400",
+      "name": "Don Patricio",
+      "musicbrainz_id": "e546fbc2-b7b6-4427-a0be-25cfb6c87e93",
+      "description": "Spanish rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30070220",
+      "name": "Don Trip",
+      "musicbrainz_id": "906fd8ba-2680-4d76-bfb0-8f227b7e606c",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22135939",
+      "name": "Emtee",
+      "musicbrainz_id": "73f21c6a-7ea0-4f8d-81c8-66a688457d21",
+      "description": "South African rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q96002128",
+      "name": "Fredo Bang",
+      "musicbrainz_id": "b54d1511-887e-4a5c-9f3c-6833a5438b84",
+      "description": "American rapper (born 1996)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42165021",
+      "name": "Hornet La Frappe",
+      "musicbrainz_id": "b34fa996-6d1b-41db-b955-911e19c2b7e2",
+      "description": "French rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q48699273",
+      "name": "Huncho Jack",
+      "musicbrainz_id": "b6b6962a-5ba9-45e6-950c-99d3c715043a",
+      "description": "American hip hop duo",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131916953",
+      "name": "Icegergert",
+      "musicbrainz_id": "dee4e630-9738-42ba-90ea-f2663af9e8dd",
+      "description": "Russian rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q118120784",
+      "name": "Igor Panic",
+      "musicbrainz_id": "bbc0b71b-bfab-4529-8437-4a099d9b5387",
+      "description": "Serbian rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125953137",
+      "name": "Jaydes",
+      "musicbrainz_id": "bb23af17-c893-4460-9146-404baf7a9011",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85972148",
+      "name": "Khontkar",
+      "musicbrainz_id": "60cb6fd3-2f9d-41e5-b88e-87efc4a40a76",
+      "description": "Turkish rapper (born 1991)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42907726",
+      "name": "Killa Fonic",
+      "musicbrainz_id": "41240653-b43f-4e7a-8d60-a6bb7951677b",
+      "description": "Romanian rapper, singer and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61666911",
+      "name": "Nik Tendo",
+      "musicbrainz_id": "0ed7da6a-6794-4da7-b640-c9d8a4955c2e",
+      "description": "Czech rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q18123655",
+      "name": "Nikolija Jovanović",
+      "musicbrainz_id": "37f78de0-f332-406f-9748-93f4ef13e74b",
+      "description": "Serbian singer and rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55641280",
+      "name": "Noriel",
+      "musicbrainz_id": "cd277e93-dbc4-4565-be57-44264413f28b",
+      "description": "Puerto Rican rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123241445",
+      "name": "Odetari",
+      "musicbrainz_id": "2d8be86e-dccf-481a-a01c-faf9e48edd6d",
+      "description": "American rapper, singer, record producer, and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59161718",
+      "name": "Quadeca",
+      "musicbrainz_id": "3a4024dc-cc62-4d9b-8bed-c22426136a52",
+      "description": "American YouTuber and rapper (born 2000)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125510148",
+      "name": "Rio da Yung OG",
+      "musicbrainz_id": "5c62381b-acc8-4e3d-baf8-e9fd4b5480b5",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q47308060",
+      "name": "Sjava",
+      "musicbrainz_id": "768a27db-eebb-4159-b6ce-e636f499e858",
+      "description": "South African singer, rapper and actor",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63396765",
+      "name": "SosMula",
+      "musicbrainz_id": "87878682-624a-44a7-96dd-7e42421013a2",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q7698872",
+      "name": "Tempo",
+      "musicbrainz_id": "1266823d-bd9d-4e1b-9ec2-601180e057b3",
+      "description": "Puerto Rican rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56310938",
+      "name": "Timal",
+      "musicbrainz_id": "b0dfa8b9-cd40-43eb-9472-c02cb1db3297",
+      "description": "French rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61978150",
+      "name": "Tyla Yaweh",
+      "musicbrainz_id": "69866ffc-221a-4638-aabb-c3cee1f4b3bc",
+      "description": "American rapper and singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124408930",
+      "name": "Veeze",
+      "musicbrainz_id": "a98813f5-9b93-44c3-b479-b826c778f165",
+      "description": "American rapper (born 1995)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q51700690",
+      "name": "Wifisfuneral",
+      "musicbrainz_id": "317606b4-e0c2-48fe-bcfc-a7e7547d968e",
+      "description": "American rapper",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q66744380",
+      "name": "Yella Beezy",
+      "musicbrainz_id": "aac4086f-b38e-4067-98ed-8e6b1d996e46",
+      "description": "American rapper and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55390144",
+      "name": "Żabson",
+      "musicbrainz_id": "cc68557d-46a9-4587-9c93-ebe25c9cd2bf",
+      "description": "Polish rapper and songwriter",
+      "sitelinks": 4,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q130287606",
+      "name": "2pillz",
+      "musicbrainz_id": "fd614a35-bfa6-4421-ad1b-959ad28fb810",
+      "description": "Vietnamese songwriter, DJ, record producer and multi-instrumentalist (born 1998)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115099788",
+      "name": "Bandmanrill",
+      "musicbrainz_id": "0c731bc3-4403-4e08-9d51-69cedf3a71f9",
+      "description": "American rapper and songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q113701120",
+      "name": "Bianca Costa",
+      "musicbrainz_id": "468a525e-a731-4367-8f81-4ade2bb521e7",
+      "description": "Brazilian singer and songwriter based in France",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131705976",
+      "name": "Black Kray",
+      "musicbrainz_id": "030cf5e5-b5d8-4a66-a291-0a7fe4b4b075",
+      "description": "American rapper and producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q21479694",
+      "name": "Bokoesam",
+      "musicbrainz_id": "942e2eeb-1ddf-4244-ba84-a1f1ab2342e5",
+      "description": "Dutch rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105279583",
+      "name": "Chill Mafia",
+      "musicbrainz_id": "40a4e7e8-67c3-44c3-974d-304b15394137",
+      "description": "Basque trap music band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61130829",
+      "name": "Coby",
+      "musicbrainz_id": "d3c092ee-78e9-4cb8-8a63-583f0abbf281",
+      "description": "Serbian rapper, singer and producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q109929538",
+      "name": "Darrell Edward Brooks Jr.",
+      "musicbrainz_id": "a1619db6-f73a-4f03-9748-991287a39119",
+      "description": "American career criminal convicted of the 2021 Waukesha parade attack (born 1982)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q102346383",
+      "name": "Dellafuente",
+      "musicbrainz_id": "e2e593af-0b56-4a12-90fd-53611e14abcd",
+      "description": "Spanish singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125908935",
+      "name": "Gloss Up",
+      "musicbrainz_id": "25247074-3210-4323-a4d4-e9e8e513dda9",
+      "description": "American rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111522310",
+      "name": "Guy2Bezbar",
+      "musicbrainz_id": "368f3a86-e100-44e3-a65e-3f93b60a0cc1",
+      "description": "French rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115769267",
+      "name": "Icewear Vezzo",
+      "musicbrainz_id": "e09f441c-4c6a-44c6-a0c1-4682f16fc3c9",
+      "description": "American rapper (born 1989)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16205754",
+      "name": "KLC",
+      "musicbrainz_id": "0ed37675-6b02-4bfd-8dde-747ccccefa39",
+      "description": "American record producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q20653434",
+      "name": "Kap G",
+      "musicbrainz_id": "4fb93269-e945-41f8-889c-28209c789401",
+      "description": "Mexican American rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105769936",
+      "name": "Kaydy Cain",
+      "musicbrainz_id": "7e2012a4-2752-46c1-90b8-f48f3fa43412",
+      "description": "Spanish singer and rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q46713415",
+      "name": "Krsna",
+      "musicbrainz_id": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "description": "Indian rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123002927",
+      "name": "Landy",
+      "musicbrainz_id": "37d9780b-f2df-4e48-b1ef-1b4f7104fb03",
+      "description": "French rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115492313",
+      "name": "Lil Double 0",
+      "musicbrainz_id": "75e629a5-8433-45db-be91-742b20fb537c",
+      "description": "American rapper (born 2001)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125767019",
+      "name": "Lil Poppa",
+      "musicbrainz_id": "fa2ec5be-9216-4649-bf60-2cc96e5da7a5",
+      "description": "American rapper (2000-2026)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q80140192",
+      "name": "Lizzy Parra",
+      "musicbrainz_id": "d2f842f8-1860-44a1-b86e-1344528fbb01",
+      "description": "Dominican Christian singer and songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q116700550",
+      "name": "Luh Tyler",
+      "musicbrainz_id": "1f375ea1-617d-485b-ae29-d220bfc1f501",
+      "description": "American rapper and singer from Florida (born 2006)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q1666821",
+      "name": "Money Boy",
+      "musicbrainz_id": "eb989393-cd48-445f-9540-8bf0674a2507",
+      "description": "Austrian rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q96609951",
+      "name": "Patron",
+      "musicbrainz_id": "f9892c58-091c-433a-a1d5-fec1849aa357",
+      "description": "Turkish rapper (born 1988)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106511393",
+      "name": "Priestess",
+      "musicbrainz_id": "e2fadc58-1dd7-46a6-a5e2-2c9adf888329",
+      "description": "Italian rapper and singer (born 1996)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97357327",
+      "name": "RMR",
+      "musicbrainz_id": "2e83d482-383f-44b5-b38f-1e0c64d3588b",
+      "description": "American rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q121298088",
+      "name": "Rob49",
+      "musicbrainz_id": "70ee11b6-edf4-4cb1-80bc-7bba3b719b14",
+      "description": "American rapper (born 1999)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114011349",
+      "name": "Rusherking",
+      "musicbrainz_id": "120df3f2-3ba8-4e6c-ac47-339067aa0970",
+      "description": "Argentine rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q7491605",
+      "name": "Shawty Redd",
+      "musicbrainz_id": "c615fb6c-d64b-4049-8fda-79c5effbe382",
+      "description": "American record producer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q87436387",
+      "name": "Slimka",
+      "musicbrainz_id": "6143579e-84ab-48dd-b793-969adc283bb1",
+      "description": "Swiss rapper from Geneva",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28033866",
+      "name": "Smoke Dawg",
+      "musicbrainz_id": "ebbc2b66-5236-41f7-bc30-86b00f2c8f60",
+      "description": "Canadian rapper (1996–2018)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65029299",
+      "name": "Snik",
+      "musicbrainz_id": "628afdfe-dbed-4354-9bab-2f94bdd344db",
+      "description": "Greek rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114309470",
+      "name": "Thouxanbanfauni",
+      "musicbrainz_id": "ced1b7d4-c711-46c0-9649-65bdcc7650e1",
+      "description": "American rapper and singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110755840",
+      "name": "Tiitof",
+      "musicbrainz_id": "271372d9-095a-47d5-9a2a-148a85684f70",
+      "description": "musical artist",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124658190",
+      "name": "Tony Boy",
+      "musicbrainz_id": "3261456a-0dc6-4727-b17e-b83ebbabfc3f",
+      "description": "Italian rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q119348893",
+      "name": "WIU",
+      "musicbrainz_id": "2290ae2c-536d-4aa3-aa58-93a03c70a27e",
+      "description": "Brazilian rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105185226",
+      "name": "YNW BSlime",
+      "musicbrainz_id": "af53fed5-914f-4c98-a1bf-b740a5a51f34",
+      "description": "American rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q48856354",
+      "name": "Young Multi",
+      "musicbrainz_id": "9f04ca4f-b009-4912-a86a-c6650a6328b9",
+      "description": "Polish rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q100349273",
+      "name": "Yung Kayo",
+      "musicbrainz_id": "04a52e9f-5bde-4d36-bd0a-aade6e12b984",
+      "description": "American rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107379132",
+      "name": "Yung Trappa",
+      "musicbrainz_id": "86fc12a2-90e8-4d6c-b2ff-a3c2c1380872",
+      "description": "Russian rapper (1995—2023)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q29066314",
+      "name": "Yzomandias",
+      "musicbrainz_id": "65e70483-ea07-4126-804c-86c75a1ee423",
+      "description": "Czech rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q127180122",
+      "name": "AMK",
+      "musicbrainz_id": "eceb078f-6c6f-44fe-a2b5-07b5826271d2",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q120870483",
+      "name": "Alejo Isakk",
+      "musicbrainz_id": "64c35fcc-6cac-4f04-b7c6-6f931d743ab8",
+      "description": "Argentinian singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115122898",
+      "name": "Baby Money",
+      "musicbrainz_id": "91168051-1078-4896-a385-38f7e08c5758",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q39963610",
+      "name": "Baka Not Nice",
+      "musicbrainz_id": "9b64b01a-42d0-4137-bbe1-85e4cf60d468",
+      "description": "Canadian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61397454",
+      "name": "Boyanka Kostova",
+      "musicbrainz_id": "69b11967-22a9-47fa-85ed-7f30a2e90acd",
+      "description": "Spanish rap group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q61079596",
+      "name": "Buta",
+      "musicbrainz_id": "4ee58dec-f21b-457b-acb2-daaee6b415f6",
+      "description": "Kosovo-Albanian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111021409",
+      "name": "Captaine Roshi",
+      "musicbrainz_id": "28dd4e98-4b84-4497-ab08-02a54740ccc1",
+      "description": "French rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110270668",
+      "name": "Cashanova Bulhar",
+      "musicbrainz_id": "fac36405-5f47-4c82-8994-c3ba35609c31",
+      "description": "Czech rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125680433",
+      "name": "Certified Trapper",
+      "musicbrainz_id": "66e7d46d-60a6-4c7c-a15e-21ebe952e110",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q5205259",
+      "name": "DJ Bonics",
+      "musicbrainz_id": "94d52e08-975d-406b-83fe-67077c9f8c80",
+      "description": "D.J, Radio Personality",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110542862",
+      "name": "Dany Beats",
+      "musicbrainz_id": "2fe14d3b-442a-42c1-a7e3-2d2ef1f2e7d8",
+      "description": "Rwandan record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q91131812",
+      "name": "DripReport",
+      "musicbrainz_id": "dc7c92a6-ceb2-4b3c-823e-c3b554c22b22",
+      "description": "Pakistani American singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56525308",
+      "name": "Eva Shaw",
+      "musicbrainz_id": "2b372c6d-777c-438b-94ec-72362cf77f43",
+      "description": "Canadian record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115658986",
+      "name": "Finesse2tymes",
+      "musicbrainz_id": "2debc153-336e-4b45-93e0-712f61e8efea",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q85766184",
+      "name": "Helluva",
+      "musicbrainz_id": "8632e9f8-9de7-4c1c-a739-98616f4bd7ce",
+      "description": "American record producer, singer, rapper, and songwriter from Detroit",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q108685990",
+      "name": "Hiss",
+      "musicbrainz_id": "8149408b-10ef-46d4-8cec-198e9a210ffa",
+      "description": "Azerbaijani singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56402502",
+      "name": "Ibe",
+      "musicbrainz_id": "cf27f686-ad95-4b39-b112-a4d705bad9f5",
+      "description": "Finnish singer and rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89044968",
+      "name": "Isha",
+      "musicbrainz_id": "785498ee-99f4-4699-8caf-2c742e996559",
+      "description": "Belgian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22958657",
+      "name": "Jay Burna",
+      "musicbrainz_id": "6ee425c0-415e-43ba-ba43-08d73af15a71",
+      "description": "American rapper, singer and director",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q6214578",
+      "name": "Joey Stylez",
+      "musicbrainz_id": "ce678796-2040-4206-b1eb-7703fd0ce58c",
+      "description": "Canadian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q58454497",
+      "name": "Kelvyn Colt",
+      "musicbrainz_id": "d8dda5a1-011b-4b00-b621-1e17334c423b",
+      "description": "German rapper, singer and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123396823",
+      "name": "Kxllswxtch",
+      "musicbrainz_id": "7d577034-18d3-4066-85c7-157d3bcce6b5",
+      "description": "American rapper and singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22245463",
+      "name": "LGoony",
+      "musicbrainz_id": "c78546c4-d504-4df2-a254-9dcf14b045b3",
+      "description": "German rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28845786",
+      "name": "MC Smook",
+      "musicbrainz_id": "d4701ebc-a87c-4afa-8305-9df5a685630e",
+      "description": "German rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55522997",
+      "name": "Madkid",
+      "musicbrainz_id": "897a7223-a5ce-4144-b37f-7773f4079ee7",
+      "description": "dance and vocal group from Japan",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q57943844",
+      "name": "Melo",
+      "musicbrainz_id": "77a98968-16a6-4b86-86a4-76cf0bf35906",
+      "description": "Finnish rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q116508790",
+      "name": "Mimi Barks",
+      "musicbrainz_id": "c4ac8ca3-2c06-48b7-b57f-116f3c8e0982",
+      "description": "German rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q26436141",
+      "name": "Montana of 300",
+      "musicbrainz_id": "77aaa290-b59a-4ed3-b573-42b87394aca1",
+      "description": "American rapper, signer and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28925173",
+      "name": "Nebu Kiniza",
+      "musicbrainz_id": "e22391dd-9c76-4f02-88b5-35d699967868",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123644248",
+      "name": "Ness and Stilla",
+      "musicbrainz_id": "f1c9af45-df1a-43e1-b1d5-6d31d1068620",
+      "description": "Israeli musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124821060",
+      "name": "Notti Osama",
+      "musicbrainz_id": "f77e0484-3514-420b-b3c6-615338523b78",
+      "description": "American rapper (2008–2022)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q47134393",
+      "name": "Phresher",
+      "musicbrainz_id": "5b023228-973f-4ca7-800e-dc0cb91c556d",
+      "description": "rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97162166",
+      "name": "Platina",
+      "musicbrainz_id": "5ac4be23-e64a-4497-b375-3cded28995fb",
+      "description": "Latvian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q39394692",
+      "name": "Porchy",
+      "musicbrainz_id": "d05c0f17-979e-4f4d-86d7-25b293271f4e",
+      "description": "British sound producer and rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115492435",
+      "name": "PsychoYP",
+      "musicbrainz_id": "5186ac3d-1466-4905-8853-9dca6c90ad82",
+      "description": "Nigerian alternative hip hop rapper, singer, and songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q90328267",
+      "name": "Quin NFN",
+      "musicbrainz_id": "9d175aae-286d-4cee-b796-76788c3b7e2b",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27443356",
+      "name": "Ralo",
+      "musicbrainz_id": "026118eb-3958-420b-b887-fa728fda61ae",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115142517",
+      "name": "Real Boston Richey",
+      "musicbrainz_id": "f2e9db7b-4744-4e49-ac18-bb78c9304722",
+      "description": "American rapper (born 1997)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65153498",
+      "name": "Saluki",
+      "musicbrainz_id": "b43a3653-d3ef-427b-8488-50b8c1a0411d",
+      "description": "Russian rapper and record producer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q112334138",
+      "name": "Scally Milano",
+      "musicbrainz_id": "01cf8583-9c23-4b8a-a2a8-40e6697904da",
+      "description": "Russian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q112895142",
+      "name": "SleazyWorld Go",
+      "musicbrainz_id": "bb37b960-7ef5-4cc3-8a67-e493a5225aa2",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115605024",
+      "name": "Smiley",
+      "musicbrainz_id": "f1de5f9e-7f58-4834-b584-6d91f19210bb",
+      "description": "Canadian rapper from Toronto",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q20450677",
+      "name": "SonaOne",
+      "musicbrainz_id": "97ea668d-9e42-423c-9bad-e79fd20b365d",
+      "description": "Malaysian singer, songwriter and rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q115131388",
+      "name": "Stunna Gambino",
+      "musicbrainz_id": "742b6aa9-4748-493e-aa46-e42c1fd983cb",
+      "description": "American rapper (born 2001)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q116815123",
+      "name": "Trobi",
+      "musicbrainz_id": "61125dcc-e9fb-4b65-bab9-7387750635ce",
+      "description": "Dutch music producer and DJ",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97219041",
+      "name": "Verto",
+      "musicbrainz_id": "f5a3ba1c-6aad-4fb2-8954-b305e8246b1c",
+      "description": "Galician pop, disco and trap band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q96318626",
+      "name": "Xanman",
+      "musicbrainz_id": "f1897f54-c8e9-4cc7-a77c-83febe8df183",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27806053",
+      "name": "Yade Lauren",
+      "musicbrainz_id": "e1c4c878-7b43-4945-b732-8e511a6457cd",
+      "description": "Dutch singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q29452646",
+      "name": "Yung Simmie",
+      "musicbrainz_id": "dbf5d567-019b-44fc-9fba-3155b00f1ec2",
+      "description": "American rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q82478012",
+      "name": "Zainhy",
+      "musicbrainz_id": "2244be80-61d8-4806-8833-aa72e32bb34a",
+      "description": "American-Haitian rapper",
+      "sitelinks": 2,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q25426757",
+      "name": "$ushi x Kobe",
+      "musicbrainz_id": "09c74f06-fda7-4d6d-bbbc-51a4d63f6323",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114900526",
+      "name": "667",
+      "musicbrainz_id": "240ef76f-175d-4341-85aa-2592b2b7bd80",
+      "description": "French-Senegalese rap collective",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q108272179",
+      "name": "88Camino",
+      "musicbrainz_id": "25126504-147d-43c1-8873-215869f2c850",
+      "description": "Canadian rapper, singer, and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131430327",
+      "name": "Architrackz",
+      "musicbrainz_id": "a83860aa-372b-4d8f-ae37-704d95e1a1ba",
+      "description": "Dutch rapper, music producer, songwriter, presenter tv-host",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56283758",
+      "name": "BADVOID",
+      "musicbrainz_id": "73821748-83e0-477d-94e1-189d0e70b9f1",
+      "description": "British EDM Producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q132300406",
+      "name": "BHUNNA",
+      "musicbrainz_id": "ef4d0938-b69c-428d-b0b0-b760980ca048",
+      "description": "American record producer/recording artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65952861",
+      "name": "BHZ",
+      "musicbrainz_id": "3b762e5b-4486-41a5-acf6-5eb388072254",
+      "description": "German rap crew",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q126708188",
+      "name": "Baks",
+      "musicbrainz_id": "4f7462e3-da3a-4516-a2b7-27ba0f834b58",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114633636",
+      "name": "Bardero$",
+      "musicbrainz_id": "e5a1e5fa-fd7e-4e10-aa84-f51cbdb1e3fd",
+      "description": "Argentine duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60831140",
+      "name": "Basic Boy",
+      "musicbrainz_id": "afe1a3df-ea0a-48a5-9e20-ddd3d5dae0cc",
+      "description": "Russian musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q67681530",
+      "name": "Blaq Eyez",
+      "musicbrainz_id": "2f7c9207-94c0-4870-a81c-45a7f754bfdc",
+      "description": "American music producer, and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q88468813",
+      "name": "BoraTwenT2",
+      "musicbrainz_id": "c6bdfa1e-efb3-413d-94ae-c214ce76c9d5",
+      "description": "Cambodian musical artist from Phnom Penh",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q105407188",
+      "name": "Brigita Vuco",
+      "musicbrainz_id": "d6a217ce-64d5-4e93-9721-8e9392313eaa",
+      "description": "Croatian singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q117084686",
+      "name": "Chavão888",
+      "musicbrainz_id": "a8dc92c8-a507-4a1e-8f27-0e3ac51cdb04",
+      "description": "Brazilian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q67201477",
+      "name": "Childish Major",
+      "musicbrainz_id": "fa8367ff-ce52-4992-9bca-b41279445f7e",
+      "description": "American rapper and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q29655365",
+      "name": "ChopSquad DJ",
+      "musicbrainz_id": "afac3bf8-3c0a-443a-882d-26ebf2c2d6f3",
+      "description": "American record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q17579958",
+      "name": "DJ DX",
+      "musicbrainz_id": "8a6ee50a-8713-4828-a42f-8aa8f9579d6b",
+      "description": "American DJ, music producer, and recording artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q4036952",
+      "name": "DZA",
+      "musicbrainz_id": "1a3c3e95-e761-46de-9bad-74b75bdbd60f",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q47492842",
+      "name": "Damed Squad",
+      "musicbrainz_id": "f2a82f33-3ebf-4b6f-bce0-c558e2467111",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q30070325",
+      "name": "Derek Wise",
+      "musicbrainz_id": "956afea4-43e2-46c6-896a-4e53e516f287",
+      "description": "Canadian singer, rapper and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q93644673",
+      "name": "Derez De'Shon",
+      "musicbrainz_id": "03d2f3bc-648b-4325-affd-59065b0f3a1e",
+      "description": "American rapper and singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28839959",
+      "name": "DillanPonders",
+      "musicbrainz_id": "8f7439c2-bfc6-41bc-8147-a676f737d9c0",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131323053",
+      "name": "Dior",
+      "musicbrainz_id": "ad65c998-d150-4993-b119-6c949d768596",
+      "description": "Dutch rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q76811308",
+      "name": "Dårlig Vane",
+      "musicbrainz_id": "c38705f8-e105-407b-a5b6-9ad7b87747a8",
+      "description": "Norwegian hip hop group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q118179875",
+      "name": "Ekkstacy",
+      "musicbrainz_id": "e897ca8f-03ff-4405-9cf2-c71ab2950ddb",
+      "description": "Canadian singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123823807",
+      "name": "Eves Laurent",
+      "musicbrainz_id": "b5beb5a3-5f8f-487b-aa58-2efe391142bc",
+      "description": "Dutch rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56547554",
+      "name": "Exploit",
+      "musicbrainz_id": "87720eba-c26b-4994-979a-8a8a559017c6",
+      "description": "Romanian music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114510533",
+      "name": "GUSTAVOEGATOTV",
+      "musicbrainz_id": "cd9a1eea-97bf-43aa-9035-efd6b5151527",
+      "description": "Brazilian record producer (2008-)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65945030",
+      "name": "Ganjin",
+      "musicbrainz_id": "ac4c2497-3028-4d1c-962f-883ef7126423",
+      "description": "Mongolian Flexer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q22277901",
+      "name": "Gawvi",
+      "musicbrainz_id": "3f972c38-53d2-48cc-b66a-673f5cd2083c",
+      "description": "American christian hip hop artist and music producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27942610",
+      "name": "Hustensaft Jüngling",
+      "musicbrainz_id": "e2f9afbb-6e04-4914-827a-42318ba9ab5b",
+      "description": "German rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110967421",
+      "name": "HÅLO",
+      "musicbrainz_id": "47a4e89f-8ccd-481f-a1b9-75e0c64b52bc",
+      "description": "American rapper and singer from Detroit, Michigan",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63676699",
+      "name": "ITSOKTOCRY",
+      "musicbrainz_id": "fa5da1b7-8e74-48b5-92ee-966322775162",
+      "description": "American rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65548780",
+      "name": "Issam",
+      "musicbrainz_id": "f2af111a-8f2e-405a-8c76-47b805c65a10",
+      "description": "Moroccan rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114742280",
+      "name": "Johnel Nnamani",
+      "musicbrainz_id": "8d1ad13b-a388-477d-b6a8-6b7d77904685",
+      "description": "Business executive",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q114061731",
+      "name": "Kaleb Di Masi",
+      "musicbrainz_id": "ed290ef2-cbc2-4fca-a549-8c5b5be8b0f0",
+      "description": "Argentinian singer and composer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55974040",
+      "name": "Kalibwoy",
+      "musicbrainz_id": "c489a65d-eda2-4eed-bfeb-710d359aff40",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q59209782",
+      "name": "Keros-N",
+      "musicbrainz_id": "9f6fd74f-5c35-40a9-bf7c-8c5d821b43e4",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60832624",
+      "name": "Kubi Producent",
+      "musicbrainz_id": "8c9cc40a-4f8c-407a-ae33-c5040f6e6ec3",
+      "description": "Polish record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65090284",
+      "name": "Kuuro",
+      "musicbrainz_id": "bfdbba8d-e747-4bd6-88da-c3fea5c6aeeb",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q77020078",
+      "name": "LEViT∆TE",
+      "musicbrainz_id": "3e155fb0-fc97-4290-a857-80ceb515d5a7",
+      "description": "American music producer, and visual artist.",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q123191860",
+      "name": "Lanie Banks",
+      "musicbrainz_id": "efedd130-9e54-43df-88ed-44b408a260e7",
+      "description": "Canadian-Ugandan rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124356221",
+      "name": "Leblanco",
+      "musicbrainz_id": "5fcb47fa-c47e-4c6a-889d-27e8d662ea9b",
+      "description": "Dutch-Belgian rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q67353233",
+      "name": "Leycang El Grandioso",
+      "musicbrainz_id": "21ae9631-bb2e-44d4-993c-05191da635ee",
+      "description": "Venezuelan singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q67708584",
+      "name": "Limon Cello",
+      "musicbrainz_id": "315f111c-6536-4676-9220-c638ad9ee3b0",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q77948473",
+      "name": "Liza Monet",
+      "musicbrainz_id": "aaa187fc-93cd-40fd-b055-a56b62d65c9b",
+      "description": "French rapper and singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111974073",
+      "name": "Malenkiy Yarche",
+      "musicbrainz_id": "bc4ed2a4-16cd-4f92-a568-8085365c3388",
+      "description": "musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q51876693",
+      "name": "Marsso",
+      "musicbrainz_id": "dc5e67a9-5c65-40fc-8462-062253b8a52c",
+      "description": "rapper, songwriter, and producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27468765",
+      "name": "Matheus Soares",
+      "musicbrainz_id": "50de2062-5f3a-4d30-9ca2-a67aa5f7b154",
+      "description": "Brazilian DJ, producer, musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63860123",
+      "name": "Mueveloreina",
+      "musicbrainz_id": "81ea8d06-7f5d-4c01-8c8b-efc256b39d9e",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138715669",
+      "name": "Mutant",
+      "musicbrainz_id": "b5459bbc-1220-4107-a32b-b13068d2ac55",
+      "description": "Indian musical artist, composer, and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124188917",
+      "name": "Mystic101",
+      "musicbrainz_id": "1d3d7304-612b-48b0-af74-df73a7f6af07",
+      "description": "American rapper, singer-songwriter, and actor (born 2002)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106512892",
+      "name": "Nasa Lamode",
+      "musicbrainz_id": "51158567-bb9e-4cf5-bc5e-239f045e39c6",
+      "description": "American rapper, singer/songwriter and record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q11801733",
+      "name": "P.A.F.F.",
+      "musicbrainz_id": "e9033ed2-f89d-45b2-8065-2ffa34f28316",
+      "description": "Polish music producer and DJ",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q16735231",
+      "name": "Raf Riley",
+      "musicbrainz_id": "9d3f288d-35bb-495d-a939-142830895ae3",
+      "description": "producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65683687",
+      "name": "ShrekDiMC & Tzukush",
+      "musicbrainz_id": "7c77062f-331b-42f3-b2e6-8b7e407c45d5",
+      "description": "Israeli hip-hop duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q102113173",
+      "name": "Sobhhï",
+      "musicbrainz_id": "33501a0c-91e9-4a3c-8544-fe144c050e2f",
+      "description": "UAE R&B artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125215994",
+      "name": "Sugarhill Ddot",
+      "musicbrainz_id": "5f2ce919-2c25-4f8c-b264-b1d0149f1a34",
+      "description": "American rapper (born 2008)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q126092845",
+      "name": "Trannos",
+      "musicbrainz_id": "9760fddb-1cc6-4c85-b6bb-62e94b090378",
+      "description": "Greek rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q55777858",
+      "name": "V1T0",
+      "musicbrainz_id": "fdc98ea1-4eaa-4fd3-bc9c-7384332bd169",
+      "description": "Recording artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q57943846",
+      "name": "Versace Henrik",
+      "musicbrainz_id": "772038b0-a2ff-4a3d-9e35-211624b5a93a",
+      "description": "Finnish musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124306632",
+      "name": "Volts Face",
+      "musicbrainz_id": "5ee10f37-785c-4d10-96ce-6c3761381b70",
+      "description": "French-Algerian rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q100428190",
+      "name": "Wolftyla",
+      "musicbrainz_id": "767a7e84-b82d-47eb-8ee9-6784f545ecde",
+      "description": "Korean-American singer-songwriter, hip-hop artist and social media personality",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q104899640",
+      "name": "Yung Rajola",
+      "musicbrainz_id": "6fe8ce48-d24a-4325-8578-ad50e21d2eb1",
+      "description": "",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124412994",
+      "name": "Yurmaine",
+      "musicbrainz_id": "c7a55278-ec64-4bb8-a624-0590d36ac43c",
+      "description": "Curaçao’s-Dutch rapper",
+      "sitelinks": 1,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139494552",
+      "name": "$iriuz",
+      "musicbrainz_id": "21dcc24d-1945-42f7-a69c-05e2eebd1583",
+      "description": "Colombian rapper and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q56705656",
+      "name": "5GANG",
+      "musicbrainz_id": "b6362f8e-24f9-406c-abc0-ec0851f0e074",
+      "description": "Romanian trap group, consisting of vloggers",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141781886",
+      "name": "9ojeez9",
+      "musicbrainz_id": "7e8d2534-247b-4f43-b075-d8beca319e24",
+      "description": "Turkish producer and art collective",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139883629",
+      "name": "Ablai Aubakirov",
+      "musicbrainz_id": "91e9a29e-3491-412c-a046-864142033598",
+      "description": "Kazakhstani rap artist, founder of ABiLVI label",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138350910",
+      "name": "AceMob OG",
+      "musicbrainz_id": "efb4a28a-f88b-449c-90d4-cbbec733a6bf",
+      "description": "Zambian Rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138875894",
+      "name": "Alpha The Wolf",
+      "musicbrainz_id": "7c464ee0-50fb-41b9-a174-4dc43c3dbff2",
+      "description": "American hip-hop artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138634134",
+      "name": "Amawin",
+      "musicbrainz_id": "4c07f9cf-e58a-4618-9d38-edfe69a516bc",
+      "description": "Sri Lankan Rapper, Singer-Songwriter, Record Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q79381595",
+      "name": "Aras Diler",
+      "musicbrainz_id": "cafee531-53ec-4e2a-8040-0c3678999139",
+      "description": "Turkish musician (born 1992)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q109167856",
+      "name": "Ardiago",
+      "musicbrainz_id": "c6e418b8-35d5-4cf2-b982-e3950b998d19",
+      "description": "Peruvian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139863962",
+      "name": "Ata Heidarizad",
+      "musicbrainz_id": "cc8df9bd-4ac8-4520-8f0f-2e7a9a1ac616",
+      "description": "Iranian rapper and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140948420",
+      "name": "B. Monk",
+      "musicbrainz_id": "175c5e5c-473c-4200-91b4-cc135acb73ed",
+      "description": "British-Sylheti drill artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97142254",
+      "name": "Baby Goth",
+      "musicbrainz_id": "027d5620-4832-443e-ae3e-b366054747c9",
+      "description": "American singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141752266",
+      "name": "Bkuul",
+      "musicbrainz_id": "a0d20d74-6727-4b0e-96c1-d204a943885f",
+      "description": "American Rapper (born 2006)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q93442148",
+      "name": "Black 45 King",
+      "musicbrainz_id": "d23ceb51-e2bb-47cf-b3fc-644385e6adf6",
+      "description": "Haitian Singer and Songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q78029817",
+      "name": "Blitz The Entertainer",
+      "musicbrainz_id": "c93dc993-6722-4205-93b0-03c5db575e41",
+      "description": "American Musician from Jacksonville Florida",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140195103",
+      "name": "Blizzi Gxd",
+      "musicbrainz_id": "fd1e1186-d727-4ff5-8712-2fa00e5d6127",
+      "description": "Music Producer / Songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89491735",
+      "name": "Boyya",
+      "musicbrainz_id": "bfb88e51-272d-4666-bc60-67115adce4aa",
+      "description": "French rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141714896",
+      "name": "Buddy DML",
+      "musicbrainz_id": "67553ded-a6c1-45e6-89f9-b439612c9f75",
+      "description": "Ghanaian Singer, Rapper, Songwriter and Record Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139839647",
+      "name": "CARMINE",
+      "musicbrainz_id": "4b8c36a5-ff76-4d91-b19b-28e5296c0f3e",
+      "description": "American singer, songwriter, record producer, and engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137505995",
+      "name": "Caster",
+      "musicbrainz_id": "1f8ef6a0-6d01-4ea2-92d4-693bc565fb61",
+      "description": "Polish electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141498169",
+      "name": "Cavix",
+      "musicbrainz_id": "6e051ca5-88bc-4ae6-9f6c-5125f68c948f",
+      "description": "Zimbabwean rapper, singer and songwriter (born 2011)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q89791758",
+      "name": "Chefboy Tyree",
+      "musicbrainz_id": "9c922059-e71a-49d9-8b8f-4f86742d103e",
+      "description": "American recording artist, performer, songwriter from Salem, Alabama",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q93434734",
+      "name": "Close Cash",
+      "musicbrainz_id": "c5e40c6d-3857-40fa-9f26-ea5180f90f71",
+      "description": "American rapper, singer, songwriter, producer and entrepreneur.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138589085",
+      "name": "Cyprian Błażejczyk",
+      "musicbrainz_id": "https://musicbrainz.org/artist/2e71cc64-b479-46f5-a7ea-0eb51ca27ebb",
+      "description": "Lil Deceit, real name Cyprian Błażejczyk (born December 31, 2011, in Gryfino), is a young Polish music artist who performs songs blending emotional rap, hip-hop, and alternative music.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q107551246",
+      "name": "Cœur",
+      "musicbrainz_id": "23305753-d03c-4c66-a6f0-6df41135d2dd",
+      "description": "French Trap Singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q42349707",
+      "name": "D.Ace",
+      "musicbrainz_id": "e4a7a8df-1cb7-459b-ad59-7e936727203f",
+      "description": "French rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140984551",
+      "name": "David Pires",
+      "musicbrainz_id": "c9cfc7f4-da2a-44d7-95d9-3f3a5e117a2d",
+      "description": "Portuguese Music Artist from Luxembourg",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137257403",
+      "name": "DemonBlxxd",
+      "musicbrainz_id": "7145f331-f78c-423e-85f3-4f6e59207a50",
+      "description": "",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140924581",
+      "name": "Digit",
+      "musicbrainz_id": "fc681159-69b0-4ede-91d1-771f9051f11e",
+      "description": "Lithuanian hip-hop artist and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q134974356",
+      "name": "EPOSÉ",
+      "musicbrainz_id": "b74543e9-51b8-4fce-bd8a-d75d155fd076",
+      "description": "Indian rapper and singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q122416690",
+      "name": "Echt!",
+      "musicbrainz_id": "f24721fe-df61-4627-927c-33a5442dfd26",
+      "description": "Belgian band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140955477",
+      "name": "Falling Sky",
+      "musicbrainz_id": "6ea35756-a036-4cbd-a720-a462239858df",
+      "description": "solo electronic music project",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q136349597",
+      "name": "Five O’ Clock",
+      "musicbrainz_id": "dc33cead-2a2a-4b4c-a52a-bd7632fab072",
+      "description": "Nigerian musical artist, songwriter, rapper and performer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137798547",
+      "name": "Garçon Kalash",
+      "musicbrainz_id": "98094fa6-2d4f-4f49-a19b-7ae9a1a78542",
+      "description": "Malian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106576620",
+      "name": "Gian Walton",
+      "musicbrainz_id": "8bae0c84-5610-40d0-8185-c4811989d821",
+      "description": "Music Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q95522492",
+      "name": "Hashland",
+      "musicbrainz_id": "dbaee000-333b-4d36-9d13-c4f7e1ee7528",
+      "description": "American rapper, disc jockey, songwriter, producer and entrepreneur",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q117885265",
+      "name": "It's Dynamite",
+      "musicbrainz_id": "cf0a33ce-b16a-47c3-840c-0479a6315416",
+      "description": "Producer/Engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110900387",
+      "name": "Jack Ninte",
+      "musicbrainz_id": "10c4445f-307a-4e1a-8bac-50be3e2223ba",
+      "description": "Moroccan Record Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125491151",
+      "name": "John Glacier",
+      "musicbrainz_id": "34ebe14b-113c-4004-9625-77cb6b13b27d",
+      "description": "British rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141198527",
+      "name": "Judebeatz",
+      "musicbrainz_id": "09306853-83dd-453c-a395-327c0d340bf7",
+      "description": "A Ghanaian music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140387001",
+      "name": "Juice FLSH",
+      "musicbrainz_id": "ac108274-d95d-4f9a-a9fa-abbb4ca3f122",
+      "description": "Angolan rapper and singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106606382",
+      "name": "KHAYSEN",
+      "musicbrainz_id": "f5d8744b-1c18-40d1-91d1-90913271aef2",
+      "description": "Argentine rapper and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q97142226",
+      "name": "KLOUD",
+      "musicbrainz_id": "d3f2424c-d4ca-446a-9c13-ba99d0b93e93",
+      "description": "electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q27431286",
+      "name": "Kael Sounds",
+      "musicbrainz_id": "92573294-7531-4814-a66d-c764a1d1a4c6",
+      "description": "Reggaeton musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q92348370",
+      "name": "Kamila Cree",
+      "musicbrainz_id": "e78baa83-fb77-4aec-b40a-6d917ed6aed1",
+      "description": "Cuban-American Latin singer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141828093",
+      "name": "Khalif The Ruler",
+      "musicbrainz_id": "4d16cbf0-0f12-426b-9163-4638ead14dcf",
+      "description": "American rapper, singer, songwriter, record producer and mixing engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q131339688",
+      "name": "Levitation Beats",
+      "musicbrainz_id": "86bd3c66-87b2-4eb1-a520-9595e48e5146",
+      "description": "French record producer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q132201478",
+      "name": "Lil Mboiz",
+      "musicbrainz_id": "a8115a94-3d73-4a8d-b9c1-7c2e0174d048",
+      "description": "American rapper and singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q124709685",
+      "name": "Locoplaya",
+      "musicbrainz_id": "a99b9b1a-3efe-4cca-9810-6853e48ce466",
+      "description": "Canarian urban music group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q28806412",
+      "name": "Lord Reverb",
+      "musicbrainz_id": "ef1aa7c9-4962-41b3-9e70-b0561fbf06a5",
+      "description": "Dutch Music Artist & Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140460689",
+      "name": "Lucius P. Thundercat",
+      "musicbrainz_id": "eff03ac2-557f-4274-82db-15bf3fc54bba",
+      "description": "Canadian rapper and vocalist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137009707",
+      "name": "MC KODA",
+      "musicbrainz_id": "47b7ba9b-8f2a-4b9e-8b34-5660eea3dcfe",
+      "description": "artista brasileiro de trap, cantor, compositor e produtor musical",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q134177520",
+      "name": "Maestro Melly",
+      "musicbrainz_id": "72ee24b0-73ed-428d-a628-00ce99ae88d5",
+      "description": "Ghanaian musician and song writer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65665679",
+      "name": "Maurixxin",
+      "musicbrainz_id": "a89582b4-a0af-4820-b25a-5150042c172a",
+      "description": "Nigerian rapper, singer-songwriter, and record producer, formerly E.M.S and Maurice A God (born 1995)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141805063",
+      "name": "McZee",
+      "musicbrainz_id": "c71e614b-ac4b-4643-80a4-c3c0ce3f9e8f",
+      "description": "music producer, beatmaker and composer  from harare",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q87338387",
+      "name": "Meryline",
+      "musicbrainz_id": "801d387a-a7c3-4065-87c0-e2caf70e023f",
+      "description": "Turkish rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q110767141",
+      "name": "Mike Hitt",
+      "musicbrainz_id": "6344bd39-f9d3-49ab-b9c9-f0ccc54bdfdb",
+      "description": "American recording artist, performer, producer, songwriter from Pittsburgh, Pennsylvania, United States",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q65463024",
+      "name": "Miko Creed",
+      "musicbrainz_id": "345b9c70-160b-4c66-a01c-799ffe36a2f1",
+      "description": "Cuban-American Singer, Recording Artist, Songwriter & Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q108838048",
+      "name": "Mixxtone",
+      "musicbrainz_id": "12f9ab1d-d214-43eb-a351-b15b64f980fa",
+      "description": "Pakistani music composer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139375965",
+      "name": "Money Mitch",
+      "musicbrainz_id": "eba38650-bb97-490d-bc38-c6c0bee88e42",
+      "description": "American rapper from Tampa, Florida",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q111212975",
+      "name": "Mugeni Elijah",
+      "musicbrainz_id": "2e0dfb79-7258-4785-9b56-2ae87298697f",
+      "description": "South African Musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q106811932",
+      "name": "Murat Gözgü",
+      "musicbrainz_id": "a736f1f5-9c20-4979-8dd5-f18ee96502a8",
+      "description": "Turkish singer, songwriter, composer and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139630979",
+      "name": "Mycrov",
+      "musicbrainz_id": "6d93f88e-6f90-4f44-b702-05df4b052070",
+      "description": "musical artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q63776701",
+      "name": "Nuckles",
+      "musicbrainz_id": "0cfb990a-e15e-4791-b0b6-8954b4bd4f3d",
+      "description": "rapper based out of Russia/Dubai",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137040834",
+      "name": "OG Pressure",
+      "musicbrainz_id": "c30534b8-a9fc-4f64-9178-a831b5f2f8eb",
+      "description": "American musician, songwriter, producer, and CEO of Rocket City Records",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141758338",
+      "name": "OctobersRich",
+      "musicbrainz_id": "5a0d54ee-0cc2-4fad-bad5-50bdd5bd6b05",
+      "description": "Nigerian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137262437",
+      "name": "Oli Volcan",
+      "musicbrainz_id": "da9ed7a9-59db-4b81-bed7-55badd5453f9",
+      "description": "Cuban Urban Music Artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141501597",
+      "name": "Pesa Day",
+      "musicbrainz_id": "a714c57e-a28a-491c-b2e4-c62ee204ac7a",
+      "description": "Tanzanian singer songwriter and producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q35362762",
+      "name": "PetieSmallzz",
+      "musicbrainz_id": "38c4e464-9710-46f3-843d-2c309bd533a9",
+      "description": "Touring Club DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140958736",
+      "name": "Pritish S",
+      "musicbrainz_id": "bdec93e5-931a-46e8-afb0-43f42445e51f",
+      "description": "South African record producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q112136701",
+      "name": "RFG GRiM",
+      "musicbrainz_id": "edee569d-1607-4aac-9344-9950e1665c12",
+      "description": "American rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q134718038",
+      "name": "Raul WS",
+      "musicbrainz_id": "90112dd6-0305-48d6-be95-d0d284cf90ec",
+      "description": "Romanian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q66016682",
+      "name": "Redza.",
+      "musicbrainz_id": "9e0d9063-a021-47fb-9867-d7fcf4d68b24",
+      "description": "Malaysian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137324505",
+      "name": "Rxch Mike",
+      "musicbrainz_id": "0015bf49-49e4-41e6-a6a6-901de072a126",
+      "description": "American rapper from Georgia (born 2000)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140453717",
+      "name": "Sagitto",
+      "musicbrainz_id": "44045f2b-d5d2-490e-b05e-c69afa339674",
+      "description": "French rapper, DJ and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q125945916",
+      "name": "SeptembersRich",
+      "musicbrainz_id": "2d01dbbf-451a-4a8c-9336-0b32bf17a04c",
+      "description": "American rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q52387392",
+      "name": "Seven Kayne",
+      "musicbrainz_id": "27f5296b-4692-4732-a0c2-d0f25107779f",
+      "description": "Argentinian rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141103862",
+      "name": "Skazz",
+      "musicbrainz_id": "2193a0f3-f052-4fc8-b19d-6de861c5e818",
+      "description": "American Rapper (born 1997)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141091700",
+      "name": "Slatkiši",
+      "musicbrainz_id": "7f8effe2-9c0c-4452-a280-7a4844c20750",
+      "description": "Serbian band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138417306",
+      "name": "Sälliswag",
+      "musicbrainz_id": "c653f18b-f84d-431e-9165-7ff1eed8993f",
+      "description": "Finnish rapper and singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q60420974",
+      "name": "THE HEARTBRK",
+      "musicbrainz_id": "1390a366-1f18-4a5f-af33-0eca05ca50f2",
+      "description": "Songwriter/ Producer/ Singer based in Toronto, Canada",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141776295",
+      "name": "That Boy Hi Hat",
+      "musicbrainz_id": "f363d6ae-4322-45bd-8a5c-ad6e0f05f240",
+      "description": "American alt-rap artist, architect of Post-Trap Futurism",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141544742",
+      "name": "VOOLAND",
+      "musicbrainz_id": "ccb10592-b1ce-47e7-b5f5-15db57085d13",
+      "description": "Musician",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q96181250",
+      "name": "Vendetta Beats",
+      "musicbrainz_id": "862ef8ca-be1d-486d-8dd4-917503baa4b3",
+      "description": "hip-hop Instrumental Producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q108895138",
+      "name": "WMG KD",
+      "musicbrainz_id": "d43e8323-87c0-467e-a8cd-3768965d3958",
+      "description": "American rapper, songwriter And producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q139666142",
+      "name": "WUUYUH",
+      "musicbrainz_id": "188417d6-5e77-410c-976b-a686d90f1e9e",
+      "description": "American electronic music producer and DJ",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q137704727",
+      "name": "XENO",
+      "musicbrainz_id": "f96de7e1-c59f-4efd-bd5e-e2ca93f447f3",
+      "description": "Romanian trapper, rapper, artist, producer & recording engineer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140329457",
+      "name": "Yessir ImFly",
+      "musicbrainz_id": "c8dc3cd2-49d0-4dd7-b2e0-bcf00b2b31c5",
+      "description": "Cambodian musical artist and rapper",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q95560143",
+      "name": "Yrx Royale",
+      "musicbrainz_id": "5455fa03-c3c0-4248-8373-226a06e42f77",
+      "description": "American rapper and singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q138867188",
+      "name": "apollo 808",
+      "musicbrainz_id": "8679a1c9-39c5-4e43-a5b4-f0e8e9416b8c",
+      "description": "Brazilian artist, composer and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q140694982",
+      "name": "asli pradeepsingh",
+      "musicbrainz_id": "7b61f891-bba6-455b-9993-9c869e5d4cb0",
+      "description": "Indian independent music producer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q64027577",
+      "name": "bader azem",
+      "musicbrainz_id": "4ee50218-3646-47a7-b3c7-98f72ef70d78",
+      "description": "Palestinian Arab Singer and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141066338",
+      "name": "jeirmlb",
+      "musicbrainz_id": "81710fe0-914b-4ec2-9b34-925a92dcd2da",
+      "description": "Kenyan musician and recording artist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141205767",
+      "name": "prodpwh",
+      "musicbrainz_id": "0b8e8395-fcf4-4e09-a3be-dc01770b1363",
+      "description": "Brazilian music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    },
+    {
+      "wikidata_id": "Q141223610",
+      "name": "pvrz",
+      "musicbrainz_id": "d8fe6085-f217-453e-825b-cf501d4b3dd1",
+      "description": "American musician and record producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "trap music"
+      ],
+      "category": "hip-hop"
+    }
+  ]
+}

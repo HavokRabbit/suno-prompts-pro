@@ -1,0 +1,1790 @@
+{
+  "category": "corrido",
+  "label": "Corridos / regional Mexican",
+  "genre_labels": [
+    "corrido",
+    "corridos tumbados",
+    "Regional Mexican",
+    "regional Mexican",
+    "ranchera",
+    "norteño",
+    "banda music",
+    "norteño music"
+  ],
+  "country_filter": null,
+  "source": "https://query.wikidata.org/sparql",
+  "license": "CC0-1.0",
+  "query": "SELECT DISTINCT ?artist ?name ?mbid ?desc ?matched ?links WHERE {\n      VALUES ?matched { \"corrido\"@en \"corridos tumbados\"@en \"Regional Mexican\"@en \"regional Mexican\"@en \"ranchera\"@en \"norte\\u00f1o\"@en \"banda music\"@en \"norte\\u00f1o music\"@en }\n      ?genre rdfs:label ?matched.\n      ?artist wdt:P136 ?genre; rdfs:label ?name.\n      OPTIONAL {?artist wdt:P434 ?mbid}\n      FILTER(LANG(?name)=\"en\")\n      \n      FILTER(EXISTS {?artist wdt:P31 wd:Q5} || EXISTS {?artist wdt:P31/wdt:P279* wd:Q2088357})\n      OPTIONAL {?artist schema:description ?desc. FILTER(LANG(?desc)=\"en\")}\n      OPTIONAL {?artist wikibase:sitelinks ?links}\n    } ORDER BY DESC(?links) ?name LIMIT 900",
+  "artists": [
+    {
+      "wikidata_id": "Q23880",
+      "name": "Lila Downs",
+      "musicbrainz_id": "ad29ae1c-2eda-4071-9dc8-31910e7e546c",
+      "description": "Mexican-American singer-songwriter",
+      "sitelinks": 115,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q236024",
+      "name": "Chavela Vargas",
+      "musicbrainz_id": "77586a91-4586-4962-b836-e496d3a05432",
+      "description": "Mexican singer (1919–2012)",
+      "sitelinks": 44,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q242084",
+      "name": "Lola Flores",
+      "musicbrainz_id": "e9abb900-fba0-4e1b-ae09-a7ea8f72551b",
+      "description": "Spanish actress, dancer and singer (1923–1995)",
+      "sitelinks": 43,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q963396",
+      "name": "Valentín Elizalde",
+      "musicbrainz_id": "f45cbc18-1561-4b76-9850-535e871cdd49",
+      "description": "Mexican singer (1979–2007)",
+      "sitelinks": 33,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q171463",
+      "name": "Lucero",
+      "musicbrainz_id": "ddf5b59e-3329-47d8-9338-d576ab64c7c7",
+      "description": "Mexican singer and actress",
+      "sitelinks": 32,
+      "matched_genres": [
+        "ranchera",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q3298047",
+      "name": "Natalia Lafourcade",
+      "musicbrainz_id": "2ceb4e66-4eaa-4dba-ad3a-30df3b742557",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 32,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q56074",
+      "name": "Rocío Dúrcal",
+      "musicbrainz_id": "b8ba2ae6-a233-4b9c-bce3-ea7a7803c946",
+      "description": "Spanish singer and actress (1944–2006)",
+      "sitelinks": 28,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1918218",
+      "name": "Irma Serrano",
+      "musicbrainz_id": "d7632562-17ec-46f7-861c-072939c1a850",
+      "description": "Mexican singer, actress, politician, theatre entrepreneur and author (1933–2023)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "corrido",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q297703",
+      "name": "Lola Beltrán",
+      "musicbrainz_id": "5bace4e8-2280-4d13-a198-94e13587e111",
+      "description": "Mexican actress and singer (1932-1996)",
+      "sitelinks": 21,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1352007",
+      "name": "José Alfredo Jiménez",
+      "musicbrainz_id": "c02be87c-adc4-4c34-afb3-900393050727",
+      "description": "Mexican singer and songwriter (1926–1973)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q30510",
+      "name": "María Dolores Pradera",
+      "musicbrainz_id": "209775df-4c76-4a74-be67-f0f425186dea",
+      "description": "Spanish recording artist; singer and actress (1924-2018)",
+      "sitelinks": 20,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1958523",
+      "name": "Antonio Aguilar",
+      "musicbrainz_id": "ba683849-490c-4afb-9c8d-7278b25cbdc1",
+      "description": "Mexican singer and actor (1919–2007)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1316590",
+      "name": "Flaco Jiménez",
+      "musicbrainz_id": "f3387fe6-63ff-4dcb-95e6-cf14fc13f60b",
+      "description": "American accordionist, singer (1939–2025)",
+      "sitelinks": 18,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q3043199",
+      "name": "Paquita la del Barrio",
+      "musicbrainz_id": "34d5c30f-55f5-4ab2-abce-2456a1ee0e01",
+      "description": "Mexican singer (1947–2025)",
+      "sitelinks": 16,
+      "matched_genres": [
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q521235",
+      "name": "Pablo Montero",
+      "musicbrainz_id": "8a2e86ca-2153-4ba1-b2c2-2a525c2bd665",
+      "description": "Mexican actor and singer",
+      "sitelinks": 15,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q2827769",
+      "name": "Aida Cuevas",
+      "musicbrainz_id": "0f315d1c-8e91-44a7-b354-6c079ff726e1",
+      "description": "Mexican singer and actress (born 1963)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q8194010",
+      "name": "Alejandra Ávalos",
+      "musicbrainz_id": "663ccf5a-1ba6-4f79-bb0e-10bcc22ca15d",
+      "description": "Mexican singer, musician and actress",
+      "sitelinks": 13,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q117242724",
+      "name": "Peso Pluma",
+      "musicbrainz_id": "75e4f8ef-34c3-44fd-8467-88a7d9599f77",
+      "description": "Mexican singer (born 1999)",
+      "sitelinks": 13,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q828285",
+      "name": "Bertín Osborne",
+      "musicbrainz_id": "3e60c077-32b9-430b-bb63-46160d915d58",
+      "description": "Spanish singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q7166214",
+      "name": "Pepe Aguilar",
+      "musicbrainz_id": "66402851-a2a8-481d-a23f-3cd786f61356",
+      "description": "Mexican singer",
+      "sitelinks": 12,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q4739403",
+      "name": "Amalia Mendoza",
+      "musicbrainz_id": "8d3de53e-53aa-49be-b34b-e787262a891a",
+      "description": "Mexican singer and actress (1923–2001)",
+      "sitelinks": 11,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6696561",
+      "name": "Lucha Villa",
+      "musicbrainz_id": "342e6dc9-8b9d-4feb-b48a-cbb32c0429ae",
+      "description": "Mexican actress and singer",
+      "sitelinks": 11,
+      "matched_genres": [
+        "ranchera",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q17153476",
+      "name": "Elvira Quintana",
+      "musicbrainz_id": "",
+      "description": "Spanish actress (1935–1968)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q951330",
+      "name": "Luis Aguilar",
+      "musicbrainz_id": "216a028c-492b-46df-b492-6d08ba1714d9",
+      "description": "Mexican actor and singer (1918–1997)",
+      "sitelinks": 10,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q864524",
+      "name": "Lydia Mendoza",
+      "musicbrainz_id": "df2a707c-9cdf-462e-8705-09b61087dec7",
+      "description": "Mexican-American guitarist and singer",
+      "sitelinks": 10,
+      "matched_genres": [
+        "ranchera",
+        "norteño",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5408740",
+      "name": "Eulalio González",
+      "musicbrainz_id": "1db561fd-15e6-4690-ae9a-a5d2bb178a9a",
+      "description": "Mexican actor, comedian and singer",
+      "sitelinks": 9,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q15463707",
+      "name": "Gerardo Ortiz",
+      "musicbrainz_id": "fb5b1cdc-007e-49b2-aea0-c7ffa9316120",
+      "description": "Mexican-American singer and songwriter",
+      "sitelinks": 9,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1467310",
+      "name": "Los Tigres del Norte",
+      "musicbrainz_id": "75cdc7ad-63b6-48b3-8de2-617d08a9ddf8",
+      "description": "Mexican musicial group; norteño band founded in Mocorito, Sinaloa, and bases in Desarrollo Urbano Quetzalcóatl",
+      "sitelinks": 9,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q3049789",
+      "name": "El Chapo de Sinaloa",
+      "musicbrainz_id": "a7e2a52b-db71-4ef1-892b-4a1b8a3825e5",
+      "description": "Mexican singer",
+      "sitelinks": 8,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5893684",
+      "name": "Helenita Vargas",
+      "musicbrainz_id": "06f095e5-f713-4358-8eeb-3c0ca8be4e60",
+      "description": "Colombian singer (1934-2011)",
+      "sitelinks": 8,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q1184884",
+      "name": "Mariachi Vargas de Tecalitlán",
+      "musicbrainz_id": "0af02af6-311a-4ce3-a3e3-9b17c498f297",
+      "description": "Mexican folk ensemble of mariachi music created in 1897 by Gaspar Vargas",
+      "sitelinks": 8,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q4155082",
+      "name": "Darina",
+      "musicbrainz_id": "9ae77eac-48c4-4e67-a792-01b9bd9f6e7e",
+      "description": "Mexican singer-songwriter, radio personality politician and former soccer player",
+      "sitelinks": 7,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q118466501",
+      "name": "Fuerza Regida",
+      "musicbrainz_id": "e665ce26-6ce9-4c42-8f6a-7a361a0ba328",
+      "description": "regional Mexican group",
+      "sitelinks": 7,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño",
+        "banda music",
+        "corrido",
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q54932704",
+      "name": "Hèctor Parra Esteve",
+      "musicbrainz_id": "152129f5-cbd1-4f06-912c-d374ee0e6b77",
+      "description": "Spanish musician",
+      "sitelinks": 7,
+      "matched_genres": [
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q18640797",
+      "name": "Irma Vila",
+      "musicbrainz_id": "1aa6d178-bc31-42fc-a0eb-d901aaae971f",
+      "description": "Mexican singer and actress",
+      "sitelinks": 7,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q104904549",
+      "name": "Natanael Cano",
+      "musicbrainz_id": "41925f30-8737-4fb8-af65-da918c0e98f3",
+      "description": "Mexican rapper and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6148822",
+      "name": "Tony Bravo",
+      "musicbrainz_id": "",
+      "description": "Mexican actor and singer",
+      "sitelinks": 7,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q60829341",
+      "name": "Yeison Jiménez",
+      "musicbrainz_id": "a48c9f0e-c554-42da-81be-2bf74909fdbd",
+      "description": "Colombian singer-songwriter (1991–2026)",
+      "sitelinks": 7,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q3373508",
+      "name": "La Arrolladora Banda El Limón",
+      "musicbrainz_id": "91398a44-7656-4e66-9ce7-caf3ca4318d8",
+      "description": "Mexican music group",
+      "sitelinks": 6,
+      "matched_genres": [
+        "banda music",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5379869",
+      "name": "La Prieta Linda",
+      "musicbrainz_id": "f6d32320-1e14-4a48-b367-22706d71b570",
+      "description": "Mexican singer and actress",
+      "sitelinks": 6,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q96074466",
+      "name": "Majo Aguilar",
+      "musicbrainz_id": "818d11de-dbf7-4640-9562-fb244a77b63e",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 6,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5474954",
+      "name": "María José Quintanilla",
+      "musicbrainz_id": "0a02d693-4dd8-461d-8b09-4f734c7f4a61",
+      "description": "Chilean singer and TV host",
+      "sitelinks": 6,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q2491279",
+      "name": "Adán Sánchez",
+      "musicbrainz_id": "3a2f7378-095a-4429-a380-12d42e9bad36",
+      "description": "Mexican American singer (1984–2004)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q96100588",
+      "name": "Amalia Macías",
+      "musicbrainz_id": "c2d2c71c-6bdc-4f41-9c9c-525fa55e2085",
+      "description": "Mexican singer and actress",
+      "sitelinks": 5,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q97014977",
+      "name": "Carín León",
+      "musicbrainz_id": "db8efd58-7cd0-4ca8-a538-14ad6b44640b",
+      "description": "Mexican Singer, songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "regional Mexican",
+        "ranchera",
+        "norteño",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5483163",
+      "name": "Charro Avitia",
+      "musicbrainz_id": "86fdf55a-ec4b-421a-9272-035cfa95adea",
+      "description": "Mexican singer and actor (1915–1995)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "ranchera",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5226312",
+      "name": "Darío Gómez",
+      "musicbrainz_id": "686c5025-836f-47e5-9754-38fcd0595748",
+      "description": "Colombian singer (1951-2022)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q27119461",
+      "name": "Dora María",
+      "musicbrainz_id": "344c1a3b-db98-49d7-a74e-76d5319897b5",
+      "description": "Mexican singer (1933–2023)",
+      "sitelinks": 5,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q108984139",
+      "name": "Iván Cornejo",
+      "musicbrainz_id": "81a9fcc1-a954-4749-90d8-5a39001d18ad",
+      "description": "American singer of Mexican origin",
+      "sitelinks": 5,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q109569656",
+      "name": "Junior H",
+      "musicbrainz_id": "af1b83bb-3edc-4443-b771-67a1d235e82b",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 5,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q124004728",
+      "name": "Luis R. Conriquez",
+      "musicbrainz_id": "27a2af41-601d-4a99-911f-87c03174bfac",
+      "description": "Mexican singer",
+      "sitelinks": 5,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q787191",
+      "name": "Ramón Ayala",
+      "musicbrainz_id": "3625c423-b46d-49ee-a2e5-08e8437575d1",
+      "description": "Mexican singer-songwriter and accordion player",
+      "sitelinks": 5,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q30527623",
+      "name": "Calibre 50",
+      "musicbrainz_id": "28c7230b-cf8f-49c8-aac9-92d36fb7a067",
+      "description": "Mexican band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "ranchera",
+        "regional Mexican",
+        "corrido",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q117317902",
+      "name": "Chino Pacas",
+      "musicbrainz_id": "d4065b73-145c-4b82-a474-b622474dd5a1",
+      "description": "Mexican singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q112702265",
+      "name": "Eslabón Armado",
+      "musicbrainz_id": "c748f5d2-eac8-4570-a9cc-d2d03d0a6092",
+      "description": "American hispanic radio music group",
+      "sitelinks": 4,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q118141487",
+      "name": "Grupo Frontera",
+      "musicbrainz_id": "4c57c827-4ce3-4cf4-9492-0ff7f1ee2b0f",
+      "description": "Mexican-American musical band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q2033206",
+      "name": "Intocable",
+      "musicbrainz_id": "40b032dc-8035-4f2a-b478-eb15ddcf6674",
+      "description": "American musical group; Tejano and Norteño band from Zapata, Texas",
+      "sitelinks": 4,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q27044950",
+      "name": "La Consentida",
+      "musicbrainz_id": "f60bc48d-9570-4377-8e10-e700a46bed6f",
+      "description": "Mexican singer and actress (born 1941)",
+      "sitelinks": 4,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5980597",
+      "name": "Los Alegres de Terán",
+      "musicbrainz_id": "8775c9be-6f28-4ef5-afb2-00d67eb1e68b",
+      "description": "Mexican Norteño band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q17319047",
+      "name": "Voz de Mando",
+      "musicbrainz_id": "174dd342-0ed2-4421-8806-3b40c3d95c90",
+      "description": "Regional Mexican band",
+      "sitelinks": 4,
+      "matched_genres": [
+        "regional Mexican",
+        "corrido",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q124219723",
+      "name": "Xavi",
+      "musicbrainz_id": "3e9b28f4-c48f-4577-aabf-8eda52e8b955",
+      "description": "American singer",
+      "sitelinks": 4,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q17274366",
+      "name": "Banda MS",
+      "musicbrainz_id": "04bb4a12-08a3-463b-a0df-63c1fb658497",
+      "description": "Mexican banda",
+      "sitelinks": 3,
+      "matched_genres": [
+        "regional Mexican",
+        "banda music"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5161187",
+      "name": "Conjunto Primavera",
+      "musicbrainz_id": "d9c37cc9-a2c0-4e79-80b4-fa310c19cb47",
+      "description": "regional Mexican music band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5241426",
+      "name": "David Záizar",
+      "musicbrainz_id": "327168e8-6cef-4626-b4fe-742032dfdab0",
+      "description": "Mexican singer (1928–1982)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5312210",
+      "name": "Duelo",
+      "musicbrainz_id": "0cf753d5-8885-4bbe-8c3d-4242147fa44e",
+      "description": "American musical group; norteño band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q116036323",
+      "name": "Eduardo Antonio",
+      "musicbrainz_id": "",
+      "description": "Cuban singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5861588",
+      "name": "Fidel Rueda",
+      "musicbrainz_id": "7362866d-49de-4f3f-9b25-f0da493493a9",
+      "description": "Mexican singer-songwriter (born 1983)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99733765",
+      "name": "Grupo Firme",
+      "musicbrainz_id": "f8549adf-74e1-4955-b06a-2933ede7bb04",
+      "description": "Mexican group",
+      "sitelinks": 3,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q9017848",
+      "name": "Kojón Prieto y los Huajolotes",
+      "musicbrainz_id": "b3524520-e3f5-4e1c-8f36-0e38743707a4",
+      "description": "Spanish band",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99491001",
+      "name": "Lalo Mora",
+      "musicbrainz_id": "8e47a469-d4ba-45ad-aba0-7272f1bc368f",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q138509264",
+      "name": "Lilia Guízar",
+      "musicbrainz_id": "",
+      "description": "Mexican-American actress and singer (born 1938)",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q96149779",
+      "name": "Lupe Mejía",
+      "musicbrainz_id": "",
+      "description": "Mexican singer and actress",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q109967484",
+      "name": "Mario Quintero Lara",
+      "musicbrainz_id": "e4c58f5c-6c81-48d1-9056-9bd4d6e36500",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 3,
+      "matched_genres": [
+        "corrido",
+        "norteño",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q27942450",
+      "name": "Mary Jiménez",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106604230",
+      "name": "Ovi",
+      "musicbrainz_id": "",
+      "description": "Cuban rapper",
+      "sitelinks": 3,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6102289",
+      "name": "Rebeca Jiménez",
+      "musicbrainz_id": "df59dace-1ee2-4147-adbe-20bed60cfb4b",
+      "description": "Spanish actor and singer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q116780649",
+      "name": "Víctor Cibrián",
+      "musicbrainz_id": "833c35f1-afb5-48de-8941-ce7276678802",
+      "description": "Mexican singer and composer",
+      "sitelinks": 3,
+      "matched_genres": [
+        "corridos tumbados",
+        "corrido",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q124004635",
+      "name": "Carlos y José",
+      "musicbrainz_id": "c1ced12c-91c7-4ce6-adc2-31c4209a5682",
+      "description": "Mexican musical duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5351078",
+      "name": "El Coyote",
+      "musicbrainz_id": "89e9f9fe-c802-4541-b706-d97ca3040c4b",
+      "description": "musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q98853525",
+      "name": "El Fantasma",
+      "musicbrainz_id": "576c18cd-f18a-4701-baf3-45edc8f85bd9",
+      "description": "Mexican singer, songwriter and musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "norteño",
+        "corrido",
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q112438859",
+      "name": "Gilberto Valenzuela Macen",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "corrido",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5612232",
+      "name": "Grupo Límite",
+      "musicbrainz_id": "5e092918-3eb2-4ec9-893e-d2792a08ce86",
+      "description": "Mexican band",
+      "sitelinks": 2,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q19395609",
+      "name": "Guadalupe la Chinaca",
+      "musicbrainz_id": "8b7fe32c-e61e-4aca-986f-d23ddd1dcf48",
+      "description": "Mexican singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q97672242",
+      "name": "Jesús Rodríguez de Hijar",
+      "musicbrainz_id": "59b23394-4d6c-4182-a2e4-e1e7f6fb6189",
+      "description": "Mexican musician (1929-2020)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6463540",
+      "name": "La Lupita",
+      "musicbrainz_id": "f4fb7c27-7007-4070-892e-b4014d5d86d3",
+      "description": "musical ensemble",
+      "sitelinks": 2,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q85775896",
+      "name": "Las Jilguerillas",
+      "musicbrainz_id": "fd1515d3-39a1-408d-a871-7ced1a30a1d6",
+      "description": "Mexican ranchera duo",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123907285",
+      "name": "Lizette Gutierrez",
+      "musicbrainz_id": "",
+      "description": "songwriter and musician",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q21997245",
+      "name": "Los Gatos Negros de Traiguén",
+      "musicbrainz_id": "5af5d08d-f20b-4690-809f-f7bb747b87df",
+      "description": "",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6683079",
+      "name": "Los Pikadientes de Caborca",
+      "musicbrainz_id": "2d1ba367-9448-46d4-a766-a549b83292aa",
+      "description": "Mexican musical group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5980577",
+      "name": "Los Zopilotes Txirriaos",
+      "musicbrainz_id": "5b383a00-4caa-4f17-8861-c695d0df0a4b",
+      "description": "organization",
+      "sitelinks": 2,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q105969643",
+      "name": "Lupita Infante",
+      "musicbrainz_id": "fa58d186-74b1-4b7e-92fc-14bfa0280080",
+      "description": "American singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "norteño",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q28401361",
+      "name": "Remmy Valenzuela",
+      "musicbrainz_id": "294f71b3-e120-424a-bae9-34acbd56d64f",
+      "description": "Mexican singer, songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "banda music",
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q130272194",
+      "name": "Tito Double P",
+      "musicbrainz_id": "37316157-4e01-4ea8-b897-65a1a5a6bb30",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 2,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q111666294",
+      "name": "Yahritza y su Esencia",
+      "musicbrainz_id": "8d953b16-01b8-4901-8986-6203cac5d16c",
+      "description": "Mexican regional music group",
+      "sitelinks": 2,
+      "matched_genres": [
+        "regional Mexican",
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q138680416",
+      "name": "Zalek",
+      "musicbrainz_id": "",
+      "description": "Colombian singer (1995–2026)",
+      "sitelinks": 2,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q130241052",
+      "name": "Óscar Maydon",
+      "musicbrainz_id": "00cf7ec3-56a7-4bd9-9f1b-1a151b0b2faf",
+      "description": "Mexican singer",
+      "sitelinks": 2,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q28501361",
+      "name": "Alfredo Ríos Galeana",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q20683863",
+      "name": "Banda Carnaval",
+      "musicbrainz_id": "e2abe53d-e487-4b0b-963d-6cf11cd05733",
+      "description": "Mexican banda",
+      "sitelinks": 1,
+      "matched_genres": [
+        "banda music"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123102443",
+      "name": "Blnko",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q130758631",
+      "name": "Catarino Leos",
+      "musicbrainz_id": "426a63a0-4fdf-43e6-8881-0ac500cde69a",
+      "description": "Mexican musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q101246658",
+      "name": "Celia Mireles Martinez",
+      "musicbrainz_id": "",
+      "description": "Spanish speaking Texan singer who pioneered Tejano music",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5096563",
+      "name": "Chicos de Barrio",
+      "musicbrainz_id": "221672f3-806f-4114-a059-c004cb3d05ce",
+      "description": "Mexican musical group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "banda music",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5312259",
+      "name": "Dueto América",
+      "musicbrainz_id": "ca71f309-e4b1-4cbe-9f68-a3263b6739bd",
+      "description": "musical artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5879657",
+      "name": "Gilberto Parra Paz",
+      "musicbrainz_id": "966bc151-958c-4e3a-a6db-4faba6822a26",
+      "description": "Mexican composer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99422039",
+      "name": "Grupo Arranke",
+      "musicbrainz_id": "",
+      "description": "Mexican band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "corrido",
+        "norteño",
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5612212",
+      "name": "Grupo Exterminador",
+      "musicbrainz_id": "4ab82ffb-44c5-4b54-9bbf-bfd2fbea40a5",
+      "description": "Mexican norteño band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q110272942",
+      "name": "Gutty Quezada",
+      "musicbrainz_id": "1b9508a6-c9e4-4bd6-840e-415b353359c8",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "banda music",
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123980591",
+      "name": "Herencia de Patrones",
+      "musicbrainz_id": "675715bf-3791-46bf-a67a-70620d4380f1",
+      "description": "Regional Mexican group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99826111",
+      "name": "Industria del Amor",
+      "musicbrainz_id": "",
+      "description": "Mexican music group",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q6187774",
+      "name": "Jessie Morales",
+      "musicbrainz_id": "",
+      "description": "American singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q5551930",
+      "name": "Jo! Y",
+      "musicbrainz_id": "84e9a0d0-11f2-44fb-b23c-3e92fcbf2ad3",
+      "description": "organization",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q17285518",
+      "name": "Los Donneños",
+      "musicbrainz_id": "",
+      "description": "American Norteño music duo",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99883999",
+      "name": "Luis Antonio López Flores",
+      "musicbrainz_id": "8f2b04cb-c96c-45f9-a847-9c2855e56a87",
+      "description": "Mexican Singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican",
+        "ranchera",
+        "norteño",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q108513621",
+      "name": "Luis Ángel Franco",
+      "musicbrainz_id": "67faa467-c859-48a2-8f25-37e1fefed089",
+      "description": "Mexican singer, songwriter and recording artist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño",
+        "banda music",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123345722",
+      "name": "Manuel Castillo Girón",
+      "musicbrainz_id": "",
+      "description": "Honduran musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106594798",
+      "name": "Margarito Estrada Espinoza",
+      "musicbrainz_id": "bdb5ff18-5cde-400f-a870-ffd68fcc2426",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q129208676",
+      "name": "Netón Vega",
+      "musicbrainz_id": "dc1c4d9b-80ab-452b-b316-f201915b29db",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 1,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q37846050",
+      "name": "Pepe Garza",
+      "musicbrainz_id": "f927cb2d-12d1-4f52-8cd0-5e5b6b3c34ae",
+      "description": "Mexican radio personality, composer, record producer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q139784495",
+      "name": "Ramón Avilés",
+      "musicbrainz_id": "",
+      "description": "Peruvian singer (1945-)",
+      "sitelinks": 1,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q20685273",
+      "name": "Raza Obrera",
+      "musicbrainz_id": "d63380de-d662-4fa4-809e-8233c4488f9d",
+      "description": "Regional Mexican band",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q97665589",
+      "name": "Ricky Muñoz",
+      "musicbrainz_id": "e378809f-dd3d-407f-bab2-ef53b7fde2ad",
+      "description": "American singer, songwriter, accordionist",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño",
+        "corrido"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q17628919",
+      "name": "Rommel Rodriguez",
+      "musicbrainz_id": "",
+      "description": "Venezuelan musician",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106360801",
+      "name": "Rosy Arango",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123102454",
+      "name": "Sofía Arlette",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 1,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99845448",
+      "name": "Stéphanie Gérard",
+      "musicbrainz_id": "",
+      "description": "Singer, Actress, Radio-television host",
+      "sitelinks": 1,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q26108699",
+      "name": "Amanecer Norteño De Tijuana",
+      "musicbrainz_id": "3424d342-5187-4052-bba7-54e49a63573a",
+      "description": "Band",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q104417065",
+      "name": "Beto Peña",
+      "musicbrainz_id": "",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "banda music",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q123160819",
+      "name": "Calle 24",
+      "musicbrainz_id": "6e3ac07f-e83c-4fab-9ad0-fc1c13d8ceae",
+      "description": "Mexican singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "corridos tumbados",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q100324086",
+      "name": "Charly Perez",
+      "musicbrainz_id": "83bca7de-4988-4374-a290-95cc6314308c",
+      "description": "Mexican Singer, songwriter and music producer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "corrido",
+        "norteño",
+        "banda music",
+        "ranchera",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q104919331",
+      "name": "Dareyes de la Sierra",
+      "musicbrainz_id": "5f08d634-2080-4166-b006-de456009f43f",
+      "description": "Mexican musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "banda music",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q141775917",
+      "name": "Erik López",
+      "musicbrainz_id": "cd96c5dd-edfa-4e07-a8c2-6989fee09c2a",
+      "description": "Spanish guitarist, singer, songwriter and record producer from Cambrils (born 1980)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q99673488",
+      "name": "Esteban Durán",
+      "musicbrainz_id": "1e0edfc2-81a2-4e98-826d-8fc853eda979",
+      "description": "Mexican singer and songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q104887978",
+      "name": "Grupo Infiltrados",
+      "musicbrainz_id": "261a4b3e-56cc-4e98-8d2e-1e3fb08a408a",
+      "description": "Mexican band playing norteño music",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q110009896",
+      "name": "Homero Guerrero de la Cerda",
+      "musicbrainz_id": "",
+      "description": "Mexican Singer, songwriter and actor",
+      "sitelinks": 0,
+      "matched_genres": [
+        "norteño",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q111547571",
+      "name": "Jesús \"El Flaco\" Elizalde",
+      "musicbrainz_id": "",
+      "description": "Mexican singer-songwriter of regional music",
+      "sitelinks": 0,
+      "matched_genres": [
+        "corrido",
+        "norteño",
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106613094",
+      "name": "José Ariel Inzunza Inzunza",
+      "musicbrainz_id": "9fc40cb0-5121-4a80-95bc-189f94a8aa5a",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106606884",
+      "name": "José Miguel Montoya Rubio",
+      "musicbrainz_id": "913dabeb-161b-4d4c-a319-77d0e2be7e5b",
+      "description": "Mexican singer-songwriter and acoustic guitarist",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q126411351",
+      "name": "Kevin AMF",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "corridos tumbados"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q104836863",
+      "name": "La Kumbre con K",
+      "musicbrainz_id": "",
+      "description": "Mexican band plaing norteño sax",
+      "sitelinks": 0,
+      "matched_genres": [
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q110148599",
+      "name": "Lenin Ramírez",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q124004671",
+      "name": "Los Gorriones del Topo Chico",
+      "musicbrainz_id": "2330273f-bdef-4faf-88a9-3737b86e1832",
+      "description": "Mexican musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q130758439",
+      "name": "Los Rancheritos Del Topo Chico",
+      "musicbrainz_id": "",
+      "description": "Mexican musical group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "ranchera",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q112796035",
+      "name": "Luis Antonio Lizarraga Pagola",
+      "musicbrainz_id": "f2c4ae50-47db-452a-8c5c-9c79cc2fe4a3",
+      "description": "Mexican Singer, songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "corrido",
+        "banda music",
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q124749445",
+      "name": "Mariangela",
+      "musicbrainz_id": "",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q131547252",
+      "name": "María Elena Pena",
+      "musicbrainz_id": "",
+      "description": "Cuban singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q106612356",
+      "name": "Miguel Ángel Angulo Bojórquez",
+      "musicbrainz_id": "7890a33a-10b8-40e1-ba17-d129770168a4",
+      "description": "Mexican singer-songwriter",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera",
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q125008008",
+      "name": "Pistolas de Oro",
+      "musicbrainz_id": "ea60e052-256d-4286-b7ab-3add05dcc5f9",
+      "description": "Mexican Music Group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q130364271",
+      "name": "Pistolas de oro",
+      "musicbrainz_id": "ea60e052-256d-4286-b7ab-3add05dcc5f9",
+      "description": "Mexican music group",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q105324554",
+      "name": "Ramón Jazo",
+      "musicbrainz_id": "ed581809-a9f8-4f49-b240-63d09284affd",
+      "description": "Author, composer, performer of ranchera and norteña music, pioneer of recorded music in the United States.",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q131304284",
+      "name": "Rigoberto Alfaro",
+      "musicbrainz_id": "",
+      "description": "Mexican composer and arranger",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q98899157",
+      "name": "Roberto Belester Quevedo Gómez",
+      "musicbrainz_id": "",
+      "description": "Mexican songwriter and singer,",
+      "sitelinks": 0,
+      "matched_genres": [
+        "regional Mexican",
+        "norteño"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q136770131",
+      "name": "Rosauro Castro",
+      "musicbrainz_id": "",
+      "description": "Mexican singer",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    },
+    {
+      "wikidata_id": "Q134838884",
+      "name": "Teresita La Campesina",
+      "musicbrainz_id": "",
+      "description": "American trans activist, vocalist (1940–2002)",
+      "sitelinks": 0,
+      "matched_genres": [
+        "ranchera"
+      ],
+      "category": "corrido"
+    }
+  ]
+}
