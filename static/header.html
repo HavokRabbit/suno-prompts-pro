@@ -4,9 +4,22 @@
     <meta charset="utf-8" />
     <title>Iron Vespers — header</title>
     <style>
-      html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; }
-      .wrap { line-height: 0; }
-      video { display: block; width: 100%; height: auto; border-radius: 10px; }
+      html, body { margin: 0; padding: 0; height: 100%; background: transparent; overflow: hidden; }
+      /* Fit the whole clip inside whatever frame it lands in. Scaling by width
+         alone overflows a short frame and clips the artwork to its top edge, so
+         constrain BOTH axes and centre what is left over. */
+      .wrap {
+        height: 100%; width: 100%;
+        display: flex; align-items: center; justify-content: center;
+        line-height: 0;
+      }
+      video {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto; height: auto;
+        border-radius: 10px;
+      }
     </style>
   </head>
   <body>

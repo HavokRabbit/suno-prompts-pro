@@ -86,7 +86,7 @@ def render_header():
     page = _DATA_DIR / "static" / "header.html"
     if video.is_file() and page.is_file() and hasattr(st, "iframe"):
         try:
-            st.iframe("/app/static/header.html", height=232)
+            st.iframe("/app/static/header.html", height=300)
             return
         except Exception:
             pass
@@ -101,9 +101,13 @@ def render_header():
     components.html(
         f"""
 <style>
-  html, body {{ margin:0; padding:0; background:transparent; overflow:hidden; }}
-  video {{ display:block; width:100%; height:auto; border-radius:10px; }}
-  .wrap {{ line-height:0; }}
+  html, body {{ margin:0; padding:0; height:100%; background:transparent; overflow:hidden; }}
+  .wrap {{
+    height:100%; width:100%;
+    display:flex; align-items:center; justify-content:center;
+    line-height:0;
+  }}
+  video {{ display:block; max-width:100%; max-height:100%; width:auto; height:auto; border-radius:10px; }}
 </style>
 <div class="wrap">
   <video id="ivh" autoplay muted playsinline loop preload="auto"
@@ -272,7 +276,12 @@ def blend_profiles(primary, secondary):
 # ====================
 def _compose(profile, provenance, label, mood, theme, tempo, extra_note=""):
     mood_value = mood or profile["mood"]
-    head = "[Style Profile]" if provenance != "reference" else "[Genre Reference]"
+    if provenance == "reference":
+        head = "[Genre Reference]"
+    elif provenance == "blend":
+        head = "[Blend]"
+    else:
+        head = "[Style Profile]"
     lines = [
         head,
         "",
@@ -322,12 +331,12 @@ def generate_prompt(singer, custom_mood="", custom_theme="", custom_tempo="", sa
 
 
 def generate_blend(first, second, custom_mood="", custom_theme="", custom_tempo="", sanitize=True):
-    a, a_prov = resolve_profile(first)
-    b, b_prov = resolve_profile(second)
+    a, _a_prov = resolve_profile(first)
+    b, _b_prov = resolve_profile(second)
     blended = blend_profiles(a, b)
-    note = (f"Blend of {first.strip()} ({a_prov}) and {second.strip()} ({b_prov}). "
-            "The primary entry sets the arc; the second supplies texture and instrumentation.")
-    result = _compose(blended, "reference", f"{first.strip()} x {second.strip()}",
+    note = (f"Blend of {first.strip()} and {second.strip()}. The first sets the arc; "
+            "the second supplies texture and instrumentation.")
+    result = _compose(blended, "blend", f"{first.strip()} x {second.strip()}",
                       custom_mood, custom_theme, custom_tempo, note)
     if sanitize:
         result, _ = _sanitize_prompt(result, extra=(first, second))
@@ -630,20 +639,39 @@ def main():
         shelved = {}
         for key in cat.categories():
             shelved.setdefault(cat.genre_shelf(key), []).append(key)
+        counts = cat.counts_by_genre()
+        all_count = len(cat.catalog())
+        active_genre = st.session_state.get("genre_filter", "All")
 
-        f1, f2, f3, f4 = st.columns([2, 2, 2, 1])
+        st.markdown("#### Browse by genre")
+        st.caption("Pick a genre to filter the list. Every count is the real number of entries.")
+        chips = [("All", "All genres", all_count)] + [
+            (key, cat.genre_label(key), counts[key]) for key in cat.categories()
+        ]
+        chip_cols = st.columns(4)
+        for i, (key, label, n) in enumerate(chips):
+            with chip_cols[i % 4]:
+                st.button(
+                    f"{label} ({n:,})",
+                    key=f"genre_chip_{key}",
+                    use_container_width=True,
+                    type="primary" if key == active_genre else "secondary",
+                    on_click=lambda k=key: st.session_state.update(genre_filter=k),
+                )
+
+        st.markdown("---")
+        f1, f2, f3 = st.columns([2, 1, 1])
         with f1:
             query = st.text_input("Search", key="cat_query", placeholder="name, genre or description")
         with f2:
             shelf = st.selectbox("Shelf", ["All"] + sorted(s for s in shelved if s != "Other"),
                                  key="cat_shelf")
         with f3:
-            options = ["All"] + [cat.genre_label(k) for k in shelved.get(shelf, [])] if shelf != "All" else ["All"]
-            chosen_label = st.selectbox("Genre", options, key="cat_genre")
-            active_genre = "All" if chosen_label == "All" else next(
-                (k for k in cat.categories() if cat.genre_label(k) == chosen_label), "All")
-        with f4:
             kind = st.selectbox("Kind", ["All", "Detailed profile", "Genre reference"], key="cat_kind")
+
+        if active_genre != "All":
+            st.caption(f"Filtered to **{cat.genre_label(active_genre)}** — "
+                       f"{counts.get(active_genre, 0):,} artists")
 
         kind_key = {"All": None, "Detailed profile": "profile", "Genre reference": "reference"}[kind]
         rows = cat.entries(category=active_genre, shelf=None if shelf == "All" else shelf,
