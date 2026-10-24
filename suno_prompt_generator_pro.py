@@ -679,11 +679,19 @@ def main():
 
         page_size = 25
         pages = max(1, (len(rows) + page_size - 1) // page_size)
-        if st.session_state.get("cat_page_key") != (query, shelf, active_genre, kind):
-            st.session_state.cat_page = 1
-            st.session_state.cat_page_key = (query, shelf, active_genre, kind)
+        # Reset to page 1 when the filter set changes, and keep the stored page
+        # inside the valid range. Both writes happen BEFORE the widget exists:
+        # assigning a widget's key after it is built raises StreamlitAPIException,
+        # and passing value= alongside an occupied key is a silent conflict.
+        filter_signature = (query, shelf, active_genre, kind)
+        if st.session_state.get("cat_filter_sig") != filter_signature:
+            st.session_state["cat_filter_sig"] = filter_signature
+            st.session_state["cat_page"] = 1
+        st.session_state["cat_page"] = min(
+            max(1, int(st.session_state.get("cat_page", 1))), pages
+        )
         page = st.number_input(f"{len(rows):,} matches — page", min_value=1, max_value=pages,
-                               value=int(st.session_state.get("cat_page", 1)), key="cat_page")
+                               key="cat_page", step=1)
 
         start = (int(page) - 1) * page_size
         for name, entry in rows[start:start + page_size]:
